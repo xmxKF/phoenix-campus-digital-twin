@@ -9,8 +9,9 @@ import {RenderPass} from 'three/addons/postprocessing/RenderPass.js';
 import {mountNavigationHelp} from './navigation-ui.js';
 import {installKeyboardNavigation} from './navigation.js?v=5';
 import {createRenderQuality} from './render-quality.js?v=4';
-import {fetchModelBuffer} from './model-delivery.js?v=8';
-import {exteriorDelivery} from './model-delivery-config.js?v=8';
+import {loadDeliveredModel} from './model-delivery.js?v=9';
+import {exteriorDelivery} from './model-delivery-config.js?v=9';
+import {MeshoptDecoder} from './vendor/meshopt_decoder.mjs';
 
 const $ = id => document.getElementById(id);
 const startedAt = performance.now();
@@ -347,15 +348,16 @@ try {
     fetch('../evidence/v2/build.json').then(r => { if (!r.ok) throw new Error('视角数据加载失败'); return r.json(); }),
     new RGBELoader().loadAsync('../assets/v2/kloofendal_48d_partly_cloudy_puresky_1k.hdr'),
     (async () => {
-      const {buffer, delivery} = await fetchModelBuffer(exteriorDelivery, progress => {
+      const loader = new GLTFLoader().setMeshoptDecoder(MeshoptDecoder);
+      const {model: gltf, delivery, parseMilliseconds} = await loadDeliveredModel(exteriorDelivery, buffer => {
+        $('progress').textContent = '模型已下载 · 正在准备建筑与完整枝叶…';
+        return loader.parseAsync(buffer, new URL('../output/v2/', import.meta.url).href);
+      }, progress => {
         const percentage = Math.min(100, Math.round(progress.loaded / progress.total * 100));
         $('progress').textContent = `模型 ${percentage}% · 已接收 ${(progress.loaded / 1048576).toFixed(1)} MB`;
       });
       deliveryStats = delivery;
-      $('progress').textContent = '模型已下载 · 正在准备建筑与完整枝叶…';
-      const parseStarted = performance.now();
-      const gltf = await new GLTFLoader().parseAsync(buffer, new URL('../output/v2/', import.meta.url).href);
-      loadingStages.modelParseMilliseconds = Math.round(performance.now() - parseStarted);
+      loadingStages.modelParseMilliseconds = parseMilliseconds;
       return gltf;
     })()
   ]);

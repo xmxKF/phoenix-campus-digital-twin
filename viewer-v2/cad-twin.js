@@ -1,5 +1,6 @@
 import * as THREE from 'three';
 import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
+import {loadModel} from '../viewer-twin/model-loader.js?v=8';
 import {CampusSimulation,METRICS} from './simulation.js?v=3.1';
 
 const $=id=>document.getElementById(id);
@@ -47,7 +48,7 @@ async function loadBuilding(id){
  const entry={id};cache.set(id,entry);
  entry.promise=(async()=>{
   const data=await getManifest(),record=data.buildings.find(b=>b.id===id);if(!record)throw new Error('没有找到该建筑的 CAD 模型');
-  const [gltf,meta]=await Promise.all([new GLTFLoader().loadAsync(new URL(record.model+'?rev='+record.glbSHA256.slice(0,12),base).href),fetch(new URL(record.metadata+'?rev='+record.glbSHA256.slice(0,12),base)).then(r=>{if(!r.ok)throw new Error('构件清单加载失败');return r.json();})]);
+  const [gltf,meta]=await Promise.all([loadModel(new GLTFLoader(),new URL(record.model+'?rev='+record.glbSHA256.slice(0,12),base)),fetch(new URL(record.metadata+'?rev='+record.glbSHA256.slice(0,12),base)).then(r=>{if(!r.ok)throw new Error('构件清单加载失败');return r.json();})]);
   const byId=new Map(meta.components.map(c=>[c.id,c]));entry.record=record;entry.meta=meta;entry.root=gltf.scene;entry.meshes=[];entry.bounds=new THREE.Box3().setFromObject(entry.root);entry.root.name='FreeCAD_'+id;
   entry.root.traverse(o=>{if(!o.isMesh)return;const asset=byId.get(o.userData.asset_id)||byId.get(o.name);if(!asset)return;o.userData.cad=asset;o.userData.basePosition=o.position.clone();o.userData.baseVisible=true;o.castShadow=true;o.receiveShadow=true;o.material=o.material.clone();o.material.clippingPlanes=[];o.material.clipShadows=true;o.material.side=THREE.DoubleSide;entry.meshes.push(o);});
   entry.root.visible=false;api.scene.add(entry.root);
