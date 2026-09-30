@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>凤凰山北 · 园区与 CAD 孪生展示</title><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22%3E%3Crect width=%2264%22 height=%2264%22 rx=%2214%22 fill=%22%23173b3e%22/%3E%3Cpath d=%22M32 10 54 32 32 54 10 32Z%22 fill=%22%239dd8c5%22/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css?v=3.1"><link rel="stylesheet" href="navigation-ui.css?v=5"><script type="importmap">{"imports":{"three":"../viewer/vendor/three.module.js","three/addons/":"../viewer/vendor/"}}</script></head>
+<body><header><span class="eyebrow">ZHUHAI / CONCEPT CAMPUS</span><h1>凤凰山北 · 科创园区 <small>V4</small></h1><p>园区外观 · FreeCAD 构件 · <a href="../viewer-twin/">进入建筑运行实验室 ↗</a></p></header>
+<aside><button id="details" aria-expanded="false">展示设置</button><section id="settings" hidden><label><input id="context" type="checkbox" checked> 山林与周边街区</label><label><input id="labels" type="checkbox"> 建筑名称</label><label>画面 <select id="quality"><option value="balanced">流畅</option><option value="full">精细画质</option></select></label><label>定位 <select id="building"><option value="">选择建筑</option></select></label><p>拖动旋转 · 滚轮缩放 · 右键平移<br>方向键前后 / 横移 · E 上升 / Q 下降 · Shift 加速</p><a href="../output/v2/campus_v2.blend">Blender 源模型</a><a href="../output/v2/campus_v2.glb">GLB 模型</a><a href="review.html" target="_blank">六视角与 V1 对比 ↗</a></section></aside>
+<div id="labels-layer"></div><div id="loading"><b>载入精细园区模型</b><span id="progress">准备建筑与景观资源…</span></div>
+<footer><nav aria-label="模型视角"><button data-view="north" class="active">北望南 · 全景</button><button data-view="south">南望北</button><button data-view="top">总平面</button><button data-view="admin">行政楼</button><button data-view="roof">工业屋顶</button><button data-view="lake">湖岸</button></nav><div class="caption"><span id="status">园区</span><span>概念展示 · 地形与尺寸为设计估算</span><a href="../viewer-twin/">内部数字孪生 ↗</a></div></footer>
+<button id="twin-open" aria-expanded="false" aria-controls="twin-panel"><span>FREECAD</span>建筑构件拆解</button>
+<section id="twin-panel" hidden aria-label="建筑 CAD 与数字孪生演示">
+ <div class="panel-heading"><div><span class="eyebrow">DESIGN / OPERATIONS</span><h2>建筑构件拆解</h2></div><button id="twin-close" aria-label="关闭建筑面板">×</button></div>
+ <div class="demo-note">概念 CAD · 数据模拟 · 未连接现场设备<br><a href="../viewer-twin/">V4 室内机电 · 设备控制与反馈 ↗</a></div>
+ <label class="select-row" for="cad-building">建筑<select id="cad-building"><option value="FAB1">FAB 1 · 主厂房</option><option value="FAB2">FAB 2 · 对称方案</option><option value="HQ">行政研发楼</option><option value="LAB">LAB 实验楼</option><option value="MASK">MASK 厂房</option><option value="EXHIBITION">展示中心</option><option value="DINING_E">东侧餐厅</option><option value="DINING_W">西侧餐厅</option></select></label>
+ <div class="segmented" role="group" aria-label="模型来源"><button id="mode-exterior" class="active">园区外观</button><button id="mode-cad">CAD 构件</button></div>
+ <p id="cad-message" role="status">选择 CAD 构件，查看由 FreeCAD 实体生成的建筑。</p>
+ <div id="cad-controls" hidden>
+  <div class="control-row"><label><input type="checkbox" id="cad-isolate" checked> 独立检视</label><button id="cad-cutaway">剖面预览</button><button id="cad-fit">适合画面</button></div>
+  <label class="range-label" for="cad-explode">构件展开 <output id="explode-value">0%</output></label><input id="cad-explode" type="range" min="0" max="100" value="0" aria-label="构件展开百分比">
+  <label class="range-label" for="cad-section">剖切 <output id="section-value">关闭</output></label><input id="cad-section" type="range" min="0" max="100" value="100" aria-label="建筑剖切位置">
+  <div id="cad-systems" aria-label="构件系统"></div>
+  <div id="cad-component" class="component-card">点选模型中的构件，查看编号和所属系统。</div>
+  <div class="drawing-links"><a id="cad-drawing" target="_blank" rel="noopener">平面 / 立面 / 剖面 ↗</a><a id="cad-source">FCStd 源文件 ↓</a><a href="../output/cad/index.html" target="_blank" rel="noopener">全部图纸 ↗</a></div>
+ </div>
+ <details class="legacy-simulation"><summary>旧版建筑工况示意 · 完整设备控制请进入 V4</summary>
+ <div class="simulation-heading"><h3>运行模拟</h3><span id="sim-clock">00:00</span></div>
+ <label class="select-row" for="sim-scenario">工况<select id="sim-scenario"><option value="normal">正常运行</option><option value="cooling-fault">冷却能力下降</option><option value="recovery">恢复供冷</option></select></label>
+ <div id="telemetry" class="telemetry-grid"></div>
+ <p id="sim-summary" role="status"></p>
+ <div id="sim-events" aria-label="模拟告警"></div>
+ <div class="simulation-actions"><button id="sim-pause">暂停模拟</button><button id="sim-reset">重置</button><button id="sim-export">导出快照</button></div>
+ <details id="snapshot-preview" hidden><summary>最新模拟快照 · JSON</summary><textarea id="snapshot-json" readonly aria-label="模拟快照 JSON"></textarea><a id="snapshot-download" download="campus-simulation.json">下载 JSON 文件 ↓</a></details>
+ <p class="fineprint">温度、湿度、压差与功率为演示值，阈值仅演示逻辑。FAB 新 CAD 采用 fab1.jpg 的 250×90 米意图；其标高与轴网未经核验，和园区旧外观属于不同设计版本。</p>
+ </details>
+</section>
+<script type="module" src="viewer.js?v=8"></script><script type="module" src="cad-twin.js?v=8"></script></body></html>

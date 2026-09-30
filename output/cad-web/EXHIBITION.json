@@ -1,0 +1,1155 @@
+{
+  "building": {
+    "id": "EXHIBITION",
+    "position": [
+      0,
+      237,
+      0
+    ],
+    "size": [
+      118,
+      40,
+      15
+    ],
+    "features": [
+      "raised central hall",
+      "lower side wings",
+      "deep entrance frame",
+      "warm glass",
+      "reflecting pool",
+      "stepped plaza",
+      "metal roof panels"
+    ],
+    "source": "R1 entrance; reconcile R2 roof ambiguity",
+    "confidence": "medium",
+    "levels": {
+      "F0": 0.0,
+      "F1": 7.5,
+      "RF": 15
+    },
+    "dimensionBasis": "V2 image-inferred envelope, architecturally estimated interiors",
+    "units": "m",
+    "axesX": [
+      -59.0,
+      -49.166666666666664,
+      -39.33333333333333,
+      -29.5,
+      -19.666666666666664,
+      -9.833333333333336,
+      0.0,
+      9.833333333333329,
+      19.66666666666667,
+      29.5,
+      39.33333333333333,
+      49.16666666666667,
+      59.0
+    ],
+    "axesY": [
+      -20.0,
+      0,
+      20.0
+    ]
+  },
+  "components": [
+    {
+      "id": "EXHIBITION_foundation_0457",
+      "buildingId": "EXHIBITION",
+      "system": "foundation",
+      "level": "FOUNDATION",
+      "label": "Stepped civic podium",
+      "color": [
+        0.48,
+        0.52,
+        0.57
+      ],
+      "bounds": [
+        -62.5,
+        214.0,
+        0.0,
+        62.5,
+        260.0,
+        1.2
+      ],
+      "source": "Design concept",
+      "freecadName": "EXHIBITION_foundation_0457"
+    },
+    {
+      "id": "EXHIBITION_structure_0458",
+      "buildingId": "EXHIBITION",
+      "system": "structure",
+      "level": "ALL",
+      "label": "Column frame 01",
+      "color": [
+        0.69,
+        0.73,
+        0.77
+      ],
+      "bounds": [
+        -27.425,
+        218.575,
+        1.2,
+        27.425,
+        219.425,
+        16.5
+      ],
+      "source": "Design concept",
+      "freecadName": "EXHIBITION_structure_0458"
+    },
+    {
+      "id": "EXHIBITION_structure_0459",
+      "buildingId": "EXHIBITION",
+      "system": "structure",
+      "level": "ALL",
+      "label": "Column frame 02",
+      "color": [
+        0.69,
+        0.73,
+        0.77
+      ],
+      "bounds": [
+        -27.425,
+        236.575,
+        1.2,
+        27.425,
+        237.425,
+        16.5
+      ],
+      "source": "Design concept",
+      "freecadName": "EXHIBITION_structure_0459"
+    },
+    {
+      "id": "EXHIBITION_structure_0460",
+      "buildingId": "EXHIBITION",
+      "system": "structure",
+      "level": "ALL",
+      "label": "Column frame 03",
+      "color": [
+        0.69,
+        0.73,
+        0.77
+      ],
+      "bounds": [
+        -27.425,
+        254.575,
+        1.2,
+        27.425,
+        255.425,
+        16.5
+      ],
+      "source": "Design concept",
+      "freecadName": "EXHIBITION_structure_0460"
+    },
+    {
+      "id": "EXHIBITION_glazing_0461",
+      "buildingId": "EXHIBITION",
+      "system": "glazing",
+      "level": "ALL",
+      "label": "South curtain wall",
+      "color": [
+        0.24,
+        0.47,
+        0.58
+      ],
+      "bounds": [
+        -28.42,
+        217.44,
+        1.2,
+        28.42,
+        217.56,
+        16.3
+      ],
+      "source": "R1/R2 and Schueco mullion-transom construction",
+      "freecadName": "EXHIBITION_glazing_0461"
+    },
+    {
+      "id": "EXHIBITION_envelope_0462",
+      "buildingId": "EXHIBITION",
+      "system": "envelope",
+      "level": "ALL",
+      "label": "Curtain-wall mullions and transoms",
+      "color": [
+        0.42,
+        0.44,
+        0.44
+      ],
+      "bounds": [
+        -28.56,
+        217.16,
+        1.2,
+        28.56,
+        217.48,
+        16.64
+      ],
+      "source": "Design concept",
+      "freecadName": "EXHIBITION_envelope_0462"
+    },
+    {
+      "id": "EXHIBITION_envelope_0463",
+      "buildingId": "EXHIBITION",
+      "system": "envelope",
+      "level": "ALL",
+      "label": "East/west return panel",
+      "color": [
+        0.84,
+        0.86,
+        0.84
+      ],
+      "bounds": [
+        -28.65,
+        217.5,
+        1.2,
+        -28.35,
+        256.5,
+        16.5
+      ],
+      "source": "Design concept",
+      "freecadName": "EXHIBITION_envelope_0463"
+    },
+    {
+      "id": "EXHIBITION_glazing_0464",
+      "buildingId": "EXHIBITION",
+      "system": "glazing",
+      "level": "ALL",
+      "label": "North curtain wall",
+      "color": [
+        0.24,
+        0.47,
+        0.58
+      ],
+      "bounds": [
+        -28.42,
+        256.44,
+        1.2,
+        28.42,
+        256.56,
+        16.3
+      ],
+      "source": "R1/R2 and Schueco mullion-transom construction",
+      "freecadName": "EXHIBITION_glazing_0464"
+    },
+    {
+      "id": "EXHIBITION_envelope_0465",
+      "buildingId": "EXHIBITION",
+      "system": "envelope",
+      "level": "ALL",
+      "label": "Curtain-wall mullions and transoms",
+      "color": [
+        0.42,
+        0.44,
+        0.44
+      ],
+      "bounds": [
+        -28.56,
+        256.52,
+        1.2,
+        28.56,
+        256.84,
+        16.64
+      ],
+      "source": "Design concept",
+      "freecadName": "EXHIBITION_envelope_0465"
+    },
+    {
+      "id": "EXHIBITION_envelope_0466",
+      "buildingId": "EXHIBITION",
+      "system": "envelope",
+      "level": "ALL",
+      "label": "East/west return panel",
+      "color": [
+        0.84,
+        0.86,
+        0.84
+      ],
+      "bounds": [
+        28.35,
+        217.5,
+        1.2,
+        28.65,
+        256.5,
+        16.5
+      ],
+      "source": "Design concept",
+      "freecadName": "EXHIBITION_envelope_0466"
+    },
+    {
+      "id": "EXHIBITION_slabs_0467",
+      "buildingId": "EXHIBITION",
+      "system": "slabs",
+      "level": "F0",
+      "label": "Zone 1 / floor 1",
+      "color": [
+        0.82,
+        0.84,
+        0.85
+      ],
+      "bounds": [
+        -28.5,
+        217.5,
+        1.2,
+        28.5,
+        256.5,
+        1.6
+      ],
+      "source": "Design concept",
+      "freecadName": "EXHIBITION_slabs_0467"
+    },
+    {
+      "id": "EXHIBITION_interiors_0468",
+      "buildingId": "EXHIBITION",
+      "system": "interiors",
+      "level": "F0",
+      "label": "Configurable room partitions",
+      "color": [
+        0.76,
+        0.83,
+        0.73
+      ],
+      "bounds": [
+        -11.48,
+        219.5,
+        1.6,
+        11.48,
+        254.5,
+        4.8
+      ],
+      "source": "Design concept",
+      "freecadName": "EXHIBITION_interiors_0468"
+    },
+    {
+      "id": "EXHIBITION_slabs_0469",
+      "buildingId": "EXHIBITION",
+      "system": "slabs",
+      "level": "F1",
+      "label": "Zone 1 / floor 2",
+      "color": [
+        0.82,
+        0.84,
+        0.85
+      ],
+      "bounds": [
+        -28.5,
+        217.5,
+        6.3,
+        28.5,
+        256.5,
+        6.7
+      ],
+      "source": "Design concept",
+      "freecadName": "EXHIBITION_slabs_0469"
+    },
+    {
+      "id": "EXHIBITION_interiors_0470",
+      "buildingId": "EXHIBITION",
+      "system": "interiors",
+      "level": "F1",
+      "label": "Configurable room partitions",
+      "color": [
+        0.76,
+        0.83,
+        0.73
+      ],
+      "bounds": [
+        -11.48,
+        219.5,
+        6.7,
+        11.48,
+        254.5,
+        9.9
+      ],
+      "source": "Design concept",
+      "freecadName": "EXHIBITION_interiors_0470"
+    },
+    {
+      "id": "EXHIBITION_slabs_0471",
+      "buildingId": "EXHIBITION",
+      "system": "slabs",
+      "level": "F2",
+      "label": "Zone 1 / floor 3",
+      "color": [
+        0.82,
+        0.84,
+        0.85
+      ],
+      "bounds": [
+        -28.5,
+        217.5,
+        11.4,
+        28.5,
+        256.5,
+        11.8
+      ],
+      "source": "Design concept",
+      "freecadName": "EXHIBITION_slabs_0471"
+    },
+    {
+      "id": "EXHIBITION_roof_0472",
+      "buildingId": "EXHIBITION",
+      "system": "roof",
+      "level": "RF",
+      "label": "Zone 1 roof",
+      "color": [
+        0.49,
+        0.56,
+        0.59
+      ],
+      "bounds": [
+        -29.0,
+        217.0,
+        16.5,
+        29.0,
+        257.0,
+        17.1
+      ],
+      "source": "Design concept",
+      "freecadName": "EXHIBITION_roof_0472"
+    },
+    {
+      "id": "EXHIBITION_structure_0473",
+      "buildingId": "EXHIBITION",
+      "system": "structure",
+      "level": "ALL",
+      "label": "Column frame 01",
+      "color": [
+        0.69,
+        0.73,
+        0.77
+      ],
+      "bounds": [
+        -57.925,
+        221.075,
+        1.2,
+        -30.075,
+        221.925,
+        11.5
+      ],
+      "source": "Design concept",
+      "freecadName": "EXHIBITION_structure_0473"
+    },
+    {
+      "id": "EXHIBITION_structure_0474",
+      "buildingId": "EXHIBITION",
+      "system": "structure",
+      "level": "ALL",
+      "label": "Column frame 02",
+      "color": [
+        0.69,
+        0.73,
+        0.77
+      ],
+      "bounds": [
+        -57.925,
+        236.575,
+        1.2,
+        -30.075,
+        237.425,
+        11.5
+      ],
+      "source": "Design concept",
+      "freecadName": "EXHIBITION_structure_0474"
+    },
+    {
+      "id": "EXHIBITION_structure_0475",
+      "buildingId": "EXHIBITION",
+      "system": "structure",
+      "level": "ALL",
+      "label": "Column frame 03",
+      "color": [
+        0.69,
+        0.73,
+        0.77
+      ],
+      "bounds": [
+        -57.925,
+        252.075,
+        1.2,
+        -30.075,
+        252.925,
+        11.5
+      ],
+      "source": "Design concept",
+      "freecadName": "EXHIBITION_structure_0475"
+    },
+    {
+      "id": "EXHIBITION_glazing_0476",
+      "buildingId": "EXHIBITION",
+      "system": "glazing",
+      "level": "ALL",
+      "label": "South curtain wall",
+      "color": [
+        0.24,
+        0.47,
+        0.58
+      ],
+      "bounds": [
+        -58.92,
+        219.94,
+        1.2,
+        -29.08,
+        220.06,
+        11.3
+      ],
+      "source": "R1/R2 and Schueco mullion-transom construction",
+      "freecadName": "EXHIBITION_glazing_0476"
+    },
+    {
+      "id": "EXHIBITION_envelope_0477",
+      "buildingId": "EXHIBITION",
+      "system": "envelope",
+      "level": "ALL",
+      "label": "Curtain-wall mullions and transoms",
+      "color": [
+        0.42,
+        0.44,
+        0.44
+      ],
+      "bounds": [
+        -59.06,
+        219.66,
+        1.2,
+        -28.94,
+        219.98,
+        11.64
+      ],
+      "source": "Design concept",
+      "freecadName": "EXHIBITION_envelope_0477"
+    },
+    {
+      "id": "EXHIBITION_envelope_0478",
+      "buildingId": "EXHIBITION",
+      "system": "envelope",
+      "level": "ALL",
+      "label": "East/west return panel",
+      "color": [
+        0.84,
+        0.86,
+        0.84
+      ],
+      "bounds": [
+        -59.15,
+        220.0,
+        1.2,
+        -58.85,
+        254.0,
+        11.5
+      ],
+      "source": "Design concept",
+      "freecadName": "EXHIBITION_envelope_0478"
+    },
+    {
+      "id": "EXHIBITION_glazing_0479",
+      "buildingId": "EXHIBITION",
+      "system": "glazing",
+      "level": "ALL",
+      "label": "North curtain wall",
+      "color": [
+        0.24,
+        0.47,
+        0.58
+      ],
+      "bounds": [
+        -58.92,
+        253.94,
+        1.2,
+        -29.08,
+        254.06,
+        11.3
+      ],
+      "source": "R1/R2 and Schueco mullion-transom construction",
+      "freecadName": "EXHIBITION_glazing_0479"
+    },
+    {
+      "id": "EXHIBITION_envelope_0480",
+      "buildingId": "EXHIBITION",
+      "system": "envelope",
+      "level": "ALL",
+      "label": "Curtain-wall mullions and transoms",
+      "color": [
+        0.42,
+        0.44,
+        0.44
+      ],
+      "bounds": [
+        -59.06,
+        254.02,
+        1.2,
+        -28.94,
+        254.34,
+        11.64
+      ],
+      "source": "Design concept",
+      "freecadName": "EXHIBITION_envelope_0480"
+    },
+    {
+      "id": "EXHIBITION_envelope_0481",
+      "buildingId": "EXHIBITION",
+      "system": "envelope",
+      "level": "ALL",
+      "label": "East/west return panel",
+      "color": [
+        0.84,
+        0.86,
+        0.84
+      ],
+      "bounds": [
+        -29.15,
+        220.0,
+        1.2,
+        -28.85,
+        254.0,
+        11.5
+      ],
+      "source": "Design concept",
+      "freecadName": "EXHIBITION_envelope_0481"
+    },
+    {
+      "id": "EXHIBITION_slabs_0482",
+      "buildingId": "EXHIBITION",
+      "system": "slabs",
+      "level": "F0",
+      "label": "Zone 2 / floor 1",
+      "color": [
+        0.82,
+        0.84,
+        0.85
+      ],
+      "bounds": [
+        -59.0,
+        220.0,
+        1.2,
+        -29.0,
+        254.0,
+        1.6
+      ],
+      "source": "Design concept",
+      "freecadName": "EXHIBITION_slabs_0482"
+    },
+    {
+      "id": "EXHIBITION_interiors_0483",
+      "buildingId": "EXHIBITION",
+      "system": "interiors",
+      "level": "F0",
+      "label": "Configurable room partitions",
+      "color": [
+        0.76,
+        0.83,
+        0.73
+      ],
+      "bounds": [
+        -50.08,
+        222.0,
+        1.6,
+        -37.92,
+        252.0,
+        4.8
+      ],
+      "source": "Design concept",
+      "freecadName": "EXHIBITION_interiors_0483"
+    },
+    {
+      "id": "EXHIBITION_slabs_0484",
+      "buildingId": "EXHIBITION",
+      "system": "slabs",
+      "level": "F1",
+      "label": "Zone 2 / floor 2",
+      "color": [
+        0.82,
+        0.84,
+        0.85
+      ],
+      "bounds": [
+        -59.0,
+        220.0,
+        6.35,
+        -29.0,
+        254.0,
+        6.75
+      ],
+      "source": "Design concept",
+      "freecadName": "EXHIBITION_slabs_0484"
+    },
+    {
+      "id": "EXHIBITION_roof_0485",
+      "buildingId": "EXHIBITION",
+      "system": "roof",
+      "level": "RF",
+      "label": "Zone 2 roof",
+      "color": [
+        0.49,
+        0.56,
+        0.59
+      ],
+      "bounds": [
+        -59.5,
+        219.5,
+        11.5,
+        -28.5,
+        254.5,
+        12.1
+      ],
+      "source": "Design concept",
+      "freecadName": "EXHIBITION_roof_0485"
+    },
+    {
+      "id": "EXHIBITION_structure_0486",
+      "buildingId": "EXHIBITION",
+      "system": "structure",
+      "level": "ALL",
+      "label": "Column frame 01",
+      "color": [
+        0.69,
+        0.73,
+        0.77
+      ],
+      "bounds": [
+        30.075,
+        221.075,
+        1.2,
+        57.925,
+        221.925,
+        11.5
+      ],
+      "source": "Design concept",
+      "freecadName": "EXHIBITION_structure_0486"
+    },
+    {
+      "id": "EXHIBITION_structure_0487",
+      "buildingId": "EXHIBITION",
+      "system": "structure",
+      "level": "ALL",
+      "label": "Column frame 02",
+      "color": [
+        0.69,
+        0.73,
+        0.77
+      ],
+      "bounds": [
+        30.075,
+        236.575,
+        1.2,
+        57.925,
+        237.425,
+        11.5
+      ],
+      "source": "Design concept",
+      "freecadName": "EXHIBITION_structure_0487"
+    },
+    {
+      "id": "EXHIBITION_structure_0488",
+      "buildingId": "EXHIBITION",
+      "system": "structure",
+      "level": "ALL",
+      "label": "Column frame 03",
+      "color": [
+        0.69,
+        0.73,
+        0.77
+      ],
+      "bounds": [
+        30.075,
+        252.075,
+        1.2,
+        57.925,
+        252.925,
+        11.5
+      ],
+      "source": "Design concept",
+      "freecadName": "EXHIBITION_structure_0488"
+    },
+    {
+      "id": "EXHIBITION_glazing_0489",
+      "buildingId": "EXHIBITION",
+      "system": "glazing",
+      "level": "ALL",
+      "label": "South curtain wall",
+      "color": [
+        0.24,
+        0.47,
+        0.58
+      ],
+      "bounds": [
+        29.08,
+        219.94,
+        1.2,
+        58.92,
+        220.06,
+        11.3
+      ],
+      "source": "R1/R2 and Schueco mullion-transom construction",
+      "freecadName": "EXHIBITION_glazing_0489"
+    },
+    {
+      "id": "EXHIBITION_envelope_0490",
+      "buildingId": "EXHIBITION",
+      "system": "envelope",
+      "level": "ALL",
+      "label": "Curtain-wall mullions and transoms",
+      "color": [
+        0.42,
+        0.44,
+        0.44
+      ],
+      "bounds": [
+        28.94,
+        219.66,
+        1.2,
+        59.06,
+        219.98,
+        11.64
+      ],
+      "source": "Design concept",
+      "freecadName": "EXHIBITION_envelope_0490"
+    },
+    {
+      "id": "EXHIBITION_envelope_0491",
+      "buildingId": "EXHIBITION",
+      "system": "envelope",
+      "level": "ALL",
+      "label": "East/west return panel",
+      "color": [
+        0.84,
+        0.86,
+        0.84
+      ],
+      "bounds": [
+        28.85,
+        220.0,
+        1.2,
+        29.15,
+        254.0,
+        11.5
+      ],
+      "source": "Design concept",
+      "freecadName": "EXHIBITION_envelope_0491"
+    },
+    {
+      "id": "EXHIBITION_glazing_0492",
+      "buildingId": "EXHIBITION",
+      "system": "glazing",
+      "level": "ALL",
+      "label": "North curtain wall",
+      "color": [
+        0.24,
+        0.47,
+        0.58
+      ],
+      "bounds": [
+        29.08,
+        253.94,
+        1.2,
+        58.92,
+        254.06,
+        11.3
+      ],
+      "source": "R1/R2 and Schueco mullion-transom construction",
+      "freecadName": "EXHIBITION_glazing_0492"
+    },
+    {
+      "id": "EXHIBITION_envelope_0493",
+      "buildingId": "EXHIBITION",
+      "system": "envelope",
+      "level": "ALL",
+      "label": "Curtain-wall mullions and transoms",
+      "color": [
+        0.42,
+        0.44,
+        0.44
+      ],
+      "bounds": [
+        28.94,
+        254.02,
+        1.2,
+        59.06,
+        254.34,
+        11.64
+      ],
+      "source": "Design concept",
+      "freecadName": "EXHIBITION_envelope_0493"
+    },
+    {
+      "id": "EXHIBITION_envelope_0494",
+      "buildingId": "EXHIBITION",
+      "system": "envelope",
+      "level": "ALL",
+      "label": "East/west return panel",
+      "color": [
+        0.84,
+        0.86,
+        0.84
+      ],
+      "bounds": [
+        58.85,
+        220.0,
+        1.2,
+        59.15,
+        254.0,
+        11.5
+      ],
+      "source": "Design concept",
+      "freecadName": "EXHIBITION_envelope_0494"
+    },
+    {
+      "id": "EXHIBITION_slabs_0495",
+      "buildingId": "EXHIBITION",
+      "system": "slabs",
+      "level": "F0",
+      "label": "Zone 3 / floor 1",
+      "color": [
+        0.82,
+        0.84,
+        0.85
+      ],
+      "bounds": [
+        29.0,
+        220.0,
+        1.2,
+        59.0,
+        254.0,
+        1.6
+      ],
+      "source": "Design concept",
+      "freecadName": "EXHIBITION_slabs_0495"
+    },
+    {
+      "id": "EXHIBITION_interiors_0496",
+      "buildingId": "EXHIBITION",
+      "system": "interiors",
+      "level": "F0",
+      "label": "Configurable room partitions",
+      "color": [
+        0.76,
+        0.83,
+        0.73
+      ],
+      "bounds": [
+        37.92,
+        222.0,
+        1.6,
+        50.08,
+        252.0,
+        4.8
+      ],
+      "source": "Design concept",
+      "freecadName": "EXHIBITION_interiors_0496"
+    },
+    {
+      "id": "EXHIBITION_slabs_0497",
+      "buildingId": "EXHIBITION",
+      "system": "slabs",
+      "level": "F1",
+      "label": "Zone 3 / floor 2",
+      "color": [
+        0.82,
+        0.84,
+        0.85
+      ],
+      "bounds": [
+        29.0,
+        220.0,
+        6.35,
+        59.0,
+        254.0,
+        6.75
+      ],
+      "source": "Design concept",
+      "freecadName": "EXHIBITION_slabs_0497"
+    },
+    {
+      "id": "EXHIBITION_roof_0498",
+      "buildingId": "EXHIBITION",
+      "system": "roof",
+      "level": "RF",
+      "label": "Zone 3 roof",
+      "color": [
+        0.49,
+        0.56,
+        0.59
+      ],
+      "bounds": [
+        28.5,
+        219.5,
+        11.5,
+        59.5,
+        254.5,
+        12.1
+      ],
+      "source": "Design concept",
+      "freecadName": "EXHIBITION_roof_0498"
+    },
+    {
+      "id": "EXHIBITION_roof_0499",
+      "buildingId": "EXHIBITION",
+      "system": "roof",
+      "level": "ENTRY",
+      "label": "Entrance canopy",
+      "color": [
+        0.49,
+        0.56,
+        0.59
+      ],
+      "bounds": [
+        -17.0,
+        208.0,
+        7.2,
+        17.0,
+        218.0,
+        7.8
+      ],
+      "source": "Design concept",
+      "freecadName": "EXHIBITION_roof_0499"
+    },
+    {
+      "id": "EXHIBITION_structure_0500",
+      "buildingId": "EXHIBITION",
+      "system": "structure",
+      "level": "ENTRY",
+      "label": "Portico columns",
+      "color": [
+        0.69,
+        0.73,
+        0.77
+      ],
+      "bounds": [
+        -16.4,
+        209.6,
+        0.0,
+        16.4,
+        210.4,
+        7.2
+      ],
+      "source": "Design concept",
+      "freecadName": "EXHIBITION_structure_0500"
+    },
+    {
+      "id": "EXHIBITION_circulation_0501",
+      "buildingId": "EXHIBITION",
+      "system": "circulation",
+      "level": "ENTRY",
+      "label": "Entrance steps",
+      "color": [
+        0.79,
+        0.65,
+        0.38
+      ],
+      "bounds": [
+        -25.0,
+        203.5,
+        0.0,
+        25.0,
+        208.3,
+        1.2
+      ],
+      "source": "Design concept",
+      "freecadName": "EXHIBITION_circulation_0501"
+    },
+    {
+      "id": "EXHIBITION_glazing_0502",
+      "buildingId": "EXHIBITION",
+      "system": "glazing",
+      "level": "ENTRY",
+      "label": "Glazed entrance doors",
+      "color": [
+        0.24,
+        0.47,
+        0.58
+      ],
+      "bounds": [
+        -4.0,
+        215.93,
+        1.2,
+        4.0,
+        216.07,
+        5.2
+      ],
+      "source": "Design concept",
+      "freecadName": "EXHIBITION_glazing_0502"
+    },
+    {
+      "id": "EXHIBITION_roof_0503",
+      "buildingId": "EXHIBITION",
+      "system": "roof",
+      "level": "ENTRY",
+      "label": "Entrance canopy",
+      "color": [
+        0.49,
+        0.56,
+        0.59
+      ],
+      "bounds": [
+        -17.0,
+        256.0,
+        7.2,
+        17.0,
+        266.0,
+        7.8
+      ],
+      "source": "Design concept",
+      "freecadName": "EXHIBITION_roof_0503"
+    },
+    {
+      "id": "EXHIBITION_structure_0504",
+      "buildingId": "EXHIBITION",
+      "system": "structure",
+      "level": "ENTRY",
+      "label": "Portico columns",
+      "color": [
+        0.69,
+        0.73,
+        0.77
+      ],
+      "bounds": [
+        -16.4,
+        263.6,
+        0.0,
+        16.4,
+        264.4,
+        7.2
+      ],
+      "source": "Design concept",
+      "freecadName": "EXHIBITION_structure_0504"
+    },
+    {
+      "id": "EXHIBITION_circulation_0505",
+      "buildingId": "EXHIBITION",
+      "system": "circulation",
+      "level": "ENTRY",
+      "label": "Entrance steps",
+      "color": [
+        0.79,
+        0.65,
+        0.38
+      ],
+      "bounds": [
+        -25.0,
+        265.7,
+        0.0,
+        25.0,
+        270.5,
+        1.2
+      ],
+      "source": "Design concept",
+      "freecadName": "EXHIBITION_circulation_0505"
+    },
+    {
+      "id": "EXHIBITION_glazing_0506",
+      "buildingId": "EXHIBITION",
+      "system": "glazing",
+      "level": "ENTRY",
+      "label": "Glazed entrance doors",
+      "color": [
+        0.24,
+        0.47,
+        0.58
+      ],
+      "bounds": [
+        -4.0,
+        257.93,
+        1.2,
+        4.0,
+        258.07,
+        5.2
+      ],
+      "source": "Design concept",
+      "freecadName": "EXHIBITION_glazing_0506"
+    }
+  ]
+}

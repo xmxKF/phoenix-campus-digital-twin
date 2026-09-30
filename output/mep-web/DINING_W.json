@@ -1,0 +1,4914 @@
+{
+  "building": {
+    "id": "DINING_W",
+    "position": [
+      -258,
+      136,
+      0
+    ],
+    "size": [
+      61,
+      34,
+      15
+    ],
+    "features": [
+      "two-storey pavilion",
+      "horizontal roof planes",
+      "glazed terrace",
+      "pergola and parasols"
+    ],
+    "source": "R1 west flat form; labels conflict",
+    "confidence": "medium",
+    "levels": {
+      "F0": 0.0,
+      "F1": 7.5,
+      "RF": 15
+    },
+    "dimensionBasis": "V2 image-inferred envelope, architecturally estimated interiors",
+    "units": "m",
+    "axesX": [
+      -29.0,
+      -17.4,
+      -5.8,
+      5.8,
+      17.4,
+      29.0
+    ],
+    "axesY": [
+      -15.5,
+      0.0,
+      15.5
+    ]
+  },
+  "components": [
+    {
+      "id": "V4_DINING_W_MDB",
+      "buildingId": "DINING_W",
+      "system": "electrical",
+      "level": "PLANT",
+      "label": "主配电柜",
+      "color": [
+        0.3,
+        0.34,
+        0.39
+      ],
+      "bounds": [
+        -282.95,
+        121.795,
+        0.8,
+        -282.05,
+        122.125,
+        2.4
+      ],
+      "freecadName": "V4_DINING_W_MDB",
+      "roomId": null,
+      "meta": {
+        "id": "V4_DINING_W_MDB",
+        "assetId": "V4_DINING_W_MDB",
+        "buildingId": "DINING_W",
+        "roomId": null,
+        "controlKind": "breaker",
+        "type": "main_panel",
+        "label": "主配电柜",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "upstreamIds": [],
+        "ratedPowerKw": 0,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_WATER_MAIN",
+      "buildingId": "DINING_W",
+      "system": "water",
+      "level": "PLANT",
+      "label": "可控支路阀门",
+      "color": [
+        0.75,
+        0.34,
+        0.2
+      ],
+      "bounds": [
+        -279.7,
+        123.89,
+        3.44,
+        -279.3,
+        124.11,
+        3.795
+      ],
+      "freecadName": "V4_DINING_W_WATER_MAIN",
+      "roomId": null,
+      "meta": {
+        "id": "V4_DINING_W_WATER_MAIN",
+        "assetId": "V4_DINING_W_WATER_MAIN",
+        "buildingId": "DINING_W",
+        "roomId": null,
+        "controlKind": "valve",
+        "type": "isolation_valve",
+        "label": "生活冷水总阀",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "medium": "domestic_cold",
+        "waterBranchId": "DINING_W_W_COLD_MAIN",
+        "ratedFlowLpm": 120,
+        "upstreamIds": [],
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_HOT_MAIN",
+      "buildingId": "DINING_W",
+      "system": "water",
+      "level": "PLANT",
+      "label": "可控支路阀门",
+      "color": [
+        0.75,
+        0.34,
+        0.2
+      ],
+      "bounds": [
+        -279.7,
+        124.89,
+        3.44,
+        -279.3,
+        125.11,
+        3.795
+      ],
+      "freecadName": "V4_DINING_W_HOT_MAIN",
+      "roomId": null,
+      "meta": {
+        "id": "V4_DINING_W_HOT_MAIN",
+        "assetId": "V4_DINING_W_HOT_MAIN",
+        "buildingId": "DINING_W",
+        "roomId": null,
+        "controlKind": "valve",
+        "type": "isolation_valve",
+        "label": "生活热水供水总阀",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "medium": "domestic_hot",
+        "waterBranchId": "DINING_W_W_HOT_MAIN",
+        "ratedFlowLpm": 80,
+        "upstreamIds": [],
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_HOT_PUMP",
+      "buildingId": "DINING_W",
+      "system": "water",
+      "level": "PLANT",
+      "label": "热水循环泵",
+      "color": [
+        0.22,
+        0.43,
+        0.61
+      ],
+      "bounds": [
+        -278.3,
+        125.275,
+        0.4,
+        -276.7,
+        126.125,
+        1.5
+      ],
+      "freecadName": "V4_DINING_W_HOT_PUMP",
+      "roomId": null,
+      "meta": {
+        "id": "V4_DINING_W_HOT_PUMP",
+        "assetId": "V4_DINING_W_HOT_PUMP",
+        "buildingId": "DINING_W",
+        "roomId": null,
+        "controlKind": "pump",
+        "type": "circulation_pump",
+        "label": "热水回水循环泵",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "medium": "domestic_hot_return",
+        "waterBranchId": "DINING_W_W_HOT_RETURN",
+        "ratedFlowLpm": 60,
+        "ratedPowerKw": 0.75,
+        "circuitId": "DINING_W_C_PLANT",
+        "upstreamIds": [
+          "V4_DINING_W_MDB"
+        ],
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_HOT_CYLINDER",
+      "buildingId": "DINING_W",
+      "system": "water",
+      "level": "PLANT",
+      "label": "生活热水/回水缓冲容器",
+      "color": [
+        0.69,
+        0.72,
+        0.7
+      ],
+      "bounds": [
+        -276.15,
+        125.05,
+        0.35,
+        -274.85,
+        126.35,
+        2.1
+      ],
+      "freecadName": "V4_DINING_W_HOT_CYLINDER",
+      "roomId": null,
+      "meta": {
+        "type": "hot_water_buffer",
+        "medium": "domestic_hot",
+        "roomId": null,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_HOT_LOOP_LINKS",
+      "buildingId": "DINING_W",
+      "system": "water",
+      "level": "PLANT",
+      "label": "热水回水泵与缓冲容器连接",
+      "color": [
+        0.58,
+        0.31,
+        0.6
+      ],
+      "bounds": [
+        -279.5,
+        124.9298,
+        0.7298,
+        -275.4298,
+        125.8702,
+        3.6202
+      ],
+      "freecadName": "V4_DINING_W_HOT_LOOP_LINKS",
+      "roomId": null,
+      "meta": {
+        "type": "pipe",
+        "medium": "domestic_hot_return",
+        "waterBranchId": "DINING_W_W_HOT_RETURN",
+        "roomId": null,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_MAIN_COLD",
+      "buildingId": "DINING_W",
+      "system": "water",
+      "level": "PLANT",
+      "label": "domestic_cold · 立管与层分配主管",
+      "color": [
+        0.12,
+        0.44,
+        0.72
+      ],
+      "bounds": [
+        -279.58,
+        123.92,
+        3.47,
+        -233.5,
+        124.08,
+        11.13
+      ],
+      "freecadName": "V4_DINING_W_MAIN_COLD",
+      "roomId": null,
+      "meta": {
+        "type": "water_main",
+        "medium": "domestic_cold",
+        "waterBranchId": "DINING_W_W_COLD_MAIN",
+        "roomId": null,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_MAIN_HOT",
+      "buildingId": "DINING_W",
+      "system": "water",
+      "level": "PLANT",
+      "label": "domestic_hot · 立管与层分配主管",
+      "color": [
+        0.77,
+        0.27,
+        0.21
+      ],
+      "bounds": [
+        -279.58,
+        124.92,
+        3.47,
+        -233.5,
+        125.08,
+        11.13
+      ],
+      "freecadName": "V4_DINING_W_MAIN_HOT",
+      "roomId": null,
+      "meta": {
+        "type": "water_main",
+        "medium": "domestic_hot",
+        "waterBranchId": "DINING_W_W_HOT_MAIN",
+        "roomId": null,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_MAIN_HOT_RETURN",
+      "buildingId": "DINING_W",
+      "system": "water",
+      "level": "PLANT",
+      "label": "domestic_hot_return · 立管与层分配主管",
+      "color": [
+        0.58,
+        0.31,
+        0.6
+      ],
+      "bounds": [
+        -279.58,
+        125.0,
+        3.47,
+        -233.42,
+        125.88,
+        11.13
+      ],
+      "freecadName": "V4_DINING_W_MAIN_HOT_RETURN",
+      "roomId": null,
+      "meta": {
+        "type": "water_main",
+        "medium": "domestic_hot_return",
+        "waterBranchId": "DINING_W_W_HOT_RETURN",
+        "roomId": null,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_TRAY0",
+      "buildingId": "DINING_W",
+      "system": "electrical",
+      "level": "PLANT",
+      "label": "主电缆桥架及馈线",
+      "color": [
+        0.3,
+        0.34,
+        0.39
+      ],
+      "bounds": [
+        -282.5,
+        122.0,
+        3.85,
+        -233.5,
+        122.4,
+        4.0
+      ],
+      "freecadName": "V4_DINING_W_TRAY0",
+      "roomId": null,
+      "meta": {
+        "type": "cable_tray",
+        "upstreamIds": [
+          "V4_DINING_W_MDB"
+        ],
+        "roomId": null,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_TRAY1",
+      "buildingId": "DINING_W",
+      "system": "electrical",
+      "level": "PLANT",
+      "label": "主电缆桥架及馈线",
+      "color": [
+        0.3,
+        0.34,
+        0.39
+      ],
+      "bounds": [
+        -282.5,
+        122.0,
+        11.35,
+        -233.5,
+        122.4,
+        11.5
+      ],
+      "freecadName": "V4_DINING_W_TRAY1",
+      "roomId": null,
+      "meta": {
+        "type": "cable_tray",
+        "upstreamIds": [
+          "V4_DINING_W_MDB"
+        ],
+        "roomId": null,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_MDB_RISER",
+      "buildingId": "DINING_W",
+      "system": "electrical",
+      "level": "PLANT",
+      "label": "主配电至桥架竖向馈线",
+      "color": [
+        0.37,
+        0.31,
+        0.21
+      ],
+      "bounds": [
+        -282.527,
+        122.0,
+        2.273,
+        -282.473,
+        122.227,
+        11.42
+      ],
+      "freecadName": "V4_DINING_W_MDB_RISER",
+      "roomId": null,
+      "meta": {
+        "type": "cable",
+        "upstreamIds": [
+          "V4_DINING_W_MDB"
+        ],
+        "roomId": null,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R01_WALLS",
+      "buildingId": "DINING_W",
+      "system": "interiors",
+      "level": "F0",
+      "label": "咖啡与简餐区 · 隔墙与门洞",
+      "color": [
+        0.72,
+        0.77,
+        0.75
+      ],
+      "bounds": [
+        -285.0,
+        122.5,
+        0.425,
+        -242.0,
+        149.5,
+        3.425
+      ],
+      "freecadName": "V4_DINING_W_R01_WALLS",
+      "roomId": "DINING_W_R01",
+      "meta": {
+        "type": "room_partition",
+        "roomId": "DINING_W_R01",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R01_ROOM_GLAZING",
+      "buildingId": "DINING_W",
+      "system": "interiors",
+      "level": "F0",
+      "label": "观察窗",
+      "color": [
+        0.08,
+        0.24,
+        0.3
+      ],
+      "bounds": [
+        -274.68,
+        149.4775,
+        1.5,
+        -252.32,
+        149.5225,
+        2.85
+      ],
+      "freecadName": "V4_DINING_W_R01_ROOM_GLAZING",
+      "roomId": "DINING_W_R01",
+      "meta": {
+        "type": "interior_glazing",
+        "roomId": "DINING_W_R01",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R01_FLOOR_ZONE",
+      "buildingId": "DINING_W",
+      "system": "interiors",
+      "level": "F0",
+      "label": "咖啡与简餐区 · 功能区域",
+      "color": [
+        0.68,
+        0.54,
+        0.38
+      ],
+      "bounds": [
+        -284.875,
+        122.625,
+        0.406,
+        -242.125,
+        149.375,
+        0.418
+      ],
+      "freecadName": "V4_DINING_W_R01_FLOOR_ZONE",
+      "roomId": "DINING_W_R01",
+      "meta": {
+        "type": "room_zone",
+        "roomAreaM2": 1161,
+        "roomId": "DINING_W_R01",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R01_DOOR",
+      "buildingId": "DINING_W",
+      "system": "interiors",
+      "level": "F0",
+      "label": "常开门及门框",
+      "color": [
+        0.54,
+        0.62,
+        0.6
+      ],
+      "bounds": [
+        -264.655,
+        122.38,
+        0.4,
+        -262.345,
+        123.58832,
+        2.75
+      ],
+      "freecadName": "V4_DINING_W_R01_DOOR",
+      "roomId": "DINING_W_R01",
+      "meta": {
+        "type": "door",
+        "roomId": "DINING_W_R01",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R01_F01",
+      "buildingId": "DINING_W",
+      "system": "interiors",
+      "level": "F0",
+      "label": "休闲座椅与边桌",
+      "color": [
+        0.58,
+        0.39,
+        0.23
+      ],
+      "bounds": [
+        -279.22,
+        135.65,
+        0.4,
+        -277.98,
+        136.35,
+        1.38
+      ],
+      "freecadName": "V4_DINING_W_R01_F01",
+      "roomId": "DINING_W_R01",
+      "meta": {
+        "type": "furniture",
+        "roomId": "DINING_W_R01",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R01_F02",
+      "buildingId": "DINING_W",
+      "system": "interiors",
+      "level": "F0",
+      "label": "休闲座椅与边桌",
+      "color": [
+        0.58,
+        0.39,
+        0.23
+      ],
+      "bounds": [
+        -273.028,
+        135.65,
+        0.4,
+        -271.788,
+        136.35,
+        1.38
+      ],
+      "freecadName": "V4_DINING_W_R01_F02",
+      "roomId": "DINING_W_R01",
+      "meta": {
+        "type": "furniture",
+        "roomId": "DINING_W_R01",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R01_F03",
+      "buildingId": "DINING_W",
+      "system": "interiors",
+      "level": "F0",
+      "label": "休闲座椅与边桌",
+      "color": [
+        0.58,
+        0.39,
+        0.23
+      ],
+      "bounds": [
+        -266.836,
+        135.65,
+        0.4,
+        -265.596,
+        136.35,
+        1.38
+      ],
+      "freecadName": "V4_DINING_W_R01_F03",
+      "roomId": "DINING_W_R01",
+      "meta": {
+        "type": "furniture",
+        "roomId": "DINING_W_R01",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R01_F04",
+      "buildingId": "DINING_W",
+      "system": "interiors",
+      "level": "F0",
+      "label": "休闲座椅与边桌",
+      "color": [
+        0.58,
+        0.39,
+        0.23
+      ],
+      "bounds": [
+        -260.644,
+        135.65,
+        0.4,
+        -259.404,
+        136.35,
+        1.38
+      ],
+      "freecadName": "V4_DINING_W_R01_F04",
+      "roomId": "DINING_W_R01",
+      "meta": {
+        "type": "furniture",
+        "roomId": "DINING_W_R01",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R01_F05",
+      "buildingId": "DINING_W",
+      "system": "interiors",
+      "level": "F0",
+      "label": "休闲座椅与边桌",
+      "color": [
+        0.58,
+        0.39,
+        0.23
+      ],
+      "bounds": [
+        -254.452,
+        135.65,
+        0.4,
+        -253.212,
+        136.35,
+        1.38
+      ],
+      "freecadName": "V4_DINING_W_R01_F05",
+      "roomId": "DINING_W_R01",
+      "meta": {
+        "type": "furniture",
+        "roomId": "DINING_W_R01",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R01_F06",
+      "buildingId": "DINING_W",
+      "system": "interiors",
+      "level": "F0",
+      "label": "休闲座椅与边桌",
+      "color": [
+        0.58,
+        0.39,
+        0.23
+      ],
+      "bounds": [
+        -248.26,
+        135.65,
+        0.4,
+        -247.02,
+        136.35,
+        1.38
+      ],
+      "freecadName": "V4_DINING_W_R01_F06",
+      "roomId": "DINING_W_R01",
+      "meta": {
+        "type": "furniture",
+        "roomId": "DINING_W_R01",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R01_F07",
+      "buildingId": "DINING_W",
+      "system": "interiors",
+      "level": "F0",
+      "label": "咖啡服务柜台",
+      "color": [
+        0.58,
+        0.39,
+        0.23
+      ],
+      "bounds": [
+        -277.5,
+        127.4,
+        0.4,
+        -275.3,
+        128.4,
+        2.0
+      ],
+      "freecadName": "V4_DINING_W_R01_F07",
+      "roomId": "DINING_W_R01",
+      "meta": {
+        "type": "furniture",
+        "circuitId": "DINING_W_R01_C_POWER",
+        "ratedPowerKw": 2,
+        "roomId": "DINING_W_R01",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R01_DB",
+      "buildingId": "DINING_W",
+      "system": "electrical",
+      "level": "F0",
+      "label": "房间配电箱与断路器",
+      "color": [
+        0.3,
+        0.34,
+        0.39
+      ],
+      "bounds": [
+        -242.725,
+        122.495,
+        1.5,
+        -242.175,
+        122.825,
+        2.3
+      ],
+      "freecadName": "V4_DINING_W_R01_DB",
+      "roomId": "DINING_W_R01",
+      "meta": {
+        "id": "V4_DINING_W_R01_DB",
+        "assetId": "V4_DINING_W_R01_DB",
+        "buildingId": "DINING_W",
+        "roomId": "DINING_W_R01",
+        "controlKind": "breaker",
+        "type": "distribution_panel",
+        "label": "房间配电箱",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "upstreamIds": [
+          "V4_DINING_W_MDB"
+        ],
+        "ratedPowerKw": 0,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R01_FEEDER",
+      "buildingId": "DINING_W",
+      "system": "electrical",
+      "level": "F0",
+      "label": "主桥架至房间配电馈线",
+      "color": [
+        0.39,
+        0.32,
+        0.23
+      ],
+      "bounds": [
+        -242.46944,
+        122.2,
+        2.2,
+        -242.43056,
+        122.71944,
+        3.93944
+      ],
+      "freecadName": "V4_DINING_W_R01_FEEDER",
+      "roomId": "DINING_W_R01",
+      "meta": {
+        "type": "cable",
+        "upstreamIds": [
+          "V4_DINING_W_MDB",
+          "V4_DINING_W_R01_DB"
+        ],
+        "roomId": "DINING_W_R01",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R01_L01",
+      "buildingId": "DINING_W",
+      "system": "lighting",
+      "level": "F0",
+      "label": "可调光照明分组 1",
+      "color": [
+        0.98,
+        0.91,
+        0.69
+      ],
+      "bounds": [
+        -279.3,
+        126.5,
+        3.138,
+        -258.02,
+        145.5,
+        3.75
+      ],
+      "freecadName": "V4_DINING_W_R01_L01",
+      "roomId": "DINING_W_R01",
+      "meta": {
+        "id": "V4_DINING_W_R01_L01",
+        "assetId": "V4_DINING_W_R01_L01",
+        "buildingId": "DINING_W",
+        "roomId": "DINING_W_R01",
+        "controlKind": "light",
+        "type": "luminaire_group",
+        "label": "照明分组 1",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "circuitId": "DINING_W_R01_C_LIGHT",
+        "ratedPowerKw": 1.7415,
+        "upstreamIds": [
+          "V4_DINING_W_R01_DB"
+        ],
+        "dimmable": true,
+        "fixtureCount": 4,
+        "sourceReference": "ERCO grouped track lighting for exhibition; LED panels elsewhere",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R01_L02",
+      "buildingId": "DINING_W",
+      "system": "lighting",
+      "level": "F0",
+      "label": "可调光照明分组 2",
+      "color": [
+        0.98,
+        0.91,
+        0.69
+      ],
+      "bounds": [
+        -268.98,
+        126.5,
+        3.138,
+        -247.7,
+        145.5,
+        3.75
+      ],
+      "freecadName": "V4_DINING_W_R01_L02",
+      "roomId": "DINING_W_R01",
+      "meta": {
+        "id": "V4_DINING_W_R01_L02",
+        "assetId": "V4_DINING_W_R01_L02",
+        "buildingId": "DINING_W",
+        "roomId": "DINING_W_R01",
+        "controlKind": "light",
+        "type": "luminaire_group",
+        "label": "照明分组 2",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "circuitId": "DINING_W_R01_C_LIGHT",
+        "ratedPowerKw": 1.7415,
+        "upstreamIds": [
+          "V4_DINING_W_R01_DB"
+        ],
+        "dimmable": true,
+        "fixtureCount": 4,
+        "sourceReference": "ERCO grouped track lighting for exhibition; LED panels elsewhere",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R01_L03",
+      "buildingId": "DINING_W",
+      "system": "lighting",
+      "level": "F0",
+      "label": "可调光照明分组 3",
+      "color": [
+        0.98,
+        0.91,
+        0.69
+      ],
+      "bounds": [
+        -279.3,
+        135.68,
+        3.138,
+        -258.02,
+        136.32,
+        3.75
+      ],
+      "freecadName": "V4_DINING_W_R01_L03",
+      "roomId": "DINING_W_R01",
+      "meta": {
+        "id": "V4_DINING_W_R01_L03",
+        "assetId": "V4_DINING_W_R01_L03",
+        "buildingId": "DINING_W",
+        "roomId": "DINING_W_R01",
+        "controlKind": "light",
+        "type": "luminaire_group",
+        "label": "照明分组 3",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "circuitId": "DINING_W_R01_C_LIGHT",
+        "ratedPowerKw": 1.7415,
+        "upstreamIds": [
+          "V4_DINING_W_R01_DB"
+        ],
+        "dimmable": true,
+        "fixtureCount": 2,
+        "sourceReference": "ERCO grouped track lighting for exhibition; LED panels elsewhere",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R01_L04",
+      "buildingId": "DINING_W",
+      "system": "lighting",
+      "level": "F0",
+      "label": "可调光照明分组 4",
+      "color": [
+        0.98,
+        0.91,
+        0.69
+      ],
+      "bounds": [
+        -268.98,
+        135.68,
+        3.138,
+        -247.7,
+        136.32,
+        3.75
+      ],
+      "freecadName": "V4_DINING_W_R01_L04",
+      "roomId": "DINING_W_R01",
+      "meta": {
+        "id": "V4_DINING_W_R01_L04",
+        "assetId": "V4_DINING_W_R01_L04",
+        "buildingId": "DINING_W",
+        "roomId": "DINING_W_R01",
+        "controlKind": "light",
+        "type": "luminaire_group",
+        "label": "照明分组 4",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "circuitId": "DINING_W_R01_C_LIGHT",
+        "ratedPowerKw": 1.7415,
+        "upstreamIds": [
+          "V4_DINING_W_R01_DB"
+        ],
+        "dimmable": true,
+        "fixtureCount": 2,
+        "sourceReference": "ERCO grouped track lighting for exhibition; LED panels elsewhere",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R01_LIGHT_DROPS",
+      "buildingId": "DINING_W",
+      "system": "electrical",
+      "level": "F0",
+      "label": "照明干线至灯具分组支线",
+      "color": [
+        0.3,
+        0.34,
+        0.39
+      ],
+      "bounds": [
+        -278.989,
+        126.421,
+        3.741,
+        -242.45,
+        145.18,
+        3.759
+      ],
+      "freecadName": "V4_DINING_W_R01_LIGHT_DROPS",
+      "roomId": "DINING_W_R01",
+      "meta": {
+        "type": "branch_cable",
+        "circuitId": "DINING_W_R01_C_LIGHT",
+        "roomId": "DINING_W_R01",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R01_CABLE_0",
+      "buildingId": "DINING_W",
+      "system": "electrical",
+      "level": "F0",
+      "label": "独立照明电路",
+      "color": [
+        0.3,
+        0.31,
+        0.34
+      ],
+      "bounds": [
+        -278.55,
+        122.68596,
+        2.1,
+        -242.43596,
+        126.44404,
+        3.76404
+      ],
+      "freecadName": "V4_DINING_W_R01_CABLE_0",
+      "roomId": "DINING_W_R01",
+      "meta": {
+        "type": "branch_cable",
+        "circuitId": "DINING_W_R01_C_LIGHT",
+        "upstreamIds": [
+          "V4_DINING_W_R01_DB"
+        ],
+        "roomId": "DINING_W_R01",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R01_CABLE_1",
+      "buildingId": "DINING_W",
+      "system": "electrical",
+      "level": "F0",
+      "label": "独立插座/设备电路",
+      "color": [
+        0.3,
+        0.31,
+        0.34
+      ],
+      "bounds": [
+        -278.55,
+        122.68596,
+        2.1,
+        -242.43596,
+        126.56404,
+        3.83404
+      ],
+      "freecadName": "V4_DINING_W_R01_CABLE_1",
+      "roomId": "DINING_W_R01",
+      "meta": {
+        "type": "branch_cable",
+        "circuitId": "DINING_W_R01_C_POWER",
+        "upstreamIds": [
+          "V4_DINING_W_R01_DB"
+        ],
+        "roomId": "DINING_W_R01",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R01_CABLE_2",
+      "buildingId": "DINING_W",
+      "system": "electrical",
+      "level": "F0",
+      "label": "独立空调电路",
+      "color": [
+        0.3,
+        0.31,
+        0.34
+      ],
+      "bounds": [
+        -278.55,
+        122.68596,
+        2.1,
+        -242.43596,
+        126.68404,
+        3.90404
+      ],
+      "freecadName": "V4_DINING_W_R01_CABLE_2",
+      "roomId": "DINING_W_R01",
+      "meta": {
+        "type": "branch_cable",
+        "circuitId": "DINING_W_R01_C_HVAC",
+        "upstreamIds": [
+          "V4_DINING_W_R01_DB"
+        ],
+        "roomId": "DINING_W_R01",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R01_SOCKET0",
+      "buildingId": "DINING_W",
+      "system": "electrical",
+      "level": "F0",
+      "label": "墙面插座及下引线",
+      "color": [
+        0.3,
+        0.34,
+        0.39
+      ],
+      "bounds": [
+        -276.465,
+        122.65,
+        0.76,
+        -242.45,
+        122.71,
+        3.82972
+      ],
+      "freecadName": "V4_DINING_W_R01_SOCKET0",
+      "roomId": "DINING_W_R01",
+      "meta": {
+        "type": "socket",
+        "circuitId": "DINING_W_R01_C_POWER",
+        "roomId": "DINING_W_R01",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R01_SOCKET1",
+      "buildingId": "DINING_W",
+      "system": "electrical",
+      "level": "F0",
+      "label": "墙面插座及下引线",
+      "color": [
+        0.3,
+        0.34,
+        0.39
+      ],
+      "bounds": [
+        -250.665,
+        122.65,
+        0.76,
+        -242.45,
+        122.71,
+        3.82972
+      ],
+      "freecadName": "V4_DINING_W_R01_SOCKET1",
+      "roomId": "DINING_W_R01",
+      "meta": {
+        "type": "socket",
+        "circuitId": "DINING_W_R01_C_POWER",
+        "roomId": "DINING_W_R01",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R01_AHU",
+      "buildingId": "DINING_W",
+      "system": "hvac",
+      "level": "F0",
+      "label": "局部空调与送回风终端",
+      "color": [
+        0.68,
+        0.75,
+        0.77
+      ],
+      "bounds": [
+        -284.525,
+        123.14,
+        2.55,
+        -248.45,
+        136.35,
+        3.7
+      ],
+      "freecadName": "V4_DINING_W_R01_AHU",
+      "roomId": "DINING_W_R01",
+      "meta": {
+        "id": "V4_DINING_W_R01_AHU",
+        "assetId": "V4_DINING_W_R01_AHU",
+        "buildingId": "DINING_W",
+        "roomId": "DINING_W_R01",
+        "controlKind": "ahu",
+        "type": "air_handling_unit",
+        "label": "局部空调/通风机组",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "circuitId": "DINING_W_R01_C_HVAC",
+        "ratedPowerKw": 13.932,
+        "upstreamIds": [
+          "V4_DINING_W_R01_DB"
+        ],
+        "designCoolingKw": 116.10000000000001,
+        "representativeTerminal": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R01_S_TEMPERATURE",
+      "buildingId": "DINING_W",
+      "system": "sensors",
+      "level": "F0",
+      "label": "温度传感器",
+      "color": [
+        0.22,
+        0.63,
+        0.65
+      ],
+      "bounds": [
+        -284.96,
+        128.36,
+        1.75,
+        -284.835,
+        128.52,
+        1.97
+      ],
+      "freecadName": "V4_DINING_W_R01_S_TEMPERATURE",
+      "roomId": "DINING_W_R01",
+      "meta": {
+        "id": "V4_DINING_W_R01_S_TEMPERATURE",
+        "assetId": "V4_DINING_W_R01_S_TEMPERATURE",
+        "buildingId": "DINING_W",
+        "roomId": "DINING_W_R01",
+        "type": "sensor",
+        "sensorKind": "temperature",
+        "label": "温度传感器",
+        "unit": "°C",
+        "circuitId": "DINING_W_R01_C_POWER",
+        "upstreamIds": [
+          "V4_DINING_W_R01_DB"
+        ],
+        "simulated": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R01_S_HUMIDITY",
+      "buildingId": "DINING_W",
+      "system": "sensors",
+      "level": "F0",
+      "label": "相对湿度传感器",
+      "color": [
+        0.22,
+        0.63,
+        0.65
+      ],
+      "bounds": [
+        -284.96,
+        128.66,
+        1.75,
+        -284.835,
+        128.82,
+        1.97
+      ],
+      "freecadName": "V4_DINING_W_R01_S_HUMIDITY",
+      "roomId": "DINING_W_R01",
+      "meta": {
+        "id": "V4_DINING_W_R01_S_HUMIDITY",
+        "assetId": "V4_DINING_W_R01_S_HUMIDITY",
+        "buildingId": "DINING_W",
+        "roomId": "DINING_W_R01",
+        "type": "sensor",
+        "sensorKind": "humidity",
+        "label": "相对湿度传感器",
+        "unit": "%RH",
+        "circuitId": "DINING_W_R01_C_POWER",
+        "upstreamIds": [
+          "V4_DINING_W_R01_DB"
+        ],
+        "simulated": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R01_S_CO2",
+      "buildingId": "DINING_W",
+      "system": "sensors",
+      "level": "F0",
+      "label": "二氧化碳传感器",
+      "color": [
+        0.22,
+        0.63,
+        0.65
+      ],
+      "bounds": [
+        -284.96,
+        128.96,
+        1.75,
+        -284.835,
+        129.12,
+        1.97
+      ],
+      "freecadName": "V4_DINING_W_R01_S_CO2",
+      "roomId": "DINING_W_R01",
+      "meta": {
+        "id": "V4_DINING_W_R01_S_CO2",
+        "assetId": "V4_DINING_W_R01_S_CO2",
+        "buildingId": "DINING_W",
+        "roomId": "DINING_W_R01",
+        "type": "sensor",
+        "sensorKind": "co2",
+        "label": "二氧化碳传感器",
+        "unit": "ppm",
+        "circuitId": "DINING_W_R01_C_POWER",
+        "upstreamIds": [
+          "V4_DINING_W_R01_DB"
+        ],
+        "simulated": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R01_S_OCCUPANCY",
+      "buildingId": "DINING_W",
+      "system": "sensors",
+      "level": "F0",
+      "label": "占用传感器",
+      "color": [
+        0.22,
+        0.63,
+        0.65
+      ],
+      "bounds": [
+        -263.58,
+        135.92,
+        2.995,
+        -263.42,
+        136.08,
+        3.125
+      ],
+      "freecadName": "V4_DINING_W_R01_S_OCCUPANCY",
+      "roomId": "DINING_W_R01",
+      "meta": {
+        "id": "V4_DINING_W_R01_S_OCCUPANCY",
+        "assetId": "V4_DINING_W_R01_S_OCCUPANCY",
+        "buildingId": "DINING_W",
+        "roomId": "DINING_W_R01",
+        "type": "sensor",
+        "sensorKind": "occupancy",
+        "label": "占用传感器",
+        "unit": "persons",
+        "circuitId": "DINING_W_R01_C_POWER",
+        "upstreamIds": [
+          "V4_DINING_W_R01_DB"
+        ],
+        "simulated": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R01_S_POWER",
+      "buildingId": "DINING_W",
+      "system": "sensors",
+      "level": "F0",
+      "label": "支路电功率传感器",
+      "color": [
+        0.22,
+        0.63,
+        0.65
+      ],
+      "bounds": [
+        -284.96,
+        129.56,
+        1.75,
+        -284.835,
+        129.72,
+        1.97
+      ],
+      "freecadName": "V4_DINING_W_R01_S_POWER",
+      "roomId": "DINING_W_R01",
+      "meta": {
+        "id": "V4_DINING_W_R01_S_POWER",
+        "assetId": "V4_DINING_W_R01_S_POWER",
+        "buildingId": "DINING_W",
+        "roomId": "DINING_W_R01",
+        "type": "sensor",
+        "sensorKind": "power",
+        "label": "支路电功率传感器",
+        "unit": "kW",
+        "circuitId": "DINING_W_R01_C_POWER",
+        "upstreamIds": [
+          "V4_DINING_W_R01_DB"
+        ],
+        "simulated": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R02_WALLS",
+      "buildingId": "DINING_W",
+      "system": "interiors",
+      "level": "F0",
+      "label": "简餐厨房 · 隔墙与门洞",
+      "color": [
+        0.72,
+        0.77,
+        0.75
+      ],
+      "bounds": [
+        -239.1,
+        122.5,
+        0.425,
+        -230.1,
+        140.5,
+        3.425
+      ],
+      "freecadName": "V4_DINING_W_R02_WALLS",
+      "roomId": "DINING_W_R02",
+      "meta": {
+        "type": "room_partition",
+        "roomId": "DINING_W_R02",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R02_ROOM_GLAZING",
+      "buildingId": "DINING_W",
+      "system": "interiors",
+      "level": "F0",
+      "label": "观察窗",
+      "color": [
+        0.08,
+        0.24,
+        0.3
+      ],
+      "bounds": [
+        -236.94,
+        140.4775,
+        1.5,
+        -232.26,
+        140.5225,
+        2.85
+      ],
+      "freecadName": "V4_DINING_W_R02_ROOM_GLAZING",
+      "roomId": "DINING_W_R02",
+      "meta": {
+        "type": "interior_glazing",
+        "roomId": "DINING_W_R02",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R02_FLOOR_ZONE",
+      "buildingId": "DINING_W",
+      "system": "interiors",
+      "level": "F0",
+      "label": "简餐厨房 · 功能区域",
+      "color": [
+        0.74,
+        0.8,
+        0.78
+      ],
+      "bounds": [
+        -238.975,
+        122.625,
+        0.406,
+        -230.225,
+        140.375,
+        0.418
+      ],
+      "freecadName": "V4_DINING_W_R02_FLOOR_ZONE",
+      "roomId": "DINING_W_R02",
+      "meta": {
+        "type": "room_zone",
+        "roomAreaM2": 162,
+        "roomId": "DINING_W_R02",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R02_DOOR",
+      "buildingId": "DINING_W",
+      "system": "interiors",
+      "level": "F0",
+      "label": "常开门及门框",
+      "color": [
+        0.54,
+        0.62,
+        0.6
+      ],
+      "bounds": [
+        -235.755,
+        122.38,
+        0.4,
+        -233.445,
+        123.58832,
+        2.75
+      ],
+      "freecadName": "V4_DINING_W_R02_DOOR",
+      "roomId": "DINING_W_R02",
+      "meta": {
+        "type": "door",
+        "roomId": "DINING_W_R02",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R02_F01",
+      "buildingId": "DINING_W",
+      "system": "interiors",
+      "level": "F0",
+      "label": "工作台/备料台",
+      "color": [
+        0.72,
+        0.76,
+        0.75
+      ],
+      "bounds": [
+        -237.8,
+        127.76,
+        0.4,
+        -235.0,
+        128.76,
+        1.195
+      ],
+      "freecadName": "V4_DINING_W_R02_F01",
+      "roomId": "DINING_W_R02",
+      "meta": {
+        "type": "furniture",
+        "roomId": "DINING_W_R02",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R02_F02",
+      "buildingId": "DINING_W",
+      "system": "interiors",
+      "level": "F0",
+      "label": "储物柜",
+      "color": [
+        0.77,
+        0.79,
+        0.76
+      ],
+      "bounds": [
+        -237.85,
+        135.6275,
+        0.4,
+        -235.85,
+        136.35,
+        2.2
+      ],
+      "freecadName": "V4_DINING_W_R02_F02",
+      "roomId": "DINING_W_R02",
+      "meta": {
+        "type": "furniture",
+        "roomId": "DINING_W_R02",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R02_F03",
+      "buildingId": "DINING_W",
+      "system": "interiors",
+      "level": "F0",
+      "label": "炉灶与烹饪台",
+      "color": [
+        0.39,
+        0.43,
+        0.43
+      ],
+      "bounds": [
+        -234.6,
+        126.86,
+        0.4,
+        -232.6,
+        127.86,
+        1.28
+      ],
+      "freecadName": "V4_DINING_W_R02_F03",
+      "roomId": "DINING_W_R02",
+      "meta": {
+        "type": "furniture",
+        "circuitId": "DINING_W_R02_C_POWER",
+        "ratedPowerKw": 5,
+        "roomId": "DINING_W_R02",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R02_HOOD",
+      "buildingId": "DINING_W",
+      "system": "hvac",
+      "level": "F0",
+      "label": "烹饪排风罩与独立排油烟支管",
+      "color": [
+        0.68,
+        0.75,
+        0.77
+      ],
+      "bounds": [
+        -234.9,
+        126.66,
+        2.55,
+        -232.3,
+        128.06,
+        3.85
+      ],
+      "freecadName": "V4_DINING_W_R02_HOOD",
+      "roomId": "DINING_W_R02",
+      "meta": {
+        "type": "kitchen_exhaust_hood",
+        "circuitId": "DINING_W_R02_C_HVAC",
+        "upstreamIds": [
+          "V4_DINING_W_R02_AHU"
+        ],
+        "sourceReference": "Halton kitchen hood, exhaust and make-up air; schematic only",
+        "roomId": "DINING_W_R02",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R02_DB",
+      "buildingId": "DINING_W",
+      "system": "electrical",
+      "level": "F0",
+      "label": "房间配电箱与断路器",
+      "color": [
+        0.3,
+        0.34,
+        0.39
+      ],
+      "bounds": [
+        -230.825,
+        122.495,
+        1.5,
+        -230.275,
+        122.825,
+        2.3
+      ],
+      "freecadName": "V4_DINING_W_R02_DB",
+      "roomId": "DINING_W_R02",
+      "meta": {
+        "id": "V4_DINING_W_R02_DB",
+        "assetId": "V4_DINING_W_R02_DB",
+        "buildingId": "DINING_W",
+        "roomId": "DINING_W_R02",
+        "controlKind": "breaker",
+        "type": "distribution_panel",
+        "label": "房间配电箱",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "upstreamIds": [
+          "V4_DINING_W_MDB"
+        ],
+        "ratedPowerKw": 0,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R02_FEEDER",
+      "buildingId": "DINING_W",
+      "system": "electrical",
+      "level": "F0",
+      "label": "主桥架至房间配电馈线",
+      "color": [
+        0.39,
+        0.32,
+        0.23
+      ],
+      "bounds": [
+        -230.56944,
+        122.2,
+        2.2,
+        -230.53056,
+        122.71944,
+        3.93944
+      ],
+      "freecadName": "V4_DINING_W_R02_FEEDER",
+      "roomId": "DINING_W_R02",
+      "meta": {
+        "type": "cable",
+        "upstreamIds": [
+          "V4_DINING_W_MDB",
+          "V4_DINING_W_R02_DB"
+        ],
+        "roomId": "DINING_W_R02",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R02_L01",
+      "buildingId": "DINING_W",
+      "system": "lighting",
+      "level": "F0",
+      "label": "可调光照明分组 1",
+      "color": [
+        0.98,
+        0.91,
+        0.69
+      ],
+      "bounds": [
+        -238.16,
+        125.06,
+        3.138,
+        -237.52,
+        125.7,
+        3.75
+      ],
+      "freecadName": "V4_DINING_W_R02_L01",
+      "roomId": "DINING_W_R02",
+      "meta": {
+        "id": "V4_DINING_W_R02_L01",
+        "assetId": "V4_DINING_W_R02_L01",
+        "buildingId": "DINING_W",
+        "roomId": "DINING_W_R02",
+        "controlKind": "light",
+        "type": "luminaire_group",
+        "label": "照明分组 1",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "circuitId": "DINING_W_R02_C_LIGHT",
+        "ratedPowerKw": 0.243,
+        "upstreamIds": [
+          "V4_DINING_W_R02_DB"
+        ],
+        "dimmable": true,
+        "fixtureCount": 1,
+        "sourceReference": "ERCO grouped track lighting for exhibition; LED panels elsewhere",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R02_L02",
+      "buildingId": "DINING_W",
+      "system": "lighting",
+      "level": "F0",
+      "label": "可调光照明分组 2",
+      "color": [
+        0.98,
+        0.91,
+        0.69
+      ],
+      "bounds": [
+        -231.68,
+        125.06,
+        3.138,
+        -231.04,
+        125.7,
+        3.75
+      ],
+      "freecadName": "V4_DINING_W_R02_L02",
+      "roomId": "DINING_W_R02",
+      "meta": {
+        "id": "V4_DINING_W_R02_L02",
+        "assetId": "V4_DINING_W_R02_L02",
+        "buildingId": "DINING_W",
+        "roomId": "DINING_W_R02",
+        "controlKind": "light",
+        "type": "luminaire_group",
+        "label": "照明分组 2",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "circuitId": "DINING_W_R02_C_LIGHT",
+        "ratedPowerKw": 0.243,
+        "upstreamIds": [
+          "V4_DINING_W_R02_DB"
+        ],
+        "dimmable": true,
+        "fixtureCount": 1,
+        "sourceReference": "ERCO grouped track lighting for exhibition; LED panels elsewhere",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R02_L03",
+      "buildingId": "DINING_W",
+      "system": "lighting",
+      "level": "F0",
+      "label": "可调光照明分组 3",
+      "color": [
+        0.98,
+        0.91,
+        0.69
+      ],
+      "bounds": [
+        -238.16,
+        137.3,
+        3.138,
+        -237.52,
+        137.94,
+        3.75
+      ],
+      "freecadName": "V4_DINING_W_R02_L03",
+      "roomId": "DINING_W_R02",
+      "meta": {
+        "id": "V4_DINING_W_R02_L03",
+        "assetId": "V4_DINING_W_R02_L03",
+        "buildingId": "DINING_W",
+        "roomId": "DINING_W_R02",
+        "controlKind": "light",
+        "type": "luminaire_group",
+        "label": "照明分组 3",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "circuitId": "DINING_W_R02_C_LIGHT",
+        "ratedPowerKw": 0.243,
+        "upstreamIds": [
+          "V4_DINING_W_R02_DB"
+        ],
+        "dimmable": true,
+        "fixtureCount": 1,
+        "sourceReference": "ERCO grouped track lighting for exhibition; LED panels elsewhere",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R02_L04",
+      "buildingId": "DINING_W",
+      "system": "lighting",
+      "level": "F0",
+      "label": "可调光照明分组 4",
+      "color": [
+        0.98,
+        0.91,
+        0.69
+      ],
+      "bounds": [
+        -231.68,
+        137.3,
+        3.138,
+        -231.04,
+        137.94,
+        3.75
+      ],
+      "freecadName": "V4_DINING_W_R02_L04",
+      "roomId": "DINING_W_R02",
+      "meta": {
+        "id": "V4_DINING_W_R02_L04",
+        "assetId": "V4_DINING_W_R02_L04",
+        "buildingId": "DINING_W",
+        "roomId": "DINING_W_R02",
+        "controlKind": "light",
+        "type": "luminaire_group",
+        "label": "照明分组 4",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "circuitId": "DINING_W_R02_C_LIGHT",
+        "ratedPowerKw": 0.243,
+        "upstreamIds": [
+          "V4_DINING_W_R02_DB"
+        ],
+        "dimmable": true,
+        "fixtureCount": 1,
+        "sourceReference": "ERCO grouped track lighting for exhibition; LED panels elsewhere",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R02_LIGHT_DROPS",
+      "buildingId": "DINING_W",
+      "system": "electrical",
+      "level": "F0",
+      "label": "照明干线至灯具分组支线",
+      "color": [
+        0.3,
+        0.34,
+        0.39
+      ],
+      "bounds": [
+        -237.849,
+        125.071,
+        3.741,
+        -230.55,
+        137.62,
+        3.759
+      ],
+      "freecadName": "V4_DINING_W_R02_LIGHT_DROPS",
+      "roomId": "DINING_W_R02",
+      "meta": {
+        "type": "branch_cable",
+        "circuitId": "DINING_W_R02_C_LIGHT",
+        "roomId": "DINING_W_R02",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R02_CABLE_0",
+      "buildingId": "DINING_W",
+      "system": "electrical",
+      "level": "F0",
+      "label": "独立照明电路",
+      "color": [
+        0.3,
+        0.31,
+        0.34
+      ],
+      "bounds": [
+        -237.75,
+        122.68596,
+        2.1,
+        -230.53596,
+        125.09404,
+        3.76404
+      ],
+      "freecadName": "V4_DINING_W_R02_CABLE_0",
+      "roomId": "DINING_W_R02",
+      "meta": {
+        "type": "branch_cable",
+        "circuitId": "DINING_W_R02_C_LIGHT",
+        "upstreamIds": [
+          "V4_DINING_W_R02_DB"
+        ],
+        "roomId": "DINING_W_R02",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R02_CABLE_1",
+      "buildingId": "DINING_W",
+      "system": "electrical",
+      "level": "F0",
+      "label": "独立插座/设备电路",
+      "color": [
+        0.3,
+        0.31,
+        0.34
+      ],
+      "bounds": [
+        -237.75,
+        122.68596,
+        2.1,
+        -230.53596,
+        125.21404,
+        3.83404
+      ],
+      "freecadName": "V4_DINING_W_R02_CABLE_1",
+      "roomId": "DINING_W_R02",
+      "meta": {
+        "type": "branch_cable",
+        "circuitId": "DINING_W_R02_C_POWER",
+        "upstreamIds": [
+          "V4_DINING_W_R02_DB"
+        ],
+        "roomId": "DINING_W_R02",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R02_CABLE_2",
+      "buildingId": "DINING_W",
+      "system": "electrical",
+      "level": "F0",
+      "label": "独立空调电路",
+      "color": [
+        0.3,
+        0.31,
+        0.34
+      ],
+      "bounds": [
+        -237.75,
+        122.68596,
+        2.1,
+        -230.53596,
+        125.33404,
+        3.90404
+      ],
+      "freecadName": "V4_DINING_W_R02_CABLE_2",
+      "roomId": "DINING_W_R02",
+      "meta": {
+        "type": "branch_cable",
+        "circuitId": "DINING_W_R02_C_HVAC",
+        "upstreamIds": [
+          "V4_DINING_W_R02_DB"
+        ],
+        "roomId": "DINING_W_R02",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R02_SOCKET0",
+      "buildingId": "DINING_W",
+      "system": "electrical",
+      "level": "F0",
+      "label": "墙面插座及下引线",
+      "color": [
+        0.3,
+        0.34,
+        0.39
+      ],
+      "bounds": [
+        -237.365,
+        122.65,
+        0.76,
+        -230.55,
+        122.71,
+        3.82972
+      ],
+      "freecadName": "V4_DINING_W_R02_SOCKET0",
+      "roomId": "DINING_W_R02",
+      "meta": {
+        "type": "socket",
+        "circuitId": "DINING_W_R02_C_POWER",
+        "roomId": "DINING_W_R02",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R02_SOCKET1",
+      "buildingId": "DINING_W",
+      "system": "electrical",
+      "level": "F0",
+      "label": "墙面插座及下引线",
+      "color": [
+        0.3,
+        0.34,
+        0.39
+      ],
+      "bounds": [
+        -231.965,
+        122.65,
+        0.76,
+        -230.55,
+        122.71,
+        3.82972
+      ],
+      "freecadName": "V4_DINING_W_R02_SOCKET1",
+      "roomId": "DINING_W_R02",
+      "meta": {
+        "type": "socket",
+        "circuitId": "DINING_W_R02_C_POWER",
+        "roomId": "DINING_W_R02",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R02_AHU",
+      "buildingId": "DINING_W",
+      "system": "hvac",
+      "level": "F0",
+      "label": "局部空调与送回风终端",
+      "color": [
+        0.68,
+        0.75,
+        0.77
+      ],
+      "bounds": [
+        -238.625,
+        123.14,
+        2.55,
+        -231.45,
+        131.85,
+        3.7
+      ],
+      "freecadName": "V4_DINING_W_R02_AHU",
+      "roomId": "DINING_W_R02",
+      "meta": {
+        "id": "V4_DINING_W_R02_AHU",
+        "assetId": "V4_DINING_W_R02_AHU",
+        "buildingId": "DINING_W",
+        "roomId": "DINING_W_R02",
+        "controlKind": "ahu",
+        "type": "air_handling_unit",
+        "label": "局部空调/通风机组",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "circuitId": "DINING_W_R02_C_HVAC",
+        "ratedPowerKw": 1.944,
+        "upstreamIds": [
+          "V4_DINING_W_R02_DB"
+        ],
+        "designCoolingKw": 16.2,
+        "representativeTerminal": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R02_SINK",
+      "buildingId": "DINING_W",
+      "system": "water",
+      "level": "F0",
+      "label": "洗手/工艺准备水槽",
+      "color": [
+        0.81,
+        0.83,
+        0.82
+      ],
+      "bounds": [
+        -231.61,
+        133.88,
+        0.4,
+        -230.69,
+        134.52,
+        1.66944
+      ],
+      "freecadName": "V4_DINING_W_R02_SINK",
+      "roomId": "DINING_W_R02",
+      "meta": {
+        "type": "sink",
+        "demandLpm": 6,
+        "requiresWater": true,
+        "roomId": "DINING_W_R02",
+        "designStatus": "concept inferred; simulated data only",
+        "waterBranchIds": [
+          "DINING_W_R02_W_COLD",
+          "DINING_W_R02_W_HOT"
+        ]
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R02_DRAIN",
+      "buildingId": "DINING_W",
+      "system": "water",
+      "level": "F0",
+      "label": "独立排水支管（预留楼板套管）",
+      "color": [
+        0.4,
+        0.43,
+        0.4
+      ],
+      "bounds": [
+        -281.5,
+        126.4406,
+        -0.2594,
+        -231.0906,
+        134.2594,
+        1.24
+      ],
+      "freecadName": "V4_DINING_W_R02_DRAIN",
+      "roomId": "DINING_W_R02",
+      "meta": {
+        "type": "drain_pipe",
+        "medium": "grease_waste",
+        "waterBranchId": "DINING_W_R02_W_DRAIN",
+        "penetrationsRequireCoordination": true,
+        "roomId": "DINING_W_R02",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R02_GREASE_TRAP",
+      "buildingId": "DINING_W",
+      "system": "water",
+      "level": "F0",
+      "label": "厨房隔油收集箱",
+      "color": [
+        0.5,
+        0.57,
+        0.57
+      ],
+      "bounds": [
+        -231.575,
+        132.675,
+        0.4,
+        -230.725,
+        133.325,
+        0.99
+      ],
+      "freecadName": "V4_DINING_W_R02_GREASE_TRAP",
+      "roomId": "DINING_W_R02",
+      "meta": {
+        "type": "grease_interceptor",
+        "medium": "grease_waste",
+        "waterBranchId": "DINING_W_R02_W_DRAIN",
+        "sourceReference": "ACO kitchen wastewater grease separation",
+        "roomId": "DINING_W_R02",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R02_V_COLD",
+      "buildingId": "DINING_W",
+      "system": "water",
+      "level": "F0",
+      "label": "可控支路阀门",
+      "color": [
+        0.75,
+        0.34,
+        0.2
+      ],
+      "bounds": [
+        -232.995,
+        122.79,
+        3.44,
+        -232.595,
+        123.01,
+        3.795
+      ],
+      "freecadName": "V4_DINING_W_R02_V_COLD",
+      "roomId": "DINING_W_R02",
+      "meta": {
+        "id": "V4_DINING_W_R02_V_COLD",
+        "assetId": "V4_DINING_W_R02_V_COLD",
+        "buildingId": "DINING_W",
+        "roomId": "DINING_W_R02",
+        "controlKind": "valve",
+        "type": "isolation_valve",
+        "label": "生活冷水支路阀",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "waterBranchId": "DINING_W_R02_W_COLD",
+        "medium": "domestic_cold",
+        "ratedFlowLpm": 12,
+        "upstreamIds": [
+          "V4_DINING_W_WATER_MAIN"
+        ],
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R02_PIPE_COLD",
+      "buildingId": "DINING_W",
+      "system": "water",
+      "level": "F0",
+      "label": "domestic_cold · 阀后支管",
+      "color": [
+        0.12,
+        0.44,
+        0.72
+      ],
+      "bounds": [
+        -233.5378,
+        122.8622,
+        1.34,
+        -231.1122,
+        134.4678,
+        3.5878
+      ],
+      "freecadName": "V4_DINING_W_R02_PIPE_COLD",
+      "roomId": "DINING_W_R02",
+      "meta": {
+        "type": "water_branch",
+        "medium": "domestic_cold",
+        "waterBranchId": "DINING_W_R02_W_COLD",
+        "upstreamIds": [
+          "V4_DINING_W_R02_V_COLD"
+        ],
+        "roomId": "DINING_W_R02",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R02_V_HOT",
+      "buildingId": "DINING_W",
+      "system": "water",
+      "level": "F0",
+      "label": "可控支路阀门",
+      "color": [
+        0.75,
+        0.34,
+        0.2
+      ],
+      "bounds": [
+        -232.786,
+        122.79,
+        3.44,
+        -232.386,
+        123.01,
+        3.795
+      ],
+      "freecadName": "V4_DINING_W_R02_V_HOT",
+      "roomId": "DINING_W_R02",
+      "meta": {
+        "id": "V4_DINING_W_R02_V_HOT",
+        "assetId": "V4_DINING_W_R02_V_HOT",
+        "buildingId": "DINING_W",
+        "roomId": "DINING_W_R02",
+        "controlKind": "valve",
+        "type": "isolation_valve",
+        "label": "生活热水支路阀",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "waterBranchId": "DINING_W_R02_W_HOT",
+        "medium": "domestic_hot",
+        "ratedFlowLpm": 8,
+        "upstreamIds": [
+          "V4_DINING_W_HOT_MAIN"
+        ],
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R02_PIPE_HOT",
+      "buildingId": "DINING_W",
+      "system": "water",
+      "level": "F0",
+      "label": "domestic_hot · 阀后支管",
+      "color": [
+        0.77,
+        0.27,
+        0.21
+      ],
+      "bounds": [
+        -233.1878,
+        122.8622,
+        1.34,
+        -231.2322,
+        134.4678,
+        3.5878
+      ],
+      "freecadName": "V4_DINING_W_R02_PIPE_HOT",
+      "roomId": "DINING_W_R02",
+      "meta": {
+        "type": "water_branch",
+        "medium": "domestic_hot",
+        "waterBranchId": "DINING_W_R02_W_HOT",
+        "upstreamIds": [
+          "V4_DINING_W_R02_V_HOT"
+        ],
+        "roomId": "DINING_W_R02",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R02_S_TEMPERATURE",
+      "buildingId": "DINING_W",
+      "system": "sensors",
+      "level": "F0",
+      "label": "温度传感器",
+      "color": [
+        0.22,
+        0.63,
+        0.65
+      ],
+      "bounds": [
+        -239.06,
+        126.38,
+        1.75,
+        -238.935,
+        126.54,
+        1.97
+      ],
+      "freecadName": "V4_DINING_W_R02_S_TEMPERATURE",
+      "roomId": "DINING_W_R02",
+      "meta": {
+        "id": "V4_DINING_W_R02_S_TEMPERATURE",
+        "assetId": "V4_DINING_W_R02_S_TEMPERATURE",
+        "buildingId": "DINING_W",
+        "roomId": "DINING_W_R02",
+        "type": "sensor",
+        "sensorKind": "temperature",
+        "label": "温度传感器",
+        "unit": "°C",
+        "circuitId": "DINING_W_R02_C_POWER",
+        "upstreamIds": [
+          "V4_DINING_W_R02_DB"
+        ],
+        "simulated": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R02_S_HUMIDITY",
+      "buildingId": "DINING_W",
+      "system": "sensors",
+      "level": "F0",
+      "label": "相对湿度传感器",
+      "color": [
+        0.22,
+        0.63,
+        0.65
+      ],
+      "bounds": [
+        -239.06,
+        126.68,
+        1.75,
+        -238.935,
+        126.84,
+        1.97
+      ],
+      "freecadName": "V4_DINING_W_R02_S_HUMIDITY",
+      "roomId": "DINING_W_R02",
+      "meta": {
+        "id": "V4_DINING_W_R02_S_HUMIDITY",
+        "assetId": "V4_DINING_W_R02_S_HUMIDITY",
+        "buildingId": "DINING_W",
+        "roomId": "DINING_W_R02",
+        "type": "sensor",
+        "sensorKind": "humidity",
+        "label": "相对湿度传感器",
+        "unit": "%RH",
+        "circuitId": "DINING_W_R02_C_POWER",
+        "upstreamIds": [
+          "V4_DINING_W_R02_DB"
+        ],
+        "simulated": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R02_S_CO2",
+      "buildingId": "DINING_W",
+      "system": "sensors",
+      "level": "F0",
+      "label": "二氧化碳传感器",
+      "color": [
+        0.22,
+        0.63,
+        0.65
+      ],
+      "bounds": [
+        -239.06,
+        126.98,
+        1.75,
+        -238.935,
+        127.14,
+        1.97
+      ],
+      "freecadName": "V4_DINING_W_R02_S_CO2",
+      "roomId": "DINING_W_R02",
+      "meta": {
+        "id": "V4_DINING_W_R02_S_CO2",
+        "assetId": "V4_DINING_W_R02_S_CO2",
+        "buildingId": "DINING_W",
+        "roomId": "DINING_W_R02",
+        "type": "sensor",
+        "sensorKind": "co2",
+        "label": "二氧化碳传感器",
+        "unit": "ppm",
+        "circuitId": "DINING_W_R02_C_POWER",
+        "upstreamIds": [
+          "V4_DINING_W_R02_DB"
+        ],
+        "simulated": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R02_S_OCCUPANCY",
+      "buildingId": "DINING_W",
+      "system": "sensors",
+      "level": "F0",
+      "label": "占用传感器",
+      "color": [
+        0.22,
+        0.63,
+        0.65
+      ],
+      "bounds": [
+        -234.68,
+        131.42,
+        2.995,
+        -234.52,
+        131.58,
+        3.125
+      ],
+      "freecadName": "V4_DINING_W_R02_S_OCCUPANCY",
+      "roomId": "DINING_W_R02",
+      "meta": {
+        "id": "V4_DINING_W_R02_S_OCCUPANCY",
+        "assetId": "V4_DINING_W_R02_S_OCCUPANCY",
+        "buildingId": "DINING_W",
+        "roomId": "DINING_W_R02",
+        "type": "sensor",
+        "sensorKind": "occupancy",
+        "label": "占用传感器",
+        "unit": "persons",
+        "circuitId": "DINING_W_R02_C_POWER",
+        "upstreamIds": [
+          "V4_DINING_W_R02_DB"
+        ],
+        "simulated": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R02_S_POWER",
+      "buildingId": "DINING_W",
+      "system": "sensors",
+      "level": "F0",
+      "label": "支路电功率传感器",
+      "color": [
+        0.22,
+        0.63,
+        0.65
+      ],
+      "bounds": [
+        -239.06,
+        127.58,
+        1.75,
+        -238.935,
+        127.74,
+        1.97
+      ],
+      "freecadName": "V4_DINING_W_R02_S_POWER",
+      "roomId": "DINING_W_R02",
+      "meta": {
+        "id": "V4_DINING_W_R02_S_POWER",
+        "assetId": "V4_DINING_W_R02_S_POWER",
+        "buildingId": "DINING_W",
+        "roomId": "DINING_W_R02",
+        "type": "sensor",
+        "sensorKind": "power",
+        "label": "支路电功率传感器",
+        "unit": "kW",
+        "circuitId": "DINING_W_R02_C_POWER",
+        "upstreamIds": [
+          "V4_DINING_W_R02_DB"
+        ],
+        "simulated": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R02_S_FLOW_COLD",
+      "buildingId": "DINING_W",
+      "system": "sensors",
+      "level": "F0",
+      "label": "支路流量计",
+      "color": [
+        0.22,
+        0.63,
+        0.65
+      ],
+      "bounds": [
+        -232.0825,
+        122.825,
+        3.475,
+        -231.8625,
+        122.975,
+        3.7
+      ],
+      "freecadName": "V4_DINING_W_R02_S_FLOW_COLD",
+      "roomId": "DINING_W_R02",
+      "meta": {
+        "id": "V4_DINING_W_R02_S_FLOW_COLD",
+        "assetId": "V4_DINING_W_R02_S_FLOW_COLD",
+        "buildingId": "DINING_W",
+        "roomId": "DINING_W_R02",
+        "type": "sensor",
+        "sensorKind": "water_flow",
+        "label": "支路流量计",
+        "unit": "L/min",
+        "waterBranchId": "DINING_W_R02_W_COLD",
+        "simulated": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R02_S_FLOW_HOT",
+      "buildingId": "DINING_W",
+      "system": "sensors",
+      "level": "F0",
+      "label": "支路流量计",
+      "color": [
+        0.22,
+        0.63,
+        0.65
+      ],
+      "bounds": [
+        -232.038,
+        122.825,
+        3.475,
+        -231.818,
+        122.975,
+        3.7
+      ],
+      "freecadName": "V4_DINING_W_R02_S_FLOW_HOT",
+      "roomId": "DINING_W_R02",
+      "meta": {
+        "id": "V4_DINING_W_R02_S_FLOW_HOT",
+        "assetId": "V4_DINING_W_R02_S_FLOW_HOT",
+        "buildingId": "DINING_W",
+        "roomId": "DINING_W_R02",
+        "type": "sensor",
+        "sensorKind": "water_flow",
+        "label": "支路流量计",
+        "unit": "L/min",
+        "waterBranchId": "DINING_W_R02_W_HOT",
+        "simulated": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R03_WALLS",
+      "buildingId": "DINING_W",
+      "system": "interiors",
+      "level": "F0",
+      "label": "杯具洗消 · 隔墙与门洞",
+      "color": [
+        0.72,
+        0.77,
+        0.75
+      ],
+      "bounds": [
+        -239.1,
+        143.6,
+        0.425,
+        -230.1,
+        149.4,
+        3.425
+      ],
+      "freecadName": "V4_DINING_W_R03_WALLS",
+      "roomId": "DINING_W_R03",
+      "meta": {
+        "type": "room_partition",
+        "roomId": "DINING_W_R03",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R03_ROOM_GLAZING",
+      "buildingId": "DINING_W",
+      "system": "interiors",
+      "level": "F0",
+      "label": "观察窗",
+      "color": [
+        0.08,
+        0.24,
+        0.3
+      ],
+      "bounds": [
+        -236.94,
+        149.3775,
+        1.5,
+        -232.26,
+        149.4225,
+        2.85
+      ],
+      "freecadName": "V4_DINING_W_R03_ROOM_GLAZING",
+      "roomId": "DINING_W_R03",
+      "meta": {
+        "type": "interior_glazing",
+        "roomId": "DINING_W_R03",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R03_FLOOR_ZONE",
+      "buildingId": "DINING_W",
+      "system": "interiors",
+      "level": "F0",
+      "label": "杯具洗消 · 功能区域",
+      "color": [
+        0.74,
+        0.8,
+        0.78
+      ],
+      "bounds": [
+        -238.975,
+        143.725,
+        0.406,
+        -230.225,
+        149.275,
+        0.418
+      ],
+      "freecadName": "V4_DINING_W_R03_FLOOR_ZONE",
+      "roomId": "DINING_W_R03",
+      "meta": {
+        "type": "room_zone",
+        "roomAreaM2": 52.2,
+        "roomId": "DINING_W_R03",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R03_DOOR",
+      "buildingId": "DINING_W",
+      "system": "interiors",
+      "level": "F0",
+      "label": "常开门及门框",
+      "color": [
+        0.54,
+        0.62,
+        0.6
+      ],
+      "bounds": [
+        -235.755,
+        143.48,
+        0.4,
+        -233.445,
+        144.68832,
+        2.75
+      ],
+      "freecadName": "V4_DINING_W_R03_DOOR",
+      "roomId": "DINING_W_R03",
+      "meta": {
+        "type": "door",
+        "roomId": "DINING_W_R03",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R03_F01",
+      "buildingId": "DINING_W",
+      "system": "interiors",
+      "level": "F0",
+      "label": "工作台/备料台",
+      "color": [
+        0.72,
+        0.76,
+        0.75
+      ],
+      "bounds": [
+        -237.8,
+        144.956,
+        0.4,
+        -235.0,
+        145.956,
+        1.195
+      ],
+      "freecadName": "V4_DINING_W_R03_F01",
+      "roomId": "DINING_W_R03",
+      "meta": {
+        "type": "furniture",
+        "roomId": "DINING_W_R03",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R03_F02",
+      "buildingId": "DINING_W",
+      "system": "interiors",
+      "level": "F0",
+      "label": "储物柜",
+      "color": [
+        0.77,
+        0.79,
+        0.76
+      ],
+      "bounds": [
+        -237.85,
+        147.5775,
+        0.4,
+        -235.85,
+        148.3,
+        2.2
+      ],
+      "freecadName": "V4_DINING_W_R03_F02",
+      "roomId": "DINING_W_R03",
+      "meta": {
+        "type": "furniture",
+        "roomId": "DINING_W_R03",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R03_DB",
+      "buildingId": "DINING_W",
+      "system": "electrical",
+      "level": "F0",
+      "label": "房间配电箱与断路器",
+      "color": [
+        0.3,
+        0.34,
+        0.39
+      ],
+      "bounds": [
+        -230.825,
+        143.595,
+        1.5,
+        -230.275,
+        143.925,
+        2.3
+      ],
+      "freecadName": "V4_DINING_W_R03_DB",
+      "roomId": "DINING_W_R03",
+      "meta": {
+        "id": "V4_DINING_W_R03_DB",
+        "assetId": "V4_DINING_W_R03_DB",
+        "buildingId": "DINING_W",
+        "roomId": "DINING_W_R03",
+        "controlKind": "breaker",
+        "type": "distribution_panel",
+        "label": "房间配电箱",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "upstreamIds": [
+          "V4_DINING_W_MDB"
+        ],
+        "ratedPowerKw": 0,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R03_FEEDER",
+      "buildingId": "DINING_W",
+      "system": "electrical",
+      "level": "F0",
+      "label": "主桥架至房间配电馈线",
+      "color": [
+        0.39,
+        0.32,
+        0.23
+      ],
+      "bounds": [
+        -230.56944,
+        122.2,
+        2.2,
+        -230.53056,
+        143.81944,
+        3.93944
+      ],
+      "freecadName": "V4_DINING_W_R03_FEEDER",
+      "roomId": "DINING_W_R03",
+      "meta": {
+        "type": "cable",
+        "upstreamIds": [
+          "V4_DINING_W_MDB",
+          "V4_DINING_W_R03_DB"
+        ],
+        "roomId": "DINING_W_R03",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R03_L01",
+      "buildingId": "DINING_W",
+      "system": "lighting",
+      "level": "F0",
+      "label": "可调光照明分组 1",
+      "color": [
+        0.98,
+        0.91,
+        0.69
+      ],
+      "bounds": [
+        -238.16,
+        144.208,
+        3.138,
+        -237.52,
+        144.848,
+        3.75
+      ],
+      "freecadName": "V4_DINING_W_R03_L01",
+      "roomId": "DINING_W_R03",
+      "meta": {
+        "id": "V4_DINING_W_R03_L01",
+        "assetId": "V4_DINING_W_R03_L01",
+        "buildingId": "DINING_W",
+        "roomId": "DINING_W_R03",
+        "controlKind": "light",
+        "type": "luminaire_group",
+        "label": "照明分组 1",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "circuitId": "DINING_W_R03_C_LIGHT",
+        "ratedPowerKw": 0.0783,
+        "upstreamIds": [
+          "V4_DINING_W_R03_DB"
+        ],
+        "dimmable": true,
+        "fixtureCount": 1,
+        "sourceReference": "ERCO grouped track lighting for exhibition; LED panels elsewhere",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R03_L02",
+      "buildingId": "DINING_W",
+      "system": "lighting",
+      "level": "F0",
+      "label": "可调光照明分组 2",
+      "color": [
+        0.98,
+        0.91,
+        0.69
+      ],
+      "bounds": [
+        -231.68,
+        144.208,
+        3.138,
+        -231.04,
+        144.848,
+        3.75
+      ],
+      "freecadName": "V4_DINING_W_R03_L02",
+      "roomId": "DINING_W_R03",
+      "meta": {
+        "id": "V4_DINING_W_R03_L02",
+        "assetId": "V4_DINING_W_R03_L02",
+        "buildingId": "DINING_W",
+        "roomId": "DINING_W_R03",
+        "controlKind": "light",
+        "type": "luminaire_group",
+        "label": "照明分组 2",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "circuitId": "DINING_W_R03_C_LIGHT",
+        "ratedPowerKw": 0.0783,
+        "upstreamIds": [
+          "V4_DINING_W_R03_DB"
+        ],
+        "dimmable": true,
+        "fixtureCount": 1,
+        "sourceReference": "ERCO grouped track lighting for exhibition; LED panels elsewhere",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R03_L03",
+      "buildingId": "DINING_W",
+      "system": "lighting",
+      "level": "F0",
+      "label": "可调光照明分组 3",
+      "color": [
+        0.98,
+        0.91,
+        0.69
+      ],
+      "bounds": [
+        -238.16,
+        148.152,
+        3.138,
+        -237.52,
+        148.792,
+        3.75
+      ],
+      "freecadName": "V4_DINING_W_R03_L03",
+      "roomId": "DINING_W_R03",
+      "meta": {
+        "id": "V4_DINING_W_R03_L03",
+        "assetId": "V4_DINING_W_R03_L03",
+        "buildingId": "DINING_W",
+        "roomId": "DINING_W_R03",
+        "controlKind": "light",
+        "type": "luminaire_group",
+        "label": "照明分组 3",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "circuitId": "DINING_W_R03_C_LIGHT",
+        "ratedPowerKw": 0.0783,
+        "upstreamIds": [
+          "V4_DINING_W_R03_DB"
+        ],
+        "dimmable": true,
+        "fixtureCount": 1,
+        "sourceReference": "ERCO grouped track lighting for exhibition; LED panels elsewhere",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R03_L04",
+      "buildingId": "DINING_W",
+      "system": "lighting",
+      "level": "F0",
+      "label": "可调光照明分组 4",
+      "color": [
+        0.98,
+        0.91,
+        0.69
+      ],
+      "bounds": [
+        -231.68,
+        148.152,
+        3.138,
+        -231.04,
+        148.792,
+        3.75
+      ],
+      "freecadName": "V4_DINING_W_R03_L04",
+      "roomId": "DINING_W_R03",
+      "meta": {
+        "id": "V4_DINING_W_R03_L04",
+        "assetId": "V4_DINING_W_R03_L04",
+        "buildingId": "DINING_W",
+        "roomId": "DINING_W_R03",
+        "controlKind": "light",
+        "type": "luminaire_group",
+        "label": "照明分组 4",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "circuitId": "DINING_W_R03_C_LIGHT",
+        "ratedPowerKw": 0.0783,
+        "upstreamIds": [
+          "V4_DINING_W_R03_DB"
+        ],
+        "dimmable": true,
+        "fixtureCount": 1,
+        "sourceReference": "ERCO grouped track lighting for exhibition; LED panels elsewhere",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R03_LIGHT_DROPS",
+      "buildingId": "DINING_W",
+      "system": "electrical",
+      "level": "F0",
+      "label": "照明干线至灯具分组支线",
+      "color": [
+        0.3,
+        0.34,
+        0.39
+      ],
+      "bounds": [
+        -237.849,
+        144.341,
+        3.741,
+        -230.55,
+        148.472,
+        3.759
+      ],
+      "freecadName": "V4_DINING_W_R03_LIGHT_DROPS",
+      "roomId": "DINING_W_R03",
+      "meta": {
+        "type": "branch_cable",
+        "circuitId": "DINING_W_R03_C_LIGHT",
+        "roomId": "DINING_W_R03",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R03_CABLE_0",
+      "buildingId": "DINING_W",
+      "system": "electrical",
+      "level": "F0",
+      "label": "独立照明电路",
+      "color": [
+        0.3,
+        0.31,
+        0.34
+      ],
+      "bounds": [
+        -237.75,
+        143.78596,
+        2.1,
+        -230.53596,
+        144.36404,
+        3.76404
+      ],
+      "freecadName": "V4_DINING_W_R03_CABLE_0",
+      "roomId": "DINING_W_R03",
+      "meta": {
+        "type": "branch_cable",
+        "circuitId": "DINING_W_R03_C_LIGHT",
+        "upstreamIds": [
+          "V4_DINING_W_R03_DB"
+        ],
+        "roomId": "DINING_W_R03",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R03_CABLE_1",
+      "buildingId": "DINING_W",
+      "system": "electrical",
+      "level": "F0",
+      "label": "独立插座/设备电路",
+      "color": [
+        0.3,
+        0.31,
+        0.34
+      ],
+      "bounds": [
+        -237.75,
+        143.78596,
+        2.1,
+        -230.53596,
+        144.48404,
+        3.83404
+      ],
+      "freecadName": "V4_DINING_W_R03_CABLE_1",
+      "roomId": "DINING_W_R03",
+      "meta": {
+        "type": "branch_cable",
+        "circuitId": "DINING_W_R03_C_POWER",
+        "upstreamIds": [
+          "V4_DINING_W_R03_DB"
+        ],
+        "roomId": "DINING_W_R03",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R03_CABLE_2",
+      "buildingId": "DINING_W",
+      "system": "electrical",
+      "level": "F0",
+      "label": "独立空调电路",
+      "color": [
+        0.3,
+        0.31,
+        0.34
+      ],
+      "bounds": [
+        -237.75,
+        143.78596,
+        2.1,
+        -230.53596,
+        144.60404,
+        3.90404
+      ],
+      "freecadName": "V4_DINING_W_R03_CABLE_2",
+      "roomId": "DINING_W_R03",
+      "meta": {
+        "type": "branch_cable",
+        "circuitId": "DINING_W_R03_C_HVAC",
+        "upstreamIds": [
+          "V4_DINING_W_R03_DB"
+        ],
+        "roomId": "DINING_W_R03",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R03_SOCKET0",
+      "buildingId": "DINING_W",
+      "system": "electrical",
+      "level": "F0",
+      "label": "墙面插座及下引线",
+      "color": [
+        0.3,
+        0.34,
+        0.39
+      ],
+      "bounds": [
+        -237.365,
+        143.75,
+        0.76,
+        -230.55,
+        143.81,
+        3.82972
+      ],
+      "freecadName": "V4_DINING_W_R03_SOCKET0",
+      "roomId": "DINING_W_R03",
+      "meta": {
+        "type": "socket",
+        "circuitId": "DINING_W_R03_C_POWER",
+        "roomId": "DINING_W_R03",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R03_SOCKET1",
+      "buildingId": "DINING_W",
+      "system": "electrical",
+      "level": "F0",
+      "label": "墙面插座及下引线",
+      "color": [
+        0.3,
+        0.34,
+        0.39
+      ],
+      "bounds": [
+        -231.965,
+        143.75,
+        0.76,
+        -230.55,
+        143.81,
+        3.82972
+      ],
+      "freecadName": "V4_DINING_W_R03_SOCKET1",
+      "roomId": "DINING_W_R03",
+      "meta": {
+        "type": "socket",
+        "circuitId": "DINING_W_R03_C_POWER",
+        "roomId": "DINING_W_R03",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R03_AHU",
+      "buildingId": "DINING_W",
+      "system": "hvac",
+      "level": "F0",
+      "label": "局部空调与送回风终端",
+      "color": [
+        0.68,
+        0.75,
+        0.77
+      ],
+      "bounds": [
+        -238.625,
+        144.24,
+        2.55,
+        -231.45,
+        146.85,
+        3.7
+      ],
+      "freecadName": "V4_DINING_W_R03_AHU",
+      "roomId": "DINING_W_R03",
+      "meta": {
+        "id": "V4_DINING_W_R03_AHU",
+        "assetId": "V4_DINING_W_R03_AHU",
+        "buildingId": "DINING_W",
+        "roomId": "DINING_W_R03",
+        "controlKind": "ahu",
+        "type": "air_handling_unit",
+        "label": "局部空调/通风机组",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "circuitId": "DINING_W_R03_C_HVAC",
+        "ratedPowerKw": 0.6264,
+        "upstreamIds": [
+          "V4_DINING_W_R03_DB"
+        ],
+        "designCoolingKw": 5.22,
+        "representativeTerminal": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R03_SINK",
+      "buildingId": "DINING_W",
+      "system": "water",
+      "level": "F0",
+      "label": "洗手/工艺准备水槽",
+      "color": [
+        0.81,
+        0.83,
+        0.82
+      ],
+      "bounds": [
+        -231.61,
+        147.05,
+        0.4,
+        -230.69,
+        147.69,
+        1.66944
+      ],
+      "freecadName": "V4_DINING_W_R03_SINK",
+      "roomId": "DINING_W_R03",
+      "meta": {
+        "type": "sink",
+        "demandLpm": 6,
+        "requiresWater": true,
+        "roomId": "DINING_W_R03",
+        "designStatus": "concept inferred; simulated data only",
+        "waterBranchIds": [
+          "DINING_W_R03_W_COLD",
+          "DINING_W_R03_W_HOT"
+        ]
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R03_DRAIN",
+      "buildingId": "DINING_W",
+      "system": "water",
+      "level": "F0",
+      "label": "独立排水支管（预留楼板套管）",
+      "color": [
+        0.4,
+        0.43,
+        0.4
+      ],
+      "bounds": [
+        -281.5,
+        126.4406,
+        -0.2594,
+        -231.0906,
+        147.4294,
+        1.24
+      ],
+      "freecadName": "V4_DINING_W_R03_DRAIN",
+      "roomId": "DINING_W_R03",
+      "meta": {
+        "type": "drain_pipe",
+        "medium": "grease_waste",
+        "waterBranchId": "DINING_W_R03_W_DRAIN",
+        "penetrationsRequireCoordination": true,
+        "roomId": "DINING_W_R03",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R03_GREASE_TRAP",
+      "buildingId": "DINING_W",
+      "system": "water",
+      "level": "F0",
+      "label": "厨房隔油收集箱",
+      "color": [
+        0.5,
+        0.57,
+        0.57
+      ],
+      "bounds": [
+        -231.575,
+        145.845,
+        0.4,
+        -230.725,
+        146.495,
+        0.99
+      ],
+      "freecadName": "V4_DINING_W_R03_GREASE_TRAP",
+      "roomId": "DINING_W_R03",
+      "meta": {
+        "type": "grease_interceptor",
+        "medium": "grease_waste",
+        "waterBranchId": "DINING_W_R03_W_DRAIN",
+        "sourceReference": "ACO kitchen wastewater grease separation",
+        "roomId": "DINING_W_R03",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R03_V_COLD",
+      "buildingId": "DINING_W",
+      "system": "water",
+      "level": "F0",
+      "label": "可控支路阀门",
+      "color": [
+        0.75,
+        0.34,
+        0.2
+      ],
+      "bounds": [
+        -232.995,
+        143.89,
+        3.44,
+        -232.595,
+        144.11,
+        3.795
+      ],
+      "freecadName": "V4_DINING_W_R03_V_COLD",
+      "roomId": "DINING_W_R03",
+      "meta": {
+        "id": "V4_DINING_W_R03_V_COLD",
+        "assetId": "V4_DINING_W_R03_V_COLD",
+        "buildingId": "DINING_W",
+        "roomId": "DINING_W_R03",
+        "controlKind": "valve",
+        "type": "isolation_valve",
+        "label": "生活冷水支路阀",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "waterBranchId": "DINING_W_R03_W_COLD",
+        "medium": "domestic_cold",
+        "ratedFlowLpm": 12,
+        "upstreamIds": [
+          "V4_DINING_W_WATER_MAIN"
+        ],
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R03_PIPE_COLD",
+      "buildingId": "DINING_W",
+      "system": "water",
+      "level": "F0",
+      "label": "domestic_cold · 阀后支管",
+      "color": [
+        0.12,
+        0.44,
+        0.72
+      ],
+      "bounds": [
+        -233.5378,
+        124.0,
+        1.34,
+        -231.1122,
+        147.6378,
+        3.5878
+      ],
+      "freecadName": "V4_DINING_W_R03_PIPE_COLD",
+      "roomId": "DINING_W_R03",
+      "meta": {
+        "type": "water_branch",
+        "medium": "domestic_cold",
+        "waterBranchId": "DINING_W_R03_W_COLD",
+        "upstreamIds": [
+          "V4_DINING_W_R03_V_COLD"
+        ],
+        "roomId": "DINING_W_R03",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R03_V_HOT",
+      "buildingId": "DINING_W",
+      "system": "water",
+      "level": "F0",
+      "label": "可控支路阀门",
+      "color": [
+        0.75,
+        0.34,
+        0.2
+      ],
+      "bounds": [
+        -232.786,
+        143.89,
+        3.44,
+        -232.386,
+        144.11,
+        3.795
+      ],
+      "freecadName": "V4_DINING_W_R03_V_HOT",
+      "roomId": "DINING_W_R03",
+      "meta": {
+        "id": "V4_DINING_W_R03_V_HOT",
+        "assetId": "V4_DINING_W_R03_V_HOT",
+        "buildingId": "DINING_W",
+        "roomId": "DINING_W_R03",
+        "controlKind": "valve",
+        "type": "isolation_valve",
+        "label": "生活热水支路阀",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "waterBranchId": "DINING_W_R03_W_HOT",
+        "medium": "domestic_hot",
+        "ratedFlowLpm": 8,
+        "upstreamIds": [
+          "V4_DINING_W_HOT_MAIN"
+        ],
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R03_PIPE_HOT",
+      "buildingId": "DINING_W",
+      "system": "water",
+      "level": "F0",
+      "label": "domestic_hot · 阀后支管",
+      "color": [
+        0.77,
+        0.27,
+        0.21
+      ],
+      "bounds": [
+        -233.1878,
+        125.0,
+        1.34,
+        -231.2322,
+        147.6378,
+        3.5878
+      ],
+      "freecadName": "V4_DINING_W_R03_PIPE_HOT",
+      "roomId": "DINING_W_R03",
+      "meta": {
+        "type": "water_branch",
+        "medium": "domestic_hot",
+        "waterBranchId": "DINING_W_R03_W_HOT",
+        "upstreamIds": [
+          "V4_DINING_W_R03_V_HOT"
+        ],
+        "roomId": "DINING_W_R03",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R03_S_TEMPERATURE",
+      "buildingId": "DINING_W",
+      "system": "sensors",
+      "level": "F0",
+      "label": "温度传感器",
+      "color": [
+        0.22,
+        0.63,
+        0.65
+      ],
+      "bounds": [
+        -239.06,
+        144.796,
+        1.75,
+        -238.935,
+        144.956,
+        1.97
+      ],
+      "freecadName": "V4_DINING_W_R03_S_TEMPERATURE",
+      "roomId": "DINING_W_R03",
+      "meta": {
+        "id": "V4_DINING_W_R03_S_TEMPERATURE",
+        "assetId": "V4_DINING_W_R03_S_TEMPERATURE",
+        "buildingId": "DINING_W",
+        "roomId": "DINING_W_R03",
+        "type": "sensor",
+        "sensorKind": "temperature",
+        "label": "温度传感器",
+        "unit": "°C",
+        "circuitId": "DINING_W_R03_C_POWER",
+        "upstreamIds": [
+          "V4_DINING_W_R03_DB"
+        ],
+        "simulated": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R03_S_HUMIDITY",
+      "buildingId": "DINING_W",
+      "system": "sensors",
+      "level": "F0",
+      "label": "相对湿度传感器",
+      "color": [
+        0.22,
+        0.63,
+        0.65
+      ],
+      "bounds": [
+        -239.06,
+        145.096,
+        1.75,
+        -238.935,
+        145.256,
+        1.97
+      ],
+      "freecadName": "V4_DINING_W_R03_S_HUMIDITY",
+      "roomId": "DINING_W_R03",
+      "meta": {
+        "id": "V4_DINING_W_R03_S_HUMIDITY",
+        "assetId": "V4_DINING_W_R03_S_HUMIDITY",
+        "buildingId": "DINING_W",
+        "roomId": "DINING_W_R03",
+        "type": "sensor",
+        "sensorKind": "humidity",
+        "label": "相对湿度传感器",
+        "unit": "%RH",
+        "circuitId": "DINING_W_R03_C_POWER",
+        "upstreamIds": [
+          "V4_DINING_W_R03_DB"
+        ],
+        "simulated": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R03_S_CO2",
+      "buildingId": "DINING_W",
+      "system": "sensors",
+      "level": "F0",
+      "label": "二氧化碳传感器",
+      "color": [
+        0.22,
+        0.63,
+        0.65
+      ],
+      "bounds": [
+        -239.06,
+        145.396,
+        1.75,
+        -238.935,
+        145.556,
+        1.97
+      ],
+      "freecadName": "V4_DINING_W_R03_S_CO2",
+      "roomId": "DINING_W_R03",
+      "meta": {
+        "id": "V4_DINING_W_R03_S_CO2",
+        "assetId": "V4_DINING_W_R03_S_CO2",
+        "buildingId": "DINING_W",
+        "roomId": "DINING_W_R03",
+        "type": "sensor",
+        "sensorKind": "co2",
+        "label": "二氧化碳传感器",
+        "unit": "ppm",
+        "circuitId": "DINING_W_R03_C_POWER",
+        "upstreamIds": [
+          "V4_DINING_W_R03_DB"
+        ],
+        "simulated": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R03_S_OCCUPANCY",
+      "buildingId": "DINING_W",
+      "system": "sensors",
+      "level": "F0",
+      "label": "占用传感器",
+      "color": [
+        0.22,
+        0.63,
+        0.65
+      ],
+      "bounds": [
+        -234.68,
+        146.42,
+        2.995,
+        -234.52,
+        146.58,
+        3.125
+      ],
+      "freecadName": "V4_DINING_W_R03_S_OCCUPANCY",
+      "roomId": "DINING_W_R03",
+      "meta": {
+        "id": "V4_DINING_W_R03_S_OCCUPANCY",
+        "assetId": "V4_DINING_W_R03_S_OCCUPANCY",
+        "buildingId": "DINING_W",
+        "roomId": "DINING_W_R03",
+        "type": "sensor",
+        "sensorKind": "occupancy",
+        "label": "占用传感器",
+        "unit": "persons",
+        "circuitId": "DINING_W_R03_C_POWER",
+        "upstreamIds": [
+          "V4_DINING_W_R03_DB"
+        ],
+        "simulated": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R03_S_POWER",
+      "buildingId": "DINING_W",
+      "system": "sensors",
+      "level": "F0",
+      "label": "支路电功率传感器",
+      "color": [
+        0.22,
+        0.63,
+        0.65
+      ],
+      "bounds": [
+        -239.06,
+        145.996,
+        1.75,
+        -238.935,
+        146.156,
+        1.97
+      ],
+      "freecadName": "V4_DINING_W_R03_S_POWER",
+      "roomId": "DINING_W_R03",
+      "meta": {
+        "id": "V4_DINING_W_R03_S_POWER",
+        "assetId": "V4_DINING_W_R03_S_POWER",
+        "buildingId": "DINING_W",
+        "roomId": "DINING_W_R03",
+        "type": "sensor",
+        "sensorKind": "power",
+        "label": "支路电功率传感器",
+        "unit": "kW",
+        "circuitId": "DINING_W_R03_C_POWER",
+        "upstreamIds": [
+          "V4_DINING_W_R03_DB"
+        ],
+        "simulated": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R03_S_FLOW_COLD",
+      "buildingId": "DINING_W",
+      "system": "sensors",
+      "level": "F0",
+      "label": "支路流量计",
+      "color": [
+        0.22,
+        0.63,
+        0.65
+      ],
+      "bounds": [
+        -232.0825,
+        143.925,
+        3.475,
+        -231.8625,
+        144.075,
+        3.7
+      ],
+      "freecadName": "V4_DINING_W_R03_S_FLOW_COLD",
+      "roomId": "DINING_W_R03",
+      "meta": {
+        "id": "V4_DINING_W_R03_S_FLOW_COLD",
+        "assetId": "V4_DINING_W_R03_S_FLOW_COLD",
+        "buildingId": "DINING_W",
+        "roomId": "DINING_W_R03",
+        "type": "sensor",
+        "sensorKind": "water_flow",
+        "label": "支路流量计",
+        "unit": "L/min",
+        "waterBranchId": "DINING_W_R03_W_COLD",
+        "simulated": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R03_S_FLOW_HOT",
+      "buildingId": "DINING_W",
+      "system": "sensors",
+      "level": "F0",
+      "label": "支路流量计",
+      "color": [
+        0.22,
+        0.63,
+        0.65
+      ],
+      "bounds": [
+        -232.038,
+        143.925,
+        3.475,
+        -231.818,
+        144.075,
+        3.7
+      ],
+      "freecadName": "V4_DINING_W_R03_S_FLOW_HOT",
+      "roomId": "DINING_W_R03",
+      "meta": {
+        "id": "V4_DINING_W_R03_S_FLOW_HOT",
+        "assetId": "V4_DINING_W_R03_S_FLOW_HOT",
+        "buildingId": "DINING_W",
+        "roomId": "DINING_W_R03",
+        "type": "sensor",
+        "sensorKind": "water_flow",
+        "label": "支路流量计",
+        "unit": "L/min",
+        "waterBranchId": "DINING_W_R03_W_HOT",
+        "simulated": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R04_WALLS",
+      "buildingId": "DINING_W",
+      "system": "interiors",
+      "level": "F1",
+      "label": "二层休闲区 · 隔墙与门洞",
+      "color": [
+        0.72,
+        0.77,
+        0.75
+      ],
+      "bounds": [
+        -279.0,
+        126.0,
+        7.925,
+        -249.0,
+        146.0,
+        10.925
+      ],
+      "freecadName": "V4_DINING_W_R04_WALLS",
+      "roomId": "DINING_W_R04",
+      "meta": {
+        "type": "room_partition",
+        "roomId": "DINING_W_R04",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R04_ROOM_GLAZING",
+      "buildingId": "DINING_W",
+      "system": "interiors",
+      "level": "F1",
+      "label": "观察窗",
+      "color": [
+        0.08,
+        0.24,
+        0.3
+      ],
+      "bounds": [
+        -271.8,
+        145.9775,
+        9.0,
+        -256.2,
+        146.0225,
+        10.35
+      ],
+      "freecadName": "V4_DINING_W_R04_ROOM_GLAZING",
+      "roomId": "DINING_W_R04",
+      "meta": {
+        "type": "interior_glazing",
+        "roomId": "DINING_W_R04",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R04_FLOOR_ZONE",
+      "buildingId": "DINING_W",
+      "system": "interiors",
+      "level": "F1",
+      "label": "二层休闲区 · 功能区域",
+      "color": [
+        0.68,
+        0.54,
+        0.38
+      ],
+      "bounds": [
+        -278.875,
+        126.125,
+        7.906,
+        -249.125,
+        145.875,
+        7.918
+      ],
+      "freecadName": "V4_DINING_W_R04_FLOOR_ZONE",
+      "roomId": "DINING_W_R04",
+      "meta": {
+        "type": "room_zone",
+        "roomAreaM2": 600,
+        "roomId": "DINING_W_R04",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R04_DOOR",
+      "buildingId": "DINING_W",
+      "system": "interiors",
+      "level": "F1",
+      "label": "常开门及门框",
+      "color": [
+        0.54,
+        0.62,
+        0.6
+      ],
+      "bounds": [
+        -265.155,
+        125.88,
+        7.9,
+        -262.845,
+        127.08832,
+        10.25
+      ],
+      "freecadName": "V4_DINING_W_R04_DOOR",
+      "roomId": "DINING_W_R04",
+      "meta": {
+        "type": "door",
+        "roomId": "DINING_W_R04",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R04_F01",
+      "buildingId": "DINING_W",
+      "system": "interiors",
+      "level": "F1",
+      "label": "休闲座椅与边桌",
+      "color": [
+        0.58,
+        0.39,
+        0.23
+      ],
+      "bounds": [
+        -274.04,
+        135.65,
+        7.9,
+        -272.8,
+        136.35,
+        8.88
+      ],
+      "freecadName": "V4_DINING_W_R04_F01",
+      "roomId": "DINING_W_R04",
+      "meta": {
+        "type": "furniture",
+        "roomId": "DINING_W_R04",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R04_F02",
+      "buildingId": "DINING_W",
+      "system": "interiors",
+      "level": "F1",
+      "label": "休闲座椅与边桌",
+      "color": [
+        0.58,
+        0.39,
+        0.23
+      ],
+      "bounds": [
+        -270.72,
+        135.65,
+        7.9,
+        -269.48,
+        136.35,
+        8.88
+      ],
+      "freecadName": "V4_DINING_W_R04_F02",
+      "roomId": "DINING_W_R04",
+      "meta": {
+        "type": "furniture",
+        "roomId": "DINING_W_R04",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R04_F03",
+      "buildingId": "DINING_W",
+      "system": "interiors",
+      "level": "F1",
+      "label": "休闲座椅与边桌",
+      "color": [
+        0.58,
+        0.39,
+        0.23
+      ],
+      "bounds": [
+        -266.4,
+        135.65,
+        7.9,
+        -265.16,
+        136.35,
+        8.88
+      ],
+      "freecadName": "V4_DINING_W_R04_F03",
+      "roomId": "DINING_W_R04",
+      "meta": {
+        "type": "furniture",
+        "roomId": "DINING_W_R04",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R04_F04",
+      "buildingId": "DINING_W",
+      "system": "interiors",
+      "level": "F1",
+      "label": "休闲座椅与边桌",
+      "color": [
+        0.58,
+        0.39,
+        0.23
+      ],
+      "bounds": [
+        -262.08,
+        135.65,
+        7.9,
+        -260.84,
+        136.35,
+        8.88
+      ],
+      "freecadName": "V4_DINING_W_R04_F04",
+      "roomId": "DINING_W_R04",
+      "meta": {
+        "type": "furniture",
+        "roomId": "DINING_W_R04",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R04_F05",
+      "buildingId": "DINING_W",
+      "system": "interiors",
+      "level": "F1",
+      "label": "休闲座椅与边桌",
+      "color": [
+        0.58,
+        0.39,
+        0.23
+      ],
+      "bounds": [
+        -257.76,
+        135.65,
+        7.9,
+        -256.52,
+        136.35,
+        8.88
+      ],
+      "freecadName": "V4_DINING_W_R04_F05",
+      "roomId": "DINING_W_R04",
+      "meta": {
+        "type": "furniture",
+        "roomId": "DINING_W_R04",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R04_F06",
+      "buildingId": "DINING_W",
+      "system": "interiors",
+      "level": "F1",
+      "label": "休闲座椅与边桌",
+      "color": [
+        0.58,
+        0.39,
+        0.23
+      ],
+      "bounds": [
+        -254.44,
+        135.65,
+        7.9,
+        -253.2,
+        136.35,
+        8.88
+      ],
+      "freecadName": "V4_DINING_W_R04_F06",
+      "roomId": "DINING_W_R04",
+      "meta": {
+        "type": "furniture",
+        "roomId": "DINING_W_R04",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R04_DB",
+      "buildingId": "DINING_W",
+      "system": "electrical",
+      "level": "F1",
+      "label": "房间配电箱与断路器",
+      "color": [
+        0.3,
+        0.34,
+        0.39
+      ],
+      "bounds": [
+        -249.725,
+        125.995,
+        9.0,
+        -249.175,
+        126.325,
+        9.8
+      ],
+      "freecadName": "V4_DINING_W_R04_DB",
+      "roomId": "DINING_W_R04",
+      "meta": {
+        "id": "V4_DINING_W_R04_DB",
+        "assetId": "V4_DINING_W_R04_DB",
+        "buildingId": "DINING_W",
+        "roomId": "DINING_W_R04",
+        "controlKind": "breaker",
+        "type": "distribution_panel",
+        "label": "房间配电箱",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "upstreamIds": [
+          "V4_DINING_W_MDB"
+        ],
+        "ratedPowerKw": 0,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R04_FEEDER",
+      "buildingId": "DINING_W",
+      "system": "electrical",
+      "level": "F1",
+      "label": "主桥架至房间配电馈线",
+      "color": [
+        0.39,
+        0.32,
+        0.23
+      ],
+      "bounds": [
+        -249.46944,
+        122.2,
+        9.7,
+        -249.43056,
+        126.21944,
+        11.43944
+      ],
+      "freecadName": "V4_DINING_W_R04_FEEDER",
+      "roomId": "DINING_W_R04",
+      "meta": {
+        "type": "cable",
+        "upstreamIds": [
+          "V4_DINING_W_MDB",
+          "V4_DINING_W_R04_DB"
+        ],
+        "roomId": "DINING_W_R04",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R04_L01",
+      "buildingId": "DINING_W",
+      "system": "lighting",
+      "level": "F1",
+      "label": "可调光照明分组 1",
+      "color": [
+        0.98,
+        0.91,
+        0.69
+      ],
+      "bounds": [
+        -275.12,
+        128.88,
+        10.638,
+        -252.88,
+        129.52,
+        11.25
+      ],
+      "freecadName": "V4_DINING_W_R04_L01",
+      "roomId": "DINING_W_R04",
+      "meta": {
+        "id": "V4_DINING_W_R04_L01",
+        "assetId": "V4_DINING_W_R04_L01",
+        "buildingId": "DINING_W",
+        "roomId": "DINING_W_R04",
+        "controlKind": "light",
+        "type": "luminaire_group",
+        "label": "照明分组 1",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "circuitId": "DINING_W_R04_C_LIGHT",
+        "ratedPowerKw": 0.9,
+        "upstreamIds": [
+          "V4_DINING_W_R04_DB"
+        ],
+        "dimmable": true,
+        "fixtureCount": 2,
+        "sourceReference": "ERCO grouped track lighting for exhibition; LED panels elsewhere",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R04_L02",
+      "buildingId": "DINING_W",
+      "system": "lighting",
+      "level": "F1",
+      "label": "可调光照明分组 2",
+      "color": [
+        0.98,
+        0.91,
+        0.69
+      ],
+      "bounds": [
+        -264.32,
+        128.88,
+        10.638,
+        -263.68,
+        129.52,
+        11.25
+      ],
+      "freecadName": "V4_DINING_W_R04_L02",
+      "roomId": "DINING_W_R04",
+      "meta": {
+        "id": "V4_DINING_W_R04_L02",
+        "assetId": "V4_DINING_W_R04_L02",
+        "buildingId": "DINING_W",
+        "roomId": "DINING_W_R04",
+        "controlKind": "light",
+        "type": "luminaire_group",
+        "label": "照明分组 2",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "circuitId": "DINING_W_R04_C_LIGHT",
+        "ratedPowerKw": 0.9,
+        "upstreamIds": [
+          "V4_DINING_W_R04_DB"
+        ],
+        "dimmable": true,
+        "fixtureCount": 1,
+        "sourceReference": "ERCO grouped track lighting for exhibition; LED panels elsewhere",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R04_L03",
+      "buildingId": "DINING_W",
+      "system": "lighting",
+      "level": "F1",
+      "label": "可调光照明分组 3",
+      "color": [
+        0.98,
+        0.91,
+        0.69
+      ],
+      "bounds": [
+        -275.12,
+        142.48,
+        10.638,
+        -252.88,
+        143.12,
+        11.25
+      ],
+      "freecadName": "V4_DINING_W_R04_L03",
+      "roomId": "DINING_W_R04",
+      "meta": {
+        "id": "V4_DINING_W_R04_L03",
+        "assetId": "V4_DINING_W_R04_L03",
+        "buildingId": "DINING_W",
+        "roomId": "DINING_W_R04",
+        "controlKind": "light",
+        "type": "luminaire_group",
+        "label": "照明分组 3",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "circuitId": "DINING_W_R04_C_LIGHT",
+        "ratedPowerKw": 0.9,
+        "upstreamIds": [
+          "V4_DINING_W_R04_DB"
+        ],
+        "dimmable": true,
+        "fixtureCount": 2,
+        "sourceReference": "ERCO grouped track lighting for exhibition; LED panels elsewhere",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R04_L04",
+      "buildingId": "DINING_W",
+      "system": "lighting",
+      "level": "F1",
+      "label": "可调光照明分组 4",
+      "color": [
+        0.98,
+        0.91,
+        0.69
+      ],
+      "bounds": [
+        -264.32,
+        142.48,
+        10.638,
+        -263.68,
+        143.12,
+        11.25
+      ],
+      "freecadName": "V4_DINING_W_R04_L04",
+      "roomId": "DINING_W_R04",
+      "meta": {
+        "id": "V4_DINING_W_R04_L04",
+        "assetId": "V4_DINING_W_R04_L04",
+        "buildingId": "DINING_W",
+        "roomId": "DINING_W_R04",
+        "controlKind": "light",
+        "type": "luminaire_group",
+        "label": "照明分组 4",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "circuitId": "DINING_W_R04_C_LIGHT",
+        "ratedPowerKw": 0.9,
+        "upstreamIds": [
+          "V4_DINING_W_R04_DB"
+        ],
+        "dimmable": true,
+        "fixtureCount": 1,
+        "sourceReference": "ERCO grouped track lighting for exhibition; LED panels elsewhere",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R04_LIGHT_DROPS",
+      "buildingId": "DINING_W",
+      "system": "electrical",
+      "level": "F1",
+      "label": "照明干线至灯具分组支线",
+      "color": [
+        0.3,
+        0.34,
+        0.39
+      ],
+      "bounds": [
+        -274.809,
+        128.871,
+        11.241,
+        -249.45,
+        142.8,
+        11.259
+      ],
+      "freecadName": "V4_DINING_W_R04_LIGHT_DROPS",
+      "roomId": "DINING_W_R04",
+      "meta": {
+        "type": "branch_cable",
+        "circuitId": "DINING_W_R04_C_LIGHT",
+        "roomId": "DINING_W_R04",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R04_CABLE_0",
+      "buildingId": "DINING_W",
+      "system": "electrical",
+      "level": "F1",
+      "label": "独立照明电路",
+      "color": [
+        0.3,
+        0.31,
+        0.34
+      ],
+      "bounds": [
+        -274.5,
+        126.18596,
+        9.6,
+        -249.43596,
+        128.89404,
+        11.26404
+      ],
+      "freecadName": "V4_DINING_W_R04_CABLE_0",
+      "roomId": "DINING_W_R04",
+      "meta": {
+        "type": "branch_cable",
+        "circuitId": "DINING_W_R04_C_LIGHT",
+        "upstreamIds": [
+          "V4_DINING_W_R04_DB"
+        ],
+        "roomId": "DINING_W_R04",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R04_CABLE_1",
+      "buildingId": "DINING_W",
+      "system": "electrical",
+      "level": "F1",
+      "label": "独立插座/设备电路",
+      "color": [
+        0.3,
+        0.31,
+        0.34
+      ],
+      "bounds": [
+        -274.5,
+        126.18596,
+        9.6,
+        -249.43596,
+        129.01404,
+        11.33404
+      ],
+      "freecadName": "V4_DINING_W_R04_CABLE_1",
+      "roomId": "DINING_W_R04",
+      "meta": {
+        "type": "branch_cable",
+        "circuitId": "DINING_W_R04_C_POWER",
+        "upstreamIds": [
+          "V4_DINING_W_R04_DB"
+        ],
+        "roomId": "DINING_W_R04",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R04_CABLE_2",
+      "buildingId": "DINING_W",
+      "system": "electrical",
+      "level": "F1",
+      "label": "独立空调电路",
+      "color": [
+        0.3,
+        0.31,
+        0.34
+      ],
+      "bounds": [
+        -274.5,
+        126.18596,
+        9.6,
+        -249.43596,
+        129.13404,
+        11.40404
+      ],
+      "freecadName": "V4_DINING_W_R04_CABLE_2",
+      "roomId": "DINING_W_R04",
+      "meta": {
+        "type": "branch_cable",
+        "circuitId": "DINING_W_R04_C_HVAC",
+        "upstreamIds": [
+          "V4_DINING_W_R04_DB"
+        ],
+        "roomId": "DINING_W_R04",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R04_SOCKET0",
+      "buildingId": "DINING_W",
+      "system": "electrical",
+      "level": "F1",
+      "label": "墙面插座及下引线",
+      "color": [
+        0.3,
+        0.34,
+        0.39
+      ],
+      "bounds": [
+        -273.065,
+        126.15,
+        8.26,
+        -249.45,
+        126.21,
+        11.32972
+      ],
+      "freecadName": "V4_DINING_W_R04_SOCKET0",
+      "roomId": "DINING_W_R04",
+      "meta": {
+        "type": "socket",
+        "circuitId": "DINING_W_R04_C_POWER",
+        "roomId": "DINING_W_R04",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R04_SOCKET1",
+      "buildingId": "DINING_W",
+      "system": "electrical",
+      "level": "F1",
+      "label": "墙面插座及下引线",
+      "color": [
+        0.3,
+        0.34,
+        0.39
+      ],
+      "bounds": [
+        -255.065,
+        126.15,
+        8.26,
+        -249.45,
+        126.21,
+        11.32972
+      ],
+      "freecadName": "V4_DINING_W_R04_SOCKET1",
+      "roomId": "DINING_W_R04",
+      "meta": {
+        "type": "socket",
+        "circuitId": "DINING_W_R04_C_POWER",
+        "roomId": "DINING_W_R04",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R04_AHU",
+      "buildingId": "DINING_W",
+      "system": "hvac",
+      "level": "F1",
+      "label": "局部空调与送回风终端",
+      "color": [
+        0.68,
+        0.75,
+        0.77
+      ],
+      "bounds": [
+        -278.525,
+        126.64,
+        10.05,
+        -253.5,
+        136.35,
+        11.2
+      ],
+      "freecadName": "V4_DINING_W_R04_AHU",
+      "roomId": "DINING_W_R04",
+      "meta": {
+        "id": "V4_DINING_W_R04_AHU",
+        "assetId": "V4_DINING_W_R04_AHU",
+        "buildingId": "DINING_W",
+        "roomId": "DINING_W_R04",
+        "controlKind": "ahu",
+        "type": "air_handling_unit",
+        "label": "局部空调/通风机组",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "circuitId": "DINING_W_R04_C_HVAC",
+        "ratedPowerKw": 7.2,
+        "upstreamIds": [
+          "V4_DINING_W_R04_DB"
+        ],
+        "designCoolingKw": 60.0,
+        "representativeTerminal": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R04_S_TEMPERATURE",
+      "buildingId": "DINING_W",
+      "system": "sensors",
+      "level": "F1",
+      "label": "温度传感器",
+      "color": [
+        0.22,
+        0.63,
+        0.65
+      ],
+      "bounds": [
+        -278.96,
+        130.32,
+        9.25,
+        -278.835,
+        130.48,
+        9.47
+      ],
+      "freecadName": "V4_DINING_W_R04_S_TEMPERATURE",
+      "roomId": "DINING_W_R04",
+      "meta": {
+        "id": "V4_DINING_W_R04_S_TEMPERATURE",
+        "assetId": "V4_DINING_W_R04_S_TEMPERATURE",
+        "buildingId": "DINING_W",
+        "roomId": "DINING_W_R04",
+        "type": "sensor",
+        "sensorKind": "temperature",
+        "label": "温度传感器",
+        "unit": "°C",
+        "circuitId": "DINING_W_R04_C_POWER",
+        "upstreamIds": [
+          "V4_DINING_W_R04_DB"
+        ],
+        "simulated": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R04_S_HUMIDITY",
+      "buildingId": "DINING_W",
+      "system": "sensors",
+      "level": "F1",
+      "label": "相对湿度传感器",
+      "color": [
+        0.22,
+        0.63,
+        0.65
+      ],
+      "bounds": [
+        -278.96,
+        130.62,
+        9.25,
+        -278.835,
+        130.78,
+        9.47
+      ],
+      "freecadName": "V4_DINING_W_R04_S_HUMIDITY",
+      "roomId": "DINING_W_R04",
+      "meta": {
+        "id": "V4_DINING_W_R04_S_HUMIDITY",
+        "assetId": "V4_DINING_W_R04_S_HUMIDITY",
+        "buildingId": "DINING_W",
+        "roomId": "DINING_W_R04",
+        "type": "sensor",
+        "sensorKind": "humidity",
+        "label": "相对湿度传感器",
+        "unit": "%RH",
+        "circuitId": "DINING_W_R04_C_POWER",
+        "upstreamIds": [
+          "V4_DINING_W_R04_DB"
+        ],
+        "simulated": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R04_S_CO2",
+      "buildingId": "DINING_W",
+      "system": "sensors",
+      "level": "F1",
+      "label": "二氧化碳传感器",
+      "color": [
+        0.22,
+        0.63,
+        0.65
+      ],
+      "bounds": [
+        -278.96,
+        130.92,
+        9.25,
+        -278.835,
+        131.08,
+        9.47
+      ],
+      "freecadName": "V4_DINING_W_R04_S_CO2",
+      "roomId": "DINING_W_R04",
+      "meta": {
+        "id": "V4_DINING_W_R04_S_CO2",
+        "assetId": "V4_DINING_W_R04_S_CO2",
+        "buildingId": "DINING_W",
+        "roomId": "DINING_W_R04",
+        "type": "sensor",
+        "sensorKind": "co2",
+        "label": "二氧化碳传感器",
+        "unit": "ppm",
+        "circuitId": "DINING_W_R04_C_POWER",
+        "upstreamIds": [
+          "V4_DINING_W_R04_DB"
+        ],
+        "simulated": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R04_S_OCCUPANCY",
+      "buildingId": "DINING_W",
+      "system": "sensors",
+      "level": "F1",
+      "label": "占用传感器",
+      "color": [
+        0.22,
+        0.63,
+        0.65
+      ],
+      "bounds": [
+        -264.08,
+        135.92,
+        10.495,
+        -263.92,
+        136.08,
+        10.625
+      ],
+      "freecadName": "V4_DINING_W_R04_S_OCCUPANCY",
+      "roomId": "DINING_W_R04",
+      "meta": {
+        "id": "V4_DINING_W_R04_S_OCCUPANCY",
+        "assetId": "V4_DINING_W_R04_S_OCCUPANCY",
+        "buildingId": "DINING_W",
+        "roomId": "DINING_W_R04",
+        "type": "sensor",
+        "sensorKind": "occupancy",
+        "label": "占用传感器",
+        "unit": "persons",
+        "circuitId": "DINING_W_R04_C_POWER",
+        "upstreamIds": [
+          "V4_DINING_W_R04_DB"
+        ],
+        "simulated": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_DINING_W_R04_S_POWER",
+      "buildingId": "DINING_W",
+      "system": "sensors",
+      "level": "F1",
+      "label": "支路电功率传感器",
+      "color": [
+        0.22,
+        0.63,
+        0.65
+      ],
+      "bounds": [
+        -278.96,
+        131.52,
+        9.25,
+        -278.835,
+        131.68,
+        9.47
+      ],
+      "freecadName": "V4_DINING_W_R04_S_POWER",
+      "roomId": "DINING_W_R04",
+      "meta": {
+        "id": "V4_DINING_W_R04_S_POWER",
+        "assetId": "V4_DINING_W_R04_S_POWER",
+        "buildingId": "DINING_W",
+        "roomId": "DINING_W_R04",
+        "type": "sensor",
+        "sensorKind": "power",
+        "label": "支路电功率传感器",
+        "unit": "kW",
+        "circuitId": "DINING_W_R04_C_POWER",
+        "upstreamIds": [
+          "V4_DINING_W_R04_DB"
+        ],
+        "simulated": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    }
+  ]
+}

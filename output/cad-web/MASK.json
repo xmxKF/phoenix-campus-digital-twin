@@ -1,0 +1,1908 @@
+{
+  "building": {
+    "id": "MASK",
+    "position": [
+      -380,
+      -7,
+      0
+    ],
+    "size": [
+      164,
+      117,
+      25
+    ],
+    "features": [
+      "restrained slit facade",
+      "compact cooling field",
+      "loading canopy"
+    ],
+    "source": "R1 right/R2 left; S02",
+    "confidence": "medium",
+    "levels": {
+      "F0": 0.0,
+      "F1": 6.25,
+      "F2": 12.5,
+      "F3": 18.75,
+      "RF": 25
+    },
+    "dimensionBasis": "V2 image-inferred envelope, architecturally estimated interiors",
+    "units": "m",
+    "axesX": [
+      -80.5,
+      -68.115,
+      -55.731,
+      -43.346,
+      -30.962,
+      -18.577,
+      -6.192,
+      6.192,
+      18.577,
+      30.962,
+      43.346,
+      55.731,
+      68.115,
+      80.5
+    ],
+    "axesY": [
+      -57.0,
+      -42.75,
+      -28.5,
+      -14.25,
+      0.0,
+      14.25,
+      28.5,
+      42.75,
+      57.0
+    ]
+  },
+  "components": [
+    {
+      "id": "MASK_foundation_0373",
+      "buildingId": "MASK",
+      "system": "foundation",
+      "level": "FOUNDATION",
+      "label": "Concept raft",
+      "color": [
+        0.48,
+        0.52,
+        0.57
+      ],
+      "bounds": [
+        -464.5,
+        -68.0,
+        -1.2,
+        -295.5,
+        54.0,
+        0.0
+      ],
+      "source": "Design concept",
+      "freecadName": "MASK_foundation_0373"
+    },
+    {
+      "id": "MASK_structure_0374",
+      "buildingId": "MASK",
+      "system": "structure",
+      "level": "ALL",
+      "label": "Column frame 01",
+      "color": [
+        0.69,
+        0.73,
+        0.77
+      ],
+      "bounds": [
+        -460.925,
+        -64.425,
+        0.0,
+        -299.075,
+        -63.575,
+        25.0
+      ],
+      "source": "Design concept",
+      "freecadName": "MASK_structure_0374"
+    },
+    {
+      "id": "MASK_structure_0375",
+      "buildingId": "MASK",
+      "system": "structure",
+      "level": "ALL",
+      "label": "Column frame 02",
+      "color": [
+        0.69,
+        0.73,
+        0.77
+      ],
+      "bounds": [
+        -460.925,
+        -50.175,
+        0.0,
+        -299.075,
+        -49.325,
+        25.0
+      ],
+      "source": "Design concept",
+      "freecadName": "MASK_structure_0375"
+    },
+    {
+      "id": "MASK_structure_0376",
+      "buildingId": "MASK",
+      "system": "structure",
+      "level": "ALL",
+      "label": "Column frame 03",
+      "color": [
+        0.69,
+        0.73,
+        0.77
+      ],
+      "bounds": [
+        -460.925,
+        -35.925,
+        0.0,
+        -299.075,
+        -35.075,
+        25.0
+      ],
+      "source": "Design concept",
+      "freecadName": "MASK_structure_0376"
+    },
+    {
+      "id": "MASK_structure_0377",
+      "buildingId": "MASK",
+      "system": "structure",
+      "level": "ALL",
+      "label": "Column frame 04",
+      "color": [
+        0.69,
+        0.73,
+        0.77
+      ],
+      "bounds": [
+        -460.925,
+        -21.675,
+        0.0,
+        -299.075,
+        -20.825,
+        25.0
+      ],
+      "source": "Design concept",
+      "freecadName": "MASK_structure_0377"
+    },
+    {
+      "id": "MASK_structure_0378",
+      "buildingId": "MASK",
+      "system": "structure",
+      "level": "ALL",
+      "label": "Column frame 05",
+      "color": [
+        0.69,
+        0.73,
+        0.77
+      ],
+      "bounds": [
+        -460.925,
+        -7.425,
+        0.0,
+        -299.075,
+        -6.575,
+        25.0
+      ],
+      "source": "Design concept",
+      "freecadName": "MASK_structure_0378"
+    },
+    {
+      "id": "MASK_structure_0379",
+      "buildingId": "MASK",
+      "system": "structure",
+      "level": "ALL",
+      "label": "Column frame 06",
+      "color": [
+        0.69,
+        0.73,
+        0.77
+      ],
+      "bounds": [
+        -460.925,
+        6.825,
+        0.0,
+        -299.075,
+        7.675,
+        25.0
+      ],
+      "source": "Design concept",
+      "freecadName": "MASK_structure_0379"
+    },
+    {
+      "id": "MASK_structure_0380",
+      "buildingId": "MASK",
+      "system": "structure",
+      "level": "ALL",
+      "label": "Column frame 07",
+      "color": [
+        0.69,
+        0.73,
+        0.77
+      ],
+      "bounds": [
+        -460.925,
+        21.075,
+        0.0,
+        -299.075,
+        21.925,
+        25.0
+      ],
+      "source": "Design concept",
+      "freecadName": "MASK_structure_0380"
+    },
+    {
+      "id": "MASK_structure_0381",
+      "buildingId": "MASK",
+      "system": "structure",
+      "level": "ALL",
+      "label": "Column frame 08",
+      "color": [
+        0.69,
+        0.73,
+        0.77
+      ],
+      "bounds": [
+        -460.925,
+        35.325,
+        0.0,
+        -299.075,
+        36.175,
+        25.0
+      ],
+      "source": "Design concept",
+      "freecadName": "MASK_structure_0381"
+    },
+    {
+      "id": "MASK_structure_0382",
+      "buildingId": "MASK",
+      "system": "structure",
+      "level": "ALL",
+      "label": "Column frame 09",
+      "color": [
+        0.69,
+        0.73,
+        0.77
+      ],
+      "bounds": [
+        -460.925,
+        49.575,
+        0.0,
+        -299.075,
+        50.425,
+        25.0
+      ],
+      "source": "Design concept",
+      "freecadName": "MASK_structure_0382"
+    },
+    {
+      "id": "MASK_slabs_0383",
+      "buildingId": "MASK",
+      "system": "slabs",
+      "level": "F0",
+      "label": "F0 floor plate",
+      "color": [
+        0.82,
+        0.84,
+        0.85
+      ],
+      "bounds": [
+        -462.0,
+        -65.5,
+        0.0,
+        -298.0,
+        51.5,
+        0.4
+      ],
+      "source": "Design concept",
+      "freecadName": "MASK_slabs_0383"
+    },
+    {
+      "id": "MASK_slabs_0384",
+      "buildingId": "MASK",
+      "system": "slabs",
+      "level": "F1",
+      "label": "F1 floor plate",
+      "color": [
+        0.82,
+        0.84,
+        0.85
+      ],
+      "bounds": [
+        -462.0,
+        -65.5,
+        6.25,
+        -298.0,
+        51.5,
+        6.65
+      ],
+      "source": "Design concept",
+      "freecadName": "MASK_slabs_0384"
+    },
+    {
+      "id": "MASK_slabs_0385",
+      "buildingId": "MASK",
+      "system": "slabs",
+      "level": "F2",
+      "label": "F2 floor plate",
+      "color": [
+        0.82,
+        0.84,
+        0.85
+      ],
+      "bounds": [
+        -462.0,
+        -65.5,
+        12.5,
+        -298.0,
+        51.5,
+        12.9
+      ],
+      "source": "Design concept",
+      "freecadName": "MASK_slabs_0385"
+    },
+    {
+      "id": "MASK_slabs_0386",
+      "buildingId": "MASK",
+      "system": "slabs",
+      "level": "F3",
+      "label": "F3 floor plate",
+      "color": [
+        0.82,
+        0.84,
+        0.85
+      ],
+      "bounds": [
+        -462.0,
+        -65.5,
+        18.75,
+        -298.0,
+        51.5,
+        19.15
+      ],
+      "source": "Design concept",
+      "freecadName": "MASK_slabs_0386"
+    },
+    {
+      "id": "MASK_roof_0387",
+      "buildingId": "MASK",
+      "system": "roof",
+      "level": "RF",
+      "label": "RF floor plate",
+      "color": [
+        0.49,
+        0.56,
+        0.59
+      ],
+      "bounds": [
+        -462.0,
+        -65.5,
+        25.0,
+        -298.0,
+        51.5,
+        25.4
+      ],
+      "source": "Design concept",
+      "freecadName": "MASK_roof_0387"
+    },
+    {
+      "id": "MASK_envelope_0388",
+      "buildingId": "MASK",
+      "system": "envelope",
+      "level": "ALL",
+      "label": "South insulated wall",
+      "color": [
+        0.84,
+        0.86,
+        0.84
+      ],
+      "bounds": [
+        -462.0,
+        -65.65,
+        0.4,
+        -298.0,
+        -65.35,
+        25.0
+      ],
+      "source": "fab1.jpg exterior, conceptual thickness",
+      "freecadName": "MASK_envelope_0388"
+    },
+    {
+      "id": "MASK_glazing_0389",
+      "buildingId": "MASK",
+      "system": "glazing",
+      "level": "ALL",
+      "label": "Vertical window strips",
+      "color": [
+        0.24,
+        0.47,
+        0.58
+      ],
+      "bounds": [
+        -443.17,
+        -65.58,
+        2.6,
+        -316.83,
+        -65.42,
+        22.8
+      ],
+      "source": "Design concept",
+      "freecadName": "MASK_glazing_0389"
+    },
+    {
+      "id": "MASK_envelope_0390",
+      "buildingId": "MASK",
+      "system": "envelope",
+      "level": "ALL",
+      "label": "Vertical metal panel ribs",
+      "color": [
+        0.65,
+        0.69,
+        0.71
+      ],
+      "bounds": [
+        -462.0225,
+        -65.745,
+        0.4,
+        -298.4775,
+        -65.655,
+        25.0
+      ],
+      "source": "Design concept",
+      "freecadName": "MASK_envelope_0390"
+    },
+    {
+      "id": "MASK_envelope_0391",
+      "buildingId": "MASK",
+      "system": "envelope",
+      "level": "ALL",
+      "label": "East/west return panel",
+      "color": [
+        0.84,
+        0.86,
+        0.84
+      ],
+      "bounds": [
+        -462.15,
+        -65.5,
+        0.4,
+        -461.85,
+        51.5,
+        25.0
+      ],
+      "source": "Design concept",
+      "freecadName": "MASK_envelope_0391"
+    },
+    {
+      "id": "MASK_envelope_0392",
+      "buildingId": "MASK",
+      "system": "envelope",
+      "level": "ALL",
+      "label": "North insulated wall",
+      "color": [
+        0.84,
+        0.86,
+        0.84
+      ],
+      "bounds": [
+        -462.0,
+        51.35,
+        0.4,
+        -298.0,
+        51.65,
+        25.0
+      ],
+      "source": "fab1.jpg exterior, conceptual thickness",
+      "freecadName": "MASK_envelope_0392"
+    },
+    {
+      "id": "MASK_glazing_0393",
+      "buildingId": "MASK",
+      "system": "glazing",
+      "level": "ALL",
+      "label": "Vertical window strips",
+      "color": [
+        0.24,
+        0.47,
+        0.58
+      ],
+      "bounds": [
+        -443.17,
+        51.42,
+        2.6,
+        -316.83,
+        51.58,
+        22.8
+      ],
+      "source": "Design concept",
+      "freecadName": "MASK_glazing_0393"
+    },
+    {
+      "id": "MASK_envelope_0394",
+      "buildingId": "MASK",
+      "system": "envelope",
+      "level": "ALL",
+      "label": "Vertical metal panel ribs",
+      "color": [
+        0.65,
+        0.69,
+        0.71
+      ],
+      "bounds": [
+        -462.0225,
+        51.655,
+        0.4,
+        -298.4775,
+        51.745,
+        25.0
+      ],
+      "source": "Design concept",
+      "freecadName": "MASK_envelope_0394"
+    },
+    {
+      "id": "MASK_envelope_0395",
+      "buildingId": "MASK",
+      "system": "envelope",
+      "level": "ALL",
+      "label": "East/west return panel",
+      "color": [
+        0.84,
+        0.86,
+        0.84
+      ],
+      "bounds": [
+        -298.15,
+        -65.5,
+        0.4,
+        -297.85,
+        51.5,
+        25.0
+      ],
+      "source": "Design concept",
+      "freecadName": "MASK_envelope_0395"
+    },
+    {
+      "id": "MASK_interiors_0396",
+      "buildingId": "MASK",
+      "system": "interiors",
+      "level": "F0",
+      "label": "Central circulation partition",
+      "color": [
+        0.76,
+        0.83,
+        0.73
+      ],
+      "bounds": [
+        -458.0,
+        -12.08,
+        0.4,
+        -302.0,
+        -11.92,
+        3.6
+      ],
+      "source": "Design concept",
+      "freecadName": "MASK_interiors_0396"
+    },
+    {
+      "id": "MASK_interiors_0397",
+      "buildingId": "MASK",
+      "system": "interiors",
+      "level": "F0",
+      "label": "Central circulation partition",
+      "color": [
+        0.76,
+        0.83,
+        0.73
+      ],
+      "bounds": [
+        -458.0,
+        -2.08,
+        0.4,
+        -302.0,
+        -1.92,
+        3.6
+      ],
+      "source": "Design concept",
+      "freecadName": "MASK_interiors_0397"
+    },
+    {
+      "id": "MASK_interiors_0398",
+      "buildingId": "MASK",
+      "system": "interiors",
+      "level": "F0",
+      "label": "Mask inspection enclosure module 1",
+      "color": [
+        0.76,
+        0.83,
+        0.73
+      ],
+      "bounds": [
+        -451.88,
+        24.5,
+        0.4,
+        -444.38,
+        29.5,
+        3.3
+      ],
+      "source": "Design concept",
+      "freecadName": "MASK_interiors_0398"
+    },
+    {
+      "id": "MASK_interiors_0399",
+      "buildingId": "MASK",
+      "system": "interiors",
+      "level": "F0",
+      "label": "Mask inspection enclosure module 2",
+      "color": [
+        0.76,
+        0.83,
+        0.73
+      ],
+      "bounds": [
+        -424.328,
+        -43.5,
+        0.4,
+        -416.828,
+        -38.5,
+        3.3
+      ],
+      "source": "Design concept",
+      "freecadName": "MASK_interiors_0399"
+    },
+    {
+      "id": "MASK_interiors_0400",
+      "buildingId": "MASK",
+      "system": "interiors",
+      "level": "F0",
+      "label": "Mask inspection enclosure module 3",
+      "color": [
+        0.76,
+        0.83,
+        0.73
+      ],
+      "bounds": [
+        -396.776,
+        24.5,
+        0.4,
+        -389.276,
+        29.5,
+        3.3
+      ],
+      "source": "Design concept",
+      "freecadName": "MASK_interiors_0400"
+    },
+    {
+      "id": "MASK_interiors_0401",
+      "buildingId": "MASK",
+      "system": "interiors",
+      "level": "F0",
+      "label": "Mask inspection enclosure module 4",
+      "color": [
+        0.76,
+        0.83,
+        0.73
+      ],
+      "bounds": [
+        -369.224,
+        -43.5,
+        0.4,
+        -361.724,
+        -38.5,
+        3.3
+      ],
+      "source": "Design concept",
+      "freecadName": "MASK_interiors_0401"
+    },
+    {
+      "id": "MASK_interiors_0402",
+      "buildingId": "MASK",
+      "system": "interiors",
+      "level": "F0",
+      "label": "Mask inspection enclosure module 5",
+      "color": [
+        0.76,
+        0.83,
+        0.73
+      ],
+      "bounds": [
+        -341.672,
+        24.5,
+        0.4,
+        -334.172,
+        29.5,
+        3.3
+      ],
+      "source": "Design concept",
+      "freecadName": "MASK_interiors_0402"
+    },
+    {
+      "id": "MASK_interiors_0403",
+      "buildingId": "MASK",
+      "system": "interiors",
+      "level": "F0",
+      "label": "Mask inspection enclosure module 6",
+      "color": [
+        0.76,
+        0.83,
+        0.73
+      ],
+      "bounds": [
+        -314.12,
+        -43.5,
+        0.4,
+        -306.62,
+        -38.5,
+        3.3
+      ],
+      "source": "Design concept",
+      "freecadName": "MASK_interiors_0403"
+    },
+    {
+      "id": "MASK_interiors_0404",
+      "buildingId": "MASK",
+      "system": "interiors",
+      "level": "F0",
+      "label": "Gowning airlock concept",
+      "color": [
+        0.76,
+        0.83,
+        0.73
+      ],
+      "bounds": [
+        -387.6,
+        -64.5,
+        0.4,
+        -372.4,
+        -56.4,
+        3.9
+      ],
+      "source": "Design concept",
+      "freecadName": "MASK_interiors_0404"
+    },
+    {
+      "id": "MASK_circulation_0405",
+      "buildingId": "MASK",
+      "system": "circulation",
+      "level": "F0",
+      "label": "Vertical circulation core",
+      "color": [
+        0.79,
+        0.65,
+        0.38
+      ],
+      "bounds": [
+        -415.8,
+        -63.5,
+        0.4,
+        -409.8,
+        -53.5,
+        5.0
+      ],
+      "source": "Design concept",
+      "freecadName": "MASK_circulation_0405"
+    },
+    {
+      "id": "MASK_circulation_0406",
+      "buildingId": "MASK",
+      "system": "circulation",
+      "level": "F0",
+      "label": "Vertical circulation core",
+      "color": [
+        0.79,
+        0.65,
+        0.38
+      ],
+      "bounds": [
+        -350.2,
+        -63.5,
+        0.4,
+        -344.2,
+        -53.5,
+        5.0
+      ],
+      "source": "Design concept",
+      "freecadName": "MASK_circulation_0406"
+    },
+    {
+      "id": "MASK_interiors_0407",
+      "buildingId": "MASK",
+      "system": "interiors",
+      "level": "F1",
+      "label": "Central circulation partition",
+      "color": [
+        0.76,
+        0.83,
+        0.73
+      ],
+      "bounds": [
+        -458.0,
+        -12.08,
+        6.65,
+        -302.0,
+        -11.92,
+        9.85
+      ],
+      "source": "Design concept",
+      "freecadName": "MASK_interiors_0407"
+    },
+    {
+      "id": "MASK_interiors_0408",
+      "buildingId": "MASK",
+      "system": "interiors",
+      "level": "F1",
+      "label": "Central circulation partition",
+      "color": [
+        0.76,
+        0.83,
+        0.73
+      ],
+      "bounds": [
+        -458.0,
+        -2.08,
+        6.65,
+        -302.0,
+        -1.92,
+        9.85
+      ],
+      "source": "Design concept",
+      "freecadName": "MASK_interiors_0408"
+    },
+    {
+      "id": "MASK_interiors_0409",
+      "buildingId": "MASK",
+      "system": "interiors",
+      "level": "F1",
+      "label": "Mask inspection enclosure module 1",
+      "color": [
+        0.76,
+        0.83,
+        0.73
+      ],
+      "bounds": [
+        -451.88,
+        24.5,
+        6.65,
+        -444.38,
+        29.5,
+        9.55
+      ],
+      "source": "Design concept",
+      "freecadName": "MASK_interiors_0409"
+    },
+    {
+      "id": "MASK_interiors_0410",
+      "buildingId": "MASK",
+      "system": "interiors",
+      "level": "F1",
+      "label": "Mask inspection enclosure module 2",
+      "color": [
+        0.76,
+        0.83,
+        0.73
+      ],
+      "bounds": [
+        -424.328,
+        -43.5,
+        6.65,
+        -416.828,
+        -38.5,
+        9.55
+      ],
+      "source": "Design concept",
+      "freecadName": "MASK_interiors_0410"
+    },
+    {
+      "id": "MASK_interiors_0411",
+      "buildingId": "MASK",
+      "system": "interiors",
+      "level": "F1",
+      "label": "Mask inspection enclosure module 3",
+      "color": [
+        0.76,
+        0.83,
+        0.73
+      ],
+      "bounds": [
+        -396.776,
+        24.5,
+        6.65,
+        -389.276,
+        29.5,
+        9.55
+      ],
+      "source": "Design concept",
+      "freecadName": "MASK_interiors_0411"
+    },
+    {
+      "id": "MASK_interiors_0412",
+      "buildingId": "MASK",
+      "system": "interiors",
+      "level": "F1",
+      "label": "Mask inspection enclosure module 4",
+      "color": [
+        0.76,
+        0.83,
+        0.73
+      ],
+      "bounds": [
+        -369.224,
+        -43.5,
+        6.65,
+        -361.724,
+        -38.5,
+        9.55
+      ],
+      "source": "Design concept",
+      "freecadName": "MASK_interiors_0412"
+    },
+    {
+      "id": "MASK_interiors_0413",
+      "buildingId": "MASK",
+      "system": "interiors",
+      "level": "F1",
+      "label": "Mask inspection enclosure module 5",
+      "color": [
+        0.76,
+        0.83,
+        0.73
+      ],
+      "bounds": [
+        -341.672,
+        24.5,
+        6.65,
+        -334.172,
+        29.5,
+        9.55
+      ],
+      "source": "Design concept",
+      "freecadName": "MASK_interiors_0413"
+    },
+    {
+      "id": "MASK_interiors_0414",
+      "buildingId": "MASK",
+      "system": "interiors",
+      "level": "F1",
+      "label": "Mask inspection enclosure module 6",
+      "color": [
+        0.76,
+        0.83,
+        0.73
+      ],
+      "bounds": [
+        -314.12,
+        -43.5,
+        6.65,
+        -306.62,
+        -38.5,
+        9.55
+      ],
+      "source": "Design concept",
+      "freecadName": "MASK_interiors_0414"
+    },
+    {
+      "id": "MASK_interiors_0415",
+      "buildingId": "MASK",
+      "system": "interiors",
+      "level": "F1",
+      "label": "Gowning airlock concept",
+      "color": [
+        0.76,
+        0.83,
+        0.73
+      ],
+      "bounds": [
+        -387.6,
+        -64.5,
+        6.65,
+        -372.4,
+        -56.4,
+        10.15
+      ],
+      "source": "Design concept",
+      "freecadName": "MASK_interiors_0415"
+    },
+    {
+      "id": "MASK_circulation_0416",
+      "buildingId": "MASK",
+      "system": "circulation",
+      "level": "F1",
+      "label": "Vertical circulation core",
+      "color": [
+        0.79,
+        0.65,
+        0.38
+      ],
+      "bounds": [
+        -415.8,
+        -63.5,
+        6.65,
+        -409.8,
+        -53.5,
+        11.25
+      ],
+      "source": "Design concept",
+      "freecadName": "MASK_circulation_0416"
+    },
+    {
+      "id": "MASK_circulation_0417",
+      "buildingId": "MASK",
+      "system": "circulation",
+      "level": "F1",
+      "label": "Vertical circulation core",
+      "color": [
+        0.79,
+        0.65,
+        0.38
+      ],
+      "bounds": [
+        -350.2,
+        -63.5,
+        6.65,
+        -344.2,
+        -53.5,
+        11.25
+      ],
+      "source": "Design concept",
+      "freecadName": "MASK_circulation_0417"
+    },
+    {
+      "id": "MASK_interiors_0418",
+      "buildingId": "MASK",
+      "system": "interiors",
+      "level": "F2",
+      "label": "Central circulation partition",
+      "color": [
+        0.76,
+        0.83,
+        0.73
+      ],
+      "bounds": [
+        -458.0,
+        -12.08,
+        12.9,
+        -302.0,
+        -11.92,
+        16.1
+      ],
+      "source": "Design concept",
+      "freecadName": "MASK_interiors_0418"
+    },
+    {
+      "id": "MASK_interiors_0419",
+      "buildingId": "MASK",
+      "system": "interiors",
+      "level": "F2",
+      "label": "Central circulation partition",
+      "color": [
+        0.76,
+        0.83,
+        0.73
+      ],
+      "bounds": [
+        -458.0,
+        -2.08,
+        12.9,
+        -302.0,
+        -1.92,
+        16.1
+      ],
+      "source": "Design concept",
+      "freecadName": "MASK_interiors_0419"
+    },
+    {
+      "id": "MASK_interiors_0420",
+      "buildingId": "MASK",
+      "system": "interiors",
+      "level": "F2",
+      "label": "Mask inspection enclosure module 1",
+      "color": [
+        0.76,
+        0.83,
+        0.73
+      ],
+      "bounds": [
+        -451.88,
+        24.5,
+        12.9,
+        -444.38,
+        29.5,
+        15.8
+      ],
+      "source": "Design concept",
+      "freecadName": "MASK_interiors_0420"
+    },
+    {
+      "id": "MASK_interiors_0421",
+      "buildingId": "MASK",
+      "system": "interiors",
+      "level": "F2",
+      "label": "Mask inspection enclosure module 2",
+      "color": [
+        0.76,
+        0.83,
+        0.73
+      ],
+      "bounds": [
+        -424.328,
+        -43.5,
+        12.9,
+        -416.828,
+        -38.5,
+        15.8
+      ],
+      "source": "Design concept",
+      "freecadName": "MASK_interiors_0421"
+    },
+    {
+      "id": "MASK_interiors_0422",
+      "buildingId": "MASK",
+      "system": "interiors",
+      "level": "F2",
+      "label": "Mask inspection enclosure module 3",
+      "color": [
+        0.76,
+        0.83,
+        0.73
+      ],
+      "bounds": [
+        -396.776,
+        24.5,
+        12.9,
+        -389.276,
+        29.5,
+        15.8
+      ],
+      "source": "Design concept",
+      "freecadName": "MASK_interiors_0422"
+    },
+    {
+      "id": "MASK_interiors_0423",
+      "buildingId": "MASK",
+      "system": "interiors",
+      "level": "F2",
+      "label": "Mask inspection enclosure module 4",
+      "color": [
+        0.76,
+        0.83,
+        0.73
+      ],
+      "bounds": [
+        -369.224,
+        -43.5,
+        12.9,
+        -361.724,
+        -38.5,
+        15.8
+      ],
+      "source": "Design concept",
+      "freecadName": "MASK_interiors_0423"
+    },
+    {
+      "id": "MASK_interiors_0424",
+      "buildingId": "MASK",
+      "system": "interiors",
+      "level": "F2",
+      "label": "Mask inspection enclosure module 5",
+      "color": [
+        0.76,
+        0.83,
+        0.73
+      ],
+      "bounds": [
+        -341.672,
+        24.5,
+        12.9,
+        -334.172,
+        29.5,
+        15.8
+      ],
+      "source": "Design concept",
+      "freecadName": "MASK_interiors_0424"
+    },
+    {
+      "id": "MASK_interiors_0425",
+      "buildingId": "MASK",
+      "system": "interiors",
+      "level": "F2",
+      "label": "Mask inspection enclosure module 6",
+      "color": [
+        0.76,
+        0.83,
+        0.73
+      ],
+      "bounds": [
+        -314.12,
+        -43.5,
+        12.9,
+        -306.62,
+        -38.5,
+        15.8
+      ],
+      "source": "Design concept",
+      "freecadName": "MASK_interiors_0425"
+    },
+    {
+      "id": "MASK_interiors_0426",
+      "buildingId": "MASK",
+      "system": "interiors",
+      "level": "F2",
+      "label": "Gowning airlock concept",
+      "color": [
+        0.76,
+        0.83,
+        0.73
+      ],
+      "bounds": [
+        -387.6,
+        -64.5,
+        12.9,
+        -372.4,
+        -56.4,
+        16.4
+      ],
+      "source": "Design concept",
+      "freecadName": "MASK_interiors_0426"
+    },
+    {
+      "id": "MASK_circulation_0427",
+      "buildingId": "MASK",
+      "system": "circulation",
+      "level": "F2",
+      "label": "Vertical circulation core",
+      "color": [
+        0.79,
+        0.65,
+        0.38
+      ],
+      "bounds": [
+        -415.8,
+        -63.5,
+        12.9,
+        -409.8,
+        -53.5,
+        17.5
+      ],
+      "source": "Design concept",
+      "freecadName": "MASK_circulation_0427"
+    },
+    {
+      "id": "MASK_circulation_0428",
+      "buildingId": "MASK",
+      "system": "circulation",
+      "level": "F2",
+      "label": "Vertical circulation core",
+      "color": [
+        0.79,
+        0.65,
+        0.38
+      ],
+      "bounds": [
+        -350.2,
+        -63.5,
+        12.9,
+        -344.2,
+        -53.5,
+        17.5
+      ],
+      "source": "Design concept",
+      "freecadName": "MASK_circulation_0428"
+    },
+    {
+      "id": "MASK_interiors_0429",
+      "buildingId": "MASK",
+      "system": "interiors",
+      "level": "F3",
+      "label": "Central circulation partition",
+      "color": [
+        0.76,
+        0.83,
+        0.73
+      ],
+      "bounds": [
+        -458.0,
+        -12.08,
+        19.15,
+        -302.0,
+        -11.92,
+        22.35
+      ],
+      "source": "Design concept",
+      "freecadName": "MASK_interiors_0429"
+    },
+    {
+      "id": "MASK_interiors_0430",
+      "buildingId": "MASK",
+      "system": "interiors",
+      "level": "F3",
+      "label": "Central circulation partition",
+      "color": [
+        0.76,
+        0.83,
+        0.73
+      ],
+      "bounds": [
+        -458.0,
+        -2.08,
+        19.15,
+        -302.0,
+        -1.92,
+        22.35
+      ],
+      "source": "Design concept",
+      "freecadName": "MASK_interiors_0430"
+    },
+    {
+      "id": "MASK_interiors_0431",
+      "buildingId": "MASK",
+      "system": "interiors",
+      "level": "F3",
+      "label": "Mask inspection enclosure module 1",
+      "color": [
+        0.76,
+        0.83,
+        0.73
+      ],
+      "bounds": [
+        -451.88,
+        24.5,
+        19.15,
+        -444.38,
+        29.5,
+        22.05
+      ],
+      "source": "Design concept",
+      "freecadName": "MASK_interiors_0431"
+    },
+    {
+      "id": "MASK_interiors_0432",
+      "buildingId": "MASK",
+      "system": "interiors",
+      "level": "F3",
+      "label": "Mask inspection enclosure module 2",
+      "color": [
+        0.76,
+        0.83,
+        0.73
+      ],
+      "bounds": [
+        -424.328,
+        -43.5,
+        19.15,
+        -416.828,
+        -38.5,
+        22.05
+      ],
+      "source": "Design concept",
+      "freecadName": "MASK_interiors_0432"
+    },
+    {
+      "id": "MASK_interiors_0433",
+      "buildingId": "MASK",
+      "system": "interiors",
+      "level": "F3",
+      "label": "Mask inspection enclosure module 3",
+      "color": [
+        0.76,
+        0.83,
+        0.73
+      ],
+      "bounds": [
+        -396.776,
+        24.5,
+        19.15,
+        -389.276,
+        29.5,
+        22.05
+      ],
+      "source": "Design concept",
+      "freecadName": "MASK_interiors_0433"
+    },
+    {
+      "id": "MASK_interiors_0434",
+      "buildingId": "MASK",
+      "system": "interiors",
+      "level": "F3",
+      "label": "Mask inspection enclosure module 4",
+      "color": [
+        0.76,
+        0.83,
+        0.73
+      ],
+      "bounds": [
+        -369.224,
+        -43.5,
+        19.15,
+        -361.724,
+        -38.5,
+        22.05
+      ],
+      "source": "Design concept",
+      "freecadName": "MASK_interiors_0434"
+    },
+    {
+      "id": "MASK_interiors_0435",
+      "buildingId": "MASK",
+      "system": "interiors",
+      "level": "F3",
+      "label": "Mask inspection enclosure module 5",
+      "color": [
+        0.76,
+        0.83,
+        0.73
+      ],
+      "bounds": [
+        -341.672,
+        24.5,
+        19.15,
+        -334.172,
+        29.5,
+        22.05
+      ],
+      "source": "Design concept",
+      "freecadName": "MASK_interiors_0435"
+    },
+    {
+      "id": "MASK_interiors_0436",
+      "buildingId": "MASK",
+      "system": "interiors",
+      "level": "F3",
+      "label": "Mask inspection enclosure module 6",
+      "color": [
+        0.76,
+        0.83,
+        0.73
+      ],
+      "bounds": [
+        -314.12,
+        -43.5,
+        19.15,
+        -306.62,
+        -38.5,
+        22.05
+      ],
+      "source": "Design concept",
+      "freecadName": "MASK_interiors_0436"
+    },
+    {
+      "id": "MASK_interiors_0437",
+      "buildingId": "MASK",
+      "system": "interiors",
+      "level": "F3",
+      "label": "Gowning airlock concept",
+      "color": [
+        0.76,
+        0.83,
+        0.73
+      ],
+      "bounds": [
+        -387.6,
+        -64.5,
+        19.15,
+        -372.4,
+        -56.4,
+        22.65
+      ],
+      "source": "Design concept",
+      "freecadName": "MASK_interiors_0437"
+    },
+    {
+      "id": "MASK_circulation_0438",
+      "buildingId": "MASK",
+      "system": "circulation",
+      "level": "F3",
+      "label": "Vertical circulation core",
+      "color": [
+        0.79,
+        0.65,
+        0.38
+      ],
+      "bounds": [
+        -415.8,
+        -63.5,
+        19.15,
+        -409.8,
+        -53.5,
+        23.75
+      ],
+      "source": "Design concept",
+      "freecadName": "MASK_circulation_0438"
+    },
+    {
+      "id": "MASK_circulation_0439",
+      "buildingId": "MASK",
+      "system": "circulation",
+      "level": "F3",
+      "label": "Vertical circulation core",
+      "color": [
+        0.79,
+        0.65,
+        0.38
+      ],
+      "bounds": [
+        -350.2,
+        -63.5,
+        19.15,
+        -344.2,
+        -53.5,
+        23.75
+      ],
+      "source": "Design concept",
+      "freecadName": "MASK_circulation_0439"
+    },
+    {
+      "id": "MASK_equipment_0440",
+      "buildingId": "MASK",
+      "system": "equipment",
+      "level": "RF",
+      "label": "AHU-01 casing fans and louvers",
+      "color": [
+        0.6,
+        0.72,
+        0.76
+      ],
+      "bounds": [
+        -442.8,
+        -32.15,
+        25.4,
+        -432.0,
+        -25.85,
+        29.5
+      ],
+      "source": "fab1 rooftop AHU/MAU image and Intel fab mechanical level",
+      "freecadName": "MASK_equipment_0440"
+    },
+    {
+      "id": "MASK_equipment_0441",
+      "buildingId": "MASK",
+      "system": "equipment",
+      "level": "RF",
+      "label": "AHU-02 casing fans and louvers",
+      "color": [
+        0.6,
+        0.72,
+        0.76
+      ],
+      "bounds": [
+        -414.1,
+        -32.15,
+        25.4,
+        -403.3,
+        -25.85,
+        29.5
+      ],
+      "source": "fab1 rooftop AHU/MAU image and Intel fab mechanical level",
+      "freecadName": "MASK_equipment_0441"
+    },
+    {
+      "id": "MASK_equipment_0442",
+      "buildingId": "MASK",
+      "system": "equipment",
+      "level": "RF",
+      "label": "AHU-03 casing fans and louvers",
+      "color": [
+        0.6,
+        0.72,
+        0.76
+      ],
+      "bounds": [
+        -385.4,
+        -32.15,
+        25.4,
+        -374.6,
+        -25.85,
+        29.5
+      ],
+      "source": "fab1 rooftop AHU/MAU image and Intel fab mechanical level",
+      "freecadName": "MASK_equipment_0442"
+    },
+    {
+      "id": "MASK_equipment_0443",
+      "buildingId": "MASK",
+      "system": "equipment",
+      "level": "RF",
+      "label": "AHU-04 casing fans and louvers",
+      "color": [
+        0.6,
+        0.72,
+        0.76
+      ],
+      "bounds": [
+        -356.7,
+        -32.15,
+        25.4,
+        -345.9,
+        -25.85,
+        29.5
+      ],
+      "source": "fab1 rooftop AHU/MAU image and Intel fab mechanical level",
+      "freecadName": "MASK_equipment_0443"
+    },
+    {
+      "id": "MASK_equipment_0444",
+      "buildingId": "MASK",
+      "system": "equipment",
+      "level": "RF",
+      "label": "AHU-05 casing fans and louvers",
+      "color": [
+        0.6,
+        0.72,
+        0.76
+      ],
+      "bounds": [
+        -328.0,
+        -32.15,
+        25.4,
+        -317.2,
+        -25.85,
+        29.5
+      ],
+      "source": "fab1 rooftop AHU/MAU image and Intel fab mechanical level",
+      "freecadName": "MASK_equipment_0444"
+    },
+    {
+      "id": "MASK_equipment_0445",
+      "buildingId": "MASK",
+      "system": "equipment",
+      "level": "RF",
+      "label": "AHU-06 casing fans and louvers",
+      "color": [
+        0.6,
+        0.72,
+        0.76
+      ],
+      "bounds": [
+        -442.8,
+        11.85,
+        25.4,
+        -432.0,
+        18.15,
+        29.5
+      ],
+      "source": "fab1 rooftop AHU/MAU image and Intel fab mechanical level",
+      "freecadName": "MASK_equipment_0445"
+    },
+    {
+      "id": "MASK_equipment_0446",
+      "buildingId": "MASK",
+      "system": "equipment",
+      "level": "RF",
+      "label": "AHU-07 casing fans and louvers",
+      "color": [
+        0.6,
+        0.72,
+        0.76
+      ],
+      "bounds": [
+        -414.1,
+        11.85,
+        25.4,
+        -403.3,
+        18.15,
+        29.5
+      ],
+      "source": "fab1 rooftop AHU/MAU image and Intel fab mechanical level",
+      "freecadName": "MASK_equipment_0446"
+    },
+    {
+      "id": "MASK_equipment_0447",
+      "buildingId": "MASK",
+      "system": "equipment",
+      "level": "RF",
+      "label": "AHU-08 casing fans and louvers",
+      "color": [
+        0.6,
+        0.72,
+        0.76
+      ],
+      "bounds": [
+        -385.4,
+        11.85,
+        25.4,
+        -374.6,
+        18.15,
+        29.5
+      ],
+      "source": "fab1 rooftop AHU/MAU image and Intel fab mechanical level",
+      "freecadName": "MASK_equipment_0447"
+    },
+    {
+      "id": "MASK_equipment_0448",
+      "buildingId": "MASK",
+      "system": "equipment",
+      "level": "RF",
+      "label": "AHU-09 casing fans and louvers",
+      "color": [
+        0.6,
+        0.72,
+        0.76
+      ],
+      "bounds": [
+        -356.7,
+        11.85,
+        25.4,
+        -345.9,
+        18.15,
+        29.5
+      ],
+      "source": "fab1 rooftop AHU/MAU image and Intel fab mechanical level",
+      "freecadName": "MASK_equipment_0448"
+    },
+    {
+      "id": "MASK_equipment_0449",
+      "buildingId": "MASK",
+      "system": "equipment",
+      "level": "RF",
+      "label": "AHU-10 casing fans and louvers",
+      "color": [
+        0.6,
+        0.72,
+        0.76
+      ],
+      "bounds": [
+        -328.0,
+        11.85,
+        25.4,
+        -317.2,
+        18.15,
+        29.5
+      ],
+      "source": "fab1 rooftop AHU/MAU image and Intel fab mechanical level",
+      "freecadName": "MASK_equipment_0449"
+    },
+    {
+      "id": "MASK_piping_0450",
+      "buildingId": "MASK",
+      "system": "piping",
+      "level": "RF",
+      "label": "Roof service manifold",
+      "color": [
+        0.24,
+        0.49,
+        0.56
+      ],
+      "bounds": [
+        -453.8,
+        -7.18,
+        27.82,
+        -306.2,
+        -6.82,
+        29.68
+      ],
+      "source": "Design concept",
+      "freecadName": "MASK_piping_0450"
+    },
+    {
+      "id": "MASK_equipment_0451",
+      "buildingId": "MASK",
+      "system": "equipment",
+      "level": "RF",
+      "label": "Exhaust treatment unit 1",
+      "color": [
+        0.6,
+        0.72,
+        0.76
+      ],
+      "bounds": [
+        -432.0,
+        41.5,
+        25.4,
+        -428.0,
+        45.5,
+        31.4
+      ],
+      "source": "Design concept",
+      "freecadName": "MASK_equipment_0451"
+    },
+    {
+      "id": "MASK_equipment_0452",
+      "buildingId": "MASK",
+      "system": "equipment",
+      "level": "RF",
+      "label": "Exhaust treatment unit 2",
+      "color": [
+        0.6,
+        0.72,
+        0.76
+      ],
+      "bounds": [
+        -407.0,
+        41.5,
+        25.4,
+        -403.0,
+        45.5,
+        31.4
+      ],
+      "source": "Design concept",
+      "freecadName": "MASK_equipment_0452"
+    },
+    {
+      "id": "MASK_equipment_0453",
+      "buildingId": "MASK",
+      "system": "equipment",
+      "level": "RF",
+      "label": "Exhaust treatment unit 3",
+      "color": [
+        0.6,
+        0.72,
+        0.76
+      ],
+      "bounds": [
+        -382.0,
+        41.5,
+        25.4,
+        -378.0,
+        45.5,
+        31.4
+      ],
+      "source": "Design concept",
+      "freecadName": "MASK_equipment_0453"
+    },
+    {
+      "id": "MASK_equipment_0454",
+      "buildingId": "MASK",
+      "system": "equipment",
+      "level": "RF",
+      "label": "Exhaust treatment unit 4",
+      "color": [
+        0.6,
+        0.72,
+        0.76
+      ],
+      "bounds": [
+        -357.0,
+        41.5,
+        25.4,
+        -353.0,
+        45.5,
+        31.4
+      ],
+      "source": "Design concept",
+      "freecadName": "MASK_equipment_0454"
+    },
+    {
+      "id": "MASK_equipment_0455",
+      "buildingId": "MASK",
+      "system": "equipment",
+      "level": "RF",
+      "label": "Exhaust treatment unit 5",
+      "color": [
+        0.6,
+        0.72,
+        0.76
+      ],
+      "bounds": [
+        -332.0,
+        41.5,
+        25.4,
+        -328.0,
+        45.5,
+        31.4
+      ],
+      "source": "Design concept",
+      "freecadName": "MASK_equipment_0455"
+    },
+    {
+      "id": "MASK_circulation_0456",
+      "buildingId": "MASK",
+      "system": "circulation",
+      "level": "RF",
+      "label": "Roof maintenance guardrails",
+      "color": [
+        0.79,
+        0.65,
+        0.38
+      ],
+      "bounds": [
+        -461.045,
+        -64.545,
+        25.4,
+        -298.955,
+        50.545,
+        26.55
+      ],
+      "source": "Design concept",
+      "freecadName": "MASK_circulation_0456"
+    }
+  ]
+}

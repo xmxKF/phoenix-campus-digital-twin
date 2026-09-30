@@ -1,0 +1,8276 @@
+{
+  "building": {
+    "id": "FAB2",
+    "label": "FAB2 · 扩建预留示意",
+    "enabled": false,
+    "expansion": true,
+    "roomId": "FAB2_R01",
+    "representativeToolCount": 8,
+    "position": [
+      -258,
+      -218,
+      15.4
+    ],
+    "bounds": [
+      -367,
+      -238,
+      15.4,
+      -149,
+      -198,
+      24
+    ],
+    "model": "FAB2.glb"
+  },
+  "components": [
+    {
+      "id": "V6_FAB2_TOOL_LITHO",
+      "kind": "tool",
+      "type": "manufacturing_tool",
+      "system": "manufacturing",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "level": "F1",
+      "label": "光刻与涂胶显影单元",
+      "position": [
+        -338,
+        -209,
+        15.4
+      ],
+      "enabled": false,
+      "designStatus": "inferred representative proposal",
+      "source": "analysis/v6/manufacturing-references.md",
+      "process": "lithography",
+      "processKey": "LITHO",
+      "duration": 28,
+      "portId": "V6_FAB2_PORT_LITHO",
+      "stationNode": "V6_FAB2_NODE_LITHO",
+      "referenceFamily": "LITHO",
+      "footprint": [
+        16,
+        9
+      ],
+      "utilityRoomId": "FAB2_R01",
+      "bounds": [
+        -347.0225,
+        -215.011,
+        15.4,
+        -328.9775,
+        -203.9775,
+        21.25
+      ],
+      "componentCount": 21,
+      "meta": {
+        "id": "V6_FAB2_TOOL_LITHO",
+        "kind": "tool",
+        "type": "manufacturing_tool",
+        "system": "manufacturing",
+        "buildingId": "FAB2",
+        "roomId": "FAB2_R01",
+        "level": "F1",
+        "label": "光刻与涂胶显影单元",
+        "position": [
+          -338,
+          -209,
+          15.4
+        ],
+        "enabled": false,
+        "designStatus": "inferred representative proposal",
+        "source": "analysis/v6/manufacturing-references.md",
+        "process": "lithography",
+        "processKey": "LITHO",
+        "duration": 28,
+        "portId": "V6_FAB2_PORT_LITHO",
+        "stationNode": "V6_FAB2_NODE_LITHO",
+        "referenceFamily": "LITHO",
+        "footprint": [
+          16,
+          9
+        ],
+        "utilityRoomId": "FAB2_R01"
+      },
+      "freecadName": "V6_FAB2_TOOL_LITHO"
+    },
+    {
+      "id": "V6_FAB2_PORT_LITHO",
+      "kind": "loadport",
+      "type": "manufacturing_loadport",
+      "system": "manufacturing",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "level": "F1",
+      "label": "光刻与涂胶显影单元 · FOUP装载端口",
+      "position": [
+        -338,
+        -216,
+        16.4
+      ],
+      "enabled": false,
+      "designStatus": "inferred representative proposal",
+      "source": "analysis/v6/manufacturing-references.md",
+      "toolId": "V6_FAB2_TOOL_LITHO",
+      "nodeId": "V6_FAB2_NODE_LITHO",
+      "stationNode": "V6_FAB2_NODE_LITHO",
+      "capacity": 1,
+      "bounds": [
+        -338.5,
+        -216.5,
+        15.4,
+        -337.5,
+        -214.7,
+        17.17
+      ],
+      "componentCount": 5,
+      "meta": {
+        "id": "V6_FAB2_PORT_LITHO",
+        "kind": "loadport",
+        "type": "manufacturing_loadport",
+        "system": "manufacturing",
+        "buildingId": "FAB2",
+        "roomId": "FAB2_R01",
+        "level": "F1",
+        "label": "光刻与涂胶显影单元 · FOUP装载端口",
+        "position": [
+          -338,
+          -216,
+          16.4
+        ],
+        "enabled": false,
+        "designStatus": "inferred representative proposal",
+        "source": "analysis/v6/manufacturing-references.md",
+        "toolId": "V6_FAB2_TOOL_LITHO",
+        "nodeId": "V6_FAB2_NODE_LITHO",
+        "stationNode": "V6_FAB2_NODE_LITHO",
+        "capacity": 1
+      },
+      "freecadName": "V6_FAB2_PORT_LITHO"
+    },
+    {
+      "id": "V6_FAB2_TOOL_ETCH",
+      "kind": "tool",
+      "type": "manufacturing_tool",
+      "system": "manufacturing",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "level": "F1",
+      "label": "等离子刻蚀机",
+      "position": [
+        -316,
+        -209,
+        15.4
+      ],
+      "enabled": false,
+      "designStatus": "inferred representative proposal",
+      "source": "analysis/v6/manufacturing-references.md",
+      "process": "etch",
+      "processKey": "ETCH",
+      "duration": 24,
+      "portId": "V6_FAB2_PORT_ETCH",
+      "stationNode": "V6_FAB2_NODE_ETCH",
+      "referenceFamily": "ETCH",
+      "footprint": [
+        12,
+        9
+      ],
+      "utilityRoomId": "FAB2_R01",
+      "bounds": [
+        -323.0225,
+        -215.011,
+        15.4,
+        -308.9775,
+        -203.9775,
+        18.59
+      ],
+      "componentCount": 26,
+      "meta": {
+        "id": "V6_FAB2_TOOL_ETCH",
+        "kind": "tool",
+        "type": "manufacturing_tool",
+        "system": "manufacturing",
+        "buildingId": "FAB2",
+        "roomId": "FAB2_R01",
+        "level": "F1",
+        "label": "等离子刻蚀机",
+        "position": [
+          -316,
+          -209,
+          15.4
+        ],
+        "enabled": false,
+        "designStatus": "inferred representative proposal",
+        "source": "analysis/v6/manufacturing-references.md",
+        "process": "etch",
+        "processKey": "ETCH",
+        "duration": 24,
+        "portId": "V6_FAB2_PORT_ETCH",
+        "stationNode": "V6_FAB2_NODE_ETCH",
+        "referenceFamily": "ETCH",
+        "footprint": [
+          12,
+          9
+        ],
+        "utilityRoomId": "FAB2_R01"
+      },
+      "freecadName": "V6_FAB2_TOOL_ETCH"
+    },
+    {
+      "id": "V6_FAB2_PORT_ETCH",
+      "kind": "loadport",
+      "type": "manufacturing_loadport",
+      "system": "manufacturing",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "level": "F1",
+      "label": "等离子刻蚀机 · FOUP装载端口",
+      "position": [
+        -316,
+        -216,
+        16.4
+      ],
+      "enabled": false,
+      "designStatus": "inferred representative proposal",
+      "source": "analysis/v6/manufacturing-references.md",
+      "toolId": "V6_FAB2_TOOL_ETCH",
+      "nodeId": "V6_FAB2_NODE_ETCH",
+      "stationNode": "V6_FAB2_NODE_ETCH",
+      "capacity": 1,
+      "bounds": [
+        -316.5,
+        -216.5,
+        15.4,
+        -315.5,
+        -214.7,
+        17.17
+      ],
+      "componentCount": 5,
+      "meta": {
+        "id": "V6_FAB2_PORT_ETCH",
+        "kind": "loadport",
+        "type": "manufacturing_loadport",
+        "system": "manufacturing",
+        "buildingId": "FAB2",
+        "roomId": "FAB2_R01",
+        "level": "F1",
+        "label": "等离子刻蚀机 · FOUP装载端口",
+        "position": [
+          -316,
+          -216,
+          16.4
+        ],
+        "enabled": false,
+        "designStatus": "inferred representative proposal",
+        "source": "analysis/v6/manufacturing-references.md",
+        "toolId": "V6_FAB2_TOOL_ETCH",
+        "nodeId": "V6_FAB2_NODE_ETCH",
+        "stationNode": "V6_FAB2_NODE_ETCH",
+        "capacity": 1
+      },
+      "freecadName": "V6_FAB2_PORT_ETCH"
+    },
+    {
+      "id": "V6_FAB2_TOOL_DEPO",
+      "kind": "tool",
+      "type": "manufacturing_tool",
+      "system": "manufacturing",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "level": "F1",
+      "label": "多腔薄膜沉积机",
+      "position": [
+        -294,
+        -209,
+        15.4
+      ],
+      "enabled": false,
+      "designStatus": "inferred representative proposal",
+      "source": "analysis/v6/manufacturing-references.md",
+      "process": "deposition",
+      "processKey": "DEPO",
+      "duration": 30,
+      "portId": "V6_FAB2_PORT_DEPO",
+      "stationNode": "V6_FAB2_NODE_DEPO",
+      "referenceFamily": "DEPO",
+      "footprint": [
+        12,
+        9
+      ],
+      "utilityRoomId": "FAB2_R01",
+      "bounds": [
+        -301.0225,
+        -215.011,
+        15.4,
+        -286.9775,
+        -203.9775,
+        18.59
+      ],
+      "componentCount": 32,
+      "meta": {
+        "id": "V6_FAB2_TOOL_DEPO",
+        "kind": "tool",
+        "type": "manufacturing_tool",
+        "system": "manufacturing",
+        "buildingId": "FAB2",
+        "roomId": "FAB2_R01",
+        "level": "F1",
+        "label": "多腔薄膜沉积机",
+        "position": [
+          -294,
+          -209,
+          15.4
+        ],
+        "enabled": false,
+        "designStatus": "inferred representative proposal",
+        "source": "analysis/v6/manufacturing-references.md",
+        "process": "deposition",
+        "processKey": "DEPO",
+        "duration": 30,
+        "portId": "V6_FAB2_PORT_DEPO",
+        "stationNode": "V6_FAB2_NODE_DEPO",
+        "referenceFamily": "DEPO",
+        "footprint": [
+          12,
+          9
+        ],
+        "utilityRoomId": "FAB2_R01"
+      },
+      "freecadName": "V6_FAB2_TOOL_DEPO"
+    },
+    {
+      "id": "V6_FAB2_PORT_DEPO",
+      "kind": "loadport",
+      "type": "manufacturing_loadport",
+      "system": "manufacturing",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "level": "F1",
+      "label": "多腔薄膜沉积机 · FOUP装载端口",
+      "position": [
+        -294,
+        -216,
+        16.4
+      ],
+      "enabled": false,
+      "designStatus": "inferred representative proposal",
+      "source": "analysis/v6/manufacturing-references.md",
+      "toolId": "V6_FAB2_TOOL_DEPO",
+      "nodeId": "V6_FAB2_NODE_DEPO",
+      "stationNode": "V6_FAB2_NODE_DEPO",
+      "capacity": 1,
+      "bounds": [
+        -294.5,
+        -216.5,
+        15.4,
+        -293.5,
+        -214.7,
+        17.17
+      ],
+      "componentCount": 5,
+      "meta": {
+        "id": "V6_FAB2_PORT_DEPO",
+        "kind": "loadport",
+        "type": "manufacturing_loadport",
+        "system": "manufacturing",
+        "buildingId": "FAB2",
+        "roomId": "FAB2_R01",
+        "level": "F1",
+        "label": "多腔薄膜沉积机 · FOUP装载端口",
+        "position": [
+          -294,
+          -216,
+          16.4
+        ],
+        "enabled": false,
+        "designStatus": "inferred representative proposal",
+        "source": "analysis/v6/manufacturing-references.md",
+        "toolId": "V6_FAB2_TOOL_DEPO",
+        "nodeId": "V6_FAB2_NODE_DEPO",
+        "stationNode": "V6_FAB2_NODE_DEPO",
+        "capacity": 1
+      },
+      "freecadName": "V6_FAB2_PORT_DEPO"
+    },
+    {
+      "id": "V6_FAB2_TOOL_IMPLANT",
+      "kind": "tool",
+      "type": "manufacturing_tool",
+      "system": "manufacturing",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "level": "F1",
+      "label": "离子注入机",
+      "position": [
+        -272,
+        -209,
+        15.4
+      ],
+      "enabled": false,
+      "designStatus": "inferred representative proposal",
+      "source": "analysis/v6/manufacturing-references.md",
+      "process": "implant",
+      "processKey": "IMPLANT",
+      "duration": 22,
+      "portId": "V6_FAB2_PORT_IMPLANT",
+      "stationNode": "V6_FAB2_NODE_IMPLANT",
+      "referenceFamily": "IMPLANT",
+      "footprint": [
+        12,
+        9
+      ],
+      "utilityRoomId": "FAB2_R01",
+      "bounds": [
+        -279.0225,
+        -215.011,
+        15.4,
+        -264.9775,
+        -203.9775,
+        19.4
+      ],
+      "componentCount": 17,
+      "meta": {
+        "id": "V6_FAB2_TOOL_IMPLANT",
+        "kind": "tool",
+        "type": "manufacturing_tool",
+        "system": "manufacturing",
+        "buildingId": "FAB2",
+        "roomId": "FAB2_R01",
+        "level": "F1",
+        "label": "离子注入机",
+        "position": [
+          -272,
+          -209,
+          15.4
+        ],
+        "enabled": false,
+        "designStatus": "inferred representative proposal",
+        "source": "analysis/v6/manufacturing-references.md",
+        "process": "implant",
+        "processKey": "IMPLANT",
+        "duration": 22,
+        "portId": "V6_FAB2_PORT_IMPLANT",
+        "stationNode": "V6_FAB2_NODE_IMPLANT",
+        "referenceFamily": "IMPLANT",
+        "footprint": [
+          12,
+          9
+        ],
+        "utilityRoomId": "FAB2_R01"
+      },
+      "freecadName": "V6_FAB2_TOOL_IMPLANT"
+    },
+    {
+      "id": "V6_FAB2_PORT_IMPLANT",
+      "kind": "loadport",
+      "type": "manufacturing_loadport",
+      "system": "manufacturing",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "level": "F1",
+      "label": "离子注入机 · FOUP装载端口",
+      "position": [
+        -272,
+        -216,
+        16.4
+      ],
+      "enabled": false,
+      "designStatus": "inferred representative proposal",
+      "source": "analysis/v6/manufacturing-references.md",
+      "toolId": "V6_FAB2_TOOL_IMPLANT",
+      "nodeId": "V6_FAB2_NODE_IMPLANT",
+      "stationNode": "V6_FAB2_NODE_IMPLANT",
+      "capacity": 1,
+      "bounds": [
+        -272.5,
+        -216.5,
+        15.4,
+        -271.5,
+        -214.7,
+        17.17
+      ],
+      "componentCount": 5,
+      "meta": {
+        "id": "V6_FAB2_PORT_IMPLANT",
+        "kind": "loadport",
+        "type": "manufacturing_loadport",
+        "system": "manufacturing",
+        "buildingId": "FAB2",
+        "roomId": "FAB2_R01",
+        "level": "F1",
+        "label": "离子注入机 · FOUP装载端口",
+        "position": [
+          -272,
+          -216,
+          16.4
+        ],
+        "enabled": false,
+        "designStatus": "inferred representative proposal",
+        "source": "analysis/v6/manufacturing-references.md",
+        "toolId": "V6_FAB2_TOOL_IMPLANT",
+        "nodeId": "V6_FAB2_NODE_IMPLANT",
+        "stationNode": "V6_FAB2_NODE_IMPLANT",
+        "capacity": 1
+      },
+      "freecadName": "V6_FAB2_PORT_IMPLANT"
+    },
+    {
+      "id": "V6_FAB2_TOOL_THERMAL",
+      "kind": "tool",
+      "type": "manufacturing_tool",
+      "system": "manufacturing",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "level": "F1",
+      "label": "立式热处理炉",
+      "position": [
+        -250,
+        -209,
+        15.4
+      ],
+      "enabled": false,
+      "designStatus": "inferred representative proposal",
+      "source": "analysis/v6/manufacturing-references.md",
+      "process": "thermal",
+      "processKey": "THERMAL",
+      "duration": 36,
+      "portId": "V6_FAB2_PORT_THERMAL",
+      "stationNode": "V6_FAB2_NODE_THERMAL",
+      "referenceFamily": "THERMAL",
+      "footprint": [
+        12,
+        9
+      ],
+      "utilityRoomId": "FAB2_R01",
+      "bounds": [
+        -257.0225,
+        -215.011,
+        15.4,
+        -242.9775,
+        -203.9775,
+        20.5
+      ],
+      "componentCount": 20,
+      "meta": {
+        "id": "V6_FAB2_TOOL_THERMAL",
+        "kind": "tool",
+        "type": "manufacturing_tool",
+        "system": "manufacturing",
+        "buildingId": "FAB2",
+        "roomId": "FAB2_R01",
+        "level": "F1",
+        "label": "立式热处理炉",
+        "position": [
+          -250,
+          -209,
+          15.4
+        ],
+        "enabled": false,
+        "designStatus": "inferred representative proposal",
+        "source": "analysis/v6/manufacturing-references.md",
+        "process": "thermal",
+        "processKey": "THERMAL",
+        "duration": 36,
+        "portId": "V6_FAB2_PORT_THERMAL",
+        "stationNode": "V6_FAB2_NODE_THERMAL",
+        "referenceFamily": "THERMAL",
+        "footprint": [
+          12,
+          9
+        ],
+        "utilityRoomId": "FAB2_R01"
+      },
+      "freecadName": "V6_FAB2_TOOL_THERMAL"
+    },
+    {
+      "id": "V6_FAB2_PORT_THERMAL",
+      "kind": "loadport",
+      "type": "manufacturing_loadport",
+      "system": "manufacturing",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "level": "F1",
+      "label": "立式热处理炉 · FOUP装载端口",
+      "position": [
+        -250,
+        -216,
+        16.4
+      ],
+      "enabled": false,
+      "designStatus": "inferred representative proposal",
+      "source": "analysis/v6/manufacturing-references.md",
+      "toolId": "V6_FAB2_TOOL_THERMAL",
+      "nodeId": "V6_FAB2_NODE_THERMAL",
+      "stationNode": "V6_FAB2_NODE_THERMAL",
+      "capacity": 1,
+      "bounds": [
+        -250.5,
+        -216.5,
+        15.4,
+        -249.5,
+        -214.7,
+        17.17
+      ],
+      "componentCount": 5,
+      "meta": {
+        "id": "V6_FAB2_PORT_THERMAL",
+        "kind": "loadport",
+        "type": "manufacturing_loadport",
+        "system": "manufacturing",
+        "buildingId": "FAB2",
+        "roomId": "FAB2_R01",
+        "level": "F1",
+        "label": "立式热处理炉 · FOUP装载端口",
+        "position": [
+          -250,
+          -216,
+          16.4
+        ],
+        "enabled": false,
+        "designStatus": "inferred representative proposal",
+        "source": "analysis/v6/manufacturing-references.md",
+        "toolId": "V6_FAB2_TOOL_THERMAL",
+        "nodeId": "V6_FAB2_NODE_THERMAL",
+        "stationNode": "V6_FAB2_NODE_THERMAL",
+        "capacity": 1
+      },
+      "freecadName": "V6_FAB2_PORT_THERMAL"
+    },
+    {
+      "id": "V6_FAB2_TOOL_CMP",
+      "kind": "tool",
+      "type": "manufacturing_tool",
+      "system": "manufacturing",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "level": "F1",
+      "label": "化学机械抛光机",
+      "position": [
+        -228,
+        -209,
+        15.4
+      ],
+      "enabled": false,
+      "designStatus": "inferred representative proposal",
+      "source": "analysis/v6/manufacturing-references.md",
+      "process": "cmp",
+      "processKey": "CMP",
+      "duration": 26,
+      "portId": "V6_FAB2_PORT_CMP",
+      "stationNode": "V6_FAB2_NODE_CMP",
+      "referenceFamily": "CMP",
+      "footprint": [
+        12,
+        9
+      ],
+      "utilityRoomId": "FAB2_R01",
+      "bounds": [
+        -235.0225,
+        -215.011,
+        15.4,
+        -220.9775,
+        -203.9775,
+        18.56
+      ],
+      "componentCount": 25,
+      "meta": {
+        "id": "V6_FAB2_TOOL_CMP",
+        "kind": "tool",
+        "type": "manufacturing_tool",
+        "system": "manufacturing",
+        "buildingId": "FAB2",
+        "roomId": "FAB2_R01",
+        "level": "F1",
+        "label": "化学机械抛光机",
+        "position": [
+          -228,
+          -209,
+          15.4
+        ],
+        "enabled": false,
+        "designStatus": "inferred representative proposal",
+        "source": "analysis/v6/manufacturing-references.md",
+        "process": "cmp",
+        "processKey": "CMP",
+        "duration": 26,
+        "portId": "V6_FAB2_PORT_CMP",
+        "stationNode": "V6_FAB2_NODE_CMP",
+        "referenceFamily": "CMP",
+        "footprint": [
+          12,
+          9
+        ],
+        "utilityRoomId": "FAB2_R01"
+      },
+      "freecadName": "V6_FAB2_TOOL_CMP"
+    },
+    {
+      "id": "V6_FAB2_PORT_CMP",
+      "kind": "loadport",
+      "type": "manufacturing_loadport",
+      "system": "manufacturing",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "level": "F1",
+      "label": "化学机械抛光机 · FOUP装载端口",
+      "position": [
+        -228,
+        -216,
+        16.4
+      ],
+      "enabled": false,
+      "designStatus": "inferred representative proposal",
+      "source": "analysis/v6/manufacturing-references.md",
+      "toolId": "V6_FAB2_TOOL_CMP",
+      "nodeId": "V6_FAB2_NODE_CMP",
+      "stationNode": "V6_FAB2_NODE_CMP",
+      "capacity": 1,
+      "bounds": [
+        -228.5,
+        -216.5,
+        15.4,
+        -227.5,
+        -214.7,
+        17.17
+      ],
+      "componentCount": 5,
+      "meta": {
+        "id": "V6_FAB2_PORT_CMP",
+        "kind": "loadport",
+        "type": "manufacturing_loadport",
+        "system": "manufacturing",
+        "buildingId": "FAB2",
+        "roomId": "FAB2_R01",
+        "level": "F1",
+        "label": "化学机械抛光机 · FOUP装载端口",
+        "position": [
+          -228,
+          -216,
+          16.4
+        ],
+        "enabled": false,
+        "designStatus": "inferred representative proposal",
+        "source": "analysis/v6/manufacturing-references.md",
+        "toolId": "V6_FAB2_TOOL_CMP",
+        "nodeId": "V6_FAB2_NODE_CMP",
+        "stationNode": "V6_FAB2_NODE_CMP",
+        "capacity": 1
+      },
+      "freecadName": "V6_FAB2_PORT_CMP"
+    },
+    {
+      "id": "V6_FAB2_TOOL_CLEAN",
+      "kind": "tool",
+      "type": "manufacturing_tool",
+      "system": "manufacturing",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "level": "F1",
+      "label": "单片湿法清洗机",
+      "position": [
+        -206,
+        -209,
+        15.4
+      ],
+      "enabled": false,
+      "designStatus": "inferred representative proposal",
+      "source": "analysis/v6/manufacturing-references.md",
+      "process": "clean",
+      "processKey": "CLEAN",
+      "duration": 18,
+      "portId": "V6_FAB2_PORT_CLEAN",
+      "stationNode": "V6_FAB2_NODE_CLEAN",
+      "referenceFamily": "CLEAN",
+      "footprint": [
+        12,
+        9
+      ],
+      "utilityRoomId": "FAB2_R01",
+      "bounds": [
+        -213.0225,
+        -215.011,
+        15.4,
+        -198.9775,
+        -203.9775,
+        19.45
+      ],
+      "componentCount": 20,
+      "meta": {
+        "id": "V6_FAB2_TOOL_CLEAN",
+        "kind": "tool",
+        "type": "manufacturing_tool",
+        "system": "manufacturing",
+        "buildingId": "FAB2",
+        "roomId": "FAB2_R01",
+        "level": "F1",
+        "label": "单片湿法清洗机",
+        "position": [
+          -206,
+          -209,
+          15.4
+        ],
+        "enabled": false,
+        "designStatus": "inferred representative proposal",
+        "source": "analysis/v6/manufacturing-references.md",
+        "process": "clean",
+        "processKey": "CLEAN",
+        "duration": 18,
+        "portId": "V6_FAB2_PORT_CLEAN",
+        "stationNode": "V6_FAB2_NODE_CLEAN",
+        "referenceFamily": "CLEAN",
+        "footprint": [
+          12,
+          9
+        ],
+        "utilityRoomId": "FAB2_R01"
+      },
+      "freecadName": "V6_FAB2_TOOL_CLEAN"
+    },
+    {
+      "id": "V6_FAB2_PORT_CLEAN",
+      "kind": "loadport",
+      "type": "manufacturing_loadport",
+      "system": "manufacturing",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "level": "F1",
+      "label": "单片湿法清洗机 · FOUP装载端口",
+      "position": [
+        -206,
+        -216,
+        16.4
+      ],
+      "enabled": false,
+      "designStatus": "inferred representative proposal",
+      "source": "analysis/v6/manufacturing-references.md",
+      "toolId": "V6_FAB2_TOOL_CLEAN",
+      "nodeId": "V6_FAB2_NODE_CLEAN",
+      "stationNode": "V6_FAB2_NODE_CLEAN",
+      "capacity": 1,
+      "bounds": [
+        -206.5,
+        -216.5,
+        15.4,
+        -205.5,
+        -214.7,
+        17.17
+      ],
+      "componentCount": 5,
+      "meta": {
+        "id": "V6_FAB2_PORT_CLEAN",
+        "kind": "loadport",
+        "type": "manufacturing_loadport",
+        "system": "manufacturing",
+        "buildingId": "FAB2",
+        "roomId": "FAB2_R01",
+        "level": "F1",
+        "label": "单片湿法清洗机 · FOUP装载端口",
+        "position": [
+          -206,
+          -216,
+          16.4
+        ],
+        "enabled": false,
+        "designStatus": "inferred representative proposal",
+        "source": "analysis/v6/manufacturing-references.md",
+        "toolId": "V6_FAB2_TOOL_CLEAN",
+        "nodeId": "V6_FAB2_NODE_CLEAN",
+        "stationNode": "V6_FAB2_NODE_CLEAN",
+        "capacity": 1
+      },
+      "freecadName": "V6_FAB2_PORT_CLEAN"
+    },
+    {
+      "id": "V6_FAB2_TOOL_METRO",
+      "kind": "tool",
+      "type": "manufacturing_tool",
+      "system": "manufacturing",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "level": "F1",
+      "label": "光学量测与缺陷检查机",
+      "position": [
+        -184,
+        -209,
+        15.4
+      ],
+      "enabled": false,
+      "designStatus": "inferred representative proposal",
+      "source": "analysis/v6/manufacturing-references.md",
+      "process": "metrology",
+      "processKey": "METRO",
+      "duration": 20,
+      "portId": "V6_FAB2_PORT_METRO",
+      "stationNode": "V6_FAB2_NODE_METRO",
+      "referenceFamily": "METRO",
+      "footprint": [
+        12,
+        9
+      ],
+      "utilityRoomId": "FAB2_R01",
+      "bounds": [
+        -191.0225,
+        -215.011,
+        15.4,
+        -176.9775,
+        -203.9775,
+        19.57
+      ],
+      "componentCount": 21,
+      "meta": {
+        "id": "V6_FAB2_TOOL_METRO",
+        "kind": "tool",
+        "type": "manufacturing_tool",
+        "system": "manufacturing",
+        "buildingId": "FAB2",
+        "roomId": "FAB2_R01",
+        "level": "F1",
+        "label": "光学量测与缺陷检查机",
+        "position": [
+          -184,
+          -209,
+          15.4
+        ],
+        "enabled": false,
+        "designStatus": "inferred representative proposal",
+        "source": "analysis/v6/manufacturing-references.md",
+        "process": "metrology",
+        "processKey": "METRO",
+        "duration": 20,
+        "portId": "V6_FAB2_PORT_METRO",
+        "stationNode": "V6_FAB2_NODE_METRO",
+        "referenceFamily": "METRO",
+        "footprint": [
+          12,
+          9
+        ],
+        "utilityRoomId": "FAB2_R01"
+      },
+      "freecadName": "V6_FAB2_TOOL_METRO"
+    },
+    {
+      "id": "V6_FAB2_PORT_METRO",
+      "kind": "loadport",
+      "type": "manufacturing_loadport",
+      "system": "manufacturing",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "level": "F1",
+      "label": "光学量测与缺陷检查机 · FOUP装载端口",
+      "position": [
+        -184,
+        -216,
+        16.4
+      ],
+      "enabled": false,
+      "designStatus": "inferred representative proposal",
+      "source": "analysis/v6/manufacturing-references.md",
+      "toolId": "V6_FAB2_TOOL_METRO",
+      "nodeId": "V6_FAB2_NODE_METRO",
+      "stationNode": "V6_FAB2_NODE_METRO",
+      "capacity": 1,
+      "bounds": [
+        -184.5,
+        -216.5,
+        15.4,
+        -183.5,
+        -214.7,
+        17.17
+      ],
+      "componentCount": 5,
+      "meta": {
+        "id": "V6_FAB2_PORT_METRO",
+        "kind": "loadport",
+        "type": "manufacturing_loadport",
+        "system": "manufacturing",
+        "buildingId": "FAB2",
+        "roomId": "FAB2_R01",
+        "level": "F1",
+        "label": "光学量测与缺陷检查机 · FOUP装载端口",
+        "position": [
+          -184,
+          -216,
+          16.4
+        ],
+        "enabled": false,
+        "designStatus": "inferred representative proposal",
+        "source": "analysis/v6/manufacturing-references.md",
+        "toolId": "V6_FAB2_TOOL_METRO",
+        "nodeId": "V6_FAB2_NODE_METRO",
+        "stationNode": "V6_FAB2_NODE_METRO",
+        "capacity": 1
+      },
+      "freecadName": "V6_FAB2_PORT_METRO"
+    },
+    {
+      "id": "V6_FAB2_STOCKER_01",
+      "kind": "stocker",
+      "type": "manufacturing_stocker",
+      "system": "manufacturing",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "level": "F1",
+      "label": "六储位FOUP缓存库",
+      "position": [
+        -356,
+        -216,
+        16.4
+      ],
+      "enabled": false,
+      "designStatus": "inferred representative proposal",
+      "source": "analysis/v6/manufacturing-references.md",
+      "nodeId": "V6_FAB2_NODE_STOCKER",
+      "stationNode": "V6_FAB2_NODE_STOCKER",
+      "slotCount": 6,
+      "slots": [
+        {
+          "id": "V6_FAB2_SLOT_01",
+          "index": 0,
+          "position": [
+            -357.05,
+            -211,
+            16.3
+          ]
+        },
+        {
+          "id": "V6_FAB2_SLOT_02",
+          "index": 1,
+          "position": [
+            -356.0,
+            -211,
+            16.3
+          ]
+        },
+        {
+          "id": "V6_FAB2_SLOT_03",
+          "index": 2,
+          "position": [
+            -354.95,
+            -211,
+            16.3
+          ]
+        },
+        {
+          "id": "V6_FAB2_SLOT_04",
+          "index": 3,
+          "position": [
+            -357.05,
+            -211,
+            17.400000000000002
+          ]
+        },
+        {
+          "id": "V6_FAB2_SLOT_05",
+          "index": 4,
+          "position": [
+            -356.0,
+            -211,
+            17.400000000000002
+          ]
+        },
+        {
+          "id": "V6_FAB2_SLOT_06",
+          "index": 5,
+          "position": [
+            -354.95,
+            -211,
+            17.400000000000002
+          ]
+        }
+      ],
+      "slotPositions": [
+        [
+          -357.05,
+          -211,
+          16.3
+        ],
+        [
+          -356.0,
+          -211,
+          16.3
+        ],
+        [
+          -354.95,
+          -211,
+          16.3
+        ],
+        [
+          -357.05,
+          -211,
+          17.400000000000002
+        ],
+        [
+          -356.0,
+          -211,
+          17.400000000000002
+        ],
+        [
+          -354.95,
+          -211,
+          17.400000000000002
+        ]
+      ],
+      "dockPosition": [
+        -356,
+        -216,
+        16.4
+      ],
+      "bounds": [
+        -357.87,
+        -216.55,
+        15.4,
+        -353.7,
+        -209.635,
+        19.64
+      ],
+      "componentCount": 6,
+      "meta": {
+        "id": "V6_FAB2_STOCKER_01",
+        "kind": "stocker",
+        "type": "manufacturing_stocker",
+        "system": "manufacturing",
+        "buildingId": "FAB2",
+        "roomId": "FAB2_R01",
+        "level": "F1",
+        "label": "六储位FOUP缓存库",
+        "position": [
+          -356,
+          -216,
+          16.4
+        ],
+        "enabled": false,
+        "designStatus": "inferred representative proposal",
+        "source": "analysis/v6/manufacturing-references.md",
+        "nodeId": "V6_FAB2_NODE_STOCKER",
+        "stationNode": "V6_FAB2_NODE_STOCKER",
+        "slotCount": 6,
+        "slots": [
+          {
+            "id": "V6_FAB2_SLOT_01",
+            "index": 0,
+            "position": [
+              -357.05,
+              -211,
+              16.3
+            ]
+          },
+          {
+            "id": "V6_FAB2_SLOT_02",
+            "index": 1,
+            "position": [
+              -356.0,
+              -211,
+              16.3
+            ]
+          },
+          {
+            "id": "V6_FAB2_SLOT_03",
+            "index": 2,
+            "position": [
+              -354.95,
+              -211,
+              16.3
+            ]
+          },
+          {
+            "id": "V6_FAB2_SLOT_04",
+            "index": 3,
+            "position": [
+              -357.05,
+              -211,
+              17.400000000000002
+            ]
+          },
+          {
+            "id": "V6_FAB2_SLOT_05",
+            "index": 4,
+            "position": [
+              -356.0,
+              -211,
+              17.400000000000002
+            ]
+          },
+          {
+            "id": "V6_FAB2_SLOT_06",
+            "index": 5,
+            "position": [
+              -354.95,
+              -211,
+              17.400000000000002
+            ]
+          }
+        ],
+        "slotPositions": [
+          [
+            -357.05,
+            -211,
+            16.3
+          ],
+          [
+            -356.0,
+            -211,
+            16.3
+          ],
+          [
+            -354.95,
+            -211,
+            16.3
+          ],
+          [
+            -357.05,
+            -211,
+            17.400000000000002
+          ],
+          [
+            -356.0,
+            -211,
+            17.400000000000002
+          ],
+          [
+            -354.95,
+            -211,
+            17.400000000000002
+          ]
+        ],
+        "dockPosition": [
+          -356,
+          -216,
+          16.4
+        ]
+      },
+      "freecadName": "V6_FAB2_STOCKER_01"
+    },
+    {
+      "id": "V6_FAB2_OHT_01",
+      "kind": "oht",
+      "type": "manufacturing_oht",
+      "system": "manufacturing",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "level": "F1",
+      "label": "高架搬运车 OHT-01",
+      "position": [
+        -356,
+        -216,
+        21.2
+      ],
+      "enabled": false,
+      "designStatus": "inferred representative proposal",
+      "source": "analysis/v6/manufacturing-references.md",
+      "nodeId": "V6_FAB2_NODE_STOCKER",
+      "speed": 6,
+      "capacity": 1,
+      "carrierOffset": [
+        0,
+        0,
+        -1.9
+      ],
+      "bounds": [
+        -356.625,
+        -216.39,
+        20.055,
+        -355.375,
+        -215.61,
+        21.27
+      ],
+      "componentCount": 4,
+      "meta": {
+        "id": "V6_FAB2_OHT_01",
+        "kind": "oht",
+        "type": "manufacturing_oht",
+        "system": "manufacturing",
+        "buildingId": "FAB2",
+        "roomId": "FAB2_R01",
+        "level": "F1",
+        "label": "高架搬运车 OHT-01",
+        "position": [
+          -356,
+          -216,
+          21.2
+        ],
+        "enabled": false,
+        "designStatus": "inferred representative proposal",
+        "source": "analysis/v6/manufacturing-references.md",
+        "nodeId": "V6_FAB2_NODE_STOCKER",
+        "speed": 6,
+        "capacity": 1,
+        "carrierOffset": [
+          0,
+          0,
+          -1.9
+        ]
+      },
+      "freecadName": "V6_FAB2_OHT_01"
+    },
+    {
+      "id": "V6_FAB2_FOUP_01",
+      "kind": "carrier",
+      "type": "manufacturing_carrier",
+      "system": "manufacturing",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "level": "F1",
+      "label": "FOUP-01",
+      "position": [
+        -357.05,
+        -211,
+        16.3
+      ],
+      "enabled": false,
+      "designStatus": "inferred representative proposal",
+      "source": "analysis/v6/manufacturing-references.md",
+      "initialStockerId": "V6_FAB2_STOCKER_01",
+      "slot": 0,
+      "slotId": "V6_FAB2_SLOT_01",
+      "capacityWafers": 25,
+      "bounds": [
+        -357.4125,
+        -211.373,
+        16.3,
+        -356.6875,
+        -210.66,
+        17.055
+      ],
+      "componentCount": 5,
+      "meta": {
+        "id": "V6_FAB2_FOUP_01",
+        "kind": "carrier",
+        "type": "manufacturing_carrier",
+        "system": "manufacturing",
+        "buildingId": "FAB2",
+        "roomId": "FAB2_R01",
+        "level": "F1",
+        "label": "FOUP-01",
+        "position": [
+          -357.05,
+          -211,
+          16.3
+        ],
+        "enabled": false,
+        "designStatus": "inferred representative proposal",
+        "source": "analysis/v6/manufacturing-references.md",
+        "initialStockerId": "V6_FAB2_STOCKER_01",
+        "slot": 0,
+        "slotId": "V6_FAB2_SLOT_01",
+        "capacityWafers": 25
+      },
+      "freecadName": "V6_FAB2_FOUP_01"
+    },
+    {
+      "id": "V6_FAB2_FOUP_02",
+      "kind": "carrier",
+      "type": "manufacturing_carrier",
+      "system": "manufacturing",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "level": "F1",
+      "label": "FOUP-02",
+      "position": [
+        -356.0,
+        -211,
+        16.3
+      ],
+      "enabled": false,
+      "designStatus": "inferred representative proposal",
+      "source": "analysis/v6/manufacturing-references.md",
+      "initialStockerId": "V6_FAB2_STOCKER_01",
+      "slot": 1,
+      "slotId": "V6_FAB2_SLOT_02",
+      "capacityWafers": 25,
+      "bounds": [
+        -356.3625,
+        -211.373,
+        16.3,
+        -355.6375,
+        -210.66,
+        17.055
+      ],
+      "componentCount": 5,
+      "meta": {
+        "id": "V6_FAB2_FOUP_02",
+        "kind": "carrier",
+        "type": "manufacturing_carrier",
+        "system": "manufacturing",
+        "buildingId": "FAB2",
+        "roomId": "FAB2_R01",
+        "level": "F1",
+        "label": "FOUP-02",
+        "position": [
+          -356.0,
+          -211,
+          16.3
+        ],
+        "enabled": false,
+        "designStatus": "inferred representative proposal",
+        "source": "analysis/v6/manufacturing-references.md",
+        "initialStockerId": "V6_FAB2_STOCKER_01",
+        "slot": 1,
+        "slotId": "V6_FAB2_SLOT_02",
+        "capacityWafers": 25
+      },
+      "freecadName": "V6_FAB2_FOUP_02"
+    },
+    {
+      "id": "V6_FAB2_FOUP_03",
+      "kind": "carrier",
+      "type": "manufacturing_carrier",
+      "system": "manufacturing",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "level": "F1",
+      "label": "FOUP-03",
+      "position": [
+        -354.95,
+        -211,
+        16.3
+      ],
+      "enabled": false,
+      "designStatus": "inferred representative proposal",
+      "source": "analysis/v6/manufacturing-references.md",
+      "initialStockerId": "V6_FAB2_STOCKER_01",
+      "slot": 2,
+      "slotId": "V6_FAB2_SLOT_03",
+      "capacityWafers": 25,
+      "bounds": [
+        -355.3125,
+        -211.373,
+        16.3,
+        -354.5875,
+        -210.66,
+        17.055
+      ],
+      "componentCount": 5,
+      "meta": {
+        "id": "V6_FAB2_FOUP_03",
+        "kind": "carrier",
+        "type": "manufacturing_carrier",
+        "system": "manufacturing",
+        "buildingId": "FAB2",
+        "roomId": "FAB2_R01",
+        "level": "F1",
+        "label": "FOUP-03",
+        "position": [
+          -354.95,
+          -211,
+          16.3
+        ],
+        "enabled": false,
+        "designStatus": "inferred representative proposal",
+        "source": "analysis/v6/manufacturing-references.md",
+        "initialStockerId": "V6_FAB2_STOCKER_01",
+        "slot": 2,
+        "slotId": "V6_FAB2_SLOT_03",
+        "capacityWafers": 25
+      },
+      "freecadName": "V6_FAB2_FOUP_03"
+    },
+    {
+      "id": "V6_FAB2_FOUP_04",
+      "kind": "carrier",
+      "type": "manufacturing_carrier",
+      "system": "manufacturing",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "level": "F1",
+      "label": "FOUP-04",
+      "position": [
+        -357.05,
+        -211,
+        17.400000000000002
+      ],
+      "enabled": false,
+      "designStatus": "inferred representative proposal",
+      "source": "analysis/v6/manufacturing-references.md",
+      "initialStockerId": "V6_FAB2_STOCKER_01",
+      "slot": 3,
+      "slotId": "V6_FAB2_SLOT_04",
+      "capacityWafers": 25,
+      "bounds": [
+        -357.4125,
+        -211.373,
+        17.4,
+        -356.6875,
+        -210.66,
+        18.155
+      ],
+      "componentCount": 5,
+      "meta": {
+        "id": "V6_FAB2_FOUP_04",
+        "kind": "carrier",
+        "type": "manufacturing_carrier",
+        "system": "manufacturing",
+        "buildingId": "FAB2",
+        "roomId": "FAB2_R01",
+        "level": "F1",
+        "label": "FOUP-04",
+        "position": [
+          -357.05,
+          -211,
+          17.400000000000002
+        ],
+        "enabled": false,
+        "designStatus": "inferred representative proposal",
+        "source": "analysis/v6/manufacturing-references.md",
+        "initialStockerId": "V6_FAB2_STOCKER_01",
+        "slot": 3,
+        "slotId": "V6_FAB2_SLOT_04",
+        "capacityWafers": 25
+      },
+      "freecadName": "V6_FAB2_FOUP_04"
+    },
+    {
+      "id": "V6_FAB2_FOUP_05",
+      "kind": "carrier",
+      "type": "manufacturing_carrier",
+      "system": "manufacturing",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "level": "F1",
+      "label": "FOUP-05",
+      "position": [
+        -356.0,
+        -211,
+        17.400000000000002
+      ],
+      "enabled": false,
+      "designStatus": "inferred representative proposal",
+      "source": "analysis/v6/manufacturing-references.md",
+      "initialStockerId": "V6_FAB2_STOCKER_01",
+      "slot": 4,
+      "slotId": "V6_FAB2_SLOT_05",
+      "capacityWafers": 25,
+      "bounds": [
+        -356.3625,
+        -211.373,
+        17.4,
+        -355.6375,
+        -210.66,
+        18.155
+      ],
+      "componentCount": 5,
+      "meta": {
+        "id": "V6_FAB2_FOUP_05",
+        "kind": "carrier",
+        "type": "manufacturing_carrier",
+        "system": "manufacturing",
+        "buildingId": "FAB2",
+        "roomId": "FAB2_R01",
+        "level": "F1",
+        "label": "FOUP-05",
+        "position": [
+          -356.0,
+          -211,
+          17.400000000000002
+        ],
+        "enabled": false,
+        "designStatus": "inferred representative proposal",
+        "source": "analysis/v6/manufacturing-references.md",
+        "initialStockerId": "V6_FAB2_STOCKER_01",
+        "slot": 4,
+        "slotId": "V6_FAB2_SLOT_05",
+        "capacityWafers": 25
+      },
+      "freecadName": "V6_FAB2_FOUP_05"
+    },
+    {
+      "id": "V6_FAB2_FOUP_06",
+      "kind": "carrier",
+      "type": "manufacturing_carrier",
+      "system": "manufacturing",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "level": "F1",
+      "label": "FOUP-06",
+      "position": [
+        -354.95,
+        -211,
+        17.400000000000002
+      ],
+      "enabled": false,
+      "designStatus": "inferred representative proposal",
+      "source": "analysis/v6/manufacturing-references.md",
+      "initialStockerId": "V6_FAB2_STOCKER_01",
+      "slot": 5,
+      "slotId": "V6_FAB2_SLOT_06",
+      "capacityWafers": 25,
+      "bounds": [
+        -355.3125,
+        -211.373,
+        17.4,
+        -354.5875,
+        -210.66,
+        18.155
+      ],
+      "componentCount": 5,
+      "meta": {
+        "id": "V6_FAB2_FOUP_06",
+        "kind": "carrier",
+        "type": "manufacturing_carrier",
+        "system": "manufacturing",
+        "buildingId": "FAB2",
+        "roomId": "FAB2_R01",
+        "level": "F1",
+        "label": "FOUP-06",
+        "position": [
+          -354.95,
+          -211,
+          17.400000000000002
+        ],
+        "enabled": false,
+        "designStatus": "inferred representative proposal",
+        "source": "analysis/v6/manufacturing-references.md",
+        "initialStockerId": "V6_FAB2_STOCKER_01",
+        "slot": 5,
+        "slotId": "V6_FAB2_SLOT_06",
+        "capacityWafers": 25
+      },
+      "freecadName": "V6_FAB2_FOUP_06"
+    },
+    {
+      "id": "V6_FAB2_RAIL_01",
+      "kind": "rail",
+      "type": "manufacturing_rail",
+      "system": "manufacturing",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "level": "F1",
+      "label": "OHT高架闭合环轨",
+      "position": [
+        -258,
+        -223,
+        21.2
+      ],
+      "enabled": false,
+      "designStatus": "inferred representative proposal",
+      "source": "analysis/v6/manufacturing-references.md",
+      "routeId": "FAB2",
+      "bounds": [
+        -360.09,
+        -230.09,
+        21.11,
+        -166.91,
+        -215.91,
+        23.8
+      ],
+      "componentCount": 2,
+      "meta": {
+        "id": "V6_FAB2_RAIL_01",
+        "kind": "rail",
+        "type": "manufacturing_rail",
+        "system": "manufacturing",
+        "buildingId": "FAB2",
+        "roomId": "FAB2_R01",
+        "level": "F1",
+        "label": "OHT高架闭合环轨",
+        "position": [
+          -258,
+          -223,
+          21.2
+        ],
+        "enabled": false,
+        "designStatus": "inferred representative proposal",
+        "source": "analysis/v6/manufacturing-references.md",
+        "routeId": "FAB2"
+      },
+      "freecadName": "V6_FAB2_RAIL_01"
+    }
+  ],
+  "parts": [
+    {
+      "id": "V6_FAB2_TOOL_LITHO__plinth",
+      "assetId": "V6_FAB2_TOOL_LITHO",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "光刻与涂胶显影单元 / plinth",
+      "role": "plinth",
+      "kind": "tool",
+      "color": [
+        0.12,
+        0.18,
+        0.23
+      ],
+      "bounds": [
+        -343.67,
+        -212.62,
+        15.4,
+        -337.33,
+        -205.38,
+        15.62
+      ],
+      "freecadName": "V6_FAB2_TOOL_LITHO__plinth"
+    },
+    {
+      "id": "V6_FAB2_TOOL_LITHO__enclosure",
+      "assetId": "V6_FAB2_TOOL_LITHO",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "光刻与涂胶显影单元 / enclosure",
+      "role": "enclosure",
+      "kind": "tool",
+      "color": [
+        0.82,
+        0.86,
+        0.85
+      ],
+      "bounds": [
+        -343.55,
+        -212.5,
+        15.62,
+        -337.45,
+        -205.5,
+        19.42
+      ],
+      "freecadName": "V6_FAB2_TOOL_LITHO__enclosure"
+    },
+    {
+      "id": "V6_FAB2_TOOL_LITHO__panel_seams",
+      "assetId": "V6_FAB2_TOOL_LITHO",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "光刻与涂胶显影单元 / panel_seams",
+      "role": "panel_seams",
+      "kind": "tool",
+      "color": [
+        0.54,
+        0.62,
+        0.67
+      ],
+      "bounds": [
+        -343.45,
+        -212.5495,
+        15.7,
+        -337.55,
+        -212.5045,
+        19.38
+      ],
+      "freecadName": "V6_FAB2_TOOL_LITHO__panel_seams"
+    },
+    {
+      "id": "V6_FAB2_TOOL_LITHO__handles",
+      "assetId": "V6_FAB2_TOOL_LITHO",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "光刻与涂胶显影单元 / handles",
+      "role": "handles",
+      "kind": "tool",
+      "color": [
+        0.12,
+        0.18,
+        0.23
+      ],
+      "bounds": [
+        -342.175,
+        -212.587,
+        16.55,
+        -339.065,
+        -212.527,
+        16.97
+      ],
+      "freecadName": "V6_FAB2_TOOL_LITHO__handles"
+    },
+    {
+      "id": "V6_FAB2_TOOL_LITHO__vent_grille",
+      "assetId": "V6_FAB2_TOOL_LITHO",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "光刻与涂胶显影单元 / vent_grille",
+      "role": "vent_grille",
+      "kind": "tool",
+      "color": [
+        0.12,
+        0.18,
+        0.23
+      ],
+      "bounds": [
+        -339.097,
+        -212.552,
+        15.82,
+        -337.877,
+        -212.512,
+        16.145
+      ],
+      "freecadName": "V6_FAB2_TOOL_LITHO__vent_grille"
+    },
+    {
+      "id": "V6_FAB2_TOOL_LITHO__service_cabinet",
+      "assetId": "V6_FAB2_TOOL_LITHO",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "光刻与涂胶显影单元 / service_cabinet",
+      "role": "service_cabinet",
+      "kind": "tool",
+      "color": [
+        0.13,
+        0.47,
+        0.49
+      ],
+      "bounds": [
+        -337.3,
+        -211.075,
+        15.4,
+        -336.5,
+        -206.525,
+        17.9
+      ],
+      "freecadName": "V6_FAB2_TOOL_LITHO__service_cabinet"
+    },
+    {
+      "id": "V6_FAB2_TOOL_LITHO__optics_tower",
+      "assetId": "V6_FAB2_TOOL_LITHO",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "光刻与涂胶显影单元 / optics_tower",
+      "role": "optics_tower",
+      "kind": "tool",
+      "color": [
+        0.13,
+        0.47,
+        0.49
+      ],
+      "bounds": [
+        -342.25,
+        -210.1,
+        19.42,
+        -338.75,
+        -206.3,
+        21.25
+      ],
+      "freecadName": "V6_FAB2_TOOL_LITHO__optics_tower"
+    },
+    {
+      "id": "V6_FAB2_TOOL_LITHO__track_bank",
+      "assetId": "V6_FAB2_TOOL_LITHO",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "光刻与涂胶显影单元 / track_bank",
+      "role": "track_bank",
+      "kind": "tool",
+      "color": [
+        0.82,
+        0.86,
+        0.85
+      ],
+      "bounds": [
+        -336.65,
+        -212.4,
+        15.6,
+        -332.15,
+        -205.6,
+        18.8
+      ],
+      "freecadName": "V6_FAB2_TOOL_LITHO__track_bank"
+    },
+    {
+      "id": "V6_FAB2_TOOL_LITHO__coat_develop_modules",
+      "assetId": "V6_FAB2_TOOL_LITHO",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "光刻与涂胶显影单元 / coat_develop_modules",
+      "role": "coat_develop_modules",
+      "kind": "tool",
+      "color": [
+        0.09,
+        0.28,
+        0.37
+      ],
+      "bounds": [
+        -336.45,
+        -212.455,
+        16.0,
+        -332.35,
+        -212.405,
+        18.35
+      ],
+      "freecadName": "V6_FAB2_TOOL_LITHO__coat_develop_modules"
+    },
+    {
+      "id": "V6_FAB2_TOOL_LITHO__track_bridge",
+      "assetId": "V6_FAB2_TOOL_LITHO",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "光刻与涂胶显影单元 / track_bridge",
+      "role": "track_bridge",
+      "kind": "tool",
+      "color": [
+        0.54,
+        0.62,
+        0.67
+      ],
+      "bounds": [
+        -338.35,
+        -210.5,
+        16.6,
+        -336.55,
+        -208.5,
+        17.75
+      ],
+      "freecadName": "V6_FAB2_TOOL_LITHO__track_bridge"
+    },
+    {
+      "id": "V6_FAB2_TOOL_LITHO__efem",
+      "assetId": "V6_FAB2_TOOL_LITHO",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "光刻与涂胶显影单元 / efem",
+      "role": "efem",
+      "kind": "tool",
+      "color": [
+        0.82,
+        0.86,
+        0.85
+      ],
+      "bounds": [
+        -339.95,
+        -214.75,
+        15.58,
+        -336.05,
+        -213.65,
+        17.88
+      ],
+      "freecadName": "V6_FAB2_TOOL_LITHO__efem"
+    },
+    {
+      "id": "V6_FAB2_TOOL_LITHO__efem_window",
+      "assetId": "V6_FAB2_TOOL_LITHO",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "光刻与涂胶显影单元 / efem_window",
+      "role": "efem_window",
+      "kind": "tool",
+      "color": [
+        0.09,
+        0.28,
+        0.37
+      ],
+      "bounds": [
+        -339.75,
+        -214.788,
+        16.4,
+        -336.25,
+        -214.748,
+        17.58
+      ],
+      "freecadName": "V6_FAB2_TOOL_LITHO__efem_window"
+    },
+    {
+      "id": "V6_FAB2_TOOL_LITHO__robot_and_transfer",
+      "assetId": "V6_FAB2_TOOL_LITHO",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "光刻与涂胶显影单元 / robot_and_transfer",
+      "role": "robot_and_transfer",
+      "kind": "tool",
+      "color": [
+        0.54,
+        0.62,
+        0.67
+      ],
+      "bounds": [
+        -338.3,
+        -214.5,
+        15.92,
+        -336.99,
+        -213.9,
+        16.17
+      ],
+      "freecadName": "V6_FAB2_TOOL_LITHO__robot_and_transfer"
+    },
+    {
+      "id": "V6_FAB2_TOOL_LITHO__hmi",
+      "assetId": "V6_FAB2_TOOL_LITHO",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "光刻与涂胶显影单元 / hmi",
+      "role": "hmi",
+      "kind": "tool",
+      "color": [
+        0.12,
+        0.18,
+        0.23
+      ],
+      "bounds": [
+        -336.175,
+        -214.995,
+        16.36,
+        -335.425,
+        -214.76,
+        17.37
+      ],
+      "freecadName": "V6_FAB2_TOOL_LITHO__hmi"
+    },
+    {
+      "id": "V6_FAB2_TOOL_LITHO__hmi_screen",
+      "assetId": "V6_FAB2_TOOL_LITHO",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "光刻与涂胶显影单元 / hmi_screen",
+      "role": "hmi_screen",
+      "kind": "tool",
+      "color": [
+        0.18,
+        0.43,
+        0.65
+      ],
+      "bounds": [
+        -336.11,
+        -215.011,
+        16.8,
+        -335.49,
+        -214.999,
+        17.23
+      ],
+      "freecadName": "V6_FAB2_TOOL_LITHO__hmi_screen"
+    },
+    {
+      "id": "V6_FAB2_TOOL_LITHO__status_post",
+      "assetId": "V6_FAB2_TOOL_LITHO",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "光刻与涂胶显影单元 / status_post",
+      "role": "status_post",
+      "kind": "tool",
+      "color": [
+        0.54,
+        0.62,
+        0.67
+      ],
+      "bounds": [
+        -339.895,
+        -214.245,
+        17.88,
+        -339.805,
+        -214.155,
+        18.56
+      ],
+      "freecadName": "V6_FAB2_TOOL_LITHO__status_post"
+    },
+    {
+      "id": "V6_FAB2_TOOL_LITHO__status_green",
+      "assetId": "V6_FAB2_TOOL_LITHO",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "光刻与涂胶显影单元 / status_green",
+      "role": "status_green",
+      "kind": "tool",
+      "color": [
+        0.2,
+        0.76,
+        0.39
+      ],
+      "bounds": [
+        -339.94,
+        -214.29,
+        18.08,
+        -339.76,
+        -214.11,
+        18.18
+      ],
+      "freecadName": "V6_FAB2_TOOL_LITHO__status_green"
+    },
+    {
+      "id": "V6_FAB2_TOOL_LITHO__status_amber",
+      "assetId": "V6_FAB2_TOOL_LITHO",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "光刻与涂胶显影单元 / status_amber",
+      "role": "status_amber",
+      "kind": "tool",
+      "color": [
+        0.93,
+        0.55,
+        0.13
+      ],
+      "bounds": [
+        -339.94,
+        -214.29,
+        18.2,
+        -339.76,
+        -214.11,
+        18.3
+      ],
+      "freecadName": "V6_FAB2_TOOL_LITHO__status_amber"
+    },
+    {
+      "id": "V6_FAB2_TOOL_LITHO__status_red",
+      "assetId": "V6_FAB2_TOOL_LITHO",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "光刻与涂胶显影单元 / status_red",
+      "role": "status_red",
+      "kind": "tool",
+      "color": [
+        0.83,
+        0.19,
+        0.15
+      ],
+      "bounds": [
+        -339.94,
+        -214.29,
+        18.32,
+        -339.76,
+        -214.11,
+        18.42
+      ],
+      "freecadName": "V6_FAB2_TOOL_LITHO__status_red"
+    },
+    {
+      "id": "V6_FAB2_TOOL_LITHO__efem_service_link",
+      "assetId": "V6_FAB2_TOOL_LITHO",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "光刻与涂胶显影单元 / efem_service_link",
+      "role": "efem_service_link",
+      "kind": "tool",
+      "color": [
+        0.82,
+        0.86,
+        0.85
+      ],
+      "bounds": [
+        -339.0,
+        -214.2,
+        15.7,
+        -337.0,
+        -209.0,
+        17.6
+      ],
+      "freecadName": "V6_FAB2_TOOL_LITHO__efem_service_link"
+    },
+    {
+      "id": "V6_FAB2_TOOL_LITHO__cell_boundary",
+      "assetId": "V6_FAB2_TOOL_LITHO",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "光刻与涂胶显影单元 / cell_boundary",
+      "role": "cell_boundary",
+      "kind": "tool",
+      "color": [
+        0.22,
+        0.5,
+        0.52
+      ],
+      "bounds": [
+        -347.0225,
+        -214.0,
+        15.412,
+        -328.9775,
+        -203.9775,
+        15.424
+      ],
+      "freecadName": "V6_FAB2_TOOL_LITHO__cell_boundary"
+    },
+    {
+      "id": "V6_FAB2_PORT_LITHO__pedestal",
+      "assetId": "V6_FAB2_PORT_LITHO",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "光刻与涂胶显影单元 · FOUP装载端口 / pedestal",
+      "role": "pedestal",
+      "kind": "loadport",
+      "color": [
+        0.54,
+        0.62,
+        0.67
+      ],
+      "bounds": [
+        -338.5,
+        -216.5,
+        15.4,
+        -337.5,
+        -215.5,
+        16.4
+      ],
+      "freecadName": "V6_FAB2_PORT_LITHO__pedestal"
+    },
+    {
+      "id": "V6_FAB2_PORT_LITHO__door",
+      "assetId": "V6_FAB2_PORT_LITHO",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "光刻与涂胶显影单元 · FOUP装载端口 / door",
+      "role": "door",
+      "kind": "loadport",
+      "color": [
+        0.82,
+        0.86,
+        0.85
+      ],
+      "bounds": [
+        -338.365,
+        -215.5,
+        16.32,
+        -337.635,
+        -215.38,
+        17.17
+      ],
+      "freecadName": "V6_FAB2_PORT_LITHO__door"
+    },
+    {
+      "id": "V6_FAB2_PORT_LITHO__docking_face",
+      "assetId": "V6_FAB2_PORT_LITHO",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "光刻与涂胶显影单元 · FOUP装载端口 / docking_face",
+      "role": "docking_face",
+      "kind": "loadport",
+      "color": [
+        0.12,
+        0.18,
+        0.23
+      ],
+      "bounds": [
+        -338.29,
+        -215.527,
+        16.45,
+        -337.71,
+        -215.503,
+        17.03
+      ],
+      "freecadName": "V6_FAB2_PORT_LITHO__docking_face"
+    },
+    {
+      "id": "V6_FAB2_PORT_LITHO__alignment_pins",
+      "assetId": "V6_FAB2_PORT_LITHO",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "光刻与涂胶显影单元 · FOUP装载端口 / alignment_pins",
+      "role": "alignment_pins",
+      "kind": "loadport",
+      "color": [
+        0.54,
+        0.62,
+        0.67
+      ],
+      "bounds": [
+        -338.27,
+        -216.24,
+        16.4,
+        -337.73,
+        -215.74,
+        16.47
+      ],
+      "freecadName": "V6_FAB2_PORT_LITHO__alignment_pins"
+    },
+    {
+      "id": "V6_FAB2_PORT_LITHO__efem_join",
+      "assetId": "V6_FAB2_PORT_LITHO",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "光刻与涂胶显影单元 · FOUP装载端口 / efem_join",
+      "role": "efem_join",
+      "kind": "loadport",
+      "color": [
+        0.82,
+        0.86,
+        0.85
+      ],
+      "bounds": [
+        -338.5,
+        -215.42,
+        15.65,
+        -337.5,
+        -214.7,
+        16.35
+      ],
+      "freecadName": "V6_FAB2_PORT_LITHO__efem_join"
+    },
+    {
+      "id": "V6_FAB2_TOOL_ETCH__plinth",
+      "assetId": "V6_FAB2_TOOL_ETCH",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "等离子刻蚀机 / plinth",
+      "role": "plinth",
+      "kind": "tool",
+      "color": [
+        0.12,
+        0.18,
+        0.23
+      ],
+      "bounds": [
+        -320.45,
+        -212.75,
+        15.4,
+        -311.55,
+        -205.25,
+        15.65
+      ],
+      "freecadName": "V6_FAB2_TOOL_ETCH__plinth"
+    },
+    {
+      "id": "V6_FAB2_TOOL_ETCH__central_vacuum_transfer",
+      "assetId": "V6_FAB2_TOOL_ETCH",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "等离子刻蚀机 / central_vacuum_transfer",
+      "role": "central_vacuum_transfer",
+      "kind": "tool",
+      "color": [
+        0.54,
+        0.62,
+        0.67
+      ],
+      "bounds": [
+        -317.86,
+        -210.86,
+        15.65,
+        -314.14,
+        -207.14,
+        17.46
+      ],
+      "freecadName": "V6_FAB2_TOOL_ETCH__central_vacuum_transfer"
+    },
+    {
+      "id": "V6_FAB2_TOOL_ETCH__chamber_1",
+      "assetId": "V6_FAB2_TOOL_ETCH",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "等离子刻蚀机 / chamber_1",
+      "role": "chamber_1",
+      "kind": "tool",
+      "color": [
+        0.82,
+        0.86,
+        0.85
+      ],
+      "bounds": [
+        -314.221876,
+        -208.925243,
+        15.65,
+        -312.421876,
+        -207.125243,
+        18.14
+      ],
+      "freecadName": "V6_FAB2_TOOL_ETCH__chamber_1"
+    },
+    {
+      "id": "V6_FAB2_TOOL_ETCH__chamber_lid_1",
+      "assetId": "V6_FAB2_TOOL_ETCH",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "等离子刻蚀机 / chamber_lid_1",
+      "role": "chamber_lid_1",
+      "kind": "tool",
+      "color": [
+        0.54,
+        0.62,
+        0.67
+      ],
+      "bounds": [
+        -314.066876,
+        -208.770243,
+        18.15,
+        -312.576876,
+        -207.280243,
+        18.59
+      ],
+      "freecadName": "V6_FAB2_TOOL_ETCH__chamber_lid_1"
+    },
+    {
+      "id": "V6_FAB2_TOOL_ETCH__vacuum_neck_1",
+      "assetId": "V6_FAB2_TOOL_ETCH",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "等离子刻蚀机 / vacuum_neck_1",
+      "role": "vacuum_neck_1",
+      "kind": "tool",
+      "color": [
+        0.54,
+        0.62,
+        0.67
+      ],
+      "bounds": [
+        -316.095766,
+        -209.263114,
+        16.12,
+        -313.22611,
+        -207.762129,
+        16.68
+      ],
+      "freecadName": "V6_FAB2_TOOL_ETCH__vacuum_neck_1"
+    },
+    {
+      "id": "V6_FAB2_TOOL_ETCH__chamber_2",
+      "assetId": "V6_FAB2_TOOL_ETCH",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "等离子刻蚀机 / chamber_2",
+      "role": "chamber_2",
+      "kind": "tool",
+      "color": [
+        0.82,
+        0.86,
+        0.85
+      ],
+      "bounds": [
+        -317.394897,
+        -207.093298,
+        15.65,
+        -315.594897,
+        -205.293298,
+        18.14
+      ],
+      "freecadName": "V6_FAB2_TOOL_ETCH__chamber_2"
+    },
+    {
+      "id": "V6_FAB2_TOOL_ETCH__chamber_lid_2",
+      "assetId": "V6_FAB2_TOOL_ETCH",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "等离子刻蚀机 / chamber_lid_2",
+      "role": "chamber_lid_2",
+      "kind": "tool",
+      "color": [
+        0.54,
+        0.62,
+        0.67
+      ],
+      "bounds": [
+        -317.239897,
+        -206.938298,
+        18.15,
+        -315.749897,
+        -205.448298,
+        18.59
+      ],
+      "freecadName": "V6_FAB2_TOOL_ETCH__chamber_lid_2"
+    },
+    {
+      "id": "V6_FAB2_TOOL_ETCH__vacuum_neck_2",
+      "assetId": "V6_FAB2_TOOL_ETCH",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "等离子刻蚀机 / vacuum_neck_2",
+      "role": "vacuum_neck_2",
+      "kind": "tool",
+      "color": [
+        0.54,
+        0.62,
+        0.67
+      ],
+      "bounds": [
+        -316.770643,
+        -209.048621,
+        16.12,
+        -315.724254,
+        -206.144676,
+        16.68
+      ],
+      "freecadName": "V6_FAB2_TOOL_ETCH__vacuum_neck_2"
+    },
+    {
+      "id": "V6_FAB2_TOOL_ETCH__chamber_3",
+      "assetId": "V6_FAB2_TOOL_ETCH",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "等离子刻蚀机 / chamber_3",
+      "role": "chamber_3",
+      "kind": "tool",
+      "color": [
+        0.82,
+        0.86,
+        0.85
+      ],
+      "bounds": [
+        -319.75,
+        -209.9,
+        15.65,
+        -317.95,
+        -208.1,
+        18.14
+      ],
+      "freecadName": "V6_FAB2_TOOL_ETCH__chamber_3"
+    },
+    {
+      "id": "V6_FAB2_TOOL_ETCH__chamber_lid_3",
+      "assetId": "V6_FAB2_TOOL_ETCH",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "等离子刻蚀机 / chamber_lid_3",
+      "role": "chamber_lid_3",
+      "kind": "tool",
+      "color": [
+        0.54,
+        0.62,
+        0.67
+      ],
+      "bounds": [
+        -319.595,
+        -209.745,
+        18.15,
+        -318.105,
+        -208.255,
+        18.59
+      ],
+      "freecadName": "V6_FAB2_TOOL_ETCH__chamber_lid_3"
+    },
+    {
+      "id": "V6_FAB2_TOOL_ETCH__vacuum_neck_3",
+      "assetId": "V6_FAB2_TOOL_ETCH",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "等离子刻蚀机 / vacuum_neck_3",
+      "role": "vacuum_neck_3",
+      "kind": "tool",
+      "color": [
+        0.54,
+        0.62,
+        0.67
+      ],
+      "bounds": [
+        -318.85,
+        -209.28,
+        16.12,
+        -316.0,
+        -208.72,
+        16.68
+      ],
+      "freecadName": "V6_FAB2_TOOL_ETCH__vacuum_neck_3"
+    },
+    {
+      "id": "V6_FAB2_TOOL_ETCH__chamber_4",
+      "assetId": "V6_FAB2_TOOL_ETCH",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "等离子刻蚀机 / chamber_4",
+      "role": "chamber_4",
+      "kind": "tool",
+      "color": [
+        0.82,
+        0.86,
+        0.85
+      ],
+      "bounds": [
+        -317.394897,
+        -212.706702,
+        15.65,
+        -315.594897,
+        -210.906702,
+        18.14
+      ],
+      "freecadName": "V6_FAB2_TOOL_ETCH__chamber_4"
+    },
+    {
+      "id": "V6_FAB2_TOOL_ETCH__chamber_lid_4",
+      "assetId": "V6_FAB2_TOOL_ETCH",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "等离子刻蚀机 / chamber_lid_4",
+      "role": "chamber_lid_4",
+      "kind": "tool",
+      "color": [
+        0.54,
+        0.62,
+        0.67
+      ],
+      "bounds": [
+        -317.239897,
+        -212.551702,
+        18.15,
+        -315.749897,
+        -211.061702,
+        18.59
+      ],
+      "freecadName": "V6_FAB2_TOOL_ETCH__chamber_lid_4"
+    },
+    {
+      "id": "V6_FAB2_TOOL_ETCH__vacuum_neck_4",
+      "assetId": "V6_FAB2_TOOL_ETCH",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "等离子刻蚀机 / vacuum_neck_4",
+      "role": "vacuum_neck_4",
+      "kind": "tool",
+      "color": [
+        0.54,
+        0.62,
+        0.67
+      ],
+      "bounds": [
+        -316.770643,
+        -211.855324,
+        16.12,
+        -315.724254,
+        -208.951379,
+        16.68
+      ],
+      "freecadName": "V6_FAB2_TOOL_ETCH__vacuum_neck_4"
+    },
+    {
+      "id": "V6_FAB2_TOOL_ETCH__rf_power_modules",
+      "assetId": "V6_FAB2_TOOL_ETCH",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "等离子刻蚀机 / rf_power_modules",
+      "role": "rf_power_modules",
+      "kind": "tool",
+      "color": [
+        0.82,
+        0.86,
+        0.85
+      ],
+      "bounds": [
+        -320.95,
+        -209.7,
+        15.4,
+        -311.05,
+        -207.7,
+        17.65
+      ],
+      "freecadName": "V6_FAB2_TOOL_ETCH__rf_power_modules"
+    },
+    {
+      "id": "V6_FAB2_TOOL_ETCH__efem",
+      "assetId": "V6_FAB2_TOOL_ETCH",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "等离子刻蚀机 / efem",
+      "role": "efem",
+      "kind": "tool",
+      "color": [
+        0.82,
+        0.86,
+        0.85
+      ],
+      "bounds": [
+        -317.95,
+        -214.75,
+        15.58,
+        -314.05,
+        -213.65,
+        17.88
+      ],
+      "freecadName": "V6_FAB2_TOOL_ETCH__efem"
+    },
+    {
+      "id": "V6_FAB2_TOOL_ETCH__efem_window",
+      "assetId": "V6_FAB2_TOOL_ETCH",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "等离子刻蚀机 / efem_window",
+      "role": "efem_window",
+      "kind": "tool",
+      "color": [
+        0.09,
+        0.28,
+        0.37
+      ],
+      "bounds": [
+        -317.75,
+        -214.788,
+        16.4,
+        -314.25,
+        -214.748,
+        17.58
+      ],
+      "freecadName": "V6_FAB2_TOOL_ETCH__efem_window"
+    },
+    {
+      "id": "V6_FAB2_TOOL_ETCH__robot_and_transfer",
+      "assetId": "V6_FAB2_TOOL_ETCH",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "等离子刻蚀机 / robot_and_transfer",
+      "role": "robot_and_transfer",
+      "kind": "tool",
+      "color": [
+        0.54,
+        0.62,
+        0.67
+      ],
+      "bounds": [
+        -316.3,
+        -214.5,
+        15.92,
+        -314.99,
+        -213.9,
+        16.17
+      ],
+      "freecadName": "V6_FAB2_TOOL_ETCH__robot_and_transfer"
+    },
+    {
+      "id": "V6_FAB2_TOOL_ETCH__hmi",
+      "assetId": "V6_FAB2_TOOL_ETCH",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "等离子刻蚀机 / hmi",
+      "role": "hmi",
+      "kind": "tool",
+      "color": [
+        0.12,
+        0.18,
+        0.23
+      ],
+      "bounds": [
+        -314.175,
+        -214.995,
+        16.36,
+        -313.425,
+        -214.76,
+        17.37
+      ],
+      "freecadName": "V6_FAB2_TOOL_ETCH__hmi"
+    },
+    {
+      "id": "V6_FAB2_TOOL_ETCH__hmi_screen",
+      "assetId": "V6_FAB2_TOOL_ETCH",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "等离子刻蚀机 / hmi_screen",
+      "role": "hmi_screen",
+      "kind": "tool",
+      "color": [
+        0.18,
+        0.43,
+        0.65
+      ],
+      "bounds": [
+        -314.11,
+        -215.011,
+        16.8,
+        -313.49,
+        -214.999,
+        17.23
+      ],
+      "freecadName": "V6_FAB2_TOOL_ETCH__hmi_screen"
+    },
+    {
+      "id": "V6_FAB2_TOOL_ETCH__status_post",
+      "assetId": "V6_FAB2_TOOL_ETCH",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "等离子刻蚀机 / status_post",
+      "role": "status_post",
+      "kind": "tool",
+      "color": [
+        0.54,
+        0.62,
+        0.67
+      ],
+      "bounds": [
+        -317.895,
+        -214.245,
+        17.88,
+        -317.805,
+        -214.155,
+        18.56
+      ],
+      "freecadName": "V6_FAB2_TOOL_ETCH__status_post"
+    },
+    {
+      "id": "V6_FAB2_TOOL_ETCH__status_green",
+      "assetId": "V6_FAB2_TOOL_ETCH",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "等离子刻蚀机 / status_green",
+      "role": "status_green",
+      "kind": "tool",
+      "color": [
+        0.2,
+        0.76,
+        0.39
+      ],
+      "bounds": [
+        -317.94,
+        -214.29,
+        18.08,
+        -317.76,
+        -214.11,
+        18.18
+      ],
+      "freecadName": "V6_FAB2_TOOL_ETCH__status_green"
+    },
+    {
+      "id": "V6_FAB2_TOOL_ETCH__status_amber",
+      "assetId": "V6_FAB2_TOOL_ETCH",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "等离子刻蚀机 / status_amber",
+      "role": "status_amber",
+      "kind": "tool",
+      "color": [
+        0.93,
+        0.55,
+        0.13
+      ],
+      "bounds": [
+        -317.94,
+        -214.29,
+        18.2,
+        -317.76,
+        -214.11,
+        18.3
+      ],
+      "freecadName": "V6_FAB2_TOOL_ETCH__status_amber"
+    },
+    {
+      "id": "V6_FAB2_TOOL_ETCH__status_red",
+      "assetId": "V6_FAB2_TOOL_ETCH",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "等离子刻蚀机 / status_red",
+      "role": "status_red",
+      "kind": "tool",
+      "color": [
+        0.83,
+        0.19,
+        0.15
+      ],
+      "bounds": [
+        -317.94,
+        -214.29,
+        18.32,
+        -317.76,
+        -214.11,
+        18.42
+      ],
+      "freecadName": "V6_FAB2_TOOL_ETCH__status_red"
+    },
+    {
+      "id": "V6_FAB2_TOOL_ETCH__efem_service_link",
+      "assetId": "V6_FAB2_TOOL_ETCH",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "等离子刻蚀机 / efem_service_link",
+      "role": "efem_service_link",
+      "kind": "tool",
+      "color": [
+        0.82,
+        0.86,
+        0.85
+      ],
+      "bounds": [
+        -317.0,
+        -214.2,
+        15.7,
+        -315.0,
+        -209.0,
+        17.6
+      ],
+      "freecadName": "V6_FAB2_TOOL_ETCH__efem_service_link"
+    },
+    {
+      "id": "V6_FAB2_TOOL_ETCH__cell_boundary",
+      "assetId": "V6_FAB2_TOOL_ETCH",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "等离子刻蚀机 / cell_boundary",
+      "role": "cell_boundary",
+      "kind": "tool",
+      "color": [
+        0.22,
+        0.5,
+        0.52
+      ],
+      "bounds": [
+        -323.0225,
+        -214.0,
+        15.412,
+        -308.9775,
+        -203.9775,
+        15.424
+      ],
+      "freecadName": "V6_FAB2_TOOL_ETCH__cell_boundary"
+    },
+    {
+      "id": "V6_FAB2_PORT_ETCH__pedestal",
+      "assetId": "V6_FAB2_PORT_ETCH",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "等离子刻蚀机 · FOUP装载端口 / pedestal",
+      "role": "pedestal",
+      "kind": "loadport",
+      "color": [
+        0.54,
+        0.62,
+        0.67
+      ],
+      "bounds": [
+        -316.5,
+        -216.5,
+        15.4,
+        -315.5,
+        -215.5,
+        16.4
+      ],
+      "freecadName": "V6_FAB2_PORT_ETCH__pedestal"
+    },
+    {
+      "id": "V6_FAB2_PORT_ETCH__door",
+      "assetId": "V6_FAB2_PORT_ETCH",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "等离子刻蚀机 · FOUP装载端口 / door",
+      "role": "door",
+      "kind": "loadport",
+      "color": [
+        0.82,
+        0.86,
+        0.85
+      ],
+      "bounds": [
+        -316.365,
+        -215.5,
+        16.32,
+        -315.635,
+        -215.38,
+        17.17
+      ],
+      "freecadName": "V6_FAB2_PORT_ETCH__door"
+    },
+    {
+      "id": "V6_FAB2_PORT_ETCH__docking_face",
+      "assetId": "V6_FAB2_PORT_ETCH",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "等离子刻蚀机 · FOUP装载端口 / docking_face",
+      "role": "docking_face",
+      "kind": "loadport",
+      "color": [
+        0.12,
+        0.18,
+        0.23
+      ],
+      "bounds": [
+        -316.29,
+        -215.527,
+        16.45,
+        -315.71,
+        -215.503,
+        17.03
+      ],
+      "freecadName": "V6_FAB2_PORT_ETCH__docking_face"
+    },
+    {
+      "id": "V6_FAB2_PORT_ETCH__alignment_pins",
+      "assetId": "V6_FAB2_PORT_ETCH",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "等离子刻蚀机 · FOUP装载端口 / alignment_pins",
+      "role": "alignment_pins",
+      "kind": "loadport",
+      "color": [
+        0.54,
+        0.62,
+        0.67
+      ],
+      "bounds": [
+        -316.27,
+        -216.24,
+        16.4,
+        -315.73,
+        -215.74,
+        16.47
+      ],
+      "freecadName": "V6_FAB2_PORT_ETCH__alignment_pins"
+    },
+    {
+      "id": "V6_FAB2_PORT_ETCH__efem_join",
+      "assetId": "V6_FAB2_PORT_ETCH",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "等离子刻蚀机 · FOUP装载端口 / efem_join",
+      "role": "efem_join",
+      "kind": "loadport",
+      "color": [
+        0.82,
+        0.86,
+        0.85
+      ],
+      "bounds": [
+        -316.5,
+        -215.42,
+        15.65,
+        -315.5,
+        -214.7,
+        16.35
+      ],
+      "freecadName": "V6_FAB2_PORT_ETCH__efem_join"
+    },
+    {
+      "id": "V6_FAB2_TOOL_DEPO__plinth",
+      "assetId": "V6_FAB2_TOOL_DEPO",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "多腔薄膜沉积机 / plinth",
+      "role": "plinth",
+      "kind": "tool",
+      "color": [
+        0.12,
+        0.18,
+        0.23
+      ],
+      "bounds": [
+        -298.45,
+        -212.75,
+        15.4,
+        -289.55,
+        -205.25,
+        15.65
+      ],
+      "freecadName": "V6_FAB2_TOOL_DEPO__plinth"
+    },
+    {
+      "id": "V6_FAB2_TOOL_DEPO__central_vacuum_transfer",
+      "assetId": "V6_FAB2_TOOL_DEPO",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "多腔薄膜沉积机 / central_vacuum_transfer",
+      "role": "central_vacuum_transfer",
+      "kind": "tool",
+      "color": [
+        0.54,
+        0.62,
+        0.67
+      ],
+      "bounds": [
+        -295.86,
+        -210.86,
+        15.65,
+        -292.14,
+        -207.14,
+        17.46
+      ],
+      "freecadName": "V6_FAB2_TOOL_DEPO__central_vacuum_transfer"
+    },
+    {
+      "id": "V6_FAB2_TOOL_DEPO__chamber_1",
+      "assetId": "V6_FAB2_TOOL_DEPO",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "多腔薄膜沉积机 / chamber_1",
+      "role": "chamber_1",
+      "kind": "tool",
+      "color": [
+        0.13,
+        0.47,
+        0.49
+      ],
+      "bounds": [
+        -292.05,
+        -209.9,
+        15.65,
+        -290.25,
+        -208.1,
+        18.14
+      ],
+      "freecadName": "V6_FAB2_TOOL_DEPO__chamber_1"
+    },
+    {
+      "id": "V6_FAB2_TOOL_DEPO__chamber_lid_1",
+      "assetId": "V6_FAB2_TOOL_DEPO",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "多腔薄膜沉积机 / chamber_lid_1",
+      "role": "chamber_lid_1",
+      "kind": "tool",
+      "color": [
+        0.54,
+        0.62,
+        0.67
+      ],
+      "bounds": [
+        -291.895,
+        -209.745,
+        18.15,
+        -290.405,
+        -208.255,
+        18.59
+      ],
+      "freecadName": "V6_FAB2_TOOL_DEPO__chamber_lid_1"
+    },
+    {
+      "id": "V6_FAB2_TOOL_DEPO__vacuum_neck_1",
+      "assetId": "V6_FAB2_TOOL_DEPO",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "多腔薄膜沉积机 / vacuum_neck_1",
+      "role": "vacuum_neck_1",
+      "kind": "tool",
+      "color": [
+        0.54,
+        0.62,
+        0.67
+      ],
+      "bounds": [
+        -294.0,
+        -209.28,
+        16.12,
+        -291.15,
+        -208.72,
+        16.68
+      ],
+      "freecadName": "V6_FAB2_TOOL_DEPO__vacuum_neck_1"
+    },
+    {
+      "id": "V6_FAB2_TOOL_DEPO__chamber_2",
+      "assetId": "V6_FAB2_TOOL_DEPO",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "多腔薄膜沉积机 / chamber_2",
+      "role": "chamber_2",
+      "kind": "tool",
+      "color": [
+        0.13,
+        0.47,
+        0.49
+      ],
+      "bounds": [
+        -293.475,
+        -207.431828,
+        15.65,
+        -291.675,
+        -205.631828,
+        18.14
+      ],
+      "freecadName": "V6_FAB2_TOOL_DEPO__chamber_2"
+    },
+    {
+      "id": "V6_FAB2_TOOL_DEPO__chamber_lid_2",
+      "assetId": "V6_FAB2_TOOL_DEPO",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "多腔薄膜沉积机 / chamber_lid_2",
+      "role": "chamber_lid_2",
+      "kind": "tool",
+      "color": [
+        0.54,
+        0.62,
+        0.67
+      ],
+      "bounds": [
+        -293.32,
+        -207.276828,
+        18.15,
+        -291.83,
+        -205.786828,
+        18.59
+      ],
+      "freecadName": "V6_FAB2_TOOL_DEPO__chamber_lid_2"
+    },
+    {
+      "id": "V6_FAB2_TOOL_DEPO__vacuum_neck_2",
+      "assetId": "V6_FAB2_TOOL_DEPO",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "多腔薄膜沉积机 / vacuum_neck_2",
+      "role": "vacuum_neck_2",
+      "kind": "tool",
+      "color": [
+        0.54,
+        0.62,
+        0.67
+      ],
+      "bounds": [
+        -294.242487,
+        -209.14,
+        16.12,
+        -292.332513,
+        -206.391828,
+        16.68
+      ],
+      "freecadName": "V6_FAB2_TOOL_DEPO__vacuum_neck_2"
+    },
+    {
+      "id": "V6_FAB2_TOOL_DEPO__chamber_3",
+      "assetId": "V6_FAB2_TOOL_DEPO",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "多腔薄膜沉积机 / chamber_3",
+      "role": "chamber_3",
+      "kind": "tool",
+      "color": [
+        0.13,
+        0.47,
+        0.49
+      ],
+      "bounds": [
+        -296.325,
+        -207.431828,
+        15.65,
+        -294.525,
+        -205.631828,
+        18.14
+      ],
+      "freecadName": "V6_FAB2_TOOL_DEPO__chamber_3"
+    },
+    {
+      "id": "V6_FAB2_TOOL_DEPO__chamber_lid_3",
+      "assetId": "V6_FAB2_TOOL_DEPO",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "多腔薄膜沉积机 / chamber_lid_3",
+      "role": "chamber_lid_3",
+      "kind": "tool",
+      "color": [
+        0.54,
+        0.62,
+        0.67
+      ],
+      "bounds": [
+        -296.17,
+        -207.276828,
+        18.15,
+        -294.68,
+        -205.786828,
+        18.59
+      ],
+      "freecadName": "V6_FAB2_TOOL_DEPO__chamber_lid_3"
+    },
+    {
+      "id": "V6_FAB2_TOOL_DEPO__vacuum_neck_3",
+      "assetId": "V6_FAB2_TOOL_DEPO",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "多腔薄膜沉积机 / vacuum_neck_3",
+      "role": "vacuum_neck_3",
+      "kind": "tool",
+      "color": [
+        0.54,
+        0.62,
+        0.67
+      ],
+      "bounds": [
+        -295.667487,
+        -209.14,
+        16.12,
+        -293.757513,
+        -206.391828,
+        16.68
+      ],
+      "freecadName": "V6_FAB2_TOOL_DEPO__vacuum_neck_3"
+    },
+    {
+      "id": "V6_FAB2_TOOL_DEPO__chamber_4",
+      "assetId": "V6_FAB2_TOOL_DEPO",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "多腔薄膜沉积机 / chamber_4",
+      "role": "chamber_4",
+      "kind": "tool",
+      "color": [
+        0.13,
+        0.47,
+        0.49
+      ],
+      "bounds": [
+        -297.75,
+        -209.9,
+        15.65,
+        -295.95,
+        -208.1,
+        18.14
+      ],
+      "freecadName": "V6_FAB2_TOOL_DEPO__chamber_4"
+    },
+    {
+      "id": "V6_FAB2_TOOL_DEPO__chamber_lid_4",
+      "assetId": "V6_FAB2_TOOL_DEPO",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "多腔薄膜沉积机 / chamber_lid_4",
+      "role": "chamber_lid_4",
+      "kind": "tool",
+      "color": [
+        0.54,
+        0.62,
+        0.67
+      ],
+      "bounds": [
+        -297.595,
+        -209.745,
+        18.15,
+        -296.105,
+        -208.255,
+        18.59
+      ],
+      "freecadName": "V6_FAB2_TOOL_DEPO__chamber_lid_4"
+    },
+    {
+      "id": "V6_FAB2_TOOL_DEPO__vacuum_neck_4",
+      "assetId": "V6_FAB2_TOOL_DEPO",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "多腔薄膜沉积机 / vacuum_neck_4",
+      "role": "vacuum_neck_4",
+      "kind": "tool",
+      "color": [
+        0.54,
+        0.62,
+        0.67
+      ],
+      "bounds": [
+        -296.85,
+        -209.28,
+        16.12,
+        -294.0,
+        -208.72,
+        16.68
+      ],
+      "freecadName": "V6_FAB2_TOOL_DEPO__vacuum_neck_4"
+    },
+    {
+      "id": "V6_FAB2_TOOL_DEPO__chamber_5",
+      "assetId": "V6_FAB2_TOOL_DEPO",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "多腔薄膜沉积机 / chamber_5",
+      "role": "chamber_5",
+      "kind": "tool",
+      "color": [
+        0.13,
+        0.47,
+        0.49
+      ],
+      "bounds": [
+        -296.325,
+        -212.368172,
+        15.65,
+        -294.525,
+        -210.568172,
+        18.14
+      ],
+      "freecadName": "V6_FAB2_TOOL_DEPO__chamber_5"
+    },
+    {
+      "id": "V6_FAB2_TOOL_DEPO__chamber_lid_5",
+      "assetId": "V6_FAB2_TOOL_DEPO",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "多腔薄膜沉积机 / chamber_lid_5",
+      "role": "chamber_lid_5",
+      "kind": "tool",
+      "color": [
+        0.54,
+        0.62,
+        0.67
+      ],
+      "bounds": [
+        -296.17,
+        -212.213172,
+        18.15,
+        -294.68,
+        -210.723172,
+        18.59
+      ],
+      "freecadName": "V6_FAB2_TOOL_DEPO__chamber_lid_5"
+    },
+    {
+      "id": "V6_FAB2_TOOL_DEPO__vacuum_neck_5",
+      "assetId": "V6_FAB2_TOOL_DEPO",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "多腔薄膜沉积机 / vacuum_neck_5",
+      "role": "vacuum_neck_5",
+      "kind": "tool",
+      "color": [
+        0.54,
+        0.62,
+        0.67
+      ],
+      "bounds": [
+        -295.667487,
+        -211.608172,
+        16.12,
+        -293.757513,
+        -208.86,
+        16.68
+      ],
+      "freecadName": "V6_FAB2_TOOL_DEPO__vacuum_neck_5"
+    },
+    {
+      "id": "V6_FAB2_TOOL_DEPO__chamber_6",
+      "assetId": "V6_FAB2_TOOL_DEPO",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "多腔薄膜沉积机 / chamber_6",
+      "role": "chamber_6",
+      "kind": "tool",
+      "color": [
+        0.13,
+        0.47,
+        0.49
+      ],
+      "bounds": [
+        -293.475,
+        -212.368172,
+        15.65,
+        -291.675,
+        -210.568172,
+        18.14
+      ],
+      "freecadName": "V6_FAB2_TOOL_DEPO__chamber_6"
+    },
+    {
+      "id": "V6_FAB2_TOOL_DEPO__chamber_lid_6",
+      "assetId": "V6_FAB2_TOOL_DEPO",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "多腔薄膜沉积机 / chamber_lid_6",
+      "role": "chamber_lid_6",
+      "kind": "tool",
+      "color": [
+        0.54,
+        0.62,
+        0.67
+      ],
+      "bounds": [
+        -293.32,
+        -212.213172,
+        18.15,
+        -291.83,
+        -210.723172,
+        18.59
+      ],
+      "freecadName": "V6_FAB2_TOOL_DEPO__chamber_lid_6"
+    },
+    {
+      "id": "V6_FAB2_TOOL_DEPO__vacuum_neck_6",
+      "assetId": "V6_FAB2_TOOL_DEPO",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "多腔薄膜沉积机 / vacuum_neck_6",
+      "role": "vacuum_neck_6",
+      "kind": "tool",
+      "color": [
+        0.54,
+        0.62,
+        0.67
+      ],
+      "bounds": [
+        -294.242487,
+        -211.608172,
+        16.12,
+        -292.332513,
+        -208.86,
+        16.68
+      ],
+      "freecadName": "V6_FAB2_TOOL_DEPO__vacuum_neck_6"
+    },
+    {
+      "id": "V6_FAB2_TOOL_DEPO__rf_power_modules",
+      "assetId": "V6_FAB2_TOOL_DEPO",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "多腔薄膜沉积机 / rf_power_modules",
+      "role": "rf_power_modules",
+      "kind": "tool",
+      "color": [
+        0.82,
+        0.86,
+        0.85
+      ],
+      "bounds": [
+        -298.95,
+        -209.7,
+        15.4,
+        -289.05,
+        -207.7,
+        17.65
+      ],
+      "freecadName": "V6_FAB2_TOOL_DEPO__rf_power_modules"
+    },
+    {
+      "id": "V6_FAB2_TOOL_DEPO__efem",
+      "assetId": "V6_FAB2_TOOL_DEPO",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "多腔薄膜沉积机 / efem",
+      "role": "efem",
+      "kind": "tool",
+      "color": [
+        0.82,
+        0.86,
+        0.85
+      ],
+      "bounds": [
+        -295.95,
+        -214.75,
+        15.58,
+        -292.05,
+        -213.65,
+        17.88
+      ],
+      "freecadName": "V6_FAB2_TOOL_DEPO__efem"
+    },
+    {
+      "id": "V6_FAB2_TOOL_DEPO__efem_window",
+      "assetId": "V6_FAB2_TOOL_DEPO",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "多腔薄膜沉积机 / efem_window",
+      "role": "efem_window",
+      "kind": "tool",
+      "color": [
+        0.09,
+        0.28,
+        0.37
+      ],
+      "bounds": [
+        -295.75,
+        -214.788,
+        16.4,
+        -292.25,
+        -214.748,
+        17.58
+      ],
+      "freecadName": "V6_FAB2_TOOL_DEPO__efem_window"
+    },
+    {
+      "id": "V6_FAB2_TOOL_DEPO__robot_and_transfer",
+      "assetId": "V6_FAB2_TOOL_DEPO",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "多腔薄膜沉积机 / robot_and_transfer",
+      "role": "robot_and_transfer",
+      "kind": "tool",
+      "color": [
+        0.54,
+        0.62,
+        0.67
+      ],
+      "bounds": [
+        -294.3,
+        -214.5,
+        15.92,
+        -292.99,
+        -213.9,
+        16.17
+      ],
+      "freecadName": "V6_FAB2_TOOL_DEPO__robot_and_transfer"
+    },
+    {
+      "id": "V6_FAB2_TOOL_DEPO__hmi",
+      "assetId": "V6_FAB2_TOOL_DEPO",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "多腔薄膜沉积机 / hmi",
+      "role": "hmi",
+      "kind": "tool",
+      "color": [
+        0.12,
+        0.18,
+        0.23
+      ],
+      "bounds": [
+        -292.175,
+        -214.995,
+        16.36,
+        -291.425,
+        -214.76,
+        17.37
+      ],
+      "freecadName": "V6_FAB2_TOOL_DEPO__hmi"
+    },
+    {
+      "id": "V6_FAB2_TOOL_DEPO__hmi_screen",
+      "assetId": "V6_FAB2_TOOL_DEPO",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "多腔薄膜沉积机 / hmi_screen",
+      "role": "hmi_screen",
+      "kind": "tool",
+      "color": [
+        0.18,
+        0.43,
+        0.65
+      ],
+      "bounds": [
+        -292.11,
+        -215.011,
+        16.8,
+        -291.49,
+        -214.999,
+        17.23
+      ],
+      "freecadName": "V6_FAB2_TOOL_DEPO__hmi_screen"
+    },
+    {
+      "id": "V6_FAB2_TOOL_DEPO__status_post",
+      "assetId": "V6_FAB2_TOOL_DEPO",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "多腔薄膜沉积机 / status_post",
+      "role": "status_post",
+      "kind": "tool",
+      "color": [
+        0.54,
+        0.62,
+        0.67
+      ],
+      "bounds": [
+        -295.895,
+        -214.245,
+        17.88,
+        -295.805,
+        -214.155,
+        18.56
+      ],
+      "freecadName": "V6_FAB2_TOOL_DEPO__status_post"
+    },
+    {
+      "id": "V6_FAB2_TOOL_DEPO__status_green",
+      "assetId": "V6_FAB2_TOOL_DEPO",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "多腔薄膜沉积机 / status_green",
+      "role": "status_green",
+      "kind": "tool",
+      "color": [
+        0.2,
+        0.76,
+        0.39
+      ],
+      "bounds": [
+        -295.94,
+        -214.29,
+        18.08,
+        -295.76,
+        -214.11,
+        18.18
+      ],
+      "freecadName": "V6_FAB2_TOOL_DEPO__status_green"
+    },
+    {
+      "id": "V6_FAB2_TOOL_DEPO__status_amber",
+      "assetId": "V6_FAB2_TOOL_DEPO",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "多腔薄膜沉积机 / status_amber",
+      "role": "status_amber",
+      "kind": "tool",
+      "color": [
+        0.93,
+        0.55,
+        0.13
+      ],
+      "bounds": [
+        -295.94,
+        -214.29,
+        18.2,
+        -295.76,
+        -214.11,
+        18.3
+      ],
+      "freecadName": "V6_FAB2_TOOL_DEPO__status_amber"
+    },
+    {
+      "id": "V6_FAB2_TOOL_DEPO__status_red",
+      "assetId": "V6_FAB2_TOOL_DEPO",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "多腔薄膜沉积机 / status_red",
+      "role": "status_red",
+      "kind": "tool",
+      "color": [
+        0.83,
+        0.19,
+        0.15
+      ],
+      "bounds": [
+        -295.94,
+        -214.29,
+        18.32,
+        -295.76,
+        -214.11,
+        18.42
+      ],
+      "freecadName": "V6_FAB2_TOOL_DEPO__status_red"
+    },
+    {
+      "id": "V6_FAB2_TOOL_DEPO__efem_service_link",
+      "assetId": "V6_FAB2_TOOL_DEPO",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "多腔薄膜沉积机 / efem_service_link",
+      "role": "efem_service_link",
+      "kind": "tool",
+      "color": [
+        0.82,
+        0.86,
+        0.85
+      ],
+      "bounds": [
+        -295.0,
+        -214.2,
+        15.7,
+        -293.0,
+        -209.0,
+        17.6
+      ],
+      "freecadName": "V6_FAB2_TOOL_DEPO__efem_service_link"
+    },
+    {
+      "id": "V6_FAB2_TOOL_DEPO__cell_boundary",
+      "assetId": "V6_FAB2_TOOL_DEPO",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "多腔薄膜沉积机 / cell_boundary",
+      "role": "cell_boundary",
+      "kind": "tool",
+      "color": [
+        0.22,
+        0.5,
+        0.52
+      ],
+      "bounds": [
+        -301.0225,
+        -214.0,
+        15.412,
+        -286.9775,
+        -203.9775,
+        15.424
+      ],
+      "freecadName": "V6_FAB2_TOOL_DEPO__cell_boundary"
+    },
+    {
+      "id": "V6_FAB2_PORT_DEPO__pedestal",
+      "assetId": "V6_FAB2_PORT_DEPO",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "多腔薄膜沉积机 · FOUP装载端口 / pedestal",
+      "role": "pedestal",
+      "kind": "loadport",
+      "color": [
+        0.54,
+        0.62,
+        0.67
+      ],
+      "bounds": [
+        -294.5,
+        -216.5,
+        15.4,
+        -293.5,
+        -215.5,
+        16.4
+      ],
+      "freecadName": "V6_FAB2_PORT_DEPO__pedestal"
+    },
+    {
+      "id": "V6_FAB2_PORT_DEPO__door",
+      "assetId": "V6_FAB2_PORT_DEPO",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "多腔薄膜沉积机 · FOUP装载端口 / door",
+      "role": "door",
+      "kind": "loadport",
+      "color": [
+        0.82,
+        0.86,
+        0.85
+      ],
+      "bounds": [
+        -294.365,
+        -215.5,
+        16.32,
+        -293.635,
+        -215.38,
+        17.17
+      ],
+      "freecadName": "V6_FAB2_PORT_DEPO__door"
+    },
+    {
+      "id": "V6_FAB2_PORT_DEPO__docking_face",
+      "assetId": "V6_FAB2_PORT_DEPO",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "多腔薄膜沉积机 · FOUP装载端口 / docking_face",
+      "role": "docking_face",
+      "kind": "loadport",
+      "color": [
+        0.12,
+        0.18,
+        0.23
+      ],
+      "bounds": [
+        -294.29,
+        -215.527,
+        16.45,
+        -293.71,
+        -215.503,
+        17.03
+      ],
+      "freecadName": "V6_FAB2_PORT_DEPO__docking_face"
+    },
+    {
+      "id": "V6_FAB2_PORT_DEPO__alignment_pins",
+      "assetId": "V6_FAB2_PORT_DEPO",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "多腔薄膜沉积机 · FOUP装载端口 / alignment_pins",
+      "role": "alignment_pins",
+      "kind": "loadport",
+      "color": [
+        0.54,
+        0.62,
+        0.67
+      ],
+      "bounds": [
+        -294.27,
+        -216.24,
+        16.4,
+        -293.73,
+        -215.74,
+        16.47
+      ],
+      "freecadName": "V6_FAB2_PORT_DEPO__alignment_pins"
+    },
+    {
+      "id": "V6_FAB2_PORT_DEPO__efem_join",
+      "assetId": "V6_FAB2_PORT_DEPO",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "多腔薄膜沉积机 · FOUP装载端口 / efem_join",
+      "role": "efem_join",
+      "kind": "loadport",
+      "color": [
+        0.82,
+        0.86,
+        0.85
+      ],
+      "bounds": [
+        -294.5,
+        -215.42,
+        15.65,
+        -293.5,
+        -214.7,
+        16.35
+      ],
+      "freecadName": "V6_FAB2_PORT_DEPO__efem_join"
+    },
+    {
+      "id": "V6_FAB2_TOOL_IMPLANT__plinth",
+      "assetId": "V6_FAB2_TOOL_IMPLANT",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "离子注入机 / plinth",
+      "role": "plinth",
+      "kind": "tool",
+      "color": [
+        0.12,
+        0.18,
+        0.23
+      ],
+      "bounds": [
+        -277.5,
+        -212.4,
+        15.4,
+        -266.5,
+        -205.6,
+        15.62
+      ],
+      "freecadName": "V6_FAB2_TOOL_IMPLANT__plinth"
+    },
+    {
+      "id": "V6_FAB2_TOOL_IMPLANT__beamline",
+      "assetId": "V6_FAB2_TOOL_IMPLANT",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "离子注入机 / beamline",
+      "role": "beamline",
+      "kind": "tool",
+      "color": [
+        0.54,
+        0.62,
+        0.67
+      ],
+      "bounds": [
+        -276.5,
+        -208.9,
+        16.9,
+        -268.0,
+        -208.3,
+        17.5
+      ],
+      "freecadName": "V6_FAB2_TOOL_IMPLANT__beamline"
+    },
+    {
+      "id": "V6_FAB2_TOOL_IMPLANT__magnets",
+      "assetId": "V6_FAB2_TOOL_IMPLANT",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "离子注入机 / magnets",
+      "role": "magnets",
+      "kind": "tool",
+      "color": [
+        0.13,
+        0.47,
+        0.49
+      ],
+      "bounds": [
+        -275.6,
+        -209.7,
+        15.9,
+        -268.4,
+        -207.5,
+        18.4
+      ],
+      "freecadName": "V6_FAB2_TOOL_IMPLANT__magnets"
+    },
+    {
+      "id": "V6_FAB2_TOOL_IMPLANT__source_cabinet",
+      "assetId": "V6_FAB2_TOOL_IMPLANT",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "离子注入机 / source_cabinet",
+      "role": "source_cabinet",
+      "kind": "tool",
+      "color": [
+        0.82,
+        0.86,
+        0.85
+      ],
+      "bounds": [
+        -277.35,
+        -210.3,
+        15.6,
+        -275.65,
+        -206.9,
+        19.4
+      ],
+      "freecadName": "V6_FAB2_TOOL_IMPLANT__source_cabinet"
+    },
+    {
+      "id": "V6_FAB2_TOOL_IMPLANT__end_station",
+      "assetId": "V6_FAB2_TOOL_IMPLANT",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "离子注入机 / end_station",
+      "role": "end_station",
+      "kind": "tool",
+      "color": [
+        0.82,
+        0.86,
+        0.85
+      ],
+      "bounds": [
+        -269.7,
+        -211.6,
+        15.62,
+        -266.5,
+        -207.4,
+        18.02
+      ],
+      "freecadName": "V6_FAB2_TOOL_IMPLANT__end_station"
+    },
+    {
+      "id": "V6_FAB2_TOOL_IMPLANT__shield_panels",
+      "assetId": "V6_FAB2_TOOL_IMPLANT",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "离子注入机 / shield_panels",
+      "role": "shield_panels",
+      "kind": "tool",
+      "color": [
+        0.82,
+        0.86,
+        0.85
+      ],
+      "bounds": [
+        -277.4,
+        -212.38,
+        15.6,
+        -266.6,
+        -205.62,
+        19.4
+      ],
+      "freecadName": "V6_FAB2_TOOL_IMPLANT__shield_panels"
+    },
+    {
+      "id": "V6_FAB2_TOOL_IMPLANT__efem",
+      "assetId": "V6_FAB2_TOOL_IMPLANT",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "离子注入机 / efem",
+      "role": "efem",
+      "kind": "tool",
+      "color": [
+        0.82,
+        0.86,
+        0.85
+      ],
+      "bounds": [
+        -273.95,
+        -214.75,
+        15.58,
+        -270.05,
+        -213.65,
+        17.88
+      ],
+      "freecadName": "V6_FAB2_TOOL_IMPLANT__efem"
+    },
+    {
+      "id": "V6_FAB2_TOOL_IMPLANT__efem_window",
+      "assetId": "V6_FAB2_TOOL_IMPLANT",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "离子注入机 / efem_window",
+      "role": "efem_window",
+      "kind": "tool",
+      "color": [
+        0.09,
+        0.28,
+        0.37
+      ],
+      "bounds": [
+        -273.75,
+        -214.788,
+        16.4,
+        -270.25,
+        -214.748,
+        17.58
+      ],
+      "freecadName": "V6_FAB2_TOOL_IMPLANT__efem_window"
+    },
+    {
+      "id": "V6_FAB2_TOOL_IMPLANT__robot_and_transfer",
+      "assetId": "V6_FAB2_TOOL_IMPLANT",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "离子注入机 / robot_and_transfer",
+      "role": "robot_and_transfer",
+      "kind": "tool",
+      "color": [
+        0.54,
+        0.62,
+        0.67
+      ],
+      "bounds": [
+        -272.3,
+        -214.5,
+        15.92,
+        -270.99,
+        -213.9,
+        16.17
+      ],
+      "freecadName": "V6_FAB2_TOOL_IMPLANT__robot_and_transfer"
+    },
+    {
+      "id": "V6_FAB2_TOOL_IMPLANT__hmi",
+      "assetId": "V6_FAB2_TOOL_IMPLANT",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "离子注入机 / hmi",
+      "role": "hmi",
+      "kind": "tool",
+      "color": [
+        0.12,
+        0.18,
+        0.23
+      ],
+      "bounds": [
+        -270.175,
+        -214.995,
+        16.36,
+        -269.425,
+        -214.76,
+        17.37
+      ],
+      "freecadName": "V6_FAB2_TOOL_IMPLANT__hmi"
+    },
+    {
+      "id": "V6_FAB2_TOOL_IMPLANT__hmi_screen",
+      "assetId": "V6_FAB2_TOOL_IMPLANT",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "离子注入机 / hmi_screen",
+      "role": "hmi_screen",
+      "kind": "tool",
+      "color": [
+        0.18,
+        0.43,
+        0.65
+      ],
+      "bounds": [
+        -270.11,
+        -215.011,
+        16.8,
+        -269.49,
+        -214.999,
+        17.23
+      ],
+      "freecadName": "V6_FAB2_TOOL_IMPLANT__hmi_screen"
+    },
+    {
+      "id": "V6_FAB2_TOOL_IMPLANT__status_post",
+      "assetId": "V6_FAB2_TOOL_IMPLANT",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "离子注入机 / status_post",
+      "role": "status_post",
+      "kind": "tool",
+      "color": [
+        0.54,
+        0.62,
+        0.67
+      ],
+      "bounds": [
+        -273.895,
+        -214.245,
+        17.88,
+        -273.805,
+        -214.155,
+        18.56
+      ],
+      "freecadName": "V6_FAB2_TOOL_IMPLANT__status_post"
+    },
+    {
+      "id": "V6_FAB2_TOOL_IMPLANT__status_green",
+      "assetId": "V6_FAB2_TOOL_IMPLANT",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "离子注入机 / status_green",
+      "role": "status_green",
+      "kind": "tool",
+      "color": [
+        0.2,
+        0.76,
+        0.39
+      ],
+      "bounds": [
+        -273.94,
+        -214.29,
+        18.08,
+        -273.76,
+        -214.11,
+        18.18
+      ],
+      "freecadName": "V6_FAB2_TOOL_IMPLANT__status_green"
+    },
+    {
+      "id": "V6_FAB2_TOOL_IMPLANT__status_amber",
+      "assetId": "V6_FAB2_TOOL_IMPLANT",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "离子注入机 / status_amber",
+      "role": "status_amber",
+      "kind": "tool",
+      "color": [
+        0.93,
+        0.55,
+        0.13
+      ],
+      "bounds": [
+        -273.94,
+        -214.29,
+        18.2,
+        -273.76,
+        -214.11,
+        18.3
+      ],
+      "freecadName": "V6_FAB2_TOOL_IMPLANT__status_amber"
+    },
+    {
+      "id": "V6_FAB2_TOOL_IMPLANT__status_red",
+      "assetId": "V6_FAB2_TOOL_IMPLANT",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "离子注入机 / status_red",
+      "role": "status_red",
+      "kind": "tool",
+      "color": [
+        0.83,
+        0.19,
+        0.15
+      ],
+      "bounds": [
+        -273.94,
+        -214.29,
+        18.32,
+        -273.76,
+        -214.11,
+        18.42
+      ],
+      "freecadName": "V6_FAB2_TOOL_IMPLANT__status_red"
+    },
+    {
+      "id": "V6_FAB2_TOOL_IMPLANT__efem_service_link",
+      "assetId": "V6_FAB2_TOOL_IMPLANT",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "离子注入机 / efem_service_link",
+      "role": "efem_service_link",
+      "kind": "tool",
+      "color": [
+        0.82,
+        0.86,
+        0.85
+      ],
+      "bounds": [
+        -273.0,
+        -214.2,
+        15.7,
+        -271.0,
+        -209.0,
+        17.6
+      ],
+      "freecadName": "V6_FAB2_TOOL_IMPLANT__efem_service_link"
+    },
+    {
+      "id": "V6_FAB2_TOOL_IMPLANT__cell_boundary",
+      "assetId": "V6_FAB2_TOOL_IMPLANT",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "离子注入机 / cell_boundary",
+      "role": "cell_boundary",
+      "kind": "tool",
+      "color": [
+        0.22,
+        0.5,
+        0.52
+      ],
+      "bounds": [
+        -279.0225,
+        -214.0,
+        15.412,
+        -264.9775,
+        -203.9775,
+        15.424
+      ],
+      "freecadName": "V6_FAB2_TOOL_IMPLANT__cell_boundary"
+    },
+    {
+      "id": "V6_FAB2_PORT_IMPLANT__pedestal",
+      "assetId": "V6_FAB2_PORT_IMPLANT",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "离子注入机 · FOUP装载端口 / pedestal",
+      "role": "pedestal",
+      "kind": "loadport",
+      "color": [
+        0.54,
+        0.62,
+        0.67
+      ],
+      "bounds": [
+        -272.5,
+        -216.5,
+        15.4,
+        -271.5,
+        -215.5,
+        16.4
+      ],
+      "freecadName": "V6_FAB2_PORT_IMPLANT__pedestal"
+    },
+    {
+      "id": "V6_FAB2_PORT_IMPLANT__door",
+      "assetId": "V6_FAB2_PORT_IMPLANT",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "离子注入机 · FOUP装载端口 / door",
+      "role": "door",
+      "kind": "loadport",
+      "color": [
+        0.82,
+        0.86,
+        0.85
+      ],
+      "bounds": [
+        -272.365,
+        -215.5,
+        16.32,
+        -271.635,
+        -215.38,
+        17.17
+      ],
+      "freecadName": "V6_FAB2_PORT_IMPLANT__door"
+    },
+    {
+      "id": "V6_FAB2_PORT_IMPLANT__docking_face",
+      "assetId": "V6_FAB2_PORT_IMPLANT",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "离子注入机 · FOUP装载端口 / docking_face",
+      "role": "docking_face",
+      "kind": "loadport",
+      "color": [
+        0.12,
+        0.18,
+        0.23
+      ],
+      "bounds": [
+        -272.29,
+        -215.527,
+        16.45,
+        -271.71,
+        -215.503,
+        17.03
+      ],
+      "freecadName": "V6_FAB2_PORT_IMPLANT__docking_face"
+    },
+    {
+      "id": "V6_FAB2_PORT_IMPLANT__alignment_pins",
+      "assetId": "V6_FAB2_PORT_IMPLANT",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "离子注入机 · FOUP装载端口 / alignment_pins",
+      "role": "alignment_pins",
+      "kind": "loadport",
+      "color": [
+        0.54,
+        0.62,
+        0.67
+      ],
+      "bounds": [
+        -272.27,
+        -216.24,
+        16.4,
+        -271.73,
+        -215.74,
+        16.47
+      ],
+      "freecadName": "V6_FAB2_PORT_IMPLANT__alignment_pins"
+    },
+    {
+      "id": "V6_FAB2_PORT_IMPLANT__efem_join",
+      "assetId": "V6_FAB2_PORT_IMPLANT",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "离子注入机 · FOUP装载端口 / efem_join",
+      "role": "efem_join",
+      "kind": "loadport",
+      "color": [
+        0.82,
+        0.86,
+        0.85
+      ],
+      "bounds": [
+        -272.5,
+        -215.42,
+        15.65,
+        -271.5,
+        -214.7,
+        16.35
+      ],
+      "freecadName": "V6_FAB2_PORT_IMPLANT__efem_join"
+    },
+    {
+      "id": "V6_FAB2_TOOL_THERMAL__plinth",
+      "assetId": "V6_FAB2_TOOL_THERMAL",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "立式热处理炉 / plinth",
+      "role": "plinth",
+      "kind": "tool",
+      "color": [
+        0.12,
+        0.18,
+        0.23
+      ],
+      "bounds": [
+        -253.17,
+        -212.12,
+        15.4,
+        -246.83,
+        -205.88,
+        15.62
+      ],
+      "freecadName": "V6_FAB2_TOOL_THERMAL__plinth"
+    },
+    {
+      "id": "V6_FAB2_TOOL_THERMAL__enclosure",
+      "assetId": "V6_FAB2_TOOL_THERMAL",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "立式热处理炉 / enclosure",
+      "role": "enclosure",
+      "kind": "tool",
+      "color": [
+        0.82,
+        0.86,
+        0.85
+      ],
+      "bounds": [
+        -253.05,
+        -212.0,
+        15.62,
+        -246.95,
+        -206.0,
+        17.62
+      ],
+      "freecadName": "V6_FAB2_TOOL_THERMAL__enclosure"
+    },
+    {
+      "id": "V6_FAB2_TOOL_THERMAL__panel_seams",
+      "assetId": "V6_FAB2_TOOL_THERMAL",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "立式热处理炉 / panel_seams",
+      "role": "panel_seams",
+      "kind": "tool",
+      "color": [
+        0.54,
+        0.62,
+        0.67
+      ],
+      "bounds": [
+        -252.95,
+        -212.0495,
+        15.7,
+        -247.05,
+        -212.0045,
+        17.58
+      ],
+      "freecadName": "V6_FAB2_TOOL_THERMAL__panel_seams"
+    },
+    {
+      "id": "V6_FAB2_TOOL_THERMAL__handles",
+      "assetId": "V6_FAB2_TOOL_THERMAL",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "立式热处理炉 / handles",
+      "role": "handles",
+      "kind": "tool",
+      "color": [
+        0.12,
+        0.18,
+        0.23
+      ],
+      "bounds": [
+        -251.675,
+        -212.087,
+        16.55,
+        -248.565,
+        -212.027,
+        16.97
+      ],
+      "freecadName": "V6_FAB2_TOOL_THERMAL__handles"
+    },
+    {
+      "id": "V6_FAB2_TOOL_THERMAL__vent_grille",
+      "assetId": "V6_FAB2_TOOL_THERMAL",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "立式热处理炉 / vent_grille",
+      "role": "vent_grille",
+      "kind": "tool",
+      "color": [
+        0.12,
+        0.18,
+        0.23
+      ],
+      "bounds": [
+        -248.597,
+        -212.052,
+        15.82,
+        -247.377,
+        -212.012,
+        16.145
+      ],
+      "freecadName": "V6_FAB2_TOOL_THERMAL__vent_grille"
+    },
+    {
+      "id": "V6_FAB2_TOOL_THERMAL__service_cabinet",
+      "assetId": "V6_FAB2_TOOL_THERMAL",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "立式热处理炉 / service_cabinet",
+      "role": "service_cabinet",
+      "kind": "tool",
+      "color": [
+        0.13,
+        0.47,
+        0.49
+      ],
+      "bounds": [
+        -246.8,
+        -210.75,
+        15.4,
+        -246.0,
+        -206.85,
+        17.9
+      ],
+      "freecadName": "V6_FAB2_TOOL_THERMAL__service_cabinet"
+    },
+    {
+      "id": "V6_FAB2_TOOL_THERMAL__vertical_furnace_towers",
+      "assetId": "V6_FAB2_TOOL_THERMAL",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "立式热处理炉 / vertical_furnace_towers",
+      "role": "vertical_furnace_towers",
+      "kind": "tool",
+      "color": [
+        0.82,
+        0.86,
+        0.85
+      ],
+      "bounds": [
+        -252.65,
+        -209.65,
+        17.6,
+        -247.35,
+        -207.55,
+        20.3
+      ],
+      "freecadName": "V6_FAB2_TOOL_THERMAL__vertical_furnace_towers"
+    },
+    {
+      "id": "V6_FAB2_TOOL_THERMAL__furnace_caps",
+      "assetId": "V6_FAB2_TOOL_THERMAL",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "立式热处理炉 / furnace_caps",
+      "role": "furnace_caps",
+      "kind": "tool",
+      "color": [
+        0.13,
+        0.47,
+        0.49
+      ],
+      "bounds": [
+        -252.7,
+        -209.7,
+        20.3,
+        -247.3,
+        -207.5,
+        20.5
+      ],
+      "freecadName": "V6_FAB2_TOOL_THERMAL__furnace_caps"
+    },
+    {
+      "id": "V6_FAB2_TOOL_THERMAL__wafer_boat_elevator",
+      "assetId": "V6_FAB2_TOOL_THERMAL",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "立式热处理炉 / wafer_boat_elevator",
+      "role": "wafer_boat_elevator",
+      "kind": "tool",
+      "color": [
+        0.54,
+        0.62,
+        0.67
+      ],
+      "bounds": [
+        -250.5,
+        -211.62,
+        15.8,
+        -249.5,
+        -210.6,
+        18.6
+      ],
+      "freecadName": "V6_FAB2_TOOL_THERMAL__wafer_boat_elevator"
+    },
+    {
+      "id": "V6_FAB2_TOOL_THERMAL__efem",
+      "assetId": "V6_FAB2_TOOL_THERMAL",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "立式热处理炉 / efem",
+      "role": "efem",
+      "kind": "tool",
+      "color": [
+        0.82,
+        0.86,
+        0.85
+      ],
+      "bounds": [
+        -251.95,
+        -214.75,
+        15.58,
+        -248.05,
+        -213.65,
+        17.88
+      ],
+      "freecadName": "V6_FAB2_TOOL_THERMAL__efem"
+    },
+    {
+      "id": "V6_FAB2_TOOL_THERMAL__efem_window",
+      "assetId": "V6_FAB2_TOOL_THERMAL",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "立式热处理炉 / efem_window",
+      "role": "efem_window",
+      "kind": "tool",
+      "color": [
+        0.09,
+        0.28,
+        0.37
+      ],
+      "bounds": [
+        -251.75,
+        -214.788,
+        16.4,
+        -248.25,
+        -214.748,
+        17.58
+      ],
+      "freecadName": "V6_FAB2_TOOL_THERMAL__efem_window"
+    },
+    {
+      "id": "V6_FAB2_TOOL_THERMAL__robot_and_transfer",
+      "assetId": "V6_FAB2_TOOL_THERMAL",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "立式热处理炉 / robot_and_transfer",
+      "role": "robot_and_transfer",
+      "kind": "tool",
+      "color": [
+        0.54,
+        0.62,
+        0.67
+      ],
+      "bounds": [
+        -250.3,
+        -214.5,
+        15.92,
+        -248.99,
+        -213.9,
+        16.17
+      ],
+      "freecadName": "V6_FAB2_TOOL_THERMAL__robot_and_transfer"
+    },
+    {
+      "id": "V6_FAB2_TOOL_THERMAL__hmi",
+      "assetId": "V6_FAB2_TOOL_THERMAL",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "立式热处理炉 / hmi",
+      "role": "hmi",
+      "kind": "tool",
+      "color": [
+        0.12,
+        0.18,
+        0.23
+      ],
+      "bounds": [
+        -248.175,
+        -214.995,
+        16.36,
+        -247.425,
+        -214.76,
+        17.37
+      ],
+      "freecadName": "V6_FAB2_TOOL_THERMAL__hmi"
+    },
+    {
+      "id": "V6_FAB2_TOOL_THERMAL__hmi_screen",
+      "assetId": "V6_FAB2_TOOL_THERMAL",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "立式热处理炉 / hmi_screen",
+      "role": "hmi_screen",
+      "kind": "tool",
+      "color": [
+        0.18,
+        0.43,
+        0.65
+      ],
+      "bounds": [
+        -248.11,
+        -215.011,
+        16.8,
+        -247.49,
+        -214.999,
+        17.23
+      ],
+      "freecadName": "V6_FAB2_TOOL_THERMAL__hmi_screen"
+    },
+    {
+      "id": "V6_FAB2_TOOL_THERMAL__status_post",
+      "assetId": "V6_FAB2_TOOL_THERMAL",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "立式热处理炉 / status_post",
+      "role": "status_post",
+      "kind": "tool",
+      "color": [
+        0.54,
+        0.62,
+        0.67
+      ],
+      "bounds": [
+        -251.895,
+        -214.245,
+        17.88,
+        -251.805,
+        -214.155,
+        18.56
+      ],
+      "freecadName": "V6_FAB2_TOOL_THERMAL__status_post"
+    },
+    {
+      "id": "V6_FAB2_TOOL_THERMAL__status_green",
+      "assetId": "V6_FAB2_TOOL_THERMAL",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "立式热处理炉 / status_green",
+      "role": "status_green",
+      "kind": "tool",
+      "color": [
+        0.2,
+        0.76,
+        0.39
+      ],
+      "bounds": [
+        -251.94,
+        -214.29,
+        18.08,
+        -251.76,
+        -214.11,
+        18.18
+      ],
+      "freecadName": "V6_FAB2_TOOL_THERMAL__status_green"
+    },
+    {
+      "id": "V6_FAB2_TOOL_THERMAL__status_amber",
+      "assetId": "V6_FAB2_TOOL_THERMAL",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "立式热处理炉 / status_amber",
+      "role": "status_amber",
+      "kind": "tool",
+      "color": [
+        0.93,
+        0.55,
+        0.13
+      ],
+      "bounds": [
+        -251.94,
+        -214.29,
+        18.2,
+        -251.76,
+        -214.11,
+        18.3
+      ],
+      "freecadName": "V6_FAB2_TOOL_THERMAL__status_amber"
+    },
+    {
+      "id": "V6_FAB2_TOOL_THERMAL__status_red",
+      "assetId": "V6_FAB2_TOOL_THERMAL",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "立式热处理炉 / status_red",
+      "role": "status_red",
+      "kind": "tool",
+      "color": [
+        0.83,
+        0.19,
+        0.15
+      ],
+      "bounds": [
+        -251.94,
+        -214.29,
+        18.32,
+        -251.76,
+        -214.11,
+        18.42
+      ],
+      "freecadName": "V6_FAB2_TOOL_THERMAL__status_red"
+    },
+    {
+      "id": "V6_FAB2_TOOL_THERMAL__efem_service_link",
+      "assetId": "V6_FAB2_TOOL_THERMAL",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "立式热处理炉 / efem_service_link",
+      "role": "efem_service_link",
+      "kind": "tool",
+      "color": [
+        0.82,
+        0.86,
+        0.85
+      ],
+      "bounds": [
+        -251.0,
+        -214.2,
+        15.7,
+        -249.0,
+        -209.0,
+        17.6
+      ],
+      "freecadName": "V6_FAB2_TOOL_THERMAL__efem_service_link"
+    },
+    {
+      "id": "V6_FAB2_TOOL_THERMAL__cell_boundary",
+      "assetId": "V6_FAB2_TOOL_THERMAL",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "立式热处理炉 / cell_boundary",
+      "role": "cell_boundary",
+      "kind": "tool",
+      "color": [
+        0.22,
+        0.5,
+        0.52
+      ],
+      "bounds": [
+        -257.0225,
+        -214.0,
+        15.412,
+        -242.9775,
+        -203.9775,
+        15.424
+      ],
+      "freecadName": "V6_FAB2_TOOL_THERMAL__cell_boundary"
+    },
+    {
+      "id": "V6_FAB2_PORT_THERMAL__pedestal",
+      "assetId": "V6_FAB2_PORT_THERMAL",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "立式热处理炉 · FOUP装载端口 / pedestal",
+      "role": "pedestal",
+      "kind": "loadport",
+      "color": [
+        0.54,
+        0.62,
+        0.67
+      ],
+      "bounds": [
+        -250.5,
+        -216.5,
+        15.4,
+        -249.5,
+        -215.5,
+        16.4
+      ],
+      "freecadName": "V6_FAB2_PORT_THERMAL__pedestal"
+    },
+    {
+      "id": "V6_FAB2_PORT_THERMAL__door",
+      "assetId": "V6_FAB2_PORT_THERMAL",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "立式热处理炉 · FOUP装载端口 / door",
+      "role": "door",
+      "kind": "loadport",
+      "color": [
+        0.82,
+        0.86,
+        0.85
+      ],
+      "bounds": [
+        -250.365,
+        -215.5,
+        16.32,
+        -249.635,
+        -215.38,
+        17.17
+      ],
+      "freecadName": "V6_FAB2_PORT_THERMAL__door"
+    },
+    {
+      "id": "V6_FAB2_PORT_THERMAL__docking_face",
+      "assetId": "V6_FAB2_PORT_THERMAL",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "立式热处理炉 · FOUP装载端口 / docking_face",
+      "role": "docking_face",
+      "kind": "loadport",
+      "color": [
+        0.12,
+        0.18,
+        0.23
+      ],
+      "bounds": [
+        -250.29,
+        -215.527,
+        16.45,
+        -249.71,
+        -215.503,
+        17.03
+      ],
+      "freecadName": "V6_FAB2_PORT_THERMAL__docking_face"
+    },
+    {
+      "id": "V6_FAB2_PORT_THERMAL__alignment_pins",
+      "assetId": "V6_FAB2_PORT_THERMAL",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "立式热处理炉 · FOUP装载端口 / alignment_pins",
+      "role": "alignment_pins",
+      "kind": "loadport",
+      "color": [
+        0.54,
+        0.62,
+        0.67
+      ],
+      "bounds": [
+        -250.27,
+        -216.24,
+        16.4,
+        -249.73,
+        -215.74,
+        16.47
+      ],
+      "freecadName": "V6_FAB2_PORT_THERMAL__alignment_pins"
+    },
+    {
+      "id": "V6_FAB2_PORT_THERMAL__efem_join",
+      "assetId": "V6_FAB2_PORT_THERMAL",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "立式热处理炉 · FOUP装载端口 / efem_join",
+      "role": "efem_join",
+      "kind": "loadport",
+      "color": [
+        0.82,
+        0.86,
+        0.85
+      ],
+      "bounds": [
+        -250.5,
+        -215.42,
+        15.65,
+        -249.5,
+        -214.7,
+        16.35
+      ],
+      "freecadName": "V6_FAB2_PORT_THERMAL__efem_join"
+    },
+    {
+      "id": "V6_FAB2_TOOL_CMP__plinth",
+      "assetId": "V6_FAB2_TOOL_CMP",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "化学机械抛光机 / plinth",
+      "role": "plinth",
+      "kind": "tool",
+      "color": [
+        0.12,
+        0.18,
+        0.23
+      ],
+      "bounds": [
+        -232.62,
+        -212.17,
+        15.4,
+        -223.38,
+        -205.83,
+        15.62
+      ],
+      "freecadName": "V6_FAB2_TOOL_CMP__plinth"
+    },
+    {
+      "id": "V6_FAB2_TOOL_CMP__enclosure",
+      "assetId": "V6_FAB2_TOOL_CMP",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "化学机械抛光机 / enclosure",
+      "role": "enclosure",
+      "kind": "tool",
+      "color": [
+        0.82,
+        0.86,
+        0.85
+      ],
+      "bounds": [
+        -232.5,
+        -212.05,
+        15.62,
+        -223.5,
+        -205.95,
+        16.92
+      ],
+      "freecadName": "V6_FAB2_TOOL_CMP__enclosure"
+    },
+    {
+      "id": "V6_FAB2_TOOL_CMP__panel_seams",
+      "assetId": "V6_FAB2_TOOL_CMP",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "化学机械抛光机 / panel_seams",
+      "role": "panel_seams",
+      "kind": "tool",
+      "color": [
+        0.54,
+        0.62,
+        0.67
+      ],
+      "bounds": [
+        -232.4,
+        -212.0995,
+        15.7,
+        -223.6,
+        -212.0545,
+        16.88
+      ],
+      "freecadName": "V6_FAB2_TOOL_CMP__panel_seams"
+    },
+    {
+      "id": "V6_FAB2_TOOL_CMP__handles",
+      "assetId": "V6_FAB2_TOOL_CMP",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "化学机械抛光机 / handles",
+      "role": "handles",
+      "kind": "tool",
+      "color": [
+        0.12,
+        0.18,
+        0.23
+      ],
+      "bounds": [
+        -230.4,
+        -212.137,
+        16.55,
+        -225.84,
+        -212.077,
+        16.97
+      ],
+      "freecadName": "V6_FAB2_TOOL_CMP__handles"
+    },
+    {
+      "id": "V6_FAB2_TOOL_CMP__vent_grille",
+      "assetId": "V6_FAB2_TOOL_CMP",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "化学机械抛光机 / vent_grille",
+      "role": "vent_grille",
+      "kind": "tool",
+      "color": [
+        0.12,
+        0.18,
+        0.23
+      ],
+      "bounds": [
+        -225.93,
+        -212.102,
+        15.82,
+        -224.13,
+        -212.062,
+        16.145
+      ],
+      "freecadName": "V6_FAB2_TOOL_CMP__vent_grille"
+    },
+    {
+      "id": "V6_FAB2_TOOL_CMP__service_cabinet",
+      "assetId": "V6_FAB2_TOOL_CMP",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "化学机械抛光机 / service_cabinet",
+      "role": "service_cabinet",
+      "kind": "tool",
+      "color": [
+        0.13,
+        0.47,
+        0.49
+      ],
+      "bounds": [
+        -223.35,
+        -210.7825,
+        15.4,
+        -222.55,
+        -206.8175,
+        17.9
+      ],
+      "freecadName": "V6_FAB2_TOOL_CMP__service_cabinet"
+    },
+    {
+      "id": "V6_FAB2_TOOL_CMP__polishing_platen_1",
+      "assetId": "V6_FAB2_TOOL_CMP",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "化学机械抛光机 / polishing_platen_1",
+      "role": "polishing_platen_1",
+      "kind": "tool",
+      "color": [
+        0.13,
+        0.47,
+        0.49
+      ],
+      "bounds": [
+        -231.86,
+        -209.61,
+        16.92,
+        -229.74,
+        -207.49,
+        17.11
+      ],
+      "freecadName": "V6_FAB2_TOOL_CMP__polishing_platen_1"
+    },
+    {
+      "id": "V6_FAB2_TOOL_CMP__polishing_carrier_1",
+      "assetId": "V6_FAB2_TOOL_CMP",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "化学机械抛光机 / polishing_carrier_1",
+      "role": "polishing_carrier_1",
+      "kind": "tool",
+      "color": [
+        0.54,
+        0.62,
+        0.67
+      ],
+      "bounds": [
+        -231.28,
+        -209.33,
+        17.02,
+        -230.32,
+        -207.205,
+        17.97
+      ],
+      "freecadName": "V6_FAB2_TOOL_CMP__polishing_carrier_1"
+    },
+    {
+      "id": "V6_FAB2_TOOL_CMP__polishing_platen_2",
+      "assetId": "V6_FAB2_TOOL_CMP",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "化学机械抛光机 / polishing_platen_2",
+      "role": "polishing_platen_2",
+      "kind": "tool",
+      "color": [
+        0.13,
+        0.47,
+        0.49
+      ],
+      "bounds": [
+        -229.06,
+        -209.61,
+        16.92,
+        -226.94,
+        -207.49,
+        17.11
+      ],
+      "freecadName": "V6_FAB2_TOOL_CMP__polishing_platen_2"
+    },
+    {
+      "id": "V6_FAB2_TOOL_CMP__polishing_carrier_2",
+      "assetId": "V6_FAB2_TOOL_CMP",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "化学机械抛光机 / polishing_carrier_2",
+      "role": "polishing_carrier_2",
+      "kind": "tool",
+      "color": [
+        0.54,
+        0.62,
+        0.67
+      ],
+      "bounds": [
+        -228.48,
+        -209.33,
+        17.02,
+        -227.52,
+        -207.205,
+        17.97
+      ],
+      "freecadName": "V6_FAB2_TOOL_CMP__polishing_carrier_2"
+    },
+    {
+      "id": "V6_FAB2_TOOL_CMP__polishing_platen_3",
+      "assetId": "V6_FAB2_TOOL_CMP",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "化学机械抛光机 / polishing_platen_3",
+      "role": "polishing_platen_3",
+      "kind": "tool",
+      "color": [
+        0.13,
+        0.47,
+        0.49
+      ],
+      "bounds": [
+        -226.26,
+        -209.61,
+        16.92,
+        -224.14,
+        -207.49,
+        17.11
+      ],
+      "freecadName": "V6_FAB2_TOOL_CMP__polishing_platen_3"
+    },
+    {
+      "id": "V6_FAB2_TOOL_CMP__polishing_carrier_3",
+      "assetId": "V6_FAB2_TOOL_CMP",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "化学机械抛光机 / polishing_carrier_3",
+      "role": "polishing_carrier_3",
+      "kind": "tool",
+      "color": [
+        0.54,
+        0.62,
+        0.67
+      ],
+      "bounds": [
+        -225.68,
+        -209.33,
+        17.02,
+        -224.72,
+        -207.205,
+        17.97
+      ],
+      "freecadName": "V6_FAB2_TOOL_CMP__polishing_carrier_3"
+    },
+    {
+      "id": "V6_FAB2_TOOL_CMP__post_cmp_cleaner",
+      "assetId": "V6_FAB2_TOOL_CMP",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "化学机械抛光机 / post_cmp_cleaner",
+      "role": "post_cmp_cleaner",
+      "kind": "tool",
+      "color": [
+        0.82,
+        0.86,
+        0.85
+      ],
+      "bounds": [
+        -224.2,
+        -211.9,
+        15.62,
+        -222.6,
+        -206.1,
+        17.92
+      ],
+      "freecadName": "V6_FAB2_TOOL_CMP__post_cmp_cleaner"
+    },
+    {
+      "id": "V6_FAB2_TOOL_CMP__cleaner_window",
+      "assetId": "V6_FAB2_TOOL_CMP",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "化学机械抛光机 / cleaner_window",
+      "role": "cleaner_window",
+      "kind": "tool",
+      "color": [
+        0.09,
+        0.28,
+        0.37
+      ],
+      "bounds": [
+        -224.05,
+        -211.95,
+        16.5,
+        -222.75,
+        -211.91,
+        17.55
+      ],
+      "freecadName": "V6_FAB2_TOOL_CMP__cleaner_window"
+    },
+    {
+      "id": "V6_FAB2_TOOL_CMP__efem",
+      "assetId": "V6_FAB2_TOOL_CMP",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "化学机械抛光机 / efem",
+      "role": "efem",
+      "kind": "tool",
+      "color": [
+        0.82,
+        0.86,
+        0.85
+      ],
+      "bounds": [
+        -229.95,
+        -214.75,
+        15.58,
+        -226.05,
+        -213.65,
+        17.88
+      ],
+      "freecadName": "V6_FAB2_TOOL_CMP__efem"
+    },
+    {
+      "id": "V6_FAB2_TOOL_CMP__efem_window",
+      "assetId": "V6_FAB2_TOOL_CMP",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "化学机械抛光机 / efem_window",
+      "role": "efem_window",
+      "kind": "tool",
+      "color": [
+        0.09,
+        0.28,
+        0.37
+      ],
+      "bounds": [
+        -229.75,
+        -214.788,
+        16.4,
+        -226.25,
+        -214.748,
+        17.58
+      ],
+      "freecadName": "V6_FAB2_TOOL_CMP__efem_window"
+    },
+    {
+      "id": "V6_FAB2_TOOL_CMP__robot_and_transfer",
+      "assetId": "V6_FAB2_TOOL_CMP",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "化学机械抛光机 / robot_and_transfer",
+      "role": "robot_and_transfer",
+      "kind": "tool",
+      "color": [
+        0.54,
+        0.62,
+        0.67
+      ],
+      "bounds": [
+        -228.3,
+        -214.5,
+        15.92,
+        -226.99,
+        -213.9,
+        16.17
+      ],
+      "freecadName": "V6_FAB2_TOOL_CMP__robot_and_transfer"
+    },
+    {
+      "id": "V6_FAB2_TOOL_CMP__hmi",
+      "assetId": "V6_FAB2_TOOL_CMP",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "化学机械抛光机 / hmi",
+      "role": "hmi",
+      "kind": "tool",
+      "color": [
+        0.12,
+        0.18,
+        0.23
+      ],
+      "bounds": [
+        -226.175,
+        -214.995,
+        16.36,
+        -225.425,
+        -214.76,
+        17.37
+      ],
+      "freecadName": "V6_FAB2_TOOL_CMP__hmi"
+    },
+    {
+      "id": "V6_FAB2_TOOL_CMP__hmi_screen",
+      "assetId": "V6_FAB2_TOOL_CMP",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "化学机械抛光机 / hmi_screen",
+      "role": "hmi_screen",
+      "kind": "tool",
+      "color": [
+        0.18,
+        0.43,
+        0.65
+      ],
+      "bounds": [
+        -226.11,
+        -215.011,
+        16.8,
+        -225.49,
+        -214.999,
+        17.23
+      ],
+      "freecadName": "V6_FAB2_TOOL_CMP__hmi_screen"
+    },
+    {
+      "id": "V6_FAB2_TOOL_CMP__status_post",
+      "assetId": "V6_FAB2_TOOL_CMP",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "化学机械抛光机 / status_post",
+      "role": "status_post",
+      "kind": "tool",
+      "color": [
+        0.54,
+        0.62,
+        0.67
+      ],
+      "bounds": [
+        -229.895,
+        -214.245,
+        17.88,
+        -229.805,
+        -214.155,
+        18.56
+      ],
+      "freecadName": "V6_FAB2_TOOL_CMP__status_post"
+    },
+    {
+      "id": "V6_FAB2_TOOL_CMP__status_green",
+      "assetId": "V6_FAB2_TOOL_CMP",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "化学机械抛光机 / status_green",
+      "role": "status_green",
+      "kind": "tool",
+      "color": [
+        0.2,
+        0.76,
+        0.39
+      ],
+      "bounds": [
+        -229.94,
+        -214.29,
+        18.08,
+        -229.76,
+        -214.11,
+        18.18
+      ],
+      "freecadName": "V6_FAB2_TOOL_CMP__status_green"
+    },
+    {
+      "id": "V6_FAB2_TOOL_CMP__status_amber",
+      "assetId": "V6_FAB2_TOOL_CMP",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "化学机械抛光机 / status_amber",
+      "role": "status_amber",
+      "kind": "tool",
+      "color": [
+        0.93,
+        0.55,
+        0.13
+      ],
+      "bounds": [
+        -229.94,
+        -214.29,
+        18.2,
+        -229.76,
+        -214.11,
+        18.3
+      ],
+      "freecadName": "V6_FAB2_TOOL_CMP__status_amber"
+    },
+    {
+      "id": "V6_FAB2_TOOL_CMP__status_red",
+      "assetId": "V6_FAB2_TOOL_CMP",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "化学机械抛光机 / status_red",
+      "role": "status_red",
+      "kind": "tool",
+      "color": [
+        0.83,
+        0.19,
+        0.15
+      ],
+      "bounds": [
+        -229.94,
+        -214.29,
+        18.32,
+        -229.76,
+        -214.11,
+        18.42
+      ],
+      "freecadName": "V6_FAB2_TOOL_CMP__status_red"
+    },
+    {
+      "id": "V6_FAB2_TOOL_CMP__efem_service_link",
+      "assetId": "V6_FAB2_TOOL_CMP",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "化学机械抛光机 / efem_service_link",
+      "role": "efem_service_link",
+      "kind": "tool",
+      "color": [
+        0.82,
+        0.86,
+        0.85
+      ],
+      "bounds": [
+        -229.0,
+        -214.2,
+        15.7,
+        -227.0,
+        -209.0,
+        17.6
+      ],
+      "freecadName": "V6_FAB2_TOOL_CMP__efem_service_link"
+    },
+    {
+      "id": "V6_FAB2_TOOL_CMP__cell_boundary",
+      "assetId": "V6_FAB2_TOOL_CMP",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "化学机械抛光机 / cell_boundary",
+      "role": "cell_boundary",
+      "kind": "tool",
+      "color": [
+        0.22,
+        0.5,
+        0.52
+      ],
+      "bounds": [
+        -235.0225,
+        -214.0,
+        15.412,
+        -220.9775,
+        -203.9775,
+        15.424
+      ],
+      "freecadName": "V6_FAB2_TOOL_CMP__cell_boundary"
+    },
+    {
+      "id": "V6_FAB2_PORT_CMP__pedestal",
+      "assetId": "V6_FAB2_PORT_CMP",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "化学机械抛光机 · FOUP装载端口 / pedestal",
+      "role": "pedestal",
+      "kind": "loadport",
+      "color": [
+        0.54,
+        0.62,
+        0.67
+      ],
+      "bounds": [
+        -228.5,
+        -216.5,
+        15.4,
+        -227.5,
+        -215.5,
+        16.4
+      ],
+      "freecadName": "V6_FAB2_PORT_CMP__pedestal"
+    },
+    {
+      "id": "V6_FAB2_PORT_CMP__door",
+      "assetId": "V6_FAB2_PORT_CMP",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "化学机械抛光机 · FOUP装载端口 / door",
+      "role": "door",
+      "kind": "loadport",
+      "color": [
+        0.82,
+        0.86,
+        0.85
+      ],
+      "bounds": [
+        -228.365,
+        -215.5,
+        16.32,
+        -227.635,
+        -215.38,
+        17.17
+      ],
+      "freecadName": "V6_FAB2_PORT_CMP__door"
+    },
+    {
+      "id": "V6_FAB2_PORT_CMP__docking_face",
+      "assetId": "V6_FAB2_PORT_CMP",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "化学机械抛光机 · FOUP装载端口 / docking_face",
+      "role": "docking_face",
+      "kind": "loadport",
+      "color": [
+        0.12,
+        0.18,
+        0.23
+      ],
+      "bounds": [
+        -228.29,
+        -215.527,
+        16.45,
+        -227.71,
+        -215.503,
+        17.03
+      ],
+      "freecadName": "V6_FAB2_PORT_CMP__docking_face"
+    },
+    {
+      "id": "V6_FAB2_PORT_CMP__alignment_pins",
+      "assetId": "V6_FAB2_PORT_CMP",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "化学机械抛光机 · FOUP装载端口 / alignment_pins",
+      "role": "alignment_pins",
+      "kind": "loadport",
+      "color": [
+        0.54,
+        0.62,
+        0.67
+      ],
+      "bounds": [
+        -228.27,
+        -216.24,
+        16.4,
+        -227.73,
+        -215.74,
+        16.47
+      ],
+      "freecadName": "V6_FAB2_PORT_CMP__alignment_pins"
+    },
+    {
+      "id": "V6_FAB2_PORT_CMP__efem_join",
+      "assetId": "V6_FAB2_PORT_CMP",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "化学机械抛光机 · FOUP装载端口 / efem_join",
+      "role": "efem_join",
+      "kind": "loadport",
+      "color": [
+        0.82,
+        0.86,
+        0.85
+      ],
+      "bounds": [
+        -228.5,
+        -215.42,
+        15.65,
+        -227.5,
+        -214.7,
+        16.35
+      ],
+      "freecadName": "V6_FAB2_PORT_CMP__efem_join"
+    },
+    {
+      "id": "V6_FAB2_TOOL_CLEAN__plinth",
+      "assetId": "V6_FAB2_TOOL_CLEAN",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "单片湿法清洗机 / plinth",
+      "role": "plinth",
+      "kind": "tool",
+      "color": [
+        0.12,
+        0.18,
+        0.23
+      ],
+      "bounds": [
+        -210.37,
+        -212.27,
+        15.4,
+        -201.63,
+        -205.73,
+        15.62
+      ],
+      "freecadName": "V6_FAB2_TOOL_CLEAN__plinth"
+    },
+    {
+      "id": "V6_FAB2_TOOL_CLEAN__enclosure",
+      "assetId": "V6_FAB2_TOOL_CLEAN",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "单片湿法清洗机 / enclosure",
+      "role": "enclosure",
+      "kind": "tool",
+      "color": [
+        0.82,
+        0.86,
+        0.85
+      ],
+      "bounds": [
+        -210.25,
+        -212.15,
+        15.62,
+        -201.75,
+        -205.85,
+        18.42
+      ],
+      "freecadName": "V6_FAB2_TOOL_CLEAN__enclosure"
+    },
+    {
+      "id": "V6_FAB2_TOOL_CLEAN__panel_seams",
+      "assetId": "V6_FAB2_TOOL_CLEAN",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "单片湿法清洗机 / panel_seams",
+      "role": "panel_seams",
+      "kind": "tool",
+      "color": [
+        0.54,
+        0.62,
+        0.67
+      ],
+      "bounds": [
+        -210.15,
+        -212.1995,
+        15.7,
+        -201.85,
+        -212.1545,
+        18.38
+      ],
+      "freecadName": "V6_FAB2_TOOL_CLEAN__panel_seams"
+    },
+    {
+      "id": "V6_FAB2_TOOL_CLEAN__handles",
+      "assetId": "V6_FAB2_TOOL_CLEAN",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "单片湿法清洗机 / handles",
+      "role": "handles",
+      "kind": "tool",
+      "color": [
+        0.12,
+        0.18,
+        0.23
+      ],
+      "bounds": [
+        -208.275,
+        -212.237,
+        16.55,
+        -203.965,
+        -212.177,
+        16.97
+      ],
+      "freecadName": "V6_FAB2_TOOL_CLEAN__handles"
+    },
+    {
+      "id": "V6_FAB2_TOOL_CLEAN__vent_grille",
+      "assetId": "V6_FAB2_TOOL_CLEAN",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "单片湿法清洗机 / vent_grille",
+      "role": "vent_grille",
+      "kind": "tool",
+      "color": [
+        0.12,
+        0.18,
+        0.23
+      ],
+      "bounds": [
+        -204.045,
+        -212.202,
+        15.82,
+        -202.345,
+        -212.162,
+        16.145
+      ],
+      "freecadName": "V6_FAB2_TOOL_CLEAN__vent_grille"
+    },
+    {
+      "id": "V6_FAB2_TOOL_CLEAN__service_cabinet",
+      "assetId": "V6_FAB2_TOOL_CLEAN",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "单片湿法清洗机 / service_cabinet",
+      "role": "service_cabinet",
+      "kind": "tool",
+      "color": [
+        0.13,
+        0.47,
+        0.49
+      ],
+      "bounds": [
+        -201.6,
+        -210.8475,
+        15.4,
+        -200.8,
+        -206.7525,
+        17.9
+      ],
+      "freecadName": "V6_FAB2_TOOL_CLEAN__service_cabinet"
+    },
+    {
+      "id": "V6_FAB2_TOOL_CLEAN__chemistry_windows",
+      "assetId": "V6_FAB2_TOOL_CLEAN",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "单片湿法清洗机 / chemistry_windows",
+      "role": "chemistry_windows",
+      "kind": "tool",
+      "color": [
+        0.09,
+        0.28,
+        0.37
+      ],
+      "bounds": [
+        -209.825,
+        -212.2025,
+        16.65,
+        -202.175,
+        -212.1575,
+        18.15
+      ],
+      "freecadName": "V6_FAB2_TOOL_CLEAN__chemistry_windows"
+    },
+    {
+      "id": "V6_FAB2_TOOL_CLEAN__spin_chamber_lids",
+      "assetId": "V6_FAB2_TOOL_CLEAN",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "单片湿法清洗机 / spin_chamber_lids",
+      "role": "spin_chamber_lids",
+      "kind": "tool",
+      "color": [
+        0.13,
+        0.47,
+        0.49
+      ],
+      "bounds": [
+        -209.68,
+        -209.18,
+        18.42,
+        -202.32,
+        -207.82,
+        18.62
+      ],
+      "freecadName": "V6_FAB2_TOOL_CLEAN__spin_chamber_lids"
+    },
+    {
+      "id": "V6_FAB2_TOOL_CLEAN__exhaust_and_wet_services",
+      "assetId": "V6_FAB2_TOOL_CLEAN",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "单片湿法清洗机 / exhaust_and_wet_services",
+      "role": "exhaust_and_wet_services",
+      "kind": "tool",
+      "color": [
+        0.54,
+        0.62,
+        0.67
+      ],
+      "bounds": [
+        -209.12,
+        -206.32,
+        17.4,
+        -202.88,
+        -206.08,
+        19.45
+      ],
+      "freecadName": "V6_FAB2_TOOL_CLEAN__exhaust_and_wet_services"
+    },
+    {
+      "id": "V6_FAB2_TOOL_CLEAN__efem",
+      "assetId": "V6_FAB2_TOOL_CLEAN",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "单片湿法清洗机 / efem",
+      "role": "efem",
+      "kind": "tool",
+      "color": [
+        0.82,
+        0.86,
+        0.85
+      ],
+      "bounds": [
+        -207.95,
+        -214.75,
+        15.58,
+        -204.05,
+        -213.65,
+        17.88
+      ],
+      "freecadName": "V6_FAB2_TOOL_CLEAN__efem"
+    },
+    {
+      "id": "V6_FAB2_TOOL_CLEAN__efem_window",
+      "assetId": "V6_FAB2_TOOL_CLEAN",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "单片湿法清洗机 / efem_window",
+      "role": "efem_window",
+      "kind": "tool",
+      "color": [
+        0.09,
+        0.28,
+        0.37
+      ],
+      "bounds": [
+        -207.75,
+        -214.788,
+        16.4,
+        -204.25,
+        -214.748,
+        17.58
+      ],
+      "freecadName": "V6_FAB2_TOOL_CLEAN__efem_window"
+    },
+    {
+      "id": "V6_FAB2_TOOL_CLEAN__robot_and_transfer",
+      "assetId": "V6_FAB2_TOOL_CLEAN",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "单片湿法清洗机 / robot_and_transfer",
+      "role": "robot_and_transfer",
+      "kind": "tool",
+      "color": [
+        0.54,
+        0.62,
+        0.67
+      ],
+      "bounds": [
+        -206.3,
+        -214.5,
+        15.92,
+        -204.99,
+        -213.9,
+        16.17
+      ],
+      "freecadName": "V6_FAB2_TOOL_CLEAN__robot_and_transfer"
+    },
+    {
+      "id": "V6_FAB2_TOOL_CLEAN__hmi",
+      "assetId": "V6_FAB2_TOOL_CLEAN",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "单片湿法清洗机 / hmi",
+      "role": "hmi",
+      "kind": "tool",
+      "color": [
+        0.12,
+        0.18,
+        0.23
+      ],
+      "bounds": [
+        -204.175,
+        -214.995,
+        16.36,
+        -203.425,
+        -214.76,
+        17.37
+      ],
+      "freecadName": "V6_FAB2_TOOL_CLEAN__hmi"
+    },
+    {
+      "id": "V6_FAB2_TOOL_CLEAN__hmi_screen",
+      "assetId": "V6_FAB2_TOOL_CLEAN",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "单片湿法清洗机 / hmi_screen",
+      "role": "hmi_screen",
+      "kind": "tool",
+      "color": [
+        0.18,
+        0.43,
+        0.65
+      ],
+      "bounds": [
+        -204.11,
+        -215.011,
+        16.8,
+        -203.49,
+        -214.999,
+        17.23
+      ],
+      "freecadName": "V6_FAB2_TOOL_CLEAN__hmi_screen"
+    },
+    {
+      "id": "V6_FAB2_TOOL_CLEAN__status_post",
+      "assetId": "V6_FAB2_TOOL_CLEAN",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "单片湿法清洗机 / status_post",
+      "role": "status_post",
+      "kind": "tool",
+      "color": [
+        0.54,
+        0.62,
+        0.67
+      ],
+      "bounds": [
+        -207.895,
+        -214.245,
+        17.88,
+        -207.805,
+        -214.155,
+        18.56
+      ],
+      "freecadName": "V6_FAB2_TOOL_CLEAN__status_post"
+    },
+    {
+      "id": "V6_FAB2_TOOL_CLEAN__status_green",
+      "assetId": "V6_FAB2_TOOL_CLEAN",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "单片湿法清洗机 / status_green",
+      "role": "status_green",
+      "kind": "tool",
+      "color": [
+        0.2,
+        0.76,
+        0.39
+      ],
+      "bounds": [
+        -207.94,
+        -214.29,
+        18.08,
+        -207.76,
+        -214.11,
+        18.18
+      ],
+      "freecadName": "V6_FAB2_TOOL_CLEAN__status_green"
+    },
+    {
+      "id": "V6_FAB2_TOOL_CLEAN__status_amber",
+      "assetId": "V6_FAB2_TOOL_CLEAN",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "单片湿法清洗机 / status_amber",
+      "role": "status_amber",
+      "kind": "tool",
+      "color": [
+        0.93,
+        0.55,
+        0.13
+      ],
+      "bounds": [
+        -207.94,
+        -214.29,
+        18.2,
+        -207.76,
+        -214.11,
+        18.3
+      ],
+      "freecadName": "V6_FAB2_TOOL_CLEAN__status_amber"
+    },
+    {
+      "id": "V6_FAB2_TOOL_CLEAN__status_red",
+      "assetId": "V6_FAB2_TOOL_CLEAN",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "单片湿法清洗机 / status_red",
+      "role": "status_red",
+      "kind": "tool",
+      "color": [
+        0.83,
+        0.19,
+        0.15
+      ],
+      "bounds": [
+        -207.94,
+        -214.29,
+        18.32,
+        -207.76,
+        -214.11,
+        18.42
+      ],
+      "freecadName": "V6_FAB2_TOOL_CLEAN__status_red"
+    },
+    {
+      "id": "V6_FAB2_TOOL_CLEAN__efem_service_link",
+      "assetId": "V6_FAB2_TOOL_CLEAN",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "单片湿法清洗机 / efem_service_link",
+      "role": "efem_service_link",
+      "kind": "tool",
+      "color": [
+        0.82,
+        0.86,
+        0.85
+      ],
+      "bounds": [
+        -207.0,
+        -214.2,
+        15.7,
+        -205.0,
+        -209.0,
+        17.6
+      ],
+      "freecadName": "V6_FAB2_TOOL_CLEAN__efem_service_link"
+    },
+    {
+      "id": "V6_FAB2_TOOL_CLEAN__cell_boundary",
+      "assetId": "V6_FAB2_TOOL_CLEAN",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "单片湿法清洗机 / cell_boundary",
+      "role": "cell_boundary",
+      "kind": "tool",
+      "color": [
+        0.22,
+        0.5,
+        0.52
+      ],
+      "bounds": [
+        -213.0225,
+        -214.0,
+        15.412,
+        -198.9775,
+        -203.9775,
+        15.424
+      ],
+      "freecadName": "V6_FAB2_TOOL_CLEAN__cell_boundary"
+    },
+    {
+      "id": "V6_FAB2_PORT_CLEAN__pedestal",
+      "assetId": "V6_FAB2_PORT_CLEAN",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "单片湿法清洗机 · FOUP装载端口 / pedestal",
+      "role": "pedestal",
+      "kind": "loadport",
+      "color": [
+        0.54,
+        0.62,
+        0.67
+      ],
+      "bounds": [
+        -206.5,
+        -216.5,
+        15.4,
+        -205.5,
+        -215.5,
+        16.4
+      ],
+      "freecadName": "V6_FAB2_PORT_CLEAN__pedestal"
+    },
+    {
+      "id": "V6_FAB2_PORT_CLEAN__door",
+      "assetId": "V6_FAB2_PORT_CLEAN",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "单片湿法清洗机 · FOUP装载端口 / door",
+      "role": "door",
+      "kind": "loadport",
+      "color": [
+        0.82,
+        0.86,
+        0.85
+      ],
+      "bounds": [
+        -206.365,
+        -215.5,
+        16.32,
+        -205.635,
+        -215.38,
+        17.17
+      ],
+      "freecadName": "V6_FAB2_PORT_CLEAN__door"
+    },
+    {
+      "id": "V6_FAB2_PORT_CLEAN__docking_face",
+      "assetId": "V6_FAB2_PORT_CLEAN",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "单片湿法清洗机 · FOUP装载端口 / docking_face",
+      "role": "docking_face",
+      "kind": "loadport",
+      "color": [
+        0.12,
+        0.18,
+        0.23
+      ],
+      "bounds": [
+        -206.29,
+        -215.527,
+        16.45,
+        -205.71,
+        -215.503,
+        17.03
+      ],
+      "freecadName": "V6_FAB2_PORT_CLEAN__docking_face"
+    },
+    {
+      "id": "V6_FAB2_PORT_CLEAN__alignment_pins",
+      "assetId": "V6_FAB2_PORT_CLEAN",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "单片湿法清洗机 · FOUP装载端口 / alignment_pins",
+      "role": "alignment_pins",
+      "kind": "loadport",
+      "color": [
+        0.54,
+        0.62,
+        0.67
+      ],
+      "bounds": [
+        -206.27,
+        -216.24,
+        16.4,
+        -205.73,
+        -215.74,
+        16.47
+      ],
+      "freecadName": "V6_FAB2_PORT_CLEAN__alignment_pins"
+    },
+    {
+      "id": "V6_FAB2_PORT_CLEAN__efem_join",
+      "assetId": "V6_FAB2_PORT_CLEAN",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "单片湿法清洗机 · FOUP装载端口 / efem_join",
+      "role": "efem_join",
+      "kind": "loadport",
+      "color": [
+        0.82,
+        0.86,
+        0.85
+      ],
+      "bounds": [
+        -206.5,
+        -215.42,
+        15.65,
+        -205.5,
+        -214.7,
+        16.35
+      ],
+      "freecadName": "V6_FAB2_PORT_CLEAN__efem_join"
+    },
+    {
+      "id": "V6_FAB2_TOOL_METRO__plinth",
+      "assetId": "V6_FAB2_TOOL_METRO",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "光学量测与缺陷检查机 / plinth",
+      "role": "plinth",
+      "kind": "tool",
+      "color": [
+        0.12,
+        0.18,
+        0.23
+      ],
+      "bounds": [
+        -186.82,
+        -212.02,
+        15.4,
+        -181.18,
+        -205.98,
+        15.62
+      ],
+      "freecadName": "V6_FAB2_TOOL_METRO__plinth"
+    },
+    {
+      "id": "V6_FAB2_TOOL_METRO__enclosure",
+      "assetId": "V6_FAB2_TOOL_METRO",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "光学量测与缺陷检查机 / enclosure",
+      "role": "enclosure",
+      "kind": "tool",
+      "color": [
+        0.82,
+        0.86,
+        0.85
+      ],
+      "bounds": [
+        -186.7,
+        -211.9,
+        15.62,
+        -181.3,
+        -206.1,
+        17.77
+      ],
+      "freecadName": "V6_FAB2_TOOL_METRO__enclosure"
+    },
+    {
+      "id": "V6_FAB2_TOOL_METRO__panel_seams",
+      "assetId": "V6_FAB2_TOOL_METRO",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "光学量测与缺陷检查机 / panel_seams",
+      "role": "panel_seams",
+      "kind": "tool",
+      "color": [
+        0.54,
+        0.62,
+        0.67
+      ],
+      "bounds": [
+        -186.6,
+        -211.9495,
+        15.7,
+        -181.4,
+        -211.9045,
+        17.73
+      ],
+      "freecadName": "V6_FAB2_TOOL_METRO__panel_seams"
+    },
+    {
+      "id": "V6_FAB2_TOOL_METRO__handles",
+      "assetId": "V6_FAB2_TOOL_METRO",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "光学量测与缺陷检查机 / handles",
+      "role": "handles",
+      "kind": "tool",
+      "color": [
+        0.12,
+        0.18,
+        0.23
+      ],
+      "bounds": [
+        -185.5,
+        -211.987,
+        16.55,
+        -182.74,
+        -211.927,
+        16.97
+      ],
+      "freecadName": "V6_FAB2_TOOL_METRO__handles"
+    },
+    {
+      "id": "V6_FAB2_TOOL_METRO__vent_grille",
+      "assetId": "V6_FAB2_TOOL_METRO",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "光学量测与缺陷检查机 / vent_grille",
+      "role": "vent_grille",
+      "kind": "tool",
+      "color": [
+        0.12,
+        0.18,
+        0.23
+      ],
+      "bounds": [
+        -182.758,
+        -211.952,
+        15.82,
+        -181.678,
+        -211.912,
+        16.145
+      ],
+      "freecadName": "V6_FAB2_TOOL_METRO__vent_grille"
+    },
+    {
+      "id": "V6_FAB2_TOOL_METRO__service_cabinet",
+      "assetId": "V6_FAB2_TOOL_METRO",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "光学量测与缺陷检查机 / service_cabinet",
+      "role": "service_cabinet",
+      "kind": "tool",
+      "color": [
+        0.13,
+        0.47,
+        0.49
+      ],
+      "bounds": [
+        -181.15,
+        -210.685,
+        15.4,
+        -180.35,
+        -206.915,
+        17.9
+      ],
+      "freecadName": "V6_FAB2_TOOL_METRO__service_cabinet"
+    },
+    {
+      "id": "V6_FAB2_TOOL_METRO__optical_hood",
+      "assetId": "V6_FAB2_TOOL_METRO",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "光学量测与缺陷检查机 / optical_hood",
+      "role": "optical_hood",
+      "kind": "tool",
+      "color": [
+        0.13,
+        0.47,
+        0.49
+      ],
+      "bounds": [
+        -185.2,
+        -210.05,
+        17.77,
+        -182.0,
+        -206.95,
+        19.57
+      ],
+      "freecadName": "V6_FAB2_TOOL_METRO__optical_hood"
+    },
+    {
+      "id": "V6_FAB2_TOOL_METRO__optical_head",
+      "assetId": "V6_FAB2_TOOL_METRO",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "光学量测与缺陷检查机 / optical_head",
+      "role": "optical_head",
+      "kind": "tool",
+      "color": [
+        0.54,
+        0.62,
+        0.67
+      ],
+      "bounds": [
+        -183.95,
+        -209.55,
+        18.3,
+        -183.25,
+        -208.85,
+        18.85
+      ],
+      "freecadName": "V6_FAB2_TOOL_METRO__optical_head"
+    },
+    {
+      "id": "V6_FAB2_TOOL_METRO__stage_window",
+      "assetId": "V6_FAB2_TOOL_METRO",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "光学量测与缺陷检查机 / stage_window",
+      "role": "stage_window",
+      "kind": "tool",
+      "color": [
+        0.09,
+        0.28,
+        0.37
+      ],
+      "bounds": [
+        -186.0,
+        -211.9575,
+        16.65,
+        -182.2,
+        -211.9225,
+        17.57
+      ],
+      "freecadName": "V6_FAB2_TOOL_METRO__stage_window"
+    },
+    {
+      "id": "V6_FAB2_TOOL_METRO__granite_stage",
+      "assetId": "V6_FAB2_TOOL_METRO",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "光学量测与缺陷检查机 / granite_stage",
+      "role": "granite_stage",
+      "kind": "tool",
+      "color": [
+        0.12,
+        0.18,
+        0.23
+      ],
+      "bounds": [
+        -185.3,
+        -210.7,
+        17.55,
+        -182.7,
+        -208.3,
+        17.745
+      ],
+      "freecadName": "V6_FAB2_TOOL_METRO__granite_stage"
+    },
+    {
+      "id": "V6_FAB2_TOOL_METRO__efem",
+      "assetId": "V6_FAB2_TOOL_METRO",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "光学量测与缺陷检查机 / efem",
+      "role": "efem",
+      "kind": "tool",
+      "color": [
+        0.82,
+        0.86,
+        0.85
+      ],
+      "bounds": [
+        -185.95,
+        -214.75,
+        15.58,
+        -182.05,
+        -213.65,
+        17.88
+      ],
+      "freecadName": "V6_FAB2_TOOL_METRO__efem"
+    },
+    {
+      "id": "V6_FAB2_TOOL_METRO__efem_window",
+      "assetId": "V6_FAB2_TOOL_METRO",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "光学量测与缺陷检查机 / efem_window",
+      "role": "efem_window",
+      "kind": "tool",
+      "color": [
+        0.09,
+        0.28,
+        0.37
+      ],
+      "bounds": [
+        -185.75,
+        -214.788,
+        16.4,
+        -182.25,
+        -214.748,
+        17.58
+      ],
+      "freecadName": "V6_FAB2_TOOL_METRO__efem_window"
+    },
+    {
+      "id": "V6_FAB2_TOOL_METRO__robot_and_transfer",
+      "assetId": "V6_FAB2_TOOL_METRO",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "光学量测与缺陷检查机 / robot_and_transfer",
+      "role": "robot_and_transfer",
+      "kind": "tool",
+      "color": [
+        0.54,
+        0.62,
+        0.67
+      ],
+      "bounds": [
+        -184.3,
+        -214.5,
+        15.92,
+        -182.99,
+        -213.9,
+        16.17
+      ],
+      "freecadName": "V6_FAB2_TOOL_METRO__robot_and_transfer"
+    },
+    {
+      "id": "V6_FAB2_TOOL_METRO__hmi",
+      "assetId": "V6_FAB2_TOOL_METRO",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "光学量测与缺陷检查机 / hmi",
+      "role": "hmi",
+      "kind": "tool",
+      "color": [
+        0.12,
+        0.18,
+        0.23
+      ],
+      "bounds": [
+        -182.175,
+        -214.995,
+        16.36,
+        -181.425,
+        -214.76,
+        17.37
+      ],
+      "freecadName": "V6_FAB2_TOOL_METRO__hmi"
+    },
+    {
+      "id": "V6_FAB2_TOOL_METRO__hmi_screen",
+      "assetId": "V6_FAB2_TOOL_METRO",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "光学量测与缺陷检查机 / hmi_screen",
+      "role": "hmi_screen",
+      "kind": "tool",
+      "color": [
+        0.18,
+        0.43,
+        0.65
+      ],
+      "bounds": [
+        -182.11,
+        -215.011,
+        16.8,
+        -181.49,
+        -214.999,
+        17.23
+      ],
+      "freecadName": "V6_FAB2_TOOL_METRO__hmi_screen"
+    },
+    {
+      "id": "V6_FAB2_TOOL_METRO__status_post",
+      "assetId": "V6_FAB2_TOOL_METRO",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "光学量测与缺陷检查机 / status_post",
+      "role": "status_post",
+      "kind": "tool",
+      "color": [
+        0.54,
+        0.62,
+        0.67
+      ],
+      "bounds": [
+        -185.895,
+        -214.245,
+        17.88,
+        -185.805,
+        -214.155,
+        18.56
+      ],
+      "freecadName": "V6_FAB2_TOOL_METRO__status_post"
+    },
+    {
+      "id": "V6_FAB2_TOOL_METRO__status_green",
+      "assetId": "V6_FAB2_TOOL_METRO",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "光学量测与缺陷检查机 / status_green",
+      "role": "status_green",
+      "kind": "tool",
+      "color": [
+        0.2,
+        0.76,
+        0.39
+      ],
+      "bounds": [
+        -185.94,
+        -214.29,
+        18.08,
+        -185.76,
+        -214.11,
+        18.18
+      ],
+      "freecadName": "V6_FAB2_TOOL_METRO__status_green"
+    },
+    {
+      "id": "V6_FAB2_TOOL_METRO__status_amber",
+      "assetId": "V6_FAB2_TOOL_METRO",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "光学量测与缺陷检查机 / status_amber",
+      "role": "status_amber",
+      "kind": "tool",
+      "color": [
+        0.93,
+        0.55,
+        0.13
+      ],
+      "bounds": [
+        -185.94,
+        -214.29,
+        18.2,
+        -185.76,
+        -214.11,
+        18.3
+      ],
+      "freecadName": "V6_FAB2_TOOL_METRO__status_amber"
+    },
+    {
+      "id": "V6_FAB2_TOOL_METRO__status_red",
+      "assetId": "V6_FAB2_TOOL_METRO",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "光学量测与缺陷检查机 / status_red",
+      "role": "status_red",
+      "kind": "tool",
+      "color": [
+        0.83,
+        0.19,
+        0.15
+      ],
+      "bounds": [
+        -185.94,
+        -214.29,
+        18.32,
+        -185.76,
+        -214.11,
+        18.42
+      ],
+      "freecadName": "V6_FAB2_TOOL_METRO__status_red"
+    },
+    {
+      "id": "V6_FAB2_TOOL_METRO__efem_service_link",
+      "assetId": "V6_FAB2_TOOL_METRO",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "光学量测与缺陷检查机 / efem_service_link",
+      "role": "efem_service_link",
+      "kind": "tool",
+      "color": [
+        0.82,
+        0.86,
+        0.85
+      ],
+      "bounds": [
+        -185.0,
+        -214.2,
+        15.7,
+        -183.0,
+        -209.0,
+        17.6
+      ],
+      "freecadName": "V6_FAB2_TOOL_METRO__efem_service_link"
+    },
+    {
+      "id": "V6_FAB2_TOOL_METRO__cell_boundary",
+      "assetId": "V6_FAB2_TOOL_METRO",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "光学量测与缺陷检查机 / cell_boundary",
+      "role": "cell_boundary",
+      "kind": "tool",
+      "color": [
+        0.22,
+        0.5,
+        0.52
+      ],
+      "bounds": [
+        -191.0225,
+        -214.0,
+        15.412,
+        -176.9775,
+        -203.9775,
+        15.424
+      ],
+      "freecadName": "V6_FAB2_TOOL_METRO__cell_boundary"
+    },
+    {
+      "id": "V6_FAB2_PORT_METRO__pedestal",
+      "assetId": "V6_FAB2_PORT_METRO",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "光学量测与缺陷检查机 · FOUP装载端口 / pedestal",
+      "role": "pedestal",
+      "kind": "loadport",
+      "color": [
+        0.54,
+        0.62,
+        0.67
+      ],
+      "bounds": [
+        -184.5,
+        -216.5,
+        15.4,
+        -183.5,
+        -215.5,
+        16.4
+      ],
+      "freecadName": "V6_FAB2_PORT_METRO__pedestal"
+    },
+    {
+      "id": "V6_FAB2_PORT_METRO__door",
+      "assetId": "V6_FAB2_PORT_METRO",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "光学量测与缺陷检查机 · FOUP装载端口 / door",
+      "role": "door",
+      "kind": "loadport",
+      "color": [
+        0.82,
+        0.86,
+        0.85
+      ],
+      "bounds": [
+        -184.365,
+        -215.5,
+        16.32,
+        -183.635,
+        -215.38,
+        17.17
+      ],
+      "freecadName": "V6_FAB2_PORT_METRO__door"
+    },
+    {
+      "id": "V6_FAB2_PORT_METRO__docking_face",
+      "assetId": "V6_FAB2_PORT_METRO",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "光学量测与缺陷检查机 · FOUP装载端口 / docking_face",
+      "role": "docking_face",
+      "kind": "loadport",
+      "color": [
+        0.12,
+        0.18,
+        0.23
+      ],
+      "bounds": [
+        -184.29,
+        -215.527,
+        16.45,
+        -183.71,
+        -215.503,
+        17.03
+      ],
+      "freecadName": "V6_FAB2_PORT_METRO__docking_face"
+    },
+    {
+      "id": "V6_FAB2_PORT_METRO__alignment_pins",
+      "assetId": "V6_FAB2_PORT_METRO",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "光学量测与缺陷检查机 · FOUP装载端口 / alignment_pins",
+      "role": "alignment_pins",
+      "kind": "loadport",
+      "color": [
+        0.54,
+        0.62,
+        0.67
+      ],
+      "bounds": [
+        -184.27,
+        -216.24,
+        16.4,
+        -183.73,
+        -215.74,
+        16.47
+      ],
+      "freecadName": "V6_FAB2_PORT_METRO__alignment_pins"
+    },
+    {
+      "id": "V6_FAB2_PORT_METRO__efem_join",
+      "assetId": "V6_FAB2_PORT_METRO",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "光学量测与缺陷检查机 · FOUP装载端口 / efem_join",
+      "role": "efem_join",
+      "kind": "loadport",
+      "color": [
+        0.82,
+        0.86,
+        0.85
+      ],
+      "bounds": [
+        -184.5,
+        -215.42,
+        15.65,
+        -183.5,
+        -214.7,
+        16.35
+      ],
+      "freecadName": "V6_FAB2_PORT_METRO__efem_join"
+    },
+    {
+      "id": "V6_FAB2_STOCKER_01__frame",
+      "assetId": "V6_FAB2_STOCKER_01",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "六储位FOUP缓存库 / frame",
+      "role": "frame",
+      "kind": "stocker",
+      "color": [
+        0.82,
+        0.86,
+        0.85
+      ],
+      "bounds": [
+        -357.87,
+        -212.35,
+        15.4,
+        -354.13,
+        -209.635,
+        19.64
+      ],
+      "freecadName": "V6_FAB2_STOCKER_01__frame"
+    },
+    {
+      "id": "V6_FAB2_STOCKER_01__shelves",
+      "assetId": "V6_FAB2_STOCKER_01",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "六储位FOUP缓存库 / shelves",
+      "role": "shelves",
+      "kind": "stocker",
+      "color": [
+        0.54,
+        0.62,
+        0.67
+      ],
+      "bounds": [
+        -357.725,
+        -212.25,
+        16.18,
+        -354.275,
+        -209.75,
+        17.4
+      ],
+      "freecadName": "V6_FAB2_STOCKER_01__shelves"
+    },
+    {
+      "id": "V6_FAB2_STOCKER_01__robot_column",
+      "assetId": "V6_FAB2_STOCKER_01",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "六储位FOUP缓存库 / robot_column",
+      "role": "robot_column",
+      "kind": "stocker",
+      "color": [
+        0.13,
+        0.47,
+        0.49
+      ],
+      "bounds": [
+        -357.4,
+        -210.775,
+        15.6,
+        -354.6,
+        -210.025,
+        19.4
+      ],
+      "freecadName": "V6_FAB2_STOCKER_01__robot_column"
+    },
+    {
+      "id": "V6_FAB2_STOCKER_01__slot_guides",
+      "assetId": "V6_FAB2_STOCKER_01",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "六储位FOUP缓存库 / slot_guides",
+      "role": "slot_guides",
+      "kind": "stocker",
+      "color": [
+        0.54,
+        0.62,
+        0.67
+      ],
+      "bounds": [
+        -357.4275,
+        -211.39,
+        16.25,
+        -354.5725,
+        -210.61,
+        17.4
+      ],
+      "freecadName": "V6_FAB2_STOCKER_01__slot_guides"
+    },
+    {
+      "id": "V6_FAB2_STOCKER_01__dock",
+      "assetId": "V6_FAB2_STOCKER_01",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "六储位FOUP缓存库 / dock",
+      "role": "dock",
+      "kind": "stocker",
+      "color": [
+        0.54,
+        0.62,
+        0.67
+      ],
+      "bounds": [
+        -356.55,
+        -216.55,
+        15.4,
+        -355.45,
+        -212.4,
+        16.4
+      ],
+      "freecadName": "V6_FAB2_STOCKER_01__dock"
+    },
+    {
+      "id": "V6_FAB2_STOCKER_01__operator_panel",
+      "assetId": "V6_FAB2_STOCKER_01",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "六储位FOUP缓存库 / operator_panel",
+      "role": "operator_panel",
+      "kind": "stocker",
+      "color": [
+        0.12,
+        0.18,
+        0.23
+      ],
+      "bounds": [
+        -354.3,
+        -212.275,
+        16.3,
+        -353.7,
+        -212.125,
+        17.0
+      ],
+      "freecadName": "V6_FAB2_STOCKER_01__operator_panel"
+    },
+    {
+      "id": "V6_FAB2_OHT_01__drive_body",
+      "assetId": "V6_FAB2_OHT_01",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "高架搬运车 OHT-01 / drive_body",
+      "role": "drive_body",
+      "kind": "oht",
+      "color": [
+        0.82,
+        0.86,
+        0.85
+      ],
+      "bounds": [
+        -356.625,
+        -216.325,
+        20.5,
+        -355.375,
+        -215.675,
+        20.98
+      ],
+      "freecadName": "V6_FAB2_OHT_01__drive_body"
+    },
+    {
+      "id": "V6_FAB2_OHT_01__wheels",
+      "assetId": "V6_FAB2_OHT_01",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "高架搬运车 OHT-01 / wheels",
+      "role": "wheels",
+      "kind": "oht",
+      "color": [
+        0.12,
+        0.18,
+        0.23
+      ],
+      "bounds": [
+        -356.53,
+        -216.39,
+        21.05,
+        -355.47,
+        -215.61,
+        21.27
+      ],
+      "freecadName": "V6_FAB2_OHT_01__wheels"
+    },
+    {
+      "id": "V6_FAB2_OHT_01__hoist_housing",
+      "assetId": "V6_FAB2_OHT_01",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "高架搬运车 OHT-01 / hoist_housing",
+      "role": "hoist_housing",
+      "kind": "oht",
+      "color": [
+        0.13,
+        0.47,
+        0.49
+      ],
+      "bounds": [
+        -356.51,
+        -216.37,
+        20.12,
+        -355.49,
+        -215.63,
+        20.49
+      ],
+      "freecadName": "V6_FAB2_OHT_01__hoist_housing"
+    },
+    {
+      "id": "V6_FAB2_OHT_01__gripper",
+      "assetId": "V6_FAB2_OHT_01",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "高架搬运车 OHT-01 / gripper",
+      "role": "gripper",
+      "kind": "oht",
+      "color": [
+        0.54,
+        0.62,
+        0.67
+      ],
+      "bounds": [
+        -356.225,
+        -216.2,
+        20.055,
+        -355.775,
+        -215.8,
+        20.125
+      ],
+      "freecadName": "V6_FAB2_OHT_01__gripper"
+    },
+    {
+      "id": "V6_FAB2_FOUP_01__shell",
+      "assetId": "V6_FAB2_FOUP_01",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "FOUP-01 / shell",
+      "role": "shell",
+      "kind": "carrier",
+      "color": [
+        0.93,
+        0.55,
+        0.13
+      ],
+      "bounds": [
+        -357.35,
+        -211.34,
+        16.3,
+        -356.75,
+        -210.66,
+        16.95
+      ],
+      "freecadName": "V6_FAB2_FOUP_01__shell"
+    },
+    {
+      "id": "V6_FAB2_FOUP_01__door",
+      "assetId": "V6_FAB2_FOUP_01",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "FOUP-01 / door",
+      "role": "door",
+      "kind": "carrier",
+      "color": [
+        0.12,
+        0.18,
+        0.23
+      ],
+      "bounds": [
+        -357.33,
+        -211.3635,
+        16.335,
+        -356.77,
+        -211.3385,
+        16.835
+      ],
+      "freecadName": "V6_FAB2_FOUP_01__door"
+    },
+    {
+      "id": "V6_FAB2_FOUP_01__door_ribs",
+      "assetId": "V6_FAB2_FOUP_01",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "FOUP-01 / door_ribs",
+      "role": "door_ribs",
+      "kind": "carrier",
+      "color": [
+        0.54,
+        0.62,
+        0.67
+      ],
+      "bounds": [
+        -357.29,
+        -211.373,
+        16.4,
+        -356.81,
+        -211.361,
+        16.755
+      ],
+      "freecadName": "V6_FAB2_FOUP_01__door_ribs"
+    },
+    {
+      "id": "V6_FAB2_FOUP_01__top_flange",
+      "assetId": "V6_FAB2_FOUP_01",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "FOUP-01 / top_flange",
+      "role": "top_flange",
+      "kind": "carrier",
+      "color": [
+        0.12,
+        0.18,
+        0.23
+      ],
+      "bounds": [
+        -357.26,
+        -211.155,
+        16.95,
+        -356.84,
+        -210.845,
+        17.055
+      ],
+      "freecadName": "V6_FAB2_FOUP_01__top_flange"
+    },
+    {
+      "id": "V6_FAB2_FOUP_01__side_handles",
+      "assetId": "V6_FAB2_FOUP_01",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "FOUP-01 / side_handles",
+      "role": "side_handles",
+      "kind": "carrier",
+      "color": [
+        0.93,
+        0.55,
+        0.13
+      ],
+      "bounds": [
+        -357.4125,
+        -211.115,
+        16.64,
+        -356.6875,
+        -210.885,
+        16.8
+      ],
+      "freecadName": "V6_FAB2_FOUP_01__side_handles"
+    },
+    {
+      "id": "V6_FAB2_FOUP_02__shell",
+      "assetId": "V6_FAB2_FOUP_02",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "FOUP-02 / shell",
+      "role": "shell",
+      "kind": "carrier",
+      "color": [
+        0.93,
+        0.55,
+        0.13
+      ],
+      "bounds": [
+        -356.3,
+        -211.34,
+        16.3,
+        -355.7,
+        -210.66,
+        16.95
+      ],
+      "freecadName": "V6_FAB2_FOUP_02__shell"
+    },
+    {
+      "id": "V6_FAB2_FOUP_02__door",
+      "assetId": "V6_FAB2_FOUP_02",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "FOUP-02 / door",
+      "role": "door",
+      "kind": "carrier",
+      "color": [
+        0.12,
+        0.18,
+        0.23
+      ],
+      "bounds": [
+        -356.28,
+        -211.3635,
+        16.335,
+        -355.72,
+        -211.3385,
+        16.835
+      ],
+      "freecadName": "V6_FAB2_FOUP_02__door"
+    },
+    {
+      "id": "V6_FAB2_FOUP_02__door_ribs",
+      "assetId": "V6_FAB2_FOUP_02",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "FOUP-02 / door_ribs",
+      "role": "door_ribs",
+      "kind": "carrier",
+      "color": [
+        0.54,
+        0.62,
+        0.67
+      ],
+      "bounds": [
+        -356.24,
+        -211.373,
+        16.4,
+        -355.76,
+        -211.361,
+        16.755
+      ],
+      "freecadName": "V6_FAB2_FOUP_02__door_ribs"
+    },
+    {
+      "id": "V6_FAB2_FOUP_02__top_flange",
+      "assetId": "V6_FAB2_FOUP_02",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "FOUP-02 / top_flange",
+      "role": "top_flange",
+      "kind": "carrier",
+      "color": [
+        0.12,
+        0.18,
+        0.23
+      ],
+      "bounds": [
+        -356.21,
+        -211.155,
+        16.95,
+        -355.79,
+        -210.845,
+        17.055
+      ],
+      "freecadName": "V6_FAB2_FOUP_02__top_flange"
+    },
+    {
+      "id": "V6_FAB2_FOUP_02__side_handles",
+      "assetId": "V6_FAB2_FOUP_02",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "FOUP-02 / side_handles",
+      "role": "side_handles",
+      "kind": "carrier",
+      "color": [
+        0.93,
+        0.55,
+        0.13
+      ],
+      "bounds": [
+        -356.3625,
+        -211.115,
+        16.64,
+        -355.6375,
+        -210.885,
+        16.8
+      ],
+      "freecadName": "V6_FAB2_FOUP_02__side_handles"
+    },
+    {
+      "id": "V6_FAB2_FOUP_03__shell",
+      "assetId": "V6_FAB2_FOUP_03",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "FOUP-03 / shell",
+      "role": "shell",
+      "kind": "carrier",
+      "color": [
+        0.93,
+        0.55,
+        0.13
+      ],
+      "bounds": [
+        -355.25,
+        -211.34,
+        16.3,
+        -354.65,
+        -210.66,
+        16.95
+      ],
+      "freecadName": "V6_FAB2_FOUP_03__shell"
+    },
+    {
+      "id": "V6_FAB2_FOUP_03__door",
+      "assetId": "V6_FAB2_FOUP_03",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "FOUP-03 / door",
+      "role": "door",
+      "kind": "carrier",
+      "color": [
+        0.12,
+        0.18,
+        0.23
+      ],
+      "bounds": [
+        -355.23,
+        -211.3635,
+        16.335,
+        -354.67,
+        -211.3385,
+        16.835
+      ],
+      "freecadName": "V6_FAB2_FOUP_03__door"
+    },
+    {
+      "id": "V6_FAB2_FOUP_03__door_ribs",
+      "assetId": "V6_FAB2_FOUP_03",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "FOUP-03 / door_ribs",
+      "role": "door_ribs",
+      "kind": "carrier",
+      "color": [
+        0.54,
+        0.62,
+        0.67
+      ],
+      "bounds": [
+        -355.19,
+        -211.373,
+        16.4,
+        -354.71,
+        -211.361,
+        16.755
+      ],
+      "freecadName": "V6_FAB2_FOUP_03__door_ribs"
+    },
+    {
+      "id": "V6_FAB2_FOUP_03__top_flange",
+      "assetId": "V6_FAB2_FOUP_03",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "FOUP-03 / top_flange",
+      "role": "top_flange",
+      "kind": "carrier",
+      "color": [
+        0.12,
+        0.18,
+        0.23
+      ],
+      "bounds": [
+        -355.16,
+        -211.155,
+        16.95,
+        -354.74,
+        -210.845,
+        17.055
+      ],
+      "freecadName": "V6_FAB2_FOUP_03__top_flange"
+    },
+    {
+      "id": "V6_FAB2_FOUP_03__side_handles",
+      "assetId": "V6_FAB2_FOUP_03",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "FOUP-03 / side_handles",
+      "role": "side_handles",
+      "kind": "carrier",
+      "color": [
+        0.93,
+        0.55,
+        0.13
+      ],
+      "bounds": [
+        -355.3125,
+        -211.115,
+        16.64,
+        -354.5875,
+        -210.885,
+        16.8
+      ],
+      "freecadName": "V6_FAB2_FOUP_03__side_handles"
+    },
+    {
+      "id": "V6_FAB2_FOUP_04__shell",
+      "assetId": "V6_FAB2_FOUP_04",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "FOUP-04 / shell",
+      "role": "shell",
+      "kind": "carrier",
+      "color": [
+        0.93,
+        0.55,
+        0.13
+      ],
+      "bounds": [
+        -357.35,
+        -211.34,
+        17.4,
+        -356.75,
+        -210.66,
+        18.05
+      ],
+      "freecadName": "V6_FAB2_FOUP_04__shell"
+    },
+    {
+      "id": "V6_FAB2_FOUP_04__door",
+      "assetId": "V6_FAB2_FOUP_04",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "FOUP-04 / door",
+      "role": "door",
+      "kind": "carrier",
+      "color": [
+        0.12,
+        0.18,
+        0.23
+      ],
+      "bounds": [
+        -357.33,
+        -211.3635,
+        17.435,
+        -356.77,
+        -211.3385,
+        17.935
+      ],
+      "freecadName": "V6_FAB2_FOUP_04__door"
+    },
+    {
+      "id": "V6_FAB2_FOUP_04__door_ribs",
+      "assetId": "V6_FAB2_FOUP_04",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "FOUP-04 / door_ribs",
+      "role": "door_ribs",
+      "kind": "carrier",
+      "color": [
+        0.54,
+        0.62,
+        0.67
+      ],
+      "bounds": [
+        -357.29,
+        -211.373,
+        17.5,
+        -356.81,
+        -211.361,
+        17.855
+      ],
+      "freecadName": "V6_FAB2_FOUP_04__door_ribs"
+    },
+    {
+      "id": "V6_FAB2_FOUP_04__top_flange",
+      "assetId": "V6_FAB2_FOUP_04",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "FOUP-04 / top_flange",
+      "role": "top_flange",
+      "kind": "carrier",
+      "color": [
+        0.12,
+        0.18,
+        0.23
+      ],
+      "bounds": [
+        -357.26,
+        -211.155,
+        18.05,
+        -356.84,
+        -210.845,
+        18.155
+      ],
+      "freecadName": "V6_FAB2_FOUP_04__top_flange"
+    },
+    {
+      "id": "V6_FAB2_FOUP_04__side_handles",
+      "assetId": "V6_FAB2_FOUP_04",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "FOUP-04 / side_handles",
+      "role": "side_handles",
+      "kind": "carrier",
+      "color": [
+        0.93,
+        0.55,
+        0.13
+      ],
+      "bounds": [
+        -357.4125,
+        -211.115,
+        17.74,
+        -356.6875,
+        -210.885,
+        17.9
+      ],
+      "freecadName": "V6_FAB2_FOUP_04__side_handles"
+    },
+    {
+      "id": "V6_FAB2_FOUP_05__shell",
+      "assetId": "V6_FAB2_FOUP_05",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "FOUP-05 / shell",
+      "role": "shell",
+      "kind": "carrier",
+      "color": [
+        0.93,
+        0.55,
+        0.13
+      ],
+      "bounds": [
+        -356.3,
+        -211.34,
+        17.4,
+        -355.7,
+        -210.66,
+        18.05
+      ],
+      "freecadName": "V6_FAB2_FOUP_05__shell"
+    },
+    {
+      "id": "V6_FAB2_FOUP_05__door",
+      "assetId": "V6_FAB2_FOUP_05",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "FOUP-05 / door",
+      "role": "door",
+      "kind": "carrier",
+      "color": [
+        0.12,
+        0.18,
+        0.23
+      ],
+      "bounds": [
+        -356.28,
+        -211.3635,
+        17.435,
+        -355.72,
+        -211.3385,
+        17.935
+      ],
+      "freecadName": "V6_FAB2_FOUP_05__door"
+    },
+    {
+      "id": "V6_FAB2_FOUP_05__door_ribs",
+      "assetId": "V6_FAB2_FOUP_05",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "FOUP-05 / door_ribs",
+      "role": "door_ribs",
+      "kind": "carrier",
+      "color": [
+        0.54,
+        0.62,
+        0.67
+      ],
+      "bounds": [
+        -356.24,
+        -211.373,
+        17.5,
+        -355.76,
+        -211.361,
+        17.855
+      ],
+      "freecadName": "V6_FAB2_FOUP_05__door_ribs"
+    },
+    {
+      "id": "V6_FAB2_FOUP_05__top_flange",
+      "assetId": "V6_FAB2_FOUP_05",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "FOUP-05 / top_flange",
+      "role": "top_flange",
+      "kind": "carrier",
+      "color": [
+        0.12,
+        0.18,
+        0.23
+      ],
+      "bounds": [
+        -356.21,
+        -211.155,
+        18.05,
+        -355.79,
+        -210.845,
+        18.155
+      ],
+      "freecadName": "V6_FAB2_FOUP_05__top_flange"
+    },
+    {
+      "id": "V6_FAB2_FOUP_05__side_handles",
+      "assetId": "V6_FAB2_FOUP_05",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "FOUP-05 / side_handles",
+      "role": "side_handles",
+      "kind": "carrier",
+      "color": [
+        0.93,
+        0.55,
+        0.13
+      ],
+      "bounds": [
+        -356.3625,
+        -211.115,
+        17.74,
+        -355.6375,
+        -210.885,
+        17.9
+      ],
+      "freecadName": "V6_FAB2_FOUP_05__side_handles"
+    },
+    {
+      "id": "V6_FAB2_FOUP_06__shell",
+      "assetId": "V6_FAB2_FOUP_06",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "FOUP-06 / shell",
+      "role": "shell",
+      "kind": "carrier",
+      "color": [
+        0.93,
+        0.55,
+        0.13
+      ],
+      "bounds": [
+        -355.25,
+        -211.34,
+        17.4,
+        -354.65,
+        -210.66,
+        18.05
+      ],
+      "freecadName": "V6_FAB2_FOUP_06__shell"
+    },
+    {
+      "id": "V6_FAB2_FOUP_06__door",
+      "assetId": "V6_FAB2_FOUP_06",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "FOUP-06 / door",
+      "role": "door",
+      "kind": "carrier",
+      "color": [
+        0.12,
+        0.18,
+        0.23
+      ],
+      "bounds": [
+        -355.23,
+        -211.3635,
+        17.435,
+        -354.67,
+        -211.3385,
+        17.935
+      ],
+      "freecadName": "V6_FAB2_FOUP_06__door"
+    },
+    {
+      "id": "V6_FAB2_FOUP_06__door_ribs",
+      "assetId": "V6_FAB2_FOUP_06",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "FOUP-06 / door_ribs",
+      "role": "door_ribs",
+      "kind": "carrier",
+      "color": [
+        0.54,
+        0.62,
+        0.67
+      ],
+      "bounds": [
+        -355.19,
+        -211.373,
+        17.5,
+        -354.71,
+        -211.361,
+        17.855
+      ],
+      "freecadName": "V6_FAB2_FOUP_06__door_ribs"
+    },
+    {
+      "id": "V6_FAB2_FOUP_06__top_flange",
+      "assetId": "V6_FAB2_FOUP_06",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "FOUP-06 / top_flange",
+      "role": "top_flange",
+      "kind": "carrier",
+      "color": [
+        0.12,
+        0.18,
+        0.23
+      ],
+      "bounds": [
+        -355.16,
+        -211.155,
+        18.05,
+        -354.74,
+        -210.845,
+        18.155
+      ],
+      "freecadName": "V6_FAB2_FOUP_06__top_flange"
+    },
+    {
+      "id": "V6_FAB2_FOUP_06__side_handles",
+      "assetId": "V6_FAB2_FOUP_06",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "FOUP-06 / side_handles",
+      "role": "side_handles",
+      "kind": "carrier",
+      "color": [
+        0.93,
+        0.55,
+        0.13
+      ],
+      "bounds": [
+        -355.3125,
+        -211.115,
+        17.74,
+        -354.5875,
+        -210.885,
+        17.9
+      ],
+      "freecadName": "V6_FAB2_FOUP_06__side_handles"
+    },
+    {
+      "id": "V6_FAB2_RAIL_01__track",
+      "assetId": "V6_FAB2_RAIL_01",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "OHT高架闭合环轨 / track",
+      "role": "track",
+      "kind": "rail",
+      "color": [
+        0.54,
+        0.62,
+        0.67
+      ],
+      "bounds": [
+        -360.09,
+        -230.09,
+        21.11,
+        -166.91,
+        -215.91,
+        21.29
+      ],
+      "freecadName": "V6_FAB2_RAIL_01__track"
+    },
+    {
+      "id": "V6_FAB2_RAIL_01__suspension",
+      "assetId": "V6_FAB2_RAIL_01",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "system": "manufacturing",
+      "level": "F1",
+      "label": "OHT高架闭合环轨 / suspension",
+      "role": "suspension",
+      "kind": "rail",
+      "color": [
+        0.54,
+        0.62,
+        0.67
+      ],
+      "bounds": [
+        -356.034,
+        -230.034,
+        21.2,
+        -183.966,
+        -215.966,
+        23.8
+      ],
+      "freecadName": "V6_FAB2_RAIL_01__suspension"
+    }
+  ]
+}

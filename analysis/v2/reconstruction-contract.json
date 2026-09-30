@@ -1,0 +1,234 @@
+{
+  "version": "2.0",
+  "axes": "X east, Y north, Z up",
+  "sourceImages": [
+    "厂区坐北朝南望.jpg",
+    "厂区坐南朝北望.jpg"
+  ],
+  "sourceNature": "AI-generated conceptual images; preserve design intent, resolve impossible details using real references",
+  "implementation": "Original procedural Blender geometry, executed through genuine Blender MCP, exported to GLB and viewed in Three.js",
+  "skillScope": "img2threejs decomposition, complexity assessment/local search, feature mapping and staged visual review; user-selected Blender implementation. Not a claim of completing the strict code-only Three.js pipeline.",
+  "projectionRoute": "not required: no logos or identity-specific painted patterns; architectural geometry and portable materials reconstructed from multiple references, not projection of AI blur",
+  "buildings": [
+    {
+      "id": "HQ",
+      "position": [
+        0,
+        -8,
+        0
+      ],
+      "size": [
+        194,
+        60,
+        35
+      ],
+      "features": [
+        "central glazed atrium",
+        "two recessed office wings",
+        "stone towers",
+        "recessed colonnade",
+        "entrance canopy and double doors",
+        "terraced forecourt",
+        "glazed ridge skylight",
+        "recessed window bays",
+        "slab bands",
+        "warm ground floor",
+        "rainscreen joints",
+        "roof parapets"
+      ],
+      "source": "R1 centre/R2 centre; S03 curtain-wall system",
+      "confidence": "medium"
+    },
+    {
+      "id": "FAB1",
+      "position": [
+        258,
+        -218,
+        0
+      ],
+      "size": [
+        278,
+        164,
+        27
+      ],
+      "features": [
+        "main shell",
+        "low support annex",
+        "loading bays",
+        "service shafts",
+        "cooling bank 2x3",
+        "scrubber clusters",
+        "multi-level pipe racks",
+        "AHU groups",
+        "service corridors",
+        "roof membrane seams",
+        "handrails",
+        "equipment plinths",
+        "fan bell mouths",
+        "grille and blades",
+        "platform ladders"
+      ],
+      "source": "R2 foreground; S01 BAC, S02 TSMC",
+      "confidence": "medium"
+    },
+    {
+      "id": "FAB2",
+      "position": [
+        -258,
+        -218,
+        0
+      ],
+      "size": [
+        278,
+        164,
+        27
+      ],
+      "features": [
+        "mirrored equipment organisation",
+        "support annex",
+        "loading bays",
+        "cooling bank 2x3",
+        "pipe gallery"
+      ],
+      "source": "R1/R2; S01 S02",
+      "confidence": "medium"
+    },
+    {
+      "id": "LAB",
+      "position": [
+        380,
+        -7,
+        0
+      ],
+      "size": [
+        164,
+        117,
+        25
+      ],
+      "features": [
+        "ribbon windows",
+        "taller scrubber bank",
+        "laboratory entrance",
+        "AHU field"
+      ],
+      "source": "R1 left/R2 right; S02",
+      "confidence": "medium"
+    },
+    {
+      "id": "MASK",
+      "position": [
+        -380,
+        -7,
+        0
+      ],
+      "size": [
+        164,
+        117,
+        25
+      ],
+      "features": [
+        "restrained slit facade",
+        "compact cooling field",
+        "loading canopy"
+      ],
+      "source": "R1 right/R2 left; S02",
+      "confidence": "medium"
+    },
+    {
+      "id": "EXHIBITION",
+      "position": [
+        0,
+        237,
+        0
+      ],
+      "size": [
+        118,
+        40,
+        15
+      ],
+      "features": [
+        "raised central hall",
+        "lower side wings",
+        "deep entrance frame",
+        "warm glass",
+        "reflecting pool",
+        "stepped plaza",
+        "metal roof panels"
+      ],
+      "source": "R1 entrance; reconcile R2 roof ambiguity",
+      "confidence": "medium"
+    },
+    {
+      "id": "DINING_E",
+      "position": [
+        258,
+        136,
+        0
+      ],
+      "size": [
+        61,
+        34,
+        12
+      ],
+      "features": [
+        "hipped tiled roof",
+        "eaves and ridge",
+        "timber lattice",
+        "lakeside deck",
+        "railings and seating"
+      ],
+      "source": "R1 east pitched form; labels conflict",
+      "confidence": "medium"
+    },
+    {
+      "id": "DINING_W",
+      "position": [
+        -258,
+        136,
+        0
+      ],
+      "size": [
+        61,
+        34,
+        13
+      ],
+      "features": [
+        "two-storey pavilion",
+        "horizontal roof planes",
+        "glazed terrace",
+        "pergola and parasols"
+      ],
+      "source": "R1 west flat form; labels conflict",
+      "confidence": "medium"
+    }
+  ],
+  "criticalReviewTargets": [
+    "HQ atrium-wing-tower silhouette",
+    "distinct industrial equipment families",
+    "irregular planted lake edge",
+    "layered forest south and urban context north",
+    "connected roads and entrances"
+  ],
+  "requiredViews": [
+    "north",
+    "south",
+    "top",
+    "admin",
+    "roof",
+    "lake"
+  ],
+  "failureConditions": [
+    "uniform box equipment field",
+    "spherical broccoli trees",
+    "road or planting intersects building",
+    "major part missing",
+    "missing texture after GLB export",
+    "claiming exact geography or engineering dimensions"
+  ],
+  "assumptions": [
+    "rectangular site dimensions are concept estimates",
+    "restaurant geometry follows correspondence; names remain provisional",
+    "southern mountain topography and neighboring blocks are designed context, not surveyed",
+    "equipment connections convey plausible hierarchy rather than a process engineering design"
+  ]
+}

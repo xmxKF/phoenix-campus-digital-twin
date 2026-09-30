@@ -1,0 +1,2457 @@
+{
+  "schema": "campus-manufacturing/6",
+  "units": "m",
+  "coordinates": "CAD X east Y north Z up",
+  "status": "representative inferred concept; simulated operations only",
+  "routeDisclaimer": "Eight illustrative steps, once each, demonstrate logistics and release/Hold; not a semiconductor fabrication recipe or a 7nm process flow.",
+  "buildings": [
+    {
+      "id": "FAB1",
+      "label": "FAB1 · 一期代表制造单元",
+      "enabled": true,
+      "expansion": false,
+      "roomId": "FAB1_R01",
+      "representativeToolCount": 8,
+      "position": [
+        258,
+        -218,
+        15.4
+      ],
+      "bounds": [
+        149,
+        -238,
+        15.4,
+        367,
+        -198,
+        24
+      ],
+      "model": "FAB1.glb"
+    },
+    {
+      "id": "FAB2",
+      "label": "FAB2 · 扩建预留示意",
+      "enabled": false,
+      "expansion": true,
+      "roomId": "FAB2_R01",
+      "representativeToolCount": 8,
+      "position": [
+        -258,
+        -218,
+        15.4
+      ],
+      "bounds": [
+        -367,
+        -238,
+        15.4,
+        -149,
+        -198,
+        24
+      ],
+      "model": "FAB2.glb"
+    }
+  ],
+  "assets": [
+    {
+      "id": "V6_FAB1_TOOL_LITHO",
+      "kind": "tool",
+      "type": "manufacturing_tool",
+      "system": "manufacturing",
+      "buildingId": "FAB1",
+      "roomId": "FAB1_R01",
+      "level": "F1",
+      "label": "光刻与涂胶显影单元",
+      "position": [
+        178,
+        -209,
+        15.4
+      ],
+      "enabled": true,
+      "designStatus": "inferred representative proposal",
+      "source": "analysis/v6/manufacturing-references.md",
+      "process": "lithography",
+      "processKey": "LITHO",
+      "duration": 28,
+      "portId": "V6_FAB1_PORT_LITHO",
+      "stationNode": "V6_FAB1_NODE_LITHO",
+      "referenceFamily": "LITHO",
+      "footprint": [
+        16,
+        9
+      ],
+      "utilityRoomId": "FAB1_R01"
+    },
+    {
+      "id": "V6_FAB1_PORT_LITHO",
+      "kind": "loadport",
+      "type": "manufacturing_loadport",
+      "system": "manufacturing",
+      "buildingId": "FAB1",
+      "roomId": "FAB1_R01",
+      "level": "F1",
+      "label": "光刻与涂胶显影单元 · FOUP装载端口",
+      "position": [
+        178,
+        -216,
+        16.4
+      ],
+      "enabled": true,
+      "designStatus": "inferred representative proposal",
+      "source": "analysis/v6/manufacturing-references.md",
+      "toolId": "V6_FAB1_TOOL_LITHO",
+      "nodeId": "V6_FAB1_NODE_LITHO",
+      "stationNode": "V6_FAB1_NODE_LITHO",
+      "capacity": 1
+    },
+    {
+      "id": "V6_FAB1_TOOL_ETCH",
+      "kind": "tool",
+      "type": "manufacturing_tool",
+      "system": "manufacturing",
+      "buildingId": "FAB1",
+      "roomId": "FAB1_R01",
+      "level": "F1",
+      "label": "等离子刻蚀机",
+      "position": [
+        200,
+        -209,
+        15.4
+      ],
+      "enabled": true,
+      "designStatus": "inferred representative proposal",
+      "source": "analysis/v6/manufacturing-references.md",
+      "process": "etch",
+      "processKey": "ETCH",
+      "duration": 24,
+      "portId": "V6_FAB1_PORT_ETCH",
+      "stationNode": "V6_FAB1_NODE_ETCH",
+      "referenceFamily": "ETCH",
+      "footprint": [
+        12,
+        9
+      ],
+      "utilityRoomId": "FAB1_R01"
+    },
+    {
+      "id": "V6_FAB1_PORT_ETCH",
+      "kind": "loadport",
+      "type": "manufacturing_loadport",
+      "system": "manufacturing",
+      "buildingId": "FAB1",
+      "roomId": "FAB1_R01",
+      "level": "F1",
+      "label": "等离子刻蚀机 · FOUP装载端口",
+      "position": [
+        200,
+        -216,
+        16.4
+      ],
+      "enabled": true,
+      "designStatus": "inferred representative proposal",
+      "source": "analysis/v6/manufacturing-references.md",
+      "toolId": "V6_FAB1_TOOL_ETCH",
+      "nodeId": "V6_FAB1_NODE_ETCH",
+      "stationNode": "V6_FAB1_NODE_ETCH",
+      "capacity": 1
+    },
+    {
+      "id": "V6_FAB1_TOOL_DEPO",
+      "kind": "tool",
+      "type": "manufacturing_tool",
+      "system": "manufacturing",
+      "buildingId": "FAB1",
+      "roomId": "FAB1_R01",
+      "level": "F1",
+      "label": "多腔薄膜沉积机",
+      "position": [
+        222,
+        -209,
+        15.4
+      ],
+      "enabled": true,
+      "designStatus": "inferred representative proposal",
+      "source": "analysis/v6/manufacturing-references.md",
+      "process": "deposition",
+      "processKey": "DEPO",
+      "duration": 30,
+      "portId": "V6_FAB1_PORT_DEPO",
+      "stationNode": "V6_FAB1_NODE_DEPO",
+      "referenceFamily": "DEPO",
+      "footprint": [
+        12,
+        9
+      ],
+      "utilityRoomId": "FAB1_R01"
+    },
+    {
+      "id": "V6_FAB1_PORT_DEPO",
+      "kind": "loadport",
+      "type": "manufacturing_loadport",
+      "system": "manufacturing",
+      "buildingId": "FAB1",
+      "roomId": "FAB1_R01",
+      "level": "F1",
+      "label": "多腔薄膜沉积机 · FOUP装载端口",
+      "position": [
+        222,
+        -216,
+        16.4
+      ],
+      "enabled": true,
+      "designStatus": "inferred representative proposal",
+      "source": "analysis/v6/manufacturing-references.md",
+      "toolId": "V6_FAB1_TOOL_DEPO",
+      "nodeId": "V6_FAB1_NODE_DEPO",
+      "stationNode": "V6_FAB1_NODE_DEPO",
+      "capacity": 1
+    },
+    {
+      "id": "V6_FAB1_TOOL_IMPLANT",
+      "kind": "tool",
+      "type": "manufacturing_tool",
+      "system": "manufacturing",
+      "buildingId": "FAB1",
+      "roomId": "FAB1_R01",
+      "level": "F1",
+      "label": "离子注入机",
+      "position": [
+        244,
+        -209,
+        15.4
+      ],
+      "enabled": true,
+      "designStatus": "inferred representative proposal",
+      "source": "analysis/v6/manufacturing-references.md",
+      "process": "implant",
+      "processKey": "IMPLANT",
+      "duration": 22,
+      "portId": "V6_FAB1_PORT_IMPLANT",
+      "stationNode": "V6_FAB1_NODE_IMPLANT",
+      "referenceFamily": "IMPLANT",
+      "footprint": [
+        12,
+        9
+      ],
+      "utilityRoomId": "FAB1_R01"
+    },
+    {
+      "id": "V6_FAB1_PORT_IMPLANT",
+      "kind": "loadport",
+      "type": "manufacturing_loadport",
+      "system": "manufacturing",
+      "buildingId": "FAB1",
+      "roomId": "FAB1_R01",
+      "level": "F1",
+      "label": "离子注入机 · FOUP装载端口",
+      "position": [
+        244,
+        -216,
+        16.4
+      ],
+      "enabled": true,
+      "designStatus": "inferred representative proposal",
+      "source": "analysis/v6/manufacturing-references.md",
+      "toolId": "V6_FAB1_TOOL_IMPLANT",
+      "nodeId": "V6_FAB1_NODE_IMPLANT",
+      "stationNode": "V6_FAB1_NODE_IMPLANT",
+      "capacity": 1
+    },
+    {
+      "id": "V6_FAB1_TOOL_THERMAL",
+      "kind": "tool",
+      "type": "manufacturing_tool",
+      "system": "manufacturing",
+      "buildingId": "FAB1",
+      "roomId": "FAB1_R01",
+      "level": "F1",
+      "label": "立式热处理炉",
+      "position": [
+        266,
+        -209,
+        15.4
+      ],
+      "enabled": true,
+      "designStatus": "inferred representative proposal",
+      "source": "analysis/v6/manufacturing-references.md",
+      "process": "thermal",
+      "processKey": "THERMAL",
+      "duration": 36,
+      "portId": "V6_FAB1_PORT_THERMAL",
+      "stationNode": "V6_FAB1_NODE_THERMAL",
+      "referenceFamily": "THERMAL",
+      "footprint": [
+        12,
+        9
+      ],
+      "utilityRoomId": "FAB1_R01"
+    },
+    {
+      "id": "V6_FAB1_PORT_THERMAL",
+      "kind": "loadport",
+      "type": "manufacturing_loadport",
+      "system": "manufacturing",
+      "buildingId": "FAB1",
+      "roomId": "FAB1_R01",
+      "level": "F1",
+      "label": "立式热处理炉 · FOUP装载端口",
+      "position": [
+        266,
+        -216,
+        16.4
+      ],
+      "enabled": true,
+      "designStatus": "inferred representative proposal",
+      "source": "analysis/v6/manufacturing-references.md",
+      "toolId": "V6_FAB1_TOOL_THERMAL",
+      "nodeId": "V6_FAB1_NODE_THERMAL",
+      "stationNode": "V6_FAB1_NODE_THERMAL",
+      "capacity": 1
+    },
+    {
+      "id": "V6_FAB1_TOOL_CMP",
+      "kind": "tool",
+      "type": "manufacturing_tool",
+      "system": "manufacturing",
+      "buildingId": "FAB1",
+      "roomId": "FAB1_R01",
+      "level": "F1",
+      "label": "化学机械抛光机",
+      "position": [
+        288,
+        -209,
+        15.4
+      ],
+      "enabled": true,
+      "designStatus": "inferred representative proposal",
+      "source": "analysis/v6/manufacturing-references.md",
+      "process": "cmp",
+      "processKey": "CMP",
+      "duration": 26,
+      "portId": "V6_FAB1_PORT_CMP",
+      "stationNode": "V6_FAB1_NODE_CMP",
+      "referenceFamily": "CMP",
+      "footprint": [
+        12,
+        9
+      ],
+      "utilityRoomId": "FAB1_R01"
+    },
+    {
+      "id": "V6_FAB1_PORT_CMP",
+      "kind": "loadport",
+      "type": "manufacturing_loadport",
+      "system": "manufacturing",
+      "buildingId": "FAB1",
+      "roomId": "FAB1_R01",
+      "level": "F1",
+      "label": "化学机械抛光机 · FOUP装载端口",
+      "position": [
+        288,
+        -216,
+        16.4
+      ],
+      "enabled": true,
+      "designStatus": "inferred representative proposal",
+      "source": "analysis/v6/manufacturing-references.md",
+      "toolId": "V6_FAB1_TOOL_CMP",
+      "nodeId": "V6_FAB1_NODE_CMP",
+      "stationNode": "V6_FAB1_NODE_CMP",
+      "capacity": 1
+    },
+    {
+      "id": "V6_FAB1_TOOL_CLEAN",
+      "kind": "tool",
+      "type": "manufacturing_tool",
+      "system": "manufacturing",
+      "buildingId": "FAB1",
+      "roomId": "FAB1_R01",
+      "level": "F1",
+      "label": "单片湿法清洗机",
+      "position": [
+        310,
+        -209,
+        15.4
+      ],
+      "enabled": true,
+      "designStatus": "inferred representative proposal",
+      "source": "analysis/v6/manufacturing-references.md",
+      "process": "clean",
+      "processKey": "CLEAN",
+      "duration": 18,
+      "portId": "V6_FAB1_PORT_CLEAN",
+      "stationNode": "V6_FAB1_NODE_CLEAN",
+      "referenceFamily": "CLEAN",
+      "footprint": [
+        12,
+        9
+      ],
+      "utilityRoomId": "FAB1_R01"
+    },
+    {
+      "id": "V6_FAB1_PORT_CLEAN",
+      "kind": "loadport",
+      "type": "manufacturing_loadport",
+      "system": "manufacturing",
+      "buildingId": "FAB1",
+      "roomId": "FAB1_R01",
+      "level": "F1",
+      "label": "单片湿法清洗机 · FOUP装载端口",
+      "position": [
+        310,
+        -216,
+        16.4
+      ],
+      "enabled": true,
+      "designStatus": "inferred representative proposal",
+      "source": "analysis/v6/manufacturing-references.md",
+      "toolId": "V6_FAB1_TOOL_CLEAN",
+      "nodeId": "V6_FAB1_NODE_CLEAN",
+      "stationNode": "V6_FAB1_NODE_CLEAN",
+      "capacity": 1
+    },
+    {
+      "id": "V6_FAB1_TOOL_METRO",
+      "kind": "tool",
+      "type": "manufacturing_tool",
+      "system": "manufacturing",
+      "buildingId": "FAB1",
+      "roomId": "FAB1_R01",
+      "level": "F1",
+      "label": "光学量测与缺陷检查机",
+      "position": [
+        332,
+        -209,
+        15.4
+      ],
+      "enabled": true,
+      "designStatus": "inferred representative proposal",
+      "source": "analysis/v6/manufacturing-references.md",
+      "process": "metrology",
+      "processKey": "METRO",
+      "duration": 20,
+      "portId": "V6_FAB1_PORT_METRO",
+      "stationNode": "V6_FAB1_NODE_METRO",
+      "referenceFamily": "METRO",
+      "footprint": [
+        12,
+        9
+      ],
+      "utilityRoomId": "FAB1_R01"
+    },
+    {
+      "id": "V6_FAB1_PORT_METRO",
+      "kind": "loadport",
+      "type": "manufacturing_loadport",
+      "system": "manufacturing",
+      "buildingId": "FAB1",
+      "roomId": "FAB1_R01",
+      "level": "F1",
+      "label": "光学量测与缺陷检查机 · FOUP装载端口",
+      "position": [
+        332,
+        -216,
+        16.4
+      ],
+      "enabled": true,
+      "designStatus": "inferred representative proposal",
+      "source": "analysis/v6/manufacturing-references.md",
+      "toolId": "V6_FAB1_TOOL_METRO",
+      "nodeId": "V6_FAB1_NODE_METRO",
+      "stationNode": "V6_FAB1_NODE_METRO",
+      "capacity": 1
+    },
+    {
+      "id": "V6_FAB1_STOCKER_01",
+      "kind": "stocker",
+      "type": "manufacturing_stocker",
+      "system": "manufacturing",
+      "buildingId": "FAB1",
+      "roomId": "FAB1_R01",
+      "level": "F1",
+      "label": "六储位FOUP缓存库",
+      "position": [
+        160,
+        -216,
+        16.4
+      ],
+      "enabled": true,
+      "designStatus": "inferred representative proposal",
+      "source": "analysis/v6/manufacturing-references.md",
+      "nodeId": "V6_FAB1_NODE_STOCKER",
+      "stationNode": "V6_FAB1_NODE_STOCKER",
+      "slotCount": 6,
+      "slots": [
+        {
+          "id": "V6_FAB1_SLOT_01",
+          "index": 0,
+          "position": [
+            158.95,
+            -211,
+            16.3
+          ]
+        },
+        {
+          "id": "V6_FAB1_SLOT_02",
+          "index": 1,
+          "position": [
+            160,
+            -211,
+            16.3
+          ]
+        },
+        {
+          "id": "V6_FAB1_SLOT_03",
+          "index": 2,
+          "position": [
+            161.05,
+            -211,
+            16.3
+          ]
+        },
+        {
+          "id": "V6_FAB1_SLOT_04",
+          "index": 3,
+          "position": [
+            158.95,
+            -211,
+            17.400000000000002
+          ]
+        },
+        {
+          "id": "V6_FAB1_SLOT_05",
+          "index": 4,
+          "position": [
+            160,
+            -211,
+            17.400000000000002
+          ]
+        },
+        {
+          "id": "V6_FAB1_SLOT_06",
+          "index": 5,
+          "position": [
+            161.05,
+            -211,
+            17.400000000000002
+          ]
+        }
+      ],
+      "slotPositions": [
+        [
+          158.95,
+          -211,
+          16.3
+        ],
+        [
+          160,
+          -211,
+          16.3
+        ],
+        [
+          161.05,
+          -211,
+          16.3
+        ],
+        [
+          158.95,
+          -211,
+          17.400000000000002
+        ],
+        [
+          160,
+          -211,
+          17.400000000000002
+        ],
+        [
+          161.05,
+          -211,
+          17.400000000000002
+        ]
+      ],
+      "dockPosition": [
+        160,
+        -216,
+        16.4
+      ]
+    },
+    {
+      "id": "V6_FAB1_OHT_01",
+      "kind": "oht",
+      "type": "manufacturing_oht",
+      "system": "manufacturing",
+      "buildingId": "FAB1",
+      "roomId": "FAB1_R01",
+      "level": "F1",
+      "label": "高架搬运车 OHT-01",
+      "position": [
+        160,
+        -216,
+        21.2
+      ],
+      "enabled": true,
+      "designStatus": "inferred representative proposal",
+      "source": "analysis/v6/manufacturing-references.md",
+      "nodeId": "V6_FAB1_NODE_STOCKER",
+      "speed": 6,
+      "capacity": 1,
+      "carrierOffset": [
+        0,
+        0,
+        -1.9
+      ]
+    },
+    {
+      "id": "V6_FAB1_FOUP_01",
+      "kind": "carrier",
+      "type": "manufacturing_carrier",
+      "system": "manufacturing",
+      "buildingId": "FAB1",
+      "roomId": "FAB1_R01",
+      "level": "F1",
+      "label": "FOUP-01",
+      "position": [
+        158.95,
+        -211,
+        16.3
+      ],
+      "enabled": true,
+      "designStatus": "inferred representative proposal",
+      "source": "analysis/v6/manufacturing-references.md",
+      "initialStockerId": "V6_FAB1_STOCKER_01",
+      "slot": 0,
+      "slotId": "V6_FAB1_SLOT_01",
+      "capacityWafers": 25
+    },
+    {
+      "id": "V6_FAB1_FOUP_02",
+      "kind": "carrier",
+      "type": "manufacturing_carrier",
+      "system": "manufacturing",
+      "buildingId": "FAB1",
+      "roomId": "FAB1_R01",
+      "level": "F1",
+      "label": "FOUP-02",
+      "position": [
+        160,
+        -211,
+        16.3
+      ],
+      "enabled": true,
+      "designStatus": "inferred representative proposal",
+      "source": "analysis/v6/manufacturing-references.md",
+      "initialStockerId": "V6_FAB1_STOCKER_01",
+      "slot": 1,
+      "slotId": "V6_FAB1_SLOT_02",
+      "capacityWafers": 25
+    },
+    {
+      "id": "V6_FAB1_FOUP_03",
+      "kind": "carrier",
+      "type": "manufacturing_carrier",
+      "system": "manufacturing",
+      "buildingId": "FAB1",
+      "roomId": "FAB1_R01",
+      "level": "F1",
+      "label": "FOUP-03",
+      "position": [
+        161.05,
+        -211,
+        16.3
+      ],
+      "enabled": true,
+      "designStatus": "inferred representative proposal",
+      "source": "analysis/v6/manufacturing-references.md",
+      "initialStockerId": "V6_FAB1_STOCKER_01",
+      "slot": 2,
+      "slotId": "V6_FAB1_SLOT_03",
+      "capacityWafers": 25
+    },
+    {
+      "id": "V6_FAB1_FOUP_04",
+      "kind": "carrier",
+      "type": "manufacturing_carrier",
+      "system": "manufacturing",
+      "buildingId": "FAB1",
+      "roomId": "FAB1_R01",
+      "level": "F1",
+      "label": "FOUP-04",
+      "position": [
+        158.95,
+        -211,
+        17.400000000000002
+      ],
+      "enabled": true,
+      "designStatus": "inferred representative proposal",
+      "source": "analysis/v6/manufacturing-references.md",
+      "initialStockerId": "V6_FAB1_STOCKER_01",
+      "slot": 3,
+      "slotId": "V6_FAB1_SLOT_04",
+      "capacityWafers": 25
+    },
+    {
+      "id": "V6_FAB1_FOUP_05",
+      "kind": "carrier",
+      "type": "manufacturing_carrier",
+      "system": "manufacturing",
+      "buildingId": "FAB1",
+      "roomId": "FAB1_R01",
+      "level": "F1",
+      "label": "FOUP-05",
+      "position": [
+        160,
+        -211,
+        17.400000000000002
+      ],
+      "enabled": true,
+      "designStatus": "inferred representative proposal",
+      "source": "analysis/v6/manufacturing-references.md",
+      "initialStockerId": "V6_FAB1_STOCKER_01",
+      "slot": 4,
+      "slotId": "V6_FAB1_SLOT_05",
+      "capacityWafers": 25
+    },
+    {
+      "id": "V6_FAB1_FOUP_06",
+      "kind": "carrier",
+      "type": "manufacturing_carrier",
+      "system": "manufacturing",
+      "buildingId": "FAB1",
+      "roomId": "FAB1_R01",
+      "level": "F1",
+      "label": "FOUP-06",
+      "position": [
+        161.05,
+        -211,
+        17.400000000000002
+      ],
+      "enabled": true,
+      "designStatus": "inferred representative proposal",
+      "source": "analysis/v6/manufacturing-references.md",
+      "initialStockerId": "V6_FAB1_STOCKER_01",
+      "slot": 5,
+      "slotId": "V6_FAB1_SLOT_06",
+      "capacityWafers": 25
+    },
+    {
+      "id": "V6_FAB1_RAIL_01",
+      "kind": "rail",
+      "type": "manufacturing_rail",
+      "system": "manufacturing",
+      "buildingId": "FAB1",
+      "roomId": "FAB1_R01",
+      "level": "F1",
+      "label": "OHT高架闭合环轨",
+      "position": [
+        258,
+        -223,
+        21.2
+      ],
+      "enabled": true,
+      "designStatus": "inferred representative proposal",
+      "source": "analysis/v6/manufacturing-references.md",
+      "routeId": "FAB1"
+    },
+    {
+      "id": "V6_FAB2_TOOL_LITHO",
+      "kind": "tool",
+      "type": "manufacturing_tool",
+      "system": "manufacturing",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "level": "F1",
+      "label": "光刻与涂胶显影单元",
+      "position": [
+        -338,
+        -209,
+        15.4
+      ],
+      "enabled": false,
+      "designStatus": "inferred representative proposal",
+      "source": "analysis/v6/manufacturing-references.md",
+      "process": "lithography",
+      "processKey": "LITHO",
+      "duration": 28,
+      "portId": "V6_FAB2_PORT_LITHO",
+      "stationNode": "V6_FAB2_NODE_LITHO",
+      "referenceFamily": "LITHO",
+      "footprint": [
+        16,
+        9
+      ],
+      "utilityRoomId": "FAB2_R01"
+    },
+    {
+      "id": "V6_FAB2_PORT_LITHO",
+      "kind": "loadport",
+      "type": "manufacturing_loadport",
+      "system": "manufacturing",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "level": "F1",
+      "label": "光刻与涂胶显影单元 · FOUP装载端口",
+      "position": [
+        -338,
+        -216,
+        16.4
+      ],
+      "enabled": false,
+      "designStatus": "inferred representative proposal",
+      "source": "analysis/v6/manufacturing-references.md",
+      "toolId": "V6_FAB2_TOOL_LITHO",
+      "nodeId": "V6_FAB2_NODE_LITHO",
+      "stationNode": "V6_FAB2_NODE_LITHO",
+      "capacity": 1
+    },
+    {
+      "id": "V6_FAB2_TOOL_ETCH",
+      "kind": "tool",
+      "type": "manufacturing_tool",
+      "system": "manufacturing",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "level": "F1",
+      "label": "等离子刻蚀机",
+      "position": [
+        -316,
+        -209,
+        15.4
+      ],
+      "enabled": false,
+      "designStatus": "inferred representative proposal",
+      "source": "analysis/v6/manufacturing-references.md",
+      "process": "etch",
+      "processKey": "ETCH",
+      "duration": 24,
+      "portId": "V6_FAB2_PORT_ETCH",
+      "stationNode": "V6_FAB2_NODE_ETCH",
+      "referenceFamily": "ETCH",
+      "footprint": [
+        12,
+        9
+      ],
+      "utilityRoomId": "FAB2_R01"
+    },
+    {
+      "id": "V6_FAB2_PORT_ETCH",
+      "kind": "loadport",
+      "type": "manufacturing_loadport",
+      "system": "manufacturing",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "level": "F1",
+      "label": "等离子刻蚀机 · FOUP装载端口",
+      "position": [
+        -316,
+        -216,
+        16.4
+      ],
+      "enabled": false,
+      "designStatus": "inferred representative proposal",
+      "source": "analysis/v6/manufacturing-references.md",
+      "toolId": "V6_FAB2_TOOL_ETCH",
+      "nodeId": "V6_FAB2_NODE_ETCH",
+      "stationNode": "V6_FAB2_NODE_ETCH",
+      "capacity": 1
+    },
+    {
+      "id": "V6_FAB2_TOOL_DEPO",
+      "kind": "tool",
+      "type": "manufacturing_tool",
+      "system": "manufacturing",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "level": "F1",
+      "label": "多腔薄膜沉积机",
+      "position": [
+        -294,
+        -209,
+        15.4
+      ],
+      "enabled": false,
+      "designStatus": "inferred representative proposal",
+      "source": "analysis/v6/manufacturing-references.md",
+      "process": "deposition",
+      "processKey": "DEPO",
+      "duration": 30,
+      "portId": "V6_FAB2_PORT_DEPO",
+      "stationNode": "V6_FAB2_NODE_DEPO",
+      "referenceFamily": "DEPO",
+      "footprint": [
+        12,
+        9
+      ],
+      "utilityRoomId": "FAB2_R01"
+    },
+    {
+      "id": "V6_FAB2_PORT_DEPO",
+      "kind": "loadport",
+      "type": "manufacturing_loadport",
+      "system": "manufacturing",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "level": "F1",
+      "label": "多腔薄膜沉积机 · FOUP装载端口",
+      "position": [
+        -294,
+        -216,
+        16.4
+      ],
+      "enabled": false,
+      "designStatus": "inferred representative proposal",
+      "source": "analysis/v6/manufacturing-references.md",
+      "toolId": "V6_FAB2_TOOL_DEPO",
+      "nodeId": "V6_FAB2_NODE_DEPO",
+      "stationNode": "V6_FAB2_NODE_DEPO",
+      "capacity": 1
+    },
+    {
+      "id": "V6_FAB2_TOOL_IMPLANT",
+      "kind": "tool",
+      "type": "manufacturing_tool",
+      "system": "manufacturing",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "level": "F1",
+      "label": "离子注入机",
+      "position": [
+        -272,
+        -209,
+        15.4
+      ],
+      "enabled": false,
+      "designStatus": "inferred representative proposal",
+      "source": "analysis/v6/manufacturing-references.md",
+      "process": "implant",
+      "processKey": "IMPLANT",
+      "duration": 22,
+      "portId": "V6_FAB2_PORT_IMPLANT",
+      "stationNode": "V6_FAB2_NODE_IMPLANT",
+      "referenceFamily": "IMPLANT",
+      "footprint": [
+        12,
+        9
+      ],
+      "utilityRoomId": "FAB2_R01"
+    },
+    {
+      "id": "V6_FAB2_PORT_IMPLANT",
+      "kind": "loadport",
+      "type": "manufacturing_loadport",
+      "system": "manufacturing",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "level": "F1",
+      "label": "离子注入机 · FOUP装载端口",
+      "position": [
+        -272,
+        -216,
+        16.4
+      ],
+      "enabled": false,
+      "designStatus": "inferred representative proposal",
+      "source": "analysis/v6/manufacturing-references.md",
+      "toolId": "V6_FAB2_TOOL_IMPLANT",
+      "nodeId": "V6_FAB2_NODE_IMPLANT",
+      "stationNode": "V6_FAB2_NODE_IMPLANT",
+      "capacity": 1
+    },
+    {
+      "id": "V6_FAB2_TOOL_THERMAL",
+      "kind": "tool",
+      "type": "manufacturing_tool",
+      "system": "manufacturing",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "level": "F1",
+      "label": "立式热处理炉",
+      "position": [
+        -250,
+        -209,
+        15.4
+      ],
+      "enabled": false,
+      "designStatus": "inferred representative proposal",
+      "source": "analysis/v6/manufacturing-references.md",
+      "process": "thermal",
+      "processKey": "THERMAL",
+      "duration": 36,
+      "portId": "V6_FAB2_PORT_THERMAL",
+      "stationNode": "V6_FAB2_NODE_THERMAL",
+      "referenceFamily": "THERMAL",
+      "footprint": [
+        12,
+        9
+      ],
+      "utilityRoomId": "FAB2_R01"
+    },
+    {
+      "id": "V6_FAB2_PORT_THERMAL",
+      "kind": "loadport",
+      "type": "manufacturing_loadport",
+      "system": "manufacturing",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "level": "F1",
+      "label": "立式热处理炉 · FOUP装载端口",
+      "position": [
+        -250,
+        -216,
+        16.4
+      ],
+      "enabled": false,
+      "designStatus": "inferred representative proposal",
+      "source": "analysis/v6/manufacturing-references.md",
+      "toolId": "V6_FAB2_TOOL_THERMAL",
+      "nodeId": "V6_FAB2_NODE_THERMAL",
+      "stationNode": "V6_FAB2_NODE_THERMAL",
+      "capacity": 1
+    },
+    {
+      "id": "V6_FAB2_TOOL_CMP",
+      "kind": "tool",
+      "type": "manufacturing_tool",
+      "system": "manufacturing",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "level": "F1",
+      "label": "化学机械抛光机",
+      "position": [
+        -228,
+        -209,
+        15.4
+      ],
+      "enabled": false,
+      "designStatus": "inferred representative proposal",
+      "source": "analysis/v6/manufacturing-references.md",
+      "process": "cmp",
+      "processKey": "CMP",
+      "duration": 26,
+      "portId": "V6_FAB2_PORT_CMP",
+      "stationNode": "V6_FAB2_NODE_CMP",
+      "referenceFamily": "CMP",
+      "footprint": [
+        12,
+        9
+      ],
+      "utilityRoomId": "FAB2_R01"
+    },
+    {
+      "id": "V6_FAB2_PORT_CMP",
+      "kind": "loadport",
+      "type": "manufacturing_loadport",
+      "system": "manufacturing",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "level": "F1",
+      "label": "化学机械抛光机 · FOUP装载端口",
+      "position": [
+        -228,
+        -216,
+        16.4
+      ],
+      "enabled": false,
+      "designStatus": "inferred representative proposal",
+      "source": "analysis/v6/manufacturing-references.md",
+      "toolId": "V6_FAB2_TOOL_CMP",
+      "nodeId": "V6_FAB2_NODE_CMP",
+      "stationNode": "V6_FAB2_NODE_CMP",
+      "capacity": 1
+    },
+    {
+      "id": "V6_FAB2_TOOL_CLEAN",
+      "kind": "tool",
+      "type": "manufacturing_tool",
+      "system": "manufacturing",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "level": "F1",
+      "label": "单片湿法清洗机",
+      "position": [
+        -206,
+        -209,
+        15.4
+      ],
+      "enabled": false,
+      "designStatus": "inferred representative proposal",
+      "source": "analysis/v6/manufacturing-references.md",
+      "process": "clean",
+      "processKey": "CLEAN",
+      "duration": 18,
+      "portId": "V6_FAB2_PORT_CLEAN",
+      "stationNode": "V6_FAB2_NODE_CLEAN",
+      "referenceFamily": "CLEAN",
+      "footprint": [
+        12,
+        9
+      ],
+      "utilityRoomId": "FAB2_R01"
+    },
+    {
+      "id": "V6_FAB2_PORT_CLEAN",
+      "kind": "loadport",
+      "type": "manufacturing_loadport",
+      "system": "manufacturing",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "level": "F1",
+      "label": "单片湿法清洗机 · FOUP装载端口",
+      "position": [
+        -206,
+        -216,
+        16.4
+      ],
+      "enabled": false,
+      "designStatus": "inferred representative proposal",
+      "source": "analysis/v6/manufacturing-references.md",
+      "toolId": "V6_FAB2_TOOL_CLEAN",
+      "nodeId": "V6_FAB2_NODE_CLEAN",
+      "stationNode": "V6_FAB2_NODE_CLEAN",
+      "capacity": 1
+    },
+    {
+      "id": "V6_FAB2_TOOL_METRO",
+      "kind": "tool",
+      "type": "manufacturing_tool",
+      "system": "manufacturing",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "level": "F1",
+      "label": "光学量测与缺陷检查机",
+      "position": [
+        -184,
+        -209,
+        15.4
+      ],
+      "enabled": false,
+      "designStatus": "inferred representative proposal",
+      "source": "analysis/v6/manufacturing-references.md",
+      "process": "metrology",
+      "processKey": "METRO",
+      "duration": 20,
+      "portId": "V6_FAB2_PORT_METRO",
+      "stationNode": "V6_FAB2_NODE_METRO",
+      "referenceFamily": "METRO",
+      "footprint": [
+        12,
+        9
+      ],
+      "utilityRoomId": "FAB2_R01"
+    },
+    {
+      "id": "V6_FAB2_PORT_METRO",
+      "kind": "loadport",
+      "type": "manufacturing_loadport",
+      "system": "manufacturing",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "level": "F1",
+      "label": "光学量测与缺陷检查机 · FOUP装载端口",
+      "position": [
+        -184,
+        -216,
+        16.4
+      ],
+      "enabled": false,
+      "designStatus": "inferred representative proposal",
+      "source": "analysis/v6/manufacturing-references.md",
+      "toolId": "V6_FAB2_TOOL_METRO",
+      "nodeId": "V6_FAB2_NODE_METRO",
+      "stationNode": "V6_FAB2_NODE_METRO",
+      "capacity": 1
+    },
+    {
+      "id": "V6_FAB2_STOCKER_01",
+      "kind": "stocker",
+      "type": "manufacturing_stocker",
+      "system": "manufacturing",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "level": "F1",
+      "label": "六储位FOUP缓存库",
+      "position": [
+        -356,
+        -216,
+        16.4
+      ],
+      "enabled": false,
+      "designStatus": "inferred representative proposal",
+      "source": "analysis/v6/manufacturing-references.md",
+      "nodeId": "V6_FAB2_NODE_STOCKER",
+      "stationNode": "V6_FAB2_NODE_STOCKER",
+      "slotCount": 6,
+      "slots": [
+        {
+          "id": "V6_FAB2_SLOT_01",
+          "index": 0,
+          "position": [
+            -357.05,
+            -211,
+            16.3
+          ]
+        },
+        {
+          "id": "V6_FAB2_SLOT_02",
+          "index": 1,
+          "position": [
+            -356,
+            -211,
+            16.3
+          ]
+        },
+        {
+          "id": "V6_FAB2_SLOT_03",
+          "index": 2,
+          "position": [
+            -354.95,
+            -211,
+            16.3
+          ]
+        },
+        {
+          "id": "V6_FAB2_SLOT_04",
+          "index": 3,
+          "position": [
+            -357.05,
+            -211,
+            17.400000000000002
+          ]
+        },
+        {
+          "id": "V6_FAB2_SLOT_05",
+          "index": 4,
+          "position": [
+            -356,
+            -211,
+            17.400000000000002
+          ]
+        },
+        {
+          "id": "V6_FAB2_SLOT_06",
+          "index": 5,
+          "position": [
+            -354.95,
+            -211,
+            17.400000000000002
+          ]
+        }
+      ],
+      "slotPositions": [
+        [
+          -357.05,
+          -211,
+          16.3
+        ],
+        [
+          -356,
+          -211,
+          16.3
+        ],
+        [
+          -354.95,
+          -211,
+          16.3
+        ],
+        [
+          -357.05,
+          -211,
+          17.400000000000002
+        ],
+        [
+          -356,
+          -211,
+          17.400000000000002
+        ],
+        [
+          -354.95,
+          -211,
+          17.400000000000002
+        ]
+      ],
+      "dockPosition": [
+        -356,
+        -216,
+        16.4
+      ]
+    },
+    {
+      "id": "V6_FAB2_OHT_01",
+      "kind": "oht",
+      "type": "manufacturing_oht",
+      "system": "manufacturing",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "level": "F1",
+      "label": "高架搬运车 OHT-01",
+      "position": [
+        -356,
+        -216,
+        21.2
+      ],
+      "enabled": false,
+      "designStatus": "inferred representative proposal",
+      "source": "analysis/v6/manufacturing-references.md",
+      "nodeId": "V6_FAB2_NODE_STOCKER",
+      "speed": 6,
+      "capacity": 1,
+      "carrierOffset": [
+        0,
+        0,
+        -1.9
+      ]
+    },
+    {
+      "id": "V6_FAB2_FOUP_01",
+      "kind": "carrier",
+      "type": "manufacturing_carrier",
+      "system": "manufacturing",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "level": "F1",
+      "label": "FOUP-01",
+      "position": [
+        -357.05,
+        -211,
+        16.3
+      ],
+      "enabled": false,
+      "designStatus": "inferred representative proposal",
+      "source": "analysis/v6/manufacturing-references.md",
+      "initialStockerId": "V6_FAB2_STOCKER_01",
+      "slot": 0,
+      "slotId": "V6_FAB2_SLOT_01",
+      "capacityWafers": 25
+    },
+    {
+      "id": "V6_FAB2_FOUP_02",
+      "kind": "carrier",
+      "type": "manufacturing_carrier",
+      "system": "manufacturing",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "level": "F1",
+      "label": "FOUP-02",
+      "position": [
+        -356,
+        -211,
+        16.3
+      ],
+      "enabled": false,
+      "designStatus": "inferred representative proposal",
+      "source": "analysis/v6/manufacturing-references.md",
+      "initialStockerId": "V6_FAB2_STOCKER_01",
+      "slot": 1,
+      "slotId": "V6_FAB2_SLOT_02",
+      "capacityWafers": 25
+    },
+    {
+      "id": "V6_FAB2_FOUP_03",
+      "kind": "carrier",
+      "type": "manufacturing_carrier",
+      "system": "manufacturing",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "level": "F1",
+      "label": "FOUP-03",
+      "position": [
+        -354.95,
+        -211,
+        16.3
+      ],
+      "enabled": false,
+      "designStatus": "inferred representative proposal",
+      "source": "analysis/v6/manufacturing-references.md",
+      "initialStockerId": "V6_FAB2_STOCKER_01",
+      "slot": 2,
+      "slotId": "V6_FAB2_SLOT_03",
+      "capacityWafers": 25
+    },
+    {
+      "id": "V6_FAB2_FOUP_04",
+      "kind": "carrier",
+      "type": "manufacturing_carrier",
+      "system": "manufacturing",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "level": "F1",
+      "label": "FOUP-04",
+      "position": [
+        -357.05,
+        -211,
+        17.400000000000002
+      ],
+      "enabled": false,
+      "designStatus": "inferred representative proposal",
+      "source": "analysis/v6/manufacturing-references.md",
+      "initialStockerId": "V6_FAB2_STOCKER_01",
+      "slot": 3,
+      "slotId": "V6_FAB2_SLOT_04",
+      "capacityWafers": 25
+    },
+    {
+      "id": "V6_FAB2_FOUP_05",
+      "kind": "carrier",
+      "type": "manufacturing_carrier",
+      "system": "manufacturing",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "level": "F1",
+      "label": "FOUP-05",
+      "position": [
+        -356,
+        -211,
+        17.400000000000002
+      ],
+      "enabled": false,
+      "designStatus": "inferred representative proposal",
+      "source": "analysis/v6/manufacturing-references.md",
+      "initialStockerId": "V6_FAB2_STOCKER_01",
+      "slot": 4,
+      "slotId": "V6_FAB2_SLOT_05",
+      "capacityWafers": 25
+    },
+    {
+      "id": "V6_FAB2_FOUP_06",
+      "kind": "carrier",
+      "type": "manufacturing_carrier",
+      "system": "manufacturing",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "level": "F1",
+      "label": "FOUP-06",
+      "position": [
+        -354.95,
+        -211,
+        17.400000000000002
+      ],
+      "enabled": false,
+      "designStatus": "inferred representative proposal",
+      "source": "analysis/v6/manufacturing-references.md",
+      "initialStockerId": "V6_FAB2_STOCKER_01",
+      "slot": 5,
+      "slotId": "V6_FAB2_SLOT_06",
+      "capacityWafers": 25
+    },
+    {
+      "id": "V6_FAB2_RAIL_01",
+      "kind": "rail",
+      "type": "manufacturing_rail",
+      "system": "manufacturing",
+      "buildingId": "FAB2",
+      "roomId": "FAB2_R01",
+      "level": "F1",
+      "label": "OHT高架闭合环轨",
+      "position": [
+        -258,
+        -223,
+        21.2
+      ],
+      "enabled": false,
+      "designStatus": "inferred representative proposal",
+      "source": "analysis/v6/manufacturing-references.md",
+      "routeId": "FAB2"
+    }
+  ],
+  "routes": {
+    "FAB1": {
+      "id": "FAB1",
+      "nodes": [
+        {
+          "id": "V6_FAB1_NODE_STOCKER",
+          "position": [
+            160,
+            -216,
+            21.2
+          ]
+        },
+        {
+          "id": "V6_FAB1_NODE_LITHO",
+          "position": [
+            178,
+            -216,
+            21.2
+          ]
+        },
+        {
+          "id": "V6_FAB1_NODE_ETCH",
+          "position": [
+            200,
+            -216,
+            21.2
+          ]
+        },
+        {
+          "id": "V6_FAB1_NODE_DEPO",
+          "position": [
+            222,
+            -216,
+            21.2
+          ]
+        },
+        {
+          "id": "V6_FAB1_NODE_IMPLANT",
+          "position": [
+            244,
+            -216,
+            21.2
+          ]
+        },
+        {
+          "id": "V6_FAB1_NODE_THERMAL",
+          "position": [
+            266,
+            -216,
+            21.2
+          ]
+        },
+        {
+          "id": "V6_FAB1_NODE_CMP",
+          "position": [
+            288,
+            -216,
+            21.2
+          ]
+        },
+        {
+          "id": "V6_FAB1_NODE_CLEAN",
+          "position": [
+            310,
+            -216,
+            21.2
+          ]
+        },
+        {
+          "id": "V6_FAB1_NODE_METRO",
+          "position": [
+            332,
+            -216,
+            21.2
+          ]
+        },
+        {
+          "id": "V6_FAB1_BEND_00",
+          "position": [
+            347,
+            -216,
+            21.2
+          ]
+        },
+        {
+          "id": "V6_FAB1_BEND_01",
+          "position": [
+            347.517638,
+            -216.068148,
+            21.2
+          ]
+        },
+        {
+          "id": "V6_FAB1_BEND_02",
+          "position": [
+            348,
+            -216.267949,
+            21.2
+          ]
+        },
+        {
+          "id": "V6_FAB1_BEND_03",
+          "position": [
+            348.414214,
+            -216.585786,
+            21.2
+          ]
+        },
+        {
+          "id": "V6_FAB1_BEND_04",
+          "position": [
+            348.732051,
+            -217,
+            21.2
+          ]
+        },
+        {
+          "id": "V6_FAB1_BEND_05",
+          "position": [
+            348.931852,
+            -217.482362,
+            21.2
+          ]
+        },
+        {
+          "id": "V6_FAB1_BEND_06",
+          "position": [
+            349,
+            -218,
+            21.2
+          ]
+        },
+        {
+          "id": "V6_FAB1_BEND_07",
+          "position": [
+            349,
+            -228,
+            21.2
+          ]
+        },
+        {
+          "id": "V6_FAB1_BEND_08",
+          "position": [
+            348.931852,
+            -228.517638,
+            21.2
+          ]
+        },
+        {
+          "id": "V6_FAB1_BEND_09",
+          "position": [
+            348.732051,
+            -229,
+            21.2
+          ]
+        },
+        {
+          "id": "V6_FAB1_BEND_10",
+          "position": [
+            348.414214,
+            -229.414214,
+            21.2
+          ]
+        },
+        {
+          "id": "V6_FAB1_BEND_11",
+          "position": [
+            348,
+            -229.732051,
+            21.2
+          ]
+        },
+        {
+          "id": "V6_FAB1_BEND_12",
+          "position": [
+            347.517638,
+            -229.931852,
+            21.2
+          ]
+        },
+        {
+          "id": "V6_FAB1_BEND_13",
+          "position": [
+            347,
+            -230,
+            21.2
+          ]
+        },
+        {
+          "id": "V6_FAB1_BEND_14",
+          "position": [
+            158,
+            -230,
+            21.2
+          ]
+        },
+        {
+          "id": "V6_FAB1_BEND_15",
+          "position": [
+            157.482362,
+            -229.931852,
+            21.2
+          ]
+        },
+        {
+          "id": "V6_FAB1_BEND_16",
+          "position": [
+            157,
+            -229.732051,
+            21.2
+          ]
+        },
+        {
+          "id": "V6_FAB1_BEND_17",
+          "position": [
+            156.585786,
+            -229.414214,
+            21.2
+          ]
+        },
+        {
+          "id": "V6_FAB1_BEND_18",
+          "position": [
+            156.267949,
+            -229,
+            21.2
+          ]
+        },
+        {
+          "id": "V6_FAB1_BEND_19",
+          "position": [
+            156.068148,
+            -228.517638,
+            21.2
+          ]
+        },
+        {
+          "id": "V6_FAB1_BEND_20",
+          "position": [
+            156,
+            -228,
+            21.2
+          ]
+        },
+        {
+          "id": "V6_FAB1_BEND_21",
+          "position": [
+            156,
+            -218,
+            21.2
+          ]
+        },
+        {
+          "id": "V6_FAB1_BEND_22",
+          "position": [
+            156.068148,
+            -217.482362,
+            21.2
+          ]
+        },
+        {
+          "id": "V6_FAB1_BEND_23",
+          "position": [
+            156.267949,
+            -217,
+            21.2
+          ]
+        },
+        {
+          "id": "V6_FAB1_BEND_24",
+          "position": [
+            156.585786,
+            -216.585786,
+            21.2
+          ]
+        },
+        {
+          "id": "V6_FAB1_BEND_25",
+          "position": [
+            157,
+            -216.267949,
+            21.2
+          ]
+        },
+        {
+          "id": "V6_FAB1_BEND_26",
+          "position": [
+            157.482362,
+            -216.068148,
+            21.2
+          ]
+        },
+        {
+          "id": "V6_FAB1_BEND_27",
+          "position": [
+            158,
+            -216,
+            21.2
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "from": "V6_FAB1_NODE_STOCKER",
+          "to": "V6_FAB1_NODE_LITHO",
+          "bidirectional": false
+        },
+        {
+          "from": "V6_FAB1_NODE_LITHO",
+          "to": "V6_FAB1_NODE_ETCH",
+          "bidirectional": false
+        },
+        {
+          "from": "V6_FAB1_NODE_ETCH",
+          "to": "V6_FAB1_NODE_DEPO",
+          "bidirectional": false
+        },
+        {
+          "from": "V6_FAB1_NODE_DEPO",
+          "to": "V6_FAB1_NODE_IMPLANT",
+          "bidirectional": false
+        },
+        {
+          "from": "V6_FAB1_NODE_IMPLANT",
+          "to": "V6_FAB1_NODE_THERMAL",
+          "bidirectional": false
+        },
+        {
+          "from": "V6_FAB1_NODE_THERMAL",
+          "to": "V6_FAB1_NODE_CMP",
+          "bidirectional": false
+        },
+        {
+          "from": "V6_FAB1_NODE_CMP",
+          "to": "V6_FAB1_NODE_CLEAN",
+          "bidirectional": false
+        },
+        {
+          "from": "V6_FAB1_NODE_CLEAN",
+          "to": "V6_FAB1_NODE_METRO",
+          "bidirectional": false
+        },
+        {
+          "from": "V6_FAB1_NODE_METRO",
+          "to": "V6_FAB1_BEND_00",
+          "bidirectional": false
+        },
+        {
+          "from": "V6_FAB1_BEND_00",
+          "to": "V6_FAB1_BEND_01",
+          "bidirectional": false
+        },
+        {
+          "from": "V6_FAB1_BEND_01",
+          "to": "V6_FAB1_BEND_02",
+          "bidirectional": false
+        },
+        {
+          "from": "V6_FAB1_BEND_02",
+          "to": "V6_FAB1_BEND_03",
+          "bidirectional": false
+        },
+        {
+          "from": "V6_FAB1_BEND_03",
+          "to": "V6_FAB1_BEND_04",
+          "bidirectional": false
+        },
+        {
+          "from": "V6_FAB1_BEND_04",
+          "to": "V6_FAB1_BEND_05",
+          "bidirectional": false
+        },
+        {
+          "from": "V6_FAB1_BEND_05",
+          "to": "V6_FAB1_BEND_06",
+          "bidirectional": false
+        },
+        {
+          "from": "V6_FAB1_BEND_06",
+          "to": "V6_FAB1_BEND_07",
+          "bidirectional": false
+        },
+        {
+          "from": "V6_FAB1_BEND_07",
+          "to": "V6_FAB1_BEND_08",
+          "bidirectional": false
+        },
+        {
+          "from": "V6_FAB1_BEND_08",
+          "to": "V6_FAB1_BEND_09",
+          "bidirectional": false
+        },
+        {
+          "from": "V6_FAB1_BEND_09",
+          "to": "V6_FAB1_BEND_10",
+          "bidirectional": false
+        },
+        {
+          "from": "V6_FAB1_BEND_10",
+          "to": "V6_FAB1_BEND_11",
+          "bidirectional": false
+        },
+        {
+          "from": "V6_FAB1_BEND_11",
+          "to": "V6_FAB1_BEND_12",
+          "bidirectional": false
+        },
+        {
+          "from": "V6_FAB1_BEND_12",
+          "to": "V6_FAB1_BEND_13",
+          "bidirectional": false
+        },
+        {
+          "from": "V6_FAB1_BEND_13",
+          "to": "V6_FAB1_BEND_14",
+          "bidirectional": false
+        },
+        {
+          "from": "V6_FAB1_BEND_14",
+          "to": "V6_FAB1_BEND_15",
+          "bidirectional": false
+        },
+        {
+          "from": "V6_FAB1_BEND_15",
+          "to": "V6_FAB1_BEND_16",
+          "bidirectional": false
+        },
+        {
+          "from": "V6_FAB1_BEND_16",
+          "to": "V6_FAB1_BEND_17",
+          "bidirectional": false
+        },
+        {
+          "from": "V6_FAB1_BEND_17",
+          "to": "V6_FAB1_BEND_18",
+          "bidirectional": false
+        },
+        {
+          "from": "V6_FAB1_BEND_18",
+          "to": "V6_FAB1_BEND_19",
+          "bidirectional": false
+        },
+        {
+          "from": "V6_FAB1_BEND_19",
+          "to": "V6_FAB1_BEND_20",
+          "bidirectional": false
+        },
+        {
+          "from": "V6_FAB1_BEND_20",
+          "to": "V6_FAB1_BEND_21",
+          "bidirectional": false
+        },
+        {
+          "from": "V6_FAB1_BEND_21",
+          "to": "V6_FAB1_BEND_22",
+          "bidirectional": false
+        },
+        {
+          "from": "V6_FAB1_BEND_22",
+          "to": "V6_FAB1_BEND_23",
+          "bidirectional": false
+        },
+        {
+          "from": "V6_FAB1_BEND_23",
+          "to": "V6_FAB1_BEND_24",
+          "bidirectional": false
+        },
+        {
+          "from": "V6_FAB1_BEND_24",
+          "to": "V6_FAB1_BEND_25",
+          "bidirectional": false
+        },
+        {
+          "from": "V6_FAB1_BEND_25",
+          "to": "V6_FAB1_BEND_26",
+          "bidirectional": false
+        },
+        {
+          "from": "V6_FAB1_BEND_26",
+          "to": "V6_FAB1_BEND_27",
+          "bidirectional": false
+        },
+        {
+          "from": "V6_FAB1_BEND_27",
+          "to": "V6_FAB1_NODE_STOCKER",
+          "bidirectional": false
+        }
+      ],
+      "directed": true,
+      "railHeight": 21.2,
+      "loop": true,
+      "processOrder": [
+        "V6_FAB1_TOOL_CLEAN",
+        "V6_FAB1_TOOL_LITHO",
+        "V6_FAB1_TOOL_ETCH",
+        "V6_FAB1_TOOL_DEPO",
+        "V6_FAB1_TOOL_IMPLANT",
+        "V6_FAB1_TOOL_THERMAL",
+        "V6_FAB1_TOOL_CMP",
+        "V6_FAB1_TOOL_METRO"
+      ]
+    },
+    "FAB2": {
+      "id": "FAB2",
+      "nodes": [
+        {
+          "id": "V6_FAB2_NODE_STOCKER",
+          "position": [
+            -356,
+            -216,
+            21.2
+          ]
+        },
+        {
+          "id": "V6_FAB2_NODE_LITHO",
+          "position": [
+            -338,
+            -216,
+            21.2
+          ]
+        },
+        {
+          "id": "V6_FAB2_NODE_ETCH",
+          "position": [
+            -316,
+            -216,
+            21.2
+          ]
+        },
+        {
+          "id": "V6_FAB2_NODE_DEPO",
+          "position": [
+            -294,
+            -216,
+            21.2
+          ]
+        },
+        {
+          "id": "V6_FAB2_NODE_IMPLANT",
+          "position": [
+            -272,
+            -216,
+            21.2
+          ]
+        },
+        {
+          "id": "V6_FAB2_NODE_THERMAL",
+          "position": [
+            -250,
+            -216,
+            21.2
+          ]
+        },
+        {
+          "id": "V6_FAB2_NODE_CMP",
+          "position": [
+            -228,
+            -216,
+            21.2
+          ]
+        },
+        {
+          "id": "V6_FAB2_NODE_CLEAN",
+          "position": [
+            -206,
+            -216,
+            21.2
+          ]
+        },
+        {
+          "id": "V6_FAB2_NODE_METRO",
+          "position": [
+            -184,
+            -216,
+            21.2
+          ]
+        },
+        {
+          "id": "V6_FAB2_BEND_00",
+          "position": [
+            -169,
+            -216,
+            21.2
+          ]
+        },
+        {
+          "id": "V6_FAB2_BEND_01",
+          "position": [
+            -168.482362,
+            -216.068148,
+            21.2
+          ]
+        },
+        {
+          "id": "V6_FAB2_BEND_02",
+          "position": [
+            -168,
+            -216.267949,
+            21.2
+          ]
+        },
+        {
+          "id": "V6_FAB2_BEND_03",
+          "position": [
+            -167.585786,
+            -216.585786,
+            21.2
+          ]
+        },
+        {
+          "id": "V6_FAB2_BEND_04",
+          "position": [
+            -167.267949,
+            -217,
+            21.2
+          ]
+        },
+        {
+          "id": "V6_FAB2_BEND_05",
+          "position": [
+            -167.068148,
+            -217.482362,
+            21.2
+          ]
+        },
+        {
+          "id": "V6_FAB2_BEND_06",
+          "position": [
+            -167,
+            -218,
+            21.2
+          ]
+        },
+        {
+          "id": "V6_FAB2_BEND_07",
+          "position": [
+            -167,
+            -228,
+            21.2
+          ]
+        },
+        {
+          "id": "V6_FAB2_BEND_08",
+          "position": [
+            -167.068148,
+            -228.517638,
+            21.2
+          ]
+        },
+        {
+          "id": "V6_FAB2_BEND_09",
+          "position": [
+            -167.267949,
+            -229,
+            21.2
+          ]
+        },
+        {
+          "id": "V6_FAB2_BEND_10",
+          "position": [
+            -167.585786,
+            -229.414214,
+            21.2
+          ]
+        },
+        {
+          "id": "V6_FAB2_BEND_11",
+          "position": [
+            -168,
+            -229.732051,
+            21.2
+          ]
+        },
+        {
+          "id": "V6_FAB2_BEND_12",
+          "position": [
+            -168.482362,
+            -229.931852,
+            21.2
+          ]
+        },
+        {
+          "id": "V6_FAB2_BEND_13",
+          "position": [
+            -169,
+            -230,
+            21.2
+          ]
+        },
+        {
+          "id": "V6_FAB2_BEND_14",
+          "position": [
+            -358,
+            -230,
+            21.2
+          ]
+        },
+        {
+          "id": "V6_FAB2_BEND_15",
+          "position": [
+            -358.517638,
+            -229.931852,
+            21.2
+          ]
+        },
+        {
+          "id": "V6_FAB2_BEND_16",
+          "position": [
+            -359,
+            -229.732051,
+            21.2
+          ]
+        },
+        {
+          "id": "V6_FAB2_BEND_17",
+          "position": [
+            -359.414214,
+            -229.414214,
+            21.2
+          ]
+        },
+        {
+          "id": "V6_FAB2_BEND_18",
+          "position": [
+            -359.732051,
+            -229,
+            21.2
+          ]
+        },
+        {
+          "id": "V6_FAB2_BEND_19",
+          "position": [
+            -359.931852,
+            -228.517638,
+            21.2
+          ]
+        },
+        {
+          "id": "V6_FAB2_BEND_20",
+          "position": [
+            -360,
+            -228,
+            21.2
+          ]
+        },
+        {
+          "id": "V6_FAB2_BEND_21",
+          "position": [
+            -360,
+            -218,
+            21.2
+          ]
+        },
+        {
+          "id": "V6_FAB2_BEND_22",
+          "position": [
+            -359.931852,
+            -217.482362,
+            21.2
+          ]
+        },
+        {
+          "id": "V6_FAB2_BEND_23",
+          "position": [
+            -359.732051,
+            -217,
+            21.2
+          ]
+        },
+        {
+          "id": "V6_FAB2_BEND_24",
+          "position": [
+            -359.414214,
+            -216.585786,
+            21.2
+          ]
+        },
+        {
+          "id": "V6_FAB2_BEND_25",
+          "position": [
+            -359,
+            -216.267949,
+            21.2
+          ]
+        },
+        {
+          "id": "V6_FAB2_BEND_26",
+          "position": [
+            -358.517638,
+            -216.068148,
+            21.2
+          ]
+        },
+        {
+          "id": "V6_FAB2_BEND_27",
+          "position": [
+            -358,
+            -216,
+            21.2
+          ]
+        }
+      ],
+      "edges": [
+        {
+          "from": "V6_FAB2_NODE_STOCKER",
+          "to": "V6_FAB2_NODE_LITHO",
+          "bidirectional": false
+        },
+        {
+          "from": "V6_FAB2_NODE_LITHO",
+          "to": "V6_FAB2_NODE_ETCH",
+          "bidirectional": false
+        },
+        {
+          "from": "V6_FAB2_NODE_ETCH",
+          "to": "V6_FAB2_NODE_DEPO",
+          "bidirectional": false
+        },
+        {
+          "from": "V6_FAB2_NODE_DEPO",
+          "to": "V6_FAB2_NODE_IMPLANT",
+          "bidirectional": false
+        },
+        {
+          "from": "V6_FAB2_NODE_IMPLANT",
+          "to": "V6_FAB2_NODE_THERMAL",
+          "bidirectional": false
+        },
+        {
+          "from": "V6_FAB2_NODE_THERMAL",
+          "to": "V6_FAB2_NODE_CMP",
+          "bidirectional": false
+        },
+        {
+          "from": "V6_FAB2_NODE_CMP",
+          "to": "V6_FAB2_NODE_CLEAN",
+          "bidirectional": false
+        },
+        {
+          "from": "V6_FAB2_NODE_CLEAN",
+          "to": "V6_FAB2_NODE_METRO",
+          "bidirectional": false
+        },
+        {
+          "from": "V6_FAB2_NODE_METRO",
+          "to": "V6_FAB2_BEND_00",
+          "bidirectional": false
+        },
+        {
+          "from": "V6_FAB2_BEND_00",
+          "to": "V6_FAB2_BEND_01",
+          "bidirectional": false
+        },
+        {
+          "from": "V6_FAB2_BEND_01",
+          "to": "V6_FAB2_BEND_02",
+          "bidirectional": false
+        },
+        {
+          "from": "V6_FAB2_BEND_02",
+          "to": "V6_FAB2_BEND_03",
+          "bidirectional": false
+        },
+        {
+          "from": "V6_FAB2_BEND_03",
+          "to": "V6_FAB2_BEND_04",
+          "bidirectional": false
+        },
+        {
+          "from": "V6_FAB2_BEND_04",
+          "to": "V6_FAB2_BEND_05",
+          "bidirectional": false
+        },
+        {
+          "from": "V6_FAB2_BEND_05",
+          "to": "V6_FAB2_BEND_06",
+          "bidirectional": false
+        },
+        {
+          "from": "V6_FAB2_BEND_06",
+          "to": "V6_FAB2_BEND_07",
+          "bidirectional": false
+        },
+        {
+          "from": "V6_FAB2_BEND_07",
+          "to": "V6_FAB2_BEND_08",
+          "bidirectional": false
+        },
+        {
+          "from": "V6_FAB2_BEND_08",
+          "to": "V6_FAB2_BEND_09",
+          "bidirectional": false
+        },
+        {
+          "from": "V6_FAB2_BEND_09",
+          "to": "V6_FAB2_BEND_10",
+          "bidirectional": false
+        },
+        {
+          "from": "V6_FAB2_BEND_10",
+          "to": "V6_FAB2_BEND_11",
+          "bidirectional": false
+        },
+        {
+          "from": "V6_FAB2_BEND_11",
+          "to": "V6_FAB2_BEND_12",
+          "bidirectional": false
+        },
+        {
+          "from": "V6_FAB2_BEND_12",
+          "to": "V6_FAB2_BEND_13",
+          "bidirectional": false
+        },
+        {
+          "from": "V6_FAB2_BEND_13",
+          "to": "V6_FAB2_BEND_14",
+          "bidirectional": false
+        },
+        {
+          "from": "V6_FAB2_BEND_14",
+          "to": "V6_FAB2_BEND_15",
+          "bidirectional": false
+        },
+        {
+          "from": "V6_FAB2_BEND_15",
+          "to": "V6_FAB2_BEND_16",
+          "bidirectional": false
+        },
+        {
+          "from": "V6_FAB2_BEND_16",
+          "to": "V6_FAB2_BEND_17",
+          "bidirectional": false
+        },
+        {
+          "from": "V6_FAB2_BEND_17",
+          "to": "V6_FAB2_BEND_18",
+          "bidirectional": false
+        },
+        {
+          "from": "V6_FAB2_BEND_18",
+          "to": "V6_FAB2_BEND_19",
+          "bidirectional": false
+        },
+        {
+          "from": "V6_FAB2_BEND_19",
+          "to": "V6_FAB2_BEND_20",
+          "bidirectional": false
+        },
+        {
+          "from": "V6_FAB2_BEND_20",
+          "to": "V6_FAB2_BEND_21",
+          "bidirectional": false
+        },
+        {
+          "from": "V6_FAB2_BEND_21",
+          "to": "V6_FAB2_BEND_22",
+          "bidirectional": false
+        },
+        {
+          "from": "V6_FAB2_BEND_22",
+          "to": "V6_FAB2_BEND_23",
+          "bidirectional": false
+        },
+        {
+          "from": "V6_FAB2_BEND_23",
+          "to": "V6_FAB2_BEND_24",
+          "bidirectional": false
+        },
+        {
+          "from": "V6_FAB2_BEND_24",
+          "to": "V6_FAB2_BEND_25",
+          "bidirectional": false
+        },
+        {
+          "from": "V6_FAB2_BEND_25",
+          "to": "V6_FAB2_BEND_26",
+          "bidirectional": false
+        },
+        {
+          "from": "V6_FAB2_BEND_26",
+          "to": "V6_FAB2_BEND_27",
+          "bidirectional": false
+        },
+        {
+          "from": "V6_FAB2_BEND_27",
+          "to": "V6_FAB2_NODE_STOCKER",
+          "bidirectional": false
+        }
+      ],
+      "directed": true,
+      "railHeight": 21.2,
+      "loop": true,
+      "processOrder": [
+        "V6_FAB2_TOOL_CLEAN",
+        "V6_FAB2_TOOL_LITHO",
+        "V6_FAB2_TOOL_ETCH",
+        "V6_FAB2_TOOL_DEPO",
+        "V6_FAB2_TOOL_IMPLANT",
+        "V6_FAB2_TOOL_THERMAL",
+        "V6_FAB2_TOOL_CMP",
+        "V6_FAB2_TOOL_METRO"
+      ]
+    }
+  }
+}

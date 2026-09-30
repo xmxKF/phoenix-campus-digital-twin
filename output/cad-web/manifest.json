@@ -1,0 +1,240 @@
+{
+  "schema": "campus-cad-web/1",
+  "coordinateSystem": "glTF X east Y up Z south; source CAD X east Y north Z up",
+  "source": "../cad/Phoenix_Campus_Concept.FCStd",
+  "buildings": [
+    {
+      "id": "HQ",
+      "position": [
+        0,
+        -8,
+        0
+      ],
+      "size": [
+        194,
+        60,
+        35
+      ],
+      "levels": {
+        "F0": 0.0,
+        "F1": 17.5,
+        "RF": 35
+      },
+      "model": "HQ.glb",
+      "metadata": "HQ.json",
+      "drawing": "../cad/drawings/HQ.html",
+      "source": "../cad/Phoenix_Campus_Concept.FCStd",
+      "step": "../cad/step/HQ.step",
+      "componentCount": 71,
+      "triangles": 11230,
+      "bytes": 558540,
+      "cadMeshSHA256": "ed6ccc3093267239a13bc293b4180d6ae552c8a74b2fc5ffbbd3412c9765aa6a",
+      "glbSHA256": "c84572366e7d2dbe7f5eacad85c766ae69b291224e12d9d2266c6912057c0a47"
+    },
+    {
+      "id": "FAB1",
+      "position": [
+        258,
+        -218,
+        0
+      ],
+      "size": [
+        250,
+        90,
+        41.8
+      ],
+      "levels": {
+        "FOUNDATION": -12.2,
+        "B1": -7.2,
+        "F1": 14.8,
+        "F2": 29.6,
+        "RF": 41.8
+      },
+      "model": "FAB1.glb",
+      "metadata": "FAB1.json",
+      "drawing": "../cad/drawings/FAB1.html",
+      "source": "../cad/Phoenix_Campus_Concept.FCStd",
+      "step": "../cad/step/FAB1.step",
+      "componentCount": 111,
+      "triangles": 149008,
+      "bytes": 6633632,
+      "cadMeshSHA256": "ca5ed62d98cda014bd51e3e20e8f5638b685dd02f117bc290723f529aecd4de1",
+      "glbSHA256": "0b0ea03d7b92e8f8219b23e19cdb51c5acce50f8016293ecf5e68aa04b7974d8"
+    },
+    {
+      "id": "FAB2",
+      "position": [
+        -258,
+        -218,
+        0
+      ],
+      "size": [
+        250,
+        90,
+        41.8
+      ],
+      "levels": {
+        "FOUNDATION": -12.2,
+        "B1": -7.2,
+        "F1": 14.8,
+        "F2": 29.6,
+        "RF": 41.8
+      },
+      "model": "FAB2.glb",
+      "metadata": "FAB2.json",
+      "drawing": "../cad/drawings/FAB2.html",
+      "source": "../cad/Phoenix_Campus_Concept.FCStd",
+      "step": "../cad/step/FAB2.step",
+      "componentCount": 111,
+      "triangles": 149008,
+      "bytes": 6633560,
+      "cadMeshSHA256": "a1478917a018ded7e6b404e53ffc8239910e34709198ed5fb2495f3f3c68a3ac",
+      "glbSHA256": "f1e97aada9c36aca85b94914960123f0866d70bea13b2a407d966bc88f8f4b4f"
+    },
+    {
+      "id": "LAB",
+      "position": [
+        380,
+        -7,
+        0
+      ],
+      "size": [
+        164,
+        117,
+        25
+      ],
+      "levels": {
+        "F0": 0.0,
+        "F1": 6.25,
+        "F2": 12.5,
+        "F3": 18.75,
+        "RF": 25
+      },
+      "model": "LAB.glb",
+      "metadata": "LAB.json",
+      "drawing": "../cad/drawings/LAB.html",
+      "source": "../cad/Phoenix_Campus_Concept.FCStd",
+      "step": "../cad/step/LAB.step",
+      "componentCount": 80,
+      "triangles": 35648,
+      "bytes": 1660104,
+      "cadMeshSHA256": "3a46050b56f166d32057f0587e07750e813648f4191b968d0e672357989b7dde",
+      "glbSHA256": "50165391eb29d412069bb835f2cb782c79409a2ac56c8b8d0379a4a4f0e0d58b"
+    },
+    {
+      "id": "MASK",
+      "position": [
+        -380,
+        -7,
+        0
+      ],
+      "size": [
+        164,
+        117,
+        25
+      ],
+      "levels": {
+        "F0": 0.0,
+        "F1": 6.25,
+        "F2": 12.5,
+        "F3": 18.75,
+        "RF": 25
+      },
+      "model": "MASK.glb",
+      "metadata": "MASK.json",
+      "drawing": "../cad/drawings/MASK.html",
+      "source": "../cad/Phoenix_Campus_Concept.FCStd",
+      "step": "../cad/step/MASK.step",
+      "componentCount": 84,
+      "triangles": 35792,
+      "bytes": 1666732,
+      "cadMeshSHA256": "3c86ffd72014bc6bedaabc5787bc3a56508b9012cd88c3ba44b1cb3343a35984",
+      "glbSHA256": "17afe5d76757f14e72ceaa366d057ae409f150371fd6f5789a7a7024c9181d39"
+    },
+    {
+      "id": "EXHIBITION",
+      "position": [
+        0,
+        237,
+        0
+      ],
+      "size": [
+        118,
+        40,
+        15
+      ],
+      "levels": {
+        "F0": 0.0,
+        "F1": 7.5,
+        "RF": 15
+      },
+      "model": "EXHIBITION.glb",
+      "metadata": "EXHIBITION.json",
+      "drawing": "../cad/drawings/EXHIBITION.html",
+      "source": "../cad/Phoenix_Campus_Concept.FCStd",
+      "step": "../cad/step/EXHIBITION.step",
+      "componentCount": 50,
+      "triangles": 3264,
+      "bytes": 206644,
+      "cadMeshSHA256": "bc1532a087fe5f47a9875f8135fbae595ffda3240d46f4e53e01d35fbef63c89",
+      "glbSHA256": "4dc114f63720ce24e984d236b388d7e444c410aa8aa49e684ec2c008f2b08dca"
+    },
+    {
+      "id": "DINING_E",
+      "position": [
+        258,
+        136,
+        0
+      ],
+      "size": [
+        61,
+        34,
+        13
+      ],
+      "levels": {
+        "F0": 0.0,
+        "F1": 6.5,
+        "RF": 13
+      },
+      "model": "DINING_E.glb",
+      "metadata": "DINING_E.json",
+      "drawing": "../cad/drawings/DINING_E.html",
+      "source": "../cad/Phoenix_Campus_Concept.FCStd",
+      "step": "../cad/step/DINING_E.step",
+      "componentCount": 23,
+      "triangles": 7468,
+      "bytes": 394024,
+      "cadMeshSHA256": "331e6f8ca58b515f03e221e45ae2f8eb48695a87dbcdb1bc33429d3841b7a0ac",
+      "glbSHA256": "da9120d7ce0420d6fccdf16038ee0f1a9783a2652cee9bc5810d2dc3660d339d"
+    },
+    {
+      "id": "DINING_W",
+      "position": [
+        -258,
+        136,
+        0
+      ],
+      "size": [
+        61,
+        34,
+        15
+      ],
+      "levels": {
+        "F0": 0.0,
+        "F1": 7.5,
+        "RF": 15
+      },
+      "model": "DINING_W.glb",
+      "metadata": "DINING_W.json",
+      "drawing": "../cad/drawings/DINING_W.html",
+      "source": "../cad/Phoenix_Campus_Concept.FCStd",
+      "step": "../cad/step/DINING_W.step",
+      "componentCount": 23,
+      "triangles": 9236,
+      "bytes": 475656,
+      "cadMeshSHA256": "fb39e6b852d8328c3386000cf77455e11cc6a4bec5c2d23cbd7524d1de9e5205",
+      "glbSHA256": "0f056f8ea149f40d7265e76fe9cfc0b72636bee3beb1aa313ba433a63af877cc"
+    }
+  ],
+  "simulatedTelemetry": true
+}

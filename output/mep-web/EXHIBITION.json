@@ -1,0 +1,5225 @@
+{
+  "building": {
+    "id": "EXHIBITION",
+    "position": [
+      0,
+      237,
+      0
+    ],
+    "size": [
+      118,
+      40,
+      15
+    ],
+    "features": [
+      "raised central hall",
+      "lower side wings",
+      "deep entrance frame",
+      "warm glass",
+      "reflecting pool",
+      "stepped plaza",
+      "metal roof panels"
+    ],
+    "source": "R1 entrance; reconcile R2 roof ambiguity",
+    "confidence": "medium",
+    "levels": {
+      "F0": 0.0,
+      "F1": 7.5,
+      "RF": 15
+    },
+    "dimensionBasis": "V2 image-inferred envelope, architecturally estimated interiors",
+    "units": "m",
+    "axesX": [
+      -59.0,
+      -49.166666666666664,
+      -39.33333333333333,
+      -29.5,
+      -19.666666666666664,
+      -9.833333333333336,
+      0.0,
+      9.833333333333329,
+      19.66666666666667,
+      29.5,
+      39.33333333333333,
+      49.16666666666667,
+      59.0
+    ],
+    "axesY": [
+      -20.0,
+      0,
+      20.0
+    ]
+  },
+  "components": [
+    {
+      "id": "V4_EXHIBITION_MDB",
+      "buildingId": "EXHIBITION",
+      "system": "electrical",
+      "level": "PLANT",
+      "label": "主配电柜",
+      "color": [
+        0.3,
+        0.34,
+        0.39
+      ],
+      "bounds": [
+        -53.45,
+        219.795,
+        2.0,
+        -52.55,
+        220.125,
+        3.6
+      ],
+      "freecadName": "V4_EXHIBITION_MDB",
+      "roomId": null,
+      "meta": {
+        "id": "V4_EXHIBITION_MDB",
+        "assetId": "V4_EXHIBITION_MDB",
+        "buildingId": "EXHIBITION",
+        "roomId": null,
+        "controlKind": "breaker",
+        "type": "main_panel",
+        "label": "主配电柜",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "upstreamIds": [],
+        "ratedPowerKw": 0,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_WATER_MAIN",
+      "buildingId": "EXHIBITION",
+      "system": "water",
+      "level": "PLANT",
+      "label": "可控支路阀门",
+      "color": [
+        0.75,
+        0.34,
+        0.2
+      ],
+      "bounds": [
+        -50.2,
+        221.89,
+        4.64,
+        -49.8,
+        222.11,
+        4.995
+      ],
+      "freecadName": "V4_EXHIBITION_WATER_MAIN",
+      "roomId": null,
+      "meta": {
+        "id": "V4_EXHIBITION_WATER_MAIN",
+        "assetId": "V4_EXHIBITION_WATER_MAIN",
+        "buildingId": "EXHIBITION",
+        "roomId": null,
+        "controlKind": "valve",
+        "type": "isolation_valve",
+        "label": "生活冷水总阀",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "medium": "domestic_cold",
+        "waterBranchId": "EXHIBITION_W_COLD_MAIN",
+        "ratedFlowLpm": 120,
+        "upstreamIds": [],
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_HOT_MAIN",
+      "buildingId": "EXHIBITION",
+      "system": "water",
+      "level": "PLANT",
+      "label": "可控支路阀门",
+      "color": [
+        0.75,
+        0.34,
+        0.2
+      ],
+      "bounds": [
+        -50.2,
+        222.89,
+        4.64,
+        -49.8,
+        223.11,
+        4.995
+      ],
+      "freecadName": "V4_EXHIBITION_HOT_MAIN",
+      "roomId": null,
+      "meta": {
+        "id": "V4_EXHIBITION_HOT_MAIN",
+        "assetId": "V4_EXHIBITION_HOT_MAIN",
+        "buildingId": "EXHIBITION",
+        "roomId": null,
+        "controlKind": "valve",
+        "type": "isolation_valve",
+        "label": "生活热水供水总阀",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "medium": "domestic_hot",
+        "waterBranchId": "EXHIBITION_W_HOT_MAIN",
+        "ratedFlowLpm": 80,
+        "upstreamIds": [],
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_HOT_PUMP",
+      "buildingId": "EXHIBITION",
+      "system": "water",
+      "level": "PLANT",
+      "label": "热水循环泵",
+      "color": [
+        0.22,
+        0.43,
+        0.61
+      ],
+      "bounds": [
+        -48.8,
+        223.275,
+        1.6,
+        -47.2,
+        224.125,
+        2.7
+      ],
+      "freecadName": "V4_EXHIBITION_HOT_PUMP",
+      "roomId": null,
+      "meta": {
+        "id": "V4_EXHIBITION_HOT_PUMP",
+        "assetId": "V4_EXHIBITION_HOT_PUMP",
+        "buildingId": "EXHIBITION",
+        "roomId": null,
+        "controlKind": "pump",
+        "type": "circulation_pump",
+        "label": "热水回水循环泵",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "medium": "domestic_hot_return",
+        "waterBranchId": "EXHIBITION_W_HOT_RETURN",
+        "ratedFlowLpm": 60,
+        "ratedPowerKw": 0.75,
+        "circuitId": "EXHIBITION_C_PLANT",
+        "upstreamIds": [
+          "V4_EXHIBITION_MDB"
+        ],
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_HOT_CYLINDER",
+      "buildingId": "EXHIBITION",
+      "system": "water",
+      "level": "PLANT",
+      "label": "生活热水/回水缓冲容器",
+      "color": [
+        0.69,
+        0.72,
+        0.7
+      ],
+      "bounds": [
+        -46.65,
+        223.05,
+        1.55,
+        -45.35,
+        224.35,
+        3.3
+      ],
+      "freecadName": "V4_EXHIBITION_HOT_CYLINDER",
+      "roomId": null,
+      "meta": {
+        "type": "hot_water_buffer",
+        "medium": "domestic_hot",
+        "roomId": null,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_HOT_LOOP_LINKS",
+      "buildingId": "EXHIBITION",
+      "system": "water",
+      "level": "PLANT",
+      "label": "热水回水泵与缓冲容器连接",
+      "color": [
+        0.58,
+        0.31,
+        0.6
+      ],
+      "bounds": [
+        -50.0,
+        222.9298,
+        1.9298,
+        -45.9298,
+        223.8702,
+        4.8202
+      ],
+      "freecadName": "V4_EXHIBITION_HOT_LOOP_LINKS",
+      "roomId": null,
+      "meta": {
+        "type": "pipe",
+        "medium": "domestic_hot_return",
+        "waterBranchId": "EXHIBITION_W_HOT_RETURN",
+        "roomId": null,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_MAIN_COLD",
+      "buildingId": "EXHIBITION",
+      "system": "water",
+      "level": "PLANT",
+      "label": "domestic_cold · 立管与层分配主管",
+      "color": [
+        0.12,
+        0.44,
+        0.72
+      ],
+      "bounds": [
+        -50.0,
+        221.92,
+        4.67,
+        53.0,
+        222.08,
+        4.83
+      ],
+      "freecadName": "V4_EXHIBITION_MAIN_COLD",
+      "roomId": null,
+      "meta": {
+        "type": "water_main",
+        "medium": "domestic_cold",
+        "waterBranchId": "EXHIBITION_W_COLD_MAIN",
+        "roomId": null,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_MAIN_HOT",
+      "buildingId": "EXHIBITION",
+      "system": "water",
+      "level": "PLANT",
+      "label": "domestic_hot · 立管与层分配主管",
+      "color": [
+        0.77,
+        0.27,
+        0.21
+      ],
+      "bounds": [
+        -50.0,
+        222.92,
+        4.67,
+        53.0,
+        223.08,
+        4.83
+      ],
+      "freecadName": "V4_EXHIBITION_MAIN_HOT",
+      "roomId": null,
+      "meta": {
+        "type": "water_main",
+        "medium": "domestic_hot",
+        "waterBranchId": "EXHIBITION_W_HOT_MAIN",
+        "roomId": null,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_MAIN_HOT_RETURN",
+      "buildingId": "EXHIBITION",
+      "system": "water",
+      "level": "PLANT",
+      "label": "domestic_hot_return · 立管与层分配主管",
+      "color": [
+        0.58,
+        0.31,
+        0.6
+      ],
+      "bounds": [
+        -50.0,
+        223.0,
+        4.67,
+        53.08,
+        223.88,
+        4.83
+      ],
+      "freecadName": "V4_EXHIBITION_MAIN_HOT_RETURN",
+      "roomId": null,
+      "meta": {
+        "type": "water_main",
+        "medium": "domestic_hot_return",
+        "waterBranchId": "EXHIBITION_W_HOT_RETURN",
+        "roomId": null,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_TRAY0",
+      "buildingId": "EXHIBITION",
+      "system": "electrical",
+      "level": "PLANT",
+      "label": "主电缆桥架及馈线",
+      "color": [
+        0.3,
+        0.34,
+        0.39
+      ],
+      "bounds": [
+        -53.0,
+        220.0,
+        5.05,
+        53.0,
+        220.4,
+        5.2
+      ],
+      "freecadName": "V4_EXHIBITION_TRAY0",
+      "roomId": null,
+      "meta": {
+        "type": "cable_tray",
+        "upstreamIds": [
+          "V4_EXHIBITION_MDB"
+        ],
+        "roomId": null,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_MDB_RISER",
+      "buildingId": "EXHIBITION",
+      "system": "electrical",
+      "level": "PLANT",
+      "label": "主配电至桥架竖向馈线",
+      "color": [
+        0.37,
+        0.31,
+        0.21
+      ],
+      "bounds": [
+        -53.027,
+        220.0,
+        3.473,
+        -52.973,
+        220.227,
+        5.12
+      ],
+      "freecadName": "V4_EXHIBITION_MDB_RISER",
+      "roomId": null,
+      "meta": {
+        "type": "cable",
+        "upstreamIds": [
+          "V4_EXHIBITION_MDB"
+        ],
+        "roomId": null,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R01_WALLS",
+      "buildingId": "EXHIBITION",
+      "system": "interiors",
+      "level": "F0",
+      "label": "接待服务 · 隔墙与门洞",
+      "color": [
+        0.72,
+        0.77,
+        0.75
+      ],
+      "bounds": [
+        -49.0,
+        227.0,
+        1.625,
+        -39.0,
+        247.0,
+        4.625
+      ],
+      "freecadName": "V4_EXHIBITION_R01_WALLS",
+      "roomId": "EXHIBITION_R01",
+      "meta": {
+        "type": "room_partition",
+        "roomId": "EXHIBITION_R01",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R01_ROOM_GLAZING",
+      "buildingId": "EXHIBITION",
+      "system": "interiors",
+      "level": "F0",
+      "label": "观察窗",
+      "color": [
+        0.08,
+        0.24,
+        0.3
+      ],
+      "bounds": [
+        -46.6,
+        246.9775,
+        2.7,
+        -41.4,
+        247.0225,
+        4.05
+      ],
+      "freecadName": "V4_EXHIBITION_R01_ROOM_GLAZING",
+      "roomId": "EXHIBITION_R01",
+      "meta": {
+        "type": "interior_glazing",
+        "roomId": "EXHIBITION_R01",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R01_FLOOR_ZONE",
+      "buildingId": "EXHIBITION",
+      "system": "interiors",
+      "level": "F0",
+      "label": "接待服务 · 功能区域",
+      "color": [
+        0.74,
+        0.8,
+        0.78
+      ],
+      "bounds": [
+        -48.875,
+        227.125,
+        1.606,
+        -39.125,
+        246.875,
+        1.618
+      ],
+      "freecadName": "V4_EXHIBITION_R01_FLOOR_ZONE",
+      "roomId": "EXHIBITION_R01",
+      "meta": {
+        "type": "room_zone",
+        "roomAreaM2": 200,
+        "roomId": "EXHIBITION_R01",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R01_DOOR",
+      "buildingId": "EXHIBITION",
+      "system": "interiors",
+      "level": "F0",
+      "label": "常开门及门框",
+      "color": [
+        0.54,
+        0.62,
+        0.6
+      ],
+      "bounds": [
+        -45.155,
+        226.88,
+        1.6,
+        -42.845,
+        228.08832,
+        3.95
+      ],
+      "freecadName": "V4_EXHIBITION_R01_DOOR",
+      "roomId": "EXHIBITION_R01",
+      "meta": {
+        "type": "door",
+        "roomId": "EXHIBITION_R01",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R01_F01",
+      "buildingId": "EXHIBITION",
+      "system": "interiors",
+      "level": "F0",
+      "label": "接待服务台",
+      "color": [
+        0.58,
+        0.39,
+        0.23
+      ],
+      "bounds": [
+        -45.75,
+        233.4,
+        1.6,
+        -42.25,
+        234.6,
+        3.35
+      ],
+      "freecadName": "V4_EXHIBITION_R01_F01",
+      "roomId": "EXHIBITION_R01",
+      "meta": {
+        "type": "furniture",
+        "circuitId": "EXHIBITION_R01_C_POWER",
+        "ratedPowerKw": 0.25,
+        "roomId": "EXHIBITION_R01",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R01_DB",
+      "buildingId": "EXHIBITION",
+      "system": "electrical",
+      "level": "F0",
+      "label": "房间配电箱与断路器",
+      "color": [
+        0.3,
+        0.34,
+        0.39
+      ],
+      "bounds": [
+        -39.725,
+        226.995,
+        2.7,
+        -39.175,
+        227.325,
+        3.5
+      ],
+      "freecadName": "V4_EXHIBITION_R01_DB",
+      "roomId": "EXHIBITION_R01",
+      "meta": {
+        "id": "V4_EXHIBITION_R01_DB",
+        "assetId": "V4_EXHIBITION_R01_DB",
+        "buildingId": "EXHIBITION",
+        "roomId": "EXHIBITION_R01",
+        "controlKind": "breaker",
+        "type": "distribution_panel",
+        "label": "房间配电箱",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "upstreamIds": [
+          "V4_EXHIBITION_MDB"
+        ],
+        "ratedPowerKw": 0,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R01_FEEDER",
+      "buildingId": "EXHIBITION",
+      "system": "electrical",
+      "level": "F0",
+      "label": "主桥架至房间配电馈线",
+      "color": [
+        0.39,
+        0.32,
+        0.23
+      ],
+      "bounds": [
+        -39.46944,
+        220.2,
+        3.4,
+        -39.43056,
+        227.21944,
+        5.13944
+      ],
+      "freecadName": "V4_EXHIBITION_R01_FEEDER",
+      "roomId": "EXHIBITION_R01",
+      "meta": {
+        "type": "cable",
+        "upstreamIds": [
+          "V4_EXHIBITION_MDB",
+          "V4_EXHIBITION_R01_DB"
+        ],
+        "roomId": "EXHIBITION_R01",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R01_L01",
+      "buildingId": "EXHIBITION",
+      "system": "lighting",
+      "level": "F0",
+      "label": "可调光照明分组 1",
+      "color": [
+        0.98,
+        0.91,
+        0.69
+      ],
+      "bounds": [
+        -48.5,
+        229.95,
+        4.19,
+        -46.7,
+        230.45,
+        4.95
+      ],
+      "freecadName": "V4_EXHIBITION_R01_L01",
+      "roomId": "EXHIBITION_R01",
+      "meta": {
+        "id": "V4_EXHIBITION_R01_L01",
+        "assetId": "V4_EXHIBITION_R01_L01",
+        "buildingId": "EXHIBITION",
+        "roomId": "EXHIBITION_R01",
+        "controlKind": "light",
+        "type": "luminaire_group",
+        "label": "照明分组 1",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "circuitId": "EXHIBITION_R01_C_LIGHT",
+        "ratedPowerKw": 0.3,
+        "upstreamIds": [
+          "V4_EXHIBITION_R01_DB"
+        ],
+        "dimmable": true,
+        "fixtureCount": 1,
+        "sourceReference": "ERCO grouped track lighting for exhibition; LED panels elsewhere",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R01_L02",
+      "buildingId": "EXHIBITION",
+      "system": "lighting",
+      "level": "F0",
+      "label": "可调光照明分组 2",
+      "color": [
+        0.98,
+        0.91,
+        0.69
+      ],
+      "bounds": [
+        -41.3,
+        229.95,
+        4.19,
+        -39.5,
+        230.45,
+        4.95
+      ],
+      "freecadName": "V4_EXHIBITION_R01_L02",
+      "roomId": "EXHIBITION_R01",
+      "meta": {
+        "id": "V4_EXHIBITION_R01_L02",
+        "assetId": "V4_EXHIBITION_R01_L02",
+        "buildingId": "EXHIBITION",
+        "roomId": "EXHIBITION_R01",
+        "controlKind": "light",
+        "type": "luminaire_group",
+        "label": "照明分组 2",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "circuitId": "EXHIBITION_R01_C_LIGHT",
+        "ratedPowerKw": 0.3,
+        "upstreamIds": [
+          "V4_EXHIBITION_R01_DB"
+        ],
+        "dimmable": true,
+        "fixtureCount": 1,
+        "sourceReference": "ERCO grouped track lighting for exhibition; LED panels elsewhere",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R01_L03",
+      "buildingId": "EXHIBITION",
+      "system": "lighting",
+      "level": "F0",
+      "label": "可调光照明分组 3",
+      "color": [
+        0.98,
+        0.91,
+        0.69
+      ],
+      "bounds": [
+        -48.5,
+        243.55,
+        4.19,
+        -46.7,
+        244.05,
+        4.95
+      ],
+      "freecadName": "V4_EXHIBITION_R01_L03",
+      "roomId": "EXHIBITION_R01",
+      "meta": {
+        "id": "V4_EXHIBITION_R01_L03",
+        "assetId": "V4_EXHIBITION_R01_L03",
+        "buildingId": "EXHIBITION",
+        "roomId": "EXHIBITION_R01",
+        "controlKind": "light",
+        "type": "luminaire_group",
+        "label": "照明分组 3",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "circuitId": "EXHIBITION_R01_C_LIGHT",
+        "ratedPowerKw": 0.3,
+        "upstreamIds": [
+          "V4_EXHIBITION_R01_DB"
+        ],
+        "dimmable": true,
+        "fixtureCount": 1,
+        "sourceReference": "ERCO grouped track lighting for exhibition; LED panels elsewhere",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R01_L04",
+      "buildingId": "EXHIBITION",
+      "system": "lighting",
+      "level": "F0",
+      "label": "可调光照明分组 4",
+      "color": [
+        0.98,
+        0.91,
+        0.69
+      ],
+      "bounds": [
+        -41.3,
+        243.55,
+        4.19,
+        -39.5,
+        244.05,
+        4.95
+      ],
+      "freecadName": "V4_EXHIBITION_R01_L04",
+      "roomId": "EXHIBITION_R01",
+      "meta": {
+        "id": "V4_EXHIBITION_R01_L04",
+        "assetId": "V4_EXHIBITION_R01_L04",
+        "buildingId": "EXHIBITION",
+        "roomId": "EXHIBITION_R01",
+        "controlKind": "light",
+        "type": "luminaire_group",
+        "label": "照明分组 4",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "circuitId": "EXHIBITION_R01_C_LIGHT",
+        "ratedPowerKw": 0.3,
+        "upstreamIds": [
+          "V4_EXHIBITION_R01_DB"
+        ],
+        "dimmable": true,
+        "fixtureCount": 1,
+        "sourceReference": "ERCO grouped track lighting for exhibition; LED panels elsewhere",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R01_LIGHT_DROPS",
+      "buildingId": "EXHIBITION",
+      "system": "electrical",
+      "level": "F0",
+      "label": "照明干线至灯具分组支线",
+      "color": [
+        0.3,
+        0.34,
+        0.39
+      ],
+      "bounds": [
+        -47.609,
+        229.871,
+        4.941,
+        -39.45,
+        243.8,
+        4.959
+      ],
+      "freecadName": "V4_EXHIBITION_R01_LIGHT_DROPS",
+      "roomId": "EXHIBITION_R01",
+      "meta": {
+        "type": "branch_cable",
+        "circuitId": "EXHIBITION_R01_C_LIGHT",
+        "roomId": "EXHIBITION_R01",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R01_CABLE_0",
+      "buildingId": "EXHIBITION",
+      "system": "electrical",
+      "level": "F0",
+      "label": "独立照明电路",
+      "color": [
+        0.3,
+        0.31,
+        0.34
+      ],
+      "bounds": [
+        -47.5,
+        227.18596,
+        3.3,
+        -39.43596,
+        229.89404,
+        4.96404
+      ],
+      "freecadName": "V4_EXHIBITION_R01_CABLE_0",
+      "roomId": "EXHIBITION_R01",
+      "meta": {
+        "type": "branch_cable",
+        "circuitId": "EXHIBITION_R01_C_LIGHT",
+        "upstreamIds": [
+          "V4_EXHIBITION_R01_DB"
+        ],
+        "roomId": "EXHIBITION_R01",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R01_CABLE_1",
+      "buildingId": "EXHIBITION",
+      "system": "electrical",
+      "level": "F0",
+      "label": "独立插座/设备电路",
+      "color": [
+        0.3,
+        0.31,
+        0.34
+      ],
+      "bounds": [
+        -47.5,
+        227.18596,
+        3.3,
+        -39.43596,
+        230.01404,
+        5.03404
+      ],
+      "freecadName": "V4_EXHIBITION_R01_CABLE_1",
+      "roomId": "EXHIBITION_R01",
+      "meta": {
+        "type": "branch_cable",
+        "circuitId": "EXHIBITION_R01_C_POWER",
+        "upstreamIds": [
+          "V4_EXHIBITION_R01_DB"
+        ],
+        "roomId": "EXHIBITION_R01",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R01_CABLE_2",
+      "buildingId": "EXHIBITION",
+      "system": "electrical",
+      "level": "F0",
+      "label": "独立空调电路",
+      "color": [
+        0.3,
+        0.31,
+        0.34
+      ],
+      "bounds": [
+        -47.5,
+        227.18596,
+        3.3,
+        -39.43596,
+        230.13404,
+        5.10404
+      ],
+      "freecadName": "V4_EXHIBITION_R01_CABLE_2",
+      "roomId": "EXHIBITION_R01",
+      "meta": {
+        "type": "branch_cable",
+        "circuitId": "EXHIBITION_R01_C_HVAC",
+        "upstreamIds": [
+          "V4_EXHIBITION_R01_DB"
+        ],
+        "roomId": "EXHIBITION_R01",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R01_SOCKET0",
+      "buildingId": "EXHIBITION",
+      "system": "electrical",
+      "level": "F0",
+      "label": "墙面插座及下引线",
+      "color": [
+        0.3,
+        0.34,
+        0.39
+      ],
+      "bounds": [
+        -47.065,
+        227.15,
+        1.96,
+        -39.45,
+        227.21,
+        5.02972
+      ],
+      "freecadName": "V4_EXHIBITION_R01_SOCKET0",
+      "roomId": "EXHIBITION_R01",
+      "meta": {
+        "type": "socket",
+        "circuitId": "EXHIBITION_R01_C_POWER",
+        "roomId": "EXHIBITION_R01",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R01_SOCKET1",
+      "buildingId": "EXHIBITION",
+      "system": "electrical",
+      "level": "F0",
+      "label": "墙面插座及下引线",
+      "color": [
+        0.3,
+        0.34,
+        0.39
+      ],
+      "bounds": [
+        -41.065,
+        227.15,
+        1.96,
+        -39.45,
+        227.21,
+        5.02972
+      ],
+      "freecadName": "V4_EXHIBITION_R01_SOCKET1",
+      "roomId": "EXHIBITION_R01",
+      "meta": {
+        "type": "socket",
+        "circuitId": "EXHIBITION_R01_C_POWER",
+        "roomId": "EXHIBITION_R01",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R01_AHU",
+      "buildingId": "EXHIBITION",
+      "system": "hvac",
+      "level": "F0",
+      "label": "局部空调与送回风终端",
+      "color": [
+        0.68,
+        0.75,
+        0.77
+      ],
+      "bounds": [
+        -48.525,
+        227.64,
+        3.75,
+        -40.5,
+        237.35,
+        4.9
+      ],
+      "freecadName": "V4_EXHIBITION_R01_AHU",
+      "roomId": "EXHIBITION_R01",
+      "meta": {
+        "id": "V4_EXHIBITION_R01_AHU",
+        "assetId": "V4_EXHIBITION_R01_AHU",
+        "buildingId": "EXHIBITION",
+        "roomId": "EXHIBITION_R01",
+        "controlKind": "ahu",
+        "type": "air_handling_unit",
+        "label": "局部空调/通风机组",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "circuitId": "EXHIBITION_R01_C_HVAC",
+        "ratedPowerKw": 2.4,
+        "upstreamIds": [
+          "V4_EXHIBITION_R01_DB"
+        ],
+        "designCoolingKw": 20.0,
+        "representativeTerminal": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R01_S_TEMPERATURE",
+      "buildingId": "EXHIBITION",
+      "system": "sensors",
+      "level": "F0",
+      "label": "温度传感器",
+      "color": [
+        0.22,
+        0.63,
+        0.65
+      ],
+      "bounds": [
+        -48.96,
+        231.32,
+        2.95,
+        -48.835,
+        231.48,
+        3.17
+      ],
+      "freecadName": "V4_EXHIBITION_R01_S_TEMPERATURE",
+      "roomId": "EXHIBITION_R01",
+      "meta": {
+        "id": "V4_EXHIBITION_R01_S_TEMPERATURE",
+        "assetId": "V4_EXHIBITION_R01_S_TEMPERATURE",
+        "buildingId": "EXHIBITION",
+        "roomId": "EXHIBITION_R01",
+        "type": "sensor",
+        "sensorKind": "temperature",
+        "label": "温度传感器",
+        "unit": "°C",
+        "circuitId": "EXHIBITION_R01_C_POWER",
+        "upstreamIds": [
+          "V4_EXHIBITION_R01_DB"
+        ],
+        "simulated": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R01_S_HUMIDITY",
+      "buildingId": "EXHIBITION",
+      "system": "sensors",
+      "level": "F0",
+      "label": "相对湿度传感器",
+      "color": [
+        0.22,
+        0.63,
+        0.65
+      ],
+      "bounds": [
+        -48.96,
+        231.62,
+        2.95,
+        -48.835,
+        231.78,
+        3.17
+      ],
+      "freecadName": "V4_EXHIBITION_R01_S_HUMIDITY",
+      "roomId": "EXHIBITION_R01",
+      "meta": {
+        "id": "V4_EXHIBITION_R01_S_HUMIDITY",
+        "assetId": "V4_EXHIBITION_R01_S_HUMIDITY",
+        "buildingId": "EXHIBITION",
+        "roomId": "EXHIBITION_R01",
+        "type": "sensor",
+        "sensorKind": "humidity",
+        "label": "相对湿度传感器",
+        "unit": "%RH",
+        "circuitId": "EXHIBITION_R01_C_POWER",
+        "upstreamIds": [
+          "V4_EXHIBITION_R01_DB"
+        ],
+        "simulated": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R01_S_CO2",
+      "buildingId": "EXHIBITION",
+      "system": "sensors",
+      "level": "F0",
+      "label": "二氧化碳传感器",
+      "color": [
+        0.22,
+        0.63,
+        0.65
+      ],
+      "bounds": [
+        -48.96,
+        231.92,
+        2.95,
+        -48.835,
+        232.08,
+        3.17
+      ],
+      "freecadName": "V4_EXHIBITION_R01_S_CO2",
+      "roomId": "EXHIBITION_R01",
+      "meta": {
+        "id": "V4_EXHIBITION_R01_S_CO2",
+        "assetId": "V4_EXHIBITION_R01_S_CO2",
+        "buildingId": "EXHIBITION",
+        "roomId": "EXHIBITION_R01",
+        "type": "sensor",
+        "sensorKind": "co2",
+        "label": "二氧化碳传感器",
+        "unit": "ppm",
+        "circuitId": "EXHIBITION_R01_C_POWER",
+        "upstreamIds": [
+          "V4_EXHIBITION_R01_DB"
+        ],
+        "simulated": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R01_S_OCCUPANCY",
+      "buildingId": "EXHIBITION",
+      "system": "sensors",
+      "level": "F0",
+      "label": "占用传感器",
+      "color": [
+        0.22,
+        0.63,
+        0.65
+      ],
+      "bounds": [
+        -44.08,
+        236.92,
+        4.195,
+        -43.92,
+        237.08,
+        4.325
+      ],
+      "freecadName": "V4_EXHIBITION_R01_S_OCCUPANCY",
+      "roomId": "EXHIBITION_R01",
+      "meta": {
+        "id": "V4_EXHIBITION_R01_S_OCCUPANCY",
+        "assetId": "V4_EXHIBITION_R01_S_OCCUPANCY",
+        "buildingId": "EXHIBITION",
+        "roomId": "EXHIBITION_R01",
+        "type": "sensor",
+        "sensorKind": "occupancy",
+        "label": "占用传感器",
+        "unit": "persons",
+        "circuitId": "EXHIBITION_R01_C_POWER",
+        "upstreamIds": [
+          "V4_EXHIBITION_R01_DB"
+        ],
+        "simulated": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R01_S_POWER",
+      "buildingId": "EXHIBITION",
+      "system": "sensors",
+      "level": "F0",
+      "label": "支路电功率传感器",
+      "color": [
+        0.22,
+        0.63,
+        0.65
+      ],
+      "bounds": [
+        -48.96,
+        232.52,
+        2.95,
+        -48.835,
+        232.68,
+        3.17
+      ],
+      "freecadName": "V4_EXHIBITION_R01_S_POWER",
+      "roomId": "EXHIBITION_R01",
+      "meta": {
+        "id": "V4_EXHIBITION_R01_S_POWER",
+        "assetId": "V4_EXHIBITION_R01_S_POWER",
+        "buildingId": "EXHIBITION",
+        "roomId": "EXHIBITION_R01",
+        "type": "sensor",
+        "sensorKind": "power",
+        "label": "支路电功率传感器",
+        "unit": "kW",
+        "circuitId": "EXHIBITION_R01_C_POWER",
+        "upstreamIds": [
+          "V4_EXHIBITION_R01_DB"
+        ],
+        "simulated": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R02_WALLS",
+      "buildingId": "EXHIBITION",
+      "system": "interiors",
+      "level": "F0",
+      "label": "主题展陈 · 隔墙与门洞",
+      "color": [
+        0.72,
+        0.77,
+        0.75
+      ],
+      "bounds": [
+        -10.0,
+        225.0,
+        1.625,
+        10.0,
+        249.0,
+        4.625
+      ],
+      "freecadName": "V4_EXHIBITION_R02_WALLS",
+      "roomId": "EXHIBITION_R02",
+      "meta": {
+        "type": "room_partition",
+        "roomId": "EXHIBITION_R02",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R02_ROOM_GLAZING",
+      "buildingId": "EXHIBITION",
+      "system": "interiors",
+      "level": "F0",
+      "label": "观察窗",
+      "color": [
+        0.08,
+        0.24,
+        0.3
+      ],
+      "bounds": [
+        -5.2,
+        248.9775,
+        2.7,
+        5.2,
+        249.0225,
+        4.05
+      ],
+      "freecadName": "V4_EXHIBITION_R02_ROOM_GLAZING",
+      "roomId": "EXHIBITION_R02",
+      "meta": {
+        "type": "interior_glazing",
+        "roomId": "EXHIBITION_R02",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R02_FLOOR_ZONE",
+      "buildingId": "EXHIBITION",
+      "system": "interiors",
+      "level": "F0",
+      "label": "主题展陈 · 功能区域",
+      "color": [
+        0.74,
+        0.8,
+        0.78
+      ],
+      "bounds": [
+        -9.875,
+        225.125,
+        1.606,
+        9.875,
+        248.875,
+        1.618
+      ],
+      "freecadName": "V4_EXHIBITION_R02_FLOOR_ZONE",
+      "roomId": "EXHIBITION_R02",
+      "meta": {
+        "type": "room_zone",
+        "roomAreaM2": 480,
+        "roomId": "EXHIBITION_R02",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R02_DOOR",
+      "buildingId": "EXHIBITION",
+      "system": "interiors",
+      "level": "F0",
+      "label": "常开门及门框",
+      "color": [
+        0.54,
+        0.62,
+        0.6
+      ],
+      "bounds": [
+        -1.155,
+        224.88,
+        1.6,
+        1.155,
+        226.08832,
+        3.95
+      ],
+      "freecadName": "V4_EXHIBITION_R02_DOOR",
+      "roomId": "EXHIBITION_R02",
+      "meta": {
+        "type": "door",
+        "roomId": "EXHIBITION_R02",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R02_F01",
+      "buildingId": "EXHIBITION",
+      "system": "interiors",
+      "level": "F0",
+      "label": "主题展陈台",
+      "color": [
+        0.7,
+        0.66,
+        0.56
+      ],
+      "bounds": [
+        -5.2,
+        230.44,
+        1.6,
+        -3.6,
+        232.04,
+        3.25
+      ],
+      "freecadName": "V4_EXHIBITION_R02_F01",
+      "roomId": "EXHIBITION_R02",
+      "meta": {
+        "type": "furniture",
+        "circuitId": "EXHIBITION_R02_C_POWER",
+        "ratedPowerKw": 0.25,
+        "roomId": "EXHIBITION_R02",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R02_F02",
+      "buildingId": "EXHIBITION",
+      "system": "interiors",
+      "level": "F0",
+      "label": "主题展陈台",
+      "color": [
+        0.7,
+        0.66,
+        0.56
+      ],
+      "bounds": [
+        3.6,
+        230.44,
+        1.6,
+        5.2,
+        232.04,
+        3.25
+      ],
+      "freecadName": "V4_EXHIBITION_R02_F02",
+      "roomId": "EXHIBITION_R02",
+      "meta": {
+        "type": "furniture",
+        "circuitId": "EXHIBITION_R02_C_POWER",
+        "ratedPowerKw": 0.25,
+        "roomId": "EXHIBITION_R02",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R02_F03",
+      "buildingId": "EXHIBITION",
+      "system": "interiors",
+      "level": "F0",
+      "label": "主题展陈台",
+      "color": [
+        0.7,
+        0.66,
+        0.56
+      ],
+      "bounds": [
+        -5.2,
+        241.96,
+        1.6,
+        -3.6,
+        243.56,
+        3.25
+      ],
+      "freecadName": "V4_EXHIBITION_R02_F03",
+      "roomId": "EXHIBITION_R02",
+      "meta": {
+        "type": "furniture",
+        "circuitId": "EXHIBITION_R02_C_POWER",
+        "ratedPowerKw": 0.25,
+        "roomId": "EXHIBITION_R02",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R02_F04",
+      "buildingId": "EXHIBITION",
+      "system": "interiors",
+      "level": "F0",
+      "label": "主题展陈台",
+      "color": [
+        0.7,
+        0.66,
+        0.56
+      ],
+      "bounds": [
+        3.6,
+        241.96,
+        1.6,
+        5.2,
+        243.56,
+        3.25
+      ],
+      "freecadName": "V4_EXHIBITION_R02_F04",
+      "roomId": "EXHIBITION_R02",
+      "meta": {
+        "type": "furniture",
+        "circuitId": "EXHIBITION_R02_C_POWER",
+        "ratedPowerKw": 0.25,
+        "roomId": "EXHIBITION_R02",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R02_DB",
+      "buildingId": "EXHIBITION",
+      "system": "electrical",
+      "level": "F0",
+      "label": "房间配电箱与断路器",
+      "color": [
+        0.3,
+        0.34,
+        0.39
+      ],
+      "bounds": [
+        9.275,
+        224.995,
+        2.7,
+        9.825,
+        225.325,
+        3.5
+      ],
+      "freecadName": "V4_EXHIBITION_R02_DB",
+      "roomId": "EXHIBITION_R02",
+      "meta": {
+        "id": "V4_EXHIBITION_R02_DB",
+        "assetId": "V4_EXHIBITION_R02_DB",
+        "buildingId": "EXHIBITION",
+        "roomId": "EXHIBITION_R02",
+        "controlKind": "breaker",
+        "type": "distribution_panel",
+        "label": "房间配电箱",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "upstreamIds": [
+          "V4_EXHIBITION_MDB"
+        ],
+        "ratedPowerKw": 0,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R02_FEEDER",
+      "buildingId": "EXHIBITION",
+      "system": "electrical",
+      "level": "F0",
+      "label": "主桥架至房间配电馈线",
+      "color": [
+        0.39,
+        0.32,
+        0.23
+      ],
+      "bounds": [
+        9.53056,
+        220.2,
+        3.4,
+        9.56944,
+        225.21944,
+        5.13944
+      ],
+      "freecadName": "V4_EXHIBITION_R02_FEEDER",
+      "roomId": "EXHIBITION_R02",
+      "meta": {
+        "type": "cable",
+        "upstreamIds": [
+          "V4_EXHIBITION_MDB",
+          "V4_EXHIBITION_R02_DB"
+        ],
+        "roomId": "EXHIBITION_R02",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R02_L01",
+      "buildingId": "EXHIBITION",
+      "system": "lighting",
+      "level": "F0",
+      "label": "可调光照明分组 1",
+      "color": [
+        0.98,
+        0.91,
+        0.69
+      ],
+      "bounds": [
+        -8.1,
+        228.59,
+        4.19,
+        -6.3,
+        245.41,
+        4.95
+      ],
+      "freecadName": "V4_EXHIBITION_R02_L01",
+      "roomId": "EXHIBITION_R02",
+      "meta": {
+        "id": "V4_EXHIBITION_R02_L01",
+        "assetId": "V4_EXHIBITION_R02_L01",
+        "buildingId": "EXHIBITION",
+        "roomId": "EXHIBITION_R02",
+        "controlKind": "light",
+        "type": "luminaire_group",
+        "label": "照明分组 1",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "circuitId": "EXHIBITION_R02_C_LIGHT",
+        "ratedPowerKw": 0.72,
+        "upstreamIds": [
+          "V4_EXHIBITION_R02_DB"
+        ],
+        "dimmable": true,
+        "fixtureCount": 2,
+        "sourceReference": "ERCO grouped track lighting for exhibition; LED panels elsewhere",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R02_L02",
+      "buildingId": "EXHIBITION",
+      "system": "lighting",
+      "level": "F0",
+      "label": "可调光照明分组 2",
+      "color": [
+        0.98,
+        0.91,
+        0.69
+      ],
+      "bounds": [
+        6.3,
+        228.59,
+        4.19,
+        8.1,
+        245.41,
+        4.95
+      ],
+      "freecadName": "V4_EXHIBITION_R02_L02",
+      "roomId": "EXHIBITION_R02",
+      "meta": {
+        "id": "V4_EXHIBITION_R02_L02",
+        "assetId": "V4_EXHIBITION_R02_L02",
+        "buildingId": "EXHIBITION",
+        "roomId": "EXHIBITION_R02",
+        "controlKind": "light",
+        "type": "luminaire_group",
+        "label": "照明分组 2",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "circuitId": "EXHIBITION_R02_C_LIGHT",
+        "ratedPowerKw": 0.72,
+        "upstreamIds": [
+          "V4_EXHIBITION_R02_DB"
+        ],
+        "dimmable": true,
+        "fixtureCount": 2,
+        "sourceReference": "ERCO grouped track lighting for exhibition; LED panels elsewhere",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R02_L03",
+      "buildingId": "EXHIBITION",
+      "system": "lighting",
+      "level": "F0",
+      "label": "可调光照明分组 3",
+      "color": [
+        0.98,
+        0.91,
+        0.69
+      ],
+      "bounds": [
+        -8.1,
+        236.75,
+        4.19,
+        -6.3,
+        237.25,
+        4.95
+      ],
+      "freecadName": "V4_EXHIBITION_R02_L03",
+      "roomId": "EXHIBITION_R02",
+      "meta": {
+        "id": "V4_EXHIBITION_R02_L03",
+        "assetId": "V4_EXHIBITION_R02_L03",
+        "buildingId": "EXHIBITION",
+        "roomId": "EXHIBITION_R02",
+        "controlKind": "light",
+        "type": "luminaire_group",
+        "label": "照明分组 3",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "circuitId": "EXHIBITION_R02_C_LIGHT",
+        "ratedPowerKw": 0.72,
+        "upstreamIds": [
+          "V4_EXHIBITION_R02_DB"
+        ],
+        "dimmable": true,
+        "fixtureCount": 1,
+        "sourceReference": "ERCO grouped track lighting for exhibition; LED panels elsewhere",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R02_L04",
+      "buildingId": "EXHIBITION",
+      "system": "lighting",
+      "level": "F0",
+      "label": "可调光照明分组 4",
+      "color": [
+        0.98,
+        0.91,
+        0.69
+      ],
+      "bounds": [
+        6.3,
+        236.75,
+        4.19,
+        8.1,
+        237.25,
+        4.95
+      ],
+      "freecadName": "V4_EXHIBITION_R02_L04",
+      "roomId": "EXHIBITION_R02",
+      "meta": {
+        "id": "V4_EXHIBITION_R02_L04",
+        "assetId": "V4_EXHIBITION_R02_L04",
+        "buildingId": "EXHIBITION",
+        "roomId": "EXHIBITION_R02",
+        "controlKind": "light",
+        "type": "luminaire_group",
+        "label": "照明分组 4",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "circuitId": "EXHIBITION_R02_C_LIGHT",
+        "ratedPowerKw": 0.72,
+        "upstreamIds": [
+          "V4_EXHIBITION_R02_DB"
+        ],
+        "dimmable": true,
+        "fixtureCount": 1,
+        "sourceReference": "ERCO grouped track lighting for exhibition; LED panels elsewhere",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R02_LIGHT_DROPS",
+      "buildingId": "EXHIBITION",
+      "system": "electrical",
+      "level": "F0",
+      "label": "照明干线至灯具分组支线",
+      "color": [
+        0.3,
+        0.34,
+        0.39
+      ],
+      "bounds": [
+        -7.209,
+        228.471,
+        4.941,
+        9.55,
+        245.16,
+        4.959
+      ],
+      "freecadName": "V4_EXHIBITION_R02_LIGHT_DROPS",
+      "roomId": "EXHIBITION_R02",
+      "meta": {
+        "type": "branch_cable",
+        "circuitId": "EXHIBITION_R02_C_LIGHT",
+        "roomId": "EXHIBITION_R02",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R02_CABLE_0",
+      "buildingId": "EXHIBITION",
+      "system": "electrical",
+      "level": "F0",
+      "label": "独立照明电路",
+      "color": [
+        0.3,
+        0.31,
+        0.34
+      ],
+      "bounds": [
+        -7.0,
+        225.18596,
+        3.3,
+        9.56404,
+        228.49404,
+        4.96404
+      ],
+      "freecadName": "V4_EXHIBITION_R02_CABLE_0",
+      "roomId": "EXHIBITION_R02",
+      "meta": {
+        "type": "branch_cable",
+        "circuitId": "EXHIBITION_R02_C_LIGHT",
+        "upstreamIds": [
+          "V4_EXHIBITION_R02_DB"
+        ],
+        "roomId": "EXHIBITION_R02",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R02_CABLE_1",
+      "buildingId": "EXHIBITION",
+      "system": "electrical",
+      "level": "F0",
+      "label": "独立插座/设备电路",
+      "color": [
+        0.3,
+        0.31,
+        0.34
+      ],
+      "bounds": [
+        -7.0,
+        225.18596,
+        3.3,
+        9.56404,
+        228.61404,
+        5.03404
+      ],
+      "freecadName": "V4_EXHIBITION_R02_CABLE_1",
+      "roomId": "EXHIBITION_R02",
+      "meta": {
+        "type": "branch_cable",
+        "circuitId": "EXHIBITION_R02_C_POWER",
+        "upstreamIds": [
+          "V4_EXHIBITION_R02_DB"
+        ],
+        "roomId": "EXHIBITION_R02",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R02_CABLE_2",
+      "buildingId": "EXHIBITION",
+      "system": "electrical",
+      "level": "F0",
+      "label": "独立空调电路",
+      "color": [
+        0.3,
+        0.31,
+        0.34
+      ],
+      "bounds": [
+        -7.0,
+        225.18596,
+        3.3,
+        9.56404,
+        228.73404,
+        5.10404
+      ],
+      "freecadName": "V4_EXHIBITION_R02_CABLE_2",
+      "roomId": "EXHIBITION_R02",
+      "meta": {
+        "type": "branch_cable",
+        "circuitId": "EXHIBITION_R02_C_HVAC",
+        "upstreamIds": [
+          "V4_EXHIBITION_R02_DB"
+        ],
+        "roomId": "EXHIBITION_R02",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R02_SOCKET0",
+      "buildingId": "EXHIBITION",
+      "system": "electrical",
+      "level": "F0",
+      "label": "墙面插座及下引线",
+      "color": [
+        0.3,
+        0.34,
+        0.39
+      ],
+      "bounds": [
+        -6.065,
+        225.15,
+        1.96,
+        9.55,
+        225.21,
+        5.02972
+      ],
+      "freecadName": "V4_EXHIBITION_R02_SOCKET0",
+      "roomId": "EXHIBITION_R02",
+      "meta": {
+        "type": "socket",
+        "circuitId": "EXHIBITION_R02_C_POWER",
+        "roomId": "EXHIBITION_R02",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R02_SOCKET1",
+      "buildingId": "EXHIBITION",
+      "system": "electrical",
+      "level": "F0",
+      "label": "墙面插座及下引线",
+      "color": [
+        0.3,
+        0.34,
+        0.39
+      ],
+      "bounds": [
+        5.935,
+        225.15,
+        1.96,
+        9.55,
+        225.21,
+        5.02972
+      ],
+      "freecadName": "V4_EXHIBITION_R02_SOCKET1",
+      "roomId": "EXHIBITION_R02",
+      "meta": {
+        "type": "socket",
+        "circuitId": "EXHIBITION_R02_C_POWER",
+        "roomId": "EXHIBITION_R02",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R02_AHU",
+      "buildingId": "EXHIBITION",
+      "system": "hvac",
+      "level": "F0",
+      "label": "局部空调与送回风终端",
+      "color": [
+        0.68,
+        0.75,
+        0.77
+      ],
+      "bounds": [
+        -9.525,
+        225.64,
+        3.75,
+        7.0,
+        237.35,
+        4.9
+      ],
+      "freecadName": "V4_EXHIBITION_R02_AHU",
+      "roomId": "EXHIBITION_R02",
+      "meta": {
+        "id": "V4_EXHIBITION_R02_AHU",
+        "assetId": "V4_EXHIBITION_R02_AHU",
+        "buildingId": "EXHIBITION",
+        "roomId": "EXHIBITION_R02",
+        "controlKind": "ahu",
+        "type": "air_handling_unit",
+        "label": "局部空调/通风机组",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "circuitId": "EXHIBITION_R02_C_HVAC",
+        "ratedPowerKw": 5.76,
+        "upstreamIds": [
+          "V4_EXHIBITION_R02_DB"
+        ],
+        "designCoolingKw": 48.0,
+        "representativeTerminal": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R02_S_TEMPERATURE",
+      "buildingId": "EXHIBITION",
+      "system": "sensors",
+      "level": "F0",
+      "label": "温度传感器",
+      "color": [
+        0.22,
+        0.63,
+        0.65
+      ],
+      "bounds": [
+        -9.96,
+        230.2,
+        2.95,
+        -9.835,
+        230.36,
+        3.17
+      ],
+      "freecadName": "V4_EXHIBITION_R02_S_TEMPERATURE",
+      "roomId": "EXHIBITION_R02",
+      "meta": {
+        "id": "V4_EXHIBITION_R02_S_TEMPERATURE",
+        "assetId": "V4_EXHIBITION_R02_S_TEMPERATURE",
+        "buildingId": "EXHIBITION",
+        "roomId": "EXHIBITION_R02",
+        "type": "sensor",
+        "sensorKind": "temperature",
+        "label": "温度传感器",
+        "unit": "°C",
+        "circuitId": "EXHIBITION_R02_C_POWER",
+        "upstreamIds": [
+          "V4_EXHIBITION_R02_DB"
+        ],
+        "simulated": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R02_S_HUMIDITY",
+      "buildingId": "EXHIBITION",
+      "system": "sensors",
+      "level": "F0",
+      "label": "相对湿度传感器",
+      "color": [
+        0.22,
+        0.63,
+        0.65
+      ],
+      "bounds": [
+        -9.96,
+        230.5,
+        2.95,
+        -9.835,
+        230.66,
+        3.17
+      ],
+      "freecadName": "V4_EXHIBITION_R02_S_HUMIDITY",
+      "roomId": "EXHIBITION_R02",
+      "meta": {
+        "id": "V4_EXHIBITION_R02_S_HUMIDITY",
+        "assetId": "V4_EXHIBITION_R02_S_HUMIDITY",
+        "buildingId": "EXHIBITION",
+        "roomId": "EXHIBITION_R02",
+        "type": "sensor",
+        "sensorKind": "humidity",
+        "label": "相对湿度传感器",
+        "unit": "%RH",
+        "circuitId": "EXHIBITION_R02_C_POWER",
+        "upstreamIds": [
+          "V4_EXHIBITION_R02_DB"
+        ],
+        "simulated": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R02_S_CO2",
+      "buildingId": "EXHIBITION",
+      "system": "sensors",
+      "level": "F0",
+      "label": "二氧化碳传感器",
+      "color": [
+        0.22,
+        0.63,
+        0.65
+      ],
+      "bounds": [
+        -9.96,
+        230.8,
+        2.95,
+        -9.835,
+        230.96,
+        3.17
+      ],
+      "freecadName": "V4_EXHIBITION_R02_S_CO2",
+      "roomId": "EXHIBITION_R02",
+      "meta": {
+        "id": "V4_EXHIBITION_R02_S_CO2",
+        "assetId": "V4_EXHIBITION_R02_S_CO2",
+        "buildingId": "EXHIBITION",
+        "roomId": "EXHIBITION_R02",
+        "type": "sensor",
+        "sensorKind": "co2",
+        "label": "二氧化碳传感器",
+        "unit": "ppm",
+        "circuitId": "EXHIBITION_R02_C_POWER",
+        "upstreamIds": [
+          "V4_EXHIBITION_R02_DB"
+        ],
+        "simulated": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R02_S_OCCUPANCY",
+      "buildingId": "EXHIBITION",
+      "system": "sensors",
+      "level": "F0",
+      "label": "占用传感器",
+      "color": [
+        0.22,
+        0.63,
+        0.65
+      ],
+      "bounds": [
+        -0.08,
+        236.92,
+        4.195,
+        0.08,
+        237.08,
+        4.325
+      ],
+      "freecadName": "V4_EXHIBITION_R02_S_OCCUPANCY",
+      "roomId": "EXHIBITION_R02",
+      "meta": {
+        "id": "V4_EXHIBITION_R02_S_OCCUPANCY",
+        "assetId": "V4_EXHIBITION_R02_S_OCCUPANCY",
+        "buildingId": "EXHIBITION",
+        "roomId": "EXHIBITION_R02",
+        "type": "sensor",
+        "sensorKind": "occupancy",
+        "label": "占用传感器",
+        "unit": "persons",
+        "circuitId": "EXHIBITION_R02_C_POWER",
+        "upstreamIds": [
+          "V4_EXHIBITION_R02_DB"
+        ],
+        "simulated": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R02_S_POWER",
+      "buildingId": "EXHIBITION",
+      "system": "sensors",
+      "level": "F0",
+      "label": "支路电功率传感器",
+      "color": [
+        0.22,
+        0.63,
+        0.65
+      ],
+      "bounds": [
+        -9.96,
+        231.4,
+        2.95,
+        -9.835,
+        231.56,
+        3.17
+      ],
+      "freecadName": "V4_EXHIBITION_R02_S_POWER",
+      "roomId": "EXHIBITION_R02",
+      "meta": {
+        "id": "V4_EXHIBITION_R02_S_POWER",
+        "assetId": "V4_EXHIBITION_R02_S_POWER",
+        "buildingId": "EXHIBITION",
+        "roomId": "EXHIBITION_R02",
+        "type": "sensor",
+        "sensorKind": "power",
+        "label": "支路电功率传感器",
+        "unit": "kW",
+        "circuitId": "EXHIBITION_R02_C_POWER",
+        "upstreamIds": [
+          "V4_EXHIBITION_R02_DB"
+        ],
+        "simulated": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R03_WALLS",
+      "buildingId": "EXHIBITION",
+      "system": "interiors",
+      "level": "F0",
+      "label": "互动体验 · 隔墙与门洞",
+      "color": [
+        0.72,
+        0.77,
+        0.75
+      ],
+      "bounds": [
+        39.0,
+        227.0,
+        1.625,
+        49.0,
+        247.0,
+        4.625
+      ],
+      "freecadName": "V4_EXHIBITION_R03_WALLS",
+      "roomId": "EXHIBITION_R03",
+      "meta": {
+        "type": "room_partition",
+        "roomId": "EXHIBITION_R03",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R03_ROOM_GLAZING",
+      "buildingId": "EXHIBITION",
+      "system": "interiors",
+      "level": "F0",
+      "label": "观察窗",
+      "color": [
+        0.08,
+        0.24,
+        0.3
+      ],
+      "bounds": [
+        41.4,
+        246.9775,
+        2.7,
+        46.6,
+        247.0225,
+        4.05
+      ],
+      "freecadName": "V4_EXHIBITION_R03_ROOM_GLAZING",
+      "roomId": "EXHIBITION_R03",
+      "meta": {
+        "type": "interior_glazing",
+        "roomId": "EXHIBITION_R03",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R03_FLOOR_ZONE",
+      "buildingId": "EXHIBITION",
+      "system": "interiors",
+      "level": "F0",
+      "label": "互动体验 · 功能区域",
+      "color": [
+        0.74,
+        0.8,
+        0.78
+      ],
+      "bounds": [
+        39.125,
+        227.125,
+        1.606,
+        48.875,
+        246.875,
+        1.618
+      ],
+      "freecadName": "V4_EXHIBITION_R03_FLOOR_ZONE",
+      "roomId": "EXHIBITION_R03",
+      "meta": {
+        "type": "room_zone",
+        "roomAreaM2": 200,
+        "roomId": "EXHIBITION_R03",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R03_DOOR",
+      "buildingId": "EXHIBITION",
+      "system": "interiors",
+      "level": "F0",
+      "label": "常开门及门框",
+      "color": [
+        0.54,
+        0.62,
+        0.6
+      ],
+      "bounds": [
+        42.845,
+        226.88,
+        1.6,
+        45.155,
+        228.08832,
+        3.95
+      ],
+      "freecadName": "V4_EXHIBITION_R03_DOOR",
+      "roomId": "EXHIBITION_R03",
+      "meta": {
+        "type": "door",
+        "roomId": "EXHIBITION_R03",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R03_F01",
+      "buildingId": "EXHIBITION",
+      "system": "interiors",
+      "level": "F0",
+      "label": "互动展台",
+      "color": [
+        0.7,
+        0.66,
+        0.56
+      ],
+      "bounds": [
+        41.0,
+        231.4,
+        1.6,
+        42.6,
+        233.0,
+        3.25
+      ],
+      "freecadName": "V4_EXHIBITION_R03_F01",
+      "roomId": "EXHIBITION_R03",
+      "meta": {
+        "type": "furniture",
+        "circuitId": "EXHIBITION_R03_C_POWER",
+        "ratedPowerKw": 0.25,
+        "roomId": "EXHIBITION_R03",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R03_F02",
+      "buildingId": "EXHIBITION",
+      "system": "interiors",
+      "level": "F0",
+      "label": "互动展台",
+      "color": [
+        0.7,
+        0.66,
+        0.56
+      ],
+      "bounds": [
+        45.4,
+        231.4,
+        1.6,
+        47.0,
+        233.0,
+        3.25
+      ],
+      "freecadName": "V4_EXHIBITION_R03_F02",
+      "roomId": "EXHIBITION_R03",
+      "meta": {
+        "type": "furniture",
+        "circuitId": "EXHIBITION_R03_C_POWER",
+        "ratedPowerKw": 0.25,
+        "roomId": "EXHIBITION_R03",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R03_F03",
+      "buildingId": "EXHIBITION",
+      "system": "interiors",
+      "level": "F0",
+      "label": "互动展台",
+      "color": [
+        0.7,
+        0.66,
+        0.56
+      ],
+      "bounds": [
+        41.0,
+        241.0,
+        1.6,
+        42.6,
+        242.6,
+        3.25
+      ],
+      "freecadName": "V4_EXHIBITION_R03_F03",
+      "roomId": "EXHIBITION_R03",
+      "meta": {
+        "type": "furniture",
+        "circuitId": "EXHIBITION_R03_C_POWER",
+        "ratedPowerKw": 0.25,
+        "roomId": "EXHIBITION_R03",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R03_F04",
+      "buildingId": "EXHIBITION",
+      "system": "interiors",
+      "level": "F0",
+      "label": "互动展台",
+      "color": [
+        0.7,
+        0.66,
+        0.56
+      ],
+      "bounds": [
+        45.4,
+        241.0,
+        1.6,
+        47.0,
+        242.6,
+        3.25
+      ],
+      "freecadName": "V4_EXHIBITION_R03_F04",
+      "roomId": "EXHIBITION_R03",
+      "meta": {
+        "type": "furniture",
+        "circuitId": "EXHIBITION_R03_C_POWER",
+        "ratedPowerKw": 0.25,
+        "roomId": "EXHIBITION_R03",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R03_DB",
+      "buildingId": "EXHIBITION",
+      "system": "electrical",
+      "level": "F0",
+      "label": "房间配电箱与断路器",
+      "color": [
+        0.3,
+        0.34,
+        0.39
+      ],
+      "bounds": [
+        48.275,
+        226.995,
+        2.7,
+        48.825,
+        227.325,
+        3.5
+      ],
+      "freecadName": "V4_EXHIBITION_R03_DB",
+      "roomId": "EXHIBITION_R03",
+      "meta": {
+        "id": "V4_EXHIBITION_R03_DB",
+        "assetId": "V4_EXHIBITION_R03_DB",
+        "buildingId": "EXHIBITION",
+        "roomId": "EXHIBITION_R03",
+        "controlKind": "breaker",
+        "type": "distribution_panel",
+        "label": "房间配电箱",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "upstreamIds": [
+          "V4_EXHIBITION_MDB"
+        ],
+        "ratedPowerKw": 0,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R03_FEEDER",
+      "buildingId": "EXHIBITION",
+      "system": "electrical",
+      "level": "F0",
+      "label": "主桥架至房间配电馈线",
+      "color": [
+        0.39,
+        0.32,
+        0.23
+      ],
+      "bounds": [
+        48.53056,
+        220.2,
+        3.4,
+        48.56944,
+        227.21944,
+        5.13944
+      ],
+      "freecadName": "V4_EXHIBITION_R03_FEEDER",
+      "roomId": "EXHIBITION_R03",
+      "meta": {
+        "type": "cable",
+        "upstreamIds": [
+          "V4_EXHIBITION_MDB",
+          "V4_EXHIBITION_R03_DB"
+        ],
+        "roomId": "EXHIBITION_R03",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R03_L01",
+      "buildingId": "EXHIBITION",
+      "system": "lighting",
+      "level": "F0",
+      "label": "可调光照明分组 1",
+      "color": [
+        0.98,
+        0.91,
+        0.69
+      ],
+      "bounds": [
+        39.5,
+        229.95,
+        4.19,
+        41.3,
+        230.45,
+        4.95
+      ],
+      "freecadName": "V4_EXHIBITION_R03_L01",
+      "roomId": "EXHIBITION_R03",
+      "meta": {
+        "id": "V4_EXHIBITION_R03_L01",
+        "assetId": "V4_EXHIBITION_R03_L01",
+        "buildingId": "EXHIBITION",
+        "roomId": "EXHIBITION_R03",
+        "controlKind": "light",
+        "type": "luminaire_group",
+        "label": "照明分组 1",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "circuitId": "EXHIBITION_R03_C_LIGHT",
+        "ratedPowerKw": 0.3,
+        "upstreamIds": [
+          "V4_EXHIBITION_R03_DB"
+        ],
+        "dimmable": true,
+        "fixtureCount": 1,
+        "sourceReference": "ERCO grouped track lighting for exhibition; LED panels elsewhere",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R03_L02",
+      "buildingId": "EXHIBITION",
+      "system": "lighting",
+      "level": "F0",
+      "label": "可调光照明分组 2",
+      "color": [
+        0.98,
+        0.91,
+        0.69
+      ],
+      "bounds": [
+        46.7,
+        229.95,
+        4.19,
+        48.5,
+        230.45,
+        4.95
+      ],
+      "freecadName": "V4_EXHIBITION_R03_L02",
+      "roomId": "EXHIBITION_R03",
+      "meta": {
+        "id": "V4_EXHIBITION_R03_L02",
+        "assetId": "V4_EXHIBITION_R03_L02",
+        "buildingId": "EXHIBITION",
+        "roomId": "EXHIBITION_R03",
+        "controlKind": "light",
+        "type": "luminaire_group",
+        "label": "照明分组 2",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "circuitId": "EXHIBITION_R03_C_LIGHT",
+        "ratedPowerKw": 0.3,
+        "upstreamIds": [
+          "V4_EXHIBITION_R03_DB"
+        ],
+        "dimmable": true,
+        "fixtureCount": 1,
+        "sourceReference": "ERCO grouped track lighting for exhibition; LED panels elsewhere",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R03_L03",
+      "buildingId": "EXHIBITION",
+      "system": "lighting",
+      "level": "F0",
+      "label": "可调光照明分组 3",
+      "color": [
+        0.98,
+        0.91,
+        0.69
+      ],
+      "bounds": [
+        39.5,
+        243.55,
+        4.19,
+        41.3,
+        244.05,
+        4.95
+      ],
+      "freecadName": "V4_EXHIBITION_R03_L03",
+      "roomId": "EXHIBITION_R03",
+      "meta": {
+        "id": "V4_EXHIBITION_R03_L03",
+        "assetId": "V4_EXHIBITION_R03_L03",
+        "buildingId": "EXHIBITION",
+        "roomId": "EXHIBITION_R03",
+        "controlKind": "light",
+        "type": "luminaire_group",
+        "label": "照明分组 3",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "circuitId": "EXHIBITION_R03_C_LIGHT",
+        "ratedPowerKw": 0.3,
+        "upstreamIds": [
+          "V4_EXHIBITION_R03_DB"
+        ],
+        "dimmable": true,
+        "fixtureCount": 1,
+        "sourceReference": "ERCO grouped track lighting for exhibition; LED panels elsewhere",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R03_L04",
+      "buildingId": "EXHIBITION",
+      "system": "lighting",
+      "level": "F0",
+      "label": "可调光照明分组 4",
+      "color": [
+        0.98,
+        0.91,
+        0.69
+      ],
+      "bounds": [
+        46.7,
+        243.55,
+        4.19,
+        48.5,
+        244.05,
+        4.95
+      ],
+      "freecadName": "V4_EXHIBITION_R03_L04",
+      "roomId": "EXHIBITION_R03",
+      "meta": {
+        "id": "V4_EXHIBITION_R03_L04",
+        "assetId": "V4_EXHIBITION_R03_L04",
+        "buildingId": "EXHIBITION",
+        "roomId": "EXHIBITION_R03",
+        "controlKind": "light",
+        "type": "luminaire_group",
+        "label": "照明分组 4",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "circuitId": "EXHIBITION_R03_C_LIGHT",
+        "ratedPowerKw": 0.3,
+        "upstreamIds": [
+          "V4_EXHIBITION_R03_DB"
+        ],
+        "dimmable": true,
+        "fixtureCount": 1,
+        "sourceReference": "ERCO grouped track lighting for exhibition; LED panels elsewhere",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R03_LIGHT_DROPS",
+      "buildingId": "EXHIBITION",
+      "system": "electrical",
+      "level": "F0",
+      "label": "照明干线至灯具分组支线",
+      "color": [
+        0.3,
+        0.34,
+        0.39
+      ],
+      "bounds": [
+        40.391,
+        229.871,
+        4.941,
+        48.55,
+        243.8,
+        4.959
+      ],
+      "freecadName": "V4_EXHIBITION_R03_LIGHT_DROPS",
+      "roomId": "EXHIBITION_R03",
+      "meta": {
+        "type": "branch_cable",
+        "circuitId": "EXHIBITION_R03_C_LIGHT",
+        "roomId": "EXHIBITION_R03",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R03_CABLE_0",
+      "buildingId": "EXHIBITION",
+      "system": "electrical",
+      "level": "F0",
+      "label": "独立照明电路",
+      "color": [
+        0.3,
+        0.31,
+        0.34
+      ],
+      "bounds": [
+        40.5,
+        227.18596,
+        3.3,
+        48.56404,
+        229.89404,
+        4.96404
+      ],
+      "freecadName": "V4_EXHIBITION_R03_CABLE_0",
+      "roomId": "EXHIBITION_R03",
+      "meta": {
+        "type": "branch_cable",
+        "circuitId": "EXHIBITION_R03_C_LIGHT",
+        "upstreamIds": [
+          "V4_EXHIBITION_R03_DB"
+        ],
+        "roomId": "EXHIBITION_R03",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R03_CABLE_1",
+      "buildingId": "EXHIBITION",
+      "system": "electrical",
+      "level": "F0",
+      "label": "独立插座/设备电路",
+      "color": [
+        0.3,
+        0.31,
+        0.34
+      ],
+      "bounds": [
+        40.5,
+        227.18596,
+        3.3,
+        48.56404,
+        230.01404,
+        5.03404
+      ],
+      "freecadName": "V4_EXHIBITION_R03_CABLE_1",
+      "roomId": "EXHIBITION_R03",
+      "meta": {
+        "type": "branch_cable",
+        "circuitId": "EXHIBITION_R03_C_POWER",
+        "upstreamIds": [
+          "V4_EXHIBITION_R03_DB"
+        ],
+        "roomId": "EXHIBITION_R03",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R03_CABLE_2",
+      "buildingId": "EXHIBITION",
+      "system": "electrical",
+      "level": "F0",
+      "label": "独立空调电路",
+      "color": [
+        0.3,
+        0.31,
+        0.34
+      ],
+      "bounds": [
+        40.5,
+        227.18596,
+        3.3,
+        48.56404,
+        230.13404,
+        5.10404
+      ],
+      "freecadName": "V4_EXHIBITION_R03_CABLE_2",
+      "roomId": "EXHIBITION_R03",
+      "meta": {
+        "type": "branch_cable",
+        "circuitId": "EXHIBITION_R03_C_HVAC",
+        "upstreamIds": [
+          "V4_EXHIBITION_R03_DB"
+        ],
+        "roomId": "EXHIBITION_R03",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R03_SOCKET0",
+      "buildingId": "EXHIBITION",
+      "system": "electrical",
+      "level": "F0",
+      "label": "墙面插座及下引线",
+      "color": [
+        0.3,
+        0.34,
+        0.39
+      ],
+      "bounds": [
+        40.935,
+        227.15,
+        1.96,
+        48.55,
+        227.21,
+        5.02972
+      ],
+      "freecadName": "V4_EXHIBITION_R03_SOCKET0",
+      "roomId": "EXHIBITION_R03",
+      "meta": {
+        "type": "socket",
+        "circuitId": "EXHIBITION_R03_C_POWER",
+        "roomId": "EXHIBITION_R03",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R03_SOCKET1",
+      "buildingId": "EXHIBITION",
+      "system": "electrical",
+      "level": "F0",
+      "label": "墙面插座及下引线",
+      "color": [
+        0.3,
+        0.34,
+        0.39
+      ],
+      "bounds": [
+        46.935,
+        227.15,
+        1.96,
+        48.55,
+        227.21,
+        5.02972
+      ],
+      "freecadName": "V4_EXHIBITION_R03_SOCKET1",
+      "roomId": "EXHIBITION_R03",
+      "meta": {
+        "type": "socket",
+        "circuitId": "EXHIBITION_R03_C_POWER",
+        "roomId": "EXHIBITION_R03",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R03_AHU",
+      "buildingId": "EXHIBITION",
+      "system": "hvac",
+      "level": "F0",
+      "label": "局部空调与送回风终端",
+      "color": [
+        0.68,
+        0.75,
+        0.77
+      ],
+      "bounds": [
+        39.475,
+        227.64,
+        3.75,
+        47.5,
+        237.35,
+        4.9
+      ],
+      "freecadName": "V4_EXHIBITION_R03_AHU",
+      "roomId": "EXHIBITION_R03",
+      "meta": {
+        "id": "V4_EXHIBITION_R03_AHU",
+        "assetId": "V4_EXHIBITION_R03_AHU",
+        "buildingId": "EXHIBITION",
+        "roomId": "EXHIBITION_R03",
+        "controlKind": "ahu",
+        "type": "air_handling_unit",
+        "label": "局部空调/通风机组",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "circuitId": "EXHIBITION_R03_C_HVAC",
+        "ratedPowerKw": 2.4,
+        "upstreamIds": [
+          "V4_EXHIBITION_R03_DB"
+        ],
+        "designCoolingKw": 20.0,
+        "representativeTerminal": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R03_S_TEMPERATURE",
+      "buildingId": "EXHIBITION",
+      "system": "sensors",
+      "level": "F0",
+      "label": "温度传感器",
+      "color": [
+        0.22,
+        0.63,
+        0.65
+      ],
+      "bounds": [
+        39.04,
+        231.32,
+        2.95,
+        39.165,
+        231.48,
+        3.17
+      ],
+      "freecadName": "V4_EXHIBITION_R03_S_TEMPERATURE",
+      "roomId": "EXHIBITION_R03",
+      "meta": {
+        "id": "V4_EXHIBITION_R03_S_TEMPERATURE",
+        "assetId": "V4_EXHIBITION_R03_S_TEMPERATURE",
+        "buildingId": "EXHIBITION",
+        "roomId": "EXHIBITION_R03",
+        "type": "sensor",
+        "sensorKind": "temperature",
+        "label": "温度传感器",
+        "unit": "°C",
+        "circuitId": "EXHIBITION_R03_C_POWER",
+        "upstreamIds": [
+          "V4_EXHIBITION_R03_DB"
+        ],
+        "simulated": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R03_S_HUMIDITY",
+      "buildingId": "EXHIBITION",
+      "system": "sensors",
+      "level": "F0",
+      "label": "相对湿度传感器",
+      "color": [
+        0.22,
+        0.63,
+        0.65
+      ],
+      "bounds": [
+        39.04,
+        231.62,
+        2.95,
+        39.165,
+        231.78,
+        3.17
+      ],
+      "freecadName": "V4_EXHIBITION_R03_S_HUMIDITY",
+      "roomId": "EXHIBITION_R03",
+      "meta": {
+        "id": "V4_EXHIBITION_R03_S_HUMIDITY",
+        "assetId": "V4_EXHIBITION_R03_S_HUMIDITY",
+        "buildingId": "EXHIBITION",
+        "roomId": "EXHIBITION_R03",
+        "type": "sensor",
+        "sensorKind": "humidity",
+        "label": "相对湿度传感器",
+        "unit": "%RH",
+        "circuitId": "EXHIBITION_R03_C_POWER",
+        "upstreamIds": [
+          "V4_EXHIBITION_R03_DB"
+        ],
+        "simulated": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R03_S_CO2",
+      "buildingId": "EXHIBITION",
+      "system": "sensors",
+      "level": "F0",
+      "label": "二氧化碳传感器",
+      "color": [
+        0.22,
+        0.63,
+        0.65
+      ],
+      "bounds": [
+        39.04,
+        231.92,
+        2.95,
+        39.165,
+        232.08,
+        3.17
+      ],
+      "freecadName": "V4_EXHIBITION_R03_S_CO2",
+      "roomId": "EXHIBITION_R03",
+      "meta": {
+        "id": "V4_EXHIBITION_R03_S_CO2",
+        "assetId": "V4_EXHIBITION_R03_S_CO2",
+        "buildingId": "EXHIBITION",
+        "roomId": "EXHIBITION_R03",
+        "type": "sensor",
+        "sensorKind": "co2",
+        "label": "二氧化碳传感器",
+        "unit": "ppm",
+        "circuitId": "EXHIBITION_R03_C_POWER",
+        "upstreamIds": [
+          "V4_EXHIBITION_R03_DB"
+        ],
+        "simulated": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R03_S_OCCUPANCY",
+      "buildingId": "EXHIBITION",
+      "system": "sensors",
+      "level": "F0",
+      "label": "占用传感器",
+      "color": [
+        0.22,
+        0.63,
+        0.65
+      ],
+      "bounds": [
+        43.92,
+        236.92,
+        4.195,
+        44.08,
+        237.08,
+        4.325
+      ],
+      "freecadName": "V4_EXHIBITION_R03_S_OCCUPANCY",
+      "roomId": "EXHIBITION_R03",
+      "meta": {
+        "id": "V4_EXHIBITION_R03_S_OCCUPANCY",
+        "assetId": "V4_EXHIBITION_R03_S_OCCUPANCY",
+        "buildingId": "EXHIBITION",
+        "roomId": "EXHIBITION_R03",
+        "type": "sensor",
+        "sensorKind": "occupancy",
+        "label": "占用传感器",
+        "unit": "persons",
+        "circuitId": "EXHIBITION_R03_C_POWER",
+        "upstreamIds": [
+          "V4_EXHIBITION_R03_DB"
+        ],
+        "simulated": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R03_S_POWER",
+      "buildingId": "EXHIBITION",
+      "system": "sensors",
+      "level": "F0",
+      "label": "支路电功率传感器",
+      "color": [
+        0.22,
+        0.63,
+        0.65
+      ],
+      "bounds": [
+        39.04,
+        232.52,
+        2.95,
+        39.165,
+        232.68,
+        3.17
+      ],
+      "freecadName": "V4_EXHIBITION_R03_S_POWER",
+      "roomId": "EXHIBITION_R03",
+      "meta": {
+        "id": "V4_EXHIBITION_R03_S_POWER",
+        "assetId": "V4_EXHIBITION_R03_S_POWER",
+        "buildingId": "EXHIBITION",
+        "roomId": "EXHIBITION_R03",
+        "type": "sensor",
+        "sensorKind": "power",
+        "label": "支路电功率传感器",
+        "unit": "kW",
+        "circuitId": "EXHIBITION_R03_C_POWER",
+        "upstreamIds": [
+          "V4_EXHIBITION_R03_DB"
+        ],
+        "simulated": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R04_WALLS",
+      "buildingId": "EXHIBITION",
+      "system": "interiors",
+      "level": "F0",
+      "label": "视听控制 · 隔墙与门洞",
+      "color": [
+        0.72,
+        0.77,
+        0.75
+      ],
+      "bounds": [
+        -58.25,
+        232.0,
+        1.625,
+        -50.75,
+        242.0,
+        4.625
+      ],
+      "freecadName": "V4_EXHIBITION_R04_WALLS",
+      "roomId": "EXHIBITION_R04",
+      "meta": {
+        "type": "room_partition",
+        "roomId": "EXHIBITION_R04",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R04_ROOM_GLAZING",
+      "buildingId": "EXHIBITION",
+      "system": "interiors",
+      "level": "F0",
+      "label": "观察窗",
+      "color": [
+        0.08,
+        0.24,
+        0.3
+      ],
+      "bounds": [
+        -56.45,
+        241.9775,
+        2.7,
+        -52.55,
+        242.0225,
+        4.05
+      ],
+      "freecadName": "V4_EXHIBITION_R04_ROOM_GLAZING",
+      "roomId": "EXHIBITION_R04",
+      "meta": {
+        "type": "interior_glazing",
+        "roomId": "EXHIBITION_R04",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R04_FLOOR_ZONE",
+      "buildingId": "EXHIBITION",
+      "system": "interiors",
+      "level": "F0",
+      "label": "视听控制 · 功能区域",
+      "color": [
+        0.74,
+        0.8,
+        0.78
+      ],
+      "bounds": [
+        -58.125,
+        232.125,
+        1.606,
+        -50.875,
+        241.875,
+        1.618
+      ],
+      "freecadName": "V4_EXHIBITION_R04_FLOOR_ZONE",
+      "roomId": "EXHIBITION_R04",
+      "meta": {
+        "type": "room_zone",
+        "roomAreaM2": 75.0,
+        "roomId": "EXHIBITION_R04",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R04_DOOR",
+      "buildingId": "EXHIBITION",
+      "system": "interiors",
+      "level": "F0",
+      "label": "常开门及门框",
+      "color": [
+        0.54,
+        0.62,
+        0.6
+      ],
+      "bounds": [
+        -55.655,
+        231.88,
+        1.6,
+        -53.345,
+        233.08832,
+        3.95
+      ],
+      "freecadName": "V4_EXHIBITION_R04_DOOR",
+      "roomId": "EXHIBITION_R04",
+      "meta": {
+        "type": "door",
+        "roomId": "EXHIBITION_R04",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R04_F01",
+      "buildingId": "EXHIBITION",
+      "system": "interiors",
+      "level": "F0",
+      "label": "操作工作台与显示器",
+      "color": [
+        0.58,
+        0.39,
+        0.23
+      ],
+      "bounds": [
+        -57.05,
+        233.81,
+        1.6,
+        -55.25,
+        235.25,
+        3.05
+      ],
+      "freecadName": "V4_EXHIBITION_R04_F01",
+      "roomId": "EXHIBITION_R04",
+      "meta": {
+        "type": "furniture",
+        "circuitId": "EXHIBITION_R04_C_POWER",
+        "ratedPowerKw": 0.25,
+        "roomId": "EXHIBITION_R04",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R04_F02",
+      "buildingId": "EXHIBITION",
+      "system": "interiors",
+      "level": "F0",
+      "label": "操作工作台与显示器",
+      "color": [
+        0.58,
+        0.39,
+        0.23
+      ],
+      "bounds": [
+        -53.75,
+        233.81,
+        1.6,
+        -51.95,
+        235.25,
+        3.05
+      ],
+      "freecadName": "V4_EXHIBITION_R04_F02",
+      "roomId": "EXHIBITION_R04",
+      "meta": {
+        "type": "furniture",
+        "circuitId": "EXHIBITION_R04_C_POWER",
+        "ratedPowerKw": 0.25,
+        "roomId": "EXHIBITION_R04",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R04_F03",
+      "buildingId": "EXHIBITION",
+      "system": "interiors",
+      "level": "F0",
+      "label": "操作工作台与显示器",
+      "color": [
+        0.58,
+        0.39,
+        0.23
+      ],
+      "bounds": [
+        -57.05,
+        238.21,
+        1.6,
+        -55.25,
+        239.65,
+        3.05
+      ],
+      "freecadName": "V4_EXHIBITION_R04_F03",
+      "roomId": "EXHIBITION_R04",
+      "meta": {
+        "type": "furniture",
+        "circuitId": "EXHIBITION_R04_C_POWER",
+        "ratedPowerKw": 0.25,
+        "roomId": "EXHIBITION_R04",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R04_F04",
+      "buildingId": "EXHIBITION",
+      "system": "interiors",
+      "level": "F0",
+      "label": "操作工作台与显示器",
+      "color": [
+        0.58,
+        0.39,
+        0.23
+      ],
+      "bounds": [
+        -53.75,
+        238.21,
+        1.6,
+        -51.95,
+        239.65,
+        3.05
+      ],
+      "freecadName": "V4_EXHIBITION_R04_F04",
+      "roomId": "EXHIBITION_R04",
+      "meta": {
+        "type": "furniture",
+        "circuitId": "EXHIBITION_R04_C_POWER",
+        "ratedPowerKw": 0.25,
+        "roomId": "EXHIBITION_R04",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R04_DB",
+      "buildingId": "EXHIBITION",
+      "system": "electrical",
+      "level": "F0",
+      "label": "房间配电箱与断路器",
+      "color": [
+        0.3,
+        0.34,
+        0.39
+      ],
+      "bounds": [
+        -51.475,
+        231.995,
+        2.7,
+        -50.925,
+        232.325,
+        3.5
+      ],
+      "freecadName": "V4_EXHIBITION_R04_DB",
+      "roomId": "EXHIBITION_R04",
+      "meta": {
+        "id": "V4_EXHIBITION_R04_DB",
+        "assetId": "V4_EXHIBITION_R04_DB",
+        "buildingId": "EXHIBITION",
+        "roomId": "EXHIBITION_R04",
+        "controlKind": "breaker",
+        "type": "distribution_panel",
+        "label": "房间配电箱",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "upstreamIds": [
+          "V4_EXHIBITION_MDB"
+        ],
+        "ratedPowerKw": 0,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R04_FEEDER",
+      "buildingId": "EXHIBITION",
+      "system": "electrical",
+      "level": "F0",
+      "label": "主桥架至房间配电馈线",
+      "color": [
+        0.39,
+        0.32,
+        0.23
+      ],
+      "bounds": [
+        -51.21944,
+        220.2,
+        3.4,
+        -51.18056,
+        232.21944,
+        5.13944
+      ],
+      "freecadName": "V4_EXHIBITION_R04_FEEDER",
+      "roomId": "EXHIBITION_R04",
+      "meta": {
+        "type": "cable",
+        "upstreamIds": [
+          "V4_EXHIBITION_MDB",
+          "V4_EXHIBITION_R04_DB"
+        ],
+        "roomId": "EXHIBITION_R04",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R04_L01",
+      "buildingId": "EXHIBITION",
+      "system": "lighting",
+      "level": "F0",
+      "label": "可调光照明分组 1",
+      "color": [
+        0.98,
+        0.91,
+        0.69
+      ],
+      "bounds": [
+        -57.52,
+        233.28,
+        4.338,
+        -56.88,
+        233.92,
+        4.95
+      ],
+      "freecadName": "V4_EXHIBITION_R04_L01",
+      "roomId": "EXHIBITION_R04",
+      "meta": {
+        "id": "V4_EXHIBITION_R04_L01",
+        "assetId": "V4_EXHIBITION_R04_L01",
+        "buildingId": "EXHIBITION",
+        "roomId": "EXHIBITION_R04",
+        "controlKind": "light",
+        "type": "luminaire_group",
+        "label": "照明分组 1",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "circuitId": "EXHIBITION_R04_C_LIGHT",
+        "ratedPowerKw": 0.1125,
+        "upstreamIds": [
+          "V4_EXHIBITION_R04_DB"
+        ],
+        "dimmable": true,
+        "fixtureCount": 1,
+        "sourceReference": "ERCO grouped track lighting for exhibition; LED panels elsewhere",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R04_L02",
+      "buildingId": "EXHIBITION",
+      "system": "lighting",
+      "level": "F0",
+      "label": "可调光照明分组 2",
+      "color": [
+        0.98,
+        0.91,
+        0.69
+      ],
+      "bounds": [
+        -52.12,
+        233.28,
+        4.338,
+        -51.48,
+        233.92,
+        4.95
+      ],
+      "freecadName": "V4_EXHIBITION_R04_L02",
+      "roomId": "EXHIBITION_R04",
+      "meta": {
+        "id": "V4_EXHIBITION_R04_L02",
+        "assetId": "V4_EXHIBITION_R04_L02",
+        "buildingId": "EXHIBITION",
+        "roomId": "EXHIBITION_R04",
+        "controlKind": "light",
+        "type": "luminaire_group",
+        "label": "照明分组 2",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "circuitId": "EXHIBITION_R04_C_LIGHT",
+        "ratedPowerKw": 0.1125,
+        "upstreamIds": [
+          "V4_EXHIBITION_R04_DB"
+        ],
+        "dimmable": true,
+        "fixtureCount": 1,
+        "sourceReference": "ERCO grouped track lighting for exhibition; LED panels elsewhere",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R04_L03",
+      "buildingId": "EXHIBITION",
+      "system": "lighting",
+      "level": "F0",
+      "label": "可调光照明分组 3",
+      "color": [
+        0.98,
+        0.91,
+        0.69
+      ],
+      "bounds": [
+        -57.52,
+        240.08,
+        4.338,
+        -56.88,
+        240.72,
+        4.95
+      ],
+      "freecadName": "V4_EXHIBITION_R04_L03",
+      "roomId": "EXHIBITION_R04",
+      "meta": {
+        "id": "V4_EXHIBITION_R04_L03",
+        "assetId": "V4_EXHIBITION_R04_L03",
+        "buildingId": "EXHIBITION",
+        "roomId": "EXHIBITION_R04",
+        "controlKind": "light",
+        "type": "luminaire_group",
+        "label": "照明分组 3",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "circuitId": "EXHIBITION_R04_C_LIGHT",
+        "ratedPowerKw": 0.1125,
+        "upstreamIds": [
+          "V4_EXHIBITION_R04_DB"
+        ],
+        "dimmable": true,
+        "fixtureCount": 1,
+        "sourceReference": "ERCO grouped track lighting for exhibition; LED panels elsewhere",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R04_L04",
+      "buildingId": "EXHIBITION",
+      "system": "lighting",
+      "level": "F0",
+      "label": "可调光照明分组 4",
+      "color": [
+        0.98,
+        0.91,
+        0.69
+      ],
+      "bounds": [
+        -52.12,
+        240.08,
+        4.338,
+        -51.48,
+        240.72,
+        4.95
+      ],
+      "freecadName": "V4_EXHIBITION_R04_L04",
+      "roomId": "EXHIBITION_R04",
+      "meta": {
+        "id": "V4_EXHIBITION_R04_L04",
+        "assetId": "V4_EXHIBITION_R04_L04",
+        "buildingId": "EXHIBITION",
+        "roomId": "EXHIBITION_R04",
+        "controlKind": "light",
+        "type": "luminaire_group",
+        "label": "照明分组 4",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "circuitId": "EXHIBITION_R04_C_LIGHT",
+        "ratedPowerKw": 0.1125,
+        "upstreamIds": [
+          "V4_EXHIBITION_R04_DB"
+        ],
+        "dimmable": true,
+        "fixtureCount": 1,
+        "sourceReference": "ERCO grouped track lighting for exhibition; LED panels elsewhere",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R04_LIGHT_DROPS",
+      "buildingId": "EXHIBITION",
+      "system": "electrical",
+      "level": "F0",
+      "label": "照明干线至灯具分组支线",
+      "color": [
+        0.3,
+        0.34,
+        0.39
+      ],
+      "bounds": [
+        -57.209,
+        233.371,
+        4.941,
+        -51.2,
+        240.4,
+        4.959
+      ],
+      "freecadName": "V4_EXHIBITION_R04_LIGHT_DROPS",
+      "roomId": "EXHIBITION_R04",
+      "meta": {
+        "type": "branch_cable",
+        "circuitId": "EXHIBITION_R04_C_LIGHT",
+        "roomId": "EXHIBITION_R04",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R04_CABLE_0",
+      "buildingId": "EXHIBITION",
+      "system": "electrical",
+      "level": "F0",
+      "label": "独立照明电路",
+      "color": [
+        0.3,
+        0.31,
+        0.34
+      ],
+      "bounds": [
+        -57.125,
+        232.18596,
+        3.3,
+        -51.18596,
+        233.39404,
+        4.96404
+      ],
+      "freecadName": "V4_EXHIBITION_R04_CABLE_0",
+      "roomId": "EXHIBITION_R04",
+      "meta": {
+        "type": "branch_cable",
+        "circuitId": "EXHIBITION_R04_C_LIGHT",
+        "upstreamIds": [
+          "V4_EXHIBITION_R04_DB"
+        ],
+        "roomId": "EXHIBITION_R04",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R04_CABLE_1",
+      "buildingId": "EXHIBITION",
+      "system": "electrical",
+      "level": "F0",
+      "label": "独立插座/设备电路",
+      "color": [
+        0.3,
+        0.31,
+        0.34
+      ],
+      "bounds": [
+        -57.125,
+        232.18596,
+        3.3,
+        -51.18596,
+        233.51404,
+        5.03404
+      ],
+      "freecadName": "V4_EXHIBITION_R04_CABLE_1",
+      "roomId": "EXHIBITION_R04",
+      "meta": {
+        "type": "branch_cable",
+        "circuitId": "EXHIBITION_R04_C_POWER",
+        "upstreamIds": [
+          "V4_EXHIBITION_R04_DB"
+        ],
+        "roomId": "EXHIBITION_R04",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R04_CABLE_2",
+      "buildingId": "EXHIBITION",
+      "system": "electrical",
+      "level": "F0",
+      "label": "独立空调电路",
+      "color": [
+        0.3,
+        0.31,
+        0.34
+      ],
+      "bounds": [
+        -57.125,
+        232.18596,
+        3.3,
+        -51.18596,
+        233.63404,
+        5.10404
+      ],
+      "freecadName": "V4_EXHIBITION_R04_CABLE_2",
+      "roomId": "EXHIBITION_R04",
+      "meta": {
+        "type": "branch_cable",
+        "circuitId": "EXHIBITION_R04_C_HVAC",
+        "upstreamIds": [
+          "V4_EXHIBITION_R04_DB"
+        ],
+        "roomId": "EXHIBITION_R04",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R04_SOCKET0",
+      "buildingId": "EXHIBITION",
+      "system": "electrical",
+      "level": "F0",
+      "label": "墙面插座及下引线",
+      "color": [
+        0.3,
+        0.34,
+        0.39
+      ],
+      "bounds": [
+        -56.815,
+        232.15,
+        1.96,
+        -51.2,
+        232.21,
+        5.02972
+      ],
+      "freecadName": "V4_EXHIBITION_R04_SOCKET0",
+      "roomId": "EXHIBITION_R04",
+      "meta": {
+        "type": "socket",
+        "circuitId": "EXHIBITION_R04_C_POWER",
+        "roomId": "EXHIBITION_R04",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R04_SOCKET1",
+      "buildingId": "EXHIBITION",
+      "system": "electrical",
+      "level": "F0",
+      "label": "墙面插座及下引线",
+      "color": [
+        0.3,
+        0.34,
+        0.39
+      ],
+      "bounds": [
+        -52.315,
+        232.15,
+        1.96,
+        -51.2,
+        232.21,
+        5.02972
+      ],
+      "freecadName": "V4_EXHIBITION_R04_SOCKET1",
+      "roomId": "EXHIBITION_R04",
+      "meta": {
+        "type": "socket",
+        "circuitId": "EXHIBITION_R04_C_POWER",
+        "roomId": "EXHIBITION_R04",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R04_AHU",
+      "buildingId": "EXHIBITION",
+      "system": "hvac",
+      "level": "F0",
+      "label": "局部空调与送回风终端",
+      "color": [
+        0.68,
+        0.75,
+        0.77
+      ],
+      "bounds": [
+        -57.775,
+        232.64,
+        3.75,
+        -51.875,
+        237.35,
+        4.9
+      ],
+      "freecadName": "V4_EXHIBITION_R04_AHU",
+      "roomId": "EXHIBITION_R04",
+      "meta": {
+        "id": "V4_EXHIBITION_R04_AHU",
+        "assetId": "V4_EXHIBITION_R04_AHU",
+        "buildingId": "EXHIBITION",
+        "roomId": "EXHIBITION_R04",
+        "controlKind": "ahu",
+        "type": "air_handling_unit",
+        "label": "局部空调/通风机组",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "circuitId": "EXHIBITION_R04_C_HVAC",
+        "ratedPowerKw": 0.9,
+        "upstreamIds": [
+          "V4_EXHIBITION_R04_DB"
+        ],
+        "designCoolingKw": 7.5,
+        "representativeTerminal": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R04_S_TEMPERATURE",
+      "buildingId": "EXHIBITION",
+      "system": "sensors",
+      "level": "F0",
+      "label": "温度传感器",
+      "color": [
+        0.22,
+        0.63,
+        0.65
+      ],
+      "bounds": [
+        -58.21,
+        234.12,
+        2.95,
+        -58.085,
+        234.28,
+        3.17
+      ],
+      "freecadName": "V4_EXHIBITION_R04_S_TEMPERATURE",
+      "roomId": "EXHIBITION_R04",
+      "meta": {
+        "id": "V4_EXHIBITION_R04_S_TEMPERATURE",
+        "assetId": "V4_EXHIBITION_R04_S_TEMPERATURE",
+        "buildingId": "EXHIBITION",
+        "roomId": "EXHIBITION_R04",
+        "type": "sensor",
+        "sensorKind": "temperature",
+        "label": "温度传感器",
+        "unit": "°C",
+        "circuitId": "EXHIBITION_R04_C_POWER",
+        "upstreamIds": [
+          "V4_EXHIBITION_R04_DB"
+        ],
+        "simulated": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R04_S_HUMIDITY",
+      "buildingId": "EXHIBITION",
+      "system": "sensors",
+      "level": "F0",
+      "label": "相对湿度传感器",
+      "color": [
+        0.22,
+        0.63,
+        0.65
+      ],
+      "bounds": [
+        -58.21,
+        234.42,
+        2.95,
+        -58.085,
+        234.58,
+        3.17
+      ],
+      "freecadName": "V4_EXHIBITION_R04_S_HUMIDITY",
+      "roomId": "EXHIBITION_R04",
+      "meta": {
+        "id": "V4_EXHIBITION_R04_S_HUMIDITY",
+        "assetId": "V4_EXHIBITION_R04_S_HUMIDITY",
+        "buildingId": "EXHIBITION",
+        "roomId": "EXHIBITION_R04",
+        "type": "sensor",
+        "sensorKind": "humidity",
+        "label": "相对湿度传感器",
+        "unit": "%RH",
+        "circuitId": "EXHIBITION_R04_C_POWER",
+        "upstreamIds": [
+          "V4_EXHIBITION_R04_DB"
+        ],
+        "simulated": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R04_S_CO2",
+      "buildingId": "EXHIBITION",
+      "system": "sensors",
+      "level": "F0",
+      "label": "二氧化碳传感器",
+      "color": [
+        0.22,
+        0.63,
+        0.65
+      ],
+      "bounds": [
+        -58.21,
+        234.72,
+        2.95,
+        -58.085,
+        234.88,
+        3.17
+      ],
+      "freecadName": "V4_EXHIBITION_R04_S_CO2",
+      "roomId": "EXHIBITION_R04",
+      "meta": {
+        "id": "V4_EXHIBITION_R04_S_CO2",
+        "assetId": "V4_EXHIBITION_R04_S_CO2",
+        "buildingId": "EXHIBITION",
+        "roomId": "EXHIBITION_R04",
+        "type": "sensor",
+        "sensorKind": "co2",
+        "label": "二氧化碳传感器",
+        "unit": "ppm",
+        "circuitId": "EXHIBITION_R04_C_POWER",
+        "upstreamIds": [
+          "V4_EXHIBITION_R04_DB"
+        ],
+        "simulated": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R04_S_OCCUPANCY",
+      "buildingId": "EXHIBITION",
+      "system": "sensors",
+      "level": "F0",
+      "label": "占用传感器",
+      "color": [
+        0.22,
+        0.63,
+        0.65
+      ],
+      "bounds": [
+        -54.58,
+        236.92,
+        4.195,
+        -54.42,
+        237.08,
+        4.325
+      ],
+      "freecadName": "V4_EXHIBITION_R04_S_OCCUPANCY",
+      "roomId": "EXHIBITION_R04",
+      "meta": {
+        "id": "V4_EXHIBITION_R04_S_OCCUPANCY",
+        "assetId": "V4_EXHIBITION_R04_S_OCCUPANCY",
+        "buildingId": "EXHIBITION",
+        "roomId": "EXHIBITION_R04",
+        "type": "sensor",
+        "sensorKind": "occupancy",
+        "label": "占用传感器",
+        "unit": "persons",
+        "circuitId": "EXHIBITION_R04_C_POWER",
+        "upstreamIds": [
+          "V4_EXHIBITION_R04_DB"
+        ],
+        "simulated": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R04_S_POWER",
+      "buildingId": "EXHIBITION",
+      "system": "sensors",
+      "level": "F0",
+      "label": "支路电功率传感器",
+      "color": [
+        0.22,
+        0.63,
+        0.65
+      ],
+      "bounds": [
+        -58.21,
+        235.32,
+        2.95,
+        -58.085,
+        235.48,
+        3.17
+      ],
+      "freecadName": "V4_EXHIBITION_R04_S_POWER",
+      "roomId": "EXHIBITION_R04",
+      "meta": {
+        "id": "V4_EXHIBITION_R04_S_POWER",
+        "assetId": "V4_EXHIBITION_R04_S_POWER",
+        "buildingId": "EXHIBITION",
+        "roomId": "EXHIBITION_R04",
+        "type": "sensor",
+        "sensorKind": "power",
+        "label": "支路电功率传感器",
+        "unit": "kW",
+        "circuitId": "EXHIBITION_R04_C_POWER",
+        "upstreamIds": [
+          "V4_EXHIBITION_R04_DB"
+        ],
+        "simulated": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R05_WALLS",
+      "buildingId": "EXHIBITION",
+      "system": "interiors",
+      "level": "F0",
+      "label": "卫生间 · 隔墙与门洞",
+      "color": [
+        0.72,
+        0.77,
+        0.75
+      ],
+      "bounds": [
+        50.75,
+        232.0,
+        1.625,
+        58.25,
+        242.0,
+        4.625
+      ],
+      "freecadName": "V4_EXHIBITION_R05_WALLS",
+      "roomId": "EXHIBITION_R05",
+      "meta": {
+        "type": "room_partition",
+        "roomId": "EXHIBITION_R05",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R05_ROOM_GLAZING",
+      "buildingId": "EXHIBITION",
+      "system": "interiors",
+      "level": "F0",
+      "label": "观察窗",
+      "color": [
+        0.08,
+        0.24,
+        0.3
+      ],
+      "bounds": [
+        52.55,
+        241.9775,
+        2.7,
+        56.45,
+        242.0225,
+        4.05
+      ],
+      "freecadName": "V4_EXHIBITION_R05_ROOM_GLAZING",
+      "roomId": "EXHIBITION_R05",
+      "meta": {
+        "type": "interior_glazing",
+        "roomId": "EXHIBITION_R05",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R05_FLOOR_ZONE",
+      "buildingId": "EXHIBITION",
+      "system": "interiors",
+      "level": "F0",
+      "label": "卫生间 · 功能区域",
+      "color": [
+        0.74,
+        0.8,
+        0.78
+      ],
+      "bounds": [
+        50.875,
+        232.125,
+        1.606,
+        58.125,
+        241.875,
+        1.618
+      ],
+      "freecadName": "V4_EXHIBITION_R05_FLOOR_ZONE",
+      "roomId": "EXHIBITION_R05",
+      "meta": {
+        "type": "room_zone",
+        "roomAreaM2": 75.0,
+        "roomId": "EXHIBITION_R05",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R05_DOOR",
+      "buildingId": "EXHIBITION",
+      "system": "interiors",
+      "level": "F0",
+      "label": "常开门及门框",
+      "color": [
+        0.54,
+        0.62,
+        0.6
+      ],
+      "bounds": [
+        53.345,
+        231.88,
+        1.6,
+        55.655,
+        233.08832,
+        3.95
+      ],
+      "freecadName": "V4_EXHIBITION_R05_DOOR",
+      "roomId": "EXHIBITION_R05",
+      "meta": {
+        "type": "door",
+        "roomId": "EXHIBITION_R05",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R05_DB",
+      "buildingId": "EXHIBITION",
+      "system": "electrical",
+      "level": "F0",
+      "label": "房间配电箱与断路器",
+      "color": [
+        0.3,
+        0.34,
+        0.39
+      ],
+      "bounds": [
+        57.525,
+        231.995,
+        2.7,
+        58.075,
+        232.325,
+        3.5
+      ],
+      "freecadName": "V4_EXHIBITION_R05_DB",
+      "roomId": "EXHIBITION_R05",
+      "meta": {
+        "id": "V4_EXHIBITION_R05_DB",
+        "assetId": "V4_EXHIBITION_R05_DB",
+        "buildingId": "EXHIBITION",
+        "roomId": "EXHIBITION_R05",
+        "controlKind": "breaker",
+        "type": "distribution_panel",
+        "label": "房间配电箱",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "upstreamIds": [
+          "V4_EXHIBITION_MDB"
+        ],
+        "ratedPowerKw": 0,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R05_FEEDER",
+      "buildingId": "EXHIBITION",
+      "system": "electrical",
+      "level": "F0",
+      "label": "主桥架至房间配电馈线",
+      "color": [
+        0.39,
+        0.32,
+        0.23
+      ],
+      "bounds": [
+        57.78056,
+        220.2,
+        3.4,
+        57.81944,
+        232.21944,
+        5.13944
+      ],
+      "freecadName": "V4_EXHIBITION_R05_FEEDER",
+      "roomId": "EXHIBITION_R05",
+      "meta": {
+        "type": "cable",
+        "upstreamIds": [
+          "V4_EXHIBITION_MDB",
+          "V4_EXHIBITION_R05_DB"
+        ],
+        "roomId": "EXHIBITION_R05",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R05_L01",
+      "buildingId": "EXHIBITION",
+      "system": "lighting",
+      "level": "F0",
+      "label": "可调光照明分组 1",
+      "color": [
+        0.98,
+        0.91,
+        0.69
+      ],
+      "bounds": [
+        51.48,
+        233.28,
+        4.338,
+        52.12,
+        233.92,
+        4.95
+      ],
+      "freecadName": "V4_EXHIBITION_R05_L01",
+      "roomId": "EXHIBITION_R05",
+      "meta": {
+        "id": "V4_EXHIBITION_R05_L01",
+        "assetId": "V4_EXHIBITION_R05_L01",
+        "buildingId": "EXHIBITION",
+        "roomId": "EXHIBITION_R05",
+        "controlKind": "light",
+        "type": "luminaire_group",
+        "label": "照明分组 1",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "circuitId": "EXHIBITION_R05_C_LIGHT",
+        "ratedPowerKw": 0.1125,
+        "upstreamIds": [
+          "V4_EXHIBITION_R05_DB"
+        ],
+        "dimmable": true,
+        "fixtureCount": 1,
+        "sourceReference": "ERCO grouped track lighting for exhibition; LED panels elsewhere",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R05_L02",
+      "buildingId": "EXHIBITION",
+      "system": "lighting",
+      "level": "F0",
+      "label": "可调光照明分组 2",
+      "color": [
+        0.98,
+        0.91,
+        0.69
+      ],
+      "bounds": [
+        56.88,
+        233.28,
+        4.338,
+        57.52,
+        233.92,
+        4.95
+      ],
+      "freecadName": "V4_EXHIBITION_R05_L02",
+      "roomId": "EXHIBITION_R05",
+      "meta": {
+        "id": "V4_EXHIBITION_R05_L02",
+        "assetId": "V4_EXHIBITION_R05_L02",
+        "buildingId": "EXHIBITION",
+        "roomId": "EXHIBITION_R05",
+        "controlKind": "light",
+        "type": "luminaire_group",
+        "label": "照明分组 2",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "circuitId": "EXHIBITION_R05_C_LIGHT",
+        "ratedPowerKw": 0.1125,
+        "upstreamIds": [
+          "V4_EXHIBITION_R05_DB"
+        ],
+        "dimmable": true,
+        "fixtureCount": 1,
+        "sourceReference": "ERCO grouped track lighting for exhibition; LED panels elsewhere",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R05_L03",
+      "buildingId": "EXHIBITION",
+      "system": "lighting",
+      "level": "F0",
+      "label": "可调光照明分组 3",
+      "color": [
+        0.98,
+        0.91,
+        0.69
+      ],
+      "bounds": [
+        51.48,
+        240.08,
+        4.338,
+        52.12,
+        240.72,
+        4.95
+      ],
+      "freecadName": "V4_EXHIBITION_R05_L03",
+      "roomId": "EXHIBITION_R05",
+      "meta": {
+        "id": "V4_EXHIBITION_R05_L03",
+        "assetId": "V4_EXHIBITION_R05_L03",
+        "buildingId": "EXHIBITION",
+        "roomId": "EXHIBITION_R05",
+        "controlKind": "light",
+        "type": "luminaire_group",
+        "label": "照明分组 3",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "circuitId": "EXHIBITION_R05_C_LIGHT",
+        "ratedPowerKw": 0.1125,
+        "upstreamIds": [
+          "V4_EXHIBITION_R05_DB"
+        ],
+        "dimmable": true,
+        "fixtureCount": 1,
+        "sourceReference": "ERCO grouped track lighting for exhibition; LED panels elsewhere",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R05_L04",
+      "buildingId": "EXHIBITION",
+      "system": "lighting",
+      "level": "F0",
+      "label": "可调光照明分组 4",
+      "color": [
+        0.98,
+        0.91,
+        0.69
+      ],
+      "bounds": [
+        56.88,
+        240.08,
+        4.338,
+        57.52,
+        240.72,
+        4.95
+      ],
+      "freecadName": "V4_EXHIBITION_R05_L04",
+      "roomId": "EXHIBITION_R05",
+      "meta": {
+        "id": "V4_EXHIBITION_R05_L04",
+        "assetId": "V4_EXHIBITION_R05_L04",
+        "buildingId": "EXHIBITION",
+        "roomId": "EXHIBITION_R05",
+        "controlKind": "light",
+        "type": "luminaire_group",
+        "label": "照明分组 4",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "circuitId": "EXHIBITION_R05_C_LIGHT",
+        "ratedPowerKw": 0.1125,
+        "upstreamIds": [
+          "V4_EXHIBITION_R05_DB"
+        ],
+        "dimmable": true,
+        "fixtureCount": 1,
+        "sourceReference": "ERCO grouped track lighting for exhibition; LED panels elsewhere",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R05_LIGHT_DROPS",
+      "buildingId": "EXHIBITION",
+      "system": "electrical",
+      "level": "F0",
+      "label": "照明干线至灯具分组支线",
+      "color": [
+        0.3,
+        0.34,
+        0.39
+      ],
+      "bounds": [
+        51.791,
+        233.371,
+        4.941,
+        57.8,
+        240.4,
+        4.959
+      ],
+      "freecadName": "V4_EXHIBITION_R05_LIGHT_DROPS",
+      "roomId": "EXHIBITION_R05",
+      "meta": {
+        "type": "branch_cable",
+        "circuitId": "EXHIBITION_R05_C_LIGHT",
+        "roomId": "EXHIBITION_R05",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R05_CABLE_0",
+      "buildingId": "EXHIBITION",
+      "system": "electrical",
+      "level": "F0",
+      "label": "独立照明电路",
+      "color": [
+        0.3,
+        0.31,
+        0.34
+      ],
+      "bounds": [
+        51.875,
+        232.18596,
+        3.3,
+        57.81404,
+        233.39404,
+        4.96404
+      ],
+      "freecadName": "V4_EXHIBITION_R05_CABLE_0",
+      "roomId": "EXHIBITION_R05",
+      "meta": {
+        "type": "branch_cable",
+        "circuitId": "EXHIBITION_R05_C_LIGHT",
+        "upstreamIds": [
+          "V4_EXHIBITION_R05_DB"
+        ],
+        "roomId": "EXHIBITION_R05",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R05_CABLE_1",
+      "buildingId": "EXHIBITION",
+      "system": "electrical",
+      "level": "F0",
+      "label": "独立插座/设备电路",
+      "color": [
+        0.3,
+        0.31,
+        0.34
+      ],
+      "bounds": [
+        51.875,
+        232.18596,
+        3.3,
+        57.81404,
+        233.51404,
+        5.03404
+      ],
+      "freecadName": "V4_EXHIBITION_R05_CABLE_1",
+      "roomId": "EXHIBITION_R05",
+      "meta": {
+        "type": "branch_cable",
+        "circuitId": "EXHIBITION_R05_C_POWER",
+        "upstreamIds": [
+          "V4_EXHIBITION_R05_DB"
+        ],
+        "roomId": "EXHIBITION_R05",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R05_CABLE_2",
+      "buildingId": "EXHIBITION",
+      "system": "electrical",
+      "level": "F0",
+      "label": "独立空调电路",
+      "color": [
+        0.3,
+        0.31,
+        0.34
+      ],
+      "bounds": [
+        51.875,
+        232.18596,
+        3.3,
+        57.81404,
+        233.63404,
+        5.10404
+      ],
+      "freecadName": "V4_EXHIBITION_R05_CABLE_2",
+      "roomId": "EXHIBITION_R05",
+      "meta": {
+        "type": "branch_cable",
+        "circuitId": "EXHIBITION_R05_C_HVAC",
+        "upstreamIds": [
+          "V4_EXHIBITION_R05_DB"
+        ],
+        "roomId": "EXHIBITION_R05",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R05_SOCKET0",
+      "buildingId": "EXHIBITION",
+      "system": "electrical",
+      "level": "F0",
+      "label": "墙面插座及下引线",
+      "color": [
+        0.3,
+        0.34,
+        0.39
+      ],
+      "bounds": [
+        52.185,
+        232.15,
+        1.96,
+        57.8,
+        232.21,
+        5.02972
+      ],
+      "freecadName": "V4_EXHIBITION_R05_SOCKET0",
+      "roomId": "EXHIBITION_R05",
+      "meta": {
+        "type": "socket",
+        "circuitId": "EXHIBITION_R05_C_POWER",
+        "roomId": "EXHIBITION_R05",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R05_SOCKET1",
+      "buildingId": "EXHIBITION",
+      "system": "electrical",
+      "level": "F0",
+      "label": "墙面插座及下引线",
+      "color": [
+        0.3,
+        0.34,
+        0.39
+      ],
+      "bounds": [
+        56.685,
+        232.15,
+        1.96,
+        57.8,
+        232.21,
+        5.02972
+      ],
+      "freecadName": "V4_EXHIBITION_R05_SOCKET1",
+      "roomId": "EXHIBITION_R05",
+      "meta": {
+        "type": "socket",
+        "circuitId": "EXHIBITION_R05_C_POWER",
+        "roomId": "EXHIBITION_R05",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R05_AHU",
+      "buildingId": "EXHIBITION",
+      "system": "hvac",
+      "level": "F0",
+      "label": "局部空调与送回风终端",
+      "color": [
+        0.68,
+        0.75,
+        0.77
+      ],
+      "bounds": [
+        51.225,
+        232.64,
+        3.75,
+        57.125,
+        237.35,
+        4.9
+      ],
+      "freecadName": "V4_EXHIBITION_R05_AHU",
+      "roomId": "EXHIBITION_R05",
+      "meta": {
+        "id": "V4_EXHIBITION_R05_AHU",
+        "assetId": "V4_EXHIBITION_R05_AHU",
+        "buildingId": "EXHIBITION",
+        "roomId": "EXHIBITION_R05",
+        "controlKind": "ahu",
+        "type": "air_handling_unit",
+        "label": "局部空调/通风机组",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "circuitId": "EXHIBITION_R05_C_HVAC",
+        "ratedPowerKw": 0.9,
+        "upstreamIds": [
+          "V4_EXHIBITION_R05_DB"
+        ],
+        "designCoolingKw": 7.5,
+        "representativeTerminal": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R05_SINK",
+      "buildingId": "EXHIBITION",
+      "system": "water",
+      "level": "F0",
+      "label": "洗手/工艺准备水槽",
+      "color": [
+        0.81,
+        0.83,
+        0.82
+      ],
+      "bounds": [
+        56.74,
+        238.18,
+        1.6,
+        57.66,
+        238.82,
+        2.86944
+      ],
+      "freecadName": "V4_EXHIBITION_R05_SINK",
+      "roomId": "EXHIBITION_R05",
+      "meta": {
+        "type": "sink",
+        "demandLpm": 6,
+        "requiresWater": true,
+        "roomId": "EXHIBITION_R05",
+        "designStatus": "concept inferred; simulated data only",
+        "waterBranchIds": [
+          "EXHIBITION_R05_W_COLD",
+          "EXHIBITION_R05_W_HOT"
+        ]
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R05_TOILET",
+      "buildingId": "EXHIBITION",
+      "system": "water",
+      "level": "F0",
+      "label": "卫生洁具",
+      "color": [
+        0.9,
+        0.91,
+        0.88
+      ],
+      "bounds": [
+        52.45,
+        238.575,
+        1.6,
+        53.1,
+        239.55,
+        2.48
+      ],
+      "freecadName": "V4_EXHIBITION_R05_TOILET",
+      "roomId": "EXHIBITION_R05",
+      "meta": {
+        "type": "toilet",
+        "demandLpm": 5,
+        "waterBranchId": "EXHIBITION_R05_W_COLD",
+        "roomId": "EXHIBITION_R05",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R05_DRAIN",
+      "buildingId": "EXHIBITION",
+      "system": "water",
+      "level": "F0",
+      "label": "独立排水支管（预留楼板套管）",
+      "color": [
+        0.4,
+        0.43,
+        0.4
+      ],
+      "bounds": [
+        -52.0,
+        224.4406,
+        0.9406,
+        57.2594,
+        238.5594,
+        2.44
+      ],
+      "freecadName": "V4_EXHIBITION_R05_DRAIN",
+      "roomId": "EXHIBITION_R05",
+      "meta": {
+        "type": "drain_pipe",
+        "medium": "sanitary_drain",
+        "waterBranchId": "EXHIBITION_R05_W_DRAIN",
+        "penetrationsRequireCoordination": true,
+        "roomId": "EXHIBITION_R05",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R05_V_COLD",
+      "buildingId": "EXHIBITION",
+      "system": "water",
+      "level": "F0",
+      "label": "可控支路阀门",
+      "color": [
+        0.75,
+        0.34,
+        0.2
+      ],
+      "bounds": [
+        55.88,
+        232.29,
+        4.64,
+        56.28,
+        232.51,
+        4.995
+      ],
+      "freecadName": "V4_EXHIBITION_R05_V_COLD",
+      "roomId": "EXHIBITION_R05",
+      "meta": {
+        "id": "V4_EXHIBITION_R05_V_COLD",
+        "assetId": "V4_EXHIBITION_R05_V_COLD",
+        "buildingId": "EXHIBITION",
+        "roomId": "EXHIBITION_R05",
+        "controlKind": "valve",
+        "type": "isolation_valve",
+        "label": "生活冷水支路阀",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "waterBranchId": "EXHIBITION_R05_W_COLD",
+        "medium": "domestic_cold",
+        "ratedFlowLpm": 12,
+        "upstreamIds": [
+          "V4_EXHIBITION_WATER_MAIN"
+        ],
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R05_PIPE_COLD",
+      "buildingId": "EXHIBITION",
+      "system": "water",
+      "level": "F0",
+      "label": "domestic_cold · 阀后支管",
+      "color": [
+        0.12,
+        0.44,
+        0.72
+      ],
+      "bounds": [
+        55.5622,
+        222.0,
+        2.54,
+        57.2378,
+        238.7678,
+        4.7878
+      ],
+      "freecadName": "V4_EXHIBITION_R05_PIPE_COLD",
+      "roomId": "EXHIBITION_R05",
+      "meta": {
+        "type": "water_branch",
+        "medium": "domestic_cold",
+        "waterBranchId": "EXHIBITION_R05_W_COLD",
+        "upstreamIds": [
+          "V4_EXHIBITION_R05_V_COLD"
+        ],
+        "roomId": "EXHIBITION_R05",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R05_V_HOT",
+      "buildingId": "EXHIBITION",
+      "system": "water",
+      "level": "F0",
+      "label": "可控支路阀门",
+      "color": [
+        0.75,
+        0.34,
+        0.2
+      ],
+      "bounds": [
+        56.089,
+        232.29,
+        4.64,
+        56.489,
+        232.51,
+        4.995
+      ],
+      "freecadName": "V4_EXHIBITION_R05_V_HOT",
+      "roomId": "EXHIBITION_R05",
+      "meta": {
+        "id": "V4_EXHIBITION_R05_V_HOT",
+        "assetId": "V4_EXHIBITION_R05_V_HOT",
+        "buildingId": "EXHIBITION",
+        "roomId": "EXHIBITION_R05",
+        "controlKind": "valve",
+        "type": "isolation_valve",
+        "label": "生活热水支路阀",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "waterBranchId": "EXHIBITION_R05_W_HOT",
+        "medium": "domestic_hot",
+        "ratedFlowLpm": 8,
+        "upstreamIds": [
+          "V4_EXHIBITION_HOT_MAIN"
+        ],
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R05_PIPE_HOT",
+      "buildingId": "EXHIBITION",
+      "system": "water",
+      "level": "F0",
+      "label": "domestic_hot · 阀后支管",
+      "color": [
+        0.77,
+        0.27,
+        0.21
+      ],
+      "bounds": [
+        55.9122,
+        223.0,
+        2.54,
+        57.1178,
+        238.7678,
+        4.7878
+      ],
+      "freecadName": "V4_EXHIBITION_R05_PIPE_HOT",
+      "roomId": "EXHIBITION_R05",
+      "meta": {
+        "type": "water_branch",
+        "medium": "domestic_hot",
+        "waterBranchId": "EXHIBITION_R05_W_HOT",
+        "upstreamIds": [
+          "V4_EXHIBITION_R05_V_HOT"
+        ],
+        "roomId": "EXHIBITION_R05",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R05_S_TEMPERATURE",
+      "buildingId": "EXHIBITION",
+      "system": "sensors",
+      "level": "F0",
+      "label": "温度传感器",
+      "color": [
+        0.22,
+        0.63,
+        0.65
+      ],
+      "bounds": [
+        50.79,
+        234.12,
+        2.95,
+        50.915,
+        234.28,
+        3.17
+      ],
+      "freecadName": "V4_EXHIBITION_R05_S_TEMPERATURE",
+      "roomId": "EXHIBITION_R05",
+      "meta": {
+        "id": "V4_EXHIBITION_R05_S_TEMPERATURE",
+        "assetId": "V4_EXHIBITION_R05_S_TEMPERATURE",
+        "buildingId": "EXHIBITION",
+        "roomId": "EXHIBITION_R05",
+        "type": "sensor",
+        "sensorKind": "temperature",
+        "label": "温度传感器",
+        "unit": "°C",
+        "circuitId": "EXHIBITION_R05_C_POWER",
+        "upstreamIds": [
+          "V4_EXHIBITION_R05_DB"
+        ],
+        "simulated": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R05_S_HUMIDITY",
+      "buildingId": "EXHIBITION",
+      "system": "sensors",
+      "level": "F0",
+      "label": "相对湿度传感器",
+      "color": [
+        0.22,
+        0.63,
+        0.65
+      ],
+      "bounds": [
+        50.79,
+        234.42,
+        2.95,
+        50.915,
+        234.58,
+        3.17
+      ],
+      "freecadName": "V4_EXHIBITION_R05_S_HUMIDITY",
+      "roomId": "EXHIBITION_R05",
+      "meta": {
+        "id": "V4_EXHIBITION_R05_S_HUMIDITY",
+        "assetId": "V4_EXHIBITION_R05_S_HUMIDITY",
+        "buildingId": "EXHIBITION",
+        "roomId": "EXHIBITION_R05",
+        "type": "sensor",
+        "sensorKind": "humidity",
+        "label": "相对湿度传感器",
+        "unit": "%RH",
+        "circuitId": "EXHIBITION_R05_C_POWER",
+        "upstreamIds": [
+          "V4_EXHIBITION_R05_DB"
+        ],
+        "simulated": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R05_S_CO2",
+      "buildingId": "EXHIBITION",
+      "system": "sensors",
+      "level": "F0",
+      "label": "二氧化碳传感器",
+      "color": [
+        0.22,
+        0.63,
+        0.65
+      ],
+      "bounds": [
+        50.79,
+        234.72,
+        2.95,
+        50.915,
+        234.88,
+        3.17
+      ],
+      "freecadName": "V4_EXHIBITION_R05_S_CO2",
+      "roomId": "EXHIBITION_R05",
+      "meta": {
+        "id": "V4_EXHIBITION_R05_S_CO2",
+        "assetId": "V4_EXHIBITION_R05_S_CO2",
+        "buildingId": "EXHIBITION",
+        "roomId": "EXHIBITION_R05",
+        "type": "sensor",
+        "sensorKind": "co2",
+        "label": "二氧化碳传感器",
+        "unit": "ppm",
+        "circuitId": "EXHIBITION_R05_C_POWER",
+        "upstreamIds": [
+          "V4_EXHIBITION_R05_DB"
+        ],
+        "simulated": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R05_S_OCCUPANCY",
+      "buildingId": "EXHIBITION",
+      "system": "sensors",
+      "level": "F0",
+      "label": "占用传感器",
+      "color": [
+        0.22,
+        0.63,
+        0.65
+      ],
+      "bounds": [
+        54.42,
+        236.92,
+        4.195,
+        54.58,
+        237.08,
+        4.325
+      ],
+      "freecadName": "V4_EXHIBITION_R05_S_OCCUPANCY",
+      "roomId": "EXHIBITION_R05",
+      "meta": {
+        "id": "V4_EXHIBITION_R05_S_OCCUPANCY",
+        "assetId": "V4_EXHIBITION_R05_S_OCCUPANCY",
+        "buildingId": "EXHIBITION",
+        "roomId": "EXHIBITION_R05",
+        "type": "sensor",
+        "sensorKind": "occupancy",
+        "label": "占用传感器",
+        "unit": "persons",
+        "circuitId": "EXHIBITION_R05_C_POWER",
+        "upstreamIds": [
+          "V4_EXHIBITION_R05_DB"
+        ],
+        "simulated": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R05_S_POWER",
+      "buildingId": "EXHIBITION",
+      "system": "sensors",
+      "level": "F0",
+      "label": "支路电功率传感器",
+      "color": [
+        0.22,
+        0.63,
+        0.65
+      ],
+      "bounds": [
+        50.79,
+        235.32,
+        2.95,
+        50.915,
+        235.48,
+        3.17
+      ],
+      "freecadName": "V4_EXHIBITION_R05_S_POWER",
+      "roomId": "EXHIBITION_R05",
+      "meta": {
+        "id": "V4_EXHIBITION_R05_S_POWER",
+        "assetId": "V4_EXHIBITION_R05_S_POWER",
+        "buildingId": "EXHIBITION",
+        "roomId": "EXHIBITION_R05",
+        "type": "sensor",
+        "sensorKind": "power",
+        "label": "支路电功率传感器",
+        "unit": "kW",
+        "circuitId": "EXHIBITION_R05_C_POWER",
+        "upstreamIds": [
+          "V4_EXHIBITION_R05_DB"
+        ],
+        "simulated": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R05_S_FLOW_COLD",
+      "buildingId": "EXHIBITION",
+      "system": "sensors",
+      "level": "F0",
+      "label": "支路流量计",
+      "color": [
+        0.22,
+        0.63,
+        0.65
+      ],
+      "bounds": [
+        56.53,
+        232.325,
+        4.675,
+        56.75,
+        232.475,
+        4.9
+      ],
+      "freecadName": "V4_EXHIBITION_R05_S_FLOW_COLD",
+      "roomId": "EXHIBITION_R05",
+      "meta": {
+        "id": "V4_EXHIBITION_R05_S_FLOW_COLD",
+        "assetId": "V4_EXHIBITION_R05_S_FLOW_COLD",
+        "buildingId": "EXHIBITION",
+        "roomId": "EXHIBITION_R05",
+        "type": "sensor",
+        "sensorKind": "water_flow",
+        "label": "支路流量计",
+        "unit": "L/min",
+        "waterBranchId": "EXHIBITION_R05_W_COLD",
+        "simulated": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_EXHIBITION_R05_S_FLOW_HOT",
+      "buildingId": "EXHIBITION",
+      "system": "sensors",
+      "level": "F0",
+      "label": "支路流量计",
+      "color": [
+        0.22,
+        0.63,
+        0.65
+      ],
+      "bounds": [
+        56.5745,
+        232.325,
+        4.675,
+        56.7945,
+        232.475,
+        4.9
+      ],
+      "freecadName": "V4_EXHIBITION_R05_S_FLOW_HOT",
+      "roomId": "EXHIBITION_R05",
+      "meta": {
+        "id": "V4_EXHIBITION_R05_S_FLOW_HOT",
+        "assetId": "V4_EXHIBITION_R05_S_FLOW_HOT",
+        "buildingId": "EXHIBITION",
+        "roomId": "EXHIBITION_R05",
+        "type": "sensor",
+        "sensorKind": "water_flow",
+        "label": "支路流量计",
+        "unit": "L/min",
+        "waterBranchId": "EXHIBITION_R05_W_HOT",
+        "simulated": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    }
+  ]
+}

@@ -1,0 +1,552 @@
+{
+  "building": {
+    "id": "DINING_E",
+    "position": [
+      258,
+      136,
+      0
+    ],
+    "size": [
+      61,
+      34,
+      13
+    ],
+    "features": [
+      "hipped tiled roof",
+      "eaves and ridge",
+      "timber lattice",
+      "lakeside deck",
+      "railings and seating"
+    ],
+    "source": "R1 east pitched form; labels conflict",
+    "confidence": "medium",
+    "levels": {
+      "F0": 0.0,
+      "F1": 6.5,
+      "RF": 13
+    },
+    "dimensionBasis": "V2 image-inferred envelope, architecturally estimated interiors",
+    "units": "m",
+    "axesX": [
+      -29.0,
+      -17.4,
+      -5.8,
+      5.8,
+      17.4,
+      29.0
+    ],
+    "axesY": [
+      -15.5,
+      0.0,
+      15.5
+    ]
+  },
+  "components": [
+    {
+      "id": "DINING_E_foundation_0507",
+      "buildingId": "DINING_E",
+      "system": "foundation",
+      "level": "FOUNDATION",
+      "label": "Concept raft",
+      "color": [
+        0.48,
+        0.52,
+        0.57
+      ],
+      "bounds": [
+        225.0,
+        116.5,
+        -1.2,
+        291.0,
+        155.5,
+        0.0
+      ],
+      "source": "Design concept",
+      "freecadName": "DINING_E_foundation_0507"
+    },
+    {
+      "id": "DINING_E_structure_0508",
+      "buildingId": "DINING_E",
+      "system": "structure",
+      "level": "ALL",
+      "label": "Column frame 01",
+      "color": [
+        0.69,
+        0.73,
+        0.77
+      ],
+      "bounds": [
+        228.575,
+        120.075,
+        0.0,
+        287.425,
+        120.925,
+        13.0
+      ],
+      "source": "Design concept",
+      "freecadName": "DINING_E_structure_0508"
+    },
+    {
+      "id": "DINING_E_structure_0509",
+      "buildingId": "DINING_E",
+      "system": "structure",
+      "level": "ALL",
+      "label": "Column frame 02",
+      "color": [
+        0.69,
+        0.73,
+        0.77
+      ],
+      "bounds": [
+        228.575,
+        135.575,
+        0.0,
+        287.425,
+        136.425,
+        13.0
+      ],
+      "source": "Design concept",
+      "freecadName": "DINING_E_structure_0509"
+    },
+    {
+      "id": "DINING_E_structure_0510",
+      "buildingId": "DINING_E",
+      "system": "structure",
+      "level": "ALL",
+      "label": "Column frame 03",
+      "color": [
+        0.69,
+        0.73,
+        0.77
+      ],
+      "bounds": [
+        228.575,
+        151.075,
+        0.0,
+        287.425,
+        151.925,
+        13.0
+      ],
+      "source": "Design concept",
+      "freecadName": "DINING_E_structure_0510"
+    },
+    {
+      "id": "DINING_E_slabs_0511",
+      "buildingId": "DINING_E",
+      "system": "slabs",
+      "level": "F0",
+      "label": "F0 floor plate",
+      "color": [
+        0.82,
+        0.84,
+        0.85
+      ],
+      "bounds": [
+        227.5,
+        119.0,
+        0.0,
+        288.5,
+        153.0,
+        0.4
+      ],
+      "source": "Design concept",
+      "freecadName": "DINING_E_slabs_0511"
+    },
+    {
+      "id": "DINING_E_slabs_0512",
+      "buildingId": "DINING_E",
+      "system": "slabs",
+      "level": "F1",
+      "label": "F1 floor plate",
+      "color": [
+        0.82,
+        0.84,
+        0.85
+      ],
+      "bounds": [
+        227.5,
+        119.0,
+        6.5,
+        288.5,
+        153.0,
+        6.9
+      ],
+      "source": "Design concept",
+      "freecadName": "DINING_E_slabs_0512"
+    },
+    {
+      "id": "DINING_E_roof_0513",
+      "buildingId": "DINING_E",
+      "system": "roof",
+      "level": "RF",
+      "label": "RF floor plate",
+      "color": [
+        0.49,
+        0.56,
+        0.59
+      ],
+      "bounds": [
+        227.5,
+        119.0,
+        13.0,
+        288.5,
+        153.0,
+        13.4
+      ],
+      "source": "Design concept",
+      "freecadName": "DINING_E_roof_0513"
+    },
+    {
+      "id": "DINING_E_glazing_0514",
+      "buildingId": "DINING_E",
+      "system": "glazing",
+      "level": "ALL",
+      "label": "South curtain wall",
+      "color": [
+        0.24,
+        0.47,
+        0.58
+      ],
+      "bounds": [
+        227.58,
+        118.94,
+        0.4,
+        288.42,
+        119.06,
+        12.8
+      ],
+      "source": "R1/R2 and Schueco mullion-transom construction",
+      "freecadName": "DINING_E_glazing_0514"
+    },
+    {
+      "id": "DINING_E_envelope_0515",
+      "buildingId": "DINING_E",
+      "system": "envelope",
+      "level": "ALL",
+      "label": "Curtain-wall mullions and transoms",
+      "color": [
+        0.42,
+        0.44,
+        0.44
+      ],
+      "bounds": [
+        227.44,
+        118.66,
+        0.4,
+        288.56,
+        118.98,
+        13.14
+      ],
+      "source": "Design concept",
+      "freecadName": "DINING_E_envelope_0515"
+    },
+    {
+      "id": "DINING_E_envelope_0516",
+      "buildingId": "DINING_E",
+      "system": "envelope",
+      "level": "ALL",
+      "label": "East/west return panel",
+      "color": [
+        0.84,
+        0.86,
+        0.84
+      ],
+      "bounds": [
+        227.35,
+        119.0,
+        0.4,
+        227.65,
+        153.0,
+        13.0
+      ],
+      "source": "Design concept",
+      "freecadName": "DINING_E_envelope_0516"
+    },
+    {
+      "id": "DINING_E_glazing_0517",
+      "buildingId": "DINING_E",
+      "system": "glazing",
+      "level": "ALL",
+      "label": "North curtain wall",
+      "color": [
+        0.24,
+        0.47,
+        0.58
+      ],
+      "bounds": [
+        227.58,
+        152.94,
+        0.4,
+        288.42,
+        153.06,
+        12.8
+      ],
+      "source": "R1/R2 and Schueco mullion-transom construction",
+      "freecadName": "DINING_E_glazing_0517"
+    },
+    {
+      "id": "DINING_E_envelope_0518",
+      "buildingId": "DINING_E",
+      "system": "envelope",
+      "level": "ALL",
+      "label": "Curtain-wall mullions and transoms",
+      "color": [
+        0.42,
+        0.44,
+        0.44
+      ],
+      "bounds": [
+        227.44,
+        153.02,
+        0.4,
+        288.56,
+        153.34,
+        13.14
+      ],
+      "source": "Design concept",
+      "freecadName": "DINING_E_envelope_0518"
+    },
+    {
+      "id": "DINING_E_envelope_0519",
+      "buildingId": "DINING_E",
+      "system": "envelope",
+      "level": "ALL",
+      "label": "East/west return panel",
+      "color": [
+        0.84,
+        0.86,
+        0.84
+      ],
+      "bounds": [
+        288.35,
+        119.0,
+        0.4,
+        288.65,
+        153.0,
+        13.0
+      ],
+      "source": "Design concept",
+      "freecadName": "DINING_E_envelope_0519"
+    },
+    {
+      "id": "DINING_E_interiors_0520",
+      "buildingId": "DINING_E",
+      "system": "interiors",
+      "level": "F0",
+      "label": "Kitchen and support partition",
+      "color": [
+        0.76,
+        0.83,
+        0.73
+      ],
+      "bounds": [
+        273.555,
+        120.5,
+        0.4,
+        287.585,
+        151.5,
+        3.6
+      ],
+      "source": "Design concept",
+      "freecadName": "DINING_E_interiors_0520"
+    },
+    {
+      "id": "DINING_E_interiors_0521",
+      "buildingId": "DINING_E",
+      "system": "interiors",
+      "level": "F0",
+      "label": "Dining furniture row",
+      "color": [
+        0.76,
+        0.83,
+        0.73
+      ],
+      "bounds": [
+        234.69,
+        128.0,
+        1.1,
+        272.39,
+        130.0,
+        1.23
+      ],
+      "source": "Design concept",
+      "freecadName": "DINING_E_interiors_0521"
+    },
+    {
+      "id": "DINING_E_interiors_0522",
+      "buildingId": "DINING_E",
+      "system": "interiors",
+      "level": "F0",
+      "label": "Dining furniture row",
+      "color": [
+        0.76,
+        0.83,
+        0.73
+      ],
+      "bounds": [
+        234.69,
+        142.0,
+        1.1,
+        272.39,
+        144.0,
+        1.23
+      ],
+      "source": "Design concept",
+      "freecadName": "DINING_E_interiors_0522"
+    },
+    {
+      "id": "DINING_E_interiors_0523",
+      "buildingId": "DINING_E",
+      "system": "interiors",
+      "level": "F1",
+      "label": "Kitchen and support partition",
+      "color": [
+        0.76,
+        0.83,
+        0.73
+      ],
+      "bounds": [
+        273.555,
+        120.5,
+        6.9,
+        287.585,
+        151.5,
+        10.1
+      ],
+      "source": "Design concept",
+      "freecadName": "DINING_E_interiors_0523"
+    },
+    {
+      "id": "DINING_E_interiors_0524",
+      "buildingId": "DINING_E",
+      "system": "interiors",
+      "level": "F1",
+      "label": "Dining furniture row",
+      "color": [
+        0.76,
+        0.83,
+        0.73
+      ],
+      "bounds": [
+        234.69,
+        128.0,
+        7.6,
+        272.39,
+        130.0,
+        7.73
+      ],
+      "source": "Design concept",
+      "freecadName": "DINING_E_interiors_0524"
+    },
+    {
+      "id": "DINING_E_interiors_0525",
+      "buildingId": "DINING_E",
+      "system": "interiors",
+      "level": "F1",
+      "label": "Dining furniture row",
+      "color": [
+        0.76,
+        0.83,
+        0.73
+      ],
+      "bounds": [
+        234.69,
+        142.0,
+        7.6,
+        272.39,
+        144.0,
+        7.73
+      ],
+      "source": "Design concept",
+      "freecadName": "DINING_E_interiors_0525"
+    },
+    {
+      "id": "DINING_E_roof_0526",
+      "buildingId": "DINING_E",
+      "system": "roof",
+      "level": "RF",
+      "label": "Four-slope hipped tile roof",
+      "color": [
+        0.49,
+        0.56,
+        0.59
+      ],
+      "bounds": [
+        223.0,
+        114.0,
+        12.82,
+        293.0,
+        158.0,
+        21.0
+      ],
+      "source": "R1 east dining pitched roof",
+      "freecadName": "DINING_E_roof_0526"
+    },
+    {
+      "id": "DINING_E_slabs_0527",
+      "buildingId": "DINING_E",
+      "system": "slabs",
+      "level": "DECK",
+      "label": "Lakeside terrace",
+      "color": [
+        0.57,
+        0.41,
+        0.27
+      ],
+      "bounds": [
+        223.5,
+        97.0,
+        0.65,
+        292.5,
+        119.0,
+        1.1
+      ],
+      "source": "Design concept",
+      "freecadName": "DINING_E_slabs_0527"
+    },
+    {
+      "id": "DINING_E_circulation_0528",
+      "buildingId": "DINING_E",
+      "system": "circulation",
+      "level": "DECK",
+      "label": "Roof maintenance guardrails",
+      "color": [
+        0.79,
+        0.65,
+        0.38
+      ],
+      "bounds": [
+        223.455,
+        96.955,
+        1.1,
+        292.545,
+        119.045,
+        2.25
+      ],
+      "source": "Design concept",
+      "freecadName": "DINING_E_circulation_0528"
+    },
+    {
+      "id": "DINING_E_circulation_0529",
+      "buildingId": "DINING_E",
+      "system": "circulation",
+      "level": "RF",
+      "label": "Roof maintenance guardrails",
+      "color": [
+        0.79,
+        0.65,
+        0.38
+      ],
+      "bounds": [
+        228.455,
+        119.955,
+        13.4,
+        287.545,
+        152.045,
+        14.55
+      ],
+      "source": "Design concept",
+      "freecadName": "DINING_E_circulation_0529"
+    }
+  ]
+}

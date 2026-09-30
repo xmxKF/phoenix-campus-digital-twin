@@ -1,0 +1,4894 @@
+{
+  "building": {
+    "id": "MASK",
+    "position": [
+      -380,
+      -7,
+      0
+    ],
+    "size": [
+      164,
+      117,
+      25
+    ],
+    "features": [
+      "restrained slit facade",
+      "compact cooling field",
+      "loading canopy"
+    ],
+    "source": "R1 right/R2 left; S02",
+    "confidence": "medium",
+    "levels": {
+      "F0": 0.0,
+      "F1": 6.25,
+      "F2": 12.5,
+      "F3": 18.75,
+      "RF": 25
+    },
+    "dimensionBasis": "V2 image-inferred envelope, architecturally estimated interiors",
+    "units": "m",
+    "axesX": [
+      -80.5,
+      -68.115,
+      -55.731,
+      -43.346,
+      -30.962,
+      -18.577,
+      -6.192,
+      6.192,
+      18.577,
+      30.962,
+      43.346,
+      55.731,
+      68.115,
+      80.5
+    ],
+    "axesY": [
+      -57.0,
+      -42.75,
+      -28.5,
+      -14.25,
+      0.0,
+      14.25,
+      28.5,
+      42.75,
+      57.0
+    ]
+  },
+  "components": [
+    {
+      "id": "V4_MASK_MDB",
+      "buildingId": "MASK",
+      "system": "electrical",
+      "level": "PLANT",
+      "label": "主配电柜",
+      "color": [
+        0.3,
+        0.34,
+        0.39
+      ],
+      "bounds": [
+        -456.45,
+        -62.705,
+        0.8,
+        -455.55,
+        -62.375,
+        2.4
+      ],
+      "freecadName": "V4_MASK_MDB",
+      "roomId": null,
+      "meta": {
+        "id": "V4_MASK_MDB",
+        "assetId": "V4_MASK_MDB",
+        "buildingId": "MASK",
+        "roomId": null,
+        "controlKind": "breaker",
+        "type": "main_panel",
+        "label": "主配电柜",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "upstreamIds": [],
+        "ratedPowerKw": 0,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_WATER_MAIN",
+      "buildingId": "MASK",
+      "system": "water",
+      "level": "PLANT",
+      "label": "可控支路阀门",
+      "color": [
+        0.75,
+        0.34,
+        0.2
+      ],
+      "bounds": [
+        -453.2,
+        -60.61,
+        3.44,
+        -452.8,
+        -60.39,
+        3.795
+      ],
+      "freecadName": "V4_MASK_WATER_MAIN",
+      "roomId": null,
+      "meta": {
+        "id": "V4_MASK_WATER_MAIN",
+        "assetId": "V4_MASK_WATER_MAIN",
+        "buildingId": "MASK",
+        "roomId": null,
+        "controlKind": "valve",
+        "type": "isolation_valve",
+        "label": "生活冷水总阀",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "medium": "domestic_cold",
+        "waterBranchId": "MASK_W_COLD_MAIN",
+        "ratedFlowLpm": 120,
+        "upstreamIds": [],
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_HOT_MAIN",
+      "buildingId": "MASK",
+      "system": "water",
+      "level": "PLANT",
+      "label": "可控支路阀门",
+      "color": [
+        0.75,
+        0.34,
+        0.2
+      ],
+      "bounds": [
+        -453.2,
+        -59.61,
+        3.44,
+        -452.8,
+        -59.39,
+        3.795
+      ],
+      "freecadName": "V4_MASK_HOT_MAIN",
+      "roomId": null,
+      "meta": {
+        "id": "V4_MASK_HOT_MAIN",
+        "assetId": "V4_MASK_HOT_MAIN",
+        "buildingId": "MASK",
+        "roomId": null,
+        "controlKind": "valve",
+        "type": "isolation_valve",
+        "label": "生活热水供水总阀",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "medium": "domestic_hot",
+        "waterBranchId": "MASK_W_HOT_MAIN",
+        "ratedFlowLpm": 80,
+        "upstreamIds": [],
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_HOT_PUMP",
+      "buildingId": "MASK",
+      "system": "water",
+      "level": "PLANT",
+      "label": "热水循环泵",
+      "color": [
+        0.22,
+        0.43,
+        0.61
+      ],
+      "bounds": [
+        -451.8,
+        -59.225,
+        0.4,
+        -450.2,
+        -58.375,
+        1.5
+      ],
+      "freecadName": "V4_MASK_HOT_PUMP",
+      "roomId": null,
+      "meta": {
+        "id": "V4_MASK_HOT_PUMP",
+        "assetId": "V4_MASK_HOT_PUMP",
+        "buildingId": "MASK",
+        "roomId": null,
+        "controlKind": "pump",
+        "type": "circulation_pump",
+        "label": "热水回水循环泵",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "medium": "domestic_hot_return",
+        "waterBranchId": "MASK_W_HOT_RETURN",
+        "ratedFlowLpm": 60,
+        "ratedPowerKw": 0.75,
+        "circuitId": "MASK_C_PLANT",
+        "upstreamIds": [
+          "V4_MASK_MDB"
+        ],
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_HOT_CYLINDER",
+      "buildingId": "MASK",
+      "system": "water",
+      "level": "PLANT",
+      "label": "生活热水/回水缓冲容器",
+      "color": [
+        0.69,
+        0.72,
+        0.7
+      ],
+      "bounds": [
+        -449.65,
+        -59.45,
+        0.35,
+        -448.35,
+        -58.15,
+        2.1
+      ],
+      "freecadName": "V4_MASK_HOT_CYLINDER",
+      "roomId": null,
+      "meta": {
+        "type": "hot_water_buffer",
+        "medium": "domestic_hot",
+        "roomId": null,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_HOT_LOOP_LINKS",
+      "buildingId": "MASK",
+      "system": "water",
+      "level": "PLANT",
+      "label": "热水回水泵与缓冲容器连接",
+      "color": [
+        0.58,
+        0.31,
+        0.6
+      ],
+      "bounds": [
+        -453.0,
+        -59.5702,
+        0.7298,
+        -448.9298,
+        -58.6298,
+        3.6202
+      ],
+      "freecadName": "V4_MASK_HOT_LOOP_LINKS",
+      "roomId": null,
+      "meta": {
+        "type": "pipe",
+        "medium": "domestic_hot_return",
+        "waterBranchId": "MASK_W_HOT_RETURN",
+        "roomId": null,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_PCW_PUMP",
+      "buildingId": "MASK",
+      "system": "water",
+      "level": "PLANT",
+      "label": "PCW独立循环泵",
+      "color": [
+        0.22,
+        0.43,
+        0.61
+      ],
+      "bounds": [
+        -451.8,
+        -56.925,
+        0.4,
+        -450.2,
+        -56.075,
+        1.5
+      ],
+      "freecadName": "V4_MASK_PCW_PUMP",
+      "roomId": null,
+      "meta": {
+        "id": "V4_MASK_PCW_PUMP",
+        "assetId": "V4_MASK_PCW_PUMP",
+        "buildingId": "MASK",
+        "roomId": null,
+        "controlKind": "pump",
+        "type": "circulation_pump",
+        "label": "独立PCW闭环循环泵",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "medium": "pcw_supply",
+        "waterBranchId": "MASK_W_PCW_MAIN",
+        "ratedFlowLpm": 150,
+        "ratedPowerKw": 3,
+        "circuitId": "MASK_C_PLANT",
+        "upstreamIds": [
+          "V4_MASK_MDB"
+        ],
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_PCW_MAIN",
+      "buildingId": "MASK",
+      "system": "water",
+      "level": "PLANT",
+      "label": "可控支路阀门",
+      "color": [
+        0.75,
+        0.34,
+        0.2
+      ],
+      "bounds": [
+        -453.2,
+        -57.61,
+        3.44,
+        -452.8,
+        -57.39,
+        3.795
+      ],
+      "freecadName": "V4_MASK_PCW_MAIN",
+      "roomId": null,
+      "meta": {
+        "id": "V4_MASK_PCW_MAIN",
+        "assetId": "V4_MASK_PCW_MAIN",
+        "buildingId": "MASK",
+        "roomId": null,
+        "controlKind": "valve",
+        "type": "isolation_valve",
+        "label": "PCW供水总阀",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "medium": "pcw_supply",
+        "waterBranchId": "MASK_W_PCW_MAIN",
+        "ratedFlowLpm": 150,
+        "upstreamIds": [
+          "V4_MASK_PCW_PUMP"
+        ],
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_PCW_HX",
+      "buildingId": "MASK",
+      "system": "water",
+      "level": "PLANT",
+      "label": "独立PCW板式换热器",
+      "color": [
+        0.36,
+        0.67,
+        0.63
+      ],
+      "bounds": [
+        -449.15,
+        -57.0,
+        0.4,
+        -447.85,
+        -56.0,
+        1.8
+      ],
+      "freecadName": "V4_MASK_PCW_HX",
+      "roomId": null,
+      "meta": {
+        "type": "plate_heat_exchanger",
+        "medium": "pcw_supply",
+        "isolatedFromDomestic": true,
+        "roomId": null,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_PCW_PLANT_LINKS",
+      "buildingId": "MASK",
+      "system": "water",
+      "level": "PLANT",
+      "label": "PCW泵与换热器连接",
+      "color": [
+        0.12,
+        0.6,
+        0.49
+      ],
+      "bounds": [
+        -453.0,
+        -57.5864,
+        0.7136,
+        -448.4136,
+        -56.4136,
+        3.6364
+      ],
+      "freecadName": "V4_MASK_PCW_PLANT_LINKS",
+      "roomId": null,
+      "meta": {
+        "type": "pipe",
+        "waterBranchId": "MASK_W_PCW_MAIN",
+        "medium": "pcw_supply",
+        "roomId": null,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_MAIN_COLD",
+      "buildingId": "MASK",
+      "system": "water",
+      "level": "PLANT",
+      "label": "domestic_cold · 立管与层分配主管",
+      "color": [
+        0.12,
+        0.44,
+        0.72
+      ],
+      "bounds": [
+        -453.0,
+        -60.58,
+        3.47,
+        -304.0,
+        -60.42,
+        3.63
+      ],
+      "freecadName": "V4_MASK_MAIN_COLD",
+      "roomId": null,
+      "meta": {
+        "type": "water_main",
+        "medium": "domestic_cold",
+        "waterBranchId": "MASK_W_COLD_MAIN",
+        "roomId": null,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_MAIN_HOT",
+      "buildingId": "MASK",
+      "system": "water",
+      "level": "PLANT",
+      "label": "domestic_hot · 立管与层分配主管",
+      "color": [
+        0.77,
+        0.27,
+        0.21
+      ],
+      "bounds": [
+        -453.0,
+        -59.58,
+        3.47,
+        -304.0,
+        -59.42,
+        3.63
+      ],
+      "freecadName": "V4_MASK_MAIN_HOT",
+      "roomId": null,
+      "meta": {
+        "type": "water_main",
+        "medium": "domestic_hot",
+        "waterBranchId": "MASK_W_HOT_MAIN",
+        "roomId": null,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_MAIN_HOT_RETURN",
+      "buildingId": "MASK",
+      "system": "water",
+      "level": "PLANT",
+      "label": "domestic_hot_return · 立管与层分配主管",
+      "color": [
+        0.58,
+        0.31,
+        0.6
+      ],
+      "bounds": [
+        -453.0,
+        -59.5,
+        3.47,
+        -303.92,
+        -58.62,
+        3.63
+      ],
+      "freecadName": "V4_MASK_MAIN_HOT_RETURN",
+      "roomId": null,
+      "meta": {
+        "type": "water_main",
+        "medium": "domestic_hot_return",
+        "waterBranchId": "MASK_W_HOT_RETURN",
+        "roomId": null,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_MAIN_PCW",
+      "buildingId": "MASK",
+      "system": "water",
+      "level": "PLANT",
+      "label": "pcw_supply · 立管与层分配主管",
+      "color": [
+        0.12,
+        0.6,
+        0.49
+      ],
+      "bounds": [
+        -453.0,
+        -57.58,
+        3.47,
+        -304.0,
+        -57.42,
+        3.63
+      ],
+      "freecadName": "V4_MASK_MAIN_PCW",
+      "roomId": null,
+      "meta": {
+        "type": "water_main",
+        "medium": "pcw_supply",
+        "waterBranchId": "MASK_W_PCW_MAIN",
+        "roomId": null,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_MAIN_PCW_RETURN",
+      "buildingId": "MASK",
+      "system": "water",
+      "level": "PLANT",
+      "label": "pcw_return · 立管与层分配主管",
+      "color": [
+        0.47,
+        0.73,
+        0.28
+      ],
+      "bounds": [
+        -453.0,
+        -56.58,
+        3.47,
+        -304.0,
+        -56.42,
+        3.63
+      ],
+      "freecadName": "V4_MASK_MAIN_PCW_RETURN",
+      "roomId": null,
+      "meta": {
+        "type": "water_main",
+        "medium": "pcw_return",
+        "waterBranchId": "MASK_W_PCW_RETURN",
+        "roomId": null,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_TRAY0",
+      "buildingId": "MASK",
+      "system": "electrical",
+      "level": "PLANT",
+      "label": "主电缆桥架及馈线",
+      "color": [
+        0.3,
+        0.34,
+        0.39
+      ],
+      "bounds": [
+        -456.0,
+        -62.5,
+        3.85,
+        -304.0,
+        -62.1,
+        4.0
+      ],
+      "freecadName": "V4_MASK_TRAY0",
+      "roomId": null,
+      "meta": {
+        "type": "cable_tray",
+        "upstreamIds": [
+          "V4_MASK_MDB"
+        ],
+        "roomId": null,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_MDB_RISER",
+      "buildingId": "MASK",
+      "system": "electrical",
+      "level": "PLANT",
+      "label": "主配电至桥架竖向馈线",
+      "color": [
+        0.37,
+        0.31,
+        0.21
+      ],
+      "bounds": [
+        -456.027,
+        -62.5,
+        2.273,
+        -455.973,
+        -62.273,
+        3.92
+      ],
+      "freecadName": "V4_MASK_MDB_RISER",
+      "roomId": null,
+      "meta": {
+        "type": "cable",
+        "upstreamIds": [
+          "V4_MASK_MDB"
+        ],
+        "roomId": null,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R01_WALLS",
+      "buildingId": "MASK",
+      "system": "interiors",
+      "level": "F0",
+      "label": "掩膜检查 · 隔墙与门洞",
+      "color": [
+        0.72,
+        0.77,
+        0.75
+      ],
+      "bounds": [
+        -454.0,
+        2.0,
+        0.425,
+        -424.0,
+        22.0,
+        3.425
+      ],
+      "freecadName": "V4_MASK_R01_WALLS",
+      "roomId": "MASK_R01",
+      "meta": {
+        "type": "room_partition",
+        "roomId": "MASK_R01",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R01_ROOM_GLAZING",
+      "buildingId": "MASK",
+      "system": "interiors",
+      "level": "F0",
+      "label": "观察窗",
+      "color": [
+        0.08,
+        0.24,
+        0.3
+      ],
+      "bounds": [
+        -446.8,
+        21.9775,
+        1.5,
+        -431.2,
+        22.0225,
+        2.85
+      ],
+      "freecadName": "V4_MASK_R01_ROOM_GLAZING",
+      "roomId": "MASK_R01",
+      "meta": {
+        "type": "interior_glazing",
+        "roomId": "MASK_R01",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R01_FLOOR_ZONE",
+      "buildingId": "MASK",
+      "system": "interiors",
+      "level": "F0",
+      "label": "掩膜检查 · 功能区域",
+      "color": [
+        0.74,
+        0.8,
+        0.78
+      ],
+      "bounds": [
+        -453.875,
+        2.125,
+        0.406,
+        -424.125,
+        21.875,
+        0.418
+      ],
+      "freecadName": "V4_MASK_R01_FLOOR_ZONE",
+      "roomId": "MASK_R01",
+      "meta": {
+        "type": "room_zone",
+        "roomAreaM2": 600,
+        "roomId": "MASK_R01",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R01_DOOR",
+      "buildingId": "MASK",
+      "system": "interiors",
+      "level": "F0",
+      "label": "常开门及门框",
+      "color": [
+        0.54,
+        0.62,
+        0.6
+      ],
+      "bounds": [
+        -440.155,
+        1.88,
+        0.4,
+        -437.845,
+        3.08832,
+        2.75
+      ],
+      "freecadName": "V4_MASK_R01_DOOR",
+      "roomId": "MASK_R01",
+      "meta": {
+        "type": "door",
+        "roomId": "MASK_R01",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R01_F01",
+      "buildingId": "MASK",
+      "system": "interiors",
+      "level": "F0",
+      "label": "光学掩膜检查设备（示意）",
+      "color": [
+        0.72,
+        0.78,
+        0.81
+      ],
+      "bounds": [
+        -447.5,
+        10.89,
+        0.4,
+        -444.7,
+        12.9,
+        2.8
+      ],
+      "freecadName": "V4_MASK_R01_F01",
+      "roomId": "MASK_R01",
+      "meta": {
+        "type": "furniture",
+        "circuitId": "MASK_R01_C_POWER",
+        "ratedPowerKw": 4,
+        "sourceReference": "ZEISS AIMS / JEOL JBX equipment categories; no process specification claim",
+        "roomId": "MASK_R01",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R01_F02",
+      "buildingId": "MASK",
+      "system": "interiors",
+      "level": "F0",
+      "label": "光学掩膜检查设备（示意）",
+      "color": [
+        0.72,
+        0.78,
+        0.81
+      ],
+      "bounds": [
+        -433.1,
+        10.89,
+        0.4,
+        -430.3,
+        12.9,
+        2.8
+      ],
+      "freecadName": "V4_MASK_R01_F02",
+      "roomId": "MASK_R01",
+      "meta": {
+        "type": "furniture",
+        "circuitId": "MASK_R01_C_POWER",
+        "ratedPowerKw": 4,
+        "sourceReference": "ZEISS AIMS / JEOL JBX equipment categories; no process specification claim",
+        "roomId": "MASK_R01",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R01_DB",
+      "buildingId": "MASK",
+      "system": "electrical",
+      "level": "F0",
+      "label": "房间配电箱与断路器",
+      "color": [
+        0.3,
+        0.34,
+        0.39
+      ],
+      "bounds": [
+        -424.725,
+        1.995,
+        1.5,
+        -424.175,
+        2.325,
+        2.3
+      ],
+      "freecadName": "V4_MASK_R01_DB",
+      "roomId": "MASK_R01",
+      "meta": {
+        "id": "V4_MASK_R01_DB",
+        "assetId": "V4_MASK_R01_DB",
+        "buildingId": "MASK",
+        "roomId": "MASK_R01",
+        "controlKind": "breaker",
+        "type": "distribution_panel",
+        "label": "房间配电箱",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "upstreamIds": [
+          "V4_MASK_MDB"
+        ],
+        "ratedPowerKw": 0,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R01_FEEDER",
+      "buildingId": "MASK",
+      "system": "electrical",
+      "level": "F0",
+      "label": "主桥架至房间配电馈线",
+      "color": [
+        0.39,
+        0.32,
+        0.23
+      ],
+      "bounds": [
+        -424.46944,
+        -62.3,
+        2.2,
+        -424.43056,
+        2.21944,
+        3.93944
+      ],
+      "freecadName": "V4_MASK_R01_FEEDER",
+      "roomId": "MASK_R01",
+      "meta": {
+        "type": "cable",
+        "upstreamIds": [
+          "V4_MASK_MDB",
+          "V4_MASK_R01_DB"
+        ],
+        "roomId": "MASK_R01",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R01_L01",
+      "buildingId": "MASK",
+      "system": "lighting",
+      "level": "F0",
+      "label": "可调光照明分组 1",
+      "color": [
+        0.98,
+        0.91,
+        0.69
+      ],
+      "bounds": [
+        -450.12,
+        4.88,
+        3.138,
+        -427.88,
+        5.52,
+        3.75
+      ],
+      "freecadName": "V4_MASK_R01_L01",
+      "roomId": "MASK_R01",
+      "meta": {
+        "id": "V4_MASK_R01_L01",
+        "assetId": "V4_MASK_R01_L01",
+        "buildingId": "MASK",
+        "roomId": "MASK_R01",
+        "controlKind": "light",
+        "type": "luminaire_group",
+        "label": "照明分组 1",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "circuitId": "MASK_R01_C_LIGHT",
+        "ratedPowerKw": 0.9,
+        "upstreamIds": [
+          "V4_MASK_R01_DB"
+        ],
+        "dimmable": true,
+        "fixtureCount": 2,
+        "sourceReference": "ERCO grouped track lighting for exhibition; LED panels elsewhere",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R01_L02",
+      "buildingId": "MASK",
+      "system": "lighting",
+      "level": "F0",
+      "label": "可调光照明分组 2",
+      "color": [
+        0.98,
+        0.91,
+        0.69
+      ],
+      "bounds": [
+        -439.32,
+        4.88,
+        3.138,
+        -438.68,
+        5.52,
+        3.75
+      ],
+      "freecadName": "V4_MASK_R01_L02",
+      "roomId": "MASK_R01",
+      "meta": {
+        "id": "V4_MASK_R01_L02",
+        "assetId": "V4_MASK_R01_L02",
+        "buildingId": "MASK",
+        "roomId": "MASK_R01",
+        "controlKind": "light",
+        "type": "luminaire_group",
+        "label": "照明分组 2",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "circuitId": "MASK_R01_C_LIGHT",
+        "ratedPowerKw": 0.9,
+        "upstreamIds": [
+          "V4_MASK_R01_DB"
+        ],
+        "dimmable": true,
+        "fixtureCount": 1,
+        "sourceReference": "ERCO grouped track lighting for exhibition; LED panels elsewhere",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R01_L03",
+      "buildingId": "MASK",
+      "system": "lighting",
+      "level": "F0",
+      "label": "可调光照明分组 3",
+      "color": [
+        0.98,
+        0.91,
+        0.69
+      ],
+      "bounds": [
+        -450.12,
+        18.48,
+        3.138,
+        -427.88,
+        19.12,
+        3.75
+      ],
+      "freecadName": "V4_MASK_R01_L03",
+      "roomId": "MASK_R01",
+      "meta": {
+        "id": "V4_MASK_R01_L03",
+        "assetId": "V4_MASK_R01_L03",
+        "buildingId": "MASK",
+        "roomId": "MASK_R01",
+        "controlKind": "light",
+        "type": "luminaire_group",
+        "label": "照明分组 3",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "circuitId": "MASK_R01_C_LIGHT",
+        "ratedPowerKw": 0.9,
+        "upstreamIds": [
+          "V4_MASK_R01_DB"
+        ],
+        "dimmable": true,
+        "fixtureCount": 2,
+        "sourceReference": "ERCO grouped track lighting for exhibition; LED panels elsewhere",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R01_L04",
+      "buildingId": "MASK",
+      "system": "lighting",
+      "level": "F0",
+      "label": "可调光照明分组 4",
+      "color": [
+        0.98,
+        0.91,
+        0.69
+      ],
+      "bounds": [
+        -439.32,
+        18.48,
+        3.138,
+        -438.68,
+        19.12,
+        3.75
+      ],
+      "freecadName": "V4_MASK_R01_L04",
+      "roomId": "MASK_R01",
+      "meta": {
+        "id": "V4_MASK_R01_L04",
+        "assetId": "V4_MASK_R01_L04",
+        "buildingId": "MASK",
+        "roomId": "MASK_R01",
+        "controlKind": "light",
+        "type": "luminaire_group",
+        "label": "照明分组 4",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "circuitId": "MASK_R01_C_LIGHT",
+        "ratedPowerKw": 0.9,
+        "upstreamIds": [
+          "V4_MASK_R01_DB"
+        ],
+        "dimmable": true,
+        "fixtureCount": 1,
+        "sourceReference": "ERCO grouped track lighting for exhibition; LED panels elsewhere",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R01_LIGHT_DROPS",
+      "buildingId": "MASK",
+      "system": "electrical",
+      "level": "F0",
+      "label": "照明干线至灯具分组支线",
+      "color": [
+        0.3,
+        0.34,
+        0.39
+      ],
+      "bounds": [
+        -449.809,
+        4.871,
+        3.741,
+        -424.45,
+        18.8,
+        3.759
+      ],
+      "freecadName": "V4_MASK_R01_LIGHT_DROPS",
+      "roomId": "MASK_R01",
+      "meta": {
+        "type": "branch_cable",
+        "circuitId": "MASK_R01_C_LIGHT",
+        "roomId": "MASK_R01",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R01_CABLE_0",
+      "buildingId": "MASK",
+      "system": "electrical",
+      "level": "F0",
+      "label": "独立照明电路",
+      "color": [
+        0.3,
+        0.31,
+        0.34
+      ],
+      "bounds": [
+        -449.5,
+        2.18596,
+        2.1,
+        -424.43596,
+        4.89404,
+        3.76404
+      ],
+      "freecadName": "V4_MASK_R01_CABLE_0",
+      "roomId": "MASK_R01",
+      "meta": {
+        "type": "branch_cable",
+        "circuitId": "MASK_R01_C_LIGHT",
+        "upstreamIds": [
+          "V4_MASK_R01_DB"
+        ],
+        "roomId": "MASK_R01",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R01_CABLE_1",
+      "buildingId": "MASK",
+      "system": "electrical",
+      "level": "F0",
+      "label": "独立插座/设备电路",
+      "color": [
+        0.3,
+        0.31,
+        0.34
+      ],
+      "bounds": [
+        -449.5,
+        2.18596,
+        2.1,
+        -424.43596,
+        5.01404,
+        3.83404
+      ],
+      "freecadName": "V4_MASK_R01_CABLE_1",
+      "roomId": "MASK_R01",
+      "meta": {
+        "type": "branch_cable",
+        "circuitId": "MASK_R01_C_POWER",
+        "upstreamIds": [
+          "V4_MASK_R01_DB"
+        ],
+        "roomId": "MASK_R01",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R01_CABLE_2",
+      "buildingId": "MASK",
+      "system": "electrical",
+      "level": "F0",
+      "label": "独立空调电路",
+      "color": [
+        0.3,
+        0.31,
+        0.34
+      ],
+      "bounds": [
+        -449.5,
+        2.18596,
+        2.1,
+        -424.43596,
+        5.13404,
+        3.90404
+      ],
+      "freecadName": "V4_MASK_R01_CABLE_2",
+      "roomId": "MASK_R01",
+      "meta": {
+        "type": "branch_cable",
+        "circuitId": "MASK_R01_C_HVAC",
+        "upstreamIds": [
+          "V4_MASK_R01_DB"
+        ],
+        "roomId": "MASK_R01",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R01_SOCKET0",
+      "buildingId": "MASK",
+      "system": "electrical",
+      "level": "F0",
+      "label": "墙面插座及下引线",
+      "color": [
+        0.3,
+        0.34,
+        0.39
+      ],
+      "bounds": [
+        -448.065,
+        2.15,
+        0.76,
+        -424.45,
+        2.21,
+        3.82972
+      ],
+      "freecadName": "V4_MASK_R01_SOCKET0",
+      "roomId": "MASK_R01",
+      "meta": {
+        "type": "socket",
+        "circuitId": "MASK_R01_C_POWER",
+        "roomId": "MASK_R01",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R01_SOCKET1",
+      "buildingId": "MASK",
+      "system": "electrical",
+      "level": "F0",
+      "label": "墙面插座及下引线",
+      "color": [
+        0.3,
+        0.34,
+        0.39
+      ],
+      "bounds": [
+        -430.065,
+        2.15,
+        0.76,
+        -424.45,
+        2.21,
+        3.82972
+      ],
+      "freecadName": "V4_MASK_R01_SOCKET1",
+      "roomId": "MASK_R01",
+      "meta": {
+        "type": "socket",
+        "circuitId": "MASK_R01_C_POWER",
+        "roomId": "MASK_R01",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R01_AHU",
+      "buildingId": "MASK",
+      "system": "hvac",
+      "level": "F0",
+      "label": "局部空调与送回风终端",
+      "color": [
+        0.68,
+        0.75,
+        0.77
+      ],
+      "bounds": [
+        -453.525,
+        2.64,
+        2.55,
+        -428.5,
+        12.35,
+        3.7
+      ],
+      "freecadName": "V4_MASK_R01_AHU",
+      "roomId": "MASK_R01",
+      "meta": {
+        "id": "V4_MASK_R01_AHU",
+        "assetId": "V4_MASK_R01_AHU",
+        "buildingId": "MASK",
+        "roomId": "MASK_R01",
+        "controlKind": "ahu",
+        "type": "air_handling_unit",
+        "label": "局部空调/通风机组",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "circuitId": "MASK_R01_C_HVAC",
+        "ratedPowerKw": 7.2,
+        "upstreamIds": [
+          "V4_MASK_R01_DB"
+        ],
+        "designCoolingKw": 60.0,
+        "representativeTerminal": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R01_V_PCW",
+      "buildingId": "MASK",
+      "system": "water",
+      "level": "F0",
+      "label": "可控支路阀门",
+      "color": [
+        0.75,
+        0.34,
+        0.2
+      ],
+      "bounds": [
+        -440.46,
+        2.29,
+        3.44,
+        -440.06,
+        2.51,
+        3.795
+      ],
+      "freecadName": "V4_MASK_R01_V_PCW",
+      "roomId": "MASK_R01",
+      "meta": {
+        "id": "V4_MASK_R01_V_PCW",
+        "assetId": "V4_MASK_R01_V_PCW",
+        "buildingId": "MASK",
+        "roomId": "MASK_R01",
+        "controlKind": "valve",
+        "type": "isolation_valve",
+        "label": "工艺冷却水支路阀",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "waterBranchId": "MASK_R01_W_PCW",
+        "medium": "pcw_supply",
+        "ratedFlowLpm": 35,
+        "upstreamIds": [
+          "V4_MASK_PCW_MAIN"
+        ],
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R01_PIPE_PCW",
+      "buildingId": "MASK",
+      "system": "water",
+      "level": "F0",
+      "label": "pcw_supply · 阀后支管",
+      "color": [
+        0.12,
+        0.6,
+        0.49
+      ],
+      "bounds": [
+        -447.454,
+        -57.5,
+        1.55,
+        -437.146,
+        16.654,
+        3.604
+      ],
+      "freecadName": "V4_MASK_R01_PIPE_PCW",
+      "roomId": "MASK_R01",
+      "meta": {
+        "type": "water_branch",
+        "medium": "pcw_supply",
+        "waterBranchId": "MASK_R01_W_PCW",
+        "upstreamIds": [
+          "V4_MASK_R01_V_PCW"
+        ],
+        "roomId": "MASK_R01",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R01_PCW_TERMINAL",
+      "buildingId": "MASK",
+      "system": "water",
+      "level": "F0",
+      "label": "设备PCW换热与供回水端",
+      "color": [
+        0.38,
+        0.67,
+        0.61
+      ],
+      "bounds": [
+        -448.1,
+        16.2,
+        0.4,
+        -446.7,
+        17.0,
+        1.36
+      ],
+      "freecadName": "V4_MASK_R01_PCW_TERMINAL",
+      "roomId": "MASK_R01",
+      "meta": {
+        "type": "process_cooling_terminal",
+        "medium": "pcw_supply",
+        "waterBranchId": "MASK_R01_W_PCW",
+        "isolatedFromDomestic": true,
+        "roomId": "MASK_R01",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R01_PCW_RETURN",
+      "buildingId": "MASK",
+      "system": "water",
+      "level": "F0",
+      "label": "PCW独立回水",
+      "color": [
+        0.47,
+        0.73,
+        0.28
+      ],
+      "bounds": [
+        -447.104,
+        -56.554,
+        1.05,
+        -436.696,
+        16.654,
+        3.55
+      ],
+      "freecadName": "V4_MASK_R01_PCW_RETURN",
+      "roomId": "MASK_R01",
+      "meta": {
+        "type": "water_branch",
+        "medium": "pcw_return",
+        "waterBranchId": "MASK_R01_W_PCW_RETURN",
+        "isolatedFromDomestic": true,
+        "roomId": "MASK_R01",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R01_S_TEMPERATURE",
+      "buildingId": "MASK",
+      "system": "sensors",
+      "level": "F0",
+      "label": "温度传感器",
+      "color": [
+        0.22,
+        0.63,
+        0.65
+      ],
+      "bounds": [
+        -453.96,
+        6.32,
+        1.75,
+        -453.835,
+        6.48,
+        1.97
+      ],
+      "freecadName": "V4_MASK_R01_S_TEMPERATURE",
+      "roomId": "MASK_R01",
+      "meta": {
+        "id": "V4_MASK_R01_S_TEMPERATURE",
+        "assetId": "V4_MASK_R01_S_TEMPERATURE",
+        "buildingId": "MASK",
+        "roomId": "MASK_R01",
+        "type": "sensor",
+        "sensorKind": "temperature",
+        "label": "温度传感器",
+        "unit": "°C",
+        "circuitId": "MASK_R01_C_POWER",
+        "upstreamIds": [
+          "V4_MASK_R01_DB"
+        ],
+        "simulated": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R01_S_HUMIDITY",
+      "buildingId": "MASK",
+      "system": "sensors",
+      "level": "F0",
+      "label": "相对湿度传感器",
+      "color": [
+        0.22,
+        0.63,
+        0.65
+      ],
+      "bounds": [
+        -453.96,
+        6.62,
+        1.75,
+        -453.835,
+        6.78,
+        1.97
+      ],
+      "freecadName": "V4_MASK_R01_S_HUMIDITY",
+      "roomId": "MASK_R01",
+      "meta": {
+        "id": "V4_MASK_R01_S_HUMIDITY",
+        "assetId": "V4_MASK_R01_S_HUMIDITY",
+        "buildingId": "MASK",
+        "roomId": "MASK_R01",
+        "type": "sensor",
+        "sensorKind": "humidity",
+        "label": "相对湿度传感器",
+        "unit": "%RH",
+        "circuitId": "MASK_R01_C_POWER",
+        "upstreamIds": [
+          "V4_MASK_R01_DB"
+        ],
+        "simulated": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R01_S_CO2",
+      "buildingId": "MASK",
+      "system": "sensors",
+      "level": "F0",
+      "label": "二氧化碳传感器",
+      "color": [
+        0.22,
+        0.63,
+        0.65
+      ],
+      "bounds": [
+        -453.96,
+        6.92,
+        1.75,
+        -453.835,
+        7.08,
+        1.97
+      ],
+      "freecadName": "V4_MASK_R01_S_CO2",
+      "roomId": "MASK_R01",
+      "meta": {
+        "id": "V4_MASK_R01_S_CO2",
+        "assetId": "V4_MASK_R01_S_CO2",
+        "buildingId": "MASK",
+        "roomId": "MASK_R01",
+        "type": "sensor",
+        "sensorKind": "co2",
+        "label": "二氧化碳传感器",
+        "unit": "ppm",
+        "circuitId": "MASK_R01_C_POWER",
+        "upstreamIds": [
+          "V4_MASK_R01_DB"
+        ],
+        "simulated": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R01_S_OCCUPANCY",
+      "buildingId": "MASK",
+      "system": "sensors",
+      "level": "F0",
+      "label": "占用传感器",
+      "color": [
+        0.22,
+        0.63,
+        0.65
+      ],
+      "bounds": [
+        -439.08,
+        11.92,
+        2.995,
+        -438.92,
+        12.08,
+        3.125
+      ],
+      "freecadName": "V4_MASK_R01_S_OCCUPANCY",
+      "roomId": "MASK_R01",
+      "meta": {
+        "id": "V4_MASK_R01_S_OCCUPANCY",
+        "assetId": "V4_MASK_R01_S_OCCUPANCY",
+        "buildingId": "MASK",
+        "roomId": "MASK_R01",
+        "type": "sensor",
+        "sensorKind": "occupancy",
+        "label": "占用传感器",
+        "unit": "persons",
+        "circuitId": "MASK_R01_C_POWER",
+        "upstreamIds": [
+          "V4_MASK_R01_DB"
+        ],
+        "simulated": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R01_S_POWER",
+      "buildingId": "MASK",
+      "system": "sensors",
+      "level": "F0",
+      "label": "支路电功率传感器",
+      "color": [
+        0.22,
+        0.63,
+        0.65
+      ],
+      "bounds": [
+        -453.96,
+        7.52,
+        1.75,
+        -453.835,
+        7.68,
+        1.97
+      ],
+      "freecadName": "V4_MASK_R01_S_POWER",
+      "roomId": "MASK_R01",
+      "meta": {
+        "id": "V4_MASK_R01_S_POWER",
+        "assetId": "V4_MASK_R01_S_POWER",
+        "buildingId": "MASK",
+        "roomId": "MASK_R01",
+        "type": "sensor",
+        "sensorKind": "power",
+        "label": "支路电功率传感器",
+        "unit": "kW",
+        "circuitId": "MASK_R01_C_POWER",
+        "upstreamIds": [
+          "V4_MASK_R01_DB"
+        ],
+        "simulated": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R01_S_FLOW_PCW",
+      "buildingId": "MASK",
+      "system": "sensors",
+      "level": "F0",
+      "label": "支路流量计",
+      "color": [
+        0.22,
+        0.63,
+        0.65
+      ],
+      "bounds": [
+        -443.94,
+        2.325,
+        3.475,
+        -443.72,
+        2.475,
+        3.7
+      ],
+      "freecadName": "V4_MASK_R01_S_FLOW_PCW",
+      "roomId": "MASK_R01",
+      "meta": {
+        "id": "V4_MASK_R01_S_FLOW_PCW",
+        "assetId": "V4_MASK_R01_S_FLOW_PCW",
+        "buildingId": "MASK",
+        "roomId": "MASK_R01",
+        "type": "sensor",
+        "sensorKind": "water_flow",
+        "label": "支路流量计",
+        "unit": "L/min",
+        "waterBranchId": "MASK_R01_W_PCW",
+        "simulated": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R02_WALLS",
+      "buildingId": "MASK",
+      "system": "interiors",
+      "level": "F0",
+      "label": "清洗准备 · 隔墙与门洞",
+      "color": [
+        0.72,
+        0.77,
+        0.75
+      ],
+      "bounds": [
+        -415.0,
+        2.0,
+        0.425,
+        -385.0,
+        22.0,
+        3.425
+      ],
+      "freecadName": "V4_MASK_R02_WALLS",
+      "roomId": "MASK_R02",
+      "meta": {
+        "type": "room_partition",
+        "roomId": "MASK_R02",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R02_ROOM_GLAZING",
+      "buildingId": "MASK",
+      "system": "interiors",
+      "level": "F0",
+      "label": "观察窗",
+      "color": [
+        0.08,
+        0.24,
+        0.3
+      ],
+      "bounds": [
+        -407.8,
+        21.9775,
+        1.5,
+        -392.2,
+        22.0225,
+        2.85
+      ],
+      "freecadName": "V4_MASK_R02_ROOM_GLAZING",
+      "roomId": "MASK_R02",
+      "meta": {
+        "type": "interior_glazing",
+        "roomId": "MASK_R02",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R02_FLOOR_ZONE",
+      "buildingId": "MASK",
+      "system": "interiors",
+      "level": "F0",
+      "label": "清洗准备 · 功能区域",
+      "color": [
+        0.74,
+        0.8,
+        0.78
+      ],
+      "bounds": [
+        -414.875,
+        2.125,
+        0.406,
+        -385.125,
+        21.875,
+        0.418
+      ],
+      "freecadName": "V4_MASK_R02_FLOOR_ZONE",
+      "roomId": "MASK_R02",
+      "meta": {
+        "type": "room_zone",
+        "roomAreaM2": 600,
+        "roomId": "MASK_R02",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R02_DOOR",
+      "buildingId": "MASK",
+      "system": "interiors",
+      "level": "F0",
+      "label": "常开门及门框",
+      "color": [
+        0.54,
+        0.62,
+        0.6
+      ],
+      "bounds": [
+        -401.155,
+        1.88,
+        0.4,
+        -398.845,
+        3.08832,
+        2.75
+      ],
+      "freecadName": "V4_MASK_R02_DOOR",
+      "roomId": "MASK_R02",
+      "meta": {
+        "type": "door",
+        "roomId": "MASK_R02",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R02_F01",
+      "buildingId": "MASK",
+      "system": "interiors",
+      "level": "F0",
+      "label": "工作台/备料台",
+      "color": [
+        0.72,
+        0.76,
+        0.75
+      ],
+      "bounds": [
+        -407.4,
+        7.9,
+        0.4,
+        -404.6,
+        8.9,
+        1.195
+      ],
+      "freecadName": "V4_MASK_R02_F01",
+      "roomId": "MASK_R02",
+      "meta": {
+        "type": "furniture",
+        "roomId": "MASK_R02",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R02_F02",
+      "buildingId": "MASK",
+      "system": "interiors",
+      "level": "F0",
+      "label": "储物柜",
+      "color": [
+        0.77,
+        0.79,
+        0.76
+      ],
+      "bounds": [
+        -408.5,
+        16.6275,
+        0.4,
+        -406.5,
+        17.35,
+        2.2
+      ],
+      "freecadName": "V4_MASK_R02_F02",
+      "roomId": "MASK_R02",
+      "meta": {
+        "type": "furniture",
+        "roomId": "MASK_R02",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R02_F03",
+      "buildingId": "MASK",
+      "system": "interiors",
+      "level": "F0",
+      "label": "带防护罩实验工作台",
+      "color": [
+        0.7,
+        0.82,
+        0.83
+      ],
+      "bounds": [
+        -401.15,
+        16.45,
+        0.4,
+        -398.85,
+        17.55,
+        2.65
+      ],
+      "freecadName": "V4_MASK_R02_F03",
+      "roomId": "MASK_R02",
+      "meta": {
+        "type": "furniture",
+        "circuitId": "MASK_R02_C_POWER",
+        "ratedPowerKw": 1.4,
+        "roomId": "MASK_R02",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R02_DB",
+      "buildingId": "MASK",
+      "system": "electrical",
+      "level": "F0",
+      "label": "房间配电箱与断路器",
+      "color": [
+        0.3,
+        0.34,
+        0.39
+      ],
+      "bounds": [
+        -385.725,
+        1.995,
+        1.5,
+        -385.175,
+        2.325,
+        2.3
+      ],
+      "freecadName": "V4_MASK_R02_DB",
+      "roomId": "MASK_R02",
+      "meta": {
+        "id": "V4_MASK_R02_DB",
+        "assetId": "V4_MASK_R02_DB",
+        "buildingId": "MASK",
+        "roomId": "MASK_R02",
+        "controlKind": "breaker",
+        "type": "distribution_panel",
+        "label": "房间配电箱",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "upstreamIds": [
+          "V4_MASK_MDB"
+        ],
+        "ratedPowerKw": 0,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R02_FEEDER",
+      "buildingId": "MASK",
+      "system": "electrical",
+      "level": "F0",
+      "label": "主桥架至房间配电馈线",
+      "color": [
+        0.39,
+        0.32,
+        0.23
+      ],
+      "bounds": [
+        -385.46944,
+        -62.3,
+        2.2,
+        -385.43056,
+        2.21944,
+        3.93944
+      ],
+      "freecadName": "V4_MASK_R02_FEEDER",
+      "roomId": "MASK_R02",
+      "meta": {
+        "type": "cable",
+        "upstreamIds": [
+          "V4_MASK_MDB",
+          "V4_MASK_R02_DB"
+        ],
+        "roomId": "MASK_R02",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R02_L01",
+      "buildingId": "MASK",
+      "system": "lighting",
+      "level": "F0",
+      "label": "可调光照明分组 1",
+      "color": [
+        0.98,
+        0.91,
+        0.69
+      ],
+      "bounds": [
+        -411.12,
+        4.88,
+        3.138,
+        -388.88,
+        5.52,
+        3.75
+      ],
+      "freecadName": "V4_MASK_R02_L01",
+      "roomId": "MASK_R02",
+      "meta": {
+        "id": "V4_MASK_R02_L01",
+        "assetId": "V4_MASK_R02_L01",
+        "buildingId": "MASK",
+        "roomId": "MASK_R02",
+        "controlKind": "light",
+        "type": "luminaire_group",
+        "label": "照明分组 1",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "circuitId": "MASK_R02_C_LIGHT",
+        "ratedPowerKw": 0.9,
+        "upstreamIds": [
+          "V4_MASK_R02_DB"
+        ],
+        "dimmable": true,
+        "fixtureCount": 2,
+        "sourceReference": "ERCO grouped track lighting for exhibition; LED panels elsewhere",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R02_L02",
+      "buildingId": "MASK",
+      "system": "lighting",
+      "level": "F0",
+      "label": "可调光照明分组 2",
+      "color": [
+        0.98,
+        0.91,
+        0.69
+      ],
+      "bounds": [
+        -400.32,
+        4.88,
+        3.138,
+        -399.68,
+        5.52,
+        3.75
+      ],
+      "freecadName": "V4_MASK_R02_L02",
+      "roomId": "MASK_R02",
+      "meta": {
+        "id": "V4_MASK_R02_L02",
+        "assetId": "V4_MASK_R02_L02",
+        "buildingId": "MASK",
+        "roomId": "MASK_R02",
+        "controlKind": "light",
+        "type": "luminaire_group",
+        "label": "照明分组 2",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "circuitId": "MASK_R02_C_LIGHT",
+        "ratedPowerKw": 0.9,
+        "upstreamIds": [
+          "V4_MASK_R02_DB"
+        ],
+        "dimmable": true,
+        "fixtureCount": 1,
+        "sourceReference": "ERCO grouped track lighting for exhibition; LED panels elsewhere",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R02_L03",
+      "buildingId": "MASK",
+      "system": "lighting",
+      "level": "F0",
+      "label": "可调光照明分组 3",
+      "color": [
+        0.98,
+        0.91,
+        0.69
+      ],
+      "bounds": [
+        -411.12,
+        18.48,
+        3.138,
+        -388.88,
+        19.12,
+        3.75
+      ],
+      "freecadName": "V4_MASK_R02_L03",
+      "roomId": "MASK_R02",
+      "meta": {
+        "id": "V4_MASK_R02_L03",
+        "assetId": "V4_MASK_R02_L03",
+        "buildingId": "MASK",
+        "roomId": "MASK_R02",
+        "controlKind": "light",
+        "type": "luminaire_group",
+        "label": "照明分组 3",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "circuitId": "MASK_R02_C_LIGHT",
+        "ratedPowerKw": 0.9,
+        "upstreamIds": [
+          "V4_MASK_R02_DB"
+        ],
+        "dimmable": true,
+        "fixtureCount": 2,
+        "sourceReference": "ERCO grouped track lighting for exhibition; LED panels elsewhere",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R02_L04",
+      "buildingId": "MASK",
+      "system": "lighting",
+      "level": "F0",
+      "label": "可调光照明分组 4",
+      "color": [
+        0.98,
+        0.91,
+        0.69
+      ],
+      "bounds": [
+        -400.32,
+        18.48,
+        3.138,
+        -399.68,
+        19.12,
+        3.75
+      ],
+      "freecadName": "V4_MASK_R02_L04",
+      "roomId": "MASK_R02",
+      "meta": {
+        "id": "V4_MASK_R02_L04",
+        "assetId": "V4_MASK_R02_L04",
+        "buildingId": "MASK",
+        "roomId": "MASK_R02",
+        "controlKind": "light",
+        "type": "luminaire_group",
+        "label": "照明分组 4",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "circuitId": "MASK_R02_C_LIGHT",
+        "ratedPowerKw": 0.9,
+        "upstreamIds": [
+          "V4_MASK_R02_DB"
+        ],
+        "dimmable": true,
+        "fixtureCount": 1,
+        "sourceReference": "ERCO grouped track lighting for exhibition; LED panels elsewhere",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R02_LIGHT_DROPS",
+      "buildingId": "MASK",
+      "system": "electrical",
+      "level": "F0",
+      "label": "照明干线至灯具分组支线",
+      "color": [
+        0.3,
+        0.34,
+        0.39
+      ],
+      "bounds": [
+        -410.809,
+        4.871,
+        3.741,
+        -385.45,
+        18.8,
+        3.759
+      ],
+      "freecadName": "V4_MASK_R02_LIGHT_DROPS",
+      "roomId": "MASK_R02",
+      "meta": {
+        "type": "branch_cable",
+        "circuitId": "MASK_R02_C_LIGHT",
+        "roomId": "MASK_R02",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R02_CABLE_0",
+      "buildingId": "MASK",
+      "system": "electrical",
+      "level": "F0",
+      "label": "独立照明电路",
+      "color": [
+        0.3,
+        0.31,
+        0.34
+      ],
+      "bounds": [
+        -410.5,
+        2.18596,
+        2.1,
+        -385.43596,
+        4.89404,
+        3.76404
+      ],
+      "freecadName": "V4_MASK_R02_CABLE_0",
+      "roomId": "MASK_R02",
+      "meta": {
+        "type": "branch_cable",
+        "circuitId": "MASK_R02_C_LIGHT",
+        "upstreamIds": [
+          "V4_MASK_R02_DB"
+        ],
+        "roomId": "MASK_R02",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R02_CABLE_1",
+      "buildingId": "MASK",
+      "system": "electrical",
+      "level": "F0",
+      "label": "独立插座/设备电路",
+      "color": [
+        0.3,
+        0.31,
+        0.34
+      ],
+      "bounds": [
+        -410.5,
+        2.18596,
+        2.1,
+        -385.43596,
+        5.01404,
+        3.83404
+      ],
+      "freecadName": "V4_MASK_R02_CABLE_1",
+      "roomId": "MASK_R02",
+      "meta": {
+        "type": "branch_cable",
+        "circuitId": "MASK_R02_C_POWER",
+        "upstreamIds": [
+          "V4_MASK_R02_DB"
+        ],
+        "roomId": "MASK_R02",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R02_CABLE_2",
+      "buildingId": "MASK",
+      "system": "electrical",
+      "level": "F0",
+      "label": "独立空调电路",
+      "color": [
+        0.3,
+        0.31,
+        0.34
+      ],
+      "bounds": [
+        -410.5,
+        2.18596,
+        2.1,
+        -385.43596,
+        5.13404,
+        3.90404
+      ],
+      "freecadName": "V4_MASK_R02_CABLE_2",
+      "roomId": "MASK_R02",
+      "meta": {
+        "type": "branch_cable",
+        "circuitId": "MASK_R02_C_HVAC",
+        "upstreamIds": [
+          "V4_MASK_R02_DB"
+        ],
+        "roomId": "MASK_R02",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R02_SOCKET0",
+      "buildingId": "MASK",
+      "system": "electrical",
+      "level": "F0",
+      "label": "墙面插座及下引线",
+      "color": [
+        0.3,
+        0.34,
+        0.39
+      ],
+      "bounds": [
+        -409.065,
+        2.15,
+        0.76,
+        -385.45,
+        2.21,
+        3.82972
+      ],
+      "freecadName": "V4_MASK_R02_SOCKET0",
+      "roomId": "MASK_R02",
+      "meta": {
+        "type": "socket",
+        "circuitId": "MASK_R02_C_POWER",
+        "roomId": "MASK_R02",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R02_SOCKET1",
+      "buildingId": "MASK",
+      "system": "electrical",
+      "level": "F0",
+      "label": "墙面插座及下引线",
+      "color": [
+        0.3,
+        0.34,
+        0.39
+      ],
+      "bounds": [
+        -391.065,
+        2.15,
+        0.76,
+        -385.45,
+        2.21,
+        3.82972
+      ],
+      "freecadName": "V4_MASK_R02_SOCKET1",
+      "roomId": "MASK_R02",
+      "meta": {
+        "type": "socket",
+        "circuitId": "MASK_R02_C_POWER",
+        "roomId": "MASK_R02",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R02_AHU",
+      "buildingId": "MASK",
+      "system": "hvac",
+      "level": "F0",
+      "label": "局部空调与送回风终端",
+      "color": [
+        0.68,
+        0.75,
+        0.77
+      ],
+      "bounds": [
+        -414.525,
+        2.64,
+        2.55,
+        -389.5,
+        12.35,
+        3.7
+      ],
+      "freecadName": "V4_MASK_R02_AHU",
+      "roomId": "MASK_R02",
+      "meta": {
+        "id": "V4_MASK_R02_AHU",
+        "assetId": "V4_MASK_R02_AHU",
+        "buildingId": "MASK",
+        "roomId": "MASK_R02",
+        "controlKind": "ahu",
+        "type": "air_handling_unit",
+        "label": "局部空调/通风机组",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "circuitId": "MASK_R02_C_HVAC",
+        "ratedPowerKw": 7.2,
+        "upstreamIds": [
+          "V4_MASK_R02_DB"
+        ],
+        "designCoolingKw": 60.0,
+        "representativeTerminal": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R02_SINK",
+      "buildingId": "MASK",
+      "system": "water",
+      "level": "F0",
+      "label": "洗手/工艺准备水槽",
+      "color": [
+        0.81,
+        0.83,
+        0.82
+      ],
+      "bounds": [
+        -386.51,
+        14.68,
+        0.4,
+        -385.59,
+        15.32,
+        1.66944
+      ],
+      "freecadName": "V4_MASK_R02_SINK",
+      "roomId": "MASK_R02",
+      "meta": {
+        "type": "sink",
+        "demandLpm": 6,
+        "requiresWater": true,
+        "roomId": "MASK_R02",
+        "designStatus": "concept inferred; simulated data only",
+        "waterBranchIds": [
+          "MASK_R02_W_COLD",
+          "MASK_R02_W_HOT"
+        ]
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R02_DRAIN",
+      "buildingId": "MASK",
+      "system": "water",
+      "level": "F0",
+      "label": "独立排水支管（预留楼板套管）",
+      "color": [
+        0.4,
+        0.43,
+        0.4
+      ],
+      "bounds": [
+        -455.0,
+        -58.0594,
+        -0.2594,
+        -385.9906,
+        15.0594,
+        1.24
+      ],
+      "freecadName": "V4_MASK_R02_DRAIN",
+      "roomId": "MASK_R02",
+      "meta": {
+        "type": "drain_pipe",
+        "medium": "lab_waste",
+        "waterBranchId": "MASK_R02_W_DRAIN",
+        "penetrationsRequireCoordination": true,
+        "roomId": "MASK_R02",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R02_WASTE_HOLD",
+      "buildingId": "MASK",
+      "system": "water",
+      "level": "F0",
+      "label": "实验废水独立收集（示意）",
+      "color": [
+        0.62,
+        0.65,
+        0.6
+      ],
+      "bounds": [
+        -386.37,
+        13.43,
+        0.4,
+        -385.73,
+        14.07,
+        1.35
+      ],
+      "freecadName": "V4_MASK_R02_WASTE_HOLD",
+      "roomId": "MASK_R02",
+      "meta": {
+        "type": "waste_holding",
+        "medium": "lab_waste",
+        "waterBranchId": "MASK_R02_W_DRAIN",
+        "roomId": "MASK_R02",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R02_V_COLD",
+      "buildingId": "MASK",
+      "system": "water",
+      "level": "F0",
+      "label": "可控支路阀门",
+      "color": [
+        0.75,
+        0.34,
+        0.2
+      ],
+      "bounds": [
+        -395.245,
+        2.29,
+        3.44,
+        -394.845,
+        2.51,
+        3.795
+      ],
+      "freecadName": "V4_MASK_R02_V_COLD",
+      "roomId": "MASK_R02",
+      "meta": {
+        "id": "V4_MASK_R02_V_COLD",
+        "assetId": "V4_MASK_R02_V_COLD",
+        "buildingId": "MASK",
+        "roomId": "MASK_R02",
+        "controlKind": "valve",
+        "type": "isolation_valve",
+        "label": "生活冷水支路阀",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "waterBranchId": "MASK_R02_W_COLD",
+        "medium": "domestic_cold",
+        "ratedFlowLpm": 12,
+        "upstreamIds": [
+          "V4_MASK_WATER_MAIN"
+        ],
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R02_PIPE_COLD",
+      "buildingId": "MASK",
+      "system": "water",
+      "level": "F0",
+      "label": "domestic_cold · 阀后支管",
+      "color": [
+        0.12,
+        0.44,
+        0.72
+      ],
+      "bounds": [
+        -398.9378,
+        -60.5,
+        1.34,
+        -386.0122,
+        15.2678,
+        3.5878
+      ],
+      "freecadName": "V4_MASK_R02_PIPE_COLD",
+      "roomId": "MASK_R02",
+      "meta": {
+        "type": "water_branch",
+        "medium": "domestic_cold",
+        "waterBranchId": "MASK_R02_W_COLD",
+        "upstreamIds": [
+          "V4_MASK_R02_V_COLD"
+        ],
+        "roomId": "MASK_R02",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R02_V_HOT",
+      "buildingId": "MASK",
+      "system": "water",
+      "level": "F0",
+      "label": "可控支路阀门",
+      "color": [
+        0.75,
+        0.34,
+        0.2
+      ],
+      "bounds": [
+        -395.036,
+        2.29,
+        3.44,
+        -394.636,
+        2.51,
+        3.795
+      ],
+      "freecadName": "V4_MASK_R02_V_HOT",
+      "roomId": "MASK_R02",
+      "meta": {
+        "id": "V4_MASK_R02_V_HOT",
+        "assetId": "V4_MASK_R02_V_HOT",
+        "buildingId": "MASK",
+        "roomId": "MASK_R02",
+        "controlKind": "valve",
+        "type": "isolation_valve",
+        "label": "生活热水支路阀",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "waterBranchId": "MASK_R02_W_HOT",
+        "medium": "domestic_hot",
+        "ratedFlowLpm": 8,
+        "upstreamIds": [
+          "V4_MASK_HOT_MAIN"
+        ],
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R02_PIPE_HOT",
+      "buildingId": "MASK",
+      "system": "water",
+      "level": "F0",
+      "label": "domestic_hot · 阀后支管",
+      "color": [
+        0.77,
+        0.27,
+        0.21
+      ],
+      "bounds": [
+        -398.5878,
+        -59.5,
+        1.34,
+        -386.1322,
+        15.2678,
+        3.5878
+      ],
+      "freecadName": "V4_MASK_R02_PIPE_HOT",
+      "roomId": "MASK_R02",
+      "meta": {
+        "type": "water_branch",
+        "medium": "domestic_hot",
+        "waterBranchId": "MASK_R02_W_HOT",
+        "upstreamIds": [
+          "V4_MASK_R02_V_HOT"
+        ],
+        "roomId": "MASK_R02",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R02_S_TEMPERATURE",
+      "buildingId": "MASK",
+      "system": "sensors",
+      "level": "F0",
+      "label": "温度传感器",
+      "color": [
+        0.22,
+        0.63,
+        0.65
+      ],
+      "bounds": [
+        -414.96,
+        6.32,
+        1.75,
+        -414.835,
+        6.48,
+        1.97
+      ],
+      "freecadName": "V4_MASK_R02_S_TEMPERATURE",
+      "roomId": "MASK_R02",
+      "meta": {
+        "id": "V4_MASK_R02_S_TEMPERATURE",
+        "assetId": "V4_MASK_R02_S_TEMPERATURE",
+        "buildingId": "MASK",
+        "roomId": "MASK_R02",
+        "type": "sensor",
+        "sensorKind": "temperature",
+        "label": "温度传感器",
+        "unit": "°C",
+        "circuitId": "MASK_R02_C_POWER",
+        "upstreamIds": [
+          "V4_MASK_R02_DB"
+        ],
+        "simulated": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R02_S_HUMIDITY",
+      "buildingId": "MASK",
+      "system": "sensors",
+      "level": "F0",
+      "label": "相对湿度传感器",
+      "color": [
+        0.22,
+        0.63,
+        0.65
+      ],
+      "bounds": [
+        -414.96,
+        6.62,
+        1.75,
+        -414.835,
+        6.78,
+        1.97
+      ],
+      "freecadName": "V4_MASK_R02_S_HUMIDITY",
+      "roomId": "MASK_R02",
+      "meta": {
+        "id": "V4_MASK_R02_S_HUMIDITY",
+        "assetId": "V4_MASK_R02_S_HUMIDITY",
+        "buildingId": "MASK",
+        "roomId": "MASK_R02",
+        "type": "sensor",
+        "sensorKind": "humidity",
+        "label": "相对湿度传感器",
+        "unit": "%RH",
+        "circuitId": "MASK_R02_C_POWER",
+        "upstreamIds": [
+          "V4_MASK_R02_DB"
+        ],
+        "simulated": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R02_S_CO2",
+      "buildingId": "MASK",
+      "system": "sensors",
+      "level": "F0",
+      "label": "二氧化碳传感器",
+      "color": [
+        0.22,
+        0.63,
+        0.65
+      ],
+      "bounds": [
+        -414.96,
+        6.92,
+        1.75,
+        -414.835,
+        7.08,
+        1.97
+      ],
+      "freecadName": "V4_MASK_R02_S_CO2",
+      "roomId": "MASK_R02",
+      "meta": {
+        "id": "V4_MASK_R02_S_CO2",
+        "assetId": "V4_MASK_R02_S_CO2",
+        "buildingId": "MASK",
+        "roomId": "MASK_R02",
+        "type": "sensor",
+        "sensorKind": "co2",
+        "label": "二氧化碳传感器",
+        "unit": "ppm",
+        "circuitId": "MASK_R02_C_POWER",
+        "upstreamIds": [
+          "V4_MASK_R02_DB"
+        ],
+        "simulated": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R02_S_OCCUPANCY",
+      "buildingId": "MASK",
+      "system": "sensors",
+      "level": "F0",
+      "label": "占用传感器",
+      "color": [
+        0.22,
+        0.63,
+        0.65
+      ],
+      "bounds": [
+        -400.08,
+        11.92,
+        2.995,
+        -399.92,
+        12.08,
+        3.125
+      ],
+      "freecadName": "V4_MASK_R02_S_OCCUPANCY",
+      "roomId": "MASK_R02",
+      "meta": {
+        "id": "V4_MASK_R02_S_OCCUPANCY",
+        "assetId": "V4_MASK_R02_S_OCCUPANCY",
+        "buildingId": "MASK",
+        "roomId": "MASK_R02",
+        "type": "sensor",
+        "sensorKind": "occupancy",
+        "label": "占用传感器",
+        "unit": "persons",
+        "circuitId": "MASK_R02_C_POWER",
+        "upstreamIds": [
+          "V4_MASK_R02_DB"
+        ],
+        "simulated": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R02_S_POWER",
+      "buildingId": "MASK",
+      "system": "sensors",
+      "level": "F0",
+      "label": "支路电功率传感器",
+      "color": [
+        0.22,
+        0.63,
+        0.65
+      ],
+      "bounds": [
+        -414.96,
+        7.52,
+        1.75,
+        -414.835,
+        7.68,
+        1.97
+      ],
+      "freecadName": "V4_MASK_R02_S_POWER",
+      "roomId": "MASK_R02",
+      "meta": {
+        "id": "V4_MASK_R02_S_POWER",
+        "assetId": "V4_MASK_R02_S_POWER",
+        "buildingId": "MASK",
+        "roomId": "MASK_R02",
+        "type": "sensor",
+        "sensorKind": "power",
+        "label": "支路电功率传感器",
+        "unit": "kW",
+        "circuitId": "MASK_R02_C_POWER",
+        "upstreamIds": [
+          "V4_MASK_R02_DB"
+        ],
+        "simulated": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R02_S_FLOW_COLD",
+      "buildingId": "MASK",
+      "system": "sensors",
+      "level": "F0",
+      "label": "支路流量计",
+      "color": [
+        0.22,
+        0.63,
+        0.65
+      ],
+      "bounds": [
+        -390.6575,
+        2.325,
+        3.475,
+        -390.4375,
+        2.475,
+        3.7
+      ],
+      "freecadName": "V4_MASK_R02_S_FLOW_COLD",
+      "roomId": "MASK_R02",
+      "meta": {
+        "id": "V4_MASK_R02_S_FLOW_COLD",
+        "assetId": "V4_MASK_R02_S_FLOW_COLD",
+        "buildingId": "MASK",
+        "roomId": "MASK_R02",
+        "type": "sensor",
+        "sensorKind": "water_flow",
+        "label": "支路流量计",
+        "unit": "L/min",
+        "waterBranchId": "MASK_R02_W_COLD",
+        "simulated": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R02_S_FLOW_HOT",
+      "buildingId": "MASK",
+      "system": "sensors",
+      "level": "F0",
+      "label": "支路流量计",
+      "color": [
+        0.22,
+        0.63,
+        0.65
+      ],
+      "bounds": [
+        -390.613,
+        2.325,
+        3.475,
+        -390.393,
+        2.475,
+        3.7
+      ],
+      "freecadName": "V4_MASK_R02_S_FLOW_HOT",
+      "roomId": "MASK_R02",
+      "meta": {
+        "id": "V4_MASK_R02_S_FLOW_HOT",
+        "assetId": "V4_MASK_R02_S_FLOW_HOT",
+        "buildingId": "MASK",
+        "roomId": "MASK_R02",
+        "type": "sensor",
+        "sensorKind": "water_flow",
+        "label": "支路流量计",
+        "unit": "L/min",
+        "waterBranchId": "MASK_R02_W_HOT",
+        "simulated": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R03_WALLS",
+      "buildingId": "MASK",
+      "system": "interiors",
+      "level": "F0",
+      "label": "写入设备示意 · 隔墙与门洞",
+      "color": [
+        0.72,
+        0.77,
+        0.75
+      ],
+      "bounds": [
+        -375.0,
+        2.0,
+        0.425,
+        -345.0,
+        22.0,
+        3.425
+      ],
+      "freecadName": "V4_MASK_R03_WALLS",
+      "roomId": "MASK_R03",
+      "meta": {
+        "type": "room_partition",
+        "roomId": "MASK_R03",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R03_ROOM_GLAZING",
+      "buildingId": "MASK",
+      "system": "interiors",
+      "level": "F0",
+      "label": "观察窗",
+      "color": [
+        0.08,
+        0.24,
+        0.3
+      ],
+      "bounds": [
+        -367.8,
+        21.9775,
+        1.5,
+        -352.2,
+        22.0225,
+        2.85
+      ],
+      "freecadName": "V4_MASK_R03_ROOM_GLAZING",
+      "roomId": "MASK_R03",
+      "meta": {
+        "type": "interior_glazing",
+        "roomId": "MASK_R03",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R03_FLOOR_ZONE",
+      "buildingId": "MASK",
+      "system": "interiors",
+      "level": "F0",
+      "label": "写入设备示意 · 功能区域",
+      "color": [
+        0.74,
+        0.8,
+        0.78
+      ],
+      "bounds": [
+        -374.875,
+        2.125,
+        0.406,
+        -345.125,
+        21.875,
+        0.418
+      ],
+      "freecadName": "V4_MASK_R03_FLOOR_ZONE",
+      "roomId": "MASK_R03",
+      "meta": {
+        "type": "room_zone",
+        "roomAreaM2": 600,
+        "roomId": "MASK_R03",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R03_DOOR",
+      "buildingId": "MASK",
+      "system": "interiors",
+      "level": "F0",
+      "label": "常开门及门框",
+      "color": [
+        0.54,
+        0.62,
+        0.6
+      ],
+      "bounds": [
+        -361.155,
+        1.88,
+        0.4,
+        -358.845,
+        3.08832,
+        2.75
+      ],
+      "freecadName": "V4_MASK_R03_DOOR",
+      "roomId": "MASK_R03",
+      "meta": {
+        "type": "door",
+        "roomId": "MASK_R03",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R03_F01",
+      "buildingId": "MASK",
+      "system": "interiors",
+      "level": "F0",
+      "label": "电子束写入设备（示意）",
+      "color": [
+        0.72,
+        0.78,
+        0.81
+      ],
+      "bounds": [
+        -368.95,
+        10.8,
+        0.4,
+        -364.6,
+        13.2,
+        3.4
+      ],
+      "freecadName": "V4_MASK_R03_F01",
+      "roomId": "MASK_R03",
+      "meta": {
+        "type": "furniture",
+        "circuitId": "MASK_R03_C_POWER",
+        "ratedPowerKw": 8,
+        "sourceReference": "ZEISS AIMS / JEOL JBX equipment categories; no process specification claim",
+        "roomId": "MASK_R03",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R03_F02",
+      "buildingId": "MASK",
+      "system": "interiors",
+      "level": "F0",
+      "label": "电子束写入设备（示意）",
+      "color": [
+        0.72,
+        0.78,
+        0.81
+      ],
+      "bounds": [
+        -354.55,
+        10.8,
+        0.4,
+        -350.2,
+        13.2,
+        3.4
+      ],
+      "freecadName": "V4_MASK_R03_F02",
+      "roomId": "MASK_R03",
+      "meta": {
+        "type": "furniture",
+        "circuitId": "MASK_R03_C_POWER",
+        "ratedPowerKw": 8,
+        "sourceReference": "ZEISS AIMS / JEOL JBX equipment categories; no process specification claim",
+        "roomId": "MASK_R03",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R03_DB",
+      "buildingId": "MASK",
+      "system": "electrical",
+      "level": "F0",
+      "label": "房间配电箱与断路器",
+      "color": [
+        0.3,
+        0.34,
+        0.39
+      ],
+      "bounds": [
+        -345.725,
+        1.995,
+        1.5,
+        -345.175,
+        2.325,
+        2.3
+      ],
+      "freecadName": "V4_MASK_R03_DB",
+      "roomId": "MASK_R03",
+      "meta": {
+        "id": "V4_MASK_R03_DB",
+        "assetId": "V4_MASK_R03_DB",
+        "buildingId": "MASK",
+        "roomId": "MASK_R03",
+        "controlKind": "breaker",
+        "type": "distribution_panel",
+        "label": "房间配电箱",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "upstreamIds": [
+          "V4_MASK_MDB"
+        ],
+        "ratedPowerKw": 0,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R03_FEEDER",
+      "buildingId": "MASK",
+      "system": "electrical",
+      "level": "F0",
+      "label": "主桥架至房间配电馈线",
+      "color": [
+        0.39,
+        0.32,
+        0.23
+      ],
+      "bounds": [
+        -345.46944,
+        -62.3,
+        2.2,
+        -345.43056,
+        2.21944,
+        3.93944
+      ],
+      "freecadName": "V4_MASK_R03_FEEDER",
+      "roomId": "MASK_R03",
+      "meta": {
+        "type": "cable",
+        "upstreamIds": [
+          "V4_MASK_MDB",
+          "V4_MASK_R03_DB"
+        ],
+        "roomId": "MASK_R03",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R03_L01",
+      "buildingId": "MASK",
+      "system": "lighting",
+      "level": "F0",
+      "label": "可调光照明分组 1",
+      "color": [
+        0.98,
+        0.91,
+        0.69
+      ],
+      "bounds": [
+        -371.12,
+        4.88,
+        3.138,
+        -348.88,
+        5.52,
+        3.75
+      ],
+      "freecadName": "V4_MASK_R03_L01",
+      "roomId": "MASK_R03",
+      "meta": {
+        "id": "V4_MASK_R03_L01",
+        "assetId": "V4_MASK_R03_L01",
+        "buildingId": "MASK",
+        "roomId": "MASK_R03",
+        "controlKind": "light",
+        "type": "luminaire_group",
+        "label": "照明分组 1",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "circuitId": "MASK_R03_C_LIGHT",
+        "ratedPowerKw": 0.9,
+        "upstreamIds": [
+          "V4_MASK_R03_DB"
+        ],
+        "dimmable": true,
+        "fixtureCount": 2,
+        "sourceReference": "ERCO grouped track lighting for exhibition; LED panels elsewhere",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R03_L02",
+      "buildingId": "MASK",
+      "system": "lighting",
+      "level": "F0",
+      "label": "可调光照明分组 2",
+      "color": [
+        0.98,
+        0.91,
+        0.69
+      ],
+      "bounds": [
+        -360.32,
+        4.88,
+        3.138,
+        -359.68,
+        5.52,
+        3.75
+      ],
+      "freecadName": "V4_MASK_R03_L02",
+      "roomId": "MASK_R03",
+      "meta": {
+        "id": "V4_MASK_R03_L02",
+        "assetId": "V4_MASK_R03_L02",
+        "buildingId": "MASK",
+        "roomId": "MASK_R03",
+        "controlKind": "light",
+        "type": "luminaire_group",
+        "label": "照明分组 2",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "circuitId": "MASK_R03_C_LIGHT",
+        "ratedPowerKw": 0.9,
+        "upstreamIds": [
+          "V4_MASK_R03_DB"
+        ],
+        "dimmable": true,
+        "fixtureCount": 1,
+        "sourceReference": "ERCO grouped track lighting for exhibition; LED panels elsewhere",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R03_L03",
+      "buildingId": "MASK",
+      "system": "lighting",
+      "level": "F0",
+      "label": "可调光照明分组 3",
+      "color": [
+        0.98,
+        0.91,
+        0.69
+      ],
+      "bounds": [
+        -371.12,
+        18.48,
+        3.138,
+        -348.88,
+        19.12,
+        3.75
+      ],
+      "freecadName": "V4_MASK_R03_L03",
+      "roomId": "MASK_R03",
+      "meta": {
+        "id": "V4_MASK_R03_L03",
+        "assetId": "V4_MASK_R03_L03",
+        "buildingId": "MASK",
+        "roomId": "MASK_R03",
+        "controlKind": "light",
+        "type": "luminaire_group",
+        "label": "照明分组 3",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "circuitId": "MASK_R03_C_LIGHT",
+        "ratedPowerKw": 0.9,
+        "upstreamIds": [
+          "V4_MASK_R03_DB"
+        ],
+        "dimmable": true,
+        "fixtureCount": 2,
+        "sourceReference": "ERCO grouped track lighting for exhibition; LED panels elsewhere",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R03_L04",
+      "buildingId": "MASK",
+      "system": "lighting",
+      "level": "F0",
+      "label": "可调光照明分组 4",
+      "color": [
+        0.98,
+        0.91,
+        0.69
+      ],
+      "bounds": [
+        -360.32,
+        18.48,
+        3.138,
+        -359.68,
+        19.12,
+        3.75
+      ],
+      "freecadName": "V4_MASK_R03_L04",
+      "roomId": "MASK_R03",
+      "meta": {
+        "id": "V4_MASK_R03_L04",
+        "assetId": "V4_MASK_R03_L04",
+        "buildingId": "MASK",
+        "roomId": "MASK_R03",
+        "controlKind": "light",
+        "type": "luminaire_group",
+        "label": "照明分组 4",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "circuitId": "MASK_R03_C_LIGHT",
+        "ratedPowerKw": 0.9,
+        "upstreamIds": [
+          "V4_MASK_R03_DB"
+        ],
+        "dimmable": true,
+        "fixtureCount": 1,
+        "sourceReference": "ERCO grouped track lighting for exhibition; LED panels elsewhere",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R03_LIGHT_DROPS",
+      "buildingId": "MASK",
+      "system": "electrical",
+      "level": "F0",
+      "label": "照明干线至灯具分组支线",
+      "color": [
+        0.3,
+        0.34,
+        0.39
+      ],
+      "bounds": [
+        -370.809,
+        4.871,
+        3.741,
+        -345.45,
+        18.8,
+        3.759
+      ],
+      "freecadName": "V4_MASK_R03_LIGHT_DROPS",
+      "roomId": "MASK_R03",
+      "meta": {
+        "type": "branch_cable",
+        "circuitId": "MASK_R03_C_LIGHT",
+        "roomId": "MASK_R03",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R03_CABLE_0",
+      "buildingId": "MASK",
+      "system": "electrical",
+      "level": "F0",
+      "label": "独立照明电路",
+      "color": [
+        0.3,
+        0.31,
+        0.34
+      ],
+      "bounds": [
+        -370.5,
+        2.18596,
+        2.1,
+        -345.43596,
+        4.89404,
+        3.76404
+      ],
+      "freecadName": "V4_MASK_R03_CABLE_0",
+      "roomId": "MASK_R03",
+      "meta": {
+        "type": "branch_cable",
+        "circuitId": "MASK_R03_C_LIGHT",
+        "upstreamIds": [
+          "V4_MASK_R03_DB"
+        ],
+        "roomId": "MASK_R03",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R03_CABLE_1",
+      "buildingId": "MASK",
+      "system": "electrical",
+      "level": "F0",
+      "label": "独立插座/设备电路",
+      "color": [
+        0.3,
+        0.31,
+        0.34
+      ],
+      "bounds": [
+        -370.5,
+        2.18596,
+        2.1,
+        -345.43596,
+        5.01404,
+        3.83404
+      ],
+      "freecadName": "V4_MASK_R03_CABLE_1",
+      "roomId": "MASK_R03",
+      "meta": {
+        "type": "branch_cable",
+        "circuitId": "MASK_R03_C_POWER",
+        "upstreamIds": [
+          "V4_MASK_R03_DB"
+        ],
+        "roomId": "MASK_R03",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R03_CABLE_2",
+      "buildingId": "MASK",
+      "system": "electrical",
+      "level": "F0",
+      "label": "独立空调电路",
+      "color": [
+        0.3,
+        0.31,
+        0.34
+      ],
+      "bounds": [
+        -370.5,
+        2.18596,
+        2.1,
+        -345.43596,
+        5.13404,
+        3.90404
+      ],
+      "freecadName": "V4_MASK_R03_CABLE_2",
+      "roomId": "MASK_R03",
+      "meta": {
+        "type": "branch_cable",
+        "circuitId": "MASK_R03_C_HVAC",
+        "upstreamIds": [
+          "V4_MASK_R03_DB"
+        ],
+        "roomId": "MASK_R03",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R03_SOCKET0",
+      "buildingId": "MASK",
+      "system": "electrical",
+      "level": "F0",
+      "label": "墙面插座及下引线",
+      "color": [
+        0.3,
+        0.34,
+        0.39
+      ],
+      "bounds": [
+        -369.065,
+        2.15,
+        0.76,
+        -345.45,
+        2.21,
+        3.82972
+      ],
+      "freecadName": "V4_MASK_R03_SOCKET0",
+      "roomId": "MASK_R03",
+      "meta": {
+        "type": "socket",
+        "circuitId": "MASK_R03_C_POWER",
+        "roomId": "MASK_R03",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R03_SOCKET1",
+      "buildingId": "MASK",
+      "system": "electrical",
+      "level": "F0",
+      "label": "墙面插座及下引线",
+      "color": [
+        0.3,
+        0.34,
+        0.39
+      ],
+      "bounds": [
+        -351.065,
+        2.15,
+        0.76,
+        -345.45,
+        2.21,
+        3.82972
+      ],
+      "freecadName": "V4_MASK_R03_SOCKET1",
+      "roomId": "MASK_R03",
+      "meta": {
+        "type": "socket",
+        "circuitId": "MASK_R03_C_POWER",
+        "roomId": "MASK_R03",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R03_AHU",
+      "buildingId": "MASK",
+      "system": "hvac",
+      "level": "F0",
+      "label": "局部空调与送回风终端",
+      "color": [
+        0.68,
+        0.75,
+        0.77
+      ],
+      "bounds": [
+        -374.525,
+        2.64,
+        2.55,
+        -349.5,
+        12.35,
+        3.7
+      ],
+      "freecadName": "V4_MASK_R03_AHU",
+      "roomId": "MASK_R03",
+      "meta": {
+        "id": "V4_MASK_R03_AHU",
+        "assetId": "V4_MASK_R03_AHU",
+        "buildingId": "MASK",
+        "roomId": "MASK_R03",
+        "controlKind": "ahu",
+        "type": "air_handling_unit",
+        "label": "局部空调/通风机组",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "circuitId": "MASK_R03_C_HVAC",
+        "ratedPowerKw": 7.2,
+        "upstreamIds": [
+          "V4_MASK_R03_DB"
+        ],
+        "designCoolingKw": 60.0,
+        "representativeTerminal": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R03_V_PCW",
+      "buildingId": "MASK",
+      "system": "water",
+      "level": "F0",
+      "label": "可控支路阀门",
+      "color": [
+        0.75,
+        0.34,
+        0.2
+      ],
+      "bounds": [
+        -361.46,
+        2.29,
+        3.44,
+        -361.06,
+        2.51,
+        3.795
+      ],
+      "freecadName": "V4_MASK_R03_V_PCW",
+      "roomId": "MASK_R03",
+      "meta": {
+        "id": "V4_MASK_R03_V_PCW",
+        "assetId": "V4_MASK_R03_V_PCW",
+        "buildingId": "MASK",
+        "roomId": "MASK_R03",
+        "controlKind": "valve",
+        "type": "isolation_valve",
+        "label": "工艺冷却水支路阀",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "waterBranchId": "MASK_R03_W_PCW",
+        "medium": "pcw_supply",
+        "ratedFlowLpm": 35,
+        "upstreamIds": [
+          "V4_MASK_PCW_MAIN"
+        ],
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R03_PIPE_PCW",
+      "buildingId": "MASK",
+      "system": "water",
+      "level": "F0",
+      "label": "pcw_supply · 阀后支管",
+      "color": [
+        0.12,
+        0.6,
+        0.49
+      ],
+      "bounds": [
+        -368.454,
+        -57.5,
+        1.55,
+        -358.146,
+        16.654,
+        3.604
+      ],
+      "freecadName": "V4_MASK_R03_PIPE_PCW",
+      "roomId": "MASK_R03",
+      "meta": {
+        "type": "water_branch",
+        "medium": "pcw_supply",
+        "waterBranchId": "MASK_R03_W_PCW",
+        "upstreamIds": [
+          "V4_MASK_R03_V_PCW"
+        ],
+        "roomId": "MASK_R03",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R03_PCW_TERMINAL",
+      "buildingId": "MASK",
+      "system": "water",
+      "level": "F0",
+      "label": "设备PCW换热与供回水端",
+      "color": [
+        0.38,
+        0.67,
+        0.61
+      ],
+      "bounds": [
+        -369.1,
+        16.2,
+        0.4,
+        -367.7,
+        17.0,
+        1.36
+      ],
+      "freecadName": "V4_MASK_R03_PCW_TERMINAL",
+      "roomId": "MASK_R03",
+      "meta": {
+        "type": "process_cooling_terminal",
+        "medium": "pcw_supply",
+        "waterBranchId": "MASK_R03_W_PCW",
+        "isolatedFromDomestic": true,
+        "roomId": "MASK_R03",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R03_PCW_RETURN",
+      "buildingId": "MASK",
+      "system": "water",
+      "level": "F0",
+      "label": "PCW独立回水",
+      "color": [
+        0.47,
+        0.73,
+        0.28
+      ],
+      "bounds": [
+        -368.104,
+        -56.554,
+        1.05,
+        -357.696,
+        16.654,
+        3.55
+      ],
+      "freecadName": "V4_MASK_R03_PCW_RETURN",
+      "roomId": "MASK_R03",
+      "meta": {
+        "type": "water_branch",
+        "medium": "pcw_return",
+        "waterBranchId": "MASK_R03_W_PCW_RETURN",
+        "isolatedFromDomestic": true,
+        "roomId": "MASK_R03",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R03_S_TEMPERATURE",
+      "buildingId": "MASK",
+      "system": "sensors",
+      "level": "F0",
+      "label": "温度传感器",
+      "color": [
+        0.22,
+        0.63,
+        0.65
+      ],
+      "bounds": [
+        -374.96,
+        6.32,
+        1.75,
+        -374.835,
+        6.48,
+        1.97
+      ],
+      "freecadName": "V4_MASK_R03_S_TEMPERATURE",
+      "roomId": "MASK_R03",
+      "meta": {
+        "id": "V4_MASK_R03_S_TEMPERATURE",
+        "assetId": "V4_MASK_R03_S_TEMPERATURE",
+        "buildingId": "MASK",
+        "roomId": "MASK_R03",
+        "type": "sensor",
+        "sensorKind": "temperature",
+        "label": "温度传感器",
+        "unit": "°C",
+        "circuitId": "MASK_R03_C_POWER",
+        "upstreamIds": [
+          "V4_MASK_R03_DB"
+        ],
+        "simulated": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R03_S_HUMIDITY",
+      "buildingId": "MASK",
+      "system": "sensors",
+      "level": "F0",
+      "label": "相对湿度传感器",
+      "color": [
+        0.22,
+        0.63,
+        0.65
+      ],
+      "bounds": [
+        -374.96,
+        6.62,
+        1.75,
+        -374.835,
+        6.78,
+        1.97
+      ],
+      "freecadName": "V4_MASK_R03_S_HUMIDITY",
+      "roomId": "MASK_R03",
+      "meta": {
+        "id": "V4_MASK_R03_S_HUMIDITY",
+        "assetId": "V4_MASK_R03_S_HUMIDITY",
+        "buildingId": "MASK",
+        "roomId": "MASK_R03",
+        "type": "sensor",
+        "sensorKind": "humidity",
+        "label": "相对湿度传感器",
+        "unit": "%RH",
+        "circuitId": "MASK_R03_C_POWER",
+        "upstreamIds": [
+          "V4_MASK_R03_DB"
+        ],
+        "simulated": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R03_S_CO2",
+      "buildingId": "MASK",
+      "system": "sensors",
+      "level": "F0",
+      "label": "二氧化碳传感器",
+      "color": [
+        0.22,
+        0.63,
+        0.65
+      ],
+      "bounds": [
+        -374.96,
+        6.92,
+        1.75,
+        -374.835,
+        7.08,
+        1.97
+      ],
+      "freecadName": "V4_MASK_R03_S_CO2",
+      "roomId": "MASK_R03",
+      "meta": {
+        "id": "V4_MASK_R03_S_CO2",
+        "assetId": "V4_MASK_R03_S_CO2",
+        "buildingId": "MASK",
+        "roomId": "MASK_R03",
+        "type": "sensor",
+        "sensorKind": "co2",
+        "label": "二氧化碳传感器",
+        "unit": "ppm",
+        "circuitId": "MASK_R03_C_POWER",
+        "upstreamIds": [
+          "V4_MASK_R03_DB"
+        ],
+        "simulated": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R03_S_OCCUPANCY",
+      "buildingId": "MASK",
+      "system": "sensors",
+      "level": "F0",
+      "label": "占用传感器",
+      "color": [
+        0.22,
+        0.63,
+        0.65
+      ],
+      "bounds": [
+        -360.08,
+        11.92,
+        2.995,
+        -359.92,
+        12.08,
+        3.125
+      ],
+      "freecadName": "V4_MASK_R03_S_OCCUPANCY",
+      "roomId": "MASK_R03",
+      "meta": {
+        "id": "V4_MASK_R03_S_OCCUPANCY",
+        "assetId": "V4_MASK_R03_S_OCCUPANCY",
+        "buildingId": "MASK",
+        "roomId": "MASK_R03",
+        "type": "sensor",
+        "sensorKind": "occupancy",
+        "label": "占用传感器",
+        "unit": "persons",
+        "circuitId": "MASK_R03_C_POWER",
+        "upstreamIds": [
+          "V4_MASK_R03_DB"
+        ],
+        "simulated": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R03_S_POWER",
+      "buildingId": "MASK",
+      "system": "sensors",
+      "level": "F0",
+      "label": "支路电功率传感器",
+      "color": [
+        0.22,
+        0.63,
+        0.65
+      ],
+      "bounds": [
+        -374.96,
+        7.52,
+        1.75,
+        -374.835,
+        7.68,
+        1.97
+      ],
+      "freecadName": "V4_MASK_R03_S_POWER",
+      "roomId": "MASK_R03",
+      "meta": {
+        "id": "V4_MASK_R03_S_POWER",
+        "assetId": "V4_MASK_R03_S_POWER",
+        "buildingId": "MASK",
+        "roomId": "MASK_R03",
+        "type": "sensor",
+        "sensorKind": "power",
+        "label": "支路电功率传感器",
+        "unit": "kW",
+        "circuitId": "MASK_R03_C_POWER",
+        "upstreamIds": [
+          "V4_MASK_R03_DB"
+        ],
+        "simulated": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R03_S_FLOW_PCW",
+      "buildingId": "MASK",
+      "system": "sensors",
+      "level": "F0",
+      "label": "支路流量计",
+      "color": [
+        0.22,
+        0.63,
+        0.65
+      ],
+      "bounds": [
+        -364.94,
+        2.325,
+        3.475,
+        -364.72,
+        2.475,
+        3.7
+      ],
+      "freecadName": "V4_MASK_R03_S_FLOW_PCW",
+      "roomId": "MASK_R03",
+      "meta": {
+        "id": "V4_MASK_R03_S_FLOW_PCW",
+        "assetId": "V4_MASK_R03_S_FLOW_PCW",
+        "buildingId": "MASK",
+        "roomId": "MASK_R03",
+        "type": "sensor",
+        "sensorKind": "water_flow",
+        "label": "支路流量计",
+        "unit": "L/min",
+        "waterBranchId": "MASK_R03_W_PCW",
+        "simulated": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R04_WALLS",
+      "buildingId": "MASK",
+      "system": "interiors",
+      "level": "F0",
+      "label": "成品缓存与更衣 · 隔墙与门洞",
+      "color": [
+        0.72,
+        0.77,
+        0.75
+      ],
+      "bounds": [
+        -336.0,
+        2.0,
+        0.425,
+        -306.0,
+        22.0,
+        3.425
+      ],
+      "freecadName": "V4_MASK_R04_WALLS",
+      "roomId": "MASK_R04",
+      "meta": {
+        "type": "room_partition",
+        "roomId": "MASK_R04",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R04_ROOM_GLAZING",
+      "buildingId": "MASK",
+      "system": "interiors",
+      "level": "F0",
+      "label": "观察窗",
+      "color": [
+        0.08,
+        0.24,
+        0.3
+      ],
+      "bounds": [
+        -328.8,
+        21.9775,
+        1.5,
+        -313.2,
+        22.0225,
+        2.85
+      ],
+      "freecadName": "V4_MASK_R04_ROOM_GLAZING",
+      "roomId": "MASK_R04",
+      "meta": {
+        "type": "interior_glazing",
+        "roomId": "MASK_R04",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R04_FLOOR_ZONE",
+      "buildingId": "MASK",
+      "system": "interiors",
+      "level": "F0",
+      "label": "成品缓存与更衣 · 功能区域",
+      "color": [
+        0.74,
+        0.8,
+        0.78
+      ],
+      "bounds": [
+        -335.875,
+        2.125,
+        0.406,
+        -306.125,
+        21.875,
+        0.418
+      ],
+      "freecadName": "V4_MASK_R04_FLOOR_ZONE",
+      "roomId": "MASK_R04",
+      "meta": {
+        "type": "room_zone",
+        "roomAreaM2": 600,
+        "roomId": "MASK_R04",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R04_DOOR",
+      "buildingId": "MASK",
+      "system": "interiors",
+      "level": "F0",
+      "label": "常开门及门框",
+      "color": [
+        0.54,
+        0.62,
+        0.6
+      ],
+      "bounds": [
+        -322.155,
+        1.88,
+        0.4,
+        -319.845,
+        3.08832,
+        2.75
+      ],
+      "freecadName": "V4_MASK_R04_DOOR",
+      "roomId": "MASK_R04",
+      "meta": {
+        "type": "door",
+        "roomId": "MASK_R04",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R04_F01",
+      "buildingId": "MASK",
+      "system": "interiors",
+      "level": "F0",
+      "label": "更衣/储存柜",
+      "color": [
+        0.58,
+        0.66,
+        0.68
+      ],
+      "bounds": [
+        -329.8,
+        15.5,
+        0.4,
+        -327.2,
+        16.5,
+        2.6
+      ],
+      "freecadName": "V4_MASK_R04_F01",
+      "roomId": "MASK_R04",
+      "meta": {
+        "type": "furniture",
+        "roomId": "MASK_R04",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R04_F02",
+      "buildingId": "MASK",
+      "system": "interiors",
+      "level": "F0",
+      "label": "更衣/储存柜",
+      "color": [
+        0.58,
+        0.66,
+        0.68
+      ],
+      "bounds": [
+        -314.8,
+        15.5,
+        0.4,
+        -312.2,
+        16.5,
+        2.6
+      ],
+      "freecadName": "V4_MASK_R04_F02",
+      "roomId": "MASK_R04",
+      "meta": {
+        "type": "furniture",
+        "roomId": "MASK_R04",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R04_F03",
+      "buildingId": "MASK",
+      "system": "interiors",
+      "level": "F0",
+      "label": "更衣长凳",
+      "color": [
+        0.58,
+        0.39,
+        0.23
+      ],
+      "bounds": [
+        -322.4,
+        7.35,
+        0.4,
+        -319.6,
+        7.85,
+        1.195
+      ],
+      "freecadName": "V4_MASK_R04_F03",
+      "roomId": "MASK_R04",
+      "meta": {
+        "type": "furniture",
+        "roomId": "MASK_R04",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R04_DB",
+      "buildingId": "MASK",
+      "system": "electrical",
+      "level": "F0",
+      "label": "房间配电箱与断路器",
+      "color": [
+        0.3,
+        0.34,
+        0.39
+      ],
+      "bounds": [
+        -306.725,
+        1.995,
+        1.5,
+        -306.175,
+        2.325,
+        2.3
+      ],
+      "freecadName": "V4_MASK_R04_DB",
+      "roomId": "MASK_R04",
+      "meta": {
+        "id": "V4_MASK_R04_DB",
+        "assetId": "V4_MASK_R04_DB",
+        "buildingId": "MASK",
+        "roomId": "MASK_R04",
+        "controlKind": "breaker",
+        "type": "distribution_panel",
+        "label": "房间配电箱",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "upstreamIds": [
+          "V4_MASK_MDB"
+        ],
+        "ratedPowerKw": 0,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R04_FEEDER",
+      "buildingId": "MASK",
+      "system": "electrical",
+      "level": "F0",
+      "label": "主桥架至房间配电馈线",
+      "color": [
+        0.39,
+        0.32,
+        0.23
+      ],
+      "bounds": [
+        -306.46944,
+        -62.3,
+        2.2,
+        -306.43056,
+        2.21944,
+        3.93944
+      ],
+      "freecadName": "V4_MASK_R04_FEEDER",
+      "roomId": "MASK_R04",
+      "meta": {
+        "type": "cable",
+        "upstreamIds": [
+          "V4_MASK_MDB",
+          "V4_MASK_R04_DB"
+        ],
+        "roomId": "MASK_R04",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R04_L01",
+      "buildingId": "MASK",
+      "system": "lighting",
+      "level": "F0",
+      "label": "可调光照明分组 1",
+      "color": [
+        0.98,
+        0.91,
+        0.69
+      ],
+      "bounds": [
+        -332.12,
+        4.88,
+        3.138,
+        -309.88,
+        5.52,
+        3.75
+      ],
+      "freecadName": "V4_MASK_R04_L01",
+      "roomId": "MASK_R04",
+      "meta": {
+        "id": "V4_MASK_R04_L01",
+        "assetId": "V4_MASK_R04_L01",
+        "buildingId": "MASK",
+        "roomId": "MASK_R04",
+        "controlKind": "light",
+        "type": "luminaire_group",
+        "label": "照明分组 1",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "circuitId": "MASK_R04_C_LIGHT",
+        "ratedPowerKw": 0.9,
+        "upstreamIds": [
+          "V4_MASK_R04_DB"
+        ],
+        "dimmable": true,
+        "fixtureCount": 2,
+        "sourceReference": "ERCO grouped track lighting for exhibition; LED panels elsewhere",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R04_L02",
+      "buildingId": "MASK",
+      "system": "lighting",
+      "level": "F0",
+      "label": "可调光照明分组 2",
+      "color": [
+        0.98,
+        0.91,
+        0.69
+      ],
+      "bounds": [
+        -321.32,
+        4.88,
+        3.138,
+        -320.68,
+        5.52,
+        3.75
+      ],
+      "freecadName": "V4_MASK_R04_L02",
+      "roomId": "MASK_R04",
+      "meta": {
+        "id": "V4_MASK_R04_L02",
+        "assetId": "V4_MASK_R04_L02",
+        "buildingId": "MASK",
+        "roomId": "MASK_R04",
+        "controlKind": "light",
+        "type": "luminaire_group",
+        "label": "照明分组 2",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "circuitId": "MASK_R04_C_LIGHT",
+        "ratedPowerKw": 0.9,
+        "upstreamIds": [
+          "V4_MASK_R04_DB"
+        ],
+        "dimmable": true,
+        "fixtureCount": 1,
+        "sourceReference": "ERCO grouped track lighting for exhibition; LED panels elsewhere",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R04_L03",
+      "buildingId": "MASK",
+      "system": "lighting",
+      "level": "F0",
+      "label": "可调光照明分组 3",
+      "color": [
+        0.98,
+        0.91,
+        0.69
+      ],
+      "bounds": [
+        -332.12,
+        18.48,
+        3.138,
+        -309.88,
+        19.12,
+        3.75
+      ],
+      "freecadName": "V4_MASK_R04_L03",
+      "roomId": "MASK_R04",
+      "meta": {
+        "id": "V4_MASK_R04_L03",
+        "assetId": "V4_MASK_R04_L03",
+        "buildingId": "MASK",
+        "roomId": "MASK_R04",
+        "controlKind": "light",
+        "type": "luminaire_group",
+        "label": "照明分组 3",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "circuitId": "MASK_R04_C_LIGHT",
+        "ratedPowerKw": 0.9,
+        "upstreamIds": [
+          "V4_MASK_R04_DB"
+        ],
+        "dimmable": true,
+        "fixtureCount": 2,
+        "sourceReference": "ERCO grouped track lighting for exhibition; LED panels elsewhere",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R04_L04",
+      "buildingId": "MASK",
+      "system": "lighting",
+      "level": "F0",
+      "label": "可调光照明分组 4",
+      "color": [
+        0.98,
+        0.91,
+        0.69
+      ],
+      "bounds": [
+        -321.32,
+        18.48,
+        3.138,
+        -320.68,
+        19.12,
+        3.75
+      ],
+      "freecadName": "V4_MASK_R04_L04",
+      "roomId": "MASK_R04",
+      "meta": {
+        "id": "V4_MASK_R04_L04",
+        "assetId": "V4_MASK_R04_L04",
+        "buildingId": "MASK",
+        "roomId": "MASK_R04",
+        "controlKind": "light",
+        "type": "luminaire_group",
+        "label": "照明分组 4",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "circuitId": "MASK_R04_C_LIGHT",
+        "ratedPowerKw": 0.9,
+        "upstreamIds": [
+          "V4_MASK_R04_DB"
+        ],
+        "dimmable": true,
+        "fixtureCount": 1,
+        "sourceReference": "ERCO grouped track lighting for exhibition; LED panels elsewhere",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R04_LIGHT_DROPS",
+      "buildingId": "MASK",
+      "system": "electrical",
+      "level": "F0",
+      "label": "照明干线至灯具分组支线",
+      "color": [
+        0.3,
+        0.34,
+        0.39
+      ],
+      "bounds": [
+        -331.809,
+        4.871,
+        3.741,
+        -306.45,
+        18.8,
+        3.759
+      ],
+      "freecadName": "V4_MASK_R04_LIGHT_DROPS",
+      "roomId": "MASK_R04",
+      "meta": {
+        "type": "branch_cable",
+        "circuitId": "MASK_R04_C_LIGHT",
+        "roomId": "MASK_R04",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R04_CABLE_0",
+      "buildingId": "MASK",
+      "system": "electrical",
+      "level": "F0",
+      "label": "独立照明电路",
+      "color": [
+        0.3,
+        0.31,
+        0.34
+      ],
+      "bounds": [
+        -331.5,
+        2.18596,
+        2.1,
+        -306.43596,
+        4.89404,
+        3.76404
+      ],
+      "freecadName": "V4_MASK_R04_CABLE_0",
+      "roomId": "MASK_R04",
+      "meta": {
+        "type": "branch_cable",
+        "circuitId": "MASK_R04_C_LIGHT",
+        "upstreamIds": [
+          "V4_MASK_R04_DB"
+        ],
+        "roomId": "MASK_R04",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R04_CABLE_1",
+      "buildingId": "MASK",
+      "system": "electrical",
+      "level": "F0",
+      "label": "独立插座/设备电路",
+      "color": [
+        0.3,
+        0.31,
+        0.34
+      ],
+      "bounds": [
+        -331.5,
+        2.18596,
+        2.1,
+        -306.43596,
+        5.01404,
+        3.83404
+      ],
+      "freecadName": "V4_MASK_R04_CABLE_1",
+      "roomId": "MASK_R04",
+      "meta": {
+        "type": "branch_cable",
+        "circuitId": "MASK_R04_C_POWER",
+        "upstreamIds": [
+          "V4_MASK_R04_DB"
+        ],
+        "roomId": "MASK_R04",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R04_CABLE_2",
+      "buildingId": "MASK",
+      "system": "electrical",
+      "level": "F0",
+      "label": "独立空调电路",
+      "color": [
+        0.3,
+        0.31,
+        0.34
+      ],
+      "bounds": [
+        -331.5,
+        2.18596,
+        2.1,
+        -306.43596,
+        5.13404,
+        3.90404
+      ],
+      "freecadName": "V4_MASK_R04_CABLE_2",
+      "roomId": "MASK_R04",
+      "meta": {
+        "type": "branch_cable",
+        "circuitId": "MASK_R04_C_HVAC",
+        "upstreamIds": [
+          "V4_MASK_R04_DB"
+        ],
+        "roomId": "MASK_R04",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R04_SOCKET0",
+      "buildingId": "MASK",
+      "system": "electrical",
+      "level": "F0",
+      "label": "墙面插座及下引线",
+      "color": [
+        0.3,
+        0.34,
+        0.39
+      ],
+      "bounds": [
+        -330.065,
+        2.15,
+        0.76,
+        -306.45,
+        2.21,
+        3.82972
+      ],
+      "freecadName": "V4_MASK_R04_SOCKET0",
+      "roomId": "MASK_R04",
+      "meta": {
+        "type": "socket",
+        "circuitId": "MASK_R04_C_POWER",
+        "roomId": "MASK_R04",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R04_SOCKET1",
+      "buildingId": "MASK",
+      "system": "electrical",
+      "level": "F0",
+      "label": "墙面插座及下引线",
+      "color": [
+        0.3,
+        0.34,
+        0.39
+      ],
+      "bounds": [
+        -312.065,
+        2.15,
+        0.76,
+        -306.45,
+        2.21,
+        3.82972
+      ],
+      "freecadName": "V4_MASK_R04_SOCKET1",
+      "roomId": "MASK_R04",
+      "meta": {
+        "type": "socket",
+        "circuitId": "MASK_R04_C_POWER",
+        "roomId": "MASK_R04",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R04_AHU",
+      "buildingId": "MASK",
+      "system": "hvac",
+      "level": "F0",
+      "label": "局部空调与送回风终端",
+      "color": [
+        0.68,
+        0.75,
+        0.77
+      ],
+      "bounds": [
+        -335.525,
+        2.64,
+        2.55,
+        -310.5,
+        12.35,
+        3.7
+      ],
+      "freecadName": "V4_MASK_R04_AHU",
+      "roomId": "MASK_R04",
+      "meta": {
+        "id": "V4_MASK_R04_AHU",
+        "assetId": "V4_MASK_R04_AHU",
+        "buildingId": "MASK",
+        "roomId": "MASK_R04",
+        "controlKind": "ahu",
+        "type": "air_handling_unit",
+        "label": "局部空调/通风机组",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "circuitId": "MASK_R04_C_HVAC",
+        "ratedPowerKw": 7.2,
+        "upstreamIds": [
+          "V4_MASK_R04_DB"
+        ],
+        "designCoolingKw": 60.0,
+        "representativeTerminal": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R04_S_TEMPERATURE",
+      "buildingId": "MASK",
+      "system": "sensors",
+      "level": "F0",
+      "label": "温度传感器",
+      "color": [
+        0.22,
+        0.63,
+        0.65
+      ],
+      "bounds": [
+        -335.96,
+        6.32,
+        1.75,
+        -335.835,
+        6.48,
+        1.97
+      ],
+      "freecadName": "V4_MASK_R04_S_TEMPERATURE",
+      "roomId": "MASK_R04",
+      "meta": {
+        "id": "V4_MASK_R04_S_TEMPERATURE",
+        "assetId": "V4_MASK_R04_S_TEMPERATURE",
+        "buildingId": "MASK",
+        "roomId": "MASK_R04",
+        "type": "sensor",
+        "sensorKind": "temperature",
+        "label": "温度传感器",
+        "unit": "°C",
+        "circuitId": "MASK_R04_C_POWER",
+        "upstreamIds": [
+          "V4_MASK_R04_DB"
+        ],
+        "simulated": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R04_S_HUMIDITY",
+      "buildingId": "MASK",
+      "system": "sensors",
+      "level": "F0",
+      "label": "相对湿度传感器",
+      "color": [
+        0.22,
+        0.63,
+        0.65
+      ],
+      "bounds": [
+        -335.96,
+        6.62,
+        1.75,
+        -335.835,
+        6.78,
+        1.97
+      ],
+      "freecadName": "V4_MASK_R04_S_HUMIDITY",
+      "roomId": "MASK_R04",
+      "meta": {
+        "id": "V4_MASK_R04_S_HUMIDITY",
+        "assetId": "V4_MASK_R04_S_HUMIDITY",
+        "buildingId": "MASK",
+        "roomId": "MASK_R04",
+        "type": "sensor",
+        "sensorKind": "humidity",
+        "label": "相对湿度传感器",
+        "unit": "%RH",
+        "circuitId": "MASK_R04_C_POWER",
+        "upstreamIds": [
+          "V4_MASK_R04_DB"
+        ],
+        "simulated": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R04_S_CO2",
+      "buildingId": "MASK",
+      "system": "sensors",
+      "level": "F0",
+      "label": "二氧化碳传感器",
+      "color": [
+        0.22,
+        0.63,
+        0.65
+      ],
+      "bounds": [
+        -335.96,
+        6.92,
+        1.75,
+        -335.835,
+        7.08,
+        1.97
+      ],
+      "freecadName": "V4_MASK_R04_S_CO2",
+      "roomId": "MASK_R04",
+      "meta": {
+        "id": "V4_MASK_R04_S_CO2",
+        "assetId": "V4_MASK_R04_S_CO2",
+        "buildingId": "MASK",
+        "roomId": "MASK_R04",
+        "type": "sensor",
+        "sensorKind": "co2",
+        "label": "二氧化碳传感器",
+        "unit": "ppm",
+        "circuitId": "MASK_R04_C_POWER",
+        "upstreamIds": [
+          "V4_MASK_R04_DB"
+        ],
+        "simulated": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R04_S_OCCUPANCY",
+      "buildingId": "MASK",
+      "system": "sensors",
+      "level": "F0",
+      "label": "占用传感器",
+      "color": [
+        0.22,
+        0.63,
+        0.65
+      ],
+      "bounds": [
+        -321.08,
+        11.92,
+        2.995,
+        -320.92,
+        12.08,
+        3.125
+      ],
+      "freecadName": "V4_MASK_R04_S_OCCUPANCY",
+      "roomId": "MASK_R04",
+      "meta": {
+        "id": "V4_MASK_R04_S_OCCUPANCY",
+        "assetId": "V4_MASK_R04_S_OCCUPANCY",
+        "buildingId": "MASK",
+        "roomId": "MASK_R04",
+        "type": "sensor",
+        "sensorKind": "occupancy",
+        "label": "占用传感器",
+        "unit": "persons",
+        "circuitId": "MASK_R04_C_POWER",
+        "upstreamIds": [
+          "V4_MASK_R04_DB"
+        ],
+        "simulated": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_MASK_R04_S_POWER",
+      "buildingId": "MASK",
+      "system": "sensors",
+      "level": "F0",
+      "label": "支路电功率传感器",
+      "color": [
+        0.22,
+        0.63,
+        0.65
+      ],
+      "bounds": [
+        -335.96,
+        7.52,
+        1.75,
+        -335.835,
+        7.68,
+        1.97
+      ],
+      "freecadName": "V4_MASK_R04_S_POWER",
+      "roomId": "MASK_R04",
+      "meta": {
+        "id": "V4_MASK_R04_S_POWER",
+        "assetId": "V4_MASK_R04_S_POWER",
+        "buildingId": "MASK",
+        "roomId": "MASK_R04",
+        "type": "sensor",
+        "sensorKind": "power",
+        "label": "支路电功率传感器",
+        "unit": "kW",
+        "circuitId": "MASK_R04_C_POWER",
+        "upstreamIds": [
+          "V4_MASK_R04_DB"
+        ],
+        "simulated": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    }
+  ]
+}

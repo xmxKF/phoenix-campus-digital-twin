@@ -1,0 +1,1821 @@
+{
+  "building": {
+    "id": "LAB",
+    "position": [
+      380,
+      -7,
+      0
+    ],
+    "size": [
+      164,
+      117,
+      25
+    ],
+    "features": [
+      "ribbon windows",
+      "taller scrubber bank",
+      "laboratory entrance",
+      "AHU field"
+    ],
+    "source": "R1 left/R2 right; S02",
+    "confidence": "medium",
+    "levels": {
+      "F0": 0.0,
+      "F1": 6.25,
+      "F2": 12.5,
+      "F3": 18.75,
+      "RF": 25
+    },
+    "dimensionBasis": "V2 image-inferred envelope, architecturally estimated interiors",
+    "units": "m",
+    "axesX": [
+      -80.5,
+      -68.115,
+      -55.731,
+      -43.346,
+      -30.962,
+      -18.577,
+      -6.192,
+      6.192,
+      18.577,
+      30.962,
+      43.346,
+      55.731,
+      68.115,
+      80.5
+    ],
+    "axesY": [
+      -57.0,
+      -42.75,
+      -28.5,
+      -14.25,
+      0.0,
+      14.25,
+      28.5,
+      42.75,
+      57.0
+    ]
+  },
+  "components": [
+    {
+      "id": "LAB_foundation_0293",
+      "buildingId": "LAB",
+      "system": "foundation",
+      "level": "FOUNDATION",
+      "label": "Concept raft",
+      "color": [
+        0.48,
+        0.52,
+        0.57
+      ],
+      "bounds": [
+        295.5,
+        -68.0,
+        -1.2,
+        464.5,
+        54.0,
+        0.0
+      ],
+      "source": "Design concept",
+      "freecadName": "LAB_foundation_0293"
+    },
+    {
+      "id": "LAB_structure_0294",
+      "buildingId": "LAB",
+      "system": "structure",
+      "level": "ALL",
+      "label": "Column frame 01",
+      "color": [
+        0.69,
+        0.73,
+        0.77
+      ],
+      "bounds": [
+        299.075,
+        -64.425,
+        0.0,
+        460.925,
+        -63.575,
+        25.0
+      ],
+      "source": "Design concept",
+      "freecadName": "LAB_structure_0294"
+    },
+    {
+      "id": "LAB_structure_0295",
+      "buildingId": "LAB",
+      "system": "structure",
+      "level": "ALL",
+      "label": "Column frame 02",
+      "color": [
+        0.69,
+        0.73,
+        0.77
+      ],
+      "bounds": [
+        299.075,
+        -50.175,
+        0.0,
+        460.925,
+        -49.325,
+        25.0
+      ],
+      "source": "Design concept",
+      "freecadName": "LAB_structure_0295"
+    },
+    {
+      "id": "LAB_structure_0296",
+      "buildingId": "LAB",
+      "system": "structure",
+      "level": "ALL",
+      "label": "Column frame 03",
+      "color": [
+        0.69,
+        0.73,
+        0.77
+      ],
+      "bounds": [
+        299.075,
+        -35.925,
+        0.0,
+        460.925,
+        -35.075,
+        25.0
+      ],
+      "source": "Design concept",
+      "freecadName": "LAB_structure_0296"
+    },
+    {
+      "id": "LAB_structure_0297",
+      "buildingId": "LAB",
+      "system": "structure",
+      "level": "ALL",
+      "label": "Column frame 04",
+      "color": [
+        0.69,
+        0.73,
+        0.77
+      ],
+      "bounds": [
+        299.075,
+        -21.675,
+        0.0,
+        460.925,
+        -20.825,
+        25.0
+      ],
+      "source": "Design concept",
+      "freecadName": "LAB_structure_0297"
+    },
+    {
+      "id": "LAB_structure_0298",
+      "buildingId": "LAB",
+      "system": "structure",
+      "level": "ALL",
+      "label": "Column frame 05",
+      "color": [
+        0.69,
+        0.73,
+        0.77
+      ],
+      "bounds": [
+        299.075,
+        -7.425,
+        0.0,
+        460.925,
+        -6.575,
+        25.0
+      ],
+      "source": "Design concept",
+      "freecadName": "LAB_structure_0298"
+    },
+    {
+      "id": "LAB_structure_0299",
+      "buildingId": "LAB",
+      "system": "structure",
+      "level": "ALL",
+      "label": "Column frame 06",
+      "color": [
+        0.69,
+        0.73,
+        0.77
+      ],
+      "bounds": [
+        299.075,
+        6.825,
+        0.0,
+        460.925,
+        7.675,
+        25.0
+      ],
+      "source": "Design concept",
+      "freecadName": "LAB_structure_0299"
+    },
+    {
+      "id": "LAB_structure_0300",
+      "buildingId": "LAB",
+      "system": "structure",
+      "level": "ALL",
+      "label": "Column frame 07",
+      "color": [
+        0.69,
+        0.73,
+        0.77
+      ],
+      "bounds": [
+        299.075,
+        21.075,
+        0.0,
+        460.925,
+        21.925,
+        25.0
+      ],
+      "source": "Design concept",
+      "freecadName": "LAB_structure_0300"
+    },
+    {
+      "id": "LAB_structure_0301",
+      "buildingId": "LAB",
+      "system": "structure",
+      "level": "ALL",
+      "label": "Column frame 08",
+      "color": [
+        0.69,
+        0.73,
+        0.77
+      ],
+      "bounds": [
+        299.075,
+        35.325,
+        0.0,
+        460.925,
+        36.175,
+        25.0
+      ],
+      "source": "Design concept",
+      "freecadName": "LAB_structure_0301"
+    },
+    {
+      "id": "LAB_structure_0302",
+      "buildingId": "LAB",
+      "system": "structure",
+      "level": "ALL",
+      "label": "Column frame 09",
+      "color": [
+        0.69,
+        0.73,
+        0.77
+      ],
+      "bounds": [
+        299.075,
+        49.575,
+        0.0,
+        460.925,
+        50.425,
+        25.0
+      ],
+      "source": "Design concept",
+      "freecadName": "LAB_structure_0302"
+    },
+    {
+      "id": "LAB_slabs_0303",
+      "buildingId": "LAB",
+      "system": "slabs",
+      "level": "F0",
+      "label": "F0 floor plate",
+      "color": [
+        0.82,
+        0.84,
+        0.85
+      ],
+      "bounds": [
+        298.0,
+        -65.5,
+        0.0,
+        462.0,
+        51.5,
+        0.4
+      ],
+      "source": "Design concept",
+      "freecadName": "LAB_slabs_0303"
+    },
+    {
+      "id": "LAB_slabs_0304",
+      "buildingId": "LAB",
+      "system": "slabs",
+      "level": "F1",
+      "label": "F1 floor plate",
+      "color": [
+        0.82,
+        0.84,
+        0.85
+      ],
+      "bounds": [
+        298.0,
+        -65.5,
+        6.25,
+        462.0,
+        51.5,
+        6.65
+      ],
+      "source": "Design concept",
+      "freecadName": "LAB_slabs_0304"
+    },
+    {
+      "id": "LAB_slabs_0305",
+      "buildingId": "LAB",
+      "system": "slabs",
+      "level": "F2",
+      "label": "F2 floor plate",
+      "color": [
+        0.82,
+        0.84,
+        0.85
+      ],
+      "bounds": [
+        298.0,
+        -65.5,
+        12.5,
+        462.0,
+        51.5,
+        12.9
+      ],
+      "source": "Design concept",
+      "freecadName": "LAB_slabs_0305"
+    },
+    {
+      "id": "LAB_slabs_0306",
+      "buildingId": "LAB",
+      "system": "slabs",
+      "level": "F3",
+      "label": "F3 floor plate",
+      "color": [
+        0.82,
+        0.84,
+        0.85
+      ],
+      "bounds": [
+        298.0,
+        -65.5,
+        18.75,
+        462.0,
+        51.5,
+        19.15
+      ],
+      "source": "Design concept",
+      "freecadName": "LAB_slabs_0306"
+    },
+    {
+      "id": "LAB_roof_0307",
+      "buildingId": "LAB",
+      "system": "roof",
+      "level": "RF",
+      "label": "RF floor plate",
+      "color": [
+        0.49,
+        0.56,
+        0.59
+      ],
+      "bounds": [
+        298.0,
+        -65.5,
+        25.0,
+        462.0,
+        51.5,
+        25.4
+      ],
+      "source": "Design concept",
+      "freecadName": "LAB_roof_0307"
+    },
+    {
+      "id": "LAB_envelope_0308",
+      "buildingId": "LAB",
+      "system": "envelope",
+      "level": "ALL",
+      "label": "South insulated wall",
+      "color": [
+        0.84,
+        0.86,
+        0.84
+      ],
+      "bounds": [
+        298.0,
+        -65.65,
+        0.4,
+        462.0,
+        -65.35,
+        25.0
+      ],
+      "source": "fab1.jpg exterior, conceptual thickness",
+      "freecadName": "LAB_envelope_0308"
+    },
+    {
+      "id": "LAB_glazing_0309",
+      "buildingId": "LAB",
+      "system": "glazing",
+      "level": "ALL",
+      "label": "Vertical window strips",
+      "color": [
+        0.24,
+        0.47,
+        0.58
+      ],
+      "bounds": [
+        316.83,
+        -65.58,
+        2.6,
+        443.17,
+        -65.42,
+        22.8
+      ],
+      "source": "Design concept",
+      "freecadName": "LAB_glazing_0309"
+    },
+    {
+      "id": "LAB_envelope_0310",
+      "buildingId": "LAB",
+      "system": "envelope",
+      "level": "ALL",
+      "label": "Vertical metal panel ribs",
+      "color": [
+        0.65,
+        0.69,
+        0.71
+      ],
+      "bounds": [
+        297.9775,
+        -65.745,
+        0.4,
+        461.5225,
+        -65.655,
+        25.0
+      ],
+      "source": "Design concept",
+      "freecadName": "LAB_envelope_0310"
+    },
+    {
+      "id": "LAB_envelope_0311",
+      "buildingId": "LAB",
+      "system": "envelope",
+      "level": "ALL",
+      "label": "East/west return panel",
+      "color": [
+        0.84,
+        0.86,
+        0.84
+      ],
+      "bounds": [
+        297.85,
+        -65.5,
+        0.4,
+        298.15,
+        51.5,
+        25.0
+      ],
+      "source": "Design concept",
+      "freecadName": "LAB_envelope_0311"
+    },
+    {
+      "id": "LAB_envelope_0312",
+      "buildingId": "LAB",
+      "system": "envelope",
+      "level": "ALL",
+      "label": "North insulated wall",
+      "color": [
+        0.84,
+        0.86,
+        0.84
+      ],
+      "bounds": [
+        298.0,
+        51.35,
+        0.4,
+        462.0,
+        51.65,
+        25.0
+      ],
+      "source": "fab1.jpg exterior, conceptual thickness",
+      "freecadName": "LAB_envelope_0312"
+    },
+    {
+      "id": "LAB_glazing_0313",
+      "buildingId": "LAB",
+      "system": "glazing",
+      "level": "ALL",
+      "label": "Vertical window strips",
+      "color": [
+        0.24,
+        0.47,
+        0.58
+      ],
+      "bounds": [
+        316.83,
+        51.42,
+        2.6,
+        443.17,
+        51.58,
+        22.8
+      ],
+      "source": "Design concept",
+      "freecadName": "LAB_glazing_0313"
+    },
+    {
+      "id": "LAB_envelope_0314",
+      "buildingId": "LAB",
+      "system": "envelope",
+      "level": "ALL",
+      "label": "Vertical metal panel ribs",
+      "color": [
+        0.65,
+        0.69,
+        0.71
+      ],
+      "bounds": [
+        297.9775,
+        51.655,
+        0.4,
+        461.5225,
+        51.745,
+        25.0
+      ],
+      "source": "Design concept",
+      "freecadName": "LAB_envelope_0314"
+    },
+    {
+      "id": "LAB_envelope_0315",
+      "buildingId": "LAB",
+      "system": "envelope",
+      "level": "ALL",
+      "label": "East/west return panel",
+      "color": [
+        0.84,
+        0.86,
+        0.84
+      ],
+      "bounds": [
+        461.85,
+        -65.5,
+        0.4,
+        462.15,
+        51.5,
+        25.0
+      ],
+      "source": "Design concept",
+      "freecadName": "LAB_envelope_0315"
+    },
+    {
+      "id": "LAB_interiors_0316",
+      "buildingId": "LAB",
+      "system": "interiors",
+      "level": "F0",
+      "label": "Central circulation partition",
+      "color": [
+        0.76,
+        0.83,
+        0.73
+      ],
+      "bounds": [
+        302.0,
+        -12.08,
+        0.4,
+        458.0,
+        -11.92,
+        3.6
+      ],
+      "source": "Design concept",
+      "freecadName": "LAB_interiors_0316"
+    },
+    {
+      "id": "LAB_interiors_0317",
+      "buildingId": "LAB",
+      "system": "interiors",
+      "level": "F0",
+      "label": "Central circulation partition",
+      "color": [
+        0.76,
+        0.83,
+        0.73
+      ],
+      "bounds": [
+        302.0,
+        -2.08,
+        0.4,
+        458.0,
+        -1.92,
+        3.6
+      ],
+      "source": "Design concept",
+      "freecadName": "LAB_interiors_0317"
+    },
+    {
+      "id": "LAB_interiors_0318",
+      "buildingId": "LAB",
+      "system": "interiors",
+      "level": "F0",
+      "label": "Lab bench and hood module 1",
+      "color": [
+        0.76,
+        0.83,
+        0.73
+      ],
+      "bounds": [
+        307.12,
+        24.5,
+        0.4,
+        315.12,
+        29.5,
+        3.2
+      ],
+      "source": "Design concept",
+      "freecadName": "LAB_interiors_0318"
+    },
+    {
+      "id": "LAB_interiors_0319",
+      "buildingId": "LAB",
+      "system": "interiors",
+      "level": "F0",
+      "label": "Lab bench and hood module 2",
+      "color": [
+        0.76,
+        0.83,
+        0.73
+      ],
+      "bounds": [
+        334.672,
+        -43.5,
+        0.4,
+        342.672,
+        -38.5,
+        3.2
+      ],
+      "source": "Design concept",
+      "freecadName": "LAB_interiors_0319"
+    },
+    {
+      "id": "LAB_interiors_0320",
+      "buildingId": "LAB",
+      "system": "interiors",
+      "level": "F0",
+      "label": "Lab bench and hood module 3",
+      "color": [
+        0.76,
+        0.83,
+        0.73
+      ],
+      "bounds": [
+        362.224,
+        24.5,
+        0.4,
+        370.224,
+        29.5,
+        3.2
+      ],
+      "source": "Design concept",
+      "freecadName": "LAB_interiors_0320"
+    },
+    {
+      "id": "LAB_interiors_0321",
+      "buildingId": "LAB",
+      "system": "interiors",
+      "level": "F0",
+      "label": "Lab bench and hood module 4",
+      "color": [
+        0.76,
+        0.83,
+        0.73
+      ],
+      "bounds": [
+        389.776,
+        -43.5,
+        0.4,
+        397.776,
+        -38.5,
+        3.2
+      ],
+      "source": "Design concept",
+      "freecadName": "LAB_interiors_0321"
+    },
+    {
+      "id": "LAB_interiors_0322",
+      "buildingId": "LAB",
+      "system": "interiors",
+      "level": "F0",
+      "label": "Lab bench and hood module 5",
+      "color": [
+        0.76,
+        0.83,
+        0.73
+      ],
+      "bounds": [
+        417.328,
+        24.5,
+        0.4,
+        425.328,
+        29.5,
+        3.2
+      ],
+      "source": "Design concept",
+      "freecadName": "LAB_interiors_0322"
+    },
+    {
+      "id": "LAB_interiors_0323",
+      "buildingId": "LAB",
+      "system": "interiors",
+      "level": "F0",
+      "label": "Lab bench and hood module 6",
+      "color": [
+        0.76,
+        0.83,
+        0.73
+      ],
+      "bounds": [
+        444.88,
+        -43.5,
+        0.4,
+        452.88,
+        -38.5,
+        3.2
+      ],
+      "source": "Design concept",
+      "freecadName": "LAB_interiors_0323"
+    },
+    {
+      "id": "LAB_circulation_0324",
+      "buildingId": "LAB",
+      "system": "circulation",
+      "level": "F0",
+      "label": "Vertical circulation core",
+      "color": [
+        0.79,
+        0.65,
+        0.38
+      ],
+      "bounds": [
+        344.2,
+        -63.5,
+        0.4,
+        350.2,
+        -53.5,
+        5.0
+      ],
+      "source": "Design concept",
+      "freecadName": "LAB_circulation_0324"
+    },
+    {
+      "id": "LAB_circulation_0325",
+      "buildingId": "LAB",
+      "system": "circulation",
+      "level": "F0",
+      "label": "Vertical circulation core",
+      "color": [
+        0.79,
+        0.65,
+        0.38
+      ],
+      "bounds": [
+        409.8,
+        -63.5,
+        0.4,
+        415.8,
+        -53.5,
+        5.0
+      ],
+      "source": "Design concept",
+      "freecadName": "LAB_circulation_0325"
+    },
+    {
+      "id": "LAB_interiors_0326",
+      "buildingId": "LAB",
+      "system": "interiors",
+      "level": "F1",
+      "label": "Central circulation partition",
+      "color": [
+        0.76,
+        0.83,
+        0.73
+      ],
+      "bounds": [
+        302.0,
+        -12.08,
+        6.65,
+        458.0,
+        -11.92,
+        9.85
+      ],
+      "source": "Design concept",
+      "freecadName": "LAB_interiors_0326"
+    },
+    {
+      "id": "LAB_interiors_0327",
+      "buildingId": "LAB",
+      "system": "interiors",
+      "level": "F1",
+      "label": "Central circulation partition",
+      "color": [
+        0.76,
+        0.83,
+        0.73
+      ],
+      "bounds": [
+        302.0,
+        -2.08,
+        6.65,
+        458.0,
+        -1.92,
+        9.85
+      ],
+      "source": "Design concept",
+      "freecadName": "LAB_interiors_0327"
+    },
+    {
+      "id": "LAB_interiors_0328",
+      "buildingId": "LAB",
+      "system": "interiors",
+      "level": "F1",
+      "label": "Lab bench and hood module 1",
+      "color": [
+        0.76,
+        0.83,
+        0.73
+      ],
+      "bounds": [
+        307.12,
+        24.5,
+        6.65,
+        315.12,
+        29.5,
+        9.45
+      ],
+      "source": "Design concept",
+      "freecadName": "LAB_interiors_0328"
+    },
+    {
+      "id": "LAB_interiors_0329",
+      "buildingId": "LAB",
+      "system": "interiors",
+      "level": "F1",
+      "label": "Lab bench and hood module 2",
+      "color": [
+        0.76,
+        0.83,
+        0.73
+      ],
+      "bounds": [
+        334.672,
+        -43.5,
+        6.65,
+        342.672,
+        -38.5,
+        9.45
+      ],
+      "source": "Design concept",
+      "freecadName": "LAB_interiors_0329"
+    },
+    {
+      "id": "LAB_interiors_0330",
+      "buildingId": "LAB",
+      "system": "interiors",
+      "level": "F1",
+      "label": "Lab bench and hood module 3",
+      "color": [
+        0.76,
+        0.83,
+        0.73
+      ],
+      "bounds": [
+        362.224,
+        24.5,
+        6.65,
+        370.224,
+        29.5,
+        9.45
+      ],
+      "source": "Design concept",
+      "freecadName": "LAB_interiors_0330"
+    },
+    {
+      "id": "LAB_interiors_0331",
+      "buildingId": "LAB",
+      "system": "interiors",
+      "level": "F1",
+      "label": "Lab bench and hood module 4",
+      "color": [
+        0.76,
+        0.83,
+        0.73
+      ],
+      "bounds": [
+        389.776,
+        -43.5,
+        6.65,
+        397.776,
+        -38.5,
+        9.45
+      ],
+      "source": "Design concept",
+      "freecadName": "LAB_interiors_0331"
+    },
+    {
+      "id": "LAB_interiors_0332",
+      "buildingId": "LAB",
+      "system": "interiors",
+      "level": "F1",
+      "label": "Lab bench and hood module 5",
+      "color": [
+        0.76,
+        0.83,
+        0.73
+      ],
+      "bounds": [
+        417.328,
+        24.5,
+        6.65,
+        425.328,
+        29.5,
+        9.45
+      ],
+      "source": "Design concept",
+      "freecadName": "LAB_interiors_0332"
+    },
+    {
+      "id": "LAB_interiors_0333",
+      "buildingId": "LAB",
+      "system": "interiors",
+      "level": "F1",
+      "label": "Lab bench and hood module 6",
+      "color": [
+        0.76,
+        0.83,
+        0.73
+      ],
+      "bounds": [
+        444.88,
+        -43.5,
+        6.65,
+        452.88,
+        -38.5,
+        9.45
+      ],
+      "source": "Design concept",
+      "freecadName": "LAB_interiors_0333"
+    },
+    {
+      "id": "LAB_circulation_0334",
+      "buildingId": "LAB",
+      "system": "circulation",
+      "level": "F1",
+      "label": "Vertical circulation core",
+      "color": [
+        0.79,
+        0.65,
+        0.38
+      ],
+      "bounds": [
+        344.2,
+        -63.5,
+        6.65,
+        350.2,
+        -53.5,
+        11.25
+      ],
+      "source": "Design concept",
+      "freecadName": "LAB_circulation_0334"
+    },
+    {
+      "id": "LAB_circulation_0335",
+      "buildingId": "LAB",
+      "system": "circulation",
+      "level": "F1",
+      "label": "Vertical circulation core",
+      "color": [
+        0.79,
+        0.65,
+        0.38
+      ],
+      "bounds": [
+        409.8,
+        -63.5,
+        6.65,
+        415.8,
+        -53.5,
+        11.25
+      ],
+      "source": "Design concept",
+      "freecadName": "LAB_circulation_0335"
+    },
+    {
+      "id": "LAB_interiors_0336",
+      "buildingId": "LAB",
+      "system": "interiors",
+      "level": "F2",
+      "label": "Central circulation partition",
+      "color": [
+        0.76,
+        0.83,
+        0.73
+      ],
+      "bounds": [
+        302.0,
+        -12.08,
+        12.9,
+        458.0,
+        -11.92,
+        16.1
+      ],
+      "source": "Design concept",
+      "freecadName": "LAB_interiors_0336"
+    },
+    {
+      "id": "LAB_interiors_0337",
+      "buildingId": "LAB",
+      "system": "interiors",
+      "level": "F2",
+      "label": "Central circulation partition",
+      "color": [
+        0.76,
+        0.83,
+        0.73
+      ],
+      "bounds": [
+        302.0,
+        -2.08,
+        12.9,
+        458.0,
+        -1.92,
+        16.1
+      ],
+      "source": "Design concept",
+      "freecadName": "LAB_interiors_0337"
+    },
+    {
+      "id": "LAB_interiors_0338",
+      "buildingId": "LAB",
+      "system": "interiors",
+      "level": "F2",
+      "label": "Lab bench and hood module 1",
+      "color": [
+        0.76,
+        0.83,
+        0.73
+      ],
+      "bounds": [
+        307.12,
+        24.5,
+        12.9,
+        315.12,
+        29.5,
+        15.7
+      ],
+      "source": "Design concept",
+      "freecadName": "LAB_interiors_0338"
+    },
+    {
+      "id": "LAB_interiors_0339",
+      "buildingId": "LAB",
+      "system": "interiors",
+      "level": "F2",
+      "label": "Lab bench and hood module 2",
+      "color": [
+        0.76,
+        0.83,
+        0.73
+      ],
+      "bounds": [
+        334.672,
+        -43.5,
+        12.9,
+        342.672,
+        -38.5,
+        15.7
+      ],
+      "source": "Design concept",
+      "freecadName": "LAB_interiors_0339"
+    },
+    {
+      "id": "LAB_interiors_0340",
+      "buildingId": "LAB",
+      "system": "interiors",
+      "level": "F2",
+      "label": "Lab bench and hood module 3",
+      "color": [
+        0.76,
+        0.83,
+        0.73
+      ],
+      "bounds": [
+        362.224,
+        24.5,
+        12.9,
+        370.224,
+        29.5,
+        15.7
+      ],
+      "source": "Design concept",
+      "freecadName": "LAB_interiors_0340"
+    },
+    {
+      "id": "LAB_interiors_0341",
+      "buildingId": "LAB",
+      "system": "interiors",
+      "level": "F2",
+      "label": "Lab bench and hood module 4",
+      "color": [
+        0.76,
+        0.83,
+        0.73
+      ],
+      "bounds": [
+        389.776,
+        -43.5,
+        12.9,
+        397.776,
+        -38.5,
+        15.7
+      ],
+      "source": "Design concept",
+      "freecadName": "LAB_interiors_0341"
+    },
+    {
+      "id": "LAB_interiors_0342",
+      "buildingId": "LAB",
+      "system": "interiors",
+      "level": "F2",
+      "label": "Lab bench and hood module 5",
+      "color": [
+        0.76,
+        0.83,
+        0.73
+      ],
+      "bounds": [
+        417.328,
+        24.5,
+        12.9,
+        425.328,
+        29.5,
+        15.7
+      ],
+      "source": "Design concept",
+      "freecadName": "LAB_interiors_0342"
+    },
+    {
+      "id": "LAB_interiors_0343",
+      "buildingId": "LAB",
+      "system": "interiors",
+      "level": "F2",
+      "label": "Lab bench and hood module 6",
+      "color": [
+        0.76,
+        0.83,
+        0.73
+      ],
+      "bounds": [
+        444.88,
+        -43.5,
+        12.9,
+        452.88,
+        -38.5,
+        15.7
+      ],
+      "source": "Design concept",
+      "freecadName": "LAB_interiors_0343"
+    },
+    {
+      "id": "LAB_circulation_0344",
+      "buildingId": "LAB",
+      "system": "circulation",
+      "level": "F2",
+      "label": "Vertical circulation core",
+      "color": [
+        0.79,
+        0.65,
+        0.38
+      ],
+      "bounds": [
+        344.2,
+        -63.5,
+        12.9,
+        350.2,
+        -53.5,
+        17.5
+      ],
+      "source": "Design concept",
+      "freecadName": "LAB_circulation_0344"
+    },
+    {
+      "id": "LAB_circulation_0345",
+      "buildingId": "LAB",
+      "system": "circulation",
+      "level": "F2",
+      "label": "Vertical circulation core",
+      "color": [
+        0.79,
+        0.65,
+        0.38
+      ],
+      "bounds": [
+        409.8,
+        -63.5,
+        12.9,
+        415.8,
+        -53.5,
+        17.5
+      ],
+      "source": "Design concept",
+      "freecadName": "LAB_circulation_0345"
+    },
+    {
+      "id": "LAB_interiors_0346",
+      "buildingId": "LAB",
+      "system": "interiors",
+      "level": "F3",
+      "label": "Central circulation partition",
+      "color": [
+        0.76,
+        0.83,
+        0.73
+      ],
+      "bounds": [
+        302.0,
+        -12.08,
+        19.15,
+        458.0,
+        -11.92,
+        22.35
+      ],
+      "source": "Design concept",
+      "freecadName": "LAB_interiors_0346"
+    },
+    {
+      "id": "LAB_interiors_0347",
+      "buildingId": "LAB",
+      "system": "interiors",
+      "level": "F3",
+      "label": "Central circulation partition",
+      "color": [
+        0.76,
+        0.83,
+        0.73
+      ],
+      "bounds": [
+        302.0,
+        -2.08,
+        19.15,
+        458.0,
+        -1.92,
+        22.35
+      ],
+      "source": "Design concept",
+      "freecadName": "LAB_interiors_0347"
+    },
+    {
+      "id": "LAB_interiors_0348",
+      "buildingId": "LAB",
+      "system": "interiors",
+      "level": "F3",
+      "label": "Lab bench and hood module 1",
+      "color": [
+        0.76,
+        0.83,
+        0.73
+      ],
+      "bounds": [
+        307.12,
+        24.5,
+        19.15,
+        315.12,
+        29.5,
+        21.95
+      ],
+      "source": "Design concept",
+      "freecadName": "LAB_interiors_0348"
+    },
+    {
+      "id": "LAB_interiors_0349",
+      "buildingId": "LAB",
+      "system": "interiors",
+      "level": "F3",
+      "label": "Lab bench and hood module 2",
+      "color": [
+        0.76,
+        0.83,
+        0.73
+      ],
+      "bounds": [
+        334.672,
+        -43.5,
+        19.15,
+        342.672,
+        -38.5,
+        21.95
+      ],
+      "source": "Design concept",
+      "freecadName": "LAB_interiors_0349"
+    },
+    {
+      "id": "LAB_interiors_0350",
+      "buildingId": "LAB",
+      "system": "interiors",
+      "level": "F3",
+      "label": "Lab bench and hood module 3",
+      "color": [
+        0.76,
+        0.83,
+        0.73
+      ],
+      "bounds": [
+        362.224,
+        24.5,
+        19.15,
+        370.224,
+        29.5,
+        21.95
+      ],
+      "source": "Design concept",
+      "freecadName": "LAB_interiors_0350"
+    },
+    {
+      "id": "LAB_interiors_0351",
+      "buildingId": "LAB",
+      "system": "interiors",
+      "level": "F3",
+      "label": "Lab bench and hood module 4",
+      "color": [
+        0.76,
+        0.83,
+        0.73
+      ],
+      "bounds": [
+        389.776,
+        -43.5,
+        19.15,
+        397.776,
+        -38.5,
+        21.95
+      ],
+      "source": "Design concept",
+      "freecadName": "LAB_interiors_0351"
+    },
+    {
+      "id": "LAB_interiors_0352",
+      "buildingId": "LAB",
+      "system": "interiors",
+      "level": "F3",
+      "label": "Lab bench and hood module 5",
+      "color": [
+        0.76,
+        0.83,
+        0.73
+      ],
+      "bounds": [
+        417.328,
+        24.5,
+        19.15,
+        425.328,
+        29.5,
+        21.95
+      ],
+      "source": "Design concept",
+      "freecadName": "LAB_interiors_0352"
+    },
+    {
+      "id": "LAB_interiors_0353",
+      "buildingId": "LAB",
+      "system": "interiors",
+      "level": "F3",
+      "label": "Lab bench and hood module 6",
+      "color": [
+        0.76,
+        0.83,
+        0.73
+      ],
+      "bounds": [
+        444.88,
+        -43.5,
+        19.15,
+        452.88,
+        -38.5,
+        21.95
+      ],
+      "source": "Design concept",
+      "freecadName": "LAB_interiors_0353"
+    },
+    {
+      "id": "LAB_circulation_0354",
+      "buildingId": "LAB",
+      "system": "circulation",
+      "level": "F3",
+      "label": "Vertical circulation core",
+      "color": [
+        0.79,
+        0.65,
+        0.38
+      ],
+      "bounds": [
+        344.2,
+        -63.5,
+        19.15,
+        350.2,
+        -53.5,
+        23.75
+      ],
+      "source": "Design concept",
+      "freecadName": "LAB_circulation_0354"
+    },
+    {
+      "id": "LAB_circulation_0355",
+      "buildingId": "LAB",
+      "system": "circulation",
+      "level": "F3",
+      "label": "Vertical circulation core",
+      "color": [
+        0.79,
+        0.65,
+        0.38
+      ],
+      "bounds": [
+        409.8,
+        -63.5,
+        19.15,
+        415.8,
+        -53.5,
+        23.75
+      ],
+      "source": "Design concept",
+      "freecadName": "LAB_circulation_0355"
+    },
+    {
+      "id": "LAB_equipment_0356",
+      "buildingId": "LAB",
+      "system": "equipment",
+      "level": "RF",
+      "label": "AHU-01 casing fans and louvers",
+      "color": [
+        0.6,
+        0.72,
+        0.76
+      ],
+      "bounds": [
+        317.2,
+        -32.15,
+        25.4,
+        328.0,
+        -25.85,
+        29.5
+      ],
+      "source": "fab1 rooftop AHU/MAU image and Intel fab mechanical level",
+      "freecadName": "LAB_equipment_0356"
+    },
+    {
+      "id": "LAB_equipment_0357",
+      "buildingId": "LAB",
+      "system": "equipment",
+      "level": "RF",
+      "label": "AHU-02 casing fans and louvers",
+      "color": [
+        0.6,
+        0.72,
+        0.76
+      ],
+      "bounds": [
+        345.9,
+        -32.15,
+        25.4,
+        356.7,
+        -25.85,
+        29.5
+      ],
+      "source": "fab1 rooftop AHU/MAU image and Intel fab mechanical level",
+      "freecadName": "LAB_equipment_0357"
+    },
+    {
+      "id": "LAB_equipment_0358",
+      "buildingId": "LAB",
+      "system": "equipment",
+      "level": "RF",
+      "label": "AHU-03 casing fans and louvers",
+      "color": [
+        0.6,
+        0.72,
+        0.76
+      ],
+      "bounds": [
+        374.6,
+        -32.15,
+        25.4,
+        385.4,
+        -25.85,
+        29.5
+      ],
+      "source": "fab1 rooftop AHU/MAU image and Intel fab mechanical level",
+      "freecadName": "LAB_equipment_0358"
+    },
+    {
+      "id": "LAB_equipment_0359",
+      "buildingId": "LAB",
+      "system": "equipment",
+      "level": "RF",
+      "label": "AHU-04 casing fans and louvers",
+      "color": [
+        0.6,
+        0.72,
+        0.76
+      ],
+      "bounds": [
+        403.3,
+        -32.15,
+        25.4,
+        414.1,
+        -25.85,
+        29.5
+      ],
+      "source": "fab1 rooftop AHU/MAU image and Intel fab mechanical level",
+      "freecadName": "LAB_equipment_0359"
+    },
+    {
+      "id": "LAB_equipment_0360",
+      "buildingId": "LAB",
+      "system": "equipment",
+      "level": "RF",
+      "label": "AHU-05 casing fans and louvers",
+      "color": [
+        0.6,
+        0.72,
+        0.76
+      ],
+      "bounds": [
+        432.0,
+        -32.15,
+        25.4,
+        442.8,
+        -25.85,
+        29.5
+      ],
+      "source": "fab1 rooftop AHU/MAU image and Intel fab mechanical level",
+      "freecadName": "LAB_equipment_0360"
+    },
+    {
+      "id": "LAB_equipment_0361",
+      "buildingId": "LAB",
+      "system": "equipment",
+      "level": "RF",
+      "label": "AHU-06 casing fans and louvers",
+      "color": [
+        0.6,
+        0.72,
+        0.76
+      ],
+      "bounds": [
+        317.2,
+        11.85,
+        25.4,
+        328.0,
+        18.15,
+        29.5
+      ],
+      "source": "fab1 rooftop AHU/MAU image and Intel fab mechanical level",
+      "freecadName": "LAB_equipment_0361"
+    },
+    {
+      "id": "LAB_equipment_0362",
+      "buildingId": "LAB",
+      "system": "equipment",
+      "level": "RF",
+      "label": "AHU-07 casing fans and louvers",
+      "color": [
+        0.6,
+        0.72,
+        0.76
+      ],
+      "bounds": [
+        345.9,
+        11.85,
+        25.4,
+        356.7,
+        18.15,
+        29.5
+      ],
+      "source": "fab1 rooftop AHU/MAU image and Intel fab mechanical level",
+      "freecadName": "LAB_equipment_0362"
+    },
+    {
+      "id": "LAB_equipment_0363",
+      "buildingId": "LAB",
+      "system": "equipment",
+      "level": "RF",
+      "label": "AHU-08 casing fans and louvers",
+      "color": [
+        0.6,
+        0.72,
+        0.76
+      ],
+      "bounds": [
+        374.6,
+        11.85,
+        25.4,
+        385.4,
+        18.15,
+        29.5
+      ],
+      "source": "fab1 rooftop AHU/MAU image and Intel fab mechanical level",
+      "freecadName": "LAB_equipment_0363"
+    },
+    {
+      "id": "LAB_equipment_0364",
+      "buildingId": "LAB",
+      "system": "equipment",
+      "level": "RF",
+      "label": "AHU-09 casing fans and louvers",
+      "color": [
+        0.6,
+        0.72,
+        0.76
+      ],
+      "bounds": [
+        403.3,
+        11.85,
+        25.4,
+        414.1,
+        18.15,
+        29.5
+      ],
+      "source": "fab1 rooftop AHU/MAU image and Intel fab mechanical level",
+      "freecadName": "LAB_equipment_0364"
+    },
+    {
+      "id": "LAB_equipment_0365",
+      "buildingId": "LAB",
+      "system": "equipment",
+      "level": "RF",
+      "label": "AHU-10 casing fans and louvers",
+      "color": [
+        0.6,
+        0.72,
+        0.76
+      ],
+      "bounds": [
+        432.0,
+        11.85,
+        25.4,
+        442.8,
+        18.15,
+        29.5
+      ],
+      "source": "fab1 rooftop AHU/MAU image and Intel fab mechanical level",
+      "freecadName": "LAB_equipment_0365"
+    },
+    {
+      "id": "LAB_piping_0366",
+      "buildingId": "LAB",
+      "system": "piping",
+      "level": "RF",
+      "label": "Roof service manifold",
+      "color": [
+        0.24,
+        0.49,
+        0.56
+      ],
+      "bounds": [
+        306.2,
+        -7.18,
+        27.82,
+        453.8,
+        -6.82,
+        29.68
+      ],
+      "source": "Design concept",
+      "freecadName": "LAB_piping_0366"
+    },
+    {
+      "id": "LAB_equipment_0367",
+      "buildingId": "LAB",
+      "system": "equipment",
+      "level": "RF",
+      "label": "Exhaust treatment unit 1",
+      "color": [
+        0.6,
+        0.72,
+        0.76
+      ],
+      "bounds": [
+        328.0,
+        41.5,
+        25.4,
+        332.0,
+        45.5,
+        34.4
+      ],
+      "source": "Design concept",
+      "freecadName": "LAB_equipment_0367"
+    },
+    {
+      "id": "LAB_equipment_0368",
+      "buildingId": "LAB",
+      "system": "equipment",
+      "level": "RF",
+      "label": "Exhaust treatment unit 2",
+      "color": [
+        0.6,
+        0.72,
+        0.76
+      ],
+      "bounds": [
+        353.0,
+        41.5,
+        25.4,
+        357.0,
+        45.5,
+        34.4
+      ],
+      "source": "Design concept",
+      "freecadName": "LAB_equipment_0368"
+    },
+    {
+      "id": "LAB_equipment_0369",
+      "buildingId": "LAB",
+      "system": "equipment",
+      "level": "RF",
+      "label": "Exhaust treatment unit 3",
+      "color": [
+        0.6,
+        0.72,
+        0.76
+      ],
+      "bounds": [
+        378.0,
+        41.5,
+        25.4,
+        382.0,
+        45.5,
+        34.4
+      ],
+      "source": "Design concept",
+      "freecadName": "LAB_equipment_0369"
+    },
+    {
+      "id": "LAB_equipment_0370",
+      "buildingId": "LAB",
+      "system": "equipment",
+      "level": "RF",
+      "label": "Exhaust treatment unit 4",
+      "color": [
+        0.6,
+        0.72,
+        0.76
+      ],
+      "bounds": [
+        403.0,
+        41.5,
+        25.4,
+        407.0,
+        45.5,
+        34.4
+      ],
+      "source": "Design concept",
+      "freecadName": "LAB_equipment_0370"
+    },
+    {
+      "id": "LAB_equipment_0371",
+      "buildingId": "LAB",
+      "system": "equipment",
+      "level": "RF",
+      "label": "Exhaust treatment unit 5",
+      "color": [
+        0.6,
+        0.72,
+        0.76
+      ],
+      "bounds": [
+        428.0,
+        41.5,
+        25.4,
+        432.0,
+        45.5,
+        34.4
+      ],
+      "source": "Design concept",
+      "freecadName": "LAB_equipment_0371"
+    },
+    {
+      "id": "LAB_circulation_0372",
+      "buildingId": "LAB",
+      "system": "circulation",
+      "level": "RF",
+      "label": "Roof maintenance guardrails",
+      "color": [
+        0.79,
+        0.65,
+        0.38
+      ],
+      "bounds": [
+        298.955,
+        -64.545,
+        25.4,
+        461.045,
+        50.545,
+        26.55
+      ],
+      "source": "Design concept",
+      "freecadName": "LAB_circulation_0372"
+    }
+  ]
+}

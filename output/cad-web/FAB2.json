@@ -1,0 +1,2509 @@
+{
+  "building": {
+    "id": "FAB2",
+    "position": [
+      -258,
+      -218,
+      0
+    ],
+    "size": [
+      250,
+      90,
+      41.8
+    ],
+    "features": [
+      "mirrored equipment organisation",
+      "support annex",
+      "loading bays",
+      "cooling bank 2x3",
+      "pipe gallery"
+    ],
+    "source": "R1/R2; S01 S02",
+    "confidence": "medium",
+    "levels": {
+      "FOUNDATION": -12.2,
+      "B1": -7.2,
+      "F1": 14.8,
+      "F2": 29.6,
+      "RF": 41.8
+    },
+    "dimensionBasis": "fab1.jpg source labels; unresolved scale/level inconsistencies",
+    "units": "m",
+    "axesX": [
+      -123.5,
+      -111.15,
+      -98.8,
+      -86.45,
+      -74.1,
+      -61.75,
+      -49.4,
+      -37.05,
+      -24.7,
+      -12.35,
+      0.0,
+      12.35,
+      24.7,
+      37.05,
+      49.4,
+      61.75,
+      74.1,
+      86.45,
+      98.8,
+      111.15,
+      123.5
+    ],
+    "axesY": [
+      -43.5,
+      -29.0,
+      -14.5,
+      0.0,
+      14.5,
+      29.0,
+      43.5
+    ]
+  },
+  "components": [
+    {
+      "id": "FAB2_foundation_0182",
+      "buildingId": "FAB2",
+      "system": "foundation",
+      "level": "FOUNDATION",
+      "label": "Foundation raft - source label -12.2m",
+      "color": [
+        0.48,
+        0.52,
+        0.57
+      ],
+      "bounds": [
+        -385.0,
+        -265.0,
+        -12.2,
+        -131.0,
+        -171.0,
+        -11.0
+      ],
+      "source": "Design concept",
+      "freecadName": "FAB2_foundation_0182"
+    },
+    {
+      "id": "FAB2_slabs_0183",
+      "buildingId": "FAB2",
+      "system": "slabs",
+      "level": "B1",
+      "label": "B1 structural plate",
+      "color": [
+        0.82,
+        0.84,
+        0.85
+      ],
+      "bounds": [
+        -383.0,
+        -263.0,
+        -7.2,
+        -133.0,
+        -173.0,
+        -6.6
+      ],
+      "source": "Design concept",
+      "freecadName": "FAB2_slabs_0183_WithOpenings"
+    },
+    {
+      "id": "FAB2_slabs_0184",
+      "buildingId": "FAB2",
+      "system": "slabs",
+      "level": "F1",
+      "label": "F1 structural plate",
+      "color": [
+        0.82,
+        0.84,
+        0.85
+      ],
+      "bounds": [
+        -383.0,
+        -263.0,
+        14.8,
+        -133.0,
+        -173.0,
+        15.4
+      ],
+      "source": "Design concept",
+      "freecadName": "FAB2_slabs_0184_WithOpenings"
+    },
+    {
+      "id": "FAB2_slabs_0185",
+      "buildingId": "FAB2",
+      "system": "slabs",
+      "level": "F2",
+      "label": "F2 structural plate",
+      "color": [
+        0.82,
+        0.84,
+        0.85
+      ],
+      "bounds": [
+        -383.0,
+        -263.0,
+        29.6,
+        -133.0,
+        -173.0,
+        30.2
+      ],
+      "source": "Design concept",
+      "freecadName": "FAB2_slabs_0185_WithOpenings"
+    },
+    {
+      "id": "FAB2_roof_0186",
+      "buildingId": "FAB2",
+      "system": "roof",
+      "level": "RF",
+      "label": "RF structural plate",
+      "color": [
+        0.49,
+        0.56,
+        0.59
+      ],
+      "bounds": [
+        -383.0,
+        -263.0,
+        41.8,
+        -133.0,
+        -173.0,
+        42.4
+      ],
+      "source": "Design concept",
+      "freecadName": "FAB2_roof_0186_WithOpenings"
+    },
+    {
+      "id": "FAB2_structure_0187",
+      "buildingId": "FAB2",
+      "system": "structure",
+      "level": "ALL",
+      "label": "Column frame 01",
+      "color": [
+        0.69,
+        0.73,
+        0.77
+      ],
+      "bounds": [
+        -381.925,
+        -261.925,
+        -11.0,
+        -134.075,
+        -261.075,
+        41.8
+      ],
+      "source": "Design concept",
+      "freecadName": "FAB2_structure_0187"
+    },
+    {
+      "id": "FAB2_structure_0188",
+      "buildingId": "FAB2",
+      "system": "structure",
+      "level": "ALL",
+      "label": "Column frame 02",
+      "color": [
+        0.69,
+        0.73,
+        0.77
+      ],
+      "bounds": [
+        -381.925,
+        -247.425,
+        -11.0,
+        -134.075,
+        -246.575,
+        41.8
+      ],
+      "source": "Design concept",
+      "freecadName": "FAB2_structure_0188"
+    },
+    {
+      "id": "FAB2_structure_0189",
+      "buildingId": "FAB2",
+      "system": "structure",
+      "level": "ALL",
+      "label": "Column frame 03",
+      "color": [
+        0.69,
+        0.73,
+        0.77
+      ],
+      "bounds": [
+        -381.925,
+        -232.925,
+        -11.0,
+        -134.075,
+        -232.075,
+        41.8
+      ],
+      "source": "Design concept",
+      "freecadName": "FAB2_structure_0189"
+    },
+    {
+      "id": "FAB2_structure_0190",
+      "buildingId": "FAB2",
+      "system": "structure",
+      "level": "ALL",
+      "label": "Column frame 04",
+      "color": [
+        0.69,
+        0.73,
+        0.77
+      ],
+      "bounds": [
+        -381.925,
+        -218.425,
+        -11.0,
+        -134.075,
+        -217.575,
+        41.8
+      ],
+      "source": "Design concept",
+      "freecadName": "FAB2_structure_0190"
+    },
+    {
+      "id": "FAB2_structure_0191",
+      "buildingId": "FAB2",
+      "system": "structure",
+      "level": "ALL",
+      "label": "Column frame 05",
+      "color": [
+        0.69,
+        0.73,
+        0.77
+      ],
+      "bounds": [
+        -381.925,
+        -203.925,
+        -11.0,
+        -134.075,
+        -203.075,
+        41.8
+      ],
+      "source": "Design concept",
+      "freecadName": "FAB2_structure_0191"
+    },
+    {
+      "id": "FAB2_structure_0192",
+      "buildingId": "FAB2",
+      "system": "structure",
+      "level": "ALL",
+      "label": "Column frame 06",
+      "color": [
+        0.69,
+        0.73,
+        0.77
+      ],
+      "bounds": [
+        -381.925,
+        -189.425,
+        -11.0,
+        -134.075,
+        -188.575,
+        41.8
+      ],
+      "source": "Design concept",
+      "freecadName": "FAB2_structure_0192"
+    },
+    {
+      "id": "FAB2_structure_0193",
+      "buildingId": "FAB2",
+      "system": "structure",
+      "level": "ALL",
+      "label": "Column frame 07",
+      "color": [
+        0.69,
+        0.73,
+        0.77
+      ],
+      "bounds": [
+        -381.925,
+        -174.925,
+        -11.0,
+        -134.075,
+        -174.075,
+        41.8
+      ],
+      "source": "Design concept",
+      "freecadName": "FAB2_structure_0193"
+    },
+    {
+      "id": "FAB2_envelope_0194",
+      "buildingId": "FAB2",
+      "system": "envelope",
+      "level": "ALL",
+      "label": "South insulated wall",
+      "color": [
+        0.84,
+        0.86,
+        0.84
+      ],
+      "bounds": [
+        -383.0,
+        -263.15,
+        -6.6,
+        -133.0,
+        -262.85,
+        41.8
+      ],
+      "source": "fab1.jpg exterior, conceptual thickness",
+      "freecadName": "FAB2_envelope_0194"
+    },
+    {
+      "id": "FAB2_glazing_0195",
+      "buildingId": "FAB2",
+      "system": "glazing",
+      "level": "ALL",
+      "label": "Vertical window strips",
+      "color": [
+        0.24,
+        0.47,
+        0.58
+      ],
+      "bounds": [
+        -353.85,
+        -263.08,
+        -4.4,
+        -162.15,
+        -262.92,
+        39.6
+      ],
+      "source": "Design concept",
+      "freecadName": "FAB2_glazing_0195"
+    },
+    {
+      "id": "FAB2_envelope_0196",
+      "buildingId": "FAB2",
+      "system": "envelope",
+      "level": "ALL",
+      "label": "Vertical metal panel ribs",
+      "color": [
+        0.65,
+        0.69,
+        0.71
+      ],
+      "bounds": [
+        -383.0225,
+        -263.245,
+        -6.6,
+        -133.9775,
+        -263.155,
+        41.8
+      ],
+      "source": "Design concept",
+      "freecadName": "FAB2_envelope_0196"
+    },
+    {
+      "id": "FAB2_envelope_0197",
+      "buildingId": "FAB2",
+      "system": "envelope",
+      "level": "ALL",
+      "label": "East/west return panel",
+      "color": [
+        0.84,
+        0.86,
+        0.84
+      ],
+      "bounds": [
+        -383.15,
+        -263.0,
+        -6.6,
+        -382.85,
+        -173.0,
+        41.8
+      ],
+      "source": "Design concept",
+      "freecadName": "FAB2_envelope_0197"
+    },
+    {
+      "id": "FAB2_envelope_0198",
+      "buildingId": "FAB2",
+      "system": "envelope",
+      "level": "ALL",
+      "label": "North insulated wall",
+      "color": [
+        0.84,
+        0.86,
+        0.84
+      ],
+      "bounds": [
+        -383.0,
+        -173.15,
+        -6.6,
+        -133.0,
+        -172.85,
+        41.8
+      ],
+      "source": "fab1.jpg exterior, conceptual thickness",
+      "freecadName": "FAB2_envelope_0198"
+    },
+    {
+      "id": "FAB2_glazing_0199",
+      "buildingId": "FAB2",
+      "system": "glazing",
+      "level": "ALL",
+      "label": "Vertical window strips",
+      "color": [
+        0.24,
+        0.47,
+        0.58
+      ],
+      "bounds": [
+        -353.85,
+        -173.08,
+        -4.4,
+        -162.15,
+        -172.92,
+        39.6
+      ],
+      "source": "Design concept",
+      "freecadName": "FAB2_glazing_0199"
+    },
+    {
+      "id": "FAB2_envelope_0200",
+      "buildingId": "FAB2",
+      "system": "envelope",
+      "level": "ALL",
+      "label": "Vertical metal panel ribs",
+      "color": [
+        0.65,
+        0.69,
+        0.71
+      ],
+      "bounds": [
+        -383.0225,
+        -172.845,
+        -6.6,
+        -133.9775,
+        -172.755,
+        41.8
+      ],
+      "source": "Design concept",
+      "freecadName": "FAB2_envelope_0200"
+    },
+    {
+      "id": "FAB2_envelope_0201",
+      "buildingId": "FAB2",
+      "system": "envelope",
+      "level": "ALL",
+      "label": "East/west return panel",
+      "color": [
+        0.84,
+        0.86,
+        0.84
+      ],
+      "bounds": [
+        -133.15,
+        -263.0,
+        -6.6,
+        -132.85,
+        -173.0,
+        41.8
+      ],
+      "source": "Design concept",
+      "freecadName": "FAB2_envelope_0201"
+    },
+    {
+      "id": "FAB2_circulation_0202",
+      "buildingId": "FAB2",
+      "system": "circulation",
+      "level": "RF",
+      "label": "Roof maintenance guardrails",
+      "color": [
+        0.79,
+        0.65,
+        0.38
+      ],
+      "bounds": [
+        -381.545,
+        -261.545,
+        42.4,
+        -134.455,
+        -174.455,
+        43.55
+      ],
+      "source": "Design concept",
+      "freecadName": "FAB2_circulation_0202"
+    },
+    {
+      "id": "FAB2_circulation_0203",
+      "buildingId": "FAB2",
+      "system": "circulation",
+      "level": "ALL",
+      "label": "Open stair enclosure with landings",
+      "color": [
+        0.67,
+        0.71,
+        0.7
+      ],
+      "bounds": [
+        -379.0,
+        -185.0,
+        -7.2,
+        -371.0,
+        -175.0,
+        41.8
+      ],
+      "source": "Design concept",
+      "freecadName": "FAB2_circulation_0203"
+    },
+    {
+      "id": "FAB2_circulation_0204",
+      "buildingId": "FAB2",
+      "system": "circulation",
+      "level": "B1",
+      "label": "Connecting folded stair flights - concept risers",
+      "color": [
+        0.79,
+        0.65,
+        0.38
+      ],
+      "bounds": [
+        -378.3,
+        -184.275,
+        -6.6,
+        -371.7,
+        -175.725,
+        15.56
+      ],
+      "source": "Design concept",
+      "freecadName": "FAB2_circulation_0204"
+    },
+    {
+      "id": "FAB2_circulation_0205",
+      "buildingId": "FAB2",
+      "system": "circulation",
+      "level": "F1",
+      "label": "Connecting folded stair flights - concept risers",
+      "color": [
+        0.79,
+        0.65,
+        0.38
+      ],
+      "bounds": [
+        -378.3,
+        -184.275,
+        15.4,
+        -371.7,
+        -175.725,
+        30.36
+      ],
+      "source": "Design concept",
+      "freecadName": "FAB2_circulation_0205"
+    },
+    {
+      "id": "FAB2_circulation_0206",
+      "buildingId": "FAB2",
+      "system": "circulation",
+      "level": "F2",
+      "label": "Connecting folded stair flights - concept risers",
+      "color": [
+        0.79,
+        0.65,
+        0.38
+      ],
+      "bounds": [
+        -378.3,
+        -184.275,
+        30.2,
+        -371.7,
+        -175.725,
+        42.56
+      ],
+      "source": "Design concept",
+      "freecadName": "FAB2_circulation_0206"
+    },
+    {
+      "id": "FAB2_circulation_0207",
+      "buildingId": "FAB2",
+      "system": "circulation",
+      "level": "ALL",
+      "label": "Open stair enclosure with landings",
+      "color": [
+        0.67,
+        0.71,
+        0.7
+      ],
+      "bounds": [
+        -145.0,
+        -185.0,
+        -7.2,
+        -137.0,
+        -175.0,
+        41.8
+      ],
+      "source": "Design concept",
+      "freecadName": "FAB2_circulation_0207"
+    },
+    {
+      "id": "FAB2_circulation_0208",
+      "buildingId": "FAB2",
+      "system": "circulation",
+      "level": "B1",
+      "label": "Connecting folded stair flights - concept risers",
+      "color": [
+        0.79,
+        0.65,
+        0.38
+      ],
+      "bounds": [
+        -144.3,
+        -184.275,
+        -6.6,
+        -137.7,
+        -175.725,
+        15.56
+      ],
+      "source": "Design concept",
+      "freecadName": "FAB2_circulation_0208"
+    },
+    {
+      "id": "FAB2_circulation_0209",
+      "buildingId": "FAB2",
+      "system": "circulation",
+      "level": "F1",
+      "label": "Connecting folded stair flights - concept risers",
+      "color": [
+        0.79,
+        0.65,
+        0.38
+      ],
+      "bounds": [
+        -144.3,
+        -184.275,
+        15.4,
+        -137.7,
+        -175.725,
+        30.36
+      ],
+      "source": "Design concept",
+      "freecadName": "FAB2_circulation_0209"
+    },
+    {
+      "id": "FAB2_circulation_0210",
+      "buildingId": "FAB2",
+      "system": "circulation",
+      "level": "F2",
+      "label": "Connecting folded stair flights - concept risers",
+      "color": [
+        0.79,
+        0.65,
+        0.38
+      ],
+      "bounds": [
+        -144.3,
+        -184.275,
+        30.2,
+        -137.7,
+        -175.725,
+        42.56
+      ],
+      "source": "Design concept",
+      "freecadName": "FAB2_circulation_0210"
+    },
+    {
+      "id": "FAB2_glazing_0211",
+      "buildingId": "FAB2",
+      "system": "glazing",
+      "level": "ENTRY",
+      "label": "Projecting glazed lobby with entrance opening",
+      "color": [
+        0.24,
+        0.47,
+        0.58
+      ],
+      "bounds": [
+        -215.58,
+        -173.0,
+        0.0,
+        -190.42,
+        -162.92,
+        11.5
+      ],
+      "source": "fab1 glazed projecting lobby",
+      "freecadName": "FAB2_glazing_0211"
+    },
+    {
+      "id": "FAB2_glazing_0212",
+      "buildingId": "FAB2",
+      "system": "glazing",
+      "level": "ENTRY",
+      "label": "Entrance paired glass doors",
+      "color": [
+        0.24,
+        0.47,
+        0.58
+      ],
+      "bounds": [
+        -206.1,
+        -163.35,
+        0.2,
+        -199.9,
+        -163.25,
+        4.2
+      ],
+      "source": "Design concept",
+      "freecadName": "FAB2_glazing_0212"
+    },
+    {
+      "id": "FAB2_roof_0213",
+      "buildingId": "FAB2",
+      "system": "roof",
+      "level": "ENTRY",
+      "label": "Entry canopy",
+      "color": [
+        0.49,
+        0.56,
+        0.59
+      ],
+      "bounds": [
+        -217.0,
+        -173.5,
+        11.5,
+        -189.0,
+        -160.5,
+        12.1
+      ],
+      "source": "Design concept",
+      "freecadName": "FAB2_roof_0213"
+    },
+    {
+      "id": "FAB2_equipment_0214",
+      "buildingId": "FAB2",
+      "system": "equipment",
+      "level": "B1",
+      "label": "Utility pump module 01",
+      "color": [
+        0.6,
+        0.72,
+        0.76
+      ],
+      "bounds": [
+        -355.25,
+        -238.5,
+        -6.6,
+        -340.75,
+        -234.0,
+        -4.1
+      ],
+      "source": "Intel SubFab layer, schematic pumps",
+      "freecadName": "FAB2_equipment_0214"
+    },
+    {
+      "id": "FAB2_equipment_0215",
+      "buildingId": "FAB2",
+      "system": "equipment",
+      "level": "B1",
+      "label": "Utility pump module 02",
+      "color": [
+        0.6,
+        0.72,
+        0.76
+      ],
+      "bounds": [
+        -312.25,
+        -238.5,
+        -6.6,
+        -297.75,
+        -234.0,
+        -4.1
+      ],
+      "source": "Intel SubFab layer, schematic pumps",
+      "freecadName": "FAB2_equipment_0215"
+    },
+    {
+      "id": "FAB2_equipment_0216",
+      "buildingId": "FAB2",
+      "system": "equipment",
+      "level": "B1",
+      "label": "Utility pump module 03",
+      "color": [
+        0.6,
+        0.72,
+        0.76
+      ],
+      "bounds": [
+        -269.25,
+        -238.5,
+        -6.6,
+        -254.75,
+        -234.0,
+        -4.1
+      ],
+      "source": "Intel SubFab layer, schematic pumps",
+      "freecadName": "FAB2_equipment_0216"
+    },
+    {
+      "id": "FAB2_equipment_0217",
+      "buildingId": "FAB2",
+      "system": "equipment",
+      "level": "B1",
+      "label": "Utility pump module 04",
+      "color": [
+        0.6,
+        0.72,
+        0.76
+      ],
+      "bounds": [
+        -226.25,
+        -238.5,
+        -6.6,
+        -211.75,
+        -234.0,
+        -4.1
+      ],
+      "source": "Intel SubFab layer, schematic pumps",
+      "freecadName": "FAB2_equipment_0217"
+    },
+    {
+      "id": "FAB2_equipment_0218",
+      "buildingId": "FAB2",
+      "system": "equipment",
+      "level": "B1",
+      "label": "Utility pump module 05",
+      "color": [
+        0.6,
+        0.72,
+        0.76
+      ],
+      "bounds": [
+        -183.25,
+        -238.5,
+        -6.6,
+        -168.75,
+        -234.0,
+        -4.1
+      ],
+      "source": "Intel SubFab layer, schematic pumps",
+      "freecadName": "FAB2_equipment_0218"
+    },
+    {
+      "id": "FAB2_equipment_0219",
+      "buildingId": "FAB2",
+      "system": "equipment",
+      "level": "B1",
+      "label": "Utility pump module 06",
+      "color": [
+        0.6,
+        0.72,
+        0.76
+      ],
+      "bounds": [
+        -355.25,
+        -200.5,
+        -6.6,
+        -340.75,
+        -196.0,
+        -4.1
+      ],
+      "source": "Intel SubFab layer, schematic pumps",
+      "freecadName": "FAB2_equipment_0219"
+    },
+    {
+      "id": "FAB2_equipment_0220",
+      "buildingId": "FAB2",
+      "system": "equipment",
+      "level": "B1",
+      "label": "Utility pump module 07",
+      "color": [
+        0.6,
+        0.72,
+        0.76
+      ],
+      "bounds": [
+        -312.25,
+        -200.5,
+        -6.6,
+        -297.75,
+        -196.0,
+        -4.1
+      ],
+      "source": "Intel SubFab layer, schematic pumps",
+      "freecadName": "FAB2_equipment_0220"
+    },
+    {
+      "id": "FAB2_equipment_0221",
+      "buildingId": "FAB2",
+      "system": "equipment",
+      "level": "B1",
+      "label": "Utility pump module 08",
+      "color": [
+        0.6,
+        0.72,
+        0.76
+      ],
+      "bounds": [
+        -269.25,
+        -200.5,
+        -6.6,
+        -254.75,
+        -196.0,
+        -4.1
+      ],
+      "source": "Intel SubFab layer, schematic pumps",
+      "freecadName": "FAB2_equipment_0221"
+    },
+    {
+      "id": "FAB2_equipment_0222",
+      "buildingId": "FAB2",
+      "system": "equipment",
+      "level": "B1",
+      "label": "Utility pump module 09",
+      "color": [
+        0.6,
+        0.72,
+        0.76
+      ],
+      "bounds": [
+        -226.25,
+        -200.5,
+        -6.6,
+        -211.75,
+        -196.0,
+        -4.1
+      ],
+      "source": "Intel SubFab layer, schematic pumps",
+      "freecadName": "FAB2_equipment_0222"
+    },
+    {
+      "id": "FAB2_equipment_0223",
+      "buildingId": "FAB2",
+      "system": "equipment",
+      "level": "B1",
+      "label": "Utility pump module 10",
+      "color": [
+        0.6,
+        0.72,
+        0.76
+      ],
+      "bounds": [
+        -183.25,
+        -200.5,
+        -6.6,
+        -168.75,
+        -196.0,
+        -4.1
+      ],
+      "source": "Intel SubFab layer, schematic pumps",
+      "freecadName": "FAB2_equipment_0223"
+    },
+    {
+      "id": "FAB2_piping_0224",
+      "buildingId": "FAB2",
+      "system": "piping",
+      "level": "B1",
+      "label": "SubFab pipe corridor",
+      "color": [
+        0.24,
+        0.49,
+        0.56
+      ],
+      "bounds": [
+        -375.0,
+        -230.29,
+        -2.37,
+        -141.0,
+        -229.71,
+        -0.41
+      ],
+      "source": "Design concept",
+      "freecadName": "FAB2_piping_0224"
+    },
+    {
+      "id": "FAB2_piping_0225",
+      "buildingId": "FAB2",
+      "system": "piping",
+      "level": "B1",
+      "label": "SubFab pipe corridor",
+      "color": [
+        0.24,
+        0.49,
+        0.56
+      ],
+      "bounds": [
+        -375.0,
+        -206.29,
+        -2.37,
+        -141.0,
+        -205.71,
+        -0.41
+      ],
+      "source": "Design concept",
+      "freecadName": "FAB2_piping_0225"
+    },
+    {
+      "id": "FAB2_interiors_0226",
+      "buildingId": "FAB2",
+      "system": "interiors",
+      "level": "F1",
+      "label": "Cleanroom process bay 01",
+      "color": [
+        0.76,
+        0.83,
+        0.73
+      ],
+      "bounds": [
+        -360.95,
+        -230.8,
+        15.4,
+        -351.05,
+        -205.2,
+        19.2
+      ],
+      "source": "MIT.nano bay/chase concept; tool geometry schematic",
+      "freecadName": "FAB2_interiors_0226"
+    },
+    {
+      "id": "FAB2_piping_0227",
+      "buildingId": "FAB2",
+      "system": "piping",
+      "level": "F1",
+      "label": "Service chase 01",
+      "color": [
+        0.24,
+        0.49,
+        0.56
+      ],
+      "bounds": [
+        -350.62,
+        -231.0,
+        18.61,
+        -349.66,
+        -205.0,
+        18.99
+      ],
+      "source": "MIT.nano bay/chase",
+      "freecadName": "FAB2_piping_0227"
+    },
+    {
+      "id": "FAB2_interiors_0228",
+      "buildingId": "FAB2",
+      "system": "interiors",
+      "level": "F1",
+      "label": "Cleanroom process bay 02",
+      "color": [
+        0.76,
+        0.83,
+        0.73
+      ],
+      "bounds": [
+        -332.95,
+        -230.8,
+        15.4,
+        -323.05,
+        -205.2,
+        19.2
+      ],
+      "source": "MIT.nano bay/chase concept; tool geometry schematic",
+      "freecadName": "FAB2_interiors_0228"
+    },
+    {
+      "id": "FAB2_piping_0229",
+      "buildingId": "FAB2",
+      "system": "piping",
+      "level": "F1",
+      "label": "Service chase 02",
+      "color": [
+        0.24,
+        0.49,
+        0.56
+      ],
+      "bounds": [
+        -322.62,
+        -231.0,
+        18.61,
+        -321.66,
+        -205.0,
+        18.99
+      ],
+      "source": "MIT.nano bay/chase",
+      "freecadName": "FAB2_piping_0229"
+    },
+    {
+      "id": "FAB2_interiors_0230",
+      "buildingId": "FAB2",
+      "system": "interiors",
+      "level": "F1",
+      "label": "Cleanroom process bay 03",
+      "color": [
+        0.76,
+        0.83,
+        0.73
+      ],
+      "bounds": [
+        -304.95,
+        -230.8,
+        15.4,
+        -295.05,
+        -205.2,
+        19.2
+      ],
+      "source": "MIT.nano bay/chase concept; tool geometry schematic",
+      "freecadName": "FAB2_interiors_0230"
+    },
+    {
+      "id": "FAB2_piping_0231",
+      "buildingId": "FAB2",
+      "system": "piping",
+      "level": "F1",
+      "label": "Service chase 03",
+      "color": [
+        0.24,
+        0.49,
+        0.56
+      ],
+      "bounds": [
+        -294.62,
+        -231.0,
+        18.61,
+        -293.66,
+        -205.0,
+        18.99
+      ],
+      "source": "MIT.nano bay/chase",
+      "freecadName": "FAB2_piping_0231"
+    },
+    {
+      "id": "FAB2_interiors_0232",
+      "buildingId": "FAB2",
+      "system": "interiors",
+      "level": "F1",
+      "label": "Cleanroom process bay 04",
+      "color": [
+        0.76,
+        0.83,
+        0.73
+      ],
+      "bounds": [
+        -276.95,
+        -230.8,
+        15.4,
+        -267.05,
+        -205.2,
+        19.2
+      ],
+      "source": "MIT.nano bay/chase concept; tool geometry schematic",
+      "freecadName": "FAB2_interiors_0232"
+    },
+    {
+      "id": "FAB2_piping_0233",
+      "buildingId": "FAB2",
+      "system": "piping",
+      "level": "F1",
+      "label": "Service chase 04",
+      "color": [
+        0.24,
+        0.49,
+        0.56
+      ],
+      "bounds": [
+        -266.62,
+        -231.0,
+        18.61,
+        -265.66,
+        -205.0,
+        18.99
+      ],
+      "source": "MIT.nano bay/chase",
+      "freecadName": "FAB2_piping_0233"
+    },
+    {
+      "id": "FAB2_interiors_0234",
+      "buildingId": "FAB2",
+      "system": "interiors",
+      "level": "F1",
+      "label": "Cleanroom process bay 05",
+      "color": [
+        0.76,
+        0.83,
+        0.73
+      ],
+      "bounds": [
+        -248.95,
+        -230.8,
+        15.4,
+        -239.05,
+        -205.2,
+        19.2
+      ],
+      "source": "MIT.nano bay/chase concept; tool geometry schematic",
+      "freecadName": "FAB2_interiors_0234"
+    },
+    {
+      "id": "FAB2_piping_0235",
+      "buildingId": "FAB2",
+      "system": "piping",
+      "level": "F1",
+      "label": "Service chase 05",
+      "color": [
+        0.24,
+        0.49,
+        0.56
+      ],
+      "bounds": [
+        -238.62,
+        -231.0,
+        18.61,
+        -237.66,
+        -205.0,
+        18.99
+      ],
+      "source": "MIT.nano bay/chase",
+      "freecadName": "FAB2_piping_0235"
+    },
+    {
+      "id": "FAB2_interiors_0236",
+      "buildingId": "FAB2",
+      "system": "interiors",
+      "level": "F1",
+      "label": "Cleanroom process bay 06",
+      "color": [
+        0.76,
+        0.83,
+        0.73
+      ],
+      "bounds": [
+        -220.95,
+        -230.8,
+        15.4,
+        -211.05,
+        -205.2,
+        19.2
+      ],
+      "source": "MIT.nano bay/chase concept; tool geometry schematic",
+      "freecadName": "FAB2_interiors_0236"
+    },
+    {
+      "id": "FAB2_piping_0237",
+      "buildingId": "FAB2",
+      "system": "piping",
+      "level": "F1",
+      "label": "Service chase 06",
+      "color": [
+        0.24,
+        0.49,
+        0.56
+      ],
+      "bounds": [
+        -210.62,
+        -231.0,
+        18.61,
+        -209.66,
+        -205.0,
+        18.99
+      ],
+      "source": "MIT.nano bay/chase",
+      "freecadName": "FAB2_piping_0237"
+    },
+    {
+      "id": "FAB2_interiors_0238",
+      "buildingId": "FAB2",
+      "system": "interiors",
+      "level": "F1",
+      "label": "Cleanroom process bay 07",
+      "color": [
+        0.76,
+        0.83,
+        0.73
+      ],
+      "bounds": [
+        -192.95,
+        -230.8,
+        15.4,
+        -183.05,
+        -205.2,
+        19.2
+      ],
+      "source": "MIT.nano bay/chase concept; tool geometry schematic",
+      "freecadName": "FAB2_interiors_0238"
+    },
+    {
+      "id": "FAB2_piping_0239",
+      "buildingId": "FAB2",
+      "system": "piping",
+      "level": "F1",
+      "label": "Service chase 07",
+      "color": [
+        0.24,
+        0.49,
+        0.56
+      ],
+      "bounds": [
+        -182.62,
+        -231.0,
+        18.61,
+        -181.66,
+        -205.0,
+        18.99
+      ],
+      "source": "MIT.nano bay/chase",
+      "freecadName": "FAB2_piping_0239"
+    },
+    {
+      "id": "FAB2_interiors_0240",
+      "buildingId": "FAB2",
+      "system": "interiors",
+      "level": "F1",
+      "label": "Cleanroom process bay 08",
+      "color": [
+        0.76,
+        0.83,
+        0.73
+      ],
+      "bounds": [
+        -164.95,
+        -230.8,
+        15.4,
+        -155.05,
+        -205.2,
+        19.2
+      ],
+      "source": "MIT.nano bay/chase concept; tool geometry schematic",
+      "freecadName": "FAB2_interiors_0240"
+    },
+    {
+      "id": "FAB2_piping_0241",
+      "buildingId": "FAB2",
+      "system": "piping",
+      "level": "F1",
+      "label": "Service chase 08",
+      "color": [
+        0.24,
+        0.49,
+        0.56
+      ],
+      "bounds": [
+        -154.62,
+        -231.0,
+        18.61,
+        -153.66,
+        -205.0,
+        18.99
+      ],
+      "source": "MIT.nano bay/chase",
+      "freecadName": "FAB2_piping_0241"
+    },
+    {
+      "id": "FAB2_interiors_0242",
+      "buildingId": "FAB2",
+      "system": "interiors",
+      "level": "F1",
+      "label": "Cleanroom service partition",
+      "color": [
+        0.78,
+        0.84,
+        0.79
+      ],
+      "bounds": [
+        -373.0,
+        -240.08,
+        15.4,
+        -143.0,
+        -239.92,
+        20.0
+      ],
+      "source": "Design concept",
+      "freecadName": "FAB2_interiors_0242"
+    },
+    {
+      "id": "FAB2_circulation_0243",
+      "buildingId": "FAB2",
+      "system": "circulation",
+      "level": "F1",
+      "label": "OHT loop longitudinal segment",
+      "color": [
+        0.79,
+        0.65,
+        0.38
+      ],
+      "bounds": [
+        -373.0,
+        -235.2,
+        19.8,
+        -143.0,
+        -234.8,
+        20.1
+      ],
+      "source": "Daifuku Cleanway/OHT illustration only",
+      "freecadName": "FAB2_circulation_0243"
+    },
+    {
+      "id": "FAB2_circulation_0244",
+      "buildingId": "FAB2",
+      "system": "circulation",
+      "level": "F1",
+      "label": "OHT loop end segment",
+      "color": [
+        0.79,
+        0.65,
+        0.38
+      ],
+      "bounds": [
+        -373.2,
+        -235.0,
+        19.8,
+        -372.8,
+        -201.0,
+        20.1
+      ],
+      "source": "Design concept",
+      "freecadName": "FAB2_circulation_0244"
+    },
+    {
+      "id": "FAB2_interiors_0245",
+      "buildingId": "FAB2",
+      "system": "interiors",
+      "level": "F1",
+      "label": "Cleanroom service partition",
+      "color": [
+        0.78,
+        0.84,
+        0.79
+      ],
+      "bounds": [
+        -373.0,
+        -196.08,
+        15.4,
+        -143.0,
+        -195.92,
+        20.0
+      ],
+      "source": "Design concept",
+      "freecadName": "FAB2_interiors_0245"
+    },
+    {
+      "id": "FAB2_circulation_0246",
+      "buildingId": "FAB2",
+      "system": "circulation",
+      "level": "F1",
+      "label": "OHT loop longitudinal segment",
+      "color": [
+        0.79,
+        0.65,
+        0.38
+      ],
+      "bounds": [
+        -373.0,
+        -201.2,
+        19.8,
+        -143.0,
+        -200.8,
+        20.1
+      ],
+      "source": "Daifuku Cleanway/OHT illustration only",
+      "freecadName": "FAB2_circulation_0246"
+    },
+    {
+      "id": "FAB2_circulation_0247",
+      "buildingId": "FAB2",
+      "system": "circulation",
+      "level": "F1",
+      "label": "OHT loop end segment",
+      "color": [
+        0.79,
+        0.65,
+        0.38
+      ],
+      "bounds": [
+        -143.2,
+        -235.0,
+        19.8,
+        -142.8,
+        -201.0,
+        20.1
+      ],
+      "source": "Design concept",
+      "freecadName": "FAB2_circulation_0247"
+    },
+    {
+      "id": "FAB2_equipment_0248",
+      "buildingId": "FAB2",
+      "system": "equipment",
+      "level": "F1",
+      "label": "FOUP carrier 1",
+      "color": [
+        0.6,
+        0.72,
+        0.76
+      ],
+      "bounds": [
+        -348.5,
+        -201.65,
+        18.8,
+        -347.5,
+        -200.35,
+        20.05
+      ],
+      "source": "Design concept",
+      "freecadName": "FAB2_equipment_0248"
+    },
+    {
+      "id": "FAB2_equipment_0249",
+      "buildingId": "FAB2",
+      "system": "equipment",
+      "level": "F1",
+      "label": "FOUP carrier 2",
+      "color": [
+        0.6,
+        0.72,
+        0.76
+      ],
+      "bounds": [
+        -313.5,
+        -201.65,
+        18.8,
+        -312.5,
+        -200.35,
+        20.05
+      ],
+      "source": "Design concept",
+      "freecadName": "FAB2_equipment_0249"
+    },
+    {
+      "id": "FAB2_equipment_0250",
+      "buildingId": "FAB2",
+      "system": "equipment",
+      "level": "F1",
+      "label": "FOUP carrier 3",
+      "color": [
+        0.6,
+        0.72,
+        0.76
+      ],
+      "bounds": [
+        -278.5,
+        -201.65,
+        18.8,
+        -277.5,
+        -200.35,
+        20.05
+      ],
+      "source": "Design concept",
+      "freecadName": "FAB2_equipment_0250"
+    },
+    {
+      "id": "FAB2_equipment_0251",
+      "buildingId": "FAB2",
+      "system": "equipment",
+      "level": "F1",
+      "label": "FOUP carrier 4",
+      "color": [
+        0.6,
+        0.72,
+        0.76
+      ],
+      "bounds": [
+        -243.5,
+        -201.65,
+        18.8,
+        -242.5,
+        -200.35,
+        20.05
+      ],
+      "source": "Design concept",
+      "freecadName": "FAB2_equipment_0251"
+    },
+    {
+      "id": "FAB2_equipment_0252",
+      "buildingId": "FAB2",
+      "system": "equipment",
+      "level": "F1",
+      "label": "FOUP carrier 5",
+      "color": [
+        0.6,
+        0.72,
+        0.76
+      ],
+      "bounds": [
+        -208.5,
+        -201.65,
+        18.8,
+        -207.5,
+        -200.35,
+        20.05
+      ],
+      "source": "Design concept",
+      "freecadName": "FAB2_equipment_0252"
+    },
+    {
+      "id": "FAB2_equipment_0253",
+      "buildingId": "FAB2",
+      "system": "equipment",
+      "level": "F1",
+      "label": "FOUP carrier 6",
+      "color": [
+        0.6,
+        0.72,
+        0.76
+      ],
+      "bounds": [
+        -173.5,
+        -201.65,
+        18.8,
+        -172.5,
+        -200.35,
+        20.05
+      ],
+      "source": "Design concept",
+      "freecadName": "FAB2_equipment_0253"
+    },
+    {
+      "id": "FAB2_circulation_0254",
+      "buildingId": "FAB2",
+      "system": "circulation",
+      "level": "F1",
+      "label": "OHT suspension hangers",
+      "color": [
+        0.79,
+        0.65,
+        0.38
+      ],
+      "bounds": [
+        -368.045,
+        -235.045,
+        20.1,
+        -147.955,
+        -234.955,
+        29.6
+      ],
+      "source": "Design concept",
+      "freecadName": "FAB2_circulation_0254"
+    },
+    {
+      "id": "FAB2_circulation_0255",
+      "buildingId": "FAB2",
+      "system": "circulation",
+      "level": "F1",
+      "label": "OHT suspension hangers",
+      "color": [
+        0.79,
+        0.65,
+        0.38
+      ],
+      "bounds": [
+        -368.045,
+        -201.045,
+        20.1,
+        -147.955,
+        -200.955,
+        29.6
+      ],
+      "source": "Design concept",
+      "freecadName": "FAB2_circulation_0255"
+    },
+    {
+      "id": "FAB2_equipment_0256",
+      "buildingId": "FAB2",
+      "system": "equipment",
+      "level": "F1",
+      "label": "Concept FOUP stocker and rail transfer",
+      "color": [
+        0.6,
+        0.72,
+        0.76
+      ],
+      "bounds": [
+        -157.5,
+        -201.0,
+        15.4,
+        -148.5,
+        -186.5,
+        21.4
+      ],
+      "source": "Daifuku OHT/Stocker system reference; geometry schematic",
+      "freecadName": "FAB2_equipment_0256"
+    },
+    {
+      "id": "FAB2_equipment_0257",
+      "buildingId": "FAB2",
+      "system": "equipment",
+      "level": "F2",
+      "label": "Filter/fan array 1",
+      "color": [
+        0.6,
+        0.72,
+        0.76
+      ],
+      "bounds": [
+        -366.25,
+        -244.9,
+        30.2,
+        -153.75,
+        -241.1,
+        31.5
+      ],
+      "source": "Intel interstitial/fan deck, placement schematic",
+      "freecadName": "FAB2_equipment_0257"
+    },
+    {
+      "id": "FAB2_equipment_0258",
+      "buildingId": "FAB2",
+      "system": "equipment",
+      "level": "F2",
+      "label": "Filter/fan array 2",
+      "color": [
+        0.6,
+        0.72,
+        0.76
+      ],
+      "bounds": [
+        -366.25,
+        -228.9,
+        30.2,
+        -153.75,
+        -225.1,
+        31.5
+      ],
+      "source": "Intel interstitial/fan deck, placement schematic",
+      "freecadName": "FAB2_equipment_0258"
+    },
+    {
+      "id": "FAB2_equipment_0259",
+      "buildingId": "FAB2",
+      "system": "equipment",
+      "level": "F2",
+      "label": "Filter/fan array 3",
+      "color": [
+        0.6,
+        0.72,
+        0.76
+      ],
+      "bounds": [
+        -366.25,
+        -210.9,
+        30.2,
+        -153.75,
+        -207.1,
+        31.5
+      ],
+      "source": "Intel interstitial/fan deck, placement schematic",
+      "freecadName": "FAB2_equipment_0259"
+    },
+    {
+      "id": "FAB2_equipment_0260",
+      "buildingId": "FAB2",
+      "system": "equipment",
+      "level": "F2",
+      "label": "Filter/fan array 4",
+      "color": [
+        0.6,
+        0.72,
+        0.76
+      ],
+      "bounds": [
+        -366.25,
+        -194.9,
+        30.2,
+        -153.75,
+        -191.1,
+        31.5
+      ],
+      "source": "Intel interstitial/fan deck, placement schematic",
+      "freecadName": "FAB2_equipment_0260"
+    },
+    {
+      "id": "FAB2_piping_0261",
+      "buildingId": "FAB2",
+      "system": "piping",
+      "level": "F2",
+      "label": "Air distribution trunk",
+      "color": [
+        0.24,
+        0.49,
+        0.56
+      ],
+      "bounds": [
+        -377.0,
+        -254.0,
+        32.6,
+        -139.0,
+        -252.0,
+        34.8
+      ],
+      "source": "Schematic only; supply/return not sized",
+      "freecadName": "FAB2_piping_0261"
+    },
+    {
+      "id": "FAB2_piping_0262",
+      "buildingId": "FAB2",
+      "system": "piping",
+      "level": "F2",
+      "label": "Air distribution trunk",
+      "color": [
+        0.24,
+        0.49,
+        0.56
+      ],
+      "bounds": [
+        -377.0,
+        -184.0,
+        32.6,
+        -139.0,
+        -182.0,
+        34.8
+      ],
+      "source": "Schematic only; supply/return not sized",
+      "freecadName": "FAB2_piping_0262"
+    },
+    {
+      "id": "FAB2_equipment_0263",
+      "buildingId": "FAB2",
+      "system": "equipment",
+      "level": "RF",
+      "label": "AHU-01 casing fans and louvers",
+      "color": [
+        0.6,
+        0.72,
+        0.76
+      ],
+      "bounds": [
+        -355.9,
+        -249.15,
+        42.4,
+        -344.1,
+        -242.85,
+        46.5
+      ],
+      "source": "fab1 rooftop AHU/MAU image and Intel fab mechanical level",
+      "freecadName": "FAB2_equipment_0263"
+    },
+    {
+      "id": "FAB2_equipment_0264",
+      "buildingId": "FAB2",
+      "system": "equipment",
+      "level": "RF",
+      "label": "AHU-02 casing fans and louvers",
+      "color": [
+        0.6,
+        0.72,
+        0.76
+      ],
+      "bounds": [
+        -319.9,
+        -249.15,
+        42.4,
+        -308.1,
+        -242.85,
+        46.5
+      ],
+      "source": "fab1 rooftop AHU/MAU image and Intel fab mechanical level",
+      "freecadName": "FAB2_equipment_0264"
+    },
+    {
+      "id": "FAB2_equipment_0265",
+      "buildingId": "FAB2",
+      "system": "equipment",
+      "level": "RF",
+      "label": "AHU-03 casing fans and louvers",
+      "color": [
+        0.6,
+        0.72,
+        0.76
+      ],
+      "bounds": [
+        -283.9,
+        -249.15,
+        42.4,
+        -272.1,
+        -242.85,
+        46.5
+      ],
+      "source": "fab1 rooftop AHU/MAU image and Intel fab mechanical level",
+      "freecadName": "FAB2_equipment_0265"
+    },
+    {
+      "id": "FAB2_equipment_0266",
+      "buildingId": "FAB2",
+      "system": "equipment",
+      "level": "RF",
+      "label": "AHU-04 casing fans and louvers",
+      "color": [
+        0.6,
+        0.72,
+        0.76
+      ],
+      "bounds": [
+        -247.9,
+        -249.15,
+        42.4,
+        -236.1,
+        -242.85,
+        46.5
+      ],
+      "source": "fab1 rooftop AHU/MAU image and Intel fab mechanical level",
+      "freecadName": "FAB2_equipment_0266"
+    },
+    {
+      "id": "FAB2_equipment_0267",
+      "buildingId": "FAB2",
+      "system": "equipment",
+      "level": "RF",
+      "label": "AHU-05 casing fans and louvers",
+      "color": [
+        0.6,
+        0.72,
+        0.76
+      ],
+      "bounds": [
+        -211.9,
+        -249.15,
+        42.4,
+        -200.1,
+        -242.85,
+        46.5
+      ],
+      "source": "fab1 rooftop AHU/MAU image and Intel fab mechanical level",
+      "freecadName": "FAB2_equipment_0267"
+    },
+    {
+      "id": "FAB2_equipment_0268",
+      "buildingId": "FAB2",
+      "system": "equipment",
+      "level": "RF",
+      "label": "AHU-06 casing fans and louvers",
+      "color": [
+        0.6,
+        0.72,
+        0.76
+      ],
+      "bounds": [
+        -175.9,
+        -249.15,
+        42.4,
+        -164.1,
+        -242.85,
+        46.5
+      ],
+      "source": "fab1 rooftop AHU/MAU image and Intel fab mechanical level",
+      "freecadName": "FAB2_equipment_0268"
+    },
+    {
+      "id": "FAB2_equipment_0269",
+      "buildingId": "FAB2",
+      "system": "equipment",
+      "level": "RF",
+      "label": "AHU-07 casing fans and louvers",
+      "color": [
+        0.6,
+        0.72,
+        0.76
+      ],
+      "bounds": [
+        -355.9,
+        -222.15,
+        42.4,
+        -344.1,
+        -215.85,
+        46.5
+      ],
+      "source": "fab1 rooftop AHU/MAU image and Intel fab mechanical level",
+      "freecadName": "FAB2_equipment_0269"
+    },
+    {
+      "id": "FAB2_equipment_0270",
+      "buildingId": "FAB2",
+      "system": "equipment",
+      "level": "RF",
+      "label": "AHU-08 casing fans and louvers",
+      "color": [
+        0.6,
+        0.72,
+        0.76
+      ],
+      "bounds": [
+        -319.9,
+        -222.15,
+        42.4,
+        -308.1,
+        -215.85,
+        46.5
+      ],
+      "source": "fab1 rooftop AHU/MAU image and Intel fab mechanical level",
+      "freecadName": "FAB2_equipment_0270"
+    },
+    {
+      "id": "FAB2_equipment_0271",
+      "buildingId": "FAB2",
+      "system": "equipment",
+      "level": "RF",
+      "label": "AHU-09 casing fans and louvers",
+      "color": [
+        0.6,
+        0.72,
+        0.76
+      ],
+      "bounds": [
+        -283.9,
+        -222.15,
+        42.4,
+        -272.1,
+        -215.85,
+        46.5
+      ],
+      "source": "fab1 rooftop AHU/MAU image and Intel fab mechanical level",
+      "freecadName": "FAB2_equipment_0271"
+    },
+    {
+      "id": "FAB2_equipment_0272",
+      "buildingId": "FAB2",
+      "system": "equipment",
+      "level": "RF",
+      "label": "AHU-10 casing fans and louvers",
+      "color": [
+        0.6,
+        0.72,
+        0.76
+      ],
+      "bounds": [
+        -247.9,
+        -222.15,
+        42.4,
+        -236.1,
+        -215.85,
+        46.5
+      ],
+      "source": "fab1 rooftop AHU/MAU image and Intel fab mechanical level",
+      "freecadName": "FAB2_equipment_0272"
+    },
+    {
+      "id": "FAB2_equipment_0273",
+      "buildingId": "FAB2",
+      "system": "equipment",
+      "level": "RF",
+      "label": "AHU-11 casing fans and louvers",
+      "color": [
+        0.6,
+        0.72,
+        0.76
+      ],
+      "bounds": [
+        -211.9,
+        -222.15,
+        42.4,
+        -200.1,
+        -215.85,
+        46.5
+      ],
+      "source": "fab1 rooftop AHU/MAU image and Intel fab mechanical level",
+      "freecadName": "FAB2_equipment_0273"
+    },
+    {
+      "id": "FAB2_equipment_0274",
+      "buildingId": "FAB2",
+      "system": "equipment",
+      "level": "RF",
+      "label": "AHU-12 casing fans and louvers",
+      "color": [
+        0.6,
+        0.72,
+        0.76
+      ],
+      "bounds": [
+        -175.9,
+        -222.15,
+        42.4,
+        -164.1,
+        -215.85,
+        46.5
+      ],
+      "source": "fab1 rooftop AHU/MAU image and Intel fab mechanical level",
+      "freecadName": "FAB2_equipment_0274"
+    },
+    {
+      "id": "FAB2_equipment_0275",
+      "buildingId": "FAB2",
+      "system": "equipment",
+      "level": "RF",
+      "label": "AHU-13 casing fans and louvers",
+      "color": [
+        0.6,
+        0.72,
+        0.76
+      ],
+      "bounds": [
+        -355.9,
+        -195.15,
+        42.4,
+        -344.1,
+        -188.85,
+        46.5
+      ],
+      "source": "fab1 rooftop AHU/MAU image and Intel fab mechanical level",
+      "freecadName": "FAB2_equipment_0275"
+    },
+    {
+      "id": "FAB2_equipment_0276",
+      "buildingId": "FAB2",
+      "system": "equipment",
+      "level": "RF",
+      "label": "AHU-14 casing fans and louvers",
+      "color": [
+        0.6,
+        0.72,
+        0.76
+      ],
+      "bounds": [
+        -319.9,
+        -195.15,
+        42.4,
+        -308.1,
+        -188.85,
+        46.5
+      ],
+      "source": "fab1 rooftop AHU/MAU image and Intel fab mechanical level",
+      "freecadName": "FAB2_equipment_0276"
+    },
+    {
+      "id": "FAB2_equipment_0277",
+      "buildingId": "FAB2",
+      "system": "equipment",
+      "level": "RF",
+      "label": "AHU-15 casing fans and louvers",
+      "color": [
+        0.6,
+        0.72,
+        0.76
+      ],
+      "bounds": [
+        -283.9,
+        -195.15,
+        42.4,
+        -272.1,
+        -188.85,
+        46.5
+      ],
+      "source": "fab1 rooftop AHU/MAU image and Intel fab mechanical level",
+      "freecadName": "FAB2_equipment_0277"
+    },
+    {
+      "id": "FAB2_equipment_0278",
+      "buildingId": "FAB2",
+      "system": "equipment",
+      "level": "RF",
+      "label": "AHU-16 casing fans and louvers",
+      "color": [
+        0.6,
+        0.72,
+        0.76
+      ],
+      "bounds": [
+        -247.9,
+        -195.15,
+        42.4,
+        -236.1,
+        -188.85,
+        46.5
+      ],
+      "source": "fab1 rooftop AHU/MAU image and Intel fab mechanical level",
+      "freecadName": "FAB2_equipment_0278"
+    },
+    {
+      "id": "FAB2_equipment_0279",
+      "buildingId": "FAB2",
+      "system": "equipment",
+      "level": "RF",
+      "label": "AHU-17 casing fans and louvers",
+      "color": [
+        0.6,
+        0.72,
+        0.76
+      ],
+      "bounds": [
+        -211.9,
+        -195.15,
+        42.4,
+        -200.1,
+        -188.85,
+        46.5
+      ],
+      "source": "fab1 rooftop AHU/MAU image and Intel fab mechanical level",
+      "freecadName": "FAB2_equipment_0279"
+    },
+    {
+      "id": "FAB2_equipment_0280",
+      "buildingId": "FAB2",
+      "system": "equipment",
+      "level": "RF",
+      "label": "AHU-18 casing fans and louvers",
+      "color": [
+        0.6,
+        0.72,
+        0.76
+      ],
+      "bounds": [
+        -175.9,
+        -195.15,
+        42.4,
+        -164.1,
+        -188.85,
+        46.5
+      ],
+      "source": "fab1 rooftop AHU/MAU image and Intel fab mechanical level",
+      "freecadName": "FAB2_equipment_0280"
+    },
+    {
+      "id": "FAB2_equipment_0281",
+      "buildingId": "FAB2",
+      "system": "equipment",
+      "level": "RF",
+      "label": "Exhaust stack 1",
+      "color": [
+        0.6,
+        0.72,
+        0.76
+      ],
+      "bounds": [
+        -342.0,
+        -259.0,
+        42.4,
+        -338.0,
+        -255.0,
+        51.0
+      ],
+      "source": "fab1 roof exhaust stacks",
+      "freecadName": "FAB2_equipment_0281"
+    },
+    {
+      "id": "FAB2_equipment_0282",
+      "buildingId": "FAB2",
+      "system": "equipment",
+      "level": "RF",
+      "label": "Exhaust stack 2",
+      "color": [
+        0.6,
+        0.72,
+        0.76
+      ],
+      "bounds": [
+        -310.0,
+        -259.0,
+        42.4,
+        -306.0,
+        -255.0,
+        51.0
+      ],
+      "source": "fab1 roof exhaust stacks",
+      "freecadName": "FAB2_equipment_0282"
+    },
+    {
+      "id": "FAB2_equipment_0283",
+      "buildingId": "FAB2",
+      "system": "equipment",
+      "level": "RF",
+      "label": "Exhaust stack 3",
+      "color": [
+        0.6,
+        0.72,
+        0.76
+      ],
+      "bounds": [
+        -278.0,
+        -259.0,
+        42.4,
+        -274.0,
+        -255.0,
+        51.0
+      ],
+      "source": "fab1 roof exhaust stacks",
+      "freecadName": "FAB2_equipment_0283"
+    },
+    {
+      "id": "FAB2_equipment_0284",
+      "buildingId": "FAB2",
+      "system": "equipment",
+      "level": "RF",
+      "label": "Exhaust stack 4",
+      "color": [
+        0.6,
+        0.72,
+        0.76
+      ],
+      "bounds": [
+        -246.0,
+        -259.0,
+        42.4,
+        -242.0,
+        -255.0,
+        51.0
+      ],
+      "source": "fab1 roof exhaust stacks",
+      "freecadName": "FAB2_equipment_0284"
+    },
+    {
+      "id": "FAB2_equipment_0285",
+      "buildingId": "FAB2",
+      "system": "equipment",
+      "level": "RF",
+      "label": "Exhaust stack 5",
+      "color": [
+        0.6,
+        0.72,
+        0.76
+      ],
+      "bounds": [
+        -214.0,
+        -259.0,
+        42.4,
+        -210.0,
+        -255.0,
+        51.0
+      ],
+      "source": "fab1 roof exhaust stacks",
+      "freecadName": "FAB2_equipment_0285"
+    },
+    {
+      "id": "FAB2_equipment_0286",
+      "buildingId": "FAB2",
+      "system": "equipment",
+      "level": "RF",
+      "label": "Exhaust stack 6",
+      "color": [
+        0.6,
+        0.72,
+        0.76
+      ],
+      "bounds": [
+        -182.0,
+        -259.0,
+        42.4,
+        -178.0,
+        -255.0,
+        51.0
+      ],
+      "source": "fab1 roof exhaust stacks",
+      "freecadName": "FAB2_equipment_0286"
+    },
+    {
+      "id": "FAB2_piping_0287",
+      "buildingId": "FAB2",
+      "system": "piping",
+      "level": "RF",
+      "label": "Roof pipe-rack distribution",
+      "color": [
+        0.24,
+        0.49,
+        0.56
+      ],
+      "bounds": [
+        -375.0,
+        -232.235,
+        44.64,
+        -141.0,
+        -231.765,
+        46.685
+      ],
+      "source": "Design concept",
+      "freecadName": "FAB2_piping_0287"
+    },
+    {
+      "id": "FAB2_structure_0288",
+      "buildingId": "FAB2",
+      "system": "structure",
+      "level": "RF",
+      "label": "Pipe-rack supports and crossheads",
+      "color": [
+        0.69,
+        0.73,
+        0.77
+      ],
+      "bounds": [
+        -373.1,
+        -233.6,
+        42.4,
+        -142.9,
+        -230.4,
+        47.4
+      ],
+      "source": "Design concept",
+      "freecadName": "FAB2_structure_0288"
+    },
+    {
+      "id": "FAB2_piping_0289",
+      "buildingId": "FAB2",
+      "system": "piping",
+      "level": "ALL",
+      "label": "Service riser and roof connection",
+      "color": [
+        0.24,
+        0.49,
+        0.56
+      ],
+      "bounds": [
+        -371.3,
+        -248.3,
+        -5.2,
+        -370.7,
+        -232.0,
+        45.1
+      ],
+      "source": "Exyte main distribution and riser hierarchy; schematic",
+      "freecadName": "FAB2_piping_0289"
+    },
+    {
+      "id": "FAB2_piping_0290",
+      "buildingId": "FAB2",
+      "system": "piping",
+      "level": "RF",
+      "label": "Roof pipe-rack distribution",
+      "color": [
+        0.24,
+        0.49,
+        0.56
+      ],
+      "bounds": [
+        -375.0,
+        -204.235,
+        44.64,
+        -141.0,
+        -203.765,
+        46.685
+      ],
+      "source": "Design concept",
+      "freecadName": "FAB2_piping_0290"
+    },
+    {
+      "id": "FAB2_structure_0291",
+      "buildingId": "FAB2",
+      "system": "structure",
+      "level": "RF",
+      "label": "Pipe-rack supports and crossheads",
+      "color": [
+        0.69,
+        0.73,
+        0.77
+      ],
+      "bounds": [
+        -373.1,
+        -205.6,
+        42.4,
+        -142.9,
+        -202.4,
+        47.4
+      ],
+      "source": "Design concept",
+      "freecadName": "FAB2_structure_0291"
+    },
+    {
+      "id": "FAB2_piping_0292",
+      "buildingId": "FAB2",
+      "system": "piping",
+      "level": "ALL",
+      "label": "Service riser and roof connection",
+      "color": [
+        0.24,
+        0.49,
+        0.56
+      ],
+      "bounds": [
+        -145.3,
+        -248.3,
+        -5.2,
+        -144.7,
+        -204.0,
+        45.1
+      ],
+      "source": "Exyte main distribution and riser hierarchy; schematic",
+      "freecadName": "FAB2_piping_0292"
+    }
+  ]
+}

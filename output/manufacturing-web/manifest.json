@@ -1,0 +1,64 @@
+{
+  "schema": "campus-manufacturing-web/6",
+  "coordinates": "glTF X east Y up Z south",
+  "layout": "../../analysis/v6/manufacturing-layout.json",
+  "source": "../cad-v6/Phoenix_Manufacturing_V6.FCStd",
+  "buildings": [
+    {
+      "id": "FAB1",
+      "label": "FAB1 · 一期代表制造单元",
+      "enabled": true,
+      "expansion": false,
+      "roomId": "FAB1_R01",
+      "representativeToolCount": 8,
+      "position": [
+        258,
+        -218,
+        15.4
+      ],
+      "bounds": [
+        149,
+        -238,
+        15.4,
+        367,
+        -198,
+        24
+      ],
+      "model": "FAB1.glb",
+      "metadata": "FAB1.json",
+      "runtimeAssetCount": 25,
+      "componentCount": 264,
+      "triangles": 133042,
+      "bytes": 1019880,
+      "sha256": "731e3835acfad97a03926db22e3c4052a3e11eef6d3a880138d4f543f384f311"
+    },
+    {
+      "id": "FAB2",
+      "label": "FAB2 · 扩建预留示意",
+      "enabled": false,
+      "expansion": true,
+      "roomId": "FAB2_R01",
+      "representativeToolCount": 8,
+      "position": [
+        -258,
+        -218,
+        15.4
+      ],
+      "bounds": [
+        -367,
+        -238,
+        15.4,
+        -149,
+        -198,
+        24
+      ],
+      "model": "FAB2.glb",
+      "metadata": "FAB2.json",
+      "runtimeAssetCount": 25,
+      "componentCount": 264,
+      "triangles": 133042,
+      "bytes": 1019972,
+      "sha256": "59ebae364e74e1ac15298b1190540f01a7f77ba56473c7a831d06d136cbd8162"
+    }
+  ]
+}

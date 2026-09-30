@@ -1,0 +1,1622 @@
+{
+  "building": {
+    "id": "HQ",
+    "position": [
+      0,
+      -8,
+      0
+    ],
+    "size": [
+      194,
+      60,
+      35
+    ],
+    "features": [
+      "central glazed atrium",
+      "two recessed office wings",
+      "stone towers",
+      "recessed colonnade",
+      "entrance canopy and double doors",
+      "terraced forecourt",
+      "glazed ridge skylight",
+      "recessed window bays",
+      "slab bands",
+      "warm ground floor",
+      "rainscreen joints",
+      "roof parapets"
+    ],
+    "source": "R1 centre/R2 centre; S03 curtain-wall system",
+    "confidence": "medium",
+    "levels": {
+      "F0": 0.0,
+      "F1": 17.5,
+      "RF": 35
+    },
+    "dimensionBasis": "V2 image-inferred envelope, architecturally estimated interiors",
+    "units": "m",
+    "axesX": [
+      -97.0,
+      -80.83333333333333,
+      -64.66666666666666,
+      -48.5,
+      -32.33333333333333,
+      -16.16666666666667,
+      0.0,
+      16.16666666666667,
+      32.33333333333334,
+      48.5,
+      64.66666666666666,
+      80.83333333333334,
+      97.0
+    ],
+    "axesY": [
+      -30.0,
+      0,
+      30.0
+    ]
+  },
+  "components": [
+    {
+      "id": "HQ_foundation_0000",
+      "buildingId": "HQ",
+      "system": "foundation",
+      "level": "FOUNDATION",
+      "label": "Stepped civic podium",
+      "color": [
+        0.48,
+        0.52,
+        0.57
+      ],
+      "bounds": [
+        -100.5,
+        -41.0,
+        0.0,
+        100.5,
+        25.0,
+        1.2
+      ],
+      "source": "Design concept",
+      "freecadName": "HQ_foundation_0000"
+    },
+    {
+      "id": "HQ_glazing_0001",
+      "buildingId": "HQ",
+      "system": "glazing",
+      "level": "ALL",
+      "label": "South curtain wall",
+      "color": [
+        0.24,
+        0.47,
+        0.58
+      ],
+      "bounds": [
+        -34.92,
+        -37.06,
+        1.2,
+        34.92,
+        -36.94,
+        33.8
+      ],
+      "source": "R1/R2 and Schueco mullion-transom construction",
+      "freecadName": "HQ_glazing_0001"
+    },
+    {
+      "id": "HQ_envelope_0002",
+      "buildingId": "HQ",
+      "system": "envelope",
+      "level": "ALL",
+      "label": "Curtain-wall mullions and transoms",
+      "color": [
+        0.42,
+        0.44,
+        0.44
+      ],
+      "bounds": [
+        -35.06,
+        -37.34,
+        1.2,
+        35.06,
+        -37.02,
+        34.14
+      ],
+      "source": "Design concept",
+      "freecadName": "HQ_envelope_0002"
+    },
+    {
+      "id": "HQ_envelope_0003",
+      "buildingId": "HQ",
+      "system": "envelope",
+      "level": "ALL",
+      "label": "East/west return panel",
+      "color": [
+        0.84,
+        0.86,
+        0.84
+      ],
+      "bounds": [
+        -35.15,
+        -37.0,
+        1.2,
+        -34.85,
+        21.0,
+        34.0
+      ],
+      "source": "Design concept",
+      "freecadName": "HQ_envelope_0003"
+    },
+    {
+      "id": "HQ_glazing_0004",
+      "buildingId": "HQ",
+      "system": "glazing",
+      "level": "ALL",
+      "label": "North curtain wall",
+      "color": [
+        0.24,
+        0.47,
+        0.58
+      ],
+      "bounds": [
+        -34.92,
+        20.94,
+        1.2,
+        34.92,
+        21.06,
+        33.8
+      ],
+      "source": "R1/R2 and Schueco mullion-transom construction",
+      "freecadName": "HQ_glazing_0004"
+    },
+    {
+      "id": "HQ_envelope_0005",
+      "buildingId": "HQ",
+      "system": "envelope",
+      "level": "ALL",
+      "label": "Curtain-wall mullions and transoms",
+      "color": [
+        0.42,
+        0.44,
+        0.44
+      ],
+      "bounds": [
+        -35.06,
+        21.02,
+        1.2,
+        35.06,
+        21.34,
+        34.14
+      ],
+      "source": "Design concept",
+      "freecadName": "HQ_envelope_0005"
+    },
+    {
+      "id": "HQ_envelope_0006",
+      "buildingId": "HQ",
+      "system": "envelope",
+      "level": "ALL",
+      "label": "East/west return panel",
+      "color": [
+        0.84,
+        0.86,
+        0.84
+      ],
+      "bounds": [
+        34.85,
+        -37.0,
+        1.2,
+        35.15,
+        21.0,
+        34.0
+      ],
+      "source": "Design concept",
+      "freecadName": "HQ_envelope_0006"
+    },
+    {
+      "id": "HQ_slabs_0007",
+      "buildingId": "HQ",
+      "system": "slabs",
+      "level": "F0",
+      "label": "Zone 1 / floor 1",
+      "color": [
+        0.82,
+        0.84,
+        0.85
+      ],
+      "bounds": [
+        -35.0,
+        -37.0,
+        1.2,
+        35.0,
+        21.0,
+        1.6
+      ],
+      "source": "Design concept",
+      "freecadName": "HQ_slabs_0007"
+    },
+    {
+      "id": "HQ_interiors_0008",
+      "buildingId": "HQ",
+      "system": "interiors",
+      "level": "F0",
+      "label": "Configurable room partitions",
+      "color": [
+        0.76,
+        0.83,
+        0.73
+      ],
+      "bounds": [
+        -14.08,
+        -35.0,
+        1.6,
+        14.08,
+        19.0,
+        4.8
+      ],
+      "source": "Design concept",
+      "freecadName": "HQ_interiors_0008"
+    },
+    {
+      "id": "HQ_roof_0009",
+      "buildingId": "HQ",
+      "system": "roof",
+      "level": "RF",
+      "label": "Zone 1 roof",
+      "color": [
+        0.49,
+        0.56,
+        0.59
+      ],
+      "bounds": [
+        -35.5,
+        -37.5,
+        34.0,
+        35.5,
+        21.5,
+        34.6
+      ],
+      "source": "Design concept",
+      "freecadName": "HQ_roof_0009"
+    },
+    {
+      "id": "HQ_structure_0010",
+      "buildingId": "HQ",
+      "system": "structure",
+      "level": "ALL",
+      "label": "Column frame 01",
+      "color": [
+        0.69,
+        0.73,
+        0.77
+      ],
+      "bounds": [
+        -84.425,
+        -33.425,
+        1.2,
+        -43.575,
+        -32.575,
+        29.0
+      ],
+      "source": "Design concept",
+      "freecadName": "HQ_structure_0010"
+    },
+    {
+      "id": "HQ_structure_0011",
+      "buildingId": "HQ",
+      "system": "structure",
+      "level": "ALL",
+      "label": "Column frame 02",
+      "color": [
+        0.69,
+        0.73,
+        0.77
+      ],
+      "bounds": [
+        -84.425,
+        -16.7583,
+        1.2,
+        -43.575,
+        -15.9083,
+        29.0
+      ],
+      "source": "Design concept",
+      "freecadName": "HQ_structure_0011"
+    },
+    {
+      "id": "HQ_structure_0012",
+      "buildingId": "HQ",
+      "system": "structure",
+      "level": "ALL",
+      "label": "Column frame 03",
+      "color": [
+        0.69,
+        0.73,
+        0.77
+      ],
+      "bounds": [
+        -84.425,
+        -0.0917,
+        1.2,
+        -43.575,
+        0.7583,
+        29.0
+      ],
+      "source": "Design concept",
+      "freecadName": "HQ_structure_0012"
+    },
+    {
+      "id": "HQ_structure_0013",
+      "buildingId": "HQ",
+      "system": "structure",
+      "level": "ALL",
+      "label": "Column frame 04",
+      "color": [
+        0.69,
+        0.73,
+        0.77
+      ],
+      "bounds": [
+        -84.425,
+        16.575,
+        1.2,
+        -43.575,
+        17.425,
+        29.0
+      ],
+      "source": "Design concept",
+      "freecadName": "HQ_structure_0013"
+    },
+    {
+      "id": "HQ_glazing_0014",
+      "buildingId": "HQ",
+      "system": "glazing",
+      "level": "ALL",
+      "label": "South curtain wall",
+      "color": [
+        0.24,
+        0.47,
+        0.58
+      ],
+      "bounds": [
+        -85.42,
+        -34.56,
+        1.2,
+        -42.58,
+        -34.44,
+        28.8
+      ],
+      "source": "R1/R2 and Schueco mullion-transom construction",
+      "freecadName": "HQ_glazing_0014"
+    },
+    {
+      "id": "HQ_envelope_0015",
+      "buildingId": "HQ",
+      "system": "envelope",
+      "level": "ALL",
+      "label": "Curtain-wall mullions and transoms",
+      "color": [
+        0.42,
+        0.44,
+        0.44
+      ],
+      "bounds": [
+        -85.56,
+        -34.84,
+        1.2,
+        -42.44,
+        -34.52,
+        29.14
+      ],
+      "source": "Design concept",
+      "freecadName": "HQ_envelope_0015"
+    },
+    {
+      "id": "HQ_envelope_0016",
+      "buildingId": "HQ",
+      "system": "envelope",
+      "level": "ALL",
+      "label": "East/west return panel",
+      "color": [
+        0.84,
+        0.86,
+        0.84
+      ],
+      "bounds": [
+        -85.65,
+        -34.5,
+        1.2,
+        -85.35,
+        18.5,
+        29.0
+      ],
+      "source": "Design concept",
+      "freecadName": "HQ_envelope_0016"
+    },
+    {
+      "id": "HQ_glazing_0017",
+      "buildingId": "HQ",
+      "system": "glazing",
+      "level": "ALL",
+      "label": "North curtain wall",
+      "color": [
+        0.24,
+        0.47,
+        0.58
+      ],
+      "bounds": [
+        -85.42,
+        18.44,
+        1.2,
+        -42.58,
+        18.56,
+        28.8
+      ],
+      "source": "R1/R2 and Schueco mullion-transom construction",
+      "freecadName": "HQ_glazing_0017"
+    },
+    {
+      "id": "HQ_envelope_0018",
+      "buildingId": "HQ",
+      "system": "envelope",
+      "level": "ALL",
+      "label": "Curtain-wall mullions and transoms",
+      "color": [
+        0.42,
+        0.44,
+        0.44
+      ],
+      "bounds": [
+        -85.56,
+        18.52,
+        1.2,
+        -42.44,
+        18.84,
+        29.14
+      ],
+      "source": "Design concept",
+      "freecadName": "HQ_envelope_0018"
+    },
+    {
+      "id": "HQ_envelope_0019",
+      "buildingId": "HQ",
+      "system": "envelope",
+      "level": "ALL",
+      "label": "East/west return panel",
+      "color": [
+        0.84,
+        0.86,
+        0.84
+      ],
+      "bounds": [
+        -42.65,
+        -34.5,
+        1.2,
+        -42.35,
+        18.5,
+        29.0
+      ],
+      "source": "Design concept",
+      "freecadName": "HQ_envelope_0019"
+    },
+    {
+      "id": "HQ_slabs_0020",
+      "buildingId": "HQ",
+      "system": "slabs",
+      "level": "F0",
+      "label": "Zone 2 / floor 1",
+      "color": [
+        0.82,
+        0.84,
+        0.85
+      ],
+      "bounds": [
+        -85.5,
+        -34.5,
+        1.2,
+        -42.5,
+        18.5,
+        1.6
+      ],
+      "source": "Design concept",
+      "freecadName": "HQ_slabs_0020"
+    },
+    {
+      "id": "HQ_interiors_0021",
+      "buildingId": "HQ",
+      "system": "interiors",
+      "level": "F0",
+      "label": "Configurable room partitions",
+      "color": [
+        0.76,
+        0.83,
+        0.73
+      ],
+      "bounds": [
+        -72.68,
+        -32.5,
+        1.6,
+        -55.32,
+        16.5,
+        4.8
+      ],
+      "source": "Design concept",
+      "freecadName": "HQ_interiors_0021"
+    },
+    {
+      "id": "HQ_slabs_0022",
+      "buildingId": "HQ",
+      "system": "slabs",
+      "level": "F1",
+      "label": "Zone 2 / floor 2",
+      "color": [
+        0.82,
+        0.84,
+        0.85
+      ],
+      "bounds": [
+        -85.5,
+        -34.5,
+        5.8333,
+        -42.5,
+        18.5,
+        6.2333
+      ],
+      "source": "Design concept",
+      "freecadName": "HQ_slabs_0022"
+    },
+    {
+      "id": "HQ_interiors_0023",
+      "buildingId": "HQ",
+      "system": "interiors",
+      "level": "F1",
+      "label": "Configurable room partitions",
+      "color": [
+        0.76,
+        0.83,
+        0.73
+      ],
+      "bounds": [
+        -72.68,
+        -32.5,
+        6.2333,
+        -55.32,
+        16.5,
+        9.4333
+      ],
+      "source": "Design concept",
+      "freecadName": "HQ_interiors_0023"
+    },
+    {
+      "id": "HQ_slabs_0024",
+      "buildingId": "HQ",
+      "system": "slabs",
+      "level": "F2",
+      "label": "Zone 2 / floor 3",
+      "color": [
+        0.82,
+        0.84,
+        0.85
+      ],
+      "bounds": [
+        -85.5,
+        -34.5,
+        10.4667,
+        -42.5,
+        18.5,
+        10.8667
+      ],
+      "source": "Design concept",
+      "freecadName": "HQ_slabs_0024"
+    },
+    {
+      "id": "HQ_interiors_0025",
+      "buildingId": "HQ",
+      "system": "interiors",
+      "level": "F2",
+      "label": "Configurable room partitions",
+      "color": [
+        0.76,
+        0.83,
+        0.73
+      ],
+      "bounds": [
+        -72.68,
+        -32.5,
+        10.8667,
+        -55.32,
+        16.5,
+        14.0667
+      ],
+      "source": "Design concept",
+      "freecadName": "HQ_interiors_0025"
+    },
+    {
+      "id": "HQ_slabs_0026",
+      "buildingId": "HQ",
+      "system": "slabs",
+      "level": "F3",
+      "label": "Zone 2 / floor 4",
+      "color": [
+        0.82,
+        0.84,
+        0.85
+      ],
+      "bounds": [
+        -85.5,
+        -34.5,
+        15.1,
+        -42.5,
+        18.5,
+        15.5
+      ],
+      "source": "Design concept",
+      "freecadName": "HQ_slabs_0026"
+    },
+    {
+      "id": "HQ_interiors_0027",
+      "buildingId": "HQ",
+      "system": "interiors",
+      "level": "F3",
+      "label": "Configurable room partitions",
+      "color": [
+        0.76,
+        0.83,
+        0.73
+      ],
+      "bounds": [
+        -72.68,
+        -32.5,
+        15.5,
+        -55.32,
+        16.5,
+        18.7
+      ],
+      "source": "Design concept",
+      "freecadName": "HQ_interiors_0027"
+    },
+    {
+      "id": "HQ_slabs_0028",
+      "buildingId": "HQ",
+      "system": "slabs",
+      "level": "F4",
+      "label": "Zone 2 / floor 5",
+      "color": [
+        0.82,
+        0.84,
+        0.85
+      ],
+      "bounds": [
+        -85.5,
+        -34.5,
+        19.7333,
+        -42.5,
+        18.5,
+        20.1333
+      ],
+      "source": "Design concept",
+      "freecadName": "HQ_slabs_0028"
+    },
+    {
+      "id": "HQ_interiors_0029",
+      "buildingId": "HQ",
+      "system": "interiors",
+      "level": "F4",
+      "label": "Configurable room partitions",
+      "color": [
+        0.76,
+        0.83,
+        0.73
+      ],
+      "bounds": [
+        -72.68,
+        -32.5,
+        20.1333,
+        -55.32,
+        16.5,
+        23.3333
+      ],
+      "source": "Design concept",
+      "freecadName": "HQ_interiors_0029"
+    },
+    {
+      "id": "HQ_slabs_0030",
+      "buildingId": "HQ",
+      "system": "slabs",
+      "level": "F5",
+      "label": "Zone 2 / floor 6",
+      "color": [
+        0.82,
+        0.84,
+        0.85
+      ],
+      "bounds": [
+        -85.5,
+        -34.5,
+        24.3667,
+        -42.5,
+        18.5,
+        24.7667
+      ],
+      "source": "Design concept",
+      "freecadName": "HQ_slabs_0030"
+    },
+    {
+      "id": "HQ_roof_0031",
+      "buildingId": "HQ",
+      "system": "roof",
+      "level": "RF",
+      "label": "Zone 2 roof",
+      "color": [
+        0.49,
+        0.56,
+        0.59
+      ],
+      "bounds": [
+        -86.0,
+        -35.0,
+        29.0,
+        -42.0,
+        19.0,
+        29.6
+      ],
+      "source": "Design concept",
+      "freecadName": "HQ_roof_0031"
+    },
+    {
+      "id": "HQ_equipment_0032",
+      "buildingId": "HQ",
+      "system": "equipment",
+      "level": "RF",
+      "label": "AHU-02 casing fans and louvers",
+      "color": [
+        0.6,
+        0.72,
+        0.76
+      ],
+      "bounds": [
+        -76.9,
+        -22.4,
+        29.6,
+        -69.1,
+        -17.6,
+        33.7
+      ],
+      "source": "fab1 rooftop AHU/MAU image and Intel fab mechanical level",
+      "freecadName": "HQ_equipment_0032"
+    },
+    {
+      "id": "HQ_equipment_0033",
+      "buildingId": "HQ",
+      "system": "equipment",
+      "level": "RF",
+      "label": "AHU-03 casing fans and louvers",
+      "color": [
+        0.6,
+        0.72,
+        0.76
+      ],
+      "bounds": [
+        -58.9,
+        -22.4,
+        29.6,
+        -51.1,
+        -17.6,
+        33.7
+      ],
+      "source": "fab1 rooftop AHU/MAU image and Intel fab mechanical level",
+      "freecadName": "HQ_equipment_0033"
+    },
+    {
+      "id": "HQ_structure_0034",
+      "buildingId": "HQ",
+      "system": "structure",
+      "level": "ALL",
+      "label": "Column frame 01",
+      "color": [
+        0.69,
+        0.73,
+        0.77
+      ],
+      "bounds": [
+        43.575,
+        -33.425,
+        1.2,
+        84.425,
+        -32.575,
+        29.0
+      ],
+      "source": "Design concept",
+      "freecadName": "HQ_structure_0034"
+    },
+    {
+      "id": "HQ_structure_0035",
+      "buildingId": "HQ",
+      "system": "structure",
+      "level": "ALL",
+      "label": "Column frame 02",
+      "color": [
+        0.69,
+        0.73,
+        0.77
+      ],
+      "bounds": [
+        43.575,
+        -16.7583,
+        1.2,
+        84.425,
+        -15.9083,
+        29.0
+      ],
+      "source": "Design concept",
+      "freecadName": "HQ_structure_0035"
+    },
+    {
+      "id": "HQ_structure_0036",
+      "buildingId": "HQ",
+      "system": "structure",
+      "level": "ALL",
+      "label": "Column frame 03",
+      "color": [
+        0.69,
+        0.73,
+        0.77
+      ],
+      "bounds": [
+        43.575,
+        -0.0917,
+        1.2,
+        84.425,
+        0.7583,
+        29.0
+      ],
+      "source": "Design concept",
+      "freecadName": "HQ_structure_0036"
+    },
+    {
+      "id": "HQ_structure_0037",
+      "buildingId": "HQ",
+      "system": "structure",
+      "level": "ALL",
+      "label": "Column frame 04",
+      "color": [
+        0.69,
+        0.73,
+        0.77
+      ],
+      "bounds": [
+        43.575,
+        16.575,
+        1.2,
+        84.425,
+        17.425,
+        29.0
+      ],
+      "source": "Design concept",
+      "freecadName": "HQ_structure_0037"
+    },
+    {
+      "id": "HQ_glazing_0038",
+      "buildingId": "HQ",
+      "system": "glazing",
+      "level": "ALL",
+      "label": "South curtain wall",
+      "color": [
+        0.24,
+        0.47,
+        0.58
+      ],
+      "bounds": [
+        42.58,
+        -34.56,
+        1.2,
+        85.42,
+        -34.44,
+        28.8
+      ],
+      "source": "R1/R2 and Schueco mullion-transom construction",
+      "freecadName": "HQ_glazing_0038"
+    },
+    {
+      "id": "HQ_envelope_0039",
+      "buildingId": "HQ",
+      "system": "envelope",
+      "level": "ALL",
+      "label": "Curtain-wall mullions and transoms",
+      "color": [
+        0.42,
+        0.44,
+        0.44
+      ],
+      "bounds": [
+        42.44,
+        -34.84,
+        1.2,
+        85.56,
+        -34.52,
+        29.14
+      ],
+      "source": "Design concept",
+      "freecadName": "HQ_envelope_0039"
+    },
+    {
+      "id": "HQ_envelope_0040",
+      "buildingId": "HQ",
+      "system": "envelope",
+      "level": "ALL",
+      "label": "East/west return panel",
+      "color": [
+        0.84,
+        0.86,
+        0.84
+      ],
+      "bounds": [
+        42.35,
+        -34.5,
+        1.2,
+        42.65,
+        18.5,
+        29.0
+      ],
+      "source": "Design concept",
+      "freecadName": "HQ_envelope_0040"
+    },
+    {
+      "id": "HQ_glazing_0041",
+      "buildingId": "HQ",
+      "system": "glazing",
+      "level": "ALL",
+      "label": "North curtain wall",
+      "color": [
+        0.24,
+        0.47,
+        0.58
+      ],
+      "bounds": [
+        42.58,
+        18.44,
+        1.2,
+        85.42,
+        18.56,
+        28.8
+      ],
+      "source": "R1/R2 and Schueco mullion-transom construction",
+      "freecadName": "HQ_glazing_0041"
+    },
+    {
+      "id": "HQ_envelope_0042",
+      "buildingId": "HQ",
+      "system": "envelope",
+      "level": "ALL",
+      "label": "Curtain-wall mullions and transoms",
+      "color": [
+        0.42,
+        0.44,
+        0.44
+      ],
+      "bounds": [
+        42.44,
+        18.52,
+        1.2,
+        85.56,
+        18.84,
+        29.14
+      ],
+      "source": "Design concept",
+      "freecadName": "HQ_envelope_0042"
+    },
+    {
+      "id": "HQ_envelope_0043",
+      "buildingId": "HQ",
+      "system": "envelope",
+      "level": "ALL",
+      "label": "East/west return panel",
+      "color": [
+        0.84,
+        0.86,
+        0.84
+      ],
+      "bounds": [
+        85.35,
+        -34.5,
+        1.2,
+        85.65,
+        18.5,
+        29.0
+      ],
+      "source": "Design concept",
+      "freecadName": "HQ_envelope_0043"
+    },
+    {
+      "id": "HQ_slabs_0044",
+      "buildingId": "HQ",
+      "system": "slabs",
+      "level": "F0",
+      "label": "Zone 3 / floor 1",
+      "color": [
+        0.82,
+        0.84,
+        0.85
+      ],
+      "bounds": [
+        42.5,
+        -34.5,
+        1.2,
+        85.5,
+        18.5,
+        1.6
+      ],
+      "source": "Design concept",
+      "freecadName": "HQ_slabs_0044"
+    },
+    {
+      "id": "HQ_interiors_0045",
+      "buildingId": "HQ",
+      "system": "interiors",
+      "level": "F0",
+      "label": "Configurable room partitions",
+      "color": [
+        0.76,
+        0.83,
+        0.73
+      ],
+      "bounds": [
+        55.32,
+        -32.5,
+        1.6,
+        72.68,
+        16.5,
+        4.8
+      ],
+      "source": "Design concept",
+      "freecadName": "HQ_interiors_0045"
+    },
+    {
+      "id": "HQ_slabs_0046",
+      "buildingId": "HQ",
+      "system": "slabs",
+      "level": "F1",
+      "label": "Zone 3 / floor 2",
+      "color": [
+        0.82,
+        0.84,
+        0.85
+      ],
+      "bounds": [
+        42.5,
+        -34.5,
+        5.8333,
+        85.5,
+        18.5,
+        6.2333
+      ],
+      "source": "Design concept",
+      "freecadName": "HQ_slabs_0046"
+    },
+    {
+      "id": "HQ_interiors_0047",
+      "buildingId": "HQ",
+      "system": "interiors",
+      "level": "F1",
+      "label": "Configurable room partitions",
+      "color": [
+        0.76,
+        0.83,
+        0.73
+      ],
+      "bounds": [
+        55.32,
+        -32.5,
+        6.2333,
+        72.68,
+        16.5,
+        9.4333
+      ],
+      "source": "Design concept",
+      "freecadName": "HQ_interiors_0047"
+    },
+    {
+      "id": "HQ_slabs_0048",
+      "buildingId": "HQ",
+      "system": "slabs",
+      "level": "F2",
+      "label": "Zone 3 / floor 3",
+      "color": [
+        0.82,
+        0.84,
+        0.85
+      ],
+      "bounds": [
+        42.5,
+        -34.5,
+        10.4667,
+        85.5,
+        18.5,
+        10.8667
+      ],
+      "source": "Design concept",
+      "freecadName": "HQ_slabs_0048"
+    },
+    {
+      "id": "HQ_interiors_0049",
+      "buildingId": "HQ",
+      "system": "interiors",
+      "level": "F2",
+      "label": "Configurable room partitions",
+      "color": [
+        0.76,
+        0.83,
+        0.73
+      ],
+      "bounds": [
+        55.32,
+        -32.5,
+        10.8667,
+        72.68,
+        16.5,
+        14.0667
+      ],
+      "source": "Design concept",
+      "freecadName": "HQ_interiors_0049"
+    },
+    {
+      "id": "HQ_slabs_0050",
+      "buildingId": "HQ",
+      "system": "slabs",
+      "level": "F3",
+      "label": "Zone 3 / floor 4",
+      "color": [
+        0.82,
+        0.84,
+        0.85
+      ],
+      "bounds": [
+        42.5,
+        -34.5,
+        15.1,
+        85.5,
+        18.5,
+        15.5
+      ],
+      "source": "Design concept",
+      "freecadName": "HQ_slabs_0050"
+    },
+    {
+      "id": "HQ_interiors_0051",
+      "buildingId": "HQ",
+      "system": "interiors",
+      "level": "F3",
+      "label": "Configurable room partitions",
+      "color": [
+        0.76,
+        0.83,
+        0.73
+      ],
+      "bounds": [
+        55.32,
+        -32.5,
+        15.5,
+        72.68,
+        16.5,
+        18.7
+      ],
+      "source": "Design concept",
+      "freecadName": "HQ_interiors_0051"
+    },
+    {
+      "id": "HQ_slabs_0052",
+      "buildingId": "HQ",
+      "system": "slabs",
+      "level": "F4",
+      "label": "Zone 3 / floor 5",
+      "color": [
+        0.82,
+        0.84,
+        0.85
+      ],
+      "bounds": [
+        42.5,
+        -34.5,
+        19.7333,
+        85.5,
+        18.5,
+        20.1333
+      ],
+      "source": "Design concept",
+      "freecadName": "HQ_slabs_0052"
+    },
+    {
+      "id": "HQ_interiors_0053",
+      "buildingId": "HQ",
+      "system": "interiors",
+      "level": "F4",
+      "label": "Configurable room partitions",
+      "color": [
+        0.76,
+        0.83,
+        0.73
+      ],
+      "bounds": [
+        55.32,
+        -32.5,
+        20.1333,
+        72.68,
+        16.5,
+        23.3333
+      ],
+      "source": "Design concept",
+      "freecadName": "HQ_interiors_0053"
+    },
+    {
+      "id": "HQ_slabs_0054",
+      "buildingId": "HQ",
+      "system": "slabs",
+      "level": "F5",
+      "label": "Zone 3 / floor 6",
+      "color": [
+        0.82,
+        0.84,
+        0.85
+      ],
+      "bounds": [
+        42.5,
+        -34.5,
+        24.3667,
+        85.5,
+        18.5,
+        24.7667
+      ],
+      "source": "Design concept",
+      "freecadName": "HQ_slabs_0054"
+    },
+    {
+      "id": "HQ_roof_0055",
+      "buildingId": "HQ",
+      "system": "roof",
+      "level": "RF",
+      "label": "Zone 3 roof",
+      "color": [
+        0.49,
+        0.56,
+        0.59
+      ],
+      "bounds": [
+        42.0,
+        -35.0,
+        29.0,
+        86.0,
+        19.0,
+        29.6
+      ],
+      "source": "Design concept",
+      "freecadName": "HQ_roof_0055"
+    },
+    {
+      "id": "HQ_equipment_0056",
+      "buildingId": "HQ",
+      "system": "equipment",
+      "level": "RF",
+      "label": "AHU-04 casing fans and louvers",
+      "color": [
+        0.6,
+        0.72,
+        0.76
+      ],
+      "bounds": [
+        51.1,
+        -22.4,
+        29.6,
+        58.9,
+        -17.6,
+        33.7
+      ],
+      "source": "fab1 rooftop AHU/MAU image and Intel fab mechanical level",
+      "freecadName": "HQ_equipment_0056"
+    },
+    {
+      "id": "HQ_equipment_0057",
+      "buildingId": "HQ",
+      "system": "equipment",
+      "level": "RF",
+      "label": "AHU-05 casing fans and louvers",
+      "color": [
+        0.6,
+        0.72,
+        0.76
+      ],
+      "bounds": [
+        69.1,
+        -22.4,
+        29.6,
+        76.9,
+        -17.6,
+        33.7
+      ],
+      "source": "fab1 rooftop AHU/MAU image and Intel fab mechanical level",
+      "freecadName": "HQ_equipment_0057"
+    },
+    {
+      "id": "HQ_envelope_0058",
+      "buildingId": "HQ",
+      "system": "envelope",
+      "level": "ALL",
+      "label": "Stone-clad vertical tower",
+      "color": [
+        0.84,
+        0.86,
+        0.84
+      ],
+      "bounds": [
+        -44.5,
+        -39.0,
+        0.0,
+        -35.5,
+        23.0,
+        36.0
+      ],
+      "source": "Design concept",
+      "freecadName": "HQ_envelope_0058"
+    },
+    {
+      "id": "HQ_envelope_0059",
+      "buildingId": "HQ",
+      "system": "envelope",
+      "level": "ALL",
+      "label": "Stone-clad vertical tower",
+      "color": [
+        0.84,
+        0.86,
+        0.84
+      ],
+      "bounds": [
+        -99.0,
+        -39.0,
+        0.0,
+        -87.0,
+        23.0,
+        31.0
+      ],
+      "source": "Design concept",
+      "freecadName": "HQ_envelope_0059"
+    },
+    {
+      "id": "HQ_envelope_0060",
+      "buildingId": "HQ",
+      "system": "envelope",
+      "level": "ALL",
+      "label": "Stone-clad vertical tower",
+      "color": [
+        0.84,
+        0.86,
+        0.84
+      ],
+      "bounds": [
+        35.5,
+        -39.0,
+        0.0,
+        44.5,
+        23.0,
+        36.0
+      ],
+      "source": "Design concept",
+      "freecadName": "HQ_envelope_0060"
+    },
+    {
+      "id": "HQ_envelope_0061",
+      "buildingId": "HQ",
+      "system": "envelope",
+      "level": "ALL",
+      "label": "Stone-clad vertical tower",
+      "color": [
+        0.84,
+        0.86,
+        0.84
+      ],
+      "bounds": [
+        87.0,
+        -39.0,
+        0.0,
+        99.0,
+        23.0,
+        31.0
+      ],
+      "source": "Design concept",
+      "freecadName": "HQ_envelope_0061"
+    },
+    {
+      "id": "HQ_roof_0062",
+      "buildingId": "HQ",
+      "system": "roof",
+      "level": "RF",
+      "label": "Atrium ridge skylight",
+      "color": [
+        0.24,
+        0.47,
+        0.58
+      ],
+      "bounds": [
+        -29.0,
+        -17.0,
+        34.6,
+        29.0,
+        1.0,
+        38.12
+      ],
+      "source": "Design concept",
+      "freecadName": "HQ_roof_0062"
+    },
+    {
+      "id": "HQ_roof_0063",
+      "buildingId": "HQ",
+      "system": "roof",
+      "level": "ENTRY",
+      "label": "Entrance canopy",
+      "color": [
+        0.49,
+        0.56,
+        0.59
+      ],
+      "bounds": [
+        -19.0,
+        -47.0,
+        7.2,
+        19.0,
+        -37.0,
+        7.8
+      ],
+      "source": "Design concept",
+      "freecadName": "HQ_roof_0063"
+    },
+    {
+      "id": "HQ_structure_0064",
+      "buildingId": "HQ",
+      "system": "structure",
+      "level": "ENTRY",
+      "label": "Portico columns",
+      "color": [
+        0.69,
+        0.73,
+        0.77
+      ],
+      "bounds": [
+        -16.4,
+        -45.4,
+        0.0,
+        16.4,
+        -44.6,
+        7.2
+      ],
+      "source": "Design concept",
+      "freecadName": "HQ_structure_0064"
+    },
+    {
+      "id": "HQ_circulation_0065",
+      "buildingId": "HQ",
+      "system": "circulation",
+      "level": "ENTRY",
+      "label": "Entrance steps",
+      "color": [
+        0.79,
+        0.65,
+        0.38
+      ],
+      "bounds": [
+        -25.0,
+        -51.5,
+        0.0,
+        25.0,
+        -46.7,
+        1.2
+      ],
+      "source": "Design concept",
+      "freecadName": "HQ_circulation_0065"
+    },
+    {
+      "id": "HQ_glazing_0066",
+      "buildingId": "HQ",
+      "system": "glazing",
+      "level": "ENTRY",
+      "label": "Glazed entrance doors",
+      "color": [
+        0.24,
+        0.47,
+        0.58
+      ],
+      "bounds": [
+        -4.0,
+        -39.07,
+        1.2,
+        4.0,
+        -38.93,
+        5.2
+      ],
+      "source": "Design concept",
+      "freecadName": "HQ_glazing_0066"
+    },
+    {
+      "id": "HQ_roof_0067",
+      "buildingId": "HQ",
+      "system": "roof",
+      "level": "ENTRY",
+      "label": "Entrance canopy",
+      "color": [
+        0.49,
+        0.56,
+        0.59
+      ],
+      "bounds": [
+        -19.0,
+        21.0,
+        7.2,
+        19.0,
+        31.0,
+        7.8
+      ],
+      "source": "Design concept",
+      "freecadName": "HQ_roof_0067"
+    },
+    {
+      "id": "HQ_structure_0068",
+      "buildingId": "HQ",
+      "system": "structure",
+      "level": "ENTRY",
+      "label": "Portico columns",
+      "color": [
+        0.69,
+        0.73,
+        0.77
+      ],
+      "bounds": [
+        -16.4,
+        28.6,
+        0.0,
+        16.4,
+        29.4,
+        7.2
+      ],
+      "source": "Design concept",
+      "freecadName": "HQ_structure_0068"
+    },
+    {
+      "id": "HQ_circulation_0069",
+      "buildingId": "HQ",
+      "system": "circulation",
+      "level": "ENTRY",
+      "label": "Entrance steps",
+      "color": [
+        0.79,
+        0.65,
+        0.38
+      ],
+      "bounds": [
+        -25.0,
+        30.7,
+        0.0,
+        25.0,
+        35.5,
+        1.2
+      ],
+      "source": "Design concept",
+      "freecadName": "HQ_circulation_0069"
+    },
+    {
+      "id": "HQ_glazing_0070",
+      "buildingId": "HQ",
+      "system": "glazing",
+      "level": "ENTRY",
+      "label": "Glazed entrance doors",
+      "color": [
+        0.24,
+        0.47,
+        0.58
+      ],
+      "bounds": [
+        -4.0,
+        22.93,
+        1.2,
+        4.0,
+        23.07,
+        5.2
+      ],
+      "source": "Design concept",
+      "freecadName": "HQ_glazing_0070"
+    }
+  ]
+}

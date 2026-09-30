@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420mm" height="297mm" viewBox="0 0 420 297"><rect width="420" height="297" fill="white"/>
+<polyline fill="none" stroke="#263b43" stroke-width="0.35" points="7.000,7.000 413.000,7.000 413.000,290.000 7.000,290.000 7.000,7.000"/>
+<text x="14.000" y="18.000" font-size="4.2" font-family="Arial,Microsoft YaHei,sans-serif" text-anchor="start" fill="#183b47">PHOENIX SCIENCE PARK</text>
+<text x="14.000" y="26.000" font-size="5" font-family="Arial,Microsoft YaHei,sans-serif" text-anchor="start" fill="#243943">SITE / Floor plan</text>
+<text x="406.000" y="18.000" font-size="3.2" font-family="Arial,Microsoft YaHei,sans-serif" text-anchor="end" fill="#243943">A3  |  1:4000</text>
+<text x="406.000" y="26.000" font-size="3" font-family="Arial,Microsoft YaHei,sans-serif" text-anchor="end" fill="#243943">CAD-SITE-PLAN  /  R1</text>
+<polyline fill="none" stroke="#263b43" stroke-width="0.2" points="14.000,31.000 406.000,31.000"/>
+<polyline fill="none" stroke="#263b43" stroke-width="0.16" points="80.000,218.333 330.000,218.333 330.000,51.667 80.000,51.667 80.000,218.333"/>
+<polyline fill="none" stroke="#263b43" stroke-width="0.16" points="180.750,144.500 229.250,144.500 229.250,129.500 180.750,129.500 180.750,144.500"/>
+<polyline fill="none" stroke="#263b43" stroke-width="0.16" points="238.250,200.750 300.750,200.750 300.750,178.250 238.250,178.250 238.250,200.750"/>
+<polyline fill="none" stroke="#263b43" stroke-width="0.16" points="109.250,200.750 171.750,200.750 171.750,178.250 109.250,178.250 109.250,200.750"/>
+<polyline fill="none" stroke="#263b43" stroke-width="0.16" points="279.500,151.375 320.500,151.375 320.500,122.125 279.500,122.125 279.500,151.375"/>
+<polyline fill="none" stroke="#263b43" stroke-width="0.16" points="89.500,151.375 130.500,151.375 130.500,122.125 89.500,122.125 89.500,151.375"/>
+<polyline fill="none" stroke="#263b43" stroke-width="0.16" points="190.250,80.750 219.750,80.750 219.750,70.750 190.250,70.750 190.250,80.750"/>
+<polyline fill="none" stroke="#263b43" stroke-width="0.16" points="261.875,105.250 277.125,105.250 277.125,96.750 261.875,96.750 261.875,105.250"/>
+<polyline fill="none" stroke="#263b43" stroke-width="0.16" points="132.875,105.250 148.125,105.250 148.125,96.750 132.875,96.750 132.875,105.250"/>
+<polyline fill="none" stroke="#87959a" stroke-width="0.1" stroke-dasharray="2 1" points="80.000,218.958 80.000,50.542"/>
+<text x="80.000" y="48.542" font-size="2.5" font-family="Arial,Microsoft YaHei,sans-serif" text-anchor="middle" fill="#243943">1</text>
+<polyline fill="none" stroke="#87959a" stroke-width="0.1" stroke-dasharray="2 1" points="205.000,218.958 205.000,50.542"/>
+<text x="205.000" y="48.542" font-size="2.5" font-family="Arial,Microsoft YaHei,sans-serif" text-anchor="middle" fill="#243943">2</text>
+<polyline fill="none" stroke="#87959a" stroke-width="0.1" stroke-dasharray="2 1" points="330.000,218.958 330.000,50.542"/>
+<text x="330.000" y="48.542" font-size="2.5" font-family="Arial,Microsoft YaHei,sans-serif" text-anchor="middle" fill="#243943">3</text>
+<polyline fill="none" stroke="#87959a" stroke-width="0.1" stroke-dasharray="2 1" points="79.000,218.333 331.000,218.333"/>
+<text x="77.000" y="219.333" font-size="2.5" font-family="Arial,Microsoft YaHei,sans-serif" text-anchor="end" fill="#243943">A</text>
+<polyline fill="none" stroke="#87959a" stroke-width="0.1" stroke-dasharray="2 1" points="79.000,135.000 331.000,135.000"/>
+<text x="77.000" y="136.000" font-size="2.5" font-family="Arial,Microsoft YaHei,sans-serif" text-anchor="end" fill="#243943">B</text>
+<polyline fill="none" stroke="#87959a" stroke-width="0.1" stroke-dasharray="2 1" points="79.000,51.667 331.000,51.667"/>
+<text x="77.000" y="52.667" font-size="2.5" font-family="Arial,Microsoft YaHei,sans-serif" text-anchor="end" fill="#243943">C</text>
+<polyline fill="none" stroke="#263b43" stroke-width="0.2" points="80.000,230.333 330.000,230.333"/>
+<polyline fill="none" stroke="#263b43" stroke-width="0.3" points="79.000,231.333 81.000,229.333"/>
+<polyline fill="none" stroke="#263b43" stroke-width="0.3" points="329.000,231.333 331.000,229.333"/>
+<text x="205.000" y="228.833" font-size="3" font-family="Arial,Microsoft YaHei,sans-serif" text-anchor="middle" fill="#243943">1,000,000 mm overall</text>
+<polyline fill="none" stroke="#263b43" stroke-width="0.2" points="341.000,51.667 341.000,218.333"/>
+<text x="344.000" y="135.000" font-size="3" font-family="Arial,Microsoft YaHei,sans-serif" text-anchor="start" fill="#243943">666,666</text>
+<text x="382.000" y="45.000" font-size="4" font-family="Arial,Microsoft YaHei,sans-serif" text-anchor="middle" fill="#243943">N</text>
+<polyline fill="none" stroke="#263b43" stroke-width="0.3" points="382.000,48.000 379.000,57.000 382.000,54.000 385.000,57.000 382.000,48.000"/>
+<polyline fill="none" stroke="#263b43" stroke-width="0.3" points="14.000,238.000 406.000,238.000"/>
+<text x="14.000" y="246.000" font-size="3.5" font-family="Arial,Microsoft YaHei,sans-serif" text-anchor="start" fill="#8a4230">CONCEPT DESIGN | IMAGE-INFERRED | NOT FOR CONSTRUCTION</text>
+<text x="14.000" y="253.000" font-size="3.1" font-family="Arial,Microsoft YaHei,sans-serif" text-anchor="start" fill="#8a4230">概念方案｜图像反推｜尺寸、结构、机电待核验</text>
+<text x="14.000" y="259.000" font-size="2.65" font-family="Arial,Microsoft YaHei,sans-serif" text-anchor="start" fill="#243943">Source: two campus AI images + fab1.jpg; official analogues documented in analysis/cad/.</text>
+<text x="14.000" y="263.400" font-size="2.65" font-family="Arial,Microsoft YaHei,sans-serif" text-anchor="start" fill="#243943">CAD model in mm; site coordinates X east, Y north, Z up. Internal layouts and member sizes are design estimates.</text>
+<text x="14.000" y="267.800" font-size="2.65" font-family="Arial,Microsoft YaHei,sans-serif" text-anchor="start" fill="#243943">Plans/sections are extracted from actual FreeCAD BRep. Elevations project component outlines; hidden edges omitted per component.</text>
+<text x="14.000" y="272.200" font-size="2.65" font-family="Arial,Microsoft YaHei,sans-serif" text-anchor="start" fill="#243943">Civic wing roofs and skylight may differ from the nominal building height; inspect actual geometry and parameter aliases.</text>
+<text x="14.000" y="276.600" font-size="2.65" font-family="Arial,Microsoft YaHei,sans-serif" text-anchor="start" fill="#243943">No process certification, structural verification, measured survey, or construction approval is implied.</text>
+<text x="406.000" y="286.000" font-size="2.8" font-family="Arial,Microsoft YaHei,sans-serif" text-anchor="end" fill="#243943">2026-09-30  |  FreeCAD 1.1.4  |  mm</text>
+<text x="205.000" y="137.000" font-size="3" font-family="Arial,Microsoft YaHei,sans-serif" text-anchor="middle" fill="#243943">HQ</text>
+<text x="269.500" y="189.500" font-size="3" font-family="Arial,Microsoft YaHei,sans-serif" text-anchor="middle" fill="#243943">FAB1</text>
+<text x="140.500" y="189.500" font-size="3" font-family="Arial,Microsoft YaHei,sans-serif" text-anchor="middle" fill="#243943">FAB2</text>
+<text x="300.000" y="136.750" font-size="3" font-family="Arial,Microsoft YaHei,sans-serif" text-anchor="middle" fill="#243943">LAB</text>
+<text x="110.000" y="136.750" font-size="3" font-family="Arial,Microsoft YaHei,sans-serif" text-anchor="middle" fill="#243943">MASK</text>
+<text x="205.000" y="75.750" font-size="3" font-family="Arial,Microsoft YaHei,sans-serif" text-anchor="middle" fill="#243943">EXHIBITION</text>
+<text x="269.500" y="101.000" font-size="3" font-family="Arial,Microsoft YaHei,sans-serif" text-anchor="middle" fill="#243943">DINING_E</text>
+<text x="140.500" y="101.000" font-size="3" font-family="Arial,Microsoft YaHei,sans-serif" text-anchor="middle" fill="#243943">DINING_W</text>
+</svg>

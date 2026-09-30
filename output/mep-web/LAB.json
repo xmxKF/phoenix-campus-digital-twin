@@ -1,0 +1,5400 @@
+{
+  "building": {
+    "id": "LAB",
+    "position": [
+      380,
+      -7,
+      0
+    ],
+    "size": [
+      164,
+      117,
+      25
+    ],
+    "features": [
+      "ribbon windows",
+      "taller scrubber bank",
+      "laboratory entrance",
+      "AHU field"
+    ],
+    "source": "R1 left/R2 right; S02",
+    "confidence": "medium",
+    "levels": {
+      "F0": 0.0,
+      "F1": 6.25,
+      "F2": 12.5,
+      "F3": 18.75,
+      "RF": 25
+    },
+    "dimensionBasis": "V2 image-inferred envelope, architecturally estimated interiors",
+    "units": "m",
+    "axesX": [
+      -80.5,
+      -68.115,
+      -55.731,
+      -43.346,
+      -30.962,
+      -18.577,
+      -6.192,
+      6.192,
+      18.577,
+      30.962,
+      43.346,
+      55.731,
+      68.115,
+      80.5
+    ],
+    "axesY": [
+      -57.0,
+      -42.75,
+      -28.5,
+      -14.25,
+      0.0,
+      14.25,
+      28.5,
+      42.75,
+      57.0
+    ]
+  },
+  "components": [
+    {
+      "id": "V4_LAB_MDB",
+      "buildingId": "LAB",
+      "system": "electrical",
+      "level": "PLANT",
+      "label": "主配电柜",
+      "color": [
+        0.3,
+        0.34,
+        0.39
+      ],
+      "bounds": [
+        303.55,
+        -62.705,
+        0.8,
+        304.45,
+        -62.375,
+        2.4
+      ],
+      "freecadName": "V4_LAB_MDB",
+      "roomId": null,
+      "meta": {
+        "id": "V4_LAB_MDB",
+        "assetId": "V4_LAB_MDB",
+        "buildingId": "LAB",
+        "roomId": null,
+        "controlKind": "breaker",
+        "type": "main_panel",
+        "label": "主配电柜",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "upstreamIds": [],
+        "ratedPowerKw": 0,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_WATER_MAIN",
+      "buildingId": "LAB",
+      "system": "water",
+      "level": "PLANT",
+      "label": "可控支路阀门",
+      "color": [
+        0.75,
+        0.34,
+        0.2
+      ],
+      "bounds": [
+        306.8,
+        -60.61,
+        3.44,
+        307.2,
+        -60.39,
+        3.795
+      ],
+      "freecadName": "V4_LAB_WATER_MAIN",
+      "roomId": null,
+      "meta": {
+        "id": "V4_LAB_WATER_MAIN",
+        "assetId": "V4_LAB_WATER_MAIN",
+        "buildingId": "LAB",
+        "roomId": null,
+        "controlKind": "valve",
+        "type": "isolation_valve",
+        "label": "生活冷水总阀",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "medium": "domestic_cold",
+        "waterBranchId": "LAB_W_COLD_MAIN",
+        "ratedFlowLpm": 120,
+        "upstreamIds": [],
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_HOT_MAIN",
+      "buildingId": "LAB",
+      "system": "water",
+      "level": "PLANT",
+      "label": "可控支路阀门",
+      "color": [
+        0.75,
+        0.34,
+        0.2
+      ],
+      "bounds": [
+        306.8,
+        -59.61,
+        3.44,
+        307.2,
+        -59.39,
+        3.795
+      ],
+      "freecadName": "V4_LAB_HOT_MAIN",
+      "roomId": null,
+      "meta": {
+        "id": "V4_LAB_HOT_MAIN",
+        "assetId": "V4_LAB_HOT_MAIN",
+        "buildingId": "LAB",
+        "roomId": null,
+        "controlKind": "valve",
+        "type": "isolation_valve",
+        "label": "生活热水供水总阀",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "medium": "domestic_hot",
+        "waterBranchId": "LAB_W_HOT_MAIN",
+        "ratedFlowLpm": 80,
+        "upstreamIds": [],
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_HOT_PUMP",
+      "buildingId": "LAB",
+      "system": "water",
+      "level": "PLANT",
+      "label": "热水循环泵",
+      "color": [
+        0.22,
+        0.43,
+        0.61
+      ],
+      "bounds": [
+        308.2,
+        -59.225,
+        0.4,
+        309.8,
+        -58.375,
+        1.5
+      ],
+      "freecadName": "V4_LAB_HOT_PUMP",
+      "roomId": null,
+      "meta": {
+        "id": "V4_LAB_HOT_PUMP",
+        "assetId": "V4_LAB_HOT_PUMP",
+        "buildingId": "LAB",
+        "roomId": null,
+        "controlKind": "pump",
+        "type": "circulation_pump",
+        "label": "热水回水循环泵",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "medium": "domestic_hot_return",
+        "waterBranchId": "LAB_W_HOT_RETURN",
+        "ratedFlowLpm": 60,
+        "ratedPowerKw": 0.75,
+        "circuitId": "LAB_C_PLANT",
+        "upstreamIds": [
+          "V4_LAB_MDB"
+        ],
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_HOT_CYLINDER",
+      "buildingId": "LAB",
+      "system": "water",
+      "level": "PLANT",
+      "label": "生活热水/回水缓冲容器",
+      "color": [
+        0.69,
+        0.72,
+        0.7
+      ],
+      "bounds": [
+        310.35,
+        -59.45,
+        0.35,
+        311.65,
+        -58.15,
+        2.1
+      ],
+      "freecadName": "V4_LAB_HOT_CYLINDER",
+      "roomId": null,
+      "meta": {
+        "type": "hot_water_buffer",
+        "medium": "domestic_hot",
+        "roomId": null,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_HOT_LOOP_LINKS",
+      "buildingId": "LAB",
+      "system": "water",
+      "level": "PLANT",
+      "label": "热水回水泵与缓冲容器连接",
+      "color": [
+        0.58,
+        0.31,
+        0.6
+      ],
+      "bounds": [
+        307.0,
+        -59.5702,
+        0.7298,
+        311.0702,
+        -58.6298,
+        3.6202
+      ],
+      "freecadName": "V4_LAB_HOT_LOOP_LINKS",
+      "roomId": null,
+      "meta": {
+        "type": "pipe",
+        "medium": "domestic_hot_return",
+        "waterBranchId": "LAB_W_HOT_RETURN",
+        "roomId": null,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_PCW_PUMP",
+      "buildingId": "LAB",
+      "system": "water",
+      "level": "PLANT",
+      "label": "PCW独立循环泵",
+      "color": [
+        0.22,
+        0.43,
+        0.61
+      ],
+      "bounds": [
+        308.2,
+        -56.925,
+        0.4,
+        309.8,
+        -56.075,
+        1.5
+      ],
+      "freecadName": "V4_LAB_PCW_PUMP",
+      "roomId": null,
+      "meta": {
+        "id": "V4_LAB_PCW_PUMP",
+        "assetId": "V4_LAB_PCW_PUMP",
+        "buildingId": "LAB",
+        "roomId": null,
+        "controlKind": "pump",
+        "type": "circulation_pump",
+        "label": "独立PCW闭环循环泵",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "medium": "pcw_supply",
+        "waterBranchId": "LAB_W_PCW_MAIN",
+        "ratedFlowLpm": 150,
+        "ratedPowerKw": 3,
+        "circuitId": "LAB_C_PLANT",
+        "upstreamIds": [
+          "V4_LAB_MDB"
+        ],
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_PCW_MAIN",
+      "buildingId": "LAB",
+      "system": "water",
+      "level": "PLANT",
+      "label": "可控支路阀门",
+      "color": [
+        0.75,
+        0.34,
+        0.2
+      ],
+      "bounds": [
+        306.8,
+        -57.61,
+        3.44,
+        307.2,
+        -57.39,
+        3.795
+      ],
+      "freecadName": "V4_LAB_PCW_MAIN",
+      "roomId": null,
+      "meta": {
+        "id": "V4_LAB_PCW_MAIN",
+        "assetId": "V4_LAB_PCW_MAIN",
+        "buildingId": "LAB",
+        "roomId": null,
+        "controlKind": "valve",
+        "type": "isolation_valve",
+        "label": "PCW供水总阀",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "medium": "pcw_supply",
+        "waterBranchId": "LAB_W_PCW_MAIN",
+        "ratedFlowLpm": 150,
+        "upstreamIds": [
+          "V4_LAB_PCW_PUMP"
+        ],
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_PCW_HX",
+      "buildingId": "LAB",
+      "system": "water",
+      "level": "PLANT",
+      "label": "独立PCW板式换热器",
+      "color": [
+        0.36,
+        0.67,
+        0.63
+      ],
+      "bounds": [
+        310.85,
+        -57.0,
+        0.4,
+        312.15,
+        -56.0,
+        1.8
+      ],
+      "freecadName": "V4_LAB_PCW_HX",
+      "roomId": null,
+      "meta": {
+        "type": "plate_heat_exchanger",
+        "medium": "pcw_supply",
+        "isolatedFromDomestic": true,
+        "roomId": null,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_PCW_PLANT_LINKS",
+      "buildingId": "LAB",
+      "system": "water",
+      "level": "PLANT",
+      "label": "PCW泵与换热器连接",
+      "color": [
+        0.12,
+        0.6,
+        0.49
+      ],
+      "bounds": [
+        307.0,
+        -57.5864,
+        0.7136,
+        311.5864,
+        -56.4136,
+        3.6364
+      ],
+      "freecadName": "V4_LAB_PCW_PLANT_LINKS",
+      "roomId": null,
+      "meta": {
+        "type": "pipe",
+        "waterBranchId": "LAB_W_PCW_MAIN",
+        "medium": "pcw_supply",
+        "roomId": null,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_MAIN_COLD",
+      "buildingId": "LAB",
+      "system": "water",
+      "level": "PLANT",
+      "label": "domestic_cold · 立管与层分配主管",
+      "color": [
+        0.12,
+        0.44,
+        0.72
+      ],
+      "bounds": [
+        307.0,
+        -60.58,
+        3.47,
+        456.0,
+        -60.42,
+        3.63
+      ],
+      "freecadName": "V4_LAB_MAIN_COLD",
+      "roomId": null,
+      "meta": {
+        "type": "water_main",
+        "medium": "domestic_cold",
+        "waterBranchId": "LAB_W_COLD_MAIN",
+        "roomId": null,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_MAIN_HOT",
+      "buildingId": "LAB",
+      "system": "water",
+      "level": "PLANT",
+      "label": "domestic_hot · 立管与层分配主管",
+      "color": [
+        0.77,
+        0.27,
+        0.21
+      ],
+      "bounds": [
+        307.0,
+        -59.58,
+        3.47,
+        456.0,
+        -59.42,
+        3.63
+      ],
+      "freecadName": "V4_LAB_MAIN_HOT",
+      "roomId": null,
+      "meta": {
+        "type": "water_main",
+        "medium": "domestic_hot",
+        "waterBranchId": "LAB_W_HOT_MAIN",
+        "roomId": null,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_MAIN_HOT_RETURN",
+      "buildingId": "LAB",
+      "system": "water",
+      "level": "PLANT",
+      "label": "domestic_hot_return · 立管与层分配主管",
+      "color": [
+        0.58,
+        0.31,
+        0.6
+      ],
+      "bounds": [
+        307.0,
+        -59.5,
+        3.47,
+        456.08,
+        -58.62,
+        3.63
+      ],
+      "freecadName": "V4_LAB_MAIN_HOT_RETURN",
+      "roomId": null,
+      "meta": {
+        "type": "water_main",
+        "medium": "domestic_hot_return",
+        "waterBranchId": "LAB_W_HOT_RETURN",
+        "roomId": null,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_MAIN_PCW",
+      "buildingId": "LAB",
+      "system": "water",
+      "level": "PLANT",
+      "label": "pcw_supply · 立管与层分配主管",
+      "color": [
+        0.12,
+        0.6,
+        0.49
+      ],
+      "bounds": [
+        307.0,
+        -57.58,
+        3.47,
+        456.0,
+        -57.42,
+        3.63
+      ],
+      "freecadName": "V4_LAB_MAIN_PCW",
+      "roomId": null,
+      "meta": {
+        "type": "water_main",
+        "medium": "pcw_supply",
+        "waterBranchId": "LAB_W_PCW_MAIN",
+        "roomId": null,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_MAIN_PCW_RETURN",
+      "buildingId": "LAB",
+      "system": "water",
+      "level": "PLANT",
+      "label": "pcw_return · 立管与层分配主管",
+      "color": [
+        0.47,
+        0.73,
+        0.28
+      ],
+      "bounds": [
+        307.0,
+        -56.58,
+        3.47,
+        456.0,
+        -56.42,
+        3.63
+      ],
+      "freecadName": "V4_LAB_MAIN_PCW_RETURN",
+      "roomId": null,
+      "meta": {
+        "type": "water_main",
+        "medium": "pcw_return",
+        "waterBranchId": "LAB_W_PCW_RETURN",
+        "roomId": null,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_TRAY0",
+      "buildingId": "LAB",
+      "system": "electrical",
+      "level": "PLANT",
+      "label": "主电缆桥架及馈线",
+      "color": [
+        0.3,
+        0.34,
+        0.39
+      ],
+      "bounds": [
+        304.0,
+        -62.5,
+        3.85,
+        456.0,
+        -62.1,
+        4.0
+      ],
+      "freecadName": "V4_LAB_TRAY0",
+      "roomId": null,
+      "meta": {
+        "type": "cable_tray",
+        "upstreamIds": [
+          "V4_LAB_MDB"
+        ],
+        "roomId": null,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_MDB_RISER",
+      "buildingId": "LAB",
+      "system": "electrical",
+      "level": "PLANT",
+      "label": "主配电至桥架竖向馈线",
+      "color": [
+        0.37,
+        0.31,
+        0.21
+      ],
+      "bounds": [
+        303.973,
+        -62.5,
+        2.273,
+        304.027,
+        -62.273,
+        3.92
+      ],
+      "freecadName": "V4_LAB_MDB_RISER",
+      "roomId": null,
+      "meta": {
+        "type": "cable",
+        "upstreamIds": [
+          "V4_LAB_MDB"
+        ],
+        "roomId": null,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R01_WALLS",
+      "buildingId": "LAB",
+      "system": "interiors",
+      "level": "F0",
+      "label": "干实验与测试 · 隔墙与门洞",
+      "color": [
+        0.72,
+        0.77,
+        0.75
+      ],
+      "bounds": [
+        306.0,
+        2.0,
+        0.425,
+        336.0,
+        22.0,
+        3.425
+      ],
+      "freecadName": "V4_LAB_R01_WALLS",
+      "roomId": "LAB_R01",
+      "meta": {
+        "type": "room_partition",
+        "roomId": "LAB_R01",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R01_ROOM_GLAZING",
+      "buildingId": "LAB",
+      "system": "interiors",
+      "level": "F0",
+      "label": "观察窗",
+      "color": [
+        0.08,
+        0.24,
+        0.3
+      ],
+      "bounds": [
+        313.2,
+        21.9775,
+        1.5,
+        328.8,
+        22.0225,
+        2.85
+      ],
+      "freecadName": "V4_LAB_R01_ROOM_GLAZING",
+      "roomId": "LAB_R01",
+      "meta": {
+        "type": "interior_glazing",
+        "roomId": "LAB_R01",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R01_FLOOR_ZONE",
+      "buildingId": "LAB",
+      "system": "interiors",
+      "level": "F0",
+      "label": "干实验与测试 · 功能区域",
+      "color": [
+        0.74,
+        0.8,
+        0.78
+      ],
+      "bounds": [
+        306.125,
+        2.125,
+        0.406,
+        335.875,
+        21.875,
+        0.418
+      ],
+      "freecadName": "V4_LAB_R01_FLOOR_ZONE",
+      "roomId": "LAB_R01",
+      "meta": {
+        "type": "room_zone",
+        "roomAreaM2": 600,
+        "roomId": "LAB_R01",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R01_DOOR",
+      "buildingId": "LAB",
+      "system": "interiors",
+      "level": "F0",
+      "label": "常开门及门框",
+      "color": [
+        0.54,
+        0.62,
+        0.6
+      ],
+      "bounds": [
+        319.845,
+        1.88,
+        0.4,
+        322.155,
+        3.08832,
+        2.75
+      ],
+      "freecadName": "V4_LAB_R01_DOOR",
+      "roomId": "LAB_R01",
+      "meta": {
+        "type": "door",
+        "roomId": "LAB_R01",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R01_F01",
+      "buildingId": "LAB",
+      "system": "interiors",
+      "level": "F0",
+      "label": "桌面工作位",
+      "color": [
+        0.58,
+        0.39,
+        0.23
+      ],
+      "bounds": [
+        313.5,
+        6.61,
+        0.4,
+        315.3,
+        8.05,
+        1.85
+      ],
+      "freecadName": "V4_LAB_R01_F01",
+      "roomId": "LAB_R01",
+      "meta": {
+        "type": "furniture",
+        "circuitId": "LAB_R01_C_POWER",
+        "ratedPowerKw": 0.25,
+        "roomId": "LAB_R01",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R01_F02",
+      "buildingId": "LAB",
+      "system": "interiors",
+      "level": "F0",
+      "label": "桌面工作位",
+      "color": [
+        0.58,
+        0.39,
+        0.23
+      ],
+      "bounds": [
+        326.7,
+        6.61,
+        0.4,
+        328.5,
+        8.05,
+        1.85
+      ],
+      "freecadName": "V4_LAB_R01_F02",
+      "roomId": "LAB_R01",
+      "meta": {
+        "type": "furniture",
+        "circuitId": "LAB_R01_C_POWER",
+        "ratedPowerKw": 0.25,
+        "roomId": "LAB_R01",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R01_F03",
+      "buildingId": "LAB",
+      "system": "interiors",
+      "level": "F0",
+      "label": "桌面工作位",
+      "color": [
+        0.58,
+        0.39,
+        0.23
+      ],
+      "bounds": [
+        313.5,
+        15.41,
+        0.4,
+        315.3,
+        16.85,
+        1.85
+      ],
+      "freecadName": "V4_LAB_R01_F03",
+      "roomId": "LAB_R01",
+      "meta": {
+        "type": "furniture",
+        "circuitId": "LAB_R01_C_POWER",
+        "ratedPowerKw": 0.25,
+        "roomId": "LAB_R01",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R01_F04",
+      "buildingId": "LAB",
+      "system": "interiors",
+      "level": "F0",
+      "label": "桌面工作位",
+      "color": [
+        0.58,
+        0.39,
+        0.23
+      ],
+      "bounds": [
+        326.7,
+        15.41,
+        0.4,
+        328.5,
+        16.85,
+        1.85
+      ],
+      "freecadName": "V4_LAB_R01_F04",
+      "roomId": "LAB_R01",
+      "meta": {
+        "type": "furniture",
+        "circuitId": "LAB_R01_C_POWER",
+        "ratedPowerKw": 0.25,
+        "roomId": "LAB_R01",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R01_F05",
+      "buildingId": "LAB",
+      "system": "interiors",
+      "level": "F0",
+      "label": "仪器/样品测试机柜",
+      "color": [
+        0.62,
+        0.76,
+        0.81
+      ],
+      "bounds": [
+        319.8,
+        17.905,
+        0.4,
+        322.2,
+        19.25,
+        2.52
+      ],
+      "freecadName": "V4_LAB_R01_F05",
+      "roomId": "LAB_R01",
+      "meta": {
+        "type": "furniture",
+        "circuitId": "LAB_R01_C_POWER",
+        "ratedPowerKw": 2.5,
+        "roomId": "LAB_R01",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R01_DB",
+      "buildingId": "LAB",
+      "system": "electrical",
+      "level": "F0",
+      "label": "房间配电箱与断路器",
+      "color": [
+        0.3,
+        0.34,
+        0.39
+      ],
+      "bounds": [
+        335.275,
+        1.995,
+        1.5,
+        335.825,
+        2.325,
+        2.3
+      ],
+      "freecadName": "V4_LAB_R01_DB",
+      "roomId": "LAB_R01",
+      "meta": {
+        "id": "V4_LAB_R01_DB",
+        "assetId": "V4_LAB_R01_DB",
+        "buildingId": "LAB",
+        "roomId": "LAB_R01",
+        "controlKind": "breaker",
+        "type": "distribution_panel",
+        "label": "房间配电箱",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "upstreamIds": [
+          "V4_LAB_MDB"
+        ],
+        "ratedPowerKw": 0,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R01_FEEDER",
+      "buildingId": "LAB",
+      "system": "electrical",
+      "level": "F0",
+      "label": "主桥架至房间配电馈线",
+      "color": [
+        0.39,
+        0.32,
+        0.23
+      ],
+      "bounds": [
+        335.53056,
+        -62.3,
+        2.2,
+        335.56944,
+        2.21944,
+        3.93944
+      ],
+      "freecadName": "V4_LAB_R01_FEEDER",
+      "roomId": "LAB_R01",
+      "meta": {
+        "type": "cable",
+        "upstreamIds": [
+          "V4_LAB_MDB",
+          "V4_LAB_R01_DB"
+        ],
+        "roomId": "LAB_R01",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R01_L01",
+      "buildingId": "LAB",
+      "system": "lighting",
+      "level": "F0",
+      "label": "可调光照明分组 1",
+      "color": [
+        0.98,
+        0.91,
+        0.69
+      ],
+      "bounds": [
+        309.88,
+        4.88,
+        3.138,
+        332.12,
+        5.52,
+        3.75
+      ],
+      "freecadName": "V4_LAB_R01_L01",
+      "roomId": "LAB_R01",
+      "meta": {
+        "id": "V4_LAB_R01_L01",
+        "assetId": "V4_LAB_R01_L01",
+        "buildingId": "LAB",
+        "roomId": "LAB_R01",
+        "controlKind": "light",
+        "type": "luminaire_group",
+        "label": "照明分组 1",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "circuitId": "LAB_R01_C_LIGHT",
+        "ratedPowerKw": 0.9,
+        "upstreamIds": [
+          "V4_LAB_R01_DB"
+        ],
+        "dimmable": true,
+        "fixtureCount": 2,
+        "sourceReference": "ERCO grouped track lighting for exhibition; LED panels elsewhere",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R01_L02",
+      "buildingId": "LAB",
+      "system": "lighting",
+      "level": "F0",
+      "label": "可调光照明分组 2",
+      "color": [
+        0.98,
+        0.91,
+        0.69
+      ],
+      "bounds": [
+        320.68,
+        4.88,
+        3.138,
+        321.32,
+        5.52,
+        3.75
+      ],
+      "freecadName": "V4_LAB_R01_L02",
+      "roomId": "LAB_R01",
+      "meta": {
+        "id": "V4_LAB_R01_L02",
+        "assetId": "V4_LAB_R01_L02",
+        "buildingId": "LAB",
+        "roomId": "LAB_R01",
+        "controlKind": "light",
+        "type": "luminaire_group",
+        "label": "照明分组 2",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "circuitId": "LAB_R01_C_LIGHT",
+        "ratedPowerKw": 0.9,
+        "upstreamIds": [
+          "V4_LAB_R01_DB"
+        ],
+        "dimmable": true,
+        "fixtureCount": 1,
+        "sourceReference": "ERCO grouped track lighting for exhibition; LED panels elsewhere",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R01_L03",
+      "buildingId": "LAB",
+      "system": "lighting",
+      "level": "F0",
+      "label": "可调光照明分组 3",
+      "color": [
+        0.98,
+        0.91,
+        0.69
+      ],
+      "bounds": [
+        309.88,
+        18.48,
+        3.138,
+        332.12,
+        19.12,
+        3.75
+      ],
+      "freecadName": "V4_LAB_R01_L03",
+      "roomId": "LAB_R01",
+      "meta": {
+        "id": "V4_LAB_R01_L03",
+        "assetId": "V4_LAB_R01_L03",
+        "buildingId": "LAB",
+        "roomId": "LAB_R01",
+        "controlKind": "light",
+        "type": "luminaire_group",
+        "label": "照明分组 3",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "circuitId": "LAB_R01_C_LIGHT",
+        "ratedPowerKw": 0.9,
+        "upstreamIds": [
+          "V4_LAB_R01_DB"
+        ],
+        "dimmable": true,
+        "fixtureCount": 2,
+        "sourceReference": "ERCO grouped track lighting for exhibition; LED panels elsewhere",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R01_L04",
+      "buildingId": "LAB",
+      "system": "lighting",
+      "level": "F0",
+      "label": "可调光照明分组 4",
+      "color": [
+        0.98,
+        0.91,
+        0.69
+      ],
+      "bounds": [
+        320.68,
+        18.48,
+        3.138,
+        321.32,
+        19.12,
+        3.75
+      ],
+      "freecadName": "V4_LAB_R01_L04",
+      "roomId": "LAB_R01",
+      "meta": {
+        "id": "V4_LAB_R01_L04",
+        "assetId": "V4_LAB_R01_L04",
+        "buildingId": "LAB",
+        "roomId": "LAB_R01",
+        "controlKind": "light",
+        "type": "luminaire_group",
+        "label": "照明分组 4",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "circuitId": "LAB_R01_C_LIGHT",
+        "ratedPowerKw": 0.9,
+        "upstreamIds": [
+          "V4_LAB_R01_DB"
+        ],
+        "dimmable": true,
+        "fixtureCount": 1,
+        "sourceReference": "ERCO grouped track lighting for exhibition; LED panels elsewhere",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R01_LIGHT_DROPS",
+      "buildingId": "LAB",
+      "system": "electrical",
+      "level": "F0",
+      "label": "照明干线至灯具分组支线",
+      "color": [
+        0.3,
+        0.34,
+        0.39
+      ],
+      "bounds": [
+        310.191,
+        4.871,
+        3.741,
+        335.55,
+        18.8,
+        3.759
+      ],
+      "freecadName": "V4_LAB_R01_LIGHT_DROPS",
+      "roomId": "LAB_R01",
+      "meta": {
+        "type": "branch_cable",
+        "circuitId": "LAB_R01_C_LIGHT",
+        "roomId": "LAB_R01",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R01_CABLE_0",
+      "buildingId": "LAB",
+      "system": "electrical",
+      "level": "F0",
+      "label": "独立照明电路",
+      "color": [
+        0.3,
+        0.31,
+        0.34
+      ],
+      "bounds": [
+        310.5,
+        2.18596,
+        2.1,
+        335.56404,
+        4.89404,
+        3.76404
+      ],
+      "freecadName": "V4_LAB_R01_CABLE_0",
+      "roomId": "LAB_R01",
+      "meta": {
+        "type": "branch_cable",
+        "circuitId": "LAB_R01_C_LIGHT",
+        "upstreamIds": [
+          "V4_LAB_R01_DB"
+        ],
+        "roomId": "LAB_R01",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R01_CABLE_1",
+      "buildingId": "LAB",
+      "system": "electrical",
+      "level": "F0",
+      "label": "独立插座/设备电路",
+      "color": [
+        0.3,
+        0.31,
+        0.34
+      ],
+      "bounds": [
+        310.5,
+        2.18596,
+        2.1,
+        335.56404,
+        5.01404,
+        3.83404
+      ],
+      "freecadName": "V4_LAB_R01_CABLE_1",
+      "roomId": "LAB_R01",
+      "meta": {
+        "type": "branch_cable",
+        "circuitId": "LAB_R01_C_POWER",
+        "upstreamIds": [
+          "V4_LAB_R01_DB"
+        ],
+        "roomId": "LAB_R01",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R01_CABLE_2",
+      "buildingId": "LAB",
+      "system": "electrical",
+      "level": "F0",
+      "label": "独立空调电路",
+      "color": [
+        0.3,
+        0.31,
+        0.34
+      ],
+      "bounds": [
+        310.5,
+        2.18596,
+        2.1,
+        335.56404,
+        5.13404,
+        3.90404
+      ],
+      "freecadName": "V4_LAB_R01_CABLE_2",
+      "roomId": "LAB_R01",
+      "meta": {
+        "type": "branch_cable",
+        "circuitId": "LAB_R01_C_HVAC",
+        "upstreamIds": [
+          "V4_LAB_R01_DB"
+        ],
+        "roomId": "LAB_R01",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R01_SOCKET0",
+      "buildingId": "LAB",
+      "system": "electrical",
+      "level": "F0",
+      "label": "墙面插座及下引线",
+      "color": [
+        0.3,
+        0.34,
+        0.39
+      ],
+      "bounds": [
+        311.935,
+        2.15,
+        0.76,
+        335.55,
+        2.21,
+        3.82972
+      ],
+      "freecadName": "V4_LAB_R01_SOCKET0",
+      "roomId": "LAB_R01",
+      "meta": {
+        "type": "socket",
+        "circuitId": "LAB_R01_C_POWER",
+        "roomId": "LAB_R01",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R01_SOCKET1",
+      "buildingId": "LAB",
+      "system": "electrical",
+      "level": "F0",
+      "label": "墙面插座及下引线",
+      "color": [
+        0.3,
+        0.34,
+        0.39
+      ],
+      "bounds": [
+        329.935,
+        2.15,
+        0.76,
+        335.55,
+        2.21,
+        3.82972
+      ],
+      "freecadName": "V4_LAB_R01_SOCKET1",
+      "roomId": "LAB_R01",
+      "meta": {
+        "type": "socket",
+        "circuitId": "LAB_R01_C_POWER",
+        "roomId": "LAB_R01",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R01_AHU",
+      "buildingId": "LAB",
+      "system": "hvac",
+      "level": "F0",
+      "label": "局部空调与送回风终端",
+      "color": [
+        0.68,
+        0.75,
+        0.77
+      ],
+      "bounds": [
+        306.475,
+        2.64,
+        2.55,
+        331.5,
+        12.35,
+        3.7
+      ],
+      "freecadName": "V4_LAB_R01_AHU",
+      "roomId": "LAB_R01",
+      "meta": {
+        "id": "V4_LAB_R01_AHU",
+        "assetId": "V4_LAB_R01_AHU",
+        "buildingId": "LAB",
+        "roomId": "LAB_R01",
+        "controlKind": "ahu",
+        "type": "air_handling_unit",
+        "label": "局部空调/通风机组",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "circuitId": "LAB_R01_C_HVAC",
+        "ratedPowerKw": 7.2,
+        "upstreamIds": [
+          "V4_LAB_R01_DB"
+        ],
+        "designCoolingKw": 60.0,
+        "representativeTerminal": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R01_V_PCW",
+      "buildingId": "LAB",
+      "system": "water",
+      "level": "F0",
+      "label": "可控支路阀门",
+      "color": [
+        0.75,
+        0.34,
+        0.2
+      ],
+      "bounds": [
+        319.54,
+        2.29,
+        3.44,
+        319.94,
+        2.51,
+        3.795
+      ],
+      "freecadName": "V4_LAB_R01_V_PCW",
+      "roomId": "LAB_R01",
+      "meta": {
+        "id": "V4_LAB_R01_V_PCW",
+        "assetId": "V4_LAB_R01_V_PCW",
+        "buildingId": "LAB",
+        "roomId": "LAB_R01",
+        "controlKind": "valve",
+        "type": "isolation_valve",
+        "label": "工艺冷却水支路阀",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "waterBranchId": "LAB_R01_W_PCW",
+        "medium": "pcw_supply",
+        "ratedFlowLpm": 35,
+        "upstreamIds": [
+          "V4_LAB_PCW_MAIN"
+        ],
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R01_PIPE_PCW",
+      "buildingId": "LAB",
+      "system": "water",
+      "level": "F0",
+      "label": "pcw_supply · 阀后支管",
+      "color": [
+        0.12,
+        0.6,
+        0.49
+      ],
+      "bounds": [
+        312.546,
+        -57.5,
+        1.55,
+        322.854,
+        16.654,
+        3.604
+      ],
+      "freecadName": "V4_LAB_R01_PIPE_PCW",
+      "roomId": "LAB_R01",
+      "meta": {
+        "type": "water_branch",
+        "medium": "pcw_supply",
+        "waterBranchId": "LAB_R01_W_PCW",
+        "upstreamIds": [
+          "V4_LAB_R01_V_PCW"
+        ],
+        "roomId": "LAB_R01",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R01_PCW_TERMINAL",
+      "buildingId": "LAB",
+      "system": "water",
+      "level": "F0",
+      "label": "设备PCW换热与供回水端",
+      "color": [
+        0.38,
+        0.67,
+        0.61
+      ],
+      "bounds": [
+        311.9,
+        16.2,
+        0.4,
+        313.3,
+        17.0,
+        1.36
+      ],
+      "freecadName": "V4_LAB_R01_PCW_TERMINAL",
+      "roomId": "LAB_R01",
+      "meta": {
+        "type": "process_cooling_terminal",
+        "medium": "pcw_supply",
+        "waterBranchId": "LAB_R01_W_PCW",
+        "isolatedFromDomestic": true,
+        "roomId": "LAB_R01",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R01_PCW_RETURN",
+      "buildingId": "LAB",
+      "system": "water",
+      "level": "F0",
+      "label": "PCW独立回水",
+      "color": [
+        0.47,
+        0.73,
+        0.28
+      ],
+      "bounds": [
+        312.896,
+        -56.554,
+        1.05,
+        323.304,
+        16.654,
+        3.55
+      ],
+      "freecadName": "V4_LAB_R01_PCW_RETURN",
+      "roomId": "LAB_R01",
+      "meta": {
+        "type": "water_branch",
+        "medium": "pcw_return",
+        "waterBranchId": "LAB_R01_W_PCW_RETURN",
+        "isolatedFromDomestic": true,
+        "roomId": "LAB_R01",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R01_S_TEMPERATURE",
+      "buildingId": "LAB",
+      "system": "sensors",
+      "level": "F0",
+      "label": "温度传感器",
+      "color": [
+        0.22,
+        0.63,
+        0.65
+      ],
+      "bounds": [
+        306.04,
+        6.32,
+        1.75,
+        306.165,
+        6.48,
+        1.97
+      ],
+      "freecadName": "V4_LAB_R01_S_TEMPERATURE",
+      "roomId": "LAB_R01",
+      "meta": {
+        "id": "V4_LAB_R01_S_TEMPERATURE",
+        "assetId": "V4_LAB_R01_S_TEMPERATURE",
+        "buildingId": "LAB",
+        "roomId": "LAB_R01",
+        "type": "sensor",
+        "sensorKind": "temperature",
+        "label": "温度传感器",
+        "unit": "°C",
+        "circuitId": "LAB_R01_C_POWER",
+        "upstreamIds": [
+          "V4_LAB_R01_DB"
+        ],
+        "simulated": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R01_S_HUMIDITY",
+      "buildingId": "LAB",
+      "system": "sensors",
+      "level": "F0",
+      "label": "相对湿度传感器",
+      "color": [
+        0.22,
+        0.63,
+        0.65
+      ],
+      "bounds": [
+        306.04,
+        6.62,
+        1.75,
+        306.165,
+        6.78,
+        1.97
+      ],
+      "freecadName": "V4_LAB_R01_S_HUMIDITY",
+      "roomId": "LAB_R01",
+      "meta": {
+        "id": "V4_LAB_R01_S_HUMIDITY",
+        "assetId": "V4_LAB_R01_S_HUMIDITY",
+        "buildingId": "LAB",
+        "roomId": "LAB_R01",
+        "type": "sensor",
+        "sensorKind": "humidity",
+        "label": "相对湿度传感器",
+        "unit": "%RH",
+        "circuitId": "LAB_R01_C_POWER",
+        "upstreamIds": [
+          "V4_LAB_R01_DB"
+        ],
+        "simulated": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R01_S_CO2",
+      "buildingId": "LAB",
+      "system": "sensors",
+      "level": "F0",
+      "label": "二氧化碳传感器",
+      "color": [
+        0.22,
+        0.63,
+        0.65
+      ],
+      "bounds": [
+        306.04,
+        6.92,
+        1.75,
+        306.165,
+        7.08,
+        1.97
+      ],
+      "freecadName": "V4_LAB_R01_S_CO2",
+      "roomId": "LAB_R01",
+      "meta": {
+        "id": "V4_LAB_R01_S_CO2",
+        "assetId": "V4_LAB_R01_S_CO2",
+        "buildingId": "LAB",
+        "roomId": "LAB_R01",
+        "type": "sensor",
+        "sensorKind": "co2",
+        "label": "二氧化碳传感器",
+        "unit": "ppm",
+        "circuitId": "LAB_R01_C_POWER",
+        "upstreamIds": [
+          "V4_LAB_R01_DB"
+        ],
+        "simulated": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R01_S_OCCUPANCY",
+      "buildingId": "LAB",
+      "system": "sensors",
+      "level": "F0",
+      "label": "占用传感器",
+      "color": [
+        0.22,
+        0.63,
+        0.65
+      ],
+      "bounds": [
+        320.92,
+        11.92,
+        2.995,
+        321.08,
+        12.08,
+        3.125
+      ],
+      "freecadName": "V4_LAB_R01_S_OCCUPANCY",
+      "roomId": "LAB_R01",
+      "meta": {
+        "id": "V4_LAB_R01_S_OCCUPANCY",
+        "assetId": "V4_LAB_R01_S_OCCUPANCY",
+        "buildingId": "LAB",
+        "roomId": "LAB_R01",
+        "type": "sensor",
+        "sensorKind": "occupancy",
+        "label": "占用传感器",
+        "unit": "persons",
+        "circuitId": "LAB_R01_C_POWER",
+        "upstreamIds": [
+          "V4_LAB_R01_DB"
+        ],
+        "simulated": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R01_S_POWER",
+      "buildingId": "LAB",
+      "system": "sensors",
+      "level": "F0",
+      "label": "支路电功率传感器",
+      "color": [
+        0.22,
+        0.63,
+        0.65
+      ],
+      "bounds": [
+        306.04,
+        7.52,
+        1.75,
+        306.165,
+        7.68,
+        1.97
+      ],
+      "freecadName": "V4_LAB_R01_S_POWER",
+      "roomId": "LAB_R01",
+      "meta": {
+        "id": "V4_LAB_R01_S_POWER",
+        "assetId": "V4_LAB_R01_S_POWER",
+        "buildingId": "LAB",
+        "roomId": "LAB_R01",
+        "type": "sensor",
+        "sensorKind": "power",
+        "label": "支路电功率传感器",
+        "unit": "kW",
+        "circuitId": "LAB_R01_C_POWER",
+        "upstreamIds": [
+          "V4_LAB_R01_DB"
+        ],
+        "simulated": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R01_S_FLOW_PCW",
+      "buildingId": "LAB",
+      "system": "sensors",
+      "level": "F0",
+      "label": "支路流量计",
+      "color": [
+        0.22,
+        0.63,
+        0.65
+      ],
+      "bounds": [
+        316.06,
+        2.325,
+        3.475,
+        316.28,
+        2.475,
+        3.7
+      ],
+      "freecadName": "V4_LAB_R01_S_FLOW_PCW",
+      "roomId": "LAB_R01",
+      "meta": {
+        "id": "V4_LAB_R01_S_FLOW_PCW",
+        "assetId": "V4_LAB_R01_S_FLOW_PCW",
+        "buildingId": "LAB",
+        "roomId": "LAB_R01",
+        "type": "sensor",
+        "sensorKind": "water_flow",
+        "label": "支路流量计",
+        "unit": "L/min",
+        "waterBranchId": "LAB_R01_W_PCW",
+        "simulated": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R02_WALLS",
+      "buildingId": "LAB",
+      "system": "interiors",
+      "level": "F0",
+      "label": "湿实验室 · 隔墙与门洞",
+      "color": [
+        0.72,
+        0.77,
+        0.75
+      ],
+      "bounds": [
+        345.0,
+        2.0,
+        0.425,
+        375.0,
+        22.0,
+        3.425
+      ],
+      "freecadName": "V4_LAB_R02_WALLS",
+      "roomId": "LAB_R02",
+      "meta": {
+        "type": "room_partition",
+        "roomId": "LAB_R02",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R02_ROOM_GLAZING",
+      "buildingId": "LAB",
+      "system": "interiors",
+      "level": "F0",
+      "label": "观察窗",
+      "color": [
+        0.08,
+        0.24,
+        0.3
+      ],
+      "bounds": [
+        352.2,
+        21.9775,
+        1.5,
+        367.8,
+        22.0225,
+        2.85
+      ],
+      "freecadName": "V4_LAB_R02_ROOM_GLAZING",
+      "roomId": "LAB_R02",
+      "meta": {
+        "type": "interior_glazing",
+        "roomId": "LAB_R02",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R02_FLOOR_ZONE",
+      "buildingId": "LAB",
+      "system": "interiors",
+      "level": "F0",
+      "label": "湿实验室 · 功能区域",
+      "color": [
+        0.74,
+        0.8,
+        0.78
+      ],
+      "bounds": [
+        345.125,
+        2.125,
+        0.406,
+        374.875,
+        21.875,
+        0.418
+      ],
+      "freecadName": "V4_LAB_R02_FLOOR_ZONE",
+      "roomId": "LAB_R02",
+      "meta": {
+        "type": "room_zone",
+        "roomAreaM2": 600,
+        "roomId": "LAB_R02",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R02_DOOR",
+      "buildingId": "LAB",
+      "system": "interiors",
+      "level": "F0",
+      "label": "常开门及门框",
+      "color": [
+        0.54,
+        0.62,
+        0.6
+      ],
+      "bounds": [
+        358.845,
+        1.88,
+        0.4,
+        361.155,
+        3.08832,
+        2.75
+      ],
+      "freecadName": "V4_LAB_R02_DOOR",
+      "roomId": "LAB_R02",
+      "meta": {
+        "type": "door",
+        "roomId": "LAB_R02",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R02_F01",
+      "buildingId": "LAB",
+      "system": "interiors",
+      "level": "F0",
+      "label": "工作台/备料台",
+      "color": [
+        0.72,
+        0.76,
+        0.75
+      ],
+      "bounds": [
+        352.6,
+        7.9,
+        0.4,
+        355.4,
+        8.9,
+        1.195
+      ],
+      "freecadName": "V4_LAB_R02_F01",
+      "roomId": "LAB_R02",
+      "meta": {
+        "type": "furniture",
+        "roomId": "LAB_R02",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R02_F02",
+      "buildingId": "LAB",
+      "system": "interiors",
+      "level": "F0",
+      "label": "储物柜",
+      "color": [
+        0.77,
+        0.79,
+        0.76
+      ],
+      "bounds": [
+        351.5,
+        16.6275,
+        0.4,
+        353.5,
+        17.35,
+        2.2
+      ],
+      "freecadName": "V4_LAB_R02_F02",
+      "roomId": "LAB_R02",
+      "meta": {
+        "type": "furniture",
+        "roomId": "LAB_R02",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R02_F03",
+      "buildingId": "LAB",
+      "system": "interiors",
+      "level": "F0",
+      "label": "带防护罩实验工作台",
+      "color": [
+        0.7,
+        0.82,
+        0.83
+      ],
+      "bounds": [
+        358.85,
+        16.45,
+        0.4,
+        361.15,
+        17.55,
+        2.65
+      ],
+      "freecadName": "V4_LAB_R02_F03",
+      "roomId": "LAB_R02",
+      "meta": {
+        "type": "furniture",
+        "circuitId": "LAB_R02_C_POWER",
+        "ratedPowerKw": 1.4,
+        "roomId": "LAB_R02",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R02_DB",
+      "buildingId": "LAB",
+      "system": "electrical",
+      "level": "F0",
+      "label": "房间配电箱与断路器",
+      "color": [
+        0.3,
+        0.34,
+        0.39
+      ],
+      "bounds": [
+        374.275,
+        1.995,
+        1.5,
+        374.825,
+        2.325,
+        2.3
+      ],
+      "freecadName": "V4_LAB_R02_DB",
+      "roomId": "LAB_R02",
+      "meta": {
+        "id": "V4_LAB_R02_DB",
+        "assetId": "V4_LAB_R02_DB",
+        "buildingId": "LAB",
+        "roomId": "LAB_R02",
+        "controlKind": "breaker",
+        "type": "distribution_panel",
+        "label": "房间配电箱",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "upstreamIds": [
+          "V4_LAB_MDB"
+        ],
+        "ratedPowerKw": 0,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R02_FEEDER",
+      "buildingId": "LAB",
+      "system": "electrical",
+      "level": "F0",
+      "label": "主桥架至房间配电馈线",
+      "color": [
+        0.39,
+        0.32,
+        0.23
+      ],
+      "bounds": [
+        374.53056,
+        -62.3,
+        2.2,
+        374.56944,
+        2.21944,
+        3.93944
+      ],
+      "freecadName": "V4_LAB_R02_FEEDER",
+      "roomId": "LAB_R02",
+      "meta": {
+        "type": "cable",
+        "upstreamIds": [
+          "V4_LAB_MDB",
+          "V4_LAB_R02_DB"
+        ],
+        "roomId": "LAB_R02",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R02_L01",
+      "buildingId": "LAB",
+      "system": "lighting",
+      "level": "F0",
+      "label": "可调光照明分组 1",
+      "color": [
+        0.98,
+        0.91,
+        0.69
+      ],
+      "bounds": [
+        348.88,
+        4.88,
+        3.138,
+        371.12,
+        5.52,
+        3.75
+      ],
+      "freecadName": "V4_LAB_R02_L01",
+      "roomId": "LAB_R02",
+      "meta": {
+        "id": "V4_LAB_R02_L01",
+        "assetId": "V4_LAB_R02_L01",
+        "buildingId": "LAB",
+        "roomId": "LAB_R02",
+        "controlKind": "light",
+        "type": "luminaire_group",
+        "label": "照明分组 1",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "circuitId": "LAB_R02_C_LIGHT",
+        "ratedPowerKw": 0.9,
+        "upstreamIds": [
+          "V4_LAB_R02_DB"
+        ],
+        "dimmable": true,
+        "fixtureCount": 2,
+        "sourceReference": "ERCO grouped track lighting for exhibition; LED panels elsewhere",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R02_L02",
+      "buildingId": "LAB",
+      "system": "lighting",
+      "level": "F0",
+      "label": "可调光照明分组 2",
+      "color": [
+        0.98,
+        0.91,
+        0.69
+      ],
+      "bounds": [
+        359.68,
+        4.88,
+        3.138,
+        360.32,
+        5.52,
+        3.75
+      ],
+      "freecadName": "V4_LAB_R02_L02",
+      "roomId": "LAB_R02",
+      "meta": {
+        "id": "V4_LAB_R02_L02",
+        "assetId": "V4_LAB_R02_L02",
+        "buildingId": "LAB",
+        "roomId": "LAB_R02",
+        "controlKind": "light",
+        "type": "luminaire_group",
+        "label": "照明分组 2",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "circuitId": "LAB_R02_C_LIGHT",
+        "ratedPowerKw": 0.9,
+        "upstreamIds": [
+          "V4_LAB_R02_DB"
+        ],
+        "dimmable": true,
+        "fixtureCount": 1,
+        "sourceReference": "ERCO grouped track lighting for exhibition; LED panels elsewhere",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R02_L03",
+      "buildingId": "LAB",
+      "system": "lighting",
+      "level": "F0",
+      "label": "可调光照明分组 3",
+      "color": [
+        0.98,
+        0.91,
+        0.69
+      ],
+      "bounds": [
+        348.88,
+        18.48,
+        3.138,
+        371.12,
+        19.12,
+        3.75
+      ],
+      "freecadName": "V4_LAB_R02_L03",
+      "roomId": "LAB_R02",
+      "meta": {
+        "id": "V4_LAB_R02_L03",
+        "assetId": "V4_LAB_R02_L03",
+        "buildingId": "LAB",
+        "roomId": "LAB_R02",
+        "controlKind": "light",
+        "type": "luminaire_group",
+        "label": "照明分组 3",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "circuitId": "LAB_R02_C_LIGHT",
+        "ratedPowerKw": 0.9,
+        "upstreamIds": [
+          "V4_LAB_R02_DB"
+        ],
+        "dimmable": true,
+        "fixtureCount": 2,
+        "sourceReference": "ERCO grouped track lighting for exhibition; LED panels elsewhere",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R02_L04",
+      "buildingId": "LAB",
+      "system": "lighting",
+      "level": "F0",
+      "label": "可调光照明分组 4",
+      "color": [
+        0.98,
+        0.91,
+        0.69
+      ],
+      "bounds": [
+        359.68,
+        18.48,
+        3.138,
+        360.32,
+        19.12,
+        3.75
+      ],
+      "freecadName": "V4_LAB_R02_L04",
+      "roomId": "LAB_R02",
+      "meta": {
+        "id": "V4_LAB_R02_L04",
+        "assetId": "V4_LAB_R02_L04",
+        "buildingId": "LAB",
+        "roomId": "LAB_R02",
+        "controlKind": "light",
+        "type": "luminaire_group",
+        "label": "照明分组 4",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "circuitId": "LAB_R02_C_LIGHT",
+        "ratedPowerKw": 0.9,
+        "upstreamIds": [
+          "V4_LAB_R02_DB"
+        ],
+        "dimmable": true,
+        "fixtureCount": 1,
+        "sourceReference": "ERCO grouped track lighting for exhibition; LED panels elsewhere",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R02_LIGHT_DROPS",
+      "buildingId": "LAB",
+      "system": "electrical",
+      "level": "F0",
+      "label": "照明干线至灯具分组支线",
+      "color": [
+        0.3,
+        0.34,
+        0.39
+      ],
+      "bounds": [
+        349.191,
+        4.871,
+        3.741,
+        374.55,
+        18.8,
+        3.759
+      ],
+      "freecadName": "V4_LAB_R02_LIGHT_DROPS",
+      "roomId": "LAB_R02",
+      "meta": {
+        "type": "branch_cable",
+        "circuitId": "LAB_R02_C_LIGHT",
+        "roomId": "LAB_R02",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R02_CABLE_0",
+      "buildingId": "LAB",
+      "system": "electrical",
+      "level": "F0",
+      "label": "独立照明电路",
+      "color": [
+        0.3,
+        0.31,
+        0.34
+      ],
+      "bounds": [
+        349.5,
+        2.18596,
+        2.1,
+        374.56404,
+        4.89404,
+        3.76404
+      ],
+      "freecadName": "V4_LAB_R02_CABLE_0",
+      "roomId": "LAB_R02",
+      "meta": {
+        "type": "branch_cable",
+        "circuitId": "LAB_R02_C_LIGHT",
+        "upstreamIds": [
+          "V4_LAB_R02_DB"
+        ],
+        "roomId": "LAB_R02",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R02_CABLE_1",
+      "buildingId": "LAB",
+      "system": "electrical",
+      "level": "F0",
+      "label": "独立插座/设备电路",
+      "color": [
+        0.3,
+        0.31,
+        0.34
+      ],
+      "bounds": [
+        349.5,
+        2.18596,
+        2.1,
+        374.56404,
+        5.01404,
+        3.83404
+      ],
+      "freecadName": "V4_LAB_R02_CABLE_1",
+      "roomId": "LAB_R02",
+      "meta": {
+        "type": "branch_cable",
+        "circuitId": "LAB_R02_C_POWER",
+        "upstreamIds": [
+          "V4_LAB_R02_DB"
+        ],
+        "roomId": "LAB_R02",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R02_CABLE_2",
+      "buildingId": "LAB",
+      "system": "electrical",
+      "level": "F0",
+      "label": "独立空调电路",
+      "color": [
+        0.3,
+        0.31,
+        0.34
+      ],
+      "bounds": [
+        349.5,
+        2.18596,
+        2.1,
+        374.56404,
+        5.13404,
+        3.90404
+      ],
+      "freecadName": "V4_LAB_R02_CABLE_2",
+      "roomId": "LAB_R02",
+      "meta": {
+        "type": "branch_cable",
+        "circuitId": "LAB_R02_C_HVAC",
+        "upstreamIds": [
+          "V4_LAB_R02_DB"
+        ],
+        "roomId": "LAB_R02",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R02_SOCKET0",
+      "buildingId": "LAB",
+      "system": "electrical",
+      "level": "F0",
+      "label": "墙面插座及下引线",
+      "color": [
+        0.3,
+        0.34,
+        0.39
+      ],
+      "bounds": [
+        350.935,
+        2.15,
+        0.76,
+        374.55,
+        2.21,
+        3.82972
+      ],
+      "freecadName": "V4_LAB_R02_SOCKET0",
+      "roomId": "LAB_R02",
+      "meta": {
+        "type": "socket",
+        "circuitId": "LAB_R02_C_POWER",
+        "roomId": "LAB_R02",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R02_SOCKET1",
+      "buildingId": "LAB",
+      "system": "electrical",
+      "level": "F0",
+      "label": "墙面插座及下引线",
+      "color": [
+        0.3,
+        0.34,
+        0.39
+      ],
+      "bounds": [
+        368.935,
+        2.15,
+        0.76,
+        374.55,
+        2.21,
+        3.82972
+      ],
+      "freecadName": "V4_LAB_R02_SOCKET1",
+      "roomId": "LAB_R02",
+      "meta": {
+        "type": "socket",
+        "circuitId": "LAB_R02_C_POWER",
+        "roomId": "LAB_R02",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R02_AHU",
+      "buildingId": "LAB",
+      "system": "hvac",
+      "level": "F0",
+      "label": "局部空调与送回风终端",
+      "color": [
+        0.68,
+        0.75,
+        0.77
+      ],
+      "bounds": [
+        345.475,
+        2.64,
+        2.55,
+        370.5,
+        12.35,
+        3.7
+      ],
+      "freecadName": "V4_LAB_R02_AHU",
+      "roomId": "LAB_R02",
+      "meta": {
+        "id": "V4_LAB_R02_AHU",
+        "assetId": "V4_LAB_R02_AHU",
+        "buildingId": "LAB",
+        "roomId": "LAB_R02",
+        "controlKind": "ahu",
+        "type": "air_handling_unit",
+        "label": "局部空调/通风机组",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "circuitId": "LAB_R02_C_HVAC",
+        "ratedPowerKw": 7.2,
+        "upstreamIds": [
+          "V4_LAB_R02_DB"
+        ],
+        "designCoolingKw": 60.0,
+        "representativeTerminal": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R02_SINK",
+      "buildingId": "LAB",
+      "system": "water",
+      "level": "F0",
+      "label": "洗手/工艺准备水槽",
+      "color": [
+        0.81,
+        0.83,
+        0.82
+      ],
+      "bounds": [
+        373.49,
+        14.68,
+        0.4,
+        374.41,
+        15.32,
+        1.66944
+      ],
+      "freecadName": "V4_LAB_R02_SINK",
+      "roomId": "LAB_R02",
+      "meta": {
+        "type": "sink",
+        "demandLpm": 6,
+        "requiresWater": true,
+        "roomId": "LAB_R02",
+        "designStatus": "concept inferred; simulated data only",
+        "waterBranchIds": [
+          "LAB_R02_W_COLD",
+          "LAB_R02_W_HOT"
+        ]
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R02_DRAIN",
+      "buildingId": "LAB",
+      "system": "water",
+      "level": "F0",
+      "label": "独立排水支管（预留楼板套管）",
+      "color": [
+        0.4,
+        0.43,
+        0.4
+      ],
+      "bounds": [
+        305.0,
+        -58.0594,
+        -0.2594,
+        374.0094,
+        15.0594,
+        1.24
+      ],
+      "freecadName": "V4_LAB_R02_DRAIN",
+      "roomId": "LAB_R02",
+      "meta": {
+        "type": "drain_pipe",
+        "medium": "lab_waste",
+        "waterBranchId": "LAB_R02_W_DRAIN",
+        "penetrationsRequireCoordination": true,
+        "roomId": "LAB_R02",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R02_WASTE_HOLD",
+      "buildingId": "LAB",
+      "system": "water",
+      "level": "F0",
+      "label": "实验废水独立收集（示意）",
+      "color": [
+        0.62,
+        0.65,
+        0.6
+      ],
+      "bounds": [
+        373.63,
+        13.43,
+        0.4,
+        374.27,
+        14.07,
+        1.35
+      ],
+      "freecadName": "V4_LAB_R02_WASTE_HOLD",
+      "roomId": "LAB_R02",
+      "meta": {
+        "type": "waste_holding",
+        "medium": "lab_waste",
+        "waterBranchId": "LAB_R02_W_DRAIN",
+        "roomId": "LAB_R02",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R02_V_COLD",
+      "buildingId": "LAB",
+      "system": "water",
+      "level": "F0",
+      "label": "可控支路阀门",
+      "color": [
+        0.75,
+        0.34,
+        0.2
+      ],
+      "bounds": [
+        364.755,
+        2.29,
+        3.44,
+        365.155,
+        2.51,
+        3.795
+      ],
+      "freecadName": "V4_LAB_R02_V_COLD",
+      "roomId": "LAB_R02",
+      "meta": {
+        "id": "V4_LAB_R02_V_COLD",
+        "assetId": "V4_LAB_R02_V_COLD",
+        "buildingId": "LAB",
+        "roomId": "LAB_R02",
+        "controlKind": "valve",
+        "type": "isolation_valve",
+        "label": "生活冷水支路阀",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "waterBranchId": "LAB_R02_W_COLD",
+        "medium": "domestic_cold",
+        "ratedFlowLpm": 12,
+        "upstreamIds": [
+          "V4_LAB_WATER_MAIN"
+        ],
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R02_PIPE_COLD",
+      "buildingId": "LAB",
+      "system": "water",
+      "level": "F0",
+      "label": "domestic_cold · 阀后支管",
+      "color": [
+        0.12,
+        0.44,
+        0.72
+      ],
+      "bounds": [
+        361.0622,
+        -60.5,
+        1.34,
+        373.9878,
+        15.2678,
+        3.5878
+      ],
+      "freecadName": "V4_LAB_R02_PIPE_COLD",
+      "roomId": "LAB_R02",
+      "meta": {
+        "type": "water_branch",
+        "medium": "domestic_cold",
+        "waterBranchId": "LAB_R02_W_COLD",
+        "upstreamIds": [
+          "V4_LAB_R02_V_COLD"
+        ],
+        "roomId": "LAB_R02",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R02_V_HOT",
+      "buildingId": "LAB",
+      "system": "water",
+      "level": "F0",
+      "label": "可控支路阀门",
+      "color": [
+        0.75,
+        0.34,
+        0.2
+      ],
+      "bounds": [
+        364.964,
+        2.29,
+        3.44,
+        365.364,
+        2.51,
+        3.795
+      ],
+      "freecadName": "V4_LAB_R02_V_HOT",
+      "roomId": "LAB_R02",
+      "meta": {
+        "id": "V4_LAB_R02_V_HOT",
+        "assetId": "V4_LAB_R02_V_HOT",
+        "buildingId": "LAB",
+        "roomId": "LAB_R02",
+        "controlKind": "valve",
+        "type": "isolation_valve",
+        "label": "生活热水支路阀",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "waterBranchId": "LAB_R02_W_HOT",
+        "medium": "domestic_hot",
+        "ratedFlowLpm": 8,
+        "upstreamIds": [
+          "V4_LAB_HOT_MAIN"
+        ],
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R02_PIPE_HOT",
+      "buildingId": "LAB",
+      "system": "water",
+      "level": "F0",
+      "label": "domestic_hot · 阀后支管",
+      "color": [
+        0.77,
+        0.27,
+        0.21
+      ],
+      "bounds": [
+        361.4122,
+        -59.5,
+        1.34,
+        373.8678,
+        15.2678,
+        3.5878
+      ],
+      "freecadName": "V4_LAB_R02_PIPE_HOT",
+      "roomId": "LAB_R02",
+      "meta": {
+        "type": "water_branch",
+        "medium": "domestic_hot",
+        "waterBranchId": "LAB_R02_W_HOT",
+        "upstreamIds": [
+          "V4_LAB_R02_V_HOT"
+        ],
+        "roomId": "LAB_R02",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R02_S_TEMPERATURE",
+      "buildingId": "LAB",
+      "system": "sensors",
+      "level": "F0",
+      "label": "温度传感器",
+      "color": [
+        0.22,
+        0.63,
+        0.65
+      ],
+      "bounds": [
+        345.04,
+        6.32,
+        1.75,
+        345.165,
+        6.48,
+        1.97
+      ],
+      "freecadName": "V4_LAB_R02_S_TEMPERATURE",
+      "roomId": "LAB_R02",
+      "meta": {
+        "id": "V4_LAB_R02_S_TEMPERATURE",
+        "assetId": "V4_LAB_R02_S_TEMPERATURE",
+        "buildingId": "LAB",
+        "roomId": "LAB_R02",
+        "type": "sensor",
+        "sensorKind": "temperature",
+        "label": "温度传感器",
+        "unit": "°C",
+        "circuitId": "LAB_R02_C_POWER",
+        "upstreamIds": [
+          "V4_LAB_R02_DB"
+        ],
+        "simulated": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R02_S_HUMIDITY",
+      "buildingId": "LAB",
+      "system": "sensors",
+      "level": "F0",
+      "label": "相对湿度传感器",
+      "color": [
+        0.22,
+        0.63,
+        0.65
+      ],
+      "bounds": [
+        345.04,
+        6.62,
+        1.75,
+        345.165,
+        6.78,
+        1.97
+      ],
+      "freecadName": "V4_LAB_R02_S_HUMIDITY",
+      "roomId": "LAB_R02",
+      "meta": {
+        "id": "V4_LAB_R02_S_HUMIDITY",
+        "assetId": "V4_LAB_R02_S_HUMIDITY",
+        "buildingId": "LAB",
+        "roomId": "LAB_R02",
+        "type": "sensor",
+        "sensorKind": "humidity",
+        "label": "相对湿度传感器",
+        "unit": "%RH",
+        "circuitId": "LAB_R02_C_POWER",
+        "upstreamIds": [
+          "V4_LAB_R02_DB"
+        ],
+        "simulated": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R02_S_CO2",
+      "buildingId": "LAB",
+      "system": "sensors",
+      "level": "F0",
+      "label": "二氧化碳传感器",
+      "color": [
+        0.22,
+        0.63,
+        0.65
+      ],
+      "bounds": [
+        345.04,
+        6.92,
+        1.75,
+        345.165,
+        7.08,
+        1.97
+      ],
+      "freecadName": "V4_LAB_R02_S_CO2",
+      "roomId": "LAB_R02",
+      "meta": {
+        "id": "V4_LAB_R02_S_CO2",
+        "assetId": "V4_LAB_R02_S_CO2",
+        "buildingId": "LAB",
+        "roomId": "LAB_R02",
+        "type": "sensor",
+        "sensorKind": "co2",
+        "label": "二氧化碳传感器",
+        "unit": "ppm",
+        "circuitId": "LAB_R02_C_POWER",
+        "upstreamIds": [
+          "V4_LAB_R02_DB"
+        ],
+        "simulated": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R02_S_OCCUPANCY",
+      "buildingId": "LAB",
+      "system": "sensors",
+      "level": "F0",
+      "label": "占用传感器",
+      "color": [
+        0.22,
+        0.63,
+        0.65
+      ],
+      "bounds": [
+        359.92,
+        11.92,
+        2.995,
+        360.08,
+        12.08,
+        3.125
+      ],
+      "freecadName": "V4_LAB_R02_S_OCCUPANCY",
+      "roomId": "LAB_R02",
+      "meta": {
+        "id": "V4_LAB_R02_S_OCCUPANCY",
+        "assetId": "V4_LAB_R02_S_OCCUPANCY",
+        "buildingId": "LAB",
+        "roomId": "LAB_R02",
+        "type": "sensor",
+        "sensorKind": "occupancy",
+        "label": "占用传感器",
+        "unit": "persons",
+        "circuitId": "LAB_R02_C_POWER",
+        "upstreamIds": [
+          "V4_LAB_R02_DB"
+        ],
+        "simulated": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R02_S_POWER",
+      "buildingId": "LAB",
+      "system": "sensors",
+      "level": "F0",
+      "label": "支路电功率传感器",
+      "color": [
+        0.22,
+        0.63,
+        0.65
+      ],
+      "bounds": [
+        345.04,
+        7.52,
+        1.75,
+        345.165,
+        7.68,
+        1.97
+      ],
+      "freecadName": "V4_LAB_R02_S_POWER",
+      "roomId": "LAB_R02",
+      "meta": {
+        "id": "V4_LAB_R02_S_POWER",
+        "assetId": "V4_LAB_R02_S_POWER",
+        "buildingId": "LAB",
+        "roomId": "LAB_R02",
+        "type": "sensor",
+        "sensorKind": "power",
+        "label": "支路电功率传感器",
+        "unit": "kW",
+        "circuitId": "LAB_R02_C_POWER",
+        "upstreamIds": [
+          "V4_LAB_R02_DB"
+        ],
+        "simulated": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R02_S_FLOW_COLD",
+      "buildingId": "LAB",
+      "system": "sensors",
+      "level": "F0",
+      "label": "支路流量计",
+      "color": [
+        0.22,
+        0.63,
+        0.65
+      ],
+      "bounds": [
+        369.3425,
+        2.325,
+        3.475,
+        369.5625,
+        2.475,
+        3.7
+      ],
+      "freecadName": "V4_LAB_R02_S_FLOW_COLD",
+      "roomId": "LAB_R02",
+      "meta": {
+        "id": "V4_LAB_R02_S_FLOW_COLD",
+        "assetId": "V4_LAB_R02_S_FLOW_COLD",
+        "buildingId": "LAB",
+        "roomId": "LAB_R02",
+        "type": "sensor",
+        "sensorKind": "water_flow",
+        "label": "支路流量计",
+        "unit": "L/min",
+        "waterBranchId": "LAB_R02_W_COLD",
+        "simulated": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R02_S_FLOW_HOT",
+      "buildingId": "LAB",
+      "system": "sensors",
+      "level": "F0",
+      "label": "支路流量计",
+      "color": [
+        0.22,
+        0.63,
+        0.65
+      ],
+      "bounds": [
+        369.387,
+        2.325,
+        3.475,
+        369.607,
+        2.475,
+        3.7
+      ],
+      "freecadName": "V4_LAB_R02_S_FLOW_HOT",
+      "roomId": "LAB_R02",
+      "meta": {
+        "id": "V4_LAB_R02_S_FLOW_HOT",
+        "assetId": "V4_LAB_R02_S_FLOW_HOT",
+        "buildingId": "LAB",
+        "roomId": "LAB_R02",
+        "type": "sensor",
+        "sensorKind": "water_flow",
+        "label": "支路流量计",
+        "unit": "L/min",
+        "waterBranchId": "LAB_R02_W_HOT",
+        "simulated": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R03_WALLS",
+      "buildingId": "LAB",
+      "system": "interiors",
+      "level": "F0",
+      "label": "样品表征 · 隔墙与门洞",
+      "color": [
+        0.72,
+        0.77,
+        0.75
+      ],
+      "bounds": [
+        385.0,
+        2.0,
+        0.425,
+        415.0,
+        22.0,
+        3.425
+      ],
+      "freecadName": "V4_LAB_R03_WALLS",
+      "roomId": "LAB_R03",
+      "meta": {
+        "type": "room_partition",
+        "roomId": "LAB_R03",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R03_ROOM_GLAZING",
+      "buildingId": "LAB",
+      "system": "interiors",
+      "level": "F0",
+      "label": "观察窗",
+      "color": [
+        0.08,
+        0.24,
+        0.3
+      ],
+      "bounds": [
+        392.2,
+        21.9775,
+        1.5,
+        407.8,
+        22.0225,
+        2.85
+      ],
+      "freecadName": "V4_LAB_R03_ROOM_GLAZING",
+      "roomId": "LAB_R03",
+      "meta": {
+        "type": "interior_glazing",
+        "roomId": "LAB_R03",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R03_FLOOR_ZONE",
+      "buildingId": "LAB",
+      "system": "interiors",
+      "level": "F0",
+      "label": "样品表征 · 功能区域",
+      "color": [
+        0.74,
+        0.8,
+        0.78
+      ],
+      "bounds": [
+        385.125,
+        2.125,
+        0.406,
+        414.875,
+        21.875,
+        0.418
+      ],
+      "freecadName": "V4_LAB_R03_FLOOR_ZONE",
+      "roomId": "LAB_R03",
+      "meta": {
+        "type": "room_zone",
+        "roomAreaM2": 600,
+        "roomId": "LAB_R03",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R03_DOOR",
+      "buildingId": "LAB",
+      "system": "interiors",
+      "level": "F0",
+      "label": "常开门及门框",
+      "color": [
+        0.54,
+        0.62,
+        0.6
+      ],
+      "bounds": [
+        398.845,
+        1.88,
+        0.4,
+        401.155,
+        3.08832,
+        2.75
+      ],
+      "freecadName": "V4_LAB_R03_DOOR",
+      "roomId": "LAB_R03",
+      "meta": {
+        "type": "door",
+        "roomId": "LAB_R03",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R03_F01",
+      "buildingId": "LAB",
+      "system": "interiors",
+      "level": "F0",
+      "label": "桌面工作位",
+      "color": [
+        0.58,
+        0.39,
+        0.23
+      ],
+      "bounds": [
+        392.5,
+        6.61,
+        0.4,
+        394.3,
+        8.05,
+        1.85
+      ],
+      "freecadName": "V4_LAB_R03_F01",
+      "roomId": "LAB_R03",
+      "meta": {
+        "type": "furniture",
+        "circuitId": "LAB_R03_C_POWER",
+        "ratedPowerKw": 0.25,
+        "roomId": "LAB_R03",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R03_F02",
+      "buildingId": "LAB",
+      "system": "interiors",
+      "level": "F0",
+      "label": "桌面工作位",
+      "color": [
+        0.58,
+        0.39,
+        0.23
+      ],
+      "bounds": [
+        405.7,
+        6.61,
+        0.4,
+        407.5,
+        8.05,
+        1.85
+      ],
+      "freecadName": "V4_LAB_R03_F02",
+      "roomId": "LAB_R03",
+      "meta": {
+        "type": "furniture",
+        "circuitId": "LAB_R03_C_POWER",
+        "ratedPowerKw": 0.25,
+        "roomId": "LAB_R03",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R03_F03",
+      "buildingId": "LAB",
+      "system": "interiors",
+      "level": "F0",
+      "label": "桌面工作位",
+      "color": [
+        0.58,
+        0.39,
+        0.23
+      ],
+      "bounds": [
+        392.5,
+        15.41,
+        0.4,
+        394.3,
+        16.85,
+        1.85
+      ],
+      "freecadName": "V4_LAB_R03_F03",
+      "roomId": "LAB_R03",
+      "meta": {
+        "type": "furniture",
+        "circuitId": "LAB_R03_C_POWER",
+        "ratedPowerKw": 0.25,
+        "roomId": "LAB_R03",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R03_F04",
+      "buildingId": "LAB",
+      "system": "interiors",
+      "level": "F0",
+      "label": "桌面工作位",
+      "color": [
+        0.58,
+        0.39,
+        0.23
+      ],
+      "bounds": [
+        405.7,
+        15.41,
+        0.4,
+        407.5,
+        16.85,
+        1.85
+      ],
+      "freecadName": "V4_LAB_R03_F04",
+      "roomId": "LAB_R03",
+      "meta": {
+        "type": "furniture",
+        "circuitId": "LAB_R03_C_POWER",
+        "ratedPowerKw": 0.25,
+        "roomId": "LAB_R03",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R03_F05",
+      "buildingId": "LAB",
+      "system": "interiors",
+      "level": "F0",
+      "label": "仪器/样品测试机柜",
+      "color": [
+        0.62,
+        0.76,
+        0.81
+      ],
+      "bounds": [
+        398.8,
+        17.905,
+        0.4,
+        401.2,
+        19.25,
+        2.52
+      ],
+      "freecadName": "V4_LAB_R03_F05",
+      "roomId": "LAB_R03",
+      "meta": {
+        "type": "furniture",
+        "circuitId": "LAB_R03_C_POWER",
+        "ratedPowerKw": 2.5,
+        "roomId": "LAB_R03",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R03_DB",
+      "buildingId": "LAB",
+      "system": "electrical",
+      "level": "F0",
+      "label": "房间配电箱与断路器",
+      "color": [
+        0.3,
+        0.34,
+        0.39
+      ],
+      "bounds": [
+        414.275,
+        1.995,
+        1.5,
+        414.825,
+        2.325,
+        2.3
+      ],
+      "freecadName": "V4_LAB_R03_DB",
+      "roomId": "LAB_R03",
+      "meta": {
+        "id": "V4_LAB_R03_DB",
+        "assetId": "V4_LAB_R03_DB",
+        "buildingId": "LAB",
+        "roomId": "LAB_R03",
+        "controlKind": "breaker",
+        "type": "distribution_panel",
+        "label": "房间配电箱",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "upstreamIds": [
+          "V4_LAB_MDB"
+        ],
+        "ratedPowerKw": 0,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R03_FEEDER",
+      "buildingId": "LAB",
+      "system": "electrical",
+      "level": "F0",
+      "label": "主桥架至房间配电馈线",
+      "color": [
+        0.39,
+        0.32,
+        0.23
+      ],
+      "bounds": [
+        414.53056,
+        -62.3,
+        2.2,
+        414.56944,
+        2.21944,
+        3.93944
+      ],
+      "freecadName": "V4_LAB_R03_FEEDER",
+      "roomId": "LAB_R03",
+      "meta": {
+        "type": "cable",
+        "upstreamIds": [
+          "V4_LAB_MDB",
+          "V4_LAB_R03_DB"
+        ],
+        "roomId": "LAB_R03",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R03_L01",
+      "buildingId": "LAB",
+      "system": "lighting",
+      "level": "F0",
+      "label": "可调光照明分组 1",
+      "color": [
+        0.98,
+        0.91,
+        0.69
+      ],
+      "bounds": [
+        388.88,
+        4.88,
+        3.138,
+        411.12,
+        5.52,
+        3.75
+      ],
+      "freecadName": "V4_LAB_R03_L01",
+      "roomId": "LAB_R03",
+      "meta": {
+        "id": "V4_LAB_R03_L01",
+        "assetId": "V4_LAB_R03_L01",
+        "buildingId": "LAB",
+        "roomId": "LAB_R03",
+        "controlKind": "light",
+        "type": "luminaire_group",
+        "label": "照明分组 1",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "circuitId": "LAB_R03_C_LIGHT",
+        "ratedPowerKw": 0.9,
+        "upstreamIds": [
+          "V4_LAB_R03_DB"
+        ],
+        "dimmable": true,
+        "fixtureCount": 2,
+        "sourceReference": "ERCO grouped track lighting for exhibition; LED panels elsewhere",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R03_L02",
+      "buildingId": "LAB",
+      "system": "lighting",
+      "level": "F0",
+      "label": "可调光照明分组 2",
+      "color": [
+        0.98,
+        0.91,
+        0.69
+      ],
+      "bounds": [
+        399.68,
+        4.88,
+        3.138,
+        400.32,
+        5.52,
+        3.75
+      ],
+      "freecadName": "V4_LAB_R03_L02",
+      "roomId": "LAB_R03",
+      "meta": {
+        "id": "V4_LAB_R03_L02",
+        "assetId": "V4_LAB_R03_L02",
+        "buildingId": "LAB",
+        "roomId": "LAB_R03",
+        "controlKind": "light",
+        "type": "luminaire_group",
+        "label": "照明分组 2",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "circuitId": "LAB_R03_C_LIGHT",
+        "ratedPowerKw": 0.9,
+        "upstreamIds": [
+          "V4_LAB_R03_DB"
+        ],
+        "dimmable": true,
+        "fixtureCount": 1,
+        "sourceReference": "ERCO grouped track lighting for exhibition; LED panels elsewhere",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R03_L03",
+      "buildingId": "LAB",
+      "system": "lighting",
+      "level": "F0",
+      "label": "可调光照明分组 3",
+      "color": [
+        0.98,
+        0.91,
+        0.69
+      ],
+      "bounds": [
+        388.88,
+        18.48,
+        3.138,
+        411.12,
+        19.12,
+        3.75
+      ],
+      "freecadName": "V4_LAB_R03_L03",
+      "roomId": "LAB_R03",
+      "meta": {
+        "id": "V4_LAB_R03_L03",
+        "assetId": "V4_LAB_R03_L03",
+        "buildingId": "LAB",
+        "roomId": "LAB_R03",
+        "controlKind": "light",
+        "type": "luminaire_group",
+        "label": "照明分组 3",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "circuitId": "LAB_R03_C_LIGHT",
+        "ratedPowerKw": 0.9,
+        "upstreamIds": [
+          "V4_LAB_R03_DB"
+        ],
+        "dimmable": true,
+        "fixtureCount": 2,
+        "sourceReference": "ERCO grouped track lighting for exhibition; LED panels elsewhere",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R03_L04",
+      "buildingId": "LAB",
+      "system": "lighting",
+      "level": "F0",
+      "label": "可调光照明分组 4",
+      "color": [
+        0.98,
+        0.91,
+        0.69
+      ],
+      "bounds": [
+        399.68,
+        18.48,
+        3.138,
+        400.32,
+        19.12,
+        3.75
+      ],
+      "freecadName": "V4_LAB_R03_L04",
+      "roomId": "LAB_R03",
+      "meta": {
+        "id": "V4_LAB_R03_L04",
+        "assetId": "V4_LAB_R03_L04",
+        "buildingId": "LAB",
+        "roomId": "LAB_R03",
+        "controlKind": "light",
+        "type": "luminaire_group",
+        "label": "照明分组 4",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "circuitId": "LAB_R03_C_LIGHT",
+        "ratedPowerKw": 0.9,
+        "upstreamIds": [
+          "V4_LAB_R03_DB"
+        ],
+        "dimmable": true,
+        "fixtureCount": 1,
+        "sourceReference": "ERCO grouped track lighting for exhibition; LED panels elsewhere",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R03_LIGHT_DROPS",
+      "buildingId": "LAB",
+      "system": "electrical",
+      "level": "F0",
+      "label": "照明干线至灯具分组支线",
+      "color": [
+        0.3,
+        0.34,
+        0.39
+      ],
+      "bounds": [
+        389.191,
+        4.871,
+        3.741,
+        414.55,
+        18.8,
+        3.759
+      ],
+      "freecadName": "V4_LAB_R03_LIGHT_DROPS",
+      "roomId": "LAB_R03",
+      "meta": {
+        "type": "branch_cable",
+        "circuitId": "LAB_R03_C_LIGHT",
+        "roomId": "LAB_R03",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R03_CABLE_0",
+      "buildingId": "LAB",
+      "system": "electrical",
+      "level": "F0",
+      "label": "独立照明电路",
+      "color": [
+        0.3,
+        0.31,
+        0.34
+      ],
+      "bounds": [
+        389.5,
+        2.18596,
+        2.1,
+        414.56404,
+        4.89404,
+        3.76404
+      ],
+      "freecadName": "V4_LAB_R03_CABLE_0",
+      "roomId": "LAB_R03",
+      "meta": {
+        "type": "branch_cable",
+        "circuitId": "LAB_R03_C_LIGHT",
+        "upstreamIds": [
+          "V4_LAB_R03_DB"
+        ],
+        "roomId": "LAB_R03",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R03_CABLE_1",
+      "buildingId": "LAB",
+      "system": "electrical",
+      "level": "F0",
+      "label": "独立插座/设备电路",
+      "color": [
+        0.3,
+        0.31,
+        0.34
+      ],
+      "bounds": [
+        389.5,
+        2.18596,
+        2.1,
+        414.56404,
+        5.01404,
+        3.83404
+      ],
+      "freecadName": "V4_LAB_R03_CABLE_1",
+      "roomId": "LAB_R03",
+      "meta": {
+        "type": "branch_cable",
+        "circuitId": "LAB_R03_C_POWER",
+        "upstreamIds": [
+          "V4_LAB_R03_DB"
+        ],
+        "roomId": "LAB_R03",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R03_CABLE_2",
+      "buildingId": "LAB",
+      "system": "electrical",
+      "level": "F0",
+      "label": "独立空调电路",
+      "color": [
+        0.3,
+        0.31,
+        0.34
+      ],
+      "bounds": [
+        389.5,
+        2.18596,
+        2.1,
+        414.56404,
+        5.13404,
+        3.90404
+      ],
+      "freecadName": "V4_LAB_R03_CABLE_2",
+      "roomId": "LAB_R03",
+      "meta": {
+        "type": "branch_cable",
+        "circuitId": "LAB_R03_C_HVAC",
+        "upstreamIds": [
+          "V4_LAB_R03_DB"
+        ],
+        "roomId": "LAB_R03",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R03_SOCKET0",
+      "buildingId": "LAB",
+      "system": "electrical",
+      "level": "F0",
+      "label": "墙面插座及下引线",
+      "color": [
+        0.3,
+        0.34,
+        0.39
+      ],
+      "bounds": [
+        390.935,
+        2.15,
+        0.76,
+        414.55,
+        2.21,
+        3.82972
+      ],
+      "freecadName": "V4_LAB_R03_SOCKET0",
+      "roomId": "LAB_R03",
+      "meta": {
+        "type": "socket",
+        "circuitId": "LAB_R03_C_POWER",
+        "roomId": "LAB_R03",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R03_SOCKET1",
+      "buildingId": "LAB",
+      "system": "electrical",
+      "level": "F0",
+      "label": "墙面插座及下引线",
+      "color": [
+        0.3,
+        0.34,
+        0.39
+      ],
+      "bounds": [
+        408.935,
+        2.15,
+        0.76,
+        414.55,
+        2.21,
+        3.82972
+      ],
+      "freecadName": "V4_LAB_R03_SOCKET1",
+      "roomId": "LAB_R03",
+      "meta": {
+        "type": "socket",
+        "circuitId": "LAB_R03_C_POWER",
+        "roomId": "LAB_R03",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R03_AHU",
+      "buildingId": "LAB",
+      "system": "hvac",
+      "level": "F0",
+      "label": "局部空调与送回风终端",
+      "color": [
+        0.68,
+        0.75,
+        0.77
+      ],
+      "bounds": [
+        385.475,
+        2.64,
+        2.55,
+        410.5,
+        12.35,
+        3.7
+      ],
+      "freecadName": "V4_LAB_R03_AHU",
+      "roomId": "LAB_R03",
+      "meta": {
+        "id": "V4_LAB_R03_AHU",
+        "assetId": "V4_LAB_R03_AHU",
+        "buildingId": "LAB",
+        "roomId": "LAB_R03",
+        "controlKind": "ahu",
+        "type": "air_handling_unit",
+        "label": "局部空调/通风机组",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "circuitId": "LAB_R03_C_HVAC",
+        "ratedPowerKw": 7.2,
+        "upstreamIds": [
+          "V4_LAB_R03_DB"
+        ],
+        "designCoolingKw": 60.0,
+        "representativeTerminal": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R03_V_PCW",
+      "buildingId": "LAB",
+      "system": "water",
+      "level": "F0",
+      "label": "可控支路阀门",
+      "color": [
+        0.75,
+        0.34,
+        0.2
+      ],
+      "bounds": [
+        398.54,
+        2.29,
+        3.44,
+        398.94,
+        2.51,
+        3.795
+      ],
+      "freecadName": "V4_LAB_R03_V_PCW",
+      "roomId": "LAB_R03",
+      "meta": {
+        "id": "V4_LAB_R03_V_PCW",
+        "assetId": "V4_LAB_R03_V_PCW",
+        "buildingId": "LAB",
+        "roomId": "LAB_R03",
+        "controlKind": "valve",
+        "type": "isolation_valve",
+        "label": "工艺冷却水支路阀",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "waterBranchId": "LAB_R03_W_PCW",
+        "medium": "pcw_supply",
+        "ratedFlowLpm": 35,
+        "upstreamIds": [
+          "V4_LAB_PCW_MAIN"
+        ],
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R03_PIPE_PCW",
+      "buildingId": "LAB",
+      "system": "water",
+      "level": "F0",
+      "label": "pcw_supply · 阀后支管",
+      "color": [
+        0.12,
+        0.6,
+        0.49
+      ],
+      "bounds": [
+        391.546,
+        -57.5,
+        1.55,
+        401.854,
+        16.654,
+        3.604
+      ],
+      "freecadName": "V4_LAB_R03_PIPE_PCW",
+      "roomId": "LAB_R03",
+      "meta": {
+        "type": "water_branch",
+        "medium": "pcw_supply",
+        "waterBranchId": "LAB_R03_W_PCW",
+        "upstreamIds": [
+          "V4_LAB_R03_V_PCW"
+        ],
+        "roomId": "LAB_R03",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R03_PCW_TERMINAL",
+      "buildingId": "LAB",
+      "system": "water",
+      "level": "F0",
+      "label": "设备PCW换热与供回水端",
+      "color": [
+        0.38,
+        0.67,
+        0.61
+      ],
+      "bounds": [
+        390.9,
+        16.2,
+        0.4,
+        392.3,
+        17.0,
+        1.36
+      ],
+      "freecadName": "V4_LAB_R03_PCW_TERMINAL",
+      "roomId": "LAB_R03",
+      "meta": {
+        "type": "process_cooling_terminal",
+        "medium": "pcw_supply",
+        "waterBranchId": "LAB_R03_W_PCW",
+        "isolatedFromDomestic": true,
+        "roomId": "LAB_R03",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R03_PCW_RETURN",
+      "buildingId": "LAB",
+      "system": "water",
+      "level": "F0",
+      "label": "PCW独立回水",
+      "color": [
+        0.47,
+        0.73,
+        0.28
+      ],
+      "bounds": [
+        391.896,
+        -56.554,
+        1.05,
+        402.304,
+        16.654,
+        3.55
+      ],
+      "freecadName": "V4_LAB_R03_PCW_RETURN",
+      "roomId": "LAB_R03",
+      "meta": {
+        "type": "water_branch",
+        "medium": "pcw_return",
+        "waterBranchId": "LAB_R03_W_PCW_RETURN",
+        "isolatedFromDomestic": true,
+        "roomId": "LAB_R03",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R03_S_TEMPERATURE",
+      "buildingId": "LAB",
+      "system": "sensors",
+      "level": "F0",
+      "label": "温度传感器",
+      "color": [
+        0.22,
+        0.63,
+        0.65
+      ],
+      "bounds": [
+        385.04,
+        6.32,
+        1.75,
+        385.165,
+        6.48,
+        1.97
+      ],
+      "freecadName": "V4_LAB_R03_S_TEMPERATURE",
+      "roomId": "LAB_R03",
+      "meta": {
+        "id": "V4_LAB_R03_S_TEMPERATURE",
+        "assetId": "V4_LAB_R03_S_TEMPERATURE",
+        "buildingId": "LAB",
+        "roomId": "LAB_R03",
+        "type": "sensor",
+        "sensorKind": "temperature",
+        "label": "温度传感器",
+        "unit": "°C",
+        "circuitId": "LAB_R03_C_POWER",
+        "upstreamIds": [
+          "V4_LAB_R03_DB"
+        ],
+        "simulated": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R03_S_HUMIDITY",
+      "buildingId": "LAB",
+      "system": "sensors",
+      "level": "F0",
+      "label": "相对湿度传感器",
+      "color": [
+        0.22,
+        0.63,
+        0.65
+      ],
+      "bounds": [
+        385.04,
+        6.62,
+        1.75,
+        385.165,
+        6.78,
+        1.97
+      ],
+      "freecadName": "V4_LAB_R03_S_HUMIDITY",
+      "roomId": "LAB_R03",
+      "meta": {
+        "id": "V4_LAB_R03_S_HUMIDITY",
+        "assetId": "V4_LAB_R03_S_HUMIDITY",
+        "buildingId": "LAB",
+        "roomId": "LAB_R03",
+        "type": "sensor",
+        "sensorKind": "humidity",
+        "label": "相对湿度传感器",
+        "unit": "%RH",
+        "circuitId": "LAB_R03_C_POWER",
+        "upstreamIds": [
+          "V4_LAB_R03_DB"
+        ],
+        "simulated": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R03_S_CO2",
+      "buildingId": "LAB",
+      "system": "sensors",
+      "level": "F0",
+      "label": "二氧化碳传感器",
+      "color": [
+        0.22,
+        0.63,
+        0.65
+      ],
+      "bounds": [
+        385.04,
+        6.92,
+        1.75,
+        385.165,
+        7.08,
+        1.97
+      ],
+      "freecadName": "V4_LAB_R03_S_CO2",
+      "roomId": "LAB_R03",
+      "meta": {
+        "id": "V4_LAB_R03_S_CO2",
+        "assetId": "V4_LAB_R03_S_CO2",
+        "buildingId": "LAB",
+        "roomId": "LAB_R03",
+        "type": "sensor",
+        "sensorKind": "co2",
+        "label": "二氧化碳传感器",
+        "unit": "ppm",
+        "circuitId": "LAB_R03_C_POWER",
+        "upstreamIds": [
+          "V4_LAB_R03_DB"
+        ],
+        "simulated": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R03_S_OCCUPANCY",
+      "buildingId": "LAB",
+      "system": "sensors",
+      "level": "F0",
+      "label": "占用传感器",
+      "color": [
+        0.22,
+        0.63,
+        0.65
+      ],
+      "bounds": [
+        399.92,
+        11.92,
+        2.995,
+        400.08,
+        12.08,
+        3.125
+      ],
+      "freecadName": "V4_LAB_R03_S_OCCUPANCY",
+      "roomId": "LAB_R03",
+      "meta": {
+        "id": "V4_LAB_R03_S_OCCUPANCY",
+        "assetId": "V4_LAB_R03_S_OCCUPANCY",
+        "buildingId": "LAB",
+        "roomId": "LAB_R03",
+        "type": "sensor",
+        "sensorKind": "occupancy",
+        "label": "占用传感器",
+        "unit": "persons",
+        "circuitId": "LAB_R03_C_POWER",
+        "upstreamIds": [
+          "V4_LAB_R03_DB"
+        ],
+        "simulated": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R03_S_POWER",
+      "buildingId": "LAB",
+      "system": "sensors",
+      "level": "F0",
+      "label": "支路电功率传感器",
+      "color": [
+        0.22,
+        0.63,
+        0.65
+      ],
+      "bounds": [
+        385.04,
+        7.52,
+        1.75,
+        385.165,
+        7.68,
+        1.97
+      ],
+      "freecadName": "V4_LAB_R03_S_POWER",
+      "roomId": "LAB_R03",
+      "meta": {
+        "id": "V4_LAB_R03_S_POWER",
+        "assetId": "V4_LAB_R03_S_POWER",
+        "buildingId": "LAB",
+        "roomId": "LAB_R03",
+        "type": "sensor",
+        "sensorKind": "power",
+        "label": "支路电功率传感器",
+        "unit": "kW",
+        "circuitId": "LAB_R03_C_POWER",
+        "upstreamIds": [
+          "V4_LAB_R03_DB"
+        ],
+        "simulated": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R03_S_FLOW_PCW",
+      "buildingId": "LAB",
+      "system": "sensors",
+      "level": "F0",
+      "label": "支路流量计",
+      "color": [
+        0.22,
+        0.63,
+        0.65
+      ],
+      "bounds": [
+        395.06,
+        2.325,
+        3.475,
+        395.28,
+        2.475,
+        3.7
+      ],
+      "freecadName": "V4_LAB_R03_S_FLOW_PCW",
+      "roomId": "LAB_R03",
+      "meta": {
+        "id": "V4_LAB_R03_S_FLOW_PCW",
+        "assetId": "V4_LAB_R03_S_FLOW_PCW",
+        "buildingId": "LAB",
+        "roomId": "LAB_R03",
+        "type": "sensor",
+        "sensorKind": "water_flow",
+        "label": "支路流量计",
+        "unit": "L/min",
+        "waterBranchId": "LAB_R03_W_PCW",
+        "simulated": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R04_WALLS",
+      "buildingId": "LAB",
+      "system": "interiors",
+      "level": "F0",
+      "label": "样品准备与更衣 · 隔墙与门洞",
+      "color": [
+        0.72,
+        0.77,
+        0.75
+      ],
+      "bounds": [
+        424.0,
+        2.0,
+        0.425,
+        454.0,
+        22.0,
+        3.425
+      ],
+      "freecadName": "V4_LAB_R04_WALLS",
+      "roomId": "LAB_R04",
+      "meta": {
+        "type": "room_partition",
+        "roomId": "LAB_R04",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R04_ROOM_GLAZING",
+      "buildingId": "LAB",
+      "system": "interiors",
+      "level": "F0",
+      "label": "观察窗",
+      "color": [
+        0.08,
+        0.24,
+        0.3
+      ],
+      "bounds": [
+        431.2,
+        21.9775,
+        1.5,
+        446.8,
+        22.0225,
+        2.85
+      ],
+      "freecadName": "V4_LAB_R04_ROOM_GLAZING",
+      "roomId": "LAB_R04",
+      "meta": {
+        "type": "interior_glazing",
+        "roomId": "LAB_R04",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R04_FLOOR_ZONE",
+      "buildingId": "LAB",
+      "system": "interiors",
+      "level": "F0",
+      "label": "样品准备与更衣 · 功能区域",
+      "color": [
+        0.74,
+        0.8,
+        0.78
+      ],
+      "bounds": [
+        424.125,
+        2.125,
+        0.406,
+        453.875,
+        21.875,
+        0.418
+      ],
+      "freecadName": "V4_LAB_R04_FLOOR_ZONE",
+      "roomId": "LAB_R04",
+      "meta": {
+        "type": "room_zone",
+        "roomAreaM2": 600,
+        "roomId": "LAB_R04",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R04_DOOR",
+      "buildingId": "LAB",
+      "system": "interiors",
+      "level": "F0",
+      "label": "常开门及门框",
+      "color": [
+        0.54,
+        0.62,
+        0.6
+      ],
+      "bounds": [
+        437.845,
+        1.88,
+        0.4,
+        440.155,
+        3.08832,
+        2.75
+      ],
+      "freecadName": "V4_LAB_R04_DOOR",
+      "roomId": "LAB_R04",
+      "meta": {
+        "type": "door",
+        "roomId": "LAB_R04",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R04_F01",
+      "buildingId": "LAB",
+      "system": "interiors",
+      "level": "F0",
+      "label": "工作台/备料台",
+      "color": [
+        0.72,
+        0.76,
+        0.75
+      ],
+      "bounds": [
+        431.6,
+        7.9,
+        0.4,
+        434.4,
+        8.9,
+        1.195
+      ],
+      "freecadName": "V4_LAB_R04_F01",
+      "roomId": "LAB_R04",
+      "meta": {
+        "type": "furniture",
+        "roomId": "LAB_R04",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R04_F02",
+      "buildingId": "LAB",
+      "system": "interiors",
+      "level": "F0",
+      "label": "储物柜",
+      "color": [
+        0.77,
+        0.79,
+        0.76
+      ],
+      "bounds": [
+        430.5,
+        16.6275,
+        0.4,
+        432.5,
+        17.35,
+        2.2
+      ],
+      "freecadName": "V4_LAB_R04_F02",
+      "roomId": "LAB_R04",
+      "meta": {
+        "type": "furniture",
+        "roomId": "LAB_R04",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R04_F03",
+      "buildingId": "LAB",
+      "system": "interiors",
+      "level": "F0",
+      "label": "带防护罩实验工作台",
+      "color": [
+        0.7,
+        0.82,
+        0.83
+      ],
+      "bounds": [
+        437.85,
+        16.45,
+        0.4,
+        440.15,
+        17.55,
+        2.65
+      ],
+      "freecadName": "V4_LAB_R04_F03",
+      "roomId": "LAB_R04",
+      "meta": {
+        "type": "furniture",
+        "circuitId": "LAB_R04_C_POWER",
+        "ratedPowerKw": 1.4,
+        "roomId": "LAB_R04",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R04_DB",
+      "buildingId": "LAB",
+      "system": "electrical",
+      "level": "F0",
+      "label": "房间配电箱与断路器",
+      "color": [
+        0.3,
+        0.34,
+        0.39
+      ],
+      "bounds": [
+        453.275,
+        1.995,
+        1.5,
+        453.825,
+        2.325,
+        2.3
+      ],
+      "freecadName": "V4_LAB_R04_DB",
+      "roomId": "LAB_R04",
+      "meta": {
+        "id": "V4_LAB_R04_DB",
+        "assetId": "V4_LAB_R04_DB",
+        "buildingId": "LAB",
+        "roomId": "LAB_R04",
+        "controlKind": "breaker",
+        "type": "distribution_panel",
+        "label": "房间配电箱",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "upstreamIds": [
+          "V4_LAB_MDB"
+        ],
+        "ratedPowerKw": 0,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R04_FEEDER",
+      "buildingId": "LAB",
+      "system": "electrical",
+      "level": "F0",
+      "label": "主桥架至房间配电馈线",
+      "color": [
+        0.39,
+        0.32,
+        0.23
+      ],
+      "bounds": [
+        453.53056,
+        -62.3,
+        2.2,
+        453.56944,
+        2.21944,
+        3.93944
+      ],
+      "freecadName": "V4_LAB_R04_FEEDER",
+      "roomId": "LAB_R04",
+      "meta": {
+        "type": "cable",
+        "upstreamIds": [
+          "V4_LAB_MDB",
+          "V4_LAB_R04_DB"
+        ],
+        "roomId": "LAB_R04",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R04_L01",
+      "buildingId": "LAB",
+      "system": "lighting",
+      "level": "F0",
+      "label": "可调光照明分组 1",
+      "color": [
+        0.98,
+        0.91,
+        0.69
+      ],
+      "bounds": [
+        427.88,
+        4.88,
+        3.138,
+        450.12,
+        5.52,
+        3.75
+      ],
+      "freecadName": "V4_LAB_R04_L01",
+      "roomId": "LAB_R04",
+      "meta": {
+        "id": "V4_LAB_R04_L01",
+        "assetId": "V4_LAB_R04_L01",
+        "buildingId": "LAB",
+        "roomId": "LAB_R04",
+        "controlKind": "light",
+        "type": "luminaire_group",
+        "label": "照明分组 1",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "circuitId": "LAB_R04_C_LIGHT",
+        "ratedPowerKw": 0.9,
+        "upstreamIds": [
+          "V4_LAB_R04_DB"
+        ],
+        "dimmable": true,
+        "fixtureCount": 2,
+        "sourceReference": "ERCO grouped track lighting for exhibition; LED panels elsewhere",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R04_L02",
+      "buildingId": "LAB",
+      "system": "lighting",
+      "level": "F0",
+      "label": "可调光照明分组 2",
+      "color": [
+        0.98,
+        0.91,
+        0.69
+      ],
+      "bounds": [
+        438.68,
+        4.88,
+        3.138,
+        439.32,
+        5.52,
+        3.75
+      ],
+      "freecadName": "V4_LAB_R04_L02",
+      "roomId": "LAB_R04",
+      "meta": {
+        "id": "V4_LAB_R04_L02",
+        "assetId": "V4_LAB_R04_L02",
+        "buildingId": "LAB",
+        "roomId": "LAB_R04",
+        "controlKind": "light",
+        "type": "luminaire_group",
+        "label": "照明分组 2",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "circuitId": "LAB_R04_C_LIGHT",
+        "ratedPowerKw": 0.9,
+        "upstreamIds": [
+          "V4_LAB_R04_DB"
+        ],
+        "dimmable": true,
+        "fixtureCount": 1,
+        "sourceReference": "ERCO grouped track lighting for exhibition; LED panels elsewhere",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R04_L03",
+      "buildingId": "LAB",
+      "system": "lighting",
+      "level": "F0",
+      "label": "可调光照明分组 3",
+      "color": [
+        0.98,
+        0.91,
+        0.69
+      ],
+      "bounds": [
+        427.88,
+        18.48,
+        3.138,
+        450.12,
+        19.12,
+        3.75
+      ],
+      "freecadName": "V4_LAB_R04_L03",
+      "roomId": "LAB_R04",
+      "meta": {
+        "id": "V4_LAB_R04_L03",
+        "assetId": "V4_LAB_R04_L03",
+        "buildingId": "LAB",
+        "roomId": "LAB_R04",
+        "controlKind": "light",
+        "type": "luminaire_group",
+        "label": "照明分组 3",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "circuitId": "LAB_R04_C_LIGHT",
+        "ratedPowerKw": 0.9,
+        "upstreamIds": [
+          "V4_LAB_R04_DB"
+        ],
+        "dimmable": true,
+        "fixtureCount": 2,
+        "sourceReference": "ERCO grouped track lighting for exhibition; LED panels elsewhere",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R04_L04",
+      "buildingId": "LAB",
+      "system": "lighting",
+      "level": "F0",
+      "label": "可调光照明分组 4",
+      "color": [
+        0.98,
+        0.91,
+        0.69
+      ],
+      "bounds": [
+        438.68,
+        18.48,
+        3.138,
+        439.32,
+        19.12,
+        3.75
+      ],
+      "freecadName": "V4_LAB_R04_L04",
+      "roomId": "LAB_R04",
+      "meta": {
+        "id": "V4_LAB_R04_L04",
+        "assetId": "V4_LAB_R04_L04",
+        "buildingId": "LAB",
+        "roomId": "LAB_R04",
+        "controlKind": "light",
+        "type": "luminaire_group",
+        "label": "照明分组 4",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "circuitId": "LAB_R04_C_LIGHT",
+        "ratedPowerKw": 0.9,
+        "upstreamIds": [
+          "V4_LAB_R04_DB"
+        ],
+        "dimmable": true,
+        "fixtureCount": 1,
+        "sourceReference": "ERCO grouped track lighting for exhibition; LED panels elsewhere",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R04_LIGHT_DROPS",
+      "buildingId": "LAB",
+      "system": "electrical",
+      "level": "F0",
+      "label": "照明干线至灯具分组支线",
+      "color": [
+        0.3,
+        0.34,
+        0.39
+      ],
+      "bounds": [
+        428.191,
+        4.871,
+        3.741,
+        453.55,
+        18.8,
+        3.759
+      ],
+      "freecadName": "V4_LAB_R04_LIGHT_DROPS",
+      "roomId": "LAB_R04",
+      "meta": {
+        "type": "branch_cable",
+        "circuitId": "LAB_R04_C_LIGHT",
+        "roomId": "LAB_R04",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R04_CABLE_0",
+      "buildingId": "LAB",
+      "system": "electrical",
+      "level": "F0",
+      "label": "独立照明电路",
+      "color": [
+        0.3,
+        0.31,
+        0.34
+      ],
+      "bounds": [
+        428.5,
+        2.18596,
+        2.1,
+        453.56404,
+        4.89404,
+        3.76404
+      ],
+      "freecadName": "V4_LAB_R04_CABLE_0",
+      "roomId": "LAB_R04",
+      "meta": {
+        "type": "branch_cable",
+        "circuitId": "LAB_R04_C_LIGHT",
+        "upstreamIds": [
+          "V4_LAB_R04_DB"
+        ],
+        "roomId": "LAB_R04",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R04_CABLE_1",
+      "buildingId": "LAB",
+      "system": "electrical",
+      "level": "F0",
+      "label": "独立插座/设备电路",
+      "color": [
+        0.3,
+        0.31,
+        0.34
+      ],
+      "bounds": [
+        428.5,
+        2.18596,
+        2.1,
+        453.56404,
+        5.01404,
+        3.83404
+      ],
+      "freecadName": "V4_LAB_R04_CABLE_1",
+      "roomId": "LAB_R04",
+      "meta": {
+        "type": "branch_cable",
+        "circuitId": "LAB_R04_C_POWER",
+        "upstreamIds": [
+          "V4_LAB_R04_DB"
+        ],
+        "roomId": "LAB_R04",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R04_CABLE_2",
+      "buildingId": "LAB",
+      "system": "electrical",
+      "level": "F0",
+      "label": "独立空调电路",
+      "color": [
+        0.3,
+        0.31,
+        0.34
+      ],
+      "bounds": [
+        428.5,
+        2.18596,
+        2.1,
+        453.56404,
+        5.13404,
+        3.90404
+      ],
+      "freecadName": "V4_LAB_R04_CABLE_2",
+      "roomId": "LAB_R04",
+      "meta": {
+        "type": "branch_cable",
+        "circuitId": "LAB_R04_C_HVAC",
+        "upstreamIds": [
+          "V4_LAB_R04_DB"
+        ],
+        "roomId": "LAB_R04",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R04_SOCKET0",
+      "buildingId": "LAB",
+      "system": "electrical",
+      "level": "F0",
+      "label": "墙面插座及下引线",
+      "color": [
+        0.3,
+        0.34,
+        0.39
+      ],
+      "bounds": [
+        429.935,
+        2.15,
+        0.76,
+        453.55,
+        2.21,
+        3.82972
+      ],
+      "freecadName": "V4_LAB_R04_SOCKET0",
+      "roomId": "LAB_R04",
+      "meta": {
+        "type": "socket",
+        "circuitId": "LAB_R04_C_POWER",
+        "roomId": "LAB_R04",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R04_SOCKET1",
+      "buildingId": "LAB",
+      "system": "electrical",
+      "level": "F0",
+      "label": "墙面插座及下引线",
+      "color": [
+        0.3,
+        0.34,
+        0.39
+      ],
+      "bounds": [
+        447.935,
+        2.15,
+        0.76,
+        453.55,
+        2.21,
+        3.82972
+      ],
+      "freecadName": "V4_LAB_R04_SOCKET1",
+      "roomId": "LAB_R04",
+      "meta": {
+        "type": "socket",
+        "circuitId": "LAB_R04_C_POWER",
+        "roomId": "LAB_R04",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R04_AHU",
+      "buildingId": "LAB",
+      "system": "hvac",
+      "level": "F0",
+      "label": "局部空调与送回风终端",
+      "color": [
+        0.68,
+        0.75,
+        0.77
+      ],
+      "bounds": [
+        424.475,
+        2.64,
+        2.55,
+        449.5,
+        12.35,
+        3.7
+      ],
+      "freecadName": "V4_LAB_R04_AHU",
+      "roomId": "LAB_R04",
+      "meta": {
+        "id": "V4_LAB_R04_AHU",
+        "assetId": "V4_LAB_R04_AHU",
+        "buildingId": "LAB",
+        "roomId": "LAB_R04",
+        "controlKind": "ahu",
+        "type": "air_handling_unit",
+        "label": "局部空调/通风机组",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "circuitId": "LAB_R04_C_HVAC",
+        "ratedPowerKw": 7.2,
+        "upstreamIds": [
+          "V4_LAB_R04_DB"
+        ],
+        "designCoolingKw": 60.0,
+        "representativeTerminal": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R04_SINK",
+      "buildingId": "LAB",
+      "system": "water",
+      "level": "F0",
+      "label": "洗手/工艺准备水槽",
+      "color": [
+        0.81,
+        0.83,
+        0.82
+      ],
+      "bounds": [
+        452.49,
+        14.68,
+        0.4,
+        453.41,
+        15.32,
+        1.66944
+      ],
+      "freecadName": "V4_LAB_R04_SINK",
+      "roomId": "LAB_R04",
+      "meta": {
+        "type": "sink",
+        "demandLpm": 6,
+        "requiresWater": true,
+        "roomId": "LAB_R04",
+        "designStatus": "concept inferred; simulated data only",
+        "waterBranchIds": [
+          "LAB_R04_W_COLD",
+          "LAB_R04_W_HOT"
+        ]
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R04_DRAIN",
+      "buildingId": "LAB",
+      "system": "water",
+      "level": "F0",
+      "label": "独立排水支管（预留楼板套管）",
+      "color": [
+        0.4,
+        0.43,
+        0.4
+      ],
+      "bounds": [
+        305.0,
+        -58.0594,
+        -0.2594,
+        453.0094,
+        15.0594,
+        1.24
+      ],
+      "freecadName": "V4_LAB_R04_DRAIN",
+      "roomId": "LAB_R04",
+      "meta": {
+        "type": "drain_pipe",
+        "medium": "lab_waste",
+        "waterBranchId": "LAB_R04_W_DRAIN",
+        "penetrationsRequireCoordination": true,
+        "roomId": "LAB_R04",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R04_WASTE_HOLD",
+      "buildingId": "LAB",
+      "system": "water",
+      "level": "F0",
+      "label": "实验废水独立收集（示意）",
+      "color": [
+        0.62,
+        0.65,
+        0.6
+      ],
+      "bounds": [
+        452.63,
+        13.43,
+        0.4,
+        453.27,
+        14.07,
+        1.35
+      ],
+      "freecadName": "V4_LAB_R04_WASTE_HOLD",
+      "roomId": "LAB_R04",
+      "meta": {
+        "type": "waste_holding",
+        "medium": "lab_waste",
+        "waterBranchId": "LAB_R04_W_DRAIN",
+        "roomId": "LAB_R04",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R04_V_COLD",
+      "buildingId": "LAB",
+      "system": "water",
+      "level": "F0",
+      "label": "可控支路阀门",
+      "color": [
+        0.75,
+        0.34,
+        0.2
+      ],
+      "bounds": [
+        443.755,
+        2.29,
+        3.44,
+        444.155,
+        2.51,
+        3.795
+      ],
+      "freecadName": "V4_LAB_R04_V_COLD",
+      "roomId": "LAB_R04",
+      "meta": {
+        "id": "V4_LAB_R04_V_COLD",
+        "assetId": "V4_LAB_R04_V_COLD",
+        "buildingId": "LAB",
+        "roomId": "LAB_R04",
+        "controlKind": "valve",
+        "type": "isolation_valve",
+        "label": "生活冷水支路阀",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "waterBranchId": "LAB_R04_W_COLD",
+        "medium": "domestic_cold",
+        "ratedFlowLpm": 12,
+        "upstreamIds": [
+          "V4_LAB_WATER_MAIN"
+        ],
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R04_PIPE_COLD",
+      "buildingId": "LAB",
+      "system": "water",
+      "level": "F0",
+      "label": "domestic_cold · 阀后支管",
+      "color": [
+        0.12,
+        0.44,
+        0.72
+      ],
+      "bounds": [
+        440.0622,
+        -60.5,
+        1.34,
+        452.9878,
+        15.2678,
+        3.5878
+      ],
+      "freecadName": "V4_LAB_R04_PIPE_COLD",
+      "roomId": "LAB_R04",
+      "meta": {
+        "type": "water_branch",
+        "medium": "domestic_cold",
+        "waterBranchId": "LAB_R04_W_COLD",
+        "upstreamIds": [
+          "V4_LAB_R04_V_COLD"
+        ],
+        "roomId": "LAB_R04",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R04_V_HOT",
+      "buildingId": "LAB",
+      "system": "water",
+      "level": "F0",
+      "label": "可控支路阀门",
+      "color": [
+        0.75,
+        0.34,
+        0.2
+      ],
+      "bounds": [
+        443.964,
+        2.29,
+        3.44,
+        444.364,
+        2.51,
+        3.795
+      ],
+      "freecadName": "V4_LAB_R04_V_HOT",
+      "roomId": "LAB_R04",
+      "meta": {
+        "id": "V4_LAB_R04_V_HOT",
+        "assetId": "V4_LAB_R04_V_HOT",
+        "buildingId": "LAB",
+        "roomId": "LAB_R04",
+        "controlKind": "valve",
+        "type": "isolation_valve",
+        "label": "生活热水支路阀",
+        "simulated": true,
+        "defaultState": {
+          "on": true,
+          "enabled": true,
+          "position": 1,
+          "level": 0.8,
+          "speed": 0.75
+        },
+        "waterBranchId": "LAB_R04_W_HOT",
+        "medium": "domestic_hot",
+        "ratedFlowLpm": 8,
+        "upstreamIds": [
+          "V4_LAB_HOT_MAIN"
+        ],
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R04_PIPE_HOT",
+      "buildingId": "LAB",
+      "system": "water",
+      "level": "F0",
+      "label": "domestic_hot · 阀后支管",
+      "color": [
+        0.77,
+        0.27,
+        0.21
+      ],
+      "bounds": [
+        440.4122,
+        -59.5,
+        1.34,
+        452.8678,
+        15.2678,
+        3.5878
+      ],
+      "freecadName": "V4_LAB_R04_PIPE_HOT",
+      "roomId": "LAB_R04",
+      "meta": {
+        "type": "water_branch",
+        "medium": "domestic_hot",
+        "waterBranchId": "LAB_R04_W_HOT",
+        "upstreamIds": [
+          "V4_LAB_R04_V_HOT"
+        ],
+        "roomId": "LAB_R04",
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R04_S_TEMPERATURE",
+      "buildingId": "LAB",
+      "system": "sensors",
+      "level": "F0",
+      "label": "温度传感器",
+      "color": [
+        0.22,
+        0.63,
+        0.65
+      ],
+      "bounds": [
+        424.04,
+        6.32,
+        1.75,
+        424.165,
+        6.48,
+        1.97
+      ],
+      "freecadName": "V4_LAB_R04_S_TEMPERATURE",
+      "roomId": "LAB_R04",
+      "meta": {
+        "id": "V4_LAB_R04_S_TEMPERATURE",
+        "assetId": "V4_LAB_R04_S_TEMPERATURE",
+        "buildingId": "LAB",
+        "roomId": "LAB_R04",
+        "type": "sensor",
+        "sensorKind": "temperature",
+        "label": "温度传感器",
+        "unit": "°C",
+        "circuitId": "LAB_R04_C_POWER",
+        "upstreamIds": [
+          "V4_LAB_R04_DB"
+        ],
+        "simulated": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R04_S_HUMIDITY",
+      "buildingId": "LAB",
+      "system": "sensors",
+      "level": "F0",
+      "label": "相对湿度传感器",
+      "color": [
+        0.22,
+        0.63,
+        0.65
+      ],
+      "bounds": [
+        424.04,
+        6.62,
+        1.75,
+        424.165,
+        6.78,
+        1.97
+      ],
+      "freecadName": "V4_LAB_R04_S_HUMIDITY",
+      "roomId": "LAB_R04",
+      "meta": {
+        "id": "V4_LAB_R04_S_HUMIDITY",
+        "assetId": "V4_LAB_R04_S_HUMIDITY",
+        "buildingId": "LAB",
+        "roomId": "LAB_R04",
+        "type": "sensor",
+        "sensorKind": "humidity",
+        "label": "相对湿度传感器",
+        "unit": "%RH",
+        "circuitId": "LAB_R04_C_POWER",
+        "upstreamIds": [
+          "V4_LAB_R04_DB"
+        ],
+        "simulated": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R04_S_CO2",
+      "buildingId": "LAB",
+      "system": "sensors",
+      "level": "F0",
+      "label": "二氧化碳传感器",
+      "color": [
+        0.22,
+        0.63,
+        0.65
+      ],
+      "bounds": [
+        424.04,
+        6.92,
+        1.75,
+        424.165,
+        7.08,
+        1.97
+      ],
+      "freecadName": "V4_LAB_R04_S_CO2",
+      "roomId": "LAB_R04",
+      "meta": {
+        "id": "V4_LAB_R04_S_CO2",
+        "assetId": "V4_LAB_R04_S_CO2",
+        "buildingId": "LAB",
+        "roomId": "LAB_R04",
+        "type": "sensor",
+        "sensorKind": "co2",
+        "label": "二氧化碳传感器",
+        "unit": "ppm",
+        "circuitId": "LAB_R04_C_POWER",
+        "upstreamIds": [
+          "V4_LAB_R04_DB"
+        ],
+        "simulated": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R04_S_OCCUPANCY",
+      "buildingId": "LAB",
+      "system": "sensors",
+      "level": "F0",
+      "label": "占用传感器",
+      "color": [
+        0.22,
+        0.63,
+        0.65
+      ],
+      "bounds": [
+        438.92,
+        11.92,
+        2.995,
+        439.08,
+        12.08,
+        3.125
+      ],
+      "freecadName": "V4_LAB_R04_S_OCCUPANCY",
+      "roomId": "LAB_R04",
+      "meta": {
+        "id": "V4_LAB_R04_S_OCCUPANCY",
+        "assetId": "V4_LAB_R04_S_OCCUPANCY",
+        "buildingId": "LAB",
+        "roomId": "LAB_R04",
+        "type": "sensor",
+        "sensorKind": "occupancy",
+        "label": "占用传感器",
+        "unit": "persons",
+        "circuitId": "LAB_R04_C_POWER",
+        "upstreamIds": [
+          "V4_LAB_R04_DB"
+        ],
+        "simulated": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R04_S_POWER",
+      "buildingId": "LAB",
+      "system": "sensors",
+      "level": "F0",
+      "label": "支路电功率传感器",
+      "color": [
+        0.22,
+        0.63,
+        0.65
+      ],
+      "bounds": [
+        424.04,
+        7.52,
+        1.75,
+        424.165,
+        7.68,
+        1.97
+      ],
+      "freecadName": "V4_LAB_R04_S_POWER",
+      "roomId": "LAB_R04",
+      "meta": {
+        "id": "V4_LAB_R04_S_POWER",
+        "assetId": "V4_LAB_R04_S_POWER",
+        "buildingId": "LAB",
+        "roomId": "LAB_R04",
+        "type": "sensor",
+        "sensorKind": "power",
+        "label": "支路电功率传感器",
+        "unit": "kW",
+        "circuitId": "LAB_R04_C_POWER",
+        "upstreamIds": [
+          "V4_LAB_R04_DB"
+        ],
+        "simulated": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R04_S_FLOW_COLD",
+      "buildingId": "LAB",
+      "system": "sensors",
+      "level": "F0",
+      "label": "支路流量计",
+      "color": [
+        0.22,
+        0.63,
+        0.65
+      ],
+      "bounds": [
+        448.3425,
+        2.325,
+        3.475,
+        448.5625,
+        2.475,
+        3.7
+      ],
+      "freecadName": "V4_LAB_R04_S_FLOW_COLD",
+      "roomId": "LAB_R04",
+      "meta": {
+        "id": "V4_LAB_R04_S_FLOW_COLD",
+        "assetId": "V4_LAB_R04_S_FLOW_COLD",
+        "buildingId": "LAB",
+        "roomId": "LAB_R04",
+        "type": "sensor",
+        "sensorKind": "water_flow",
+        "label": "支路流量计",
+        "unit": "L/min",
+        "waterBranchId": "LAB_R04_W_COLD",
+        "simulated": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    },
+    {
+      "id": "V4_LAB_R04_S_FLOW_HOT",
+      "buildingId": "LAB",
+      "system": "sensors",
+      "level": "F0",
+      "label": "支路流量计",
+      "color": [
+        0.22,
+        0.63,
+        0.65
+      ],
+      "bounds": [
+        448.387,
+        2.325,
+        3.475,
+        448.607,
+        2.475,
+        3.7
+      ],
+      "freecadName": "V4_LAB_R04_S_FLOW_HOT",
+      "roomId": "LAB_R04",
+      "meta": {
+        "id": "V4_LAB_R04_S_FLOW_HOT",
+        "assetId": "V4_LAB_R04_S_FLOW_HOT",
+        "buildingId": "LAB",
+        "roomId": "LAB_R04",
+        "type": "sensor",
+        "sensorKind": "water_flow",
+        "label": "支路流量计",
+        "unit": "L/min",
+        "waterBranchId": "LAB_R04_W_HOT",
+        "simulated": true,
+        "designStatus": "concept inferred; simulated data only"
+      },
+      "source": "V4 inferred interior/MEP proposal; official sources in analysis/v4"
+    }
+  ]
+}

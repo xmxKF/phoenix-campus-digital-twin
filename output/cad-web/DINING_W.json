@@ -1,0 +1,551 @@
+{
+  "building": {
+    "id": "DINING_W",
+    "position": [
+      -258,
+      136,
+      0
+    ],
+    "size": [
+      61,
+      34,
+      15
+    ],
+    "features": [
+      "two-storey pavilion",
+      "horizontal roof planes",
+      "glazed terrace",
+      "pergola and parasols"
+    ],
+    "source": "R1 west flat form; labels conflict",
+    "confidence": "medium",
+    "levels": {
+      "F0": 0.0,
+      "F1": 7.5,
+      "RF": 15
+    },
+    "dimensionBasis": "V2 image-inferred envelope, architecturally estimated interiors",
+    "units": "m",
+    "axesX": [
+      -29.0,
+      -17.4,
+      -5.8,
+      5.8,
+      17.4,
+      29.0
+    ],
+    "axesY": [
+      -15.5,
+      0.0,
+      15.5
+    ]
+  },
+  "components": [
+    {
+      "id": "DINING_W_foundation_0530",
+      "buildingId": "DINING_W",
+      "system": "foundation",
+      "level": "FOUNDATION",
+      "label": "Concept raft",
+      "color": [
+        0.48,
+        0.52,
+        0.57
+      ],
+      "bounds": [
+        -291.0,
+        116.5,
+        -1.2,
+        -225.0,
+        155.5,
+        0.0
+      ],
+      "source": "Design concept",
+      "freecadName": "DINING_W_foundation_0530"
+    },
+    {
+      "id": "DINING_W_structure_0531",
+      "buildingId": "DINING_W",
+      "system": "structure",
+      "level": "ALL",
+      "label": "Column frame 01",
+      "color": [
+        0.69,
+        0.73,
+        0.77
+      ],
+      "bounds": [
+        -287.425,
+        120.075,
+        0.0,
+        -228.575,
+        120.925,
+        15.0
+      ],
+      "source": "Design concept",
+      "freecadName": "DINING_W_structure_0531"
+    },
+    {
+      "id": "DINING_W_structure_0532",
+      "buildingId": "DINING_W",
+      "system": "structure",
+      "level": "ALL",
+      "label": "Column frame 02",
+      "color": [
+        0.69,
+        0.73,
+        0.77
+      ],
+      "bounds": [
+        -287.425,
+        135.575,
+        0.0,
+        -228.575,
+        136.425,
+        15.0
+      ],
+      "source": "Design concept",
+      "freecadName": "DINING_W_structure_0532"
+    },
+    {
+      "id": "DINING_W_structure_0533",
+      "buildingId": "DINING_W",
+      "system": "structure",
+      "level": "ALL",
+      "label": "Column frame 03",
+      "color": [
+        0.69,
+        0.73,
+        0.77
+      ],
+      "bounds": [
+        -287.425,
+        151.075,
+        0.0,
+        -228.575,
+        151.925,
+        15.0
+      ],
+      "source": "Design concept",
+      "freecadName": "DINING_W_structure_0533"
+    },
+    {
+      "id": "DINING_W_slabs_0534",
+      "buildingId": "DINING_W",
+      "system": "slabs",
+      "level": "F0",
+      "label": "F0 floor plate",
+      "color": [
+        0.82,
+        0.84,
+        0.85
+      ],
+      "bounds": [
+        -288.5,
+        119.0,
+        0.0,
+        -227.5,
+        153.0,
+        0.4
+      ],
+      "source": "Design concept",
+      "freecadName": "DINING_W_slabs_0534"
+    },
+    {
+      "id": "DINING_W_slabs_0535",
+      "buildingId": "DINING_W",
+      "system": "slabs",
+      "level": "F1",
+      "label": "F1 floor plate",
+      "color": [
+        0.82,
+        0.84,
+        0.85
+      ],
+      "bounds": [
+        -288.5,
+        119.0,
+        7.5,
+        -227.5,
+        153.0,
+        7.9
+      ],
+      "source": "Design concept",
+      "freecadName": "DINING_W_slabs_0535"
+    },
+    {
+      "id": "DINING_W_roof_0536",
+      "buildingId": "DINING_W",
+      "system": "roof",
+      "level": "RF",
+      "label": "RF floor plate",
+      "color": [
+        0.49,
+        0.56,
+        0.59
+      ],
+      "bounds": [
+        -288.5,
+        119.0,
+        15.0,
+        -227.5,
+        153.0,
+        15.4
+      ],
+      "source": "Design concept",
+      "freecadName": "DINING_W_roof_0536"
+    },
+    {
+      "id": "DINING_W_glazing_0537",
+      "buildingId": "DINING_W",
+      "system": "glazing",
+      "level": "ALL",
+      "label": "South curtain wall",
+      "color": [
+        0.24,
+        0.47,
+        0.58
+      ],
+      "bounds": [
+        -288.42,
+        118.94,
+        0.4,
+        -227.58,
+        119.06,
+        14.8
+      ],
+      "source": "R1/R2 and Schueco mullion-transom construction",
+      "freecadName": "DINING_W_glazing_0537"
+    },
+    {
+      "id": "DINING_W_envelope_0538",
+      "buildingId": "DINING_W",
+      "system": "envelope",
+      "level": "ALL",
+      "label": "Curtain-wall mullions and transoms",
+      "color": [
+        0.42,
+        0.44,
+        0.44
+      ],
+      "bounds": [
+        -288.56,
+        118.66,
+        0.4,
+        -227.44,
+        118.98,
+        15.14
+      ],
+      "source": "Design concept",
+      "freecadName": "DINING_W_envelope_0538"
+    },
+    {
+      "id": "DINING_W_envelope_0539",
+      "buildingId": "DINING_W",
+      "system": "envelope",
+      "level": "ALL",
+      "label": "East/west return panel",
+      "color": [
+        0.84,
+        0.86,
+        0.84
+      ],
+      "bounds": [
+        -288.65,
+        119.0,
+        0.4,
+        -288.35,
+        153.0,
+        15.0
+      ],
+      "source": "Design concept",
+      "freecadName": "DINING_W_envelope_0539"
+    },
+    {
+      "id": "DINING_W_glazing_0540",
+      "buildingId": "DINING_W",
+      "system": "glazing",
+      "level": "ALL",
+      "label": "North curtain wall",
+      "color": [
+        0.24,
+        0.47,
+        0.58
+      ],
+      "bounds": [
+        -288.42,
+        152.94,
+        0.4,
+        -227.58,
+        153.06,
+        14.8
+      ],
+      "source": "R1/R2 and Schueco mullion-transom construction",
+      "freecadName": "DINING_W_glazing_0540"
+    },
+    {
+      "id": "DINING_W_envelope_0541",
+      "buildingId": "DINING_W",
+      "system": "envelope",
+      "level": "ALL",
+      "label": "Curtain-wall mullions and transoms",
+      "color": [
+        0.42,
+        0.44,
+        0.44
+      ],
+      "bounds": [
+        -288.56,
+        153.02,
+        0.4,
+        -227.44,
+        153.34,
+        15.14
+      ],
+      "source": "Design concept",
+      "freecadName": "DINING_W_envelope_0541"
+    },
+    {
+      "id": "DINING_W_envelope_0542",
+      "buildingId": "DINING_W",
+      "system": "envelope",
+      "level": "ALL",
+      "label": "East/west return panel",
+      "color": [
+        0.84,
+        0.86,
+        0.84
+      ],
+      "bounds": [
+        -227.65,
+        119.0,
+        0.4,
+        -227.35,
+        153.0,
+        15.0
+      ],
+      "source": "Design concept",
+      "freecadName": "DINING_W_envelope_0542"
+    },
+    {
+      "id": "DINING_W_interiors_0543",
+      "buildingId": "DINING_W",
+      "system": "interiors",
+      "level": "F0",
+      "label": "Kitchen and support partition",
+      "color": [
+        0.76,
+        0.83,
+        0.73
+      ],
+      "bounds": [
+        -242.445,
+        120.5,
+        0.4,
+        -228.415,
+        151.5,
+        3.6
+      ],
+      "source": "Design concept",
+      "freecadName": "DINING_W_interiors_0543"
+    },
+    {
+      "id": "DINING_W_interiors_0544",
+      "buildingId": "DINING_W",
+      "system": "interiors",
+      "level": "F0",
+      "label": "Dining furniture row",
+      "color": [
+        0.76,
+        0.83,
+        0.73
+      ],
+      "bounds": [
+        -281.31,
+        128.0,
+        1.1,
+        -243.61,
+        130.0,
+        1.23
+      ],
+      "source": "Design concept",
+      "freecadName": "DINING_W_interiors_0544"
+    },
+    {
+      "id": "DINING_W_interiors_0545",
+      "buildingId": "DINING_W",
+      "system": "interiors",
+      "level": "F0",
+      "label": "Dining furniture row",
+      "color": [
+        0.76,
+        0.83,
+        0.73
+      ],
+      "bounds": [
+        -281.31,
+        142.0,
+        1.1,
+        -243.61,
+        144.0,
+        1.23
+      ],
+      "source": "Design concept",
+      "freecadName": "DINING_W_interiors_0545"
+    },
+    {
+      "id": "DINING_W_interiors_0546",
+      "buildingId": "DINING_W",
+      "system": "interiors",
+      "level": "F1",
+      "label": "Kitchen and support partition",
+      "color": [
+        0.76,
+        0.83,
+        0.73
+      ],
+      "bounds": [
+        -242.445,
+        120.5,
+        7.9,
+        -228.415,
+        151.5,
+        11.1
+      ],
+      "source": "Design concept",
+      "freecadName": "DINING_W_interiors_0546"
+    },
+    {
+      "id": "DINING_W_interiors_0547",
+      "buildingId": "DINING_W",
+      "system": "interiors",
+      "level": "F1",
+      "label": "Dining furniture row",
+      "color": [
+        0.76,
+        0.83,
+        0.73
+      ],
+      "bounds": [
+        -281.31,
+        128.0,
+        8.6,
+        -243.61,
+        130.0,
+        8.73
+      ],
+      "source": "Design concept",
+      "freecadName": "DINING_W_interiors_0547"
+    },
+    {
+      "id": "DINING_W_interiors_0548",
+      "buildingId": "DINING_W",
+      "system": "interiors",
+      "level": "F1",
+      "label": "Dining furniture row",
+      "color": [
+        0.76,
+        0.83,
+        0.73
+      ],
+      "bounds": [
+        -281.31,
+        142.0,
+        8.6,
+        -243.61,
+        144.0,
+        8.73
+      ],
+      "source": "Design concept",
+      "freecadName": "DINING_W_interiors_0548"
+    },
+    {
+      "id": "DINING_W_equipment_0549",
+      "buildingId": "DINING_W",
+      "system": "equipment",
+      "level": "RF",
+      "label": "AHU-01 casing fans and louvers",
+      "color": [
+        0.6,
+        0.72,
+        0.76
+      ],
+      "bounds": [
+        -243.9,
+        140.6,
+        15.4,
+        -236.1,
+        145.4,
+        19.5
+      ],
+      "source": "fab1 rooftop AHU/MAU image and Intel fab mechanical level",
+      "freecadName": "DINING_W_equipment_0549"
+    },
+    {
+      "id": "DINING_W_slabs_0550",
+      "buildingId": "DINING_W",
+      "system": "slabs",
+      "level": "DECK",
+      "label": "Lakeside terrace",
+      "color": [
+        0.57,
+        0.41,
+        0.27
+      ],
+      "bounds": [
+        -292.5,
+        97.0,
+        0.65,
+        -223.5,
+        119.0,
+        1.1
+      ],
+      "source": "Design concept",
+      "freecadName": "DINING_W_slabs_0550"
+    },
+    {
+      "id": "DINING_W_circulation_0551",
+      "buildingId": "DINING_W",
+      "system": "circulation",
+      "level": "DECK",
+      "label": "Roof maintenance guardrails",
+      "color": [
+        0.79,
+        0.65,
+        0.38
+      ],
+      "bounds": [
+        -292.545,
+        96.955,
+        1.1,
+        -223.455,
+        119.045,
+        2.25
+      ],
+      "source": "Design concept",
+      "freecadName": "DINING_W_circulation_0551"
+    },
+    {
+      "id": "DINING_W_circulation_0552",
+      "buildingId": "DINING_W",
+      "system": "circulation",
+      "level": "RF",
+      "label": "Roof maintenance guardrails",
+      "color": [
+        0.79,
+        0.65,
+        0.38
+      ],
+      "bounds": [
+        -287.545,
+        119.955,
+        15.4,
+        -228.455,
+        152.045,
+        16.55
+      ],
+      "source": "Design concept",
+      "freecadName": "DINING_W_circulation_0552"
+    }
+  ]
+}

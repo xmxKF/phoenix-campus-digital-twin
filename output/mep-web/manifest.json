@@ -1,0 +1,241 @@
+{
+  "schema": "campus-mep-web/4",
+  "coordinateSystem": "glTF X east Y up Z south; source CAD X east Y north Z up",
+  "source": "../cad-v4/Phoenix_Campus_MEP.FCStd",
+  "buildings": [
+    {
+      "id": "HQ",
+      "position": [
+        0,
+        -8,
+        0
+      ],
+      "size": [
+        194,
+        60,
+        35
+      ],
+      "levels": {
+        "F0": 0.0,
+        "F1": 17.5,
+        "RF": 35
+      },
+      "model": "HQ.glb",
+      "metadata": "HQ.json",
+      "drawing": "../cad-v4/drawings/HQ_systems.svg",
+      "source": "../cad-v4/Phoenix_Campus_MEP.FCStd",
+      "step": "../cad-v4/step/HQ_MEP.step",
+      "componentCount": 149,
+      "triangles": 335150,
+      "bytes": 1169916,
+      "cadMeshSHA256": "1778616062071577284b8ea65ab9feafc7bf218ead4a16c36acc5aa9acc3a167",
+      "glbSHA256": "4b075e99640d13c88b3ae42e1199fd45930e739bcb8cf803d4f794e8f281eb95"
+    },
+    {
+      "id": "FAB1",
+      "position": [
+        258,
+        -218,
+        0
+      ],
+      "size": [
+        250,
+        90,
+        41.8
+      ],
+      "levels": {
+        "FOUNDATION": -12.2,
+        "B1": -7.2,
+        "F1": 14.8,
+        "F2": 29.6,
+        "RF": 41.8
+      },
+      "model": "FAB1.glb",
+      "metadata": "FAB1.json",
+      "drawing": "../cad-v4/drawings/FAB1_systems.svg",
+      "source": "../cad-v4/Phoenix_Campus_MEP.FCStd",
+      "step": "../cad-v4/step/FAB1_MEP.step",
+      "componentCount": 160,
+      "triangles": 442475,
+      "bytes": 1507352,
+      "cadMeshSHA256": "bbf765369d24943b2301ded11171ecb0332d33fac8232894779f78f78397f8ea",
+      "glbSHA256": "16621247d2fa2536180cce1f79a63a956113d894a1078e3c35f65ab6ef93fe31"
+    },
+    {
+      "id": "FAB2",
+      "position": [
+        -258,
+        -218,
+        0
+      ],
+      "size": [
+        250,
+        90,
+        41.8
+      ],
+      "levels": {
+        "FOUNDATION": -12.2,
+        "B1": -7.2,
+        "F1": 14.8,
+        "F2": 29.6,
+        "RF": 41.8
+      },
+      "model": "FAB2.glb",
+      "metadata": "FAB2.json",
+      "drawing": "../cad-v4/drawings/FAB2_systems.svg",
+      "source": "../cad-v4/Phoenix_Campus_MEP.FCStd",
+      "step": "../cad-v4/step/FAB2_MEP.step",
+      "componentCount": 160,
+      "triangles": 442481,
+      "bytes": 1509288,
+      "cadMeshSHA256": "f98ce1ae30fc188e85d1d34a0ba5bc973731cd6635a9ac6ca62b5c0da9d08b59",
+      "glbSHA256": "a160db4187c28367f4f93f19773525c3134713b8257a1350a0da87694a55e472"
+    },
+    {
+      "id": "LAB",
+      "position": [
+        380,
+        -7,
+        0
+      ],
+      "size": [
+        164,
+        117,
+        25
+      ],
+      "levels": {
+        "F0": 0.0,
+        "F1": 6.25,
+        "F2": 12.5,
+        "F3": 18.75,
+        "RF": 25
+      },
+      "model": "LAB.glb",
+      "metadata": "LAB.json",
+      "drawing": "../cad-v4/drawings/LAB_systems.svg",
+      "source": "../cad-v4/Phoenix_Campus_MEP.FCStd",
+      "step": "../cad-v4/step/LAB_MEP.step",
+      "componentCount": 149,
+      "triangles": 498886,
+      "bytes": 1507560,
+      "cadMeshSHA256": "949f5110b215e7339c63f099fa92af348909bf8b9bbe1e0ab8b1d672637a2dda",
+      "glbSHA256": "ffcf14901d9ec991739befb04f59e58c6d66238ea0289a8f93a71a32439b076b"
+    },
+    {
+      "id": "MASK",
+      "position": [
+        -380,
+        -7,
+        0
+      ],
+      "size": [
+        164,
+        117,
+        25
+      ],
+      "levels": {
+        "F0": 0.0,
+        "F1": 6.25,
+        "F2": 12.5,
+        "F3": 18.75,
+        "RF": 25
+      },
+      "model": "MASK.glb",
+      "metadata": "MASK.json",
+      "drawing": "../cad-v4/drawings/MASK_systems.svg",
+      "source": "../cad-v4/Phoenix_Campus_MEP.FCStd",
+      "step": "../cad-v4/step/MASK_MEP.step",
+      "componentCount": 134,
+      "triangles": 407420,
+      "bytes": 1299604,
+      "cadMeshSHA256": "3adce5b6e6f5c48862d63bb57a3da5601b32df10e59e50fb40e0978cdafd3cfa",
+      "glbSHA256": "1c1d0ea2490725b26214a62f9ae7566fa674ba61412001903ee70e1ed88585c0"
+    },
+    {
+      "id": "EXHIBITION",
+      "position": [
+        0,
+        237,
+        0
+      ],
+      "size": [
+        118,
+        40,
+        15
+      ],
+      "levels": {
+        "F0": 0.0,
+        "F1": 7.5,
+        "RF": 15
+      },
+      "model": "EXHIBITION.glb",
+      "metadata": "EXHIBITION.json",
+      "drawing": "../cad-v4/drawings/EXHIBITION_systems.svg",
+      "source": "../cad-v4/Phoenix_Campus_MEP.FCStd",
+      "step": "../cad-v4/step/EXHIBITION_MEP.step",
+      "componentCount": 143,
+      "triangles": 269057,
+      "bytes": 1068632,
+      "cadMeshSHA256": "8f9c73b68e32573268525195304088bc0df55e85c80e7bcb19b94cffaab41bb8",
+      "glbSHA256": "543e66ac39baad60b8df3406cf21c3f98b0e92e9a5f0b5ead6a9f229f919e52e"
+    },
+    {
+      "id": "DINING_E",
+      "position": [
+        258,
+        136,
+        0
+      ],
+      "size": [
+        61,
+        34,
+        13
+      ],
+      "levels": {
+        "F0": 0.0,
+        "F1": 6.5,
+        "RF": 13
+      },
+      "model": "DINING_E.glb",
+      "metadata": "DINING_E.json",
+      "drawing": "../cad-v4/drawings/DINING_E_systems.svg",
+      "source": "../cad-v4/Phoenix_Campus_MEP.FCStd",
+      "step": "../cad-v4/step/DINING_E_MEP.step",
+      "componentCount": 132,
+      "triangles": 340358,
+      "bytes": 1179564,
+      "cadMeshSHA256": "5f7f7b479b91868b791b6804c42f8a7b75af64505dfe3a1b4f151c914b9bf6fc",
+      "glbSHA256": "6723e295822099de9e3b3538979b08e01fa9a058033041bda15fd88b66fcf187"
+    },
+    {
+      "id": "DINING_W",
+      "position": [
+        -258,
+        136,
+        0
+      ],
+      "size": [
+        61,
+        34,
+        15
+      ],
+      "levels": {
+        "F0": 0.0,
+        "F1": 7.5,
+        "RF": 15
+      },
+      "model": "DINING_W.glb",
+      "metadata": "DINING_W.json",
+      "drawing": "../cad-v4/drawings/DINING_W_systems.svg",
+      "source": "../cad-v4/Phoenix_Campus_MEP.FCStd",
+      "step": "../cad-v4/step/DINING_W_MEP.step",
+      "componentCount": 137,
+      "triangles": 346270,
+      "bytes": 1221064,
+      "cadMeshSHA256": "1f73f62eeb297a7bb83abfac486a913f342a89408364433be3c5bb30313d8b9c",
+      "glbSHA256": "b517dd30e4a3cd86aa40c68347db57204afebe905aeb82025ff666ff7b01fa28"
+    }
+  ],
+  "simulatedTelemetry": true,
+  "compression": "KHR_draco_mesh_compression; position 20 bits, normals 12 bits; no triangle removal"
+}
