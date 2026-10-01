@@ -5,3 +5,18 @@
 .selection-actions{position:sticky;top:-17px;z-index:6;background:#19282ff5;padding:10px 0;border-bottom:1px solid #31434b;backdrop-filter:blur(6px)}
 
 .asset-filters{display:flex;gap:4px;margin:0 0 10px}.asset-filters button{flex:1;padding:5px 3px;font-size:10px;white-space:nowrap}
+
+/* Keep the campus destination visible before any 3D resources have loaded. */
+.topbar{gap:20px}
+.site-navigation{display:flex;align-items:center;gap:20px;flex-shrink:0}
+.campus-entry{display:inline-flex;align-items:center;justify-content:center;gap:12px;min-height:40px;padding:9px 14px;border:1px solid #bdebe1;border-radius:4px;background:#bdebe1;color:#163a3d;font-size:13px;font-weight:650;white-space:nowrap;text-decoration:none;transition:background .12s,border-color .12s}
+.campus-entry:hover{background:#dbf5ed;border-color:#dbf5ed;text-decoration:none}
+.campus-entry:active{background:#a3d8cd;border-color:#a3d8cd}
+.campus-entry:focus-visible{outline:3px solid #fff;outline-offset:3px}
+.campus-entry>span[aria-hidden]{font-size:18px;line-height:1}
+.context{min-width:0;flex-wrap:wrap;row-gap:4px}
+#building-note{flex-basis:100%;font-size:10px}
+.clock-block{flex-shrink:0}
+@media(max-width:1120px){.topbar,.site-navigation{gap:12px}.campus-entry{gap:8px;padding:9px 11px}}
+@media(max-width:900px){.site-navigation{width:100%;justify-content:space-between}}
+@media(prefers-reduced-motion:reduce){.campus-entry{transition:none}}

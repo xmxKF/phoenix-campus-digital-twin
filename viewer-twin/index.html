@@ -1,9 +1,16 @@
 <!doctype html>
 <html lang="zh-CN">
 <head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>凤凰山北 · 建筑运行实验室</title><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22%3E%3Crect width=%2264%22 height=%2264%22 rx=%2214%22 fill=%22%23173b3e%22/%3E%3Cpath d=%22M32 10 54 32 32 54 10 32Z%22 fill=%22%239dd8c5%22/%3E%3C/svg%3E">
-<link rel="stylesheet" href="style.css?v=6"><link rel="stylesheet" href="manufacturing.css?v=6"><link rel="stylesheet" href="../viewer-v2/navigation-ui.css?v=5"><script type="importmap">{"imports":{"three":"../viewer/vendor/three.module.js","three/addons/":"../viewer/vendor/"}}</script></head>
+<link rel="stylesheet" href="style.css?v=9"><link rel="stylesheet" href="manufacturing.css?v=6"><link rel="stylesheet" href="../viewer-v2/navigation-ui.css?v=5"><script type="importmap">{"imports":{"three":"../viewer/vendor/three.module.js","three/addons/":"../viewer/vendor/"}}</script></head>
 <body>
-<header class="topbar"><a class="brand" href="../viewer-v2/" title="返回园区全景"><span class="brand-mark">◈</span><span>凤凰山北<small>建筑运行实验室 / V6</small></span></a><div class="context"><label for="building">建筑</label><select id="building" aria-label="选择建筑"></select><span class="simulation-tag">模拟数据</span><span id="building-note" hidden>扩建预留 · 设备仅作方案演示</span></div><div class="clock-block"><span id="clock">00:00:00</span><button id="pause">暂停</button><select id="speed" aria-label="仿真速度"><option value="1">1× 实时</option><option value="5" selected>5×</option><option value="20">20×</option></select><button id="reset" title="重置全园区的模拟状态">重置</button></div></header>
+<header class="topbar">
+ <nav class="site-navigation" aria-label="网站导航">
+  <a class="brand" href="../viewer-v2/" title="返回园区全景"><span class="brand-mark">◈</span><span>凤凰山北<small>建筑运行实验室 / V6</small></span></a>
+  <a class="campus-entry" href="../viewer-v2/"><span>查看厂区外观</span><span aria-hidden="true">→</span></a>
+ </nav>
+ <div class="context"><label for="building">建筑</label><select id="building" aria-label="选择建筑"></select><span class="simulation-tag">模拟数据</span><span id="building-note" hidden>扩建预留 · 设备仅作方案演示</span></div>
+ <div class="clock-block"><span id="clock">00:00:00</span><button id="pause">暂停</button><select id="speed" aria-label="仿真速度"><option value="1">1× 实时</option><option value="5" selected>5×</option><option value="20">20×</option></select><button id="reset" title="重置全园区的模拟状态">重置</button></div>
+</header>
 <main>
 <aside class="asset-browser"><div class="section-title"><h2>空间与设备</h2><span id="asset-count"></span></div><div class="browse-behavior"><label><input id="auto-focus" type="checkbox"> 选中后自动聚焦</label><p id="browse-mode-note">观察模式：选中只更新控制台，画面保持不变。</p><p class="browse-hint">⌖ 聚焦单个物件 · 查看进入房间</p></div><label class="search"><input id="search" type="search" placeholder="查找设备 / 资产编号" aria-label="查找设备"></label><div class="asset-filters" role="group" aria-label="设备类别"><button data-asset-domain="all" class="active">全部</button><button data-asset-domain="manufacturing">制造物流</button><button data-asset-domain="mep">机电</button></div><div id="room-list"></div><div class="source-links"><span>概念布置 · 代表层详设</span><a href="../output/cad-v6/Phoenix_Manufacturing_V6.FCStd">制造设备 FreeCAD 源文件 ↓</a><a href="../analysis/v6/manufacturing-references.md" target="_blank">制造设备外部参考 ↗</a><a id="drawing-link" target="_blank">室内 / 机电图纸 ↗</a><a href="../output/cad-v4/Phoenix_Campus_MEP.FCStd">FreeCAD 源文件 ↓</a><a href="../analysis/v4/interior-mep-reference.md" target="_blank">设计参考与推定依据 ↗</a><a href="../public/model-coverage.html" target="_blank">模型覆盖与模拟边界 ↗</a></div></aside>
 <section class="workspace">
