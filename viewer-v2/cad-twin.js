@@ -1,16 +1,13 @@
 import * as THREE from 'three';
 import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
 import {loadModel} from '../viewer-twin/model-loader.js?v=8';
-import {CampusSimulation,METRICS} from './simulation.js?v=3.1';
 
 const $=id=>document.getElementById(id);
 const base=new URL('../output/cad-web/',import.meta.url);
-const ids=['HQ','FAB1','FAB2','LAB','MASK','EXHIBITION','DINING_E','DINING_W'];
 const names={HQ:'行政研发楼',FAB1:'FAB 1 主厂房',FAB2:'FAB 2 对称方案',LAB:'LAB 实验楼',MASK:'MASK 厂房',EXHIBITION:'展示中心',DINING_E:'东侧餐厅',DINING_W:'西侧餐厅'};
 const systems={foundation:'基础',structure:'柱梁结构',slabs:'楼板',envelope:'外墙',glazing:'幕墙玻璃',roof:'屋顶',equipment:'设备',piping:'管线 / 管架',interiors:'室内工艺',circulation:'楼梯 / 交通'};
-const sim=new CampusSimulation();
 const cache=new Map();
-let api,manifest,active,mode='exterior',request=0,selected,hiddenExterior=[],isolation=false,lightingState,assetBindings=[];
+let api,manifest,active,mode='exterior',request=0,selected,hiddenExterior=[],isolation=false,lightingState;
 const cadGrid=new THREE.GridHelper(600,60,0x8e9c92,0xafb9b0);cadGrid.visible=false;cadGrid.material.transparent=true;cadGrid.material.opacity=.36;
 const clipPlane=new THREE.Plane(new THREE.Vector3(0,0,-1),0);
 const raycaster=new THREE.Raycaster(),pointer=new THREE.Vector2();
@@ -69,7 +66,7 @@ function applyExplode(){if(!active)return;const amount=Number($('cad-explode').v
 }
 function syncSectionPass(){if(!api)return;const clipped=mode==='cad'&&Number($('cad-section').value)<100;api.occlusion.enabled=!clipped||isolation;api.occlusion.normalMaterial.clippingPlanes=clipped&&isolation?[clipPlane]:[];api.occlusion.normalMaterial.needsUpdate=true;}
 function applySection(){if(!active)return;const value=Number($('cad-section').value);$('section-value').textContent=value===100?'关闭':value+'%';const box=active.bounds;clipPlane.constant=THREE.MathUtils.lerp(box.min.z-1,box.max.z+1,value/100);api.renderer.localClippingEnabled=true;for(const mesh of active.meshes){const prior=mesh.material.clippingPlanes.length;mesh.material.clippingPlanes=value===100?[]:[clipPlane];if((value===100&&prior)||(value<100&&!prior))mesh.material.needsUpdate=true;}syncSectionPass();highlight.visible=false;invalidate(true);}
-function selectComponent(mesh){if(!mesh)return;selected=mesh;const a=mesh.userData.cad;const card=$('cad-component');card.replaceChildren();const title=document.createElement('b');title.textContent=a.label;card.append(title,document.createTextNode(`${a.id} · ${systems[a.system]||a.system} · ${a.level}`),document.createElement('br'),document.createTextNode('来源：FreeCAD / '+(a.freecadName||a.id)));highlight.box.setFromObject(mesh);highlight.visible=mesh.visible&&mode==='cad';invalidate();renderTelemetry();}
+function selectComponent(mesh){if(!mesh)return;selected=mesh;const a=mesh.userData.cad;const card=$('cad-component');card.replaceChildren();const title=document.createElement('b');title.textContent=a.label;card.append(title,document.createTextNode(`${a.id} · ${systems[a.system]||a.system} · ${a.level}`),document.createElement('br'),document.createTextNode('来源：FreeCAD / '+(a.freecadName||a.id)));highlight.box.setFromObject(mesh);highlight.visible=mesh.visible&&mode==='cad';invalidate();}
 async function showCAD(focus=true){const ticket=++request,id=$('cad-building').value;$('mode-cad').disabled=true;$('cad-building').disabled=true;message('载入 '+names[id]+' 的 CAD 构件…');
  try{await waitForCampus();const entry=await loadBuilding(id);if(ticket!==request)return;active=entry;mode='cad';selected=null;$('mode-exterior').classList.remove('active');$('mode-cad').classList.add('active');$('cad-controls').hidden=false;$('cad-explode').value=0;$('cad-section').value=100;renderSystemControls();for(const mesh of entry.meshes)mesh.visible=true;applyExplode();applySection();applyVisibility();
   if(focus)fit();
@@ -78,9 +75,11 @@ async function showCAD(focus=true){const ticket=++request,id=$('cad-building').v
   $('cad-drawing').href=new URL(entry.record.drawing,base).href;$('cad-source').href=new URL(entry.record.source,base).href;
   $('cad-component').textContent='点选模型中的构件，查看编号和所属系统。';
   message(`${names[id]} · ${entry.meshes.length} 组构件 · ${entry.record.size[0]} × ${entry.record.size[1]} m${id==='FAB2'?' · 同类推定':''}`);
- }catch(error){if(ticket===request){if(mode==='cad'&&active)$('cad-building').value=active.id;message('CAD 加载失败：'+error.message+'。可再次点击重试。');console.error(error);}}finally{if(ticket===request){$('mode-cad').disabled=false;$('cad-building').disabled=false;}}
+  dispatchEvent(new CustomEvent('campus-cad-building-change',{detail:{id}}));
+  dispatchEvent(new CustomEvent('campus-mode-change',{detail:{mode}}));
+ }catch(error){if(ticket===request){if(mode==='cad'&&active){$('cad-building').value=active.id;dispatchEvent(new CustomEvent('campus-cad-building-change',{detail:{id:active.id}}));}message('CAD 加载失败：'+error.message+'。可再次点击重试。');console.error(error);}}finally{if(ticket===request){$('mode-cad').disabled=false;$('cad-building').disabled=false;}}
 }
-function showExterior(){++request;mode='exterior';selected=null;$('mode-cad').disabled=false;$('cad-building').disabled=false;$('mode-cad').classList.remove('active');$('mode-exterior').classList.add('active');$('cad-controls').hidden=true;applyVisibility();message('园区外观 · 保留原有完整枝叶。选择 CAD 构件可查看建筑内部。');if(api?.ready)api.setView('north');}
+function showExterior(){++request;mode='exterior';selected=null;$('mode-cad').disabled=false;$('cad-building').disabled=false;$('mode-cad').classList.remove('active');$('mode-exterior').classList.add('active');$('cad-controls').hidden=true;applyVisibility();message('园区外观 · 保留原有完整枝叶。选择 CAD 构件可查看建筑内部。');if(api?.ready)api.setView('north');dispatchEvent(new CustomEvent('campus-mode-change',{detail:{mode}}));}
 function waitForCampus(){if(api?.ready)return Promise.resolve(api);if(window.campusV2?.ready){initCampus(window.campusV2);return Promise.resolve(api);}return new Promise(resolve=>addEventListener('campus-ready',event=>{initCampus(event.detail);resolve(api);},{once:true}));}
 function initCampus(value){if(api)return;api=value;api.scene.add(highlight,cadGrid);let start;
  api.renderer.domElement.addEventListener('pointerdown',event=>{start={x:event.clientX,y:event.clientY};});
@@ -89,30 +88,10 @@ function initCampus(value){if(api)return;api=value;api.scene.add(highlight,cadGr
 $('twin-open').onclick=()=>{$('twin-panel').hidden=false;$('twin-open').hidden=true;$('twin-open').setAttribute('aria-expanded','true');updateViewOffset();};
 $('twin-close').onclick=()=>{$('twin-panel').hidden=true;$('twin-open').hidden=false;$('twin-open').setAttribute('aria-expanded','false');updateViewOffset();};
 $('mode-cad').onclick=()=>showCAD();$('mode-exterior').onclick=showExterior;
-$('cad-building').onchange=()=>{selected=null;if(mode==='cad')showCAD();renderTelemetry();};
+$('cad-building').onchange=()=>{selected=null;dispatchEvent(new CustomEvent('campus-cad-building-change',{detail:{id:$('cad-building').value}}));if(mode==='cad')showCAD();};
 $('cad-isolate').onchange=()=>applyVisibility();$('cad-fit').onclick=fit;$('cad-explode').oninput=applyExplode;$('cad-section').oninput=applySection;
 $('cad-cutaway').onclick=()=>{$('cad-section').value=50;$('cad-explode').value=16;applyExplode();applySection();fit();};
 document.querySelectorAll('[data-view]').forEach(button=>button.addEventListener('click',()=>{if(mode==='cad'){showExterior();api.setView(button.dataset.view);}}));
-function formatTime(t){return [Math.floor(t/60),Math.floor(t%60)].map(v=>String(v).padStart(2,'0')).join(':');}
-for(const metric of METRICS){const card=document.createElement('div');card.className='metric';card.id='metric-'+metric.key;card.innerHTML=`<div class="metric-label">${metric.label}</div><strong>—</strong><small>${metric.unit}</small>`;$('telemetry').append(card);}
-async function focusAlarm(event){$('cad-building').value=event.buildingId;$('cad-isolate').checked=true;await Promise.all([showCAD(),loadAssetBindings()]);if(!active||active.id!==event.buildingId)return;const binding=assetBindings.find(b=>b.buildingId===event.buildingId);const mesh=active.meshes.find(o=>o.userData.cad.id===binding?.simulationAssetId)||active.meshes.find(o=>o.userData.cad.system==='equipment');if(mesh)selectComponent(mesh);}
-function renderTelemetry(){const id=$('cad-building').value,s=sim.sample(id);$('sim-clock').textContent=(sim.paused?'暂停 · ':'SIM · ')+formatTime(sim.elapsed);for(const m of METRICS){const card=$('metric-'+m.key);card.querySelector('strong').textContent=s.values[m.key].toFixed(m.digits);card.classList.toggle('alarm',s.alarms.includes(m.key));}
- $('sim-summary').textContent=(s.alarms.length?`${s.alarms.length} 项指标越过演示阈值`:'指标在演示阈值内')+' · '+names[id]+' · 每秒更新';
- const list=$('sim-events');list.replaceChildren();for(const event of sim.events.filter(e=>e.buildingId===id).slice(0,4)){const btn=document.createElement('button');btn.textContent=`${formatTime(event.time)} ${event.state==='active'?'告警':'恢复'} · ${METRICS.find(m=>m.key===event.metric).label} ${event.value} · 定位关联构件 ↗`;btn.onclick=()=>focusAlarm(event);list.append(btn);}
-}
-$('sim-scenario').onchange=()=>{sim.setScenario($('sim-scenario').value);renderTelemetry();};
-$('sim-pause').onclick=()=>{sim.paused=!sim.paused;$('sim-pause').textContent=sim.paused?'继续模拟':'暂停模拟';renderTelemetry();};
-$('sim-reset').onclick=()=>{sim.reset();$('sim-scenario').value='normal';$('sim-pause').textContent='暂停模拟';renderTelemetry();};
-let snapshotURL;
-$('sim-export').onclick=async()=>{await loadAssetBindings();const snapshot=sim.snapshot(ids);snapshot.assetBindings=assetBindings;const json=JSON.stringify(snapshot,null,2);if(snapshotURL)URL.revokeObjectURL(snapshotURL);snapshotURL=URL.createObjectURL(new Blob([json],{type:'application/json'}));$('snapshot-json').value=json;$('snapshot-download').href=snapshotURL;$('snapshot-preview').hidden=false;$('snapshot-preview').open=true;};
-let last=performance.now();setInterval(()=>{const now=performance.now();sim.advance((now-last)/1000);last=now;sim.evaluate(ids);if(!$('twin-panel').hidden)renderTelemetry();},1000);renderTelemetry();
 if(window.campusV2?.ready)initCampus(window.campusV2);else addEventListener('campus-ready',e=>initCampus(e.detail),{once:true});
 addEventListener('resize',updateViewOffset);
-let bindingsPromise;
-function loadAssetBindings(){
- if(bindingsPromise)return bindingsPromise;
- bindingsPromise=fetch('../output/cad/components.json').then(r=>{if(!r.ok)throw new Error('CAD资产表未就绪');return r.json();}).then(data=>{assetBindings=ids.flatMap(id=>{const components=data.components.filter(c=>c.buildingId===id);const asset=components.find(c=>c.system==='equipment'&&/AHU|cooling|chiller|air|风|冷/i.test(c.label))||components.find(c=>c.system==='equipment')||components.find(c=>c.system==='envelope');return asset?[{buildingId:id,simulationAssetId:asset.id,metrics:METRICS.map(m=>m.key),bindingType:asset.system==='equipment'?'demonstration equipment association; not physical sensors':'building-zone demonstration anchor; not physical sensors'}]:[];});}).catch(error=>{bindingsPromise=undefined;console.warn(error.message);});
- return bindingsPromise;
-}
-document.querySelector('.legacy-simulation').addEventListener('toggle',event=>{if(event.target.open)loadAssetBindings();});
-window.campusTwin={sim,loadBuilding,showCAD,showExterior,selectComponent,fit,get active(){return active;},get mode(){return mode;},get selected(){return selected?.userData.cad;},get cache(){return cache;},get assetBindings(){return assetBindings;}};
+window.campusTwin={loadBuilding,showCAD,showExterior,selectComponent,fit,get active(){return active;},get mode(){return mode;},get selected(){return selected?.userData.cad;},get cache(){return cache;}};

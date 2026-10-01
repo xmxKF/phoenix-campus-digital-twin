@@ -12,6 +12,7 @@ import {createRenderQuality} from './render-quality.js?v=4';
 import {loadDeliveredModel} from './model-delivery.js?v=9';
 import {exteriorDelivery} from './model-delivery-config.js?v=9';
 import {MeshoptDecoder} from './vendor/meshopt_decoder.mjs';
+import {mountBuildingNavigation} from './building-navigation.js?v=10';
 
 const $ = id => document.getElementById(id);
 const startedAt = performance.now();
@@ -60,6 +61,7 @@ let fullQuality = false, frameCount = 0, lastTime = performance.now(), fpsTime =
 let baseStats = {calls: 0, triangles: 0}, readyMilliseconds = 0, latestRenderMilliseconds = 0;
 const loadingStages = {};
 let deliveryStats = {};
+let buildingNavigation;
 const contextObjects = [], plantChunks = [], tags = [], frameCallbacks = new Set();
 const renderQuality = createRenderQuality({renderer, composer, occlusion, camera, controls, getPlants: () => plantChunks, getModel: () => model});
 const preservation = {sourceBatches: 0, sourceInstances: 0, retainedInstances: 0, originalGeometryTriangles: 0, retainedGeometryTriangles: 0, expandedTriangles: 0, geometryUnchanged: true, matricesUnchanged: true};
@@ -137,6 +139,7 @@ $('building').onchange = () => {
   controls.update();
   controls.enableDamping = damping;
   view = building.id;
+  buildingNavigation?.selectBuilding(building.id);
   document.querySelectorAll('[data-view]').forEach(button => button.classList.remove('active'));
   requestRender();
 };
@@ -335,6 +338,7 @@ window.campusV2 = {
   get spec() { return spec; },
   get plantChunks() { return plantChunks; },
   get ready() { return ready; },
+  get buildingNavigation() { return buildingNavigation; },
   registerSceneObject(object) { scene.add(object); requestRender({shadows: true}); return object; },
   addFrameCallback(callback) { frameCallbacks.add(callback); return () => frameCallbacks.delete(callback); },
   get stats() {
@@ -410,6 +414,7 @@ try {
   render();
   updateLabels();
   ready = true;
+  buildingNavigation = mountBuildingNavigation(window.campusV2);
   readyMilliseconds = Math.round(performance.now() - startedAt);
   window.__CAMPUS_READY__ = true;
   $('loading').hidden = true;
